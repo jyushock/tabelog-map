@@ -3,60 +3,151 @@
 <head>
     <meta charset="utf-8" />
     <title>100名店マップ 2025</title>
+    <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    
     <script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
     <link href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" rel="stylesheet" />
+    
     <script src="data.js"></script>
+
     <style>
-        body { margin: 0; padding: 0; font-family: sans-serif; }
+        body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
         #map { position: absolute; top: 0; bottom: 0; width: 100%; }
-        .popup-card { min-width: 180px; padding: 5px; }
-        .btn { display: block; text-align: center; padding: 10px; margin-top: 8px; border-radius: 5px; 
-               text-decoration: none; font-weight: bold; font-size: 13px; color: white; }
-        .btn-tabelog { background: #ff6600; }
-        .btn-nav { background: #4285f4; }
+        
+        /* ポップアップのスタイル調整 */
+        .popup-card { min-width: 200px; padding: 10px; line-height: 1.6; }
+        .popup-title { font-weight: bold; font-size: 16px; color: #333; display: block; margin-bottom: 4px; }
+        .popup-cat { font-size: 12px; color: #666; display: block; margin-bottom: 12px; }
+        
+        /* ボタンのスタイル（スマホで押しやすいサイズ） */
+        .btn { 
+            display: block; text-align: center; padding: 12px; margin-top: 8px; 
+            border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 14px; color: white; 
+            transition: opacity 0.2s;
+        }
+        .btn:active { opacity: 0.7; }
+        .btn-tabelog { background: #ff6600; } /* 食べログオレンジ */
+        .btn-nav { background: #4285f4; }     /* Googleブルー */
+
+        /* 現在地ボタンを目立たせる（オプション） */
+        .maplibregl-ctrl-geolocate { background-color: #fff !important; }
     </style>
 </head>
 <body>
-<div id="map"></div>
-<script>
-// --- 既存のコードの下に追加 ---
 
-map.on('load', () => {
-    // 1. 位置情報コントロールの定義（設定を変更）
-    const geolocate = new maplibregl.GeolocateControl({
-        positionOptions: {
-            enableHighAccuracy: true // 高精度な位置情報を取得
+<div id="map"></div>
+
+<script>
+    // 1. 地図の初期化
+    const map = new maplibregl.Map({
+        container: 'map',
+        style: {
+            version: 8,
+            sources: {
+                'osm': {
+                    type: 'raster',
+                    tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
+                    tileSize: 256,
+                    attribution: '© OpenStreetMap'
+                }
+            },
+            layers: [{ id: 'osm', type: 'raster', source: 'osm' }]
         },
-        trackUserLocation: true, // 自分の移動に合わせて追従
-        showUserLocation: true   // 自分の位置に青い丸を表示
+        center: [139.76, 35.68], // 万が一現在地が取れない時の予備（東京駅）
+        zoom: 11
     });
 
-    // 地図にコントロールを追加
+    // 2. 現在地コントロールの設定
+    const geolocate = new maplibregl.GeolocateControl({
+        positionOptions: { enableHighAccuracy: true },
+        trackUserLocation: true, // 移動に合わせて追従
+        showUserLocation: true   // 自分の位置に青丸を表示
+    });
     map.addControl(geolocate);
 
-    // 2. 【重要】地図がロードされたら自動的に現在地を取得して移動する
-    geolocate.on('geolocate', (e) => {
-        // 初回のみズームレベルを調整して移動（お好みの数字に）
-        map.flyTo({
-            center: [e.coords.longitude, e.coords.latitude],
-            zoom: 14,
-            essential: true
+    map.on('load', () => {
+        // --- 起動時に自動で現在地を取得して移動 ---
+        // わずかな遅延を入れて確実にボタンをクリックさせる
+        setTimeout(() => {
+            const geoBtn = document.querySelector('.maplibregl-ctrl-geolocate');
+            if (geoBtn) geoBtn.click();
+        }, 800);
+
+        // --- データの追加 ---
+        map.addSource('shops', {
+            type: 'geojson',
+            data: shopData, // data.js 内の変数
+            cluster: true,
+            clusterMaxZoom: 14,
+            clusterRadius: 50
         });
+
+        // 密集地点（クラスター）の表示
+        map.addLayer({
+            id: 'clusters',
+            type: 'circle',
+            source: 'shops',
+            filter: ['has', 'point_count'],
+            paint: {
+                'circle-color': '#f5a623',
+                'circle-radius': ['step', ['get', 'point_count'], 20, 50, 30, 200, 40]
+            }
+        });
+
+        // クラスターの数字表示
+        map.addLayer({
+            id: 'cluster-count',
+            type: 'symbol',
+            source: 'shops',
+            filter: ['has', 'point_count'],
+            layout: {
+                'text-field': '{point_count}',
+                'text-font': ['Open Sans Bold'],
+                'text-size': 14
+            }
+        });
+
+        // 個別店舗のピン（オレンジの丸）
+        map.addLayer({
+            id: 'points',
+            type: 'circle',
+            source: 'shops',
+            filter: ['!', ['has', 'point_count']],
+            paint: {
+                'circle-color': '#ff6600',
+                'circle-radius': 9,
+                'circle-stroke-width': 2,
+                'circle-stroke-color': '#fff'
+            }
+        });
+
+        // --- タップイベント ---
+        map.on('click', 'points', (e) => {
+            const p = e.features[0].properties;
+            const c = e.features[0].geometry.coordinates;
+            
+            // Googleマップ連携用URL
+            const navUrl = `https://www.google.com/maps/dir/?api=1&destination=${c[1]},${c[0]}`;
+
+            new maplibregl.Popup({ closeButton: true, focusAfterOpen: false })
+                .setLngLat(c)
+                .setHTML(`
+                    <div class="popup-card">
+                        <span class="popup-title">${p.name}</span>
+                        <span class="popup-cat">${p.category}</span>
+                        <a href="${p.url}" target="_blank" class="btn btn-tabelog">食べログで詳細を見る</a>
+                        <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く (Googleナビ)</a>
+                    </div>
+                `)
+                .addTo(map);
+        });
+
+        // カーソル変更（PC用）
+        map.on('mouseenter', 'points', () => { map.getCanvas().style.cursor = 'pointer'; });
+        map.on('mouseleave', 'points', () => { map.getCanvas().style.cursor = ''; });
     });
-
-    // 3. ページを開いてすぐに位置測位を開始する
-    // ブラウザの「位置情報の許可」ダイアログが出ます
-    setTimeout(() => {
-        const btn = document.querySelector('.maplibregl-ctrl-geolocate');
-        if (btn) btn.click();
-    }, 500); // 0.5秒後に自動クリックを実行
-
-    // --- 以下、既存のaddSourceやaddLayerのコード ---
-    map.addSource('shops', { ... });
-    // ...
-});
 </script>
-</body>
 
+</body>
 </html>
