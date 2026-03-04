@@ -139,45 +139,51 @@
             toggle('check-shop', ['shop-bg', 'shop-icon']);
             toggle('check-castle', ['castle-bg', 'castle-icon']);
 
-            // --- 4. クリックイベント（レストラン） ---
-            map.on('click', 'shop-bg', (e) => {
-                const p = e.features[0].properties;
-                const c = e.features[0].geometry.coordinates;
-                const gmapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name)}&query_place_id=${c[1]},${c[0]}`;
-                const navUrl = `https://www.google.com/maps/dir/?api=1&destination=${c[1]},${c[0]}`;
-                new maplibregl.Popup()
-                    .setLngLat(c)
-                    .setHTML(`
-                        <div class="popup-card">
-                            <span class="popup-title">${p.name}</span>
-                            <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>
-                            <a href="${p.url}" target="_blank" class="btn btn-tabelog">食べログ</a>
-                            <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
-                        </div>
-                    `).addTo(map);
-            });
+// --- 4. クリックイベント（レストラン） ---
+map.on('click', 'shop-bg', (e) => {
+    const p = e.features[0].properties;
+    const c = e.features[0].geometry.coordinates;
+    
+    // 【GoogleMap】場所名（query）を主役に、座標をサブのヒント（query_place_id）として渡します
+    const gmapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name)}&query_place_id=${c[1]},${c[0]}`;
+    // 【ここへ行く】ダイレクトにルート検索画面を開く
+    const navUrl = `https://www.google.com/maps/dir/?api=1&destination=${c[1]},${c[0]}`;
+    
+    new maplibregl.Popup()
+        .setLngLat(c)
+        .setHTML(`
+            <div class="popup-card">
+                <span class="popup-title">${p.name}</span>
+                <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>
+                <a href="${p.url}" target="_blank" class="btn btn-tabelog">食べログ</a>
+                <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
+            </div>
+        `).addTo(map);
+});
 
-            // --- 5. クリックイベント（城） ---
-            map.on('click', 'castle-bg', (e) => {
-                const p = e.features[0].properties;
-                const c = e.features[0].geometry.coordinates;
-                const wikiUrl = `https://ja.wikipedia.org/wiki/${encodeURIComponent(p.name)}`;
-                const gmapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name)}&query_place_id=${c[1]},${c[0]}`;
-                const navUrl = `https://www.google.com/maps/dir/?api=1&destination=${c[1]},${c[0]}`;
+// --- 5. クリックイベント（城） ---
+map.on('click', 'castle-bg', (e) => {
+    const p = e.features[0].properties;
+    const c = e.features[0].geometry.coordinates;
+    const wikiUrl = `https://ja.wikipedia.org/wiki/${encodeURIComponent(p.name)}`;
+    
+    // 【GoogleMap】お城の名前で検索し、座標で場所のズレを補正します
+    const gmapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name)}&query_place_id=${c[1]},${c[0]}`;
+    // 【ここへ行く】ダイレクトにルート検索画面を開く
+    const navUrl = `https://www.google.com/maps/dir/?api=1&destination=${c[1]},${c[0]}`;
 
-                new maplibregl.Popup()
-                    .setLngLat(c)
-                    .setHTML(`
-                        <div class="popup-card">
-                            <span class="popup-title">${p.name}</span>
-                            ${p.genre ? `<span class="popup-genre">${p.genre}</span>` : ''}
-                            <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>
-                            <a href="${wikiUrl}" target="_blank" class="btn btn-wiki">Wikipedia</a>
-                            <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
-                        </div>
-                    `).addTo(map);
-            });
-
+    new maplibregl.Popup()
+        .setLngLat(c)
+        .setHTML(`
+            <div class="popup-card">
+                <span class="popup-title">${p.name}</span>
+                ${p.genre ? `<span class="popup-genre">${p.genre}</span>` : ''}
+                <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>
+                <a href="${wikiUrl}" target="_blank" class="btn btn-wiki">Wikipedia</a>
+                <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
+            </div>
+        `).addTo(map);
+});
             const setCursor = (layer) => {
                 map.on('mouseenter', layer, () => map.getCanvas().style.cursor = 'pointer');
                 map.on('mouseleave', layer, () => map.getCanvas().style.cursor = '');
@@ -189,3 +195,4 @@
 </script>
 </body>
 </html>
+
