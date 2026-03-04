@@ -64,7 +64,6 @@
     map.on('load', () => {
         setTimeout(() => { geolocate.trigger(); }, 1000);
 
-        // --- 画像の読み込み処理 ---
         const loadImageAsSDF = (url, id) => {
             return new Promise((resolve) => {
                 map.loadImage(url, (error, image) => {
@@ -79,7 +78,6 @@
             });
         };
 
-        // レストランと城のアイコンを両方ロード（castle.pngは後ほど用意）
         Promise.all([
             loadImageAsSDF('tabe.png', 'tabe-icon'),
             loadImageAsSDF('castle.png', 'castle-icon') 
@@ -123,9 +121,9 @@
                     'circle-color': [
                         'match',
                         ['get', 'genre'],
-                        '日本100名城', '#4285F4',     // 100名城
-                        '続日本100名城', '#EA4335',   // 続
-                        '#000000'                   // その他
+                        '日本100名城', '#4285F4',   // Google Blue
+                        '続日本100名城', '#EA4335', // Google Red
+                        '#000000'                   // その他（黒）
                     ],
                     'circle-radius': 12,
                     'circle-stroke-width': 1.5,
@@ -138,7 +136,7 @@
                 type: 'symbol',
                 source: 'castles',
                 layout: {
-                    'icon-image': 'castle-icon', // castle.pngがない間は表示されません
+                    'icon-image': 'castle-icon',
                     'icon-size': 0.35,
                     'icon-allow-overlap': true
                 },
@@ -159,14 +157,15 @@
             map.on('click', 'shop-bg', (e) => {
                 const p = e.features[0].properties;
                 const c = e.features[0].geometry.coordinates;
-                const navUrl = `https://www.google.com/maps/dir/?api=1&destination=${c[1]},${c[0]}`;
+                // レストランも名前で検索するように最適化
+                const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name)}&query_place_id=${c[1]},${c[0]}`;
                 new maplibregl.Popup()
                     .setLngLat(c)
                     .setHTML(`
                         <div class="popup-card">
                             <span class="popup-title">${p.name}</span>
                             <a href="${p.url}" target="_blank" class="btn btn-tabelog">食べログ</a>
-                            <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
+                            <a href="${googleMapsUrl}" target="_blank" class="btn btn-nav">Googleマップで表示</a>
                         </div>
                     `).addTo(map);
             });
@@ -174,9 +173,12 @@
             // --- 5. クリックイベント（城） ---
             map.on('click', 'castle-bg', (e) => {
                 const p = e.features[0].properties;
-                const c = e.features[0].geometry.coordinates;
+                const c = e.features[0].geometry.coordinates; // [経度, 緯度]
                 const wikiUrl = `https://ja.wikipedia.org/wiki/${encodeURIComponent(p.name)}`;
-                const navUrl = `https://www.google.com/maps/dir/?api=1&destination=${c[1]},${c[0]}`;
+                
+                // 城名を選択し、かつWikiの座標位置を優先して開くURL
+                const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name)}&query_place_id=${c[1]},${c[0]}`;
+
                 new maplibregl.Popup()
                     .setLngLat(c)
                     .setHTML(`
@@ -184,12 +186,11 @@
                             <span class="popup-title">${p.name}</span>
                             ${p.genre ? `<span class="popup-genre">${p.genre}</span>` : ''}
                             <a href="${wikiUrl}" target="_blank" class="btn btn-wiki">Wikipedia</a>
-                            <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
+                            <a href="${googleMapsUrl}" target="_blank" class="btn btn-nav">Googleマップで表示</a>
                         </div>
                     `).addTo(map);
             });
 
-            // カーソル変更
             const setCursor = (layer) => {
                 map.on('mouseenter', layer, () => map.getCanvas().style.cursor = 'pointer');
                 map.on('mouseleave', layer, () => map.getCanvas().style.cursor = '');
@@ -201,6 +202,3 @@
 </script>
 </body>
 </html>
-
-
-
