@@ -18,9 +18,9 @@
         .btn { display: block; text-align: center; padding: 10px; margin-top: 8px; border-radius: 8px; text-decoration: none; font-weight: bold; color: white; }
         .btn-tabelog { background: #ff6600; }
         .btn-wiki { background: #333333; }
-        .btn-nav { background: #4285f4; }
+        .btn-gmap { background: #4285f4; }
+        .btn-nav { background: #34A853; }
 
-        /* レイヤー切替メニュー */
         .menu-ui {
             position: absolute;
             top: 10px;
@@ -83,9 +83,8 @@
             loadImageAsSDF('castle.png', 'castle-icon') 
         ]).then(() => {
 
-            // --- 1. レストランデータのソースとレイヤー ---
+            // --- レストランレイヤー ---
             map.addSource('shops', { type: 'geojson', data: shopData });
-            
             map.addLayer({
                 id: 'shop-bg',
                 type: 'circle',
@@ -97,53 +96,40 @@
                     'circle-stroke-color': '#FFFFFF'
                 }
             });
-
             map.addLayer({
                 id: 'shop-icon',
                 type: 'symbol',
                 source: 'shops',
-                layout: {
-                    'icon-image': 'tabe-icon',
-                    'icon-size': 0.35,
-                    'icon-allow-overlap': true
-                },
+                layout: { 'icon-image': 'tabe-icon', 'icon-size': 0.35, 'icon-allow-overlap': true },
                 paint: { 'icon-color': '#FFFFFF' }
             });
 
-            // --- 2. 城データのソースとレイヤー ---
+            // --- 城レイヤー ---
             map.addSource('castles', { type: 'geojson', data: castleData });
-
             map.addLayer({
                 id: 'castle-bg',
                 type: 'circle',
                 source: 'castles',
                 paint: {
                     'circle-color': [
-                        'match',
-                        ['get', 'genre'],
-                        '日本100名城', '#4285F4',   // Google Blue
-                        '続日本100名城', '#EA4335', // Google Red
-                        '#000000'                   // その他（黒）
+                        'match', ['get', 'genre'],
+                        '日本100名城', '#4285F4',
+                        '続日本100名城', '#EA4335',
+                        '#000000'
                     ],
                     'circle-radius': 12,
                     'circle-stroke-width': 1.5,
                     'circle-stroke-color': '#FFFFFF'
                 }
             });
-
             map.addLayer({
                 id: 'castle-icon',
                 type: 'symbol',
                 source: 'castles',
-                layout: {
-                    'icon-image': 'castle-icon',
-                    'icon-size': 0.35,
-                    'icon-allow-overlap': true
-                },
+                layout: { 'icon-image': 'castle-icon', 'icon-size': 0.35, 'icon-allow-overlap': true },
                 paint: { 'icon-color': '#FFFFFF' }
             });
 
-            // --- 3. ON/OFF スイッチのロジック ---
             const toggle = (id, layers) => {
                 document.getElementById(id).addEventListener('change', (e) => {
                     const val = e.target.checked ? 'visible' : 'none';
@@ -157,15 +143,16 @@
             map.on('click', 'shop-bg', (e) => {
                 const p = e.features[0].properties;
                 const c = e.features[0].geometry.coordinates;
-                // レストランも名前で検索するように最適化
-                const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name)}&query_place_id=${c[1]},${c[0]}`;
+                const gmapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name)}&query_place_id=${c[1]},${c[0]}`;
+                const navUrl = `https://www.google.com/maps/dir/?api=1&destination=${c[1]},${c[0]}`;
                 new maplibregl.Popup()
                     .setLngLat(c)
                     .setHTML(`
                         <div class="popup-card">
                             <span class="popup-title">${p.name}</span>
+                            <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>
                             <a href="${p.url}" target="_blank" class="btn btn-tabelog">食べログ</a>
-                            <a href="${googleMapsUrl}" target="_blank" class="btn btn-nav">Googleマップで表示</a>
+                            <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
                         </div>
                     `).addTo(map);
             });
@@ -173,11 +160,10 @@
             // --- 5. クリックイベント（城） ---
             map.on('click', 'castle-bg', (e) => {
                 const p = e.features[0].properties;
-                const c = e.features[0].geometry.coordinates; // [経度, 緯度]
+                const c = e.features[0].geometry.coordinates;
                 const wikiUrl = `https://ja.wikipedia.org/wiki/${encodeURIComponent(p.name)}`;
-                
-                // 城名を選択し、かつWikiの座標位置を優先して開くURL
-                const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name)}&query_place_id=${c[1]},${c[0]}`;
+                const gmapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name)}&query_place_id=${c[1]},${c[0]}`;
+                const navUrl = `https://www.google.com/maps/dir/?api=1&destination=${c[1]},${c[0]}`;
 
                 new maplibregl.Popup()
                     .setLngLat(c)
@@ -185,8 +171,9 @@
                         <div class="popup-card">
                             <span class="popup-title">${p.name}</span>
                             ${p.genre ? `<span class="popup-genre">${p.genre}</span>` : ''}
+                            <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>
                             <a href="${wikiUrl}" target="_blank" class="btn btn-wiki">Wikipedia</a>
-                            <a href="${googleMapsUrl}" target="_blank" class="btn btn-nav">Googleマップで表示</a>
+                            <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
                         </div>
                     `).addTo(map);
             });
