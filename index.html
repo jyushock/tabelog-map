@@ -34,7 +34,7 @@
     <label><input type="checkbox" id="check-shop" checked> レストラン</label>
     <label><input type="checkbox" id="check-castle" checked> お城</label>
     <label><input type="checkbox" id="check-michi" checked> 道の駅</label>
-    <label><input type="checkbox" id="check-manhole" checked> マンホール</label>
+    <label><input type="checkbox" id="check-manhole" checked> マンホールカード</label>
 </div>
 
 <script>
@@ -56,7 +56,6 @@
     map.addControl(new maplibregl.GeolocateControl({ positionOptions: { enableHighAccuracy: true }, trackUserLocation: true, showUserLocation: true }));
 
     map.on('load', () => {
-        // すべての画像をSDFとして読み込み（色を白に変更可能にするため）
         const loadSDF = (url, id) => new Promise(res => map.loadImage(url, (err, img) => { map.addImage(id, img, {sdf:true}); res(); }));
 
         Promise.all([
@@ -66,22 +65,27 @@
             loadSDF('manhole.png', 'manhole-icon')
         ]).then(() => {
             const configs = [
-                { id: 'shops', data: shopData, color: '#FF9800', icon: 'tabe-icon', type: 'shop' },
-                { id: 'castles', data: castleData, color: '#4285F4', icon: 'castle-icon', type: 'castle' },
-                { id: 'michi', data: michiGeoJSON, color: '#34A853', icon: 'michi-icon', type: 'michi' },
-                { id: 'manholes', data: manholeGeoJSON, color: '#9E9E9E', icon: 'manhole-icon', type: 'manhole' }
+                { id: 'shops', data: shopData, color: '#FF9800', icon: 'tabe-icon', type: 'shop', clusterColor: '#FF9800' },
+                { id: 'castles', data: castleData, color: '#000000', icon: 'castle-icon', type: 'castle', clusterColor: '#000000' }, 
+                { id: 'michi', data: michiGeoJSON, color: '#34A853', icon: 'michi-icon', type: 'michi', clusterColor: '#34A853' },
+                { id: 'manholes', data: manholeGeoJSON, color: '#9E9E9E', icon: 'manhole-icon', type: 'manhole', clusterColor: '#9E9E9E' }
             ];
 
             configs.forEach(conf => {
                 map.addSource(conf.id, { type: 'geojson', data: conf.data, cluster: true, clusterMaxZoom: 13, clusterRadius: 50 });
 
-                // 1. クラスター（各ジャンル固有の色）
+                // クラスター
                 map.addLayer({
                     id: `${conf.id}-cluster`,
                     type: 'circle',
                     source: conf.id,
                     filter: ['has', 'point_count'],
-                    paint: { 'circle-color': conf.color, 'circle-radius': 18, 'circle-stroke-width': 2, 'circle-stroke-color': '#FFFFFF' }
+                    paint: { 
+                        'circle-color': conf.clusterColor, 
+                        'circle-radius': 18, 
+                        'circle-stroke-width': 2, 
+                        'circle-stroke-color': '#FFFFFF' 
+                    }
                 });
                 map.addLayer({
                     id: `${conf.id}-cluster-count`,
@@ -92,7 +96,7 @@
                     paint: { 'text-color': '#FFFFFF' }
                 });
 
-                // 2. 個別ピン背景円（マンホールもグレーの背景円を持つ）
+                // 個別ピン背景円（お城の色分け：青・赤・黒）
                 map.addLayer({
                     id: `${conf.id}-bg`,
                     type: 'circle',
@@ -101,15 +105,15 @@
                     paint: {
                         'circle-color': conf.type === 'castle' ? [
                             'match', ['get', 'genre'],
-                            '日本100名城', '#4285F4',
-                            '続日本100名城', '#EA4335',
-                            conf.color
+                            '日本100名城', '#4285F4', // 青
+                            '続日本100名城', '#EA4335', // 赤
+                            '#000000' // ★その他のお城は黒
                         ] : conf.color,
                         'circle-radius': 12, 'circle-stroke-width': 1.5, 'circle-stroke-color': '#FFFFFF'
                     }
                 });
 
-                // 3. 個別ピンアイコン（すべて白で描画）
+                // 個別ピンアイコン（白）
                 map.addLayer({
                     id: `${conf.id}-icon`,
                     type: 'symbol',
@@ -127,7 +131,14 @@
                     });
                 });
 
-                // クリックイベント
+                // イベント
+                map.on('click', `${conf.id}-cluster`, (e) => {
+                    const features = map.queryRenderedFeatures(e.point, { layers: [`${conf.id}-cluster`] });
+                    map.getSource(conf.id).getClusterExpansionZoom(features[0].properties.cluster_id, (err, zoom) => {
+                        if (!err) map.easeTo({ center: features[0].geometry.coordinates, zoom: zoom + 1 });
+                    });
+                });
+
                 map.on('click', `${conf.id}-bg`, (e) => {
                     const p = e.features[0].properties;
                     const c = e.features[0].geometry.coordinates;
@@ -173,4 +184,3 @@
 </script>
 </body>
 </html>
-
