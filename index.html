@@ -44,9 +44,7 @@
             font-weight: bold; 
             color: white; 
             font-size: 13px;
-            transition: opacity 0.2s;
         }
-        .btn:hover { opacity: 0.8; }
         .btn-nav { background: #34A853; }   /* 緑: ナビ */
         .btn-gmap { background: #4285f4; }  /* 青: GoogleMap */
         .btn-tabelog { background: #ff6600; } /* 橙: 食べログ */
@@ -81,7 +79,6 @@
 </div>
 
 <script>
-    // 道の駅データをGeoJSONに変換
     const michiGeoJSON = {
         type: 'FeatureCollection',
         features: michiNoEkiData.map(d => ({
@@ -95,7 +92,7 @@
         container: 'map',
         style: 'https://api.maptiler.com/maps/jp-mierune-streets/style.json?key=xEfXwvj7vY8GrgY26k3N',
         center: [138.0, 37.0],
-        zoom: 5 // 広域で見やすいように少しズームアウトして開始
+        zoom: 5
     });
 
     const geolocate = new maplibregl.GeolocateControl({
@@ -106,7 +103,6 @@
     map.addControl(geolocate);
 
     map.on('load', () => {
-        // 現在地にジャンプ
         setTimeout(() => { geolocate.trigger(); }, 1000);
 
         const loadImageAsSDF = (url, id) => {
@@ -119,7 +115,6 @@
             });
         };
 
-        // アイコンのロード（マンホール用も追加）
         Promise.all([
             loadImageAsSDF('tabe.png', 'tabe-icon'),
             loadImageAsSDF('castle.png', 'castle-icon'),
@@ -131,11 +126,11 @@
                 { id: 'shops', data: shopData, color: '#FF9800', icon: 'tabe-icon', type: 'shop' },
                 { id: 'castles', data: castleData, color: '#4285F4', icon: 'castle-icon', type: 'castle' },
                 { id: 'michi', data: michiGeoJSON, color: '#34A853', icon: 'michi-icon', type: 'michi' },
-                { id: 'manholes', data: manholeGeoJSON, color: '#9C27B0', icon: 'manhole-icon', type: 'manhole' }
+                // ★マンホールの背景色をGoogleグレー (#9E9E9E) に設定
+                { id: 'manholes', data: manholeGeoJSON, color: '#9E9E9E', icon: 'manhole-icon', type: 'manhole' }
             ];
 
             configs.forEach(conf => {
-                // 1. ソース追加（クラスター設定）
                 map.addSource(conf.id, {
                     type: 'geojson',
                     data: conf.data,
@@ -144,8 +139,7 @@
                     clusterRadius: 50
                 });
 
-                // 2. レイヤー作成（クラスター・背景・アイコン）
-                // クラスター円
+                // クラスター
                 map.addLayer({
                     id: `${conf.id}-cluster`,
                     type: 'circle',
@@ -159,7 +153,6 @@
                     }
                 });
 
-                // クラスター数字
                 map.addLayer({
                     id: `${conf.id}-cluster-count`,
                     type: 'symbol',
@@ -192,7 +185,7 @@
                     }
                 });
 
-                // 個別アイコン
+                // アイコン
                 map.addLayer({
                     id: `${conf.id}-icon`,
                     type: 'symbol',
@@ -202,7 +195,7 @@
                     paint: { 'icon-color': '#FFFFFF' }
                 });
 
-                // 3. UIトグル設定
+                // UIトグル
                 const checkMap = { 'shops': 'check-shop', 'castles': 'check-castle', 'michi': 'check-michi', 'manholes': 'check-manhole' };
                 document.getElementById(checkMap[conf.id]).addEventListener('change', (e) => {
                     const val = e.target.checked ? 'visible' : 'none';
@@ -211,7 +204,6 @@
                     });
                 });
 
-                // 4. イベント設定
                 // クラスタークリック
                 map.on('click', `${conf.id}-cluster`, (e) => {
                     const features = map.queryRenderedFeatures(e.point, { layers: [`${conf.id}-cluster`] });
@@ -221,12 +213,10 @@
                     });
                 });
 
-                // 個別クリック（ポップアップ）
+                // ポップアップ（画像・ナビ付き）
                 map.on('click', `${conf.id}-bg`, (e) => {
                     const p = e.features[0].properties;
                     const c = e.features[0].geometry.coordinates;
-                    
-                    // URL生成
                     const gmapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name)}`;
                     const navUrl = `https://www.google.com/maps/dir/?api=1&destination=${c[1]},${c[0]}`;
                     
@@ -236,7 +226,6 @@
                     if(conf.type === 'shop') extraBtn = `<a href="${p.url}" target="_blank" class="btn btn-tabelog">食べログで詳細</a>`;
                     if(conf.type === 'castle') extraBtn = `<a href="https://ja.wikipedia.org/wiki/${encodeURIComponent(p.name)}" target="_blank" class="btn btn-wiki">Wikipedia</a>`;
                     
-                    // マンホール限定: 画像表示
                     if(conf.type === 'manhole' && p.cardId) {
                         const imgUrl = `https://ekikaramanhole.whitebeach.org/ext/manholecard/image/getimage.cgi?file=card/${p.cardId}.jpg`;
                         imgHtml = `<div class="manhole-img-container"><img src="${imgUrl}" class="manhole-img" alt="Card Image"></div>`;
@@ -248,15 +237,14 @@
                             <span class="popup-genre">${p.genre || ""}</span>
                             ${imgHtml}
                             <div class="btn-container">
-                                <a href="${navUrl}" target="_blank" class="btn btn-nav">🚗 ここへ行く</a>
-                                <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap周辺検索</a>
+                                <a href="${navUrl}" target="_blank" class="btn btn-nav">🚗 ここへ行く (ナビ)</a>
+                                <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMapで周辺検索</a>
                                 ${extraBtn}
                             </div>
                         </div>
                     `).addTo(map);
                 });
 
-                // カーソル制御
                 const layers = [`${conf.id}-cluster`, `${conf.id}-bg`];
                 layers.forEach(l => {
                     map.on('mouseenter', l, () => map.getCanvas().style.cursor = 'pointer');
