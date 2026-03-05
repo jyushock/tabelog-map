@@ -3,16 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <title>カスタムマップ</title>
-    <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
     <link href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" rel="stylesheet" />
-    
     <script src="data.js"></script>
     <script src="castle.js"></script>
     <script src="michi.js"></script>
     <script src="manhole.js"></script> 
-
     <style>
         body { margin: 0; padding: 0; }
         #map { position: absolute; top: 0; bottom: 0; width: 100%; }
@@ -32,7 +29,6 @@
     </style>
 </head>
 <body>
-
 <div id="map"></div>
 <div class="menu-ui">
     <label><input type="checkbox" id="check-shop" checked> レストラン</label>
@@ -57,41 +53,29 @@
         center: [139.76, 35.68],
         zoom: 11
     });
-
-    const geolocate = new maplibregl.GeolocateControl({ positionOptions: { enableHighAccuracy: true }, trackUserLocation: true, showUserLocation: true });
-    map.addControl(geolocate);
+    map.addControl(new maplibregl.GeolocateControl({ positionOptions: { enableHighAccuracy: true }, trackUserLocation: true, showUserLocation: true }));
 
     map.on('load', () => {
-        setTimeout(() => { geolocate.trigger(); }, 1000);
+        // すべての画像をSDFとして読み込み（色を白に変更可能にするため）
+        const loadSDF = (url, id) => new Promise(res => map.loadImage(url, (err, img) => { map.addImage(id, img, {sdf:true}); res(); }));
 
-        const loadImageAsSDF = (url, id) => {
-            return new Promise((resolve) => {
-                map.loadImage(url, (error, image) => {
-                    if (error) { resolve(); return; }
-                    map.addImage(id, image, { sdf: true });
-                    resolve();
-                });
-            });
-        };
-
-        // レストラン、お城、道の駅用のアイコンのみロード
         Promise.all([
-            loadImageAsSDF('tabe.png', 'tabe-icon'),
-            loadImageAsSDF('castle.png', 'castle-icon'),
-            loadImageAsSDF('michi.png', 'michi-icon')
+            loadSDF('tabe.png', 'tabe-icon'),
+            loadSDF('castle.png', 'castle-icon'),
+            loadSDF('michi.png', 'michi-icon'),
+            loadSDF('manhole.png', 'manhole-icon')
         ]).then(() => {
-
             const configs = [
                 { id: 'shops', data: shopData, color: '#FF9800', icon: 'tabe-icon', type: 'shop' },
                 { id: 'castles', data: castleData, color: '#4285F4', icon: 'castle-icon', type: 'castle' },
                 { id: 'michi', data: michiGeoJSON, color: '#34A853', icon: 'michi-icon', type: 'michi' },
-                { id: 'manholes', data: manholeGeoJSON, color: '#9E9E9E', icon: null, type: 'manhole' }
+                { id: 'manholes', data: manholeGeoJSON, color: '#9E9E9E', icon: 'manhole-icon', type: 'manhole' }
             ];
 
             configs.forEach(conf => {
                 map.addSource(conf.id, { type: 'geojson', data: conf.data, cluster: true, clusterMaxZoom: 13, clusterRadius: 50 });
 
-                // クラスター（元の色）
+                // 1. クラスター（各ジャンル固有の色）
                 map.addLayer({
                     id: `${conf.id}-cluster`,
                     type: 'circle',
@@ -108,92 +92,81 @@
                     paint: { 'text-color': '#FFFFFF' }
                 });
 
-                // 個別ピン背景
+                // 2. 個別ピン背景円（マンホールもグレーの背景円を持つ）
                 map.addLayer({
                     id: `${conf.id}-bg`,
                     type: 'circle',
                     source: conf.id,
                     filter: ['!', ['has', 'point_count']],
                     paint: {
-                        'circle-color': conf.id === 'castles' ? [
+                        'circle-color': conf.type === 'castle' ? [
                             'match', ['get', 'genre'],
                             '日本100名城', '#4285F4',
                             '続日本100名城', '#EA4335',
                             conf.color
                         ] : conf.color,
-                        'circle-radius': 12,
-                        'circle-stroke-width': 1.5,
-                        'circle-stroke-color': '#FFFFFF'
+                        'circle-radius': 12, 'circle-stroke-width': 1.5, 'circle-stroke-color': '#FFFFFF'
                     }
                 });
 
-                // アイコン表示（マンホール以外のみ描画）
-                if (conf.icon) {
-                    map.addLayer({
-                        id: `${conf.id}-icon`,
-                        type: 'symbol',
-                        source: conf.id,
-                        filter: ['!', ['has', 'point_count']],
-                        layout: { 'icon-image': conf.icon, 'icon-size': 0.35, 'icon-allow-overlap': true },
-                        paint: { 'icon-color': '#FFFFFF' } // アイコンの色は白
-                    });
-                }
-
-                // UI連動
-                const checkMap = { 'shops': 'check-shop', 'castles': 'check-castle', 'michi': 'check-michi', 'manholes': 'check-manhole' };
-                document.getElementById(checkMap[conf.id]).addEventListener('change', (e) => {
-                    const val = e.target.checked ? 'visible' : 'none';
-                    const targetLayers = [`${conf.id}-cluster`, `${conf.id}-cluster-count`, `${conf.id}-bg`];
-                    if(conf.icon) targetLayers.push(`${conf.id}-icon`);
-                    targetLayers.forEach(l => map.setLayoutProperty(l, 'visibility', val));
+                // 3. 個別ピンアイコン（すべて白で描画）
+                map.addLayer({
+                    id: `${conf.id}-icon`,
+                    type: 'symbol',
+                    source: conf.id,
+                    filter: ['!', ['has', 'point_count']],
+                    layout: { 'icon-image': conf.icon, 'icon-size': 0.35, 'icon-allow-overlap': true },
+                    paint: { 'icon-color': '#FFFFFF' }
                 });
 
-                // ポップアップイベント
+                // UI連動
+                document.getElementById(`check-${conf.type === 'shop' ? 'shop' : conf.type === 'castle' ? 'castle' : conf.type === 'michi' ? 'michi' : 'manhole'}`).addEventListener('change', (e) => {
+                    const val = e.target.checked ? 'visible' : 'none';
+                    [`${conf.id}-cluster`, `${conf.id}-cluster-count`, `${conf.id}-bg`, `${conf.id}-icon`].forEach(l => {
+                        if (map.getLayer(l)) map.setLayoutProperty(l, 'visibility', val);
+                    });
+                });
+
+                // クリックイベント
                 map.on('click', `${conf.id}-bg`, (e) => {
                     const p = e.features[0].properties;
                     const c = e.features[0].geometry.coordinates;
-                    const navUrl = `http://googleusercontent.com/maps.google.com/5{c[1]},${c[0]}`;
+                    const navUrl = `https://www.google.com/maps/dir/?api=1&destination=${c[1]},${c[0]}`;
                     
-                    let bodyHtml = "";
-
-                    if(conf.type === 'manhole') {
-                        // マンホール：画像と「ここへ行く」のみ
+                    if (conf.type === 'manhole') {
                         const imgUrl = p.cardId ? `https://ekikaramanhole.whitebeach.org/ext/manholecard/image/getimage.cgi?file=card/${p.cardId}.jpg` : "";
-                        bodyHtml = `
-                            ${imgUrl ? `<div class="manhole-img-container"><img src="${imgUrl}" class="manhole-img"></div>` : ""}
-                            <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
-                        `;
+                        new maplibregl.Popup({closeButton: false}).setLngLat(c).setHTML(`
+                            <div class="popup-card">
+                                <span class="popup-title">${p.name}</span>
+                                <span class="popup-genre">${p.genre || ""}</span>
+                                ${imgUrl ? `<div class="manhole-img-container"><img src="${imgUrl}" class="manhole-img"></div>` : ""}
+                                <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
+                            </div>
+                        `).addTo(map);
                     } else {
-                        // その他：GoogleMapボタン、特定サイトボタン
-                        const gmapUrl = `http://googleusercontent.com/maps.google.com/6{encodeURIComponent(p.name)}`;
+                        const gmapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name)}`;
                         let extraBtn = "";
                         if(conf.type === 'shop') extraBtn = `<a href="${p.url}" target="_blank" class="btn btn-tabelog">食べログ</a>`;
                         if(conf.type === 'castle') extraBtn = `<a href="https://ja.wikipedia.org/wiki/${encodeURIComponent(p.name)}" target="_blank" class="btn btn-wiki">Wikipedia</a>`;
                         
-                        bodyHtml = `
-                            <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>
-                            ${extraBtn}
-                            <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
-                        `;
+                        new maplibregl.Popup({closeButton: false}).setLngLat(c).setHTML(`
+                            <div class="popup-card">
+                                <span class="popup-title">${p.name}</span>
+                                <span class="popup-genre">${p.genre || ""}</span>
+                                <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>
+                                ${extraBtn}
+                                <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
+                            </div>
+                        `).addTo(map);
                     }
-
-                    new maplibregl.Popup().setLngLat(c).setHTML(`
-                        <div class="popup-card">
-                            <span class="popup-title">${p.name}</span>
-                            <span class="popup-genre">${p.genre || ""}</span>
-                            ${bodyHtml}
-                        </div>
-                    `).addTo(map);
                 });
-
-                map.on('mouseenter', `${conf.id}-bg`, () => map.getCanvas().style.cursor = 'pointer');
-                map.on('mouseleave', `${conf.id}-bg`, () => map.getCanvas().style.cursor = '');
-                map.on('click', `${conf.id}-cluster`, (e) => {
-                    const features = map.queryRenderedFeatures(e.point, { layers: [`${conf.id}-cluster`] });
-                    map.getSource(conf.id).getClusterExpansionZoom(features[0].properties.cluster_id, (err, zoom) => {
-                        if (!err) map.easeTo({ center: features[0].geometry.coordinates, zoom: zoom + 1 });
-                    });
-                });
+                
+                const hover = (l, c) => { 
+                    map.on('mouseenter', l, () => map.getCanvas().style.cursor = c); 
+                    map.on('mouseleave', l, () => map.getCanvas().style.cursor = ''); 
+                };
+                hover(`${conf.id}-bg`, 'pointer');
+                hover(`${conf.id}-cluster`, 'pointer');
             });
         });
     });
