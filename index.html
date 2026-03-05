@@ -2,14 +2,14 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8" />
-    <title>100名店＆名城カスタムマップ</title>
+    <title>100名店＆名城＆道の駅カスタムマップ</title>
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
     <link href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" rel="stylesheet" />
     <script src="data.js"></script>
     <script src="castle.js"></script>
-    <style>
+    <script src="michi.js"></script> <style>
         body { margin: 0; padding: 0; }
         #map { position: absolute; top: 0; bottom: 0; width: 100%; }
         .popup-card { min-width: 200px; padding: 10px; }
@@ -44,9 +44,19 @@
 <div class="menu-ui">
     <label><input type="checkbox" id="check-shop" checked> レストラン (100名店)</label>
     <label><input type="checkbox" id="check-castle" checked> お城 (Wikipedia)</label>
-</div>
+    <label><input type="checkbox" id="check-michi" checked> 道の駅</label> </div>
 
 <script>
+    // michi.jsのデータ形式をGeoJSONに変換する関数
+    const michiGeoJSON = {
+        type: 'FeatureCollection',
+        features: michiNoEkiData.map(d => ({
+            type: 'Feature',
+            geometry: { type: 'Point', coordinates: [d.lon, d.lat] },
+            properties: { name: d.name }
+        }))
+    };
+
     const map = new maplibregl.Map({
         container: 'map',
         style: 'https://api.maptiler.com/maps/jp-mierune-streets/style.json?key=xEfXwvj7vY8GrgY26k3N',
@@ -80,26 +90,18 @@
 
         Promise.all([
             loadImageAsSDF('tabe.png', 'tabe-icon'),
-            loadImageAsSDF('castle.png', 'castle-icon') 
+            loadImageAsSDF('castle.png', 'castle-icon'),
+            loadImageAsSDF('michi.png', 'michi-icon') // 追加
         ]).then(() => {
 
             // --- レストランレイヤー ---
             map.addSource('shops', { type: 'geojson', data: shopData });
             map.addLayer({
-                id: 'shop-bg',
-                type: 'circle',
-                source: 'shops',
-                paint: {
-                    'circle-color': '#FF9800',
-                    'circle-radius': 12,
-                    'circle-stroke-width': 1.5,
-                    'circle-stroke-color': '#FFFFFF'
-                }
+                id: 'shop-bg', type: 'circle', source: 'shops',
+                paint: { 'circle-color': '#FF9800', 'circle-radius': 12, 'circle-stroke-width': 1.5, 'circle-stroke-color': '#FFFFFF' }
             });
             map.addLayer({
-                id: 'shop-icon',
-                type: 'symbol',
-                source: 'shops',
+                id: 'shop-icon', type: 'symbol', source: 'shops',
                 layout: { 'icon-image': 'tabe-icon', 'icon-size': 0.35, 'icon-allow-overlap': true },
                 paint: { 'icon-color': '#FFFFFF' }
             });
@@ -107,9 +109,7 @@
             // --- 城レイヤー ---
             map.addSource('castles', { type: 'geojson', data: castleData });
             map.addLayer({
-                id: 'castle-bg',
-                type: 'circle',
-                source: 'castles',
+                id: 'castle-bg', type: 'circle', source: 'castles',
                 paint: {
                     'circle-color': [
                         'match', ['get', 'genre'],
@@ -117,19 +117,31 @@
                         '続日本100名城', '#EA4335',
                         '#000000'
                     ],
-                    'circle-radius': 12,
-                    'circle-stroke-width': 1.5,
-                    'circle-stroke-color': '#FFFFFF'
+                    'circle-radius': 12, 'circle-stroke-width': 1.5, 'circle-stroke-color': '#FFFFFF'
                 }
             });
             map.addLayer({
-                id: 'castle-icon',
-                type: 'symbol',
-                source: 'castles',
+                id: 'castle-icon', type: 'symbol', source: 'castles',
                 layout: { 'icon-image': 'castle-icon', 'icon-size': 0.35, 'icon-allow-overlap': true },
                 paint: { 'icon-color': '#FFFFFF' }
             });
 
+            // --- 道の駅レイヤー ---
+            map.addSource('michi', { type: 'geojson', data: michiGeoJSON });
+            map.addLayer({
+                id: 'michi-bg', type: 'circle', source: 'michi',
+                paint: {
+                    'circle-color': '#34A853', // Google緑
+                    'circle-radius': 12, 'circle-stroke-width': 1.5, 'circle-stroke-color': '#FFFFFF'
+                }
+            });
+            map.addLayer({
+                id: 'michi-icon', type: 'symbol', source: 'michi',
+                layout: { 'icon-image': 'michi-icon', 'icon-size': 0.35, 'icon-allow-overlap': true },
+                paint: { 'icon-color': '#FFFFFF' }
+            });
+
+            // ON/OFF切り替えロジック
             const toggle = (id, layers) => {
                 document.getElementById(id).addEventListener('change', (e) => {
                     const val = e.target.checked ? 'visible' : 'none';
@@ -138,61 +150,63 @@
             };
             toggle('check-shop', ['shop-bg', 'shop-icon']);
             toggle('check-castle', ['castle-bg', 'castle-icon']);
+            toggle('check-michi', ['michi-bg', 'michi-icon']);
 
-// --- 4. クリックイベント（レストラン） ---
-map.on('click', 'shop-bg', (e) => {
-    const p = e.features[0].properties;
-    const c = e.features[0].geometry.coordinates;
-    
-    // 【GoogleMap】場所名（query）を主役に、座標をサブのヒント（query_place_id）として渡します
-    const gmapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name)}&query_place_id=${c[1]},${c[0]}`;
-    // 【ここへ行く】ダイレクトにルート検索画面を開く
-    const navUrl = `https://www.google.com/maps/dir/?api=1&destination=${c[1]},${c[0]}`;
-    
-    new maplibregl.Popup()
-        .setLngLat(c)
-        .setHTML(`
-            <div class="popup-card">
-                <span class="popup-title">${p.name}</span>
-                <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>
-                <a href="${p.url}" target="_blank" class="btn btn-tabelog">食べログ</a>
-                <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
-            </div>
-        `).addTo(map);
-});
+            // --- クリックイベント（道の駅） ---
+            map.on('click', 'michi-bg', (e) => {
+                const p = e.features[0].properties;
+                const c = e.features[0].geometry.coordinates;
+                const gmapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name)}&query_place_id=${c[1]},${c[0]}`;
+                const navUrl = `https://www.google.com/maps/dir/?api=1&destination=${c[1]},${c[0]}`;
 
-// --- 5. クリックイベント（城） ---
-map.on('click', 'castle-bg', (e) => {
-    const p = e.features[0].properties;
-    const c = e.features[0].geometry.coordinates;
-    const wikiUrl = `https://ja.wikipedia.org/wiki/${encodeURIComponent(p.name)}`;
-    
-    // 【GoogleMap】お城の名前で検索し、座標で場所のズレを補正します
-    const gmapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name)}&query_place_id=${c[1]},${c[0]}`;
-    // 【ここへ行く】ダイレクトにルート検索画面を開く
-    const navUrl = `https://www.google.com/maps/dir/?api=1&destination=${c[1]},${c[0]}`;
+                new maplibregl.Popup()
+                    .setLngLat(c)
+                    .setHTML(`
+                        <div class="popup-card">
+                            <span class="popup-title">${p.name}</span>
+                            <span class="popup-genre">道の駅</span>
+                            <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>
+                            <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
+                        </div>
+                    `).addTo(map);
+            });
 
-    new maplibregl.Popup()
-        .setLngLat(c)
-        .setHTML(`
-            <div class="popup-card">
-                <span class="popup-title">${p.name}</span>
-                ${p.genre ? `<span class="popup-genre">${p.genre}</span>` : ''}
-                <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>
-                <a href="${wikiUrl}" target="_blank" class="btn btn-wiki">Wikipedia</a>
-                <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
-            </div>
-        `).addTo(map);
-});
+            // 他のクリックイベント（既存）
+            const attachPopup = (layerId, type) => {
+                map.on('click', layerId, (e) => {
+                    const p = e.features[0].properties;
+                    const c = e.features[0].geometry.coordinates;
+                    const gmapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name)}&query_place_id=${c[1]},${c[0]}`;
+                    const navUrl = `https://www.google.com/maps/dir/?api=1&destination=${c[1]},${c[0]}`;
+                    
+                    let extraBtn = "";
+                    if(type === 'shop') extraBtn = `<a href="${p.url}" target="_blank" class="btn btn-tabelog">食べログ</a>`;
+                    if(type === 'castle') extraBtn = `<a href="https://ja.wikipedia.org/wiki/${encodeURIComponent(p.name)}" target="_blank" class="btn btn-wiki">Wikipedia</a>`;
+
+                    new maplibregl.Popup().setLngLat(c).setHTML(`
+                        <div class="popup-card">
+                            <span class="popup-title">${p.name}</span>
+                            ${p.genre ? `<span class="popup-genre">${p.genre}</span>` : ''}
+                            <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>
+                            ${extraBtn}
+                            <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
+                        </div>
+                    `).addTo(map);
+                });
+            };
+
+            attachPopup('shop-bg', 'shop');
+            attachPopup('castle-bg', 'castle');
+
             const setCursor = (layer) => {
                 map.on('mouseenter', layer, () => map.getCanvas().style.cursor = 'pointer');
                 map.on('mouseleave', layer, () => map.getCanvas().style.cursor = '');
             };
             setCursor('shop-bg');
             setCursor('castle-bg');
+            setCursor('michi-bg');
         });
     });
 </script>
 </body>
 </html>
-
