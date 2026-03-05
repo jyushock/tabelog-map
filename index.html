@@ -9,7 +9,8 @@
     <link href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" rel="stylesheet" />
     <script src="data.js"></script>
     <script src="castle.js"></script>
-    <script src="michi.js"></script> <style>
+    <script src="michi.js"></script>
+    <style>
         body { margin: 0; padding: 0; }
         #map { position: absolute; top: 0; bottom: 0; width: 100%; }
         .popup-card { min-width: 200px; padding: 10px; }
@@ -42,18 +43,19 @@
 <div id="map"></div>
 
 <div class="menu-ui">
-    <label><input type="checkbox" id="check-shop" checked> レストラン </label>
-    <label><input type="checkbox" id="check-castle" checked> お城 </label>
-    <label><input type="checkbox" id="check-michi" checked> 道の駅 </label> </div>
+    <label><input type="checkbox" id="check-shop" checked> レストラン (100名店)</label>
+    <label><input type="checkbox" id="check-castle" checked> お城 (Wikipedia)</label>
+    <label><input type="checkbox" id="check-michi" checked> 道の駅</label>
+</div>
 
 <script>
-    // michi.jsのデータ形式をGeoJSONに変換する関数
+    // michi.jsのデータ形式をGeoJSONに変換
     const michiGeoJSON = {
         type: 'FeatureCollection',
         features: michiNoEkiData.map(d => ({
             type: 'Feature',
             geometry: { type: 'Point', coordinates: [d.lon, d.lat] },
-            properties: { name: d.name }
+            properties: { name: d.name, genre: '道の駅' }
         }))
     };
 
@@ -77,11 +79,7 @@
         const loadImageAsSDF = (url, id) => {
             return new Promise((resolve) => {
                 map.loadImage(url, (error, image) => {
-                    if (error) {
-                        console.error(error);
-                        resolve();
-                        return;
-                    }
+                    if (error) { resolve(); return; }
                     map.addImage(id, image, { sdf: true });
                     resolve();
                 });
@@ -91,92 +89,120 @@
         Promise.all([
             loadImageAsSDF('tabe.png', 'tabe-icon'),
             loadImageAsSDF('castle.png', 'castle-icon'),
-            loadImageAsSDF('michi.png', 'michi-icon') // 追加
+            loadImageAsSDF('michi.png', 'michi-icon')
         ]).then(() => {
 
-            // --- レストランレイヤー ---
-            map.addSource('shops', { type: 'geojson', data: shopData });
-            map.addLayer({
-                id: 'shop-bg', type: 'circle', source: 'shops',
-                paint: { 'circle-color': '#FF9800', 'circle-radius': 12, 'circle-stroke-width': 1.5, 'circle-stroke-color': '#FFFFFF' }
-            });
-            map.addLayer({
-                id: 'shop-icon', type: 'symbol', source: 'shops',
-                layout: { 'icon-image': 'tabe-icon', 'icon-size': 0.35, 'icon-allow-overlap': true },
-                paint: { 'icon-color': '#FFFFFF' }
+            // --- ソースの追加（クラスター設定有効） ---
+            const sources = [
+                { id: 'shops', data: shopData },
+                { id: 'castles', data: castleData },
+                { id: 'michi', data: michiGeoJSON }
+            ];
+
+            sources.forEach(src => {
+                map.addSource(src.id, {
+                    type: 'geojson',
+                    data: src.data,
+                    cluster: true,
+                    clusterMaxZoom: 13,
+                    clusterRadius: 50
+                });
             });
 
-            // --- 城レイヤー ---
-            map.addSource('castles', { type: 'geojson', data: castleData });
-            map.addLayer({
-                id: 'castle-bg', type: 'circle', source: 'castles',
-                paint: {
-                    'circle-color': [
-                        'match', ['get', 'genre'],
-                        '日本100名城', '#4285F4',
-                        '続日本100名城', '#EA4335',
-                        '#000000'
-                    ],
-                    'circle-radius': 12, 'circle-stroke-width': 1.5, 'circle-stroke-color': '#FFFFFF'
-                }
-            });
-            map.addLayer({
-                id: 'castle-icon', type: 'symbol', source: 'castles',
-                layout: { 'icon-image': 'castle-icon', 'icon-size': 0.35, 'icon-allow-overlap': true },
-                paint: { 'icon-color': '#FFFFFF' }
-            });
+            // --- レイヤー追加関数（クラスター用と個別用） ---
+            const createLayers = (id, color, iconId, isCastle = false) => {
+                // クラスターの円
+                map.addLayer({
+                    id: `${id}-cluster`,
+                    type: 'circle',
+                    source: id,
+                    filter: ['has', 'point_count'],
+                    paint: {
+                        'circle-color': color,
+                        'circle-radius': 18,
+                        'circle-stroke-width': 2,
+                        'circle-stroke-color': '#FFFFFF'
+                    }
+                });
 
-            // --- 道の駅レイヤー ---
-            map.addSource('michi', { type: 'geojson', data: michiGeoJSON });
-            map.addLayer({
-                id: 'michi-bg', type: 'circle', source: 'michi',
-                paint: {
-                    'circle-color': '#34A853', // Google緑
-                    'circle-radius': 12, 'circle-stroke-width': 1.5, 'circle-stroke-color': '#FFFFFF'
-                }
-            });
-            map.addLayer({
-                id: 'michi-icon', type: 'symbol', source: 'michi',
-                layout: { 'icon-image': 'michi-icon', 'icon-size': 0.35, 'icon-allow-overlap': true },
-                paint: { 'icon-color': '#FFFFFF' }
-            });
+                // クラスターの数字
+                map.addLayer({
+                    id: `${id}-cluster-count`,
+                    type: 'symbol',
+                    source: id,
+                    filter: ['has', 'point_count'],
+                    layout: {
+                        'text-field': '{point_count_abbreviated}',
+                        'text-size': 12,
+                        'text-font': ['Open Sans Bold']
+                    },
+                    paint: { 'text-color': '#FFFFFF' }
+                });
 
-            // ON/OFF切り替えロジック
-            const toggle = (id, layers) => {
-                document.getElementById(id).addEventListener('change', (e) => {
+                // 個別ピンの背景
+                map.addLayer({
+                    id: `${id}-bg`,
+                    type: 'circle',
+                    source: id,
+                    filter: ['!', ['has', 'point_count']],
+                    paint: {
+                        'circle-color': isCastle ? [
+                            'match', ['get', 'genre'],
+                            '日本100名城', '#4285F4',
+                            '続日本100名城', '#EA4335',
+                            color
+                        ] : color,
+                        'circle-radius': 12,
+                        'circle-stroke-width': 1.5,
+                        'circle-stroke-color': '#FFFFFF'
+                    }
+                });
+
+                // 個別ピンのアイコン
+                map.addLayer({
+                    id: `${id}-icon`,
+                    type: 'symbol',
+                    source: id,
+                    filter: ['!', ['has', 'point_count']],
+                    layout: { 'icon-image': iconId, 'icon-size': 0.35, 'icon-allow-overlap': true },
+                    paint: { 'icon-color': '#FFFFFF' }
+                });
+            };
+
+            // レイヤー作成実行
+            createLayers('shops', '#FF9800', 'tabe-icon');
+            createLayers('castles', '#4285F4', 'castle-icon', true);
+            createLayers('michi', '#34A853', 'michi-icon');
+
+            // --- UI制御（ON/OFF） ---
+            const toggle = (checkId, prefix) => {
+                const layers = [`${prefix}-cluster`, `${prefix}-cluster-count`, `${prefix}-bg`, `${prefix}-icon`];
+                document.getElementById(checkId).addEventListener('change', (e) => {
                     const val = e.target.checked ? 'visible' : 'none';
                     layers.forEach(l => map.setLayoutProperty(l, 'visibility', val));
                 });
             };
-            toggle('check-shop', ['shop-bg', 'shop-icon']);
-            toggle('check-castle', ['castle-bg', 'castle-icon']);
-            toggle('check-michi', ['michi-bg', 'michi-icon']);
+            toggle('check-shop', 'shops');
+            toggle('check-castle', 'castles');
+            toggle('check-michi', 'michi');
 
-            // --- クリックイベント（道の駅） ---
-            map.on('click', 'michi-bg', (e) => {
-                const p = e.features[0].properties;
-                const c = e.features[0].geometry.coordinates;
-                const gmapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name)}&query_place_id=${c[1]},${c[0]}`;
-                const navUrl = `https://www.google.com/maps/dir/?api=1&destination=${c[1]},${c[0]}`;
+            // --- クリックイベント制御 ---
+            const attachEvents = (prefix, type) => {
+                // クラスタークリックでズーム
+                map.on('click', `${prefix}-cluster`, (e) => {
+                    const features = map.queryRenderedFeatures(e.point, { layers: [`${prefix}-cluster`] });
+                    const clusterId = features[0].properties.cluster_id;
+                    map.getSource(prefix).getClusterExpansionZoom(clusterId, (err, zoom) => {
+                        if (err) return;
+                        map.easeTo({ center: features[0].geometry.coordinates, zoom: zoom + 1 });
+                    });
+                });
 
-                new maplibregl.Popup()
-                    .setLngLat(c)
-                    .setHTML(`
-                        <div class="popup-card">
-                            <span class="popup-title">${p.name}</span>
-                            <span class="popup-genre">道の駅</span>
-                            <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>
-                            <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
-                        </div>
-                    `).addTo(map);
-            });
-
-            // 他のクリックイベント（既存）
-            const attachPopup = (layerId, type) => {
-                map.on('click', layerId, (e) => {
+                // 個別ピンクリックでポップアップ
+                map.on('click', `${prefix}-bg`, (e) => {
                     const p = e.features[0].properties;
                     const c = e.features[0].geometry.coordinates;
-                    const gmapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name)}&query_place_id=${c[1]},${c[0]}`;
+                    const gmapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name)}`;
                     const navUrl = `https://www.google.com/maps/dir/?api=1&destination=${c[1]},${c[0]}`;
                     
                     let extraBtn = "";
@@ -186,28 +212,26 @@
                     new maplibregl.Popup().setLngLat(c).setHTML(`
                         <div class="popup-card">
                             <span class="popup-title">${p.name}</span>
-                            ${p.genre ? `<span class="popup-genre">${p.genre}</span>` : ''}
+                            <span class="popup-genre">${p.genre || ""}</span>
                             <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>
                             ${extraBtn}
                             <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
                         </div>
                     `).addTo(map);
                 });
+
+                // カーソル制御
+                map.on('mouseenter', `${prefix}-cluster`, () => map.getCanvas().style.cursor = 'pointer');
+                map.on('mouseleave', `${prefix}-cluster`, () => map.getCanvas().style.cursor = '');
+                map.on('mouseenter', `${prefix}-bg`, () => map.getCanvas().style.cursor = 'pointer');
+                map.on('mouseleave', `${prefix}-bg`, () => map.getCanvas().style.cursor = '');
             };
 
-            attachPopup('shop-bg', 'shop');
-            attachPopup('castle-bg', 'castle');
-
-            const setCursor = (layer) => {
-                map.on('mouseenter', layer, () => map.getCanvas().style.cursor = 'pointer');
-                map.on('mouseleave', layer, () => map.getCanvas().style.cursor = '');
-            };
-            setCursor('shop-bg');
-            setCursor('castle-bg');
-            setCursor('michi-bg');
+            attachEvents('shops', 'shop');
+            attachEvents('castles', 'castle');
+            attachEvents('michi', 'michi');
         });
     });
 </script>
 </body>
 </html>
-
