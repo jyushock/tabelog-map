@@ -151,6 +151,10 @@
                             '日本100名城', '#4285F4',
                             '続日本100名城', '#EA4335',
                             '#000000'
+                        ] : conf.type === 'manhole' ? [
+                            'match', ['get', 'source'],
+                            'pokefuta', '#FBBC04',
+                            '#9E9E9E'
                         ] : conf.color,
                         'circle-radius': 12,
                         'circle-stroke-width': 1.5,
