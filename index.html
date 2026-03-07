@@ -457,18 +457,32 @@
 
     // 国土地理院 ジオコーディングAPI で地名・駅名検索
     let geocodeTimer = null;
+
+    // スコアリング：キーワードとの一致度で優先順位を決める
+    function scoreResult(title, query) {
+        if (title === query)                                        return 100; // 完全一致
+        if (title.startsWith(query))                               return 80;  // 前方一致
+        if (title.includes('駅') && query.includes('駅'))          return 60;  // 駅同士
+        if (title.startsWith(query.replace(/駅$/, '')))            return 40;  // 「駅」除いて前方一致
+        return 10;                                                              // その他
+    }
+
     async function searchGeocode(query) {
         try {
             const url = `https://msearch.gsi.go.jp/address-search/AddressSearch?q=${encodeURIComponent(query)}`;
             const res  = await fetch(url);
             const data = await res.json();
-            return data.slice(0, 6).map(f => ({
-                type: 'place',
-                label: f.properties.title,
-                sub: f.properties.addressCode ? '住所・地名' : '地名',
-                coords: f.geometry.coordinates,  // [lng, lat]
-                properties: {},
-            }));
+            return data
+                .map(f => ({
+                    type: 'place',
+                    label: f.properties.title,
+                    sub: '地名',
+                    coords: f.geometry.coordinates,
+                    properties: {},
+                    _score: scoreResult(f.properties.title, query),
+                }))
+                .sort((a, b) => b._score - a._score)
+                .slice(0, 6);
         } catch { return []; }
     }
 
