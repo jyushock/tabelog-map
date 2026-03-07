@@ -199,7 +199,8 @@
             overflow: hidden;
             background: #eee;
         }
-        .nearby-item-icon img { width: 16px; height: 16px; object-fit: contain; }
+        .nearby-item-icon img { width: 16px; height: 16px; object-fit: contain; filter: brightness(0) invert(1); }
+        .search-result-icon img { width: 16px; height: 16px; object-fit: contain; filter: brightness(0) invert(1); }
         .nearby-item-text { flex: 1; min-width: 0; }
         .nearby-item-name { font-size: 13px; font-weight: bold; color: #333; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
         .nearby-item-sub  { font-size: 11px; color: #999; margin-top: 1px; }
@@ -560,6 +561,17 @@
     }
 
     // アイコン設定（imgはsearch-result-iconとnearby-item-iconで使用）
+    function getItemColor(item) {
+        if (item.type === 'castle') {
+            const genre = item.properties && item.properties.genre;
+            if (genre === '日本100名城')   return '#4285F4';
+            if (genre === '続日本100名城') return '#EA4335';
+            return '#1a1a1a';
+        }
+        if (item.type === 'pokefuta') return '#FBBC04';
+        return (typeConfig[item.type] || typeConfig.place).color;
+    }
+
     const typeConfig = {
         pokefuta: { color: '#FBBC04', icon: '🟡', img: 'manhole.png', label: 'ポケふた' },
         manhole:  { color: '#9E9E9E', icon: '🔘', img: 'manhole.png', label: 'マンホール' },
@@ -650,12 +662,13 @@
         const makeItem = (item) => {
             const cfg = typeConfig[item.type] || typeConfig.place;
             const iconHtml = cfg.img
-                ? `<img src="${cfg.img}" style="width:16px;height:16px;object-fit:contain;">`
+                ? `<img src="${cfg.img}" style="width:16px;height:16px;object-fit:contain;filter:brightness(0) invert(1);">`
                 : cfg.icon;
+            const itemColor = getItemColor(item);
             const div = document.createElement('div');
             div.className = 'search-result-item';
             div.innerHTML = `
-                <div class="search-result-icon" style="background:${cfg.color}">${iconHtml}</div>
+                <div class="search-result-icon" style="background:${itemColor}">${iconHtml}</div>
                 <div class="search-result-text">
                     <div class="search-result-name">${item.label}</div>
                     <div class="search-result-sub">${cfg.label}　${item.sub}</div>
@@ -784,15 +797,16 @@
             results.forEach(item => {
                 const cfg = typeConfig[item.type] || typeConfig.place;
                 const iconHtml = cfg.img
-                    ? `<img src="${cfg.img}" style="width:16px;height:16px;object-fit:contain;">`
+                    ? `<img src="${cfg.img}" style="width:16px;height:16px;object-fit:contain;filter:brightness(0) invert(1);">`
                     : cfg.icon;
+                const itemColor = getItemColor(item);
                 const distStr = item.dist < 1
                     ? `${Math.round(item.dist * 1000)}m`
                     : `${item.dist.toFixed(1)}km`;
                 const div = document.createElement('div');
                 div.className = 'nearby-item';
                 div.innerHTML = `
-                    <div class="nearby-item-icon" style="background:${cfg.color}">${iconHtml}</div>
+                    <div class="nearby-item-icon" style="background:${itemColor}">${iconHtml}</div>
                     <div class="nearby-item-text">
                         <div class="nearby-item-name">${item.label}</div>
                         <div class="nearby-item-sub">${cfg.label}　${item.sub}</div>
@@ -824,7 +838,7 @@
         }
         const { lat, lng } = currentLocation;
         const url = `https://www.google.com/maps/search/スーパー/@${lat},${lng},14z`;
-        window.open(url, '_blank');
+        window.location.href = url;
     }
 
     // ── フィルタートグル ──────────────────────────────────────────
