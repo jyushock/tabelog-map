@@ -127,6 +127,90 @@
         .search-result-name { font-size: 14px; font-weight: bold; color: #333; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
         .search-result-sub  { font-size: 11px; color: #999; margin-top: 1px; }
         .search-section-header { padding: 6px 14px; font-size: 11px; color: #999; background: #fafafa; border-bottom: 1px solid #f0f0f0; }
+
+        /* 周辺・スーパーボタン */
+        #nearby-btn, #supermarket-btn {
+            position: absolute;
+            left: 10px;
+            z-index: 100;
+            background: white;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            width: 44px;
+            height: 44px;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #nearby-btn       { bottom: 84px; }
+        #supermarket-btn  { bottom: 138px; }
+
+        /* ハーフモーダル */
+        #nearby-panel {
+            position: fixed;
+            bottom: -100%;
+            left: 0; right: 0;
+            background: white;
+            border-radius: 16px 16px 0 0;
+            box-shadow: 0 -4px 16px rgba(0,0,0,0.15);
+            z-index: 300;
+            transition: bottom 0.3s ease;
+            max-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            font-family: sans-serif;
+        }
+        #nearby-panel.open { bottom: 0; }
+        #nearby-panel-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 16px 8px;
+            border-bottom: 1px solid #f0f0f0;
+            flex-shrink: 0;
+        }
+        #nearby-panel-title { font-weight: bold; font-size: 14px; color: #333; }
+        #nearby-panel-close {
+            background: none; border: none; font-size: 20px;
+            color: #999; cursor: pointer; padding: 0;
+        }
+        #nearby-list {
+            overflow-y: auto;
+            flex: 1;
+        }
+        .nearby-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 14px;
+            border-bottom: 1px solid #f0f0f0;
+            cursor: pointer;
+            gap: 10px;
+        }
+        .nearby-item:last-child { border-bottom: none; }
+        .nearby-item:hover { background: #f9f9f9; }
+        .nearby-item-icon {
+            width: 28px; height: 28px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+            overflow: hidden;
+            background: #eee;
+        }
+        .nearby-item-icon img { width: 16px; height: 16px; object-fit: contain; }
+        .nearby-item-text { flex: 1; min-width: 0; }
+        .nearby-item-name { font-size: 13px; font-weight: bold; color: #333; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .nearby-item-sub  { font-size: 11px; color: #999; margin-top: 1px; }
+        .nearby-item-dist { font-size: 12px; color: #4285F4; font-weight: bold; flex-shrink: 0; }
+        #nearby-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 299;
+        }
+        #nearby-overlay.open { display: block; }
     </style>
 </head>
 <body>
@@ -139,7 +223,17 @@
     <div id="search-results"></div>
 </div>
 <div id="map"></div>
+<button id="supermarket-btn" onclick="openSupermarket()" title="近くのスーパー">🛒</button>
+<button id="nearby-btn" onclick="toggleNearby()" title="現在地周辺スポット">📍</button>
 <button id="filter-btn" onclick="toggleFilter()" title="表示フィルター">🗂</button>
+<div id="nearby-overlay" onclick="closeNearby()"></div>
+<div id="nearby-panel">
+    <div id="nearby-panel-header">
+        <span id="nearby-panel-title">現在地から5km以内</span>
+        <button id="nearby-panel-close" onclick="closeNearby()">×</button>
+    </div>
+    <div id="nearby-list"></div>
+</div>
 <div class="menu-ui" id="filter-panel">
     <label><input type="checkbox" id="check-shop" checked> レストラン</label>
     <label><input type="checkbox" id="check-castle" checked> お城</label>
@@ -188,8 +282,13 @@
     });
     map.addControl(geolocate);
 
+    // 現在地取得時にcurrentLocationを更新
+    geolocate.on('geolocate', (e) => {
+        currentLocation = { lat: e.coords.latitude, lng: e.coords.longitude };
+        map.jumpTo({ center: [e.coords.longitude, e.coords.latitude], zoom: 13 });
+    });
+
     map.on('load', () => {
-        // 地図ロード完了後に自動で現在地へ移動
         geolocate.trigger();
         const loadSDF = (url, id) => new Promise(res =>
             map.loadImage(url, (err, img) => { map.addImage(id, img, { sdf: true }); res(); })
@@ -460,14 +559,14 @@
         }
     }
 
-    // アイコン設定
+    // アイコン設定（imgはsearch-result-iconとnearby-item-iconで使用）
     const typeConfig = {
-        pokefuta: { color: '#FBBC04', icon: '🟡', label: 'ポケふた' },
-        manhole:  { color: '#9E9E9E', icon: '🔘', label: 'マンホール' },
-        castle:   { color: '#000000', icon: '🏯', label: 'お城' },
-        michi:    { color: '#34A853', icon: '🛣',  label: '道の駅' },
-        shop:     { color: '#FF9800', icon: '🍽',  label: 'レストラン' },
-        place:    { color: '#4285F4', icon: '📍', label: '地名' },
+        pokefuta: { color: '#FBBC04', icon: '🟡', img: 'manhole.png', label: 'ポケふた' },
+        manhole:  { color: '#9E9E9E', icon: '🔘', img: 'manhole.png', label: 'マンホール' },
+        castle:   { color: '#1a1a1a', icon: '🏯', img: 'castle.png',  label: 'お城' },
+        michi:    { color: '#34A853', icon: '🛣',  img: 'michi.png',   label: '道の駅' },
+        shop:     { color: '#FF9800', icon: '🍽',  img: 'tabe.png',    label: 'レストラン' },
+        place:    { color: '#4285F4', icon: '📍', img: null,           label: '地名' },
     };
 
     // 自前データ検索
@@ -550,10 +649,13 @@
 
         const makeItem = (item) => {
             const cfg = typeConfig[item.type] || typeConfig.place;
+            const iconHtml = cfg.img
+                ? `<img src="${cfg.img}" style="width:16px;height:16px;object-fit:contain;">`
+                : cfg.icon;
             const div = document.createElement('div');
             div.className = 'search-result-item';
             div.innerHTML = `
-                <div class="search-result-icon" style="background:${cfg.color}">${cfg.icon}</div>
+                <div class="search-result-icon" style="background:${cfg.color}">${iconHtml}</div>
                 <div class="search-result-text">
                     <div class="search-result-name">${item.label}</div>
                     <div class="search-result-sub">${cfg.label}　${item.sub}</div>
@@ -635,6 +737,95 @@
 
     // 地図ロード後にインデックス構築
     map.on('load', () => { buildSearchIndex(); });
+
+    // ── 距離計算（Haversine）─────────────────────────────────────
+    function calcDist(lat1, lng1, lat2, lng2) {
+        const R = 6371;
+        const dLat = (lat2 - lat1) * Math.PI / 180;
+        const dLng = (lng2 - lng1) * Math.PI / 180;
+        const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180) * Math.cos(lat2*Math.PI/180) * Math.sin(dLng/2)**2;
+        return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    }
+
+    // ── 現在地周辺スポット ────────────────────────────────────────
+    let currentLocation = null;
+
+    function toggleNearby() {
+        const panel = document.getElementById('nearby-panel');
+        if (panel.classList.contains('open')) {
+            closeNearby();
+        } else {
+            openNearby();
+        }
+    }
+
+    function openNearby() {
+        if (!currentLocation) {
+            alert('現在地が取得できていません。しばらく待ってから再度お試しください。');
+            return;
+        }
+        const { lat, lng } = currentLocation;
+        const RADIUS = 5;
+        const results = searchIndex
+            .map(item => ({
+                ...item,
+                dist: calcDist(lat, lng, item.coords[1], item.coords[0])
+            }))
+            .filter(item => item.dist <= RADIUS)
+            .sort((a, b) => a.dist - b.dist)
+            .slice(0, 10);
+
+        const list = document.getElementById('nearby-list');
+        list.innerHTML = '';
+
+        if (results.length === 0) {
+            list.innerHTML = '<div style="padding:16px;text-align:center;color:#999;font-size:13px;">5km以内にスポットが見つかりません</div>';
+        } else {
+            results.forEach(item => {
+                const cfg = typeConfig[item.type] || typeConfig.place;
+                const iconHtml = cfg.img
+                    ? `<img src="${cfg.img}" style="width:16px;height:16px;object-fit:contain;">`
+                    : cfg.icon;
+                const distStr = item.dist < 1
+                    ? `${Math.round(item.dist * 1000)}m`
+                    : `${item.dist.toFixed(1)}km`;
+                const div = document.createElement('div');
+                div.className = 'nearby-item';
+                div.innerHTML = `
+                    <div class="nearby-item-icon" style="background:${cfg.color}">${iconHtml}</div>
+                    <div class="nearby-item-text">
+                        <div class="nearby-item-name">${item.label}</div>
+                        <div class="nearby-item-sub">${cfg.label}　${item.sub}</div>
+                    </div>
+                    <div class="nearby-item-dist">${distStr}</div>`;
+                div.addEventListener('click', () => {
+                    closeNearby();
+                    onResultClick(item);
+                });
+                list.appendChild(div);
+            });
+        }
+
+        document.getElementById('nearby-panel').classList.add('open');
+        document.getElementById('nearby-overlay').classList.add('open');
+        document.getElementById('filter-panel').classList.remove('open');
+    }
+
+    function closeNearby() {
+        document.getElementById('nearby-panel').classList.remove('open');
+        document.getElementById('nearby-overlay').classList.remove('open');
+    }
+
+    // ── 近くのスーパー（GoogleMap遷移）────────────────────────────
+    function openSupermarket() {
+        if (!currentLocation) {
+            alert('現在地が取得できていません。しばらく待ってから再度お試しください。');
+            return;
+        }
+        const { lat, lng } = currentLocation;
+        const url = `https://www.google.com/maps/search/スーパー/@${lat},${lng},14z`;
+        window.open(url, '_blank');
+    }
 
     // ── フィルタートグル ──────────────────────────────────────────
     function toggleFilter() {
