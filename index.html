@@ -39,9 +39,61 @@
         }
         .menu-ui label { display: flex; align-items: center; cursor: pointer; margin-bottom: 5px; }
         .menu-ui input { margin-right: 8px; }
+
+        /* ローディング画面 */
+        #loading {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: #1a1a2e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.4s ease;
+        }
+        #loading.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+        .loading-spinner {
+            width: 48px;
+            height: 48px;
+            border: 4px solid rgba(255,255,255,0.2);
+            border-top-color: #FBBC04;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin-bottom: 20px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .loading-text {
+            color: white;
+            font-family: sans-serif;
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+        .loading-sub {
+            color: rgba(255,255,255,0.5);
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+        .loading-skip {
+            margin-top: 32px;
+            color: rgba(255,255,255,0.4);
+            font-family: sans-serif;
+            font-size: 12px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
+<div id="loading">
+    <div class="loading-spinner"></div>
+    <div class="loading-text">現在地を取得中...</div>
+    <div class="loading-sub">位置情報の許可をお願いします</div>
+    <div class="loading-skip" onclick="skipLoading()">スキップ（日本全体を表示）</div>
+</div>
 <div id="map"></div>
 <div class="menu-ui">
     <label><input type="checkbox" id="check-shop" checked> レストラン</label>
@@ -80,10 +132,9 @@
     const map = new maplibregl.Map({
         container: 'map',
         style: 'https://api.maptiler.com/maps/jp-mierune-streets/style.json?key=xEfXwvj7vY8GrgY26k3N',
-        center: [136.0, 37.0],  // 位置情報取得前は日本中心付近
-        zoom: 5
+        center: [139.76, 35.68],
+        zoom: 11
     });
-
     const geolocate = new maplibregl.GeolocateControl({
         positionOptions: { enableHighAccuracy: true },
         trackUserLocation: true,
@@ -92,13 +143,9 @@
     });
     map.addControl(geolocate);
 
-    // ── オブジェクト描画関数 ──────────────────────────────────────
-    // 現在地取得完了 or タイムアウト/エラー時に呼び出す
-    let objectsLoaded = false;
-    function loadObjects() {
-        if (objectsLoaded) return;  // 二重呼び出し防止
-        objectsLoaded = true;
-
+    map.on('load', () => {
+        // 地図ロード完了後に自動で現在地へ移動
+        geolocate.trigger();
         const loadSDF = (url, id) => new Promise(res =>
             map.loadImage(url, (err, img) => { map.addImage(id, img, { sdf: true }); res(); })
         );
@@ -291,20 +338,23 @@
 
     // ── 地図ロード完了後の処理 ────────────────────────────────────
     map.on('load', () => {
-        // 現在地取得を開始（取得完了までオブジェクトは描画しない）
         geolocate.trigger();
 
-        // ① 現在地取得成功 → 取得完了後にオブジェクト描画
-        geolocate.on('geolocate', () => {
+        // ① 現在地取得成功 → 瞬間移動 → ローディング解除 → オブジェクト描画
+        geolocate.on('geolocate', (e) => {
+            map.jumpTo({
+                center: [e.coords.longitude, e.coords.latitude],
+                zoom: 13
+            });
             loadObjects();
         });
 
-        // ② 位置情報拒否 or 取得エラー → デフォルト位置（日本中心）でオブジェクト描画
+        // ② 位置情報拒否 or エラー → デフォルト位置でローディング解除
         geolocate.on('error', () => {
             loadObjects();
         });
 
-        // ③ タイムアウト（5秒待っても取得できない場合）→ デフォルト位置で描画
+        // ③ タイムアウト（5秒）→ デフォルト位置でローディング解除
         setTimeout(() => {
             loadObjects();
         }, 5000);
