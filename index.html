@@ -80,9 +80,10 @@
     const map = new maplibregl.Map({
         container: 'map',
         style: 'https://api.maptiler.com/maps/jp-mierune-streets/style.json?key=xEfXwvj7vY8GrgY26k3N',
-        center: [139.76, 35.68],
-        zoom: 11
+        center: [136.0, 37.0],  // 位置情報取得前は日本中心付近
+        zoom: 5
     });
+
     const geolocate = new maplibregl.GeolocateControl({
         positionOptions: { enableHighAccuracy: true },
         trackUserLocation: true,
@@ -91,9 +92,13 @@
     });
     map.addControl(geolocate);
 
-    map.on('load', () => {
-        // 地図ロード完了後に自動で現在地へ移動
-        geolocate.trigger();
+    // ── オブジェクト描画関数 ──────────────────────────────────────
+    // 現在地取得完了 or タイムアウト/エラー時に呼び出す
+    let objectsLoaded = false;
+    function loadObjects() {
+        if (objectsLoaded) return;  // 二重呼び出し防止
+        objectsLoaded = true;
+
         const loadSDF = (url, id) => new Promise(res =>
             map.loadImage(url, (err, img) => { map.addImage(id, img, { sdf: true }); res(); })
         );
@@ -282,6 +287,27 @@
                 hover(`${conf.id}-cluster`, 'pointer');
             });
         });
+    }  // loadObjects() end
+
+    // ── 地図ロード完了後の処理 ────────────────────────────────────
+    map.on('load', () => {
+        // 現在地取得を開始（取得完了までオブジェクトは描画しない）
+        geolocate.trigger();
+
+        // ① 現在地取得成功 → 取得完了後にオブジェクト描画
+        geolocate.on('geolocate', () => {
+            loadObjects();
+        });
+
+        // ② 位置情報拒否 or 取得エラー → デフォルト位置（日本中心）でオブジェクト描画
+        geolocate.on('error', () => {
+            loadObjects();
+        });
+
+        // ③ タイムアウト（5秒待っても取得できない場合）→ デフォルト位置で描画
+        setTimeout(() => {
+            loadObjects();
+        }, 5000);
     });
 </script>
 </body>
