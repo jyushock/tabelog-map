@@ -1,0 +1,16 @@
+{
+  "name": "カスタムマップ",
+  "short_name": "マップ",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FBBC04",
+  "theme_color": "#FBBC04",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
