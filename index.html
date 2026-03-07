@@ -18,7 +18,7 @@
         .popup-title { font-weight: bold; font-size: 14px; display: block; margin-bottom: 2px; }
         .popup-genre { font-size: 11px; color: #666; display: block; margin-bottom: 5px; }
         .manhole-img-container { margin: 4px 0; text-align: center; background: #f9f9f9; border-radius: 6px; border: 1px solid #eee; overflow: hidden; }
-        .manhole-img { width: 100%; max-width: 110px; max-height: 110px; object-fit: contain; height: auto; display: block; margin: 0 auto; }
+        .manhole-img { width: 100%; max-width: 130px; max-height: 130px; object-fit: contain; height: auto; display: block; margin: 0 auto; }
         .btn { display: block; text-align: center; padding: 7px; margin-top: 5px; border-radius: 7px; text-decoration: none; font-weight: bold; color: white; font-size: 13px; }
         .btn-tabelog { background: #ff6600; }
         .btn-wiki { background: #333333; }
@@ -300,12 +300,10 @@
                 map.on('click', `${conf.id}-bg`, (e) => {
                     const p = e.features[0].properties;
                     const c = e.features[0].geometry.coordinates;
-                    const isIOS = /iP(hone|ad|od)/.test(navigator.userAgent);
-                    // iOSはcomgooglemaps://でGoogleマップアプリへ、未インストール時はhttps://にフォールバック
-                    const gMapUrl = `https://www.google.com/maps?daddr=${c[1]},${c[0]}`;
-                    const navUrl = isIOS
-                        ? `comgooglemaps://?daddr=${c[1]},${c[0]}&directionsmode=driving`
-                        : gMapUrl;
+                    // Universal Links方式：https://のままGoogleマップアプリが開く（iOS/Android共通）
+                    // dirflg=w で徒歩モード
+                    const gMapUrl = `https://www.google.com/maps?daddr=${c[1]},${c[0]}&dirflg=w`;
+                    const navUrl = gMapUrl;
 
                     if (conf.type === 'manhole') {
                         let imgHtml = '';
@@ -328,7 +326,7 @@
                                         <span class="popup-genre">ポケふた</span>
                                         ${imgHtml}
                                         <a href="${p.detail_url}" target="_blank" class="btn btn-pokefuta">ポケふた公式ページ</a>
-                                        <a href="${navUrl}" target="_blank" class="btn btn-nav" onclick="return iosNavClick(event, '${navUrl}', '${gMapUrl}')">ここへ行く</a>
+                                        <a href="${navUrl}" target="_blank" class="btn btn-nav" >ここへ行く</a>
                                     </div>
                                 `)
                                 .addTo(map);
@@ -349,7 +347,7 @@
                                         <span class="popup-title">${p.name || ''}</span>
                                         <span class="popup-genre">${p.genre || ''}</span>
                                         ${imgHtml}
-                                        <a href="${navUrl}" target="_blank" class="btn btn-nav" onclick="return iosNavClick(event, '${navUrl}', '${gMapUrl}')">ここへ行く</a>
+                                        <a href="${navUrl}" target="_blank" class="btn btn-nav" >ここへ行く</a>
                                     </div>
                                 `)
                                 .addTo(map);
@@ -369,7 +367,7 @@
                                     <span class="popup-genre">${p.genre || ''}</span>
                                     <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>
                                     ${extraBtn}
-                                    <a href="${navUrl}" target="_blank" class="btn btn-nav" onclick="return iosNavClick(event, '${navUrl}', '${gMapUrl}')">ここへ行く</a>
+                                    <a href="${navUrl}" target="_blank" class="btn btn-nav" >ここへ行く</a>
                                 </div>
                             `)
                             .addTo(map);
@@ -637,26 +635,6 @@
 
     // 地図ロード後にインデックス構築
     map.on('load', () => { buildSearchIndex(); });
-
-    // ── iOS GoogleマップアプリへのフォールバックURL処理 ──────────────
-    function iosNavClick(event, appUrl, webUrl) {
-        if (!/iP(hone|ad|od)/.test(navigator.userAgent)) return true;
-        event.preventDefault();
-        // iframeでアプリスキームを開く（アドレスバーに読み込まれないためエラーダイアログが出ない）
-        const iframe = document.createElement('iframe');
-        iframe.style.display = 'none';
-        iframe.src = appUrl;
-        document.body.appendChild(iframe);
-        setTimeout(() => { document.body.removeChild(iframe); }, 500);
-        // アプリが開いたらキャンセル、開かなければwebUrlへフォールバック
-        const timer = setTimeout(() => { window.location.href = webUrl; }, 3000);
-        const cancel = () => { clearTimeout(timer); };
-        document.addEventListener('visibilitychange', () => {
-            if (document.hidden) cancel();
-        }, { once: true });
-        window.addEventListener('pagehide', cancel, { once: true });
-        return false;
-    }
 
     // ── フィルタートグル ──────────────────────────────────────────
     function toggleFilter() {
