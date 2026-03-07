@@ -44,9 +44,9 @@
         #search-container {
             position: absolute;
             top: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: min(360px, calc(100% - 24px));
+            left: 10px;
+            width: calc(100% - 70px);  /* 右の位置情報ボタン(44px) + 余白 */
+            max-width: 400px;           /* 大画面では広がりすぎない */
             z-index: 200;
             font-family: sans-serif;
         }
