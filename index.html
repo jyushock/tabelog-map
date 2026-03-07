@@ -300,7 +300,12 @@
                 map.on('click', `${conf.id}-bg`, (e) => {
                     const p = e.features[0].properties;
                     const c = e.features[0].geometry.coordinates;
-                    const navUrl = `http://google.com/maps?daddr=${c[1]},${c[0]}`;
+                    const isIOS = /iP(hone|ad|od)/.test(navigator.userAgent);
+                    // iOSはcomgooglemaps://でGoogleマップアプリへ、未インストール時はhttps://にフォールバック
+                    const gMapUrl = `https://www.google.com/maps?daddr=${c[1]},${c[0]}`;
+                    const navUrl = isIOS
+                        ? `comgooglemaps://?daddr=${c[1]},${c[0]}&directionsmode=driving`
+                        : gMapUrl;
 
                     if (conf.type === 'manhole') {
                         let imgHtml = '';
@@ -323,7 +328,7 @@
                                         <span class="popup-genre">ポケふた</span>
                                         ${imgHtml}
                                         <a href="${p.detail_url}" target="_blank" class="btn btn-pokefuta">ポケふた公式ページ</a>
-                                        <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
+                                        <a href="${navUrl}" target="_blank" class="btn btn-nav" onclick="return iosNavClick(event, '${navUrl}', '${gMapUrl}')">ここへ行く</a>
                                     </div>
                                 `)
                                 .addTo(map);
@@ -344,7 +349,7 @@
                                         <span class="popup-title">${p.name || ''}</span>
                                         <span class="popup-genre">${p.genre || ''}</span>
                                         ${imgHtml}
-                                        <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
+                                        <a href="${navUrl}" target="_blank" class="btn btn-nav" onclick="return iosNavClick(event, '${navUrl}', '${gMapUrl}')">ここへ行く</a>
                                     </div>
                                 `)
                                 .addTo(map);
@@ -364,7 +369,7 @@
                                     <span class="popup-genre">${p.genre || ''}</span>
                                     <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>
                                     ${extraBtn}
-                                    <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
+                                    <a href="${navUrl}" target="_blank" class="btn btn-nav" onclick="return iosNavClick(event, '${navUrl}', '${gMapUrl}')">ここへ行く</a>
                                 </div>
                             `)
                             .addTo(map);
@@ -632,6 +637,17 @@
 
     // 地図ロード後にインデックス構築
     map.on('load', () => { buildSearchIndex(); });
+
+    // ── iOS GoogleマップアプリへのフォールバックURL処理 ──────────────
+    function iosNavClick(event, appUrl, webUrl) {
+        if (!/iP(hone|ad|od)/.test(navigator.userAgent)) return true;
+        event.preventDefault();
+        // comgooglemaps://を試み、一定時間後にアプリが開かなければwebUrlへフォールバック
+        const timer = setTimeout(() => { window.location.href = webUrl; }, 1500);
+        window.addEventListener('pagehide', () => clearTimeout(timer), { once: true });
+        window.location.href = appUrl;
+        return false;
+    }
 
     // ── フィルタートグル ──────────────────────────────────────────
     function toggleFilter() {
