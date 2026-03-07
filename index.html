@@ -31,6 +31,9 @@
         .btn-gmap { background: #4285f4; }
         .btn-nav { background: #34A853; }
         .btn-pokefuta { background: #FBBC04; color: #333; }
+        .btn-michi-web { background: #34A853; color: #fff; }
+        .popup-address { font-size: 11px; color: #555; display: block; margin-bottom: 4px; }
+        .popup-road    { font-size: 11px; color: #888; display: block; margin-bottom: 6px; }
         #filter-btn {
             position: absolute;
             bottom: 30px;
@@ -458,19 +461,37 @@
                         let extraBtn = '';
                         if (conf.type === 'shop')   extraBtn = `<a href="${p.url}" target="_blank" class="btn btn-tabelog">食べログ</a>`;
                         if (conf.type === 'castle') extraBtn = `<a href="https://ja.wikipedia.org/wiki/${encodeURIComponent(p.name)}" target="_blank" class="btn btn-wiki">Wikipedia</a>`;
-
-                        new maplibregl.Popup({ closeButton: false, anchor: getPopupAnchor(c) })
-                            .setLngLat(c)
-                            .setHTML(`
-                                <div class="popup-card">
-                                    <span class="popup-title">${p.name}</span>
-                                    <span class="popup-genre">${p.genre || ''}</span>
-                                    <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>
-                                    ${extraBtn}
-                                    <a href="${navUrl}" target="_blank" class="btn btn-nav" >ここへ行く</a>
-                                </div>
-                            `)
-                            .addTo(map);
+                        if (conf.type === 'michi') {
+                            const addressHtml = p.address ? `<span class="popup-address">${p.address}</span>` : '';
+                            const roadHtml    = p.road    ? `<span class="popup-road">📍 ${p.road}</span>` : '';
+                            const urlBtn      = p.url     ? `<a href="${p.url}" target="_blank" class="btn btn-michi-web">公式サイト</a>` : '';
+                            new maplibregl.Popup({ closeButton: false, anchor: getPopupAnchor(c) })
+                                .setLngLat(c)
+                                .setHTML(`
+                                    <div class="popup-card">
+                                        <span class="popup-title">${p.name}</span>
+                                        ${roadHtml}
+                                        ${addressHtml}
+                                        <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>
+                                        ${urlBtn}
+                                        <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
+                                    </div>
+                                `)
+                                .addTo(map);
+                        } else {
+                            new maplibregl.Popup({ closeButton: false, anchor: getPopupAnchor(c) })
+                                .setLngLat(c)
+                                .setHTML(`
+                                    <div class="popup-card">
+                                        <span class="popup-title">${p.name}</span>
+                                        <span class="popup-genre">${p.genre || ''}</span>
+                                        <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>
+                                        ${extraBtn}
+                                        <a href="${navUrl}" target="_blank" class="btn btn-nav" >ここへ行く</a>
+                                    </div>
+                                `)
+                                .addTo(map);
+                        }
                     }
                 });
 
