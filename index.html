@@ -40,7 +40,6 @@
         .menu-ui label { display: flex; align-items: center; cursor: pointer; margin-bottom: 5px; }
         .menu-ui input { margin-right: 8px; }
 
-        /* ローディング画面 */
         #loading {
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
@@ -52,13 +51,9 @@
             z-index: 9999;
             transition: opacity 0.4s ease;
         }
-        #loading.hidden {
-            opacity: 0;
-            pointer-events: none;
-        }
+        #loading.hidden { opacity: 0; pointer-events: none; }
         .loading-spinner {
-            width: 48px;
-            height: 48px;
+            width: 48px; height: 48px;
             border: 4px solid rgba(255,255,255,0.2);
             border-top-color: #FBBC04;
             border-radius: 50%;
@@ -66,25 +61,9 @@
             margin-bottom: 20px;
         }
         @keyframes spin { to { transform: rotate(360deg); } }
-        .loading-text {
-            color: white;
-            font-family: sans-serif;
-            font-size: 15px;
-            margin-bottom: 8px;
-        }
-        .loading-sub {
-            color: rgba(255,255,255,0.5);
-            font-family: sans-serif;
-            font-size: 12px;
-        }
-        .loading-skip {
-            margin-top: 32px;
-            color: rgba(255,255,255,0.4);
-            font-family: sans-serif;
-            font-size: 12px;
-            text-decoration: underline;
-            cursor: pointer;
-        }
+        .loading-text  { color: white; font-family: sans-serif; font-size: 15px; margin-bottom: 8px; }
+        .loading-sub   { color: rgba(255,255,255,0.5); font-family: sans-serif; font-size: 12px; }
+        .loading-skip  { margin-top: 32px; color: rgba(255,255,255,0.4); font-family: sans-serif; font-size: 12px; text-decoration: underline; cursor: pointer; }
     </style>
 </head>
 <body>
@@ -336,28 +315,40 @@
         });
     }  // loadObjects() end
 
-    // ── 地図ロード完了後の処理 ────────────────────────────────────
+    const map = new maplibregl.Map({
+        container: 'map',
+        style: 'https://api.maptiler.com/maps/jp-mierune-streets/style.json?key=xEfXwvj7vY8GrgY26k3N',
+        center: [136.0, 37.0],
+        zoom: 5
+    });
+
+    const geolocate = new maplibregl.GeolocateControl({
+        positionOptions: { enableHighAccuracy: true },
+        trackUserLocation: true,
+        showUserLocation: true,
+        fitBoundsOptions: { zoom: 13 }
+    });
+    map.addControl(geolocate);
+
+    // イベント登録は map.on('load') の外で行う（タイミング問題を回避）
+    geolocate.on('geolocate', (e) => {
+        map.jumpTo({ center: [e.coords.longitude, e.coords.latitude], zoom: 13 });
+        loadObjects();
+    });
+
+    geolocate.on('error', () => {
+        loadObjects();
+    });
+
+    function skipLoading() {
+        loadObjects();
+    }
+
+    // タイムアウト用タイマー（5秒）
+    let timeoutId = setTimeout(() => { loadObjects(); }, 5000);
+
     map.on('load', () => {
         geolocate.trigger();
-
-        // ① 現在地取得成功 → 瞬間移動 → ローディング解除 → オブジェクト描画
-        geolocate.on('geolocate', (e) => {
-            map.jumpTo({
-                center: [e.coords.longitude, e.coords.latitude],
-                zoom: 13
-            });
-            loadObjects();
-        });
-
-        // ② 位置情報拒否 or エラー → デフォルト位置でローディング解除
-        geolocate.on('error', () => {
-            loadObjects();
-        });
-
-        // ③ タイムアウト（5秒）→ デフォルト位置でローディング解除
-        setTimeout(() => {
-            loadObjects();
-        }, 5000);
     });
 </script>
 </body>
