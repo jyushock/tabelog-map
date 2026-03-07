@@ -364,8 +364,6 @@
     // ══════════════════════════════════════════════════════════════
     //  検索機能
     // ══════════════════════════════════════════════════════════════
-    const MAPTILER_KEY = 'xEfXwvj7vY8GrgY26k3N';  // 既存のAPIキーを流用
-
     // 自前データをフラットなリストに展開（地図ロード後に構築）
     let searchIndex = [];
     function buildSearchIndex() {
@@ -457,18 +455,18 @@
             .slice(0, 6);
     }
 
-    // MapTiler Geocoding API で地名検索
+    // 国土地理院 ジオコーディングAPI で地名・駅名検索
     let geocodeTimer = null;
     async function searchGeocode(query) {
         try {
-            const url = `https://api.maptiler.com/geocoding/${encodeURIComponent(query)}.json?key=${MAPTILER_KEY}&language=ja&country=jp&limit=4`;
+            const url = `https://msearch.gsi.go.jp/address-search/AddressSearch?q=${encodeURIComponent(query)}`;
             const res  = await fetch(url);
             const data = await res.json();
-            return (data.features || []).map(f => ({
+            return data.slice(0, 6).map(f => ({
                 type: 'place',
-                label: f.place_name_ja || f.place_name || f.text,
-                sub: '地名',
-                coords: f.center,
+                label: f.properties.title,
+                sub: f.properties.addressCode ? '住所・地名' : '地名',
+                coords: f.geometry.coordinates,  // [lng, lat]
                 properties: {},
             }));
         } catch { return []; }
