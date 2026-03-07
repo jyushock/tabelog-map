@@ -539,20 +539,20 @@
             return div;
         };
 
-        if (localItems.length > 0) {
-            const hdr = document.createElement('div');
-            hdr.className = 'search-section-header';
-            hdr.textContent = 'スポット';
-            box.appendChild(hdr);
-            localItems.forEach(item => box.appendChild(makeItem(item)));
-        }
-
         if (placeItems.length > 0) {
             const hdr = document.createElement('div');
             hdr.className = 'search-section-header';
             hdr.textContent = '地名・場所';
             box.appendChild(hdr);
             placeItems.forEach(item => box.appendChild(makeItem(item)));
+        }
+
+        if (localItems.length > 0) {
+            const hdr = document.createElement('div');
+            hdr.className = 'search-section-header';
+            hdr.textContent = 'スポット';
+            box.appendChild(hdr);
+            localItems.forEach(item => box.appendChild(makeItem(item)));
         }
 
         box.style.display = 'block';
