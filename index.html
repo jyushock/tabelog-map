@@ -39,40 +39,9 @@
         }
         .menu-ui label { display: flex; align-items: center; cursor: pointer; margin-bottom: 5px; }
         .menu-ui input { margin-right: 8px; }
-
-        #loading {
-            position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: #1a1a2e;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-            transition: opacity 0.4s ease;
-        }
-        #loading.hidden { opacity: 0; pointer-events: none; }
-        .loading-spinner {
-            width: 48px; height: 48px;
-            border: 4px solid rgba(255,255,255,0.2);
-            border-top-color: #FBBC04;
-            border-radius: 50%;
-            animation: spin 0.8s linear infinite;
-            margin-bottom: 20px;
-        }
-        @keyframes spin { to { transform: rotate(360deg); } }
-        .loading-text  { color: white; font-family: sans-serif; font-size: 15px; margin-bottom: 8px; }
-        .loading-sub   { color: rgba(255,255,255,0.5); font-family: sans-serif; font-size: 12px; }
-        .loading-skip  { margin-top: 32px; color: rgba(255,255,255,0.4); font-family: sans-serif; font-size: 12px; text-decoration: underline; cursor: pointer; }
     </style>
 </head>
 <body>
-<div id="loading">
-    <div class="loading-spinner"></div>
-    <div class="loading-text">現在地を取得中...</div>
-    <div class="loading-sub">位置情報の許可をお願いします</div>
-    <div class="loading-skip" onclick="skipLoading()">スキップ（日本全体を表示）</div>
-</div>
 <div id="map"></div>
 <div class="menu-ui">
     <label><input type="checkbox" id="check-shop" checked> レストラン</label>
@@ -122,8 +91,15 @@
     });
     map.addControl(geolocate);
 
+    // 現在地取得後にアニメーションなしで瞬間移動
+    geolocate.on('geolocate', (e) => {
+        map.jumpTo({
+            center: [e.coords.longitude, e.coords.latitude],
+            zoom: 13
+        });
+    });
+
     map.on('load', () => {
-        // 地図ロード完了後に自動で現在地へ移動
         geolocate.trigger();
         const loadSDF = (url, id) => new Promise(res =>
             map.loadImage(url, (err, img) => { map.addImage(id, img, { sdf: true }); res(); })
@@ -313,42 +289,6 @@
                 hover(`${conf.id}-cluster`, 'pointer');
             });
         });
-    }  // loadObjects() end
-
-    const map = new maplibregl.Map({
-        container: 'map',
-        style: 'https://api.maptiler.com/maps/jp-mierune-streets/style.json?key=xEfXwvj7vY8GrgY26k3N',
-        center: [136.0, 37.0],
-        zoom: 5
-    });
-
-    const geolocate = new maplibregl.GeolocateControl({
-        positionOptions: { enableHighAccuracy: true },
-        trackUserLocation: true,
-        showUserLocation: true,
-        fitBoundsOptions: { zoom: 13 }
-    });
-    map.addControl(geolocate);
-
-    // イベント登録は map.on('load') の外で行う（タイミング問題を回避）
-    geolocate.on('geolocate', (e) => {
-        map.jumpTo({ center: [e.coords.longitude, e.coords.latitude], zoom: 13 });
-        loadObjects();
-    });
-
-    geolocate.on('error', () => {
-        loadObjects();
-    });
-
-    function skipLoading() {
-        loadObjects();
-    }
-
-    // タイムアウト用タイマー（5秒）
-    let timeoutId = setTimeout(() => { loadObjects(); }, 5000);
-
-    map.on('load', () => {
-        geolocate.trigger();
     });
 </script>
 </body>
