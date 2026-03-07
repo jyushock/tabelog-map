@@ -642,13 +642,12 @@
     function iosNavClick(event, appUrl, webUrl) {
         if (!/iP(hone|ad|od)/.test(navigator.userAgent)) return true;
         event.preventDefault();
-        // <a>タグ経由で開く（window.location.hrefだと「アドレス無効」エラーが出るため）
-        const a = document.createElement('a');
-        a.href = appUrl;
-        a.style.display = 'none';
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
+        // iframeでアプリスキームを開く（アドレスバーに読み込まれないためエラーダイアログが出ない）
+        const iframe = document.createElement('iframe');
+        iframe.style.display = 'none';
+        iframe.src = appUrl;
+        document.body.appendChild(iframe);
+        setTimeout(() => { document.body.removeChild(iframe); }, 500);
         // アプリが開いたらキャンセル、開かなければwebUrlへフォールバック
         const timer = setTimeout(() => { window.location.href = webUrl; }, 3000);
         const cancel = () => { clearTimeout(timer); };
