@@ -320,8 +320,10 @@
                     // フォント統一
                     map.setLayoutProperty(layer.id, 'text-font', ['Noto Sans Bold']);
 
-                    // 駅POIレイヤー：class=railway&subclass=stationのみ青く強調
+                    // 駅POIレイヤー：minzoomを解除して引いた状態でも表示＋青く強調
                     if (isStation) {
+                        // minzoom制限を解除（デフォルトはzoom15以上のみ）
+                        try { map.setLayerZoomRange(layer.id, 8, 24); } catch(e) {}
                         map.setPaintProperty(layer.id, 'text-color', [
                             'case',
                             ['all', ['==', ['get', 'class'], 'railway'], ['==', ['get', 'subclass'], 'station']],
@@ -340,7 +342,7 @@
                             14, 12
                         ]);
                     }
-                    // バス停（緑・やや小さめ）
+                    // バス停（緑・やや小さめ・アイコン背景色も緑に）
                     if (isBus) {
                         map.setPaintProperty(layer.id, 'text-color', '#2E7D32');
                         map.setPaintProperty(layer.id, 'text-halo-color', '#FFFFFF');
@@ -350,6 +352,8 @@
                             8, 11, 12, 12, 15, 13
                         ]);
                         try { map.setPaintProperty(layer.id, 'icon-color', '#2E7D32'); } catch(e) {}
+                        try { map.setPaintProperty(layer.id, 'icon-halo-color', '#2E7D32'); } catch(e) {}
+                        try { map.setPaintProperty(layer.id, 'background-color', '#2E7D32'); } catch(e) {}
                     }
                 }
 
