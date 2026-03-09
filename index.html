@@ -294,7 +294,8 @@
 
     // 地名を日本語優先に書き換え＋駅の強調表示
     const ownLayerPrefixes = ['shops-', 'castles-', 'michi-', 'manholes-'];
-    const stationKeywords  = ['station', 'railway', 'transit', 'subway', 'train'];
+    const stationKeywords = ['railway', 'subway', 'train'];  // 鉄道駅
+    const busKeywords     = ['bus', 'transit'];               // バス停
     map.on('styledata', () => {
         const style = map.getStyle();
         if (!style || !style.layers) return;
@@ -306,6 +307,7 @@
             try {
                 const lid = layer.id.toLowerCase();
                 const isStation = stationKeywords.some(k => lid.includes(k));
+                const isBus     = !isStation && busKeywords.some(k => lid.includes(k));
 
                 if (layer.type === 'symbol') {
                     // 日本語優先
@@ -318,16 +320,24 @@
                     // フォント統一
                     map.setLayoutProperty(layer.id, 'text-font', ['Noto Sans Bold']);
 
-                    // 駅を強調表示
+                    // 駅を強調表示（青・大きめ）
                     if (isStation) {
                         map.setPaintProperty(layer.id, 'text-color', '#1565C0');
                         map.setPaintProperty(layer.id, 'text-halo-color', '#FFFFFF');
                         map.setPaintProperty(layer.id, 'text-halo-width', 2);
                         map.setLayoutProperty(layer.id, 'text-size', [
                             'interpolate', ['linear'], ['zoom'],
-                            6,  14,
-                            10, 14,
-                            15, 14
+                            6, 14, 10, 14, 15, 14
+                        ]);
+                    }
+                    // バス停（緑・やや小さめ）
+                    if (isBus) {
+                        map.setPaintProperty(layer.id, 'text-color', '#2E7D32');
+                        map.setPaintProperty(layer.id, 'text-halo-color', '#FFFFFF');
+                        map.setPaintProperty(layer.id, 'text-halo-width', 1.5);
+                        map.setLayoutProperty(layer.id, 'text-size', [
+                            'interpolate', ['linear'], ['zoom'],
+                            6, 11, 10, 11, 15, 12
                         ]);
                     }
                 }
