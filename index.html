@@ -296,7 +296,7 @@
     const ownLayerPrefixes = ['shops-', 'castles-', 'michi-', 'manholes-'];
     const stationLayerIds = ['poi_r20', 'poi_r7', 'poi_r1'];  // 駅を含むPOIレイヤー
     const busKeywords     = ['poi_transit'];                    // バス停レイヤー
-    map.on('styledata', () => {
+    map.once('style.load', () => {
         const style = map.getStyle();
         if (!style || !style.layers) return;
 
@@ -336,24 +336,11 @@
                     // 駅POIレイヤー：minzoomを解除して引いた状態でも表示＋青く強調
                     if (isStation) {
                         // minzoom制限を解除（デフォルトはzoom15以上のみ）
-                        try { map.setLayerZoomRange(layer.id, 5, 24); } catch(e) {}
-                        map.setPaintProperty(layer.id, 'text-color', [
-                            'case',
-                            ['all', ['==', ['get', 'class'], 'railway'], ['==', ['get', 'subclass'], 'station']],
-                            '#1565C0',
-                            '#666666'
-                        ]);
+                        try { map.setLayerZoomRange(layer.id, 8, 24); } catch(e) {}
+                        map.setPaintProperty(layer.id, 'text-color', '#1565C0');
                         map.setPaintProperty(layer.id, 'text-halo-color', '#FFFFFF');
-                        map.setPaintProperty(layer.id, 'text-halo-width', [
-                            'case',
-                            ['all', ['==', ['get', 'class'], 'railway'], ['==', ['get', 'subclass'], 'station']],
-                            2, 1
-                        ]);
-                        map.setLayoutProperty(layer.id, 'text-size', [
-                            'case',
-                            ['all', ['==', ['get', 'class'], 'railway'], ['==', ['get', 'subclass'], 'station']],
-                            14, 12
-                        ]);
+                        map.setPaintProperty(layer.id, 'text-halo-width', 2);
+                        map.setLayoutProperty(layer.id, 'text-size', 14);
                     }
                     // バス停（緑・やや小さめ・アイコン背景色も緑に）
                     if (isBus) {
