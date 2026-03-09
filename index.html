@@ -294,8 +294,8 @@
 
     // 地名を日本語優先に書き換え＋駅の強調表示
     const ownLayerPrefixes = ['shops-', 'castles-', 'michi-', 'manholes-'];
-    const stationKeywords = ['railway', 'subway', 'train'];  // 鉄道駅
-    const busKeywords     = ['bus', 'transit'];               // バス停
+    const stationKeywords = ['poi_transit'];  // 駅・バス停（libertyではpoi_transitに統合）
+    const busKeywords     = [];               // libertyにバス停専用レイヤーなし
     map.on('styledata', () => {
         const style = map.getStyle();
         if (!style || !style.layers) return;
@@ -320,27 +320,16 @@
                     // フォント統一
                     map.setLayoutProperty(layer.id, 'text-font', ['Noto Sans Bold']);
 
-                    // 駅を強調表示（青・大きめ・引いた状態でも表示）
+                    // 駅・バス停を強調表示（poi_transit）
                     if (isStation) {
                         map.setPaintProperty(layer.id, 'text-color', '#1565C0');
                         map.setPaintProperty(layer.id, 'text-halo-color', '#FFFFFF');
                         map.setPaintProperty(layer.id, 'text-halo-width', 2);
                         map.setLayoutProperty(layer.id, 'text-size', [
                             'interpolate', ['linear'], ['zoom'],
-                            4, 14, 10, 14, 15, 14
+                            8, 12, 12, 14, 15, 15
                         ]);
-                        map.setLayoutProperty(layer.id, 'text-min-zoom', 4);
-                    }
-                    // バス停（緑・やや小さめ・アイコン色も緑に）
-                    if (isBus) {
-                        map.setPaintProperty(layer.id, 'text-color', '#2E7D32');
-                        map.setPaintProperty(layer.id, 'text-halo-color', '#FFFFFF');
-                        map.setPaintProperty(layer.id, 'text-halo-width', 1.5);
-                        map.setLayoutProperty(layer.id, 'text-size', [
-                            'interpolate', ['linear'], ['zoom'],
-                            6, 11, 10, 11, 15, 12
-                        ]);
-                        try { map.setPaintProperty(layer.id, 'icon-color', '#2E7D32'); } catch(e) {}
+                        map.setLayoutProperty(layer.id, 'visibility', 'visible');
                     }
                 }
 
