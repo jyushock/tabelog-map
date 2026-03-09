@@ -297,14 +297,6 @@
     const stationKeywords = ['railway', 'subway', 'train'];  // 鉄道駅
     const busKeywords     = ['bus', 'transit'];               // バス停
     map.on('styledata', () => {
-        // デバッグ: symbolレイヤーのIDを全てコンソールに出力
-        const style = map.getStyle();
-        if (style && style.layers) {
-            const symbolIds = style.layers
-                .filter(l => l.type === 'symbol')
-                .map(l => l.id);
-            console.log('[デバッグ] symbolレイヤー一覧:', symbolIds);
-        }
         const style = map.getStyle();
         if (!style || !style.layers) return;
 
