@@ -292,10 +292,12 @@
         map.jumpTo({ center: [e.coords.longitude, e.coords.latitude], zoom: 13 });
     });
 
-    // 地名を日本語優先に書き換え＋駅の強調表示
+    // スタイル調整：日本語化・駅強調・POI整理・水域色・3D建物
     const ownLayerPrefixes = ['shops-', 'castles-', 'michi-', 'manholes-'];
-    const stationLayerIds = ['poi_r20', 'poi_r7', 'poi_r1'];  // 駅を含むPOIレイヤー
-    const busKeywords     = ['poi_transit'];                    // バス停レイヤー
+    const stationLayerIds  = ['poi_r20', 'poi_r7', 'poi_r1'];
+    const busLayerIds      = ['poi_transit'];
+    const carSubclasses    = ['parking', 'fuel', 'car_dealer', 'car_rental', 'car_repair', 'car_wash', 'motorcycle', 'charging_station'];
+
     map.once('style.load', () => {
         const style = map.getStyle();
         if (!style || !style.layers) return;
@@ -304,77 +306,61 @@
         try { map.setLayoutProperty('building-3d', 'visibility', 'none'); } catch(e) {}
 
         style.layers.forEach(layer => {
-            // 自前レイヤーはスキップ
             if (ownLayerPrefixes.some(p => layer.id.startsWith(p))) return;
 
             try {
                 const lid = layer.id.toLowerCase();
-                const isStation = stationLayerIds.includes(layer.id);
-                const isBus     = busKeywords.some(k => lid.includes(k));
 
+                // ── symbolレイヤー共通：日本語優先・フォント統一 ──
                 if (layer.type === 'symbol') {
-                    // 日本語優先
-                    const tf = layer.layout && layer.layout['text-field'];
-                    if (tf) {
+                    if (layer.layout && layer.layout['text-field']) {
                         map.setLayoutProperty(layer.id, 'text-field', [
                             'coalesce', ['get', 'name:ja'], ['get', 'name']
                         ]);
                     }
-                    // フォント統一
                     map.setLayoutProperty(layer.id, 'text-font', ['Noto Sans Bold']);
-
-                    // 車関連POI・名前なしPOIをフィルターで完全非表示
-                    const carSubclasses = ['parking', 'fuel', 'car_dealer', 'car_rental', 'car_repair', 'car_wash', 'motorcycle', 'charging_station'];
-                    if (isStation) {
-                        map.setFilter(layer.id, ['all',
-                            ['has', 'name'],
-                            ['!', ['in', ['get', 'subclass'], ['literal', carSubclasses]]]
-                        ]);
-                    }
-
-                    // 駅POIレイヤー：駅は青・大きめ、バス停は緑
-                    if (isStation) {
-                        try { map.setLayerZoomRange(layer.id, 1, 24); } catch(e) {}
-                        map.setPaintProperty(layer.id, 'text-color', [
-                            'case',
-                            ['in', ['get', 'subclass'], ['literal', ['station', 'subway']]],
-                            '#1565C0',
-                            ['==', ['get', 'subclass'], 'bus_stop'],
-                            '#2E7D32',
-                            ['rgba', 0, 0, 0, 1]
-                        ]);
-                        map.setPaintProperty(layer.id, 'text-halo-color', '#FFFFFF');
-                        map.setPaintProperty(layer.id, 'text-halo-width', [
-                            'case',
-                            ['in', ['get', 'subclass'], ['literal', ['station', 'subway', 'bus_stop']]],
-                            2, 0
-                        ]);
-                        map.setLayoutProperty(layer.id, 'text-size', [
-                            'case',
-                            ['in', ['get', 'subclass'], ['literal', ['station', 'subway']]], 14,
-                            ['==', ['get', 'subclass'], 'bus_stop'], 12,
-                            12
-                        ]);
-                        // バス停のアイコンサイズを小さく
-                        map.setLayoutProperty(layer.id, 'icon-size', [
-                            'case',
-                            ['==', ['get', 'subclass'], 'bus_stop'], 0.5,
-                            ['==', ['get', 'subclass'], 'station'], 0.8,
-                            0.7
-                        ]);
-                    }
-                    // バス停（緑・やや小さめ・アイコン背景色も緑に）
-                    if (isBus) {
-                        try { map.setLayerZoomRange(layer.id, 14, 24); } catch(e) {}
-                        map.setPaintProperty(layer.id, 'text-color', '#2E7D32');
-                        map.setPaintProperty(layer.id, 'text-halo-color', '#FFFFFF');
-                        map.setPaintProperty(layer.id, 'text-halo-width', 1.5);
-                        try { map.setPaintProperty(layer.id, 'icon-color', '#2E7D32'); } catch(e) {}
-                        try { map.setPaintProperty(layer.id, 'icon-halo-color', '#2E7D32'); } catch(e) {}
-                    }
                 }
 
-                // 水域・公園の色をGoogleMap風に（維持）
+                // ── poi_r系：車関連・名前なしを除外、駅・バス停を強調 ──
+                if (stationLayerIds.includes(layer.id)) {
+                    // 車関連・名前なしを完全非表示
+                    map.setFilter(layer.id, ['all',
+                        ['has', 'name'],
+                        ['!', ['in', ['get', 'subclass'], ['literal', carSubclasses]]]
+                    ]);
+                    // ズーム範囲
+                    map.setLayerZoomRange(layer.id, 1, 24);
+                    // テキスト色：駅=青、バス停=緑、その他=黒
+                    map.setPaintProperty(layer.id, 'text-color', [
+                        'case',
+                        ['in', ['get', 'subclass'], ['literal', ['station', 'subway']]], '#1565C0',
+                        ['==', ['get', 'subclass'], 'bus_stop'], '#2E7D32',
+                        '#000000'
+                    ]);
+                    map.setPaintProperty(layer.id, 'text-halo-color', '#FFFFFF');
+                    map.setPaintProperty(layer.id, 'text-halo-width', [
+                        'case',
+                        ['in', ['get', 'subclass'], ['literal', ['station', 'subway', 'bus_stop']]], 2,
+                        0
+                    ]);
+                    // テキストサイズ：駅=14px、その他=12px
+                    map.setLayoutProperty(layer.id, 'text-size', [
+                        'case',
+                        ['in', ['get', 'subclass'], ['literal', ['station', 'subway']]], 14,
+                        12
+                    ]);
+                }
+
+                // ── poi_transit：バス停（緑・ズーム14以上）──
+                if (busLayerIds.includes(layer.id)) {
+                    map.setLayerZoomRange(layer.id, 14, 24);
+                    map.setPaintProperty(layer.id, 'text-color', '#2E7D32');
+                    map.setPaintProperty(layer.id, 'text-halo-color', '#FFFFFF');
+                    map.setPaintProperty(layer.id, 'text-halo-width', 1.5);
+                    try { map.setPaintProperty(layer.id, 'icon-color', '#2E7D32'); } catch(e) {}
+                }
+
+                // ── 水域・公園の色 ──
                 if (layer.type === 'fill') {
                     if (lid.includes('water')) {
                         map.setPaintProperty(layer.id, 'fill-color', '#AAD3DF');
@@ -386,8 +372,8 @@
             } catch(e) {}
         });
 
-        // 建物の3D表示（ズーム15以上で有効・維持）
-        if (map.getZoom() >= 15 && map.getLayer('building') && !map.getLayer('3d-buildings')) {
+        // ── 自前3D建物（ズーム15以上）──
+        if (!map.getLayer('3d-buildings')) {
             try {
                 map.addLayer({
                     id: '3d-buildings',
