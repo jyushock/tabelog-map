@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8" />
-    <title>[v8] カスタムマップ</title>
+    <title>[v10] カスタムマップ</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="manifest" href="manifest.json">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -324,7 +324,8 @@
                     map.setFilter(layer.id, ['all',
                         ['has', 'name'],
                         ['!', ['in', ['get', 'subclass'], ['literal', carSubclasses]]],
-                        ['!', ['==', ['get', 'class'], 'car']]
+                        ['!', ['==', ['get', 'class'], 'car']],
+                        ['!', ['==', ['get', 'subclass'], 'bus_stop']]
                     ]);
                     // 駅はズーム1から、バス停はズーム14から表示
                     map.setLayerZoomRange(layer.id, 1, 24);
@@ -346,18 +347,7 @@
                         ['in', ['get', 'subclass'], ['literal', ['station', 'subway']]], 14,
                         12
                     ]);
-                    map.setPaintProperty(layer.id, 'text-opacity', [
-                        'case',
-                        ['==', ['get', 'subclass'], 'bus_stop'],
-                        ['interpolate', ['linear'], ['zoom'], 13, 0, 14, 1],
-                        1
-                    ]);
-                    map.setPaintProperty(layer.id, 'icon-opacity', [
-                        'case',
-                        ['==', ['get', 'subclass'], 'bus_stop'],
-                        ['interpolate', ['linear'], ['zoom'], 13, 0, 14, 1],
-                        1
-                    ]);
+
                 }
 
                 // poi_transit：バス停（緑・ズーム14以上）
@@ -514,7 +504,7 @@
                                             onerror="this.src='${p.image_url || ''}'">
                                    </div>`
                                 : '';
-                            new maplibregl.Popup({ closeButton: false, anchor: getPopupAnchor(c) })
+                            fitPopupInView(new maplibregl.Popup({ closeButton: false, anchor: getPopupAnchor(c) })
                                 .setLngLat(c)
                                 .setHTML(`
                                     <div class="popup-card">
@@ -525,7 +515,7 @@
                                         <a href="${navUrl}" target="_blank" class="btn btn-nav" >ここへ行く</a>
                                     </div>
                                 `)
-                                .addTo(map);
+                                ).addTo(map);
                         } else {
                             // ── 既存マンホール ────────────────────────────
                             const imgUrl = p.cardId
@@ -536,7 +526,7 @@
                                        <img src="${imgUrl}" class="manhole-img-large">
                                    </div>`
                                 : '';
-                            new maplibregl.Popup({ closeButton: false, anchor: getPopupAnchor(c) })
+                            fitPopupInView(new maplibregl.Popup({ closeButton: false, anchor: getPopupAnchor(c) })
                                 .setLngLat(c)
                                 .setHTML(`
                                     <div class="popup-card">
@@ -546,7 +536,7 @@
                                         <a href="${navUrl}" target="_blank" class="btn btn-nav" >ここへ行く</a>
                                     </div>
                                 `)
-                                .addTo(map);
+                                ).addTo(map);
                         }
                     } else {
                         // ── その他（レストラン・お城・道の駅）────────────
@@ -558,7 +548,7 @@
                             const addressHtml = p.address ? `<span class="popup-address">${p.address}</span>` : '';
                             const roadHtml    = p.road    ? `<span class="popup-road">📍 ${p.road}</span>` : '';
                             const urlBtn      = p.url     ? `<a href="${p.url}" target="_blank" class="btn btn-michi-web">公式サイト</a>` : '';
-                            new maplibregl.Popup({ closeButton: false, anchor: getPopupAnchor(c) })
+                            fitPopupInView(new maplibregl.Popup({ closeButton: false, anchor: getPopupAnchor(c) })
                                 .setLngLat(c)
                                 .setHTML(`
                                     <div class="popup-card">
@@ -570,9 +560,9 @@
                                         <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
                                     </div>
                                 `)
-                                .addTo(map);
+                                ).addTo(map);
                         } else {
-                            new maplibregl.Popup({ closeButton: false, anchor: getPopupAnchor(c) })
+                            fitPopupInView(new maplibregl.Popup({ closeButton: false, anchor: getPopupAnchor(c) })
                                 .setLngLat(c)
                                 .setHTML(`
                                     <div class="popup-card">
@@ -583,7 +573,7 @@
                                         <a href="${navUrl}" target="_blank" class="btn btn-nav" >ここへ行く</a>
                                     </div>
                                 `)
-                                .addTo(map);
+                                ).addTo(map);
                         }
                     }
                 });
@@ -969,6 +959,27 @@
 
     // ── ポップアップ表示位置を動的に調整 ──────────────────────────
     // ピンの画面上の位置に応じて anchor を切り替える
+    function fitPopupInView(popup) {
+        popup.once('open', () => {
+            const el = popup.getElement();
+            if (!el) return;
+            // DOMが描画されるのを少し待つ
+            setTimeout(() => {
+                const rect = el.getBoundingClientRect();
+                const pad = 10;
+                let dx = 0, dy = 0;
+                if (rect.left < pad)                    dx = rect.left - pad;
+                if (rect.right > window.innerWidth - pad)  dx = rect.right - window.innerWidth + pad;
+                if (rect.top < pad)                     dy = rect.top - pad;
+                if (rect.bottom > window.innerHeight - pad) dy = rect.bottom - window.innerHeight + pad;
+                if (dx !== 0 || dy !== 0) {
+                    map.easeTo({ offset: [dx, dy], duration: 250 });
+                }
+            }, 50);
+        });
+        return popup;
+    }
+
     function getPopupAnchor(lngLat) {
         const point = map.project(lngLat);
         const h = window.innerHeight;
