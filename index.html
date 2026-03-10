@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8" />
-    <title>[v25] カスタムマップ</title>
+    <title>[v26] カスタムマップ</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="manifest" href="manifest.json">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -720,8 +720,8 @@
     function scoreResult(title, query) {
         const isStationName = title.endsWith('駅');              // 「◯◯駅」で終わる純粋な駅名
         const hasStation    = title.includes('駅');              // 駅を含む（駐輪場など）
-        if (title === query)                                        return 100; // 完全一致
-        if (isStationName && title.startsWith(query))              return 99;  // 駅名・前方一致
+        if (isStationName && title.startsWith(query))              return 100; // 駅名・前方一致
+        if (title === query)                                        return 99;  // 完全一致
         if (title === query + '駅')                                return 98;  // 駅名完全一致（「駅」省略）
         if (title.startsWith(query))                               return 80;  // 前方一致
         if (hasStation && query.includes('駅'))                    return 60;  // 駅関連同士
