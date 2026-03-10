@@ -313,14 +313,13 @@
             try {
                 const lid = layer.id.toLowerCase();
 
-                // ── symbolレイヤー共通：日本語優先・フォント統一 ──
+                // ── symbolレイヤー共通：日本語優先 ──
                 if (layer.type === 'symbol') {
                     if (layer.layout && layer.layout['text-field']) {
                         map.setLayoutProperty(layer.id, 'text-field', [
                             'coalesce', ['get', 'name:ja'], ['get', 'name']
                         ]);
                     }
-                    map.setLayoutProperty(layer.id, 'text-font', ['Noto Sans Bold']);
                 }
 
                 // ── poi_r系：車関連・名前なしを除外、駅・バス停を強調 ──
