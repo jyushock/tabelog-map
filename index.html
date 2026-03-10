@@ -332,20 +332,20 @@
                     ]);
                     // ズーム範囲
                     map.setLayerZoomRange(layer.id, 1, 24);
-                    // テキスト色：駅=青、バス停=緑、その他=黒
+                    // テキスト色：駅=青、バス停=緑、その他=デフォルト
                     map.setPaintProperty(layer.id, 'text-color', [
                         'case',
                         ['in', ['get', 'subclass'], ['literal', ['station', 'subway']]], '#1565C0',
                         ['==', ['get', 'subclass'], 'bus_stop'], '#2E7D32',
-                        '#000000'
+                        ['get', 'color']
                     ]);
                     map.setPaintProperty(layer.id, 'text-halo-color', '#FFFFFF');
                     map.setPaintProperty(layer.id, 'text-halo-width', [
                         'case',
                         ['in', ['get', 'subclass'], ['literal', ['station', 'subway', 'bus_stop']]], 2,
-                        0
+                        1
                     ]);
-                    // テキストサイズ：駅=14px、その他=12px
+                    // テキストサイズ：駅=14px、その他=デフォルト
                     map.setLayoutProperty(layer.id, 'text-size', [
                         'case',
                         ['in', ['get', 'subclass'], ['literal', ['station', 'subway']]], 14,
