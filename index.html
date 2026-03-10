@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8" />
-    <title>[v6] カスタムマップ</title>
+    <title>[v7] カスタムマップ</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="manifest" href="manifest.json">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -325,7 +325,9 @@
                         ['has', 'name'],
                         ['!', ['in', ['get', 'subclass'], ['literal', carSubclasses]]]
                     ]);
+                    // 駅はズーム1から、バス停はズーム14から表示
                     map.setLayerZoomRange(layer.id, 1, 24);
+                    map.setLayoutProperty(layer.id, 'visibility', 'visible');
                     map.setPaintProperty(layer.id, 'text-color', [
                         'case',
                         ['in', ['get', 'subclass'], ['literal', ['station', 'subway']]], '#1565C0',
@@ -342,6 +344,18 @@
                         'case',
                         ['in', ['get', 'subclass'], ['literal', ['station', 'subway']]], 14,
                         12
+                    ]);
+                    map.setPaintProperty(layer.id, 'text-opacity', [
+                        'case',
+                        ['==', ['get', 'subclass'], 'bus_stop'],
+                        ['interpolate', ['linear'], ['zoom'], 13, 0, 14, 1],
+                        1
+                    ]);
+                    map.setPaintProperty(layer.id, 'icon-opacity', [
+                        'case',
+                        ['==', ['get', 'subclass'], 'bus_stop'],
+                        ['interpolate', ['linear'], ['zoom'], 13, 0, 14, 1],
+                        1
                     ]);
                 }
 
