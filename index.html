@@ -320,23 +320,11 @@
                     // フォント統一
                     map.setLayoutProperty(layer.id, 'text-font', ['Noto Sans Bold']);
 
-                    // 車関連POIのアイコン・テキストを非表示
+                    // 車関連POIをフィルターで完全非表示
                     const carSubclasses = ['parking', 'fuel', 'car_dealer', 'car_rental', 'car_repair', 'car_wash', 'motorcycle'];
                     if (isStation) {
-                        map.setLayoutProperty(layer.id, 'icon-image', [
-                            'case',
-                            ['in', ['get', 'subclass'], ['literal', ['parking', 'fuel', 'car_dealer', 'car_rental', 'car_repair', 'car_wash', 'motorcycle']]],
-                            '',
-                            ['match', ['get', 'subclass'],
-                                ['florist', 'furniture'], ['get', 'subclass'],
-                                ['get', 'class']
-                            ]
-                        ]);
-                        map.setLayoutProperty(layer.id, 'text-field', [
-                            'case',
-                            ['in', ['get', 'subclass'], ['literal', ['parking', 'fuel', 'car_dealer', 'car_rental', 'car_repair', 'car_wash', 'motorcycle']]],
-                            '',
-                            ['coalesce', ['get', 'name:ja'], ['get', 'name']]
+                        map.setFilter(layer.id, [
+                            '!', ['in', ['get', 'subclass'], ['literal', carSubclasses]]
                         ]);
                     }
 
