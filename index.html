@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8" />
-    <title>[v5] カスタムマップ</title>
+    <title>[v6] カスタムマップ</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="manifest" href="manifest.json">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -299,21 +299,15 @@
     const carSubclasses    = ['parking', 'fuel', 'car_dealer', 'car_rental', 'car_repair', 'car_wash', 'motorcycle', 'charging_station'];
 
     map.once('style.load', () => {
-        const style = map.getStyle();
-        if (!style || !style.layers) return;
-
         // 道路番号シールドを非表示
         try { map.setLayoutProperty('highway-shield-non-us', 'visibility', 'none'); } catch(e) {}
         try { map.setLayoutProperty('highway-shield-us-interstate', 'visibility', 'none'); } catch(e) {}
         try { map.setLayoutProperty('road_shield_us', 'visibility', 'none'); } catch(e) {}
 
-        // 日本語化処理を削除（薄くなる原因のため）
-
         // 日本語化・駅強調・POIフィルター・水域色
-        const style = map.getStyle();
-        if (!style || !style.layers) return;
-
-        style.layers.forEach(layer => {
+        const layers = map.getStyle().layers;
+        if (!layers) return;
+        layers.forEach(layer => {
             if (ownLayerPrefixes.some(p => layer.id.startsWith(p))) return;
             try {
                 const lid = layer.id.toLowerCase();
