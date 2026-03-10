@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8" />
-    <title>[v1] カスタムマップ</title>
+    <title>[v2] カスタムマップ</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="manifest" href="manifest.json">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -302,10 +302,10 @@
         const style = map.getStyle();
         if (!style || !style.layers) return;
 
-        // 道路番号シールド非表示【デバッグ中・一時無効化】
-        // try { map.setLayoutProperty('highway-shield-non-us', 'visibility', 'none'); } catch(e) {}
-        // try { map.setLayoutProperty('highway-shield-us-interstate', 'visibility', 'none'); } catch(e) {}
-        // try { map.setLayoutProperty('road_shield_us', 'visibility', 'none'); } catch(e) {}
+        // 道路番号シールドを非表示
+        try { map.setLayoutProperty('highway-shield-non-us', 'visibility', 'none'); } catch(e) {}
+        try { map.setLayoutProperty('highway-shield-us-interstate', 'visibility', 'none'); } catch(e) {}
+        try { map.setLayoutProperty('road_shield_us', 'visibility', 'none'); } catch(e) {}
 
         // 日本語化処理を削除（薄くなる原因のため）
 
