@@ -273,7 +273,7 @@
 <div id="nearby-panel">
     <div id="nearby-panel-header">
         <span id="nearby-panel-title">周辺を探す</span>
-        <span style="margin-left:auto;margin-right:8px;font-size:10px;color:#bbb;">v31</span>
+        <span style="margin-left:auto;margin-right:8px;font-size:10px;color:#bbb;">v32</span>
         <button id="nearby-panel-close">×</button>
     </div>
     <div id="nearby-panel-body" style="overflow-y:auto;flex:1;">
@@ -312,7 +312,8 @@
             <div class="nearby-cat-label">ラーメン</div>
         </div>
     </div>
-    <div class="nearby-dist-section" id="nearby-dist-section">
+    </div><!-- /nearby-panel-body -->
+    <div class="nearby-dist-section" id="nearby-dist-section" style="flex-shrink:0;">
         <div class="nearby-section-label">距離</div>
         <div class="nearby-dist-chips">
             <div class="nearby-chip" data-dist="1">1km</div>
@@ -321,7 +322,6 @@
             <div class="nearby-chip" data-dist="10">10km</div>
         </div>
     </div>
-    </div><!-- /nearby-panel-body -->
     <button id="nearby-search-btn">探す</button>
 </div>
 
@@ -1044,14 +1044,14 @@
 
     // カテゴリ・距離・探すボタンのイベントをaddEventListenerで登録（onclick回避でレスポンス改善）
     document.addEventListener('DOMContentLoaded', () => {
-        // touchstart で300ms遅延を回避、clickも登録してダブル発火防止
+        // カテゴリ・チップはtouchstartで即反応（遷移なし）
+        // ダブル発火防止フラグ付き
         const addTap = (el, fn) => {
             let touched = false;
-            el.addEventListener('touchstart', (e) => {
+            el.addEventListener('touchstart', () => {
                 touched = true;
-                e.preventDefault();
                 fn();
-            }, { passive: false });
+            }, { passive: true });
             el.addEventListener('click', () => {
                 if (touched) { touched = false; return; }
                 fn();
@@ -1063,10 +1063,11 @@
         document.querySelectorAll('.nearby-chip').forEach(el => {
             addTap(el, () => selectNearbyDist(el));
         });
+        // 探すボタン・閉じるボタンはclickのみ（window.location遷移のため）
         const searchBtn = document.getElementById('nearby-search-btn');
-        if (searchBtn) addTap(searchBtn, execNearbySearch);
+        if (searchBtn) searchBtn.addEventListener('click', execNearbySearch);
         const closeBtn = document.getElementById('nearby-panel-close');
-        if (closeBtn) addTap(closeBtn, closeNearby);
+        if (closeBtn) closeBtn.addEventListener('click', closeNearby);
     });
 
     function toggleNearby() {
