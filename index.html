@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8" />
-    <title>[v28] カスタムマップ</title>
+    <title>[v29] カスタムマップ</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="manifest" href="manifest.json">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -276,7 +276,7 @@
         <span id="nearby-panel-title">周辺を探す</span>
         <button id="nearby-panel-close" onclick="closeNearby()">×</button>
     </div>
-    <div class="nearby-section-label">カテゴリ</div>
+    <div class="nearby-section-label">カテゴリ（スポット以外は複数選択可）</div>
     <div class="nearby-category-grid">
         <div class="nearby-cat-item" data-cat="spot" onclick="selectNearbyCat(this)">
             <div class="nearby-cat-icon">📍</div>
@@ -293,6 +293,22 @@
         <div class="nearby-cat-item" data-cat="statue" onclick="selectNearbyCat(this)">
             <div class="nearby-cat-icon">🗿</div>
             <div class="nearby-cat-label">像</div>
+        </div>
+        <div class="nearby-cat-item" data-cat="sightseeing" onclick="selectNearbyCat(this)">
+            <div class="nearby-cat-icon">🏛</div>
+            <div class="nearby-cat-label">観光スポット</div>
+        </div>
+        <div class="nearby-cat-item" data-cat="castle" onclick="selectNearbyCat(this)">
+            <div class="nearby-cat-icon">🏯</div>
+            <div class="nearby-cat-label">城</div>
+        </div>
+        <div class="nearby-cat-item" data-cat="restaurant" onclick="selectNearbyCat(this)">
+            <div class="nearby-cat-icon">🍽</div>
+            <div class="nearby-cat-label">レストラン</div>
+        </div>
+        <div class="nearby-cat-item" data-cat="ramen" onclick="selectNearbyCat(this)">
+            <div class="nearby-cat-icon">🍜</div>
+            <div class="nearby-cat-label">ラーメン</div>
         </div>
     </div>
     <div class="nearby-dist-section" id="nearby-dist-section">
@@ -1014,9 +1030,14 @@
     let currentLocation = null;
 
     // 周辺検索の選択状態（記憶）
+    const gmapKeywords = {
+        supermarket: 'スーパー', station: '駅', statue: '像',
+        sightseeing: '観光スポット', castle: '城',
+        restaurant: 'レストラン', ramen: 'ラーメン'
+    };
     let nearbyState = {
-        cat: 'supermarket',  // デフォルト：スーパー
-        dist: 5              // デフォルト：5km
+        cats: ['supermarket'],  // デフォルト：スーパー（配列）
+        dist: 5                 // デフォルト：5km
     };
 
     function toggleNearby() {
@@ -1031,14 +1052,14 @@
     function openNearbyPanel() {
         // 選択状態を復元
         document.querySelectorAll('.nearby-cat-item').forEach(el => {
-            el.classList.toggle('selected', el.dataset.cat === nearbyState.cat);
+            el.classList.toggle('selected', nearbyState.cats.includes(el.dataset.cat));
         });
         document.querySelectorAll('.nearby-chip').forEach(el => {
             el.classList.toggle('selected', parseInt(el.dataset.dist) === nearbyState.dist);
         });
-        // スポット以外は距離セクション非表示
+        // スポット選択時のみ距離表示
         document.getElementById('nearby-dist-section').style.display =
-            nearbyState.cat === 'spot' ? 'block' : 'none';
+            nearbyState.cats.includes('spot') ? 'block' : 'none';
         document.getElementById('nearby-list').innerHTML = '';
         document.getElementById('nearby-panel').classList.add('open');
         document.getElementById('nearby-overlay').classList.add('open');
@@ -1046,12 +1067,28 @@
     }
 
     function selectNearbyCat(el) {
-        document.querySelectorAll('.nearby-cat-item').forEach(e => e.classList.remove('selected'));
-        el.classList.add('selected');
-        nearbyState.cat = el.dataset.cat;
+        const cat = el.dataset.cat;
+        if (cat === 'spot') {
+            // スポット選択時は他を全解除
+            document.querySelectorAll('.nearby-cat-item').forEach(e => e.classList.remove('selected'));
+            el.classList.add('selected');
+            nearbyState.cats = ['spot'];
+        } else {
+            // スポットを解除して複数選択トグル
+            document.querySelectorAll('.nearby-cat-item[data-cat="spot"]').forEach(e => e.classList.remove('selected'));
+            nearbyState.cats = nearbyState.cats.filter(c => c !== 'spot');
+            if (el.classList.contains('selected')) {
+                el.classList.remove('selected');
+                nearbyState.cats = nearbyState.cats.filter(c => c !== cat);
+                if (nearbyState.cats.length === 0) nearbyState.cats = ['supermarket'];
+            } else {
+                el.classList.add('selected');
+                if (!nearbyState.cats.includes(cat)) nearbyState.cats.push(cat);
+            }
+        }
         // スポット選択時のみ距離表示
         document.getElementById('nearby-dist-section').style.display =
-            nearbyState.cat === 'spot' ? 'block' : 'none';
+            nearbyState.cats.includes('spot') ? 'block' : 'none';
         document.getElementById('nearby-list').innerHTML = '';
     }
 
@@ -1068,12 +1105,12 @@
             return;
         }
         const { lat, lng } = currentLocation;
-        const cat = nearbyState.cat;
+        const cats = nearbyState.cats;
 
-        // スーパー・駅・像はGoogleMap遷移
-        const gmapKeywords = { supermarket: 'スーパー', station: '駅', statue: '像' };
-        if (gmapKeywords[cat]) {
-            const url = `https://www.google.com/maps/search/${gmapKeywords[cat]}/@${lat},${lng},14z`;
+        // スポット以外はGoogleMap遷移（複数選択時は||でつなぐ）
+        if (!cats.includes('spot')) {
+            const keyword = cats.map(c => gmapKeywords[c]).filter(Boolean).join('||');
+            const url = `https://www.google.com/maps/search/${encodeURIComponent(keyword)}/@${lat},${lng},14z`;
             window.location.href = url;
             return;
         }
