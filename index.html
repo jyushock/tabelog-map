@@ -781,16 +781,12 @@
             return div;
         };
 
-        // 駅のみ最上部に表示
-        const stationItems = placeItems.filter(item => item.label.replace(/（.*）/, '').endsWith('駅'));
-        const otherItems   = placeItems.filter(item => !item.label.replace(/（.*）/, '').endsWith('駅'));
-
-        if (stationItems.length > 0) {
+        if (placeItems.length > 0) {
             const hdr = document.createElement('div');
             hdr.className = 'search-section-header';
-            hdr.textContent = '駅';
+            hdr.textContent = '地名・場所';
             box.appendChild(hdr);
-            stationItems.forEach(item => box.appendChild(makeItem(item)));
+            placeItems.forEach(item => box.appendChild(makeItem(item)));
         }
 
         if (localItems.length > 0) {
@@ -799,14 +795,6 @@
             hdr.textContent = 'スポット';
             box.appendChild(hdr);
             localItems.forEach(item => box.appendChild(makeItem(item)));
-        }
-
-        if (otherItems.length > 0) {
-            const hdr = document.createElement('div');
-            hdr.className = 'search-section-header';
-            hdr.textContent = '地名・場所';
-            box.appendChild(hdr);
-            otherItems.forEach(item => box.appendChild(makeItem(item)));
         }
 
         box.style.display = 'block';
