@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8" />
-    <title>[v25] カスタムマップ</title>
+    <title>[v27] カスタムマップ</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="manifest" href="manifest.json">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -184,7 +184,7 @@
         }
         .nearby-chip.selected { background: #e8f0fe; color: #4285F4; border-color: #4285F4; }
         #nearby-search-btn {
-            margin: 12px 16px 0;
+            margin: 12px 16px 8px;
             background: #4285F4; color: white; border: none;
             border-radius: 10px; height: 40px;
             width: calc(100% - 32px);
@@ -887,15 +887,19 @@
 
         // 自前データの場合はポップアップも表示
         if (item.type !== 'place') {
-            setTimeout(() => {
+            // タイルのレンダリング完了を待ってからクリック再現
+            const tryFire = (attempts) => {
                 const features = map.queryRenderedFeatures(
                     map.project(item.coords),
                     { layers: ['shops-bg', 'castles-bg', 'michi-bg', 'manholes-bg'] }
                 );
                 if (features.length > 0) {
                     map.fire('click', { lngLat: { lng: item.coords[0], lat: item.coords[1] }, features, point: map.project(item.coords) });
+                } else if (attempts > 0) {
+                    setTimeout(() => tryFire(attempts - 1), 200);
                 }
-            }, 300);
+            };
+            setTimeout(() => tryFire(5), 300);
         }
     }
 
