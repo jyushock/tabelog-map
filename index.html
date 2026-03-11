@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8" />
-    <title>[v22] カスタムマップ</title>
+    <title>[v23] カスタムマップ</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="manifest" href="manifest.json">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -137,14 +137,15 @@
         .search-section-header { padding: 6px 14px; font-size: 11px; color: #999; background: #fafafa; border-bottom: 1px solid #f0f0f0; }
 
         /* 周辺・スーパーボタン */
-        #nearby-btn, #supermarket-btn {
+        #nearby-btn {
             position: absolute;
             right: 10px;
+            bottom: 10px;
             z-index: 100;
-            background: white;
+            background: #4285F4;
             border: none;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(66,133,244,0.4);
             width: 44px;
             height: 44px;
             font-size: 20px;
@@ -152,9 +153,45 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            color: white;
         }
-        #nearby-btn       { bottom: 10px; }   /* filter-btnと同じ高さ */
-        #supermarket-btn  { bottom: 64px; }   /* nearby-btnの上 */
+
+        /* 周辺検索シート */
+        .nearby-section-label { font-size: 11px; color: #999; padding: 10px 16px 6px; }
+        .nearby-category-grid {
+            display: grid; grid-template-columns: repeat(4, 1fr);
+            gap: 8px; padding: 0 16px;
+        }
+        .nearby-cat-item {
+            display: flex; flex-direction: column; align-items: center;
+            gap: 4px; padding: 8px 4px; border-radius: 10px;
+            background: #f8f8f8; cursor: pointer; border: 2px solid transparent;
+        }
+        .nearby-cat-item.selected { background: #e8f0fe; border-color: #4285F4; }
+        .nearby-cat-icon { font-size: 20px; }
+        .nearby-cat-label { font-size: 10px; color: #555; text-align: center; }
+        .nearby-cat-item.selected .nearby-cat-label { color: #4285F4; font-weight: bold; }
+        .nearby-dist-section {
+            background: #f0f4ff; border-radius: 10px;
+            margin: 6px 16px 0; padding: 8px 10px;
+        }
+        .nearby-dist-section .nearby-section-label { padding: 0 0 6px; color: #4285F4; }
+        .nearby-dist-chips { display: flex; gap: 8px; }
+        .nearby-chip {
+            padding: 5px 14px; border-radius: 16px;
+            font-size: 12px; font-weight: bold;
+            background: #e0e8ff; color: #555;
+            cursor: pointer; border: 2px solid transparent;
+        }
+        .nearby-chip.selected { background: #e8f0fe; color: #4285F4; border-color: #4285F4; }
+        #nearby-search-btn {
+            margin: 12px 16px 0;
+            background: #4285F4; color: white; border: none;
+            border-radius: 10px; height: 40px;
+            width: calc(100% - 32px);
+            font-size: 14px; font-weight: bold; cursor: pointer;
+            flex-shrink: 0;
+        }
 
         /* ハーフモーダル */
         #nearby-panel {
@@ -232,15 +269,43 @@
     </div>
 </div>
 <div id="map"></div>
-<button id="supermarket-btn" onclick="openSupermarket()" title="近くのスーパー">🛒</button>
-<button id="nearby-btn" onclick="toggleNearby()" title="現在地周辺スポット">📍</button>
+<button id="nearby-btn" onclick="toggleNearby()" title="周辺を探す">📍</button>
 <button id="filter-btn" onclick="toggleFilter()" title="表示フィルター">🗂</button>
 <div id="nearby-overlay" onclick="closeNearby()"></div>
 <div id="nearby-panel">
     <div id="nearby-panel-header">
-        <span id="nearby-panel-title">現在地から5km以内</span>
+        <span id="nearby-panel-title">周辺を探す</span>
         <button id="nearby-panel-close" onclick="closeNearby()">×</button>
     </div>
+    <div class="nearby-section-label">カテゴリ</div>
+    <div class="nearby-category-grid">
+        <div class="nearby-cat-item" data-cat="spot" onclick="selectNearbyCat(this)">
+            <div class="nearby-cat-icon">📍</div>
+            <div class="nearby-cat-label">スポット</div>
+        </div>
+        <div class="nearby-cat-item" data-cat="supermarket" onclick="selectNearbyCat(this)">
+            <div class="nearby-cat-icon">🛒</div>
+            <div class="nearby-cat-label">スーパー</div>
+        </div>
+        <div class="nearby-cat-item" data-cat="station" onclick="selectNearbyCat(this)">
+            <div class="nearby-cat-icon">🚉</div>
+            <div class="nearby-cat-label">駅</div>
+        </div>
+        <div class="nearby-cat-item" data-cat="statue" onclick="selectNearbyCat(this)">
+            <div class="nearby-cat-icon">🗿</div>
+            <div class="nearby-cat-label">像</div>
+        </div>
+    </div>
+    <div class="nearby-dist-section" id="nearby-dist-section">
+        <div class="nearby-section-label">距離</div>
+        <div class="nearby-dist-chips">
+            <div class="nearby-chip" data-dist="1" onclick="selectNearbyDist(this)">1km</div>
+            <div class="nearby-chip" data-dist="3" onclick="selectNearbyDist(this)">3km</div>
+            <div class="nearby-chip" data-dist="5" onclick="selectNearbyDist(this)">5km</div>
+            <div class="nearby-chip" data-dist="10" onclick="selectNearbyDist(this)">10km</div>
+        </div>
+    </div>
+    <button id="nearby-search-btn" onclick="execNearbySearch()">探す</button>
     <div id="nearby-list"></div>
 </div>
 <div class="menu-ui" id="filter-panel">
@@ -867,22 +932,73 @@
     // ── 現在地周辺スポット ────────────────────────────────────────
     let currentLocation = null;
 
+    // 周辺検索の選択状態（記憶）
+    let nearbyState = {
+        cat: 'supermarket',  // デフォルト：スーパー
+        dist: 5              // デフォルト：5km
+    };
+
     function toggleNearby() {
         const panel = document.getElementById('nearby-panel');
         if (panel.classList.contains('open')) {
             closeNearby();
         } else {
-            openNearby();
+            openNearbyPanel();
         }
     }
 
-    function openNearby() {
+    function openNearbyPanel() {
+        // 選択状態を復元
+        document.querySelectorAll('.nearby-cat-item').forEach(el => {
+            el.classList.toggle('selected', el.dataset.cat === nearbyState.cat);
+        });
+        document.querySelectorAll('.nearby-chip').forEach(el => {
+            el.classList.toggle('selected', parseInt(el.dataset.dist) === nearbyState.dist);
+        });
+        // スポット以外は距離セクション非表示
+        document.getElementById('nearby-dist-section').style.display =
+            nearbyState.cat === 'spot' ? 'block' : 'none';
+        document.getElementById('nearby-list').innerHTML = '';
+        document.getElementById('nearby-panel').classList.add('open');
+        document.getElementById('nearby-overlay').classList.add('open');
+        document.getElementById('filter-panel').classList.remove('open');
+    }
+
+    function selectNearbyCat(el) {
+        document.querySelectorAll('.nearby-cat-item').forEach(e => e.classList.remove('selected'));
+        el.classList.add('selected');
+        nearbyState.cat = el.dataset.cat;
+        // スポット選択時のみ距離表示
+        document.getElementById('nearby-dist-section').style.display =
+            nearbyState.cat === 'spot' ? 'block' : 'none';
+        document.getElementById('nearby-list').innerHTML = '';
+    }
+
+    function selectNearbyDist(el) {
+        document.querySelectorAll('.nearby-chip').forEach(e => e.classList.remove('selected'));
+        el.classList.add('selected');
+        nearbyState.dist = parseInt(el.dataset.dist);
+        document.getElementById('nearby-list').innerHTML = '';
+    }
+
+    function execNearbySearch() {
         if (!currentLocation) {
             alert('現在地が取得できていません。しばらく待ってから再度お試しください。');
             return;
         }
         const { lat, lng } = currentLocation;
-        const RADIUS = 5;
+        const cat = nearbyState.cat;
+
+        // スーパー・駅・像はGoogleMap遷移
+        const gmapKeywords = { supermarket: 'スーパー', station: '駅', statue: '像' };
+        if (gmapKeywords[cat]) {
+            const url = `https://www.google.com/maps/search/${gmapKeywords[cat]}/@${lat},${lng},14z`;
+            window.location.href = url;
+            return;
+        }
+
+        // スポット：自前データを距離で検索
+        const RADIUS = nearbyState.dist;
         const results = searchIndex
             .map(item => ({
                 ...item,
@@ -890,13 +1006,13 @@
             }))
             .filter(item => item.dist <= RADIUS)
             .sort((a, b) => a.dist - b.dist)
-            .slice(0, 10);
+            .slice(0, 20);
 
         const list = document.getElementById('nearby-list');
         list.innerHTML = '';
 
         if (results.length === 0) {
-            list.innerHTML = '<div style="padding:16px;text-align:center;color:#999;font-size:13px;">5km以内にスポットが見つかりません</div>';
+            list.innerHTML = `<div style="padding:16px;text-align:center;color:#999;font-size:13px;">${RADIUS}km以内にスポットが見つかりません</div>`;
         } else {
             results.forEach(item => {
                 const cfg = typeConfig[item.type] || typeConfig.place;
@@ -923,26 +1039,11 @@
                 list.appendChild(div);
             });
         }
-
-        document.getElementById('nearby-panel').classList.add('open');
-        document.getElementById('nearby-overlay').classList.add('open');
-        document.getElementById('filter-panel').classList.remove('open');
     }
 
     function closeNearby() {
         document.getElementById('nearby-panel').classList.remove('open');
         document.getElementById('nearby-overlay').classList.remove('open');
-    }
-
-    // ── 近くのスーパー（GoogleMap遷移）────────────────────────────
-    function openSupermarket() {
-        if (!currentLocation) {
-            alert('現在地が取得できていません。しばらく待ってから再度お試しください。');
-            return;
-        }
-        const { lat, lng } = currentLocation;
-        const url = `https://www.google.com/maps/search/スーパー/@${lat},${lng},14z`;
-        window.location.href = url;
     }
 
     // ── フィルタートグル ──────────────────────────────────────────
