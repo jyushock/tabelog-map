@@ -18,7 +18,7 @@
     <script src="pokemon.js"></script>
     <style>
         body { margin: 0; padding: 0; }
-        #map { position: absolute; top: 0; bottom: 52px; width: 100%; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
         .popup-card { min-width: 180px; padding: 7px; font-family: sans-serif; }
         .popup-title { font-weight: bold; font-size: 14px; display: block; margin-bottom: 2px; }
         .popup-genre { font-size: 11px; color: #666; display: block; margin-bottom: 5px; }
@@ -68,7 +68,7 @@
         /* 下部バー */
         #bottom-bar {
             position: fixed;
-            bottom: 1px;
+            bottom: 0;
             left: 0;
             right: 0;
             height: 52px;
@@ -283,7 +283,7 @@
 <div id="nearby-panel">
     <div id="nearby-panel-header">
         <span id="nearby-panel-title">周辺を探す</span>
-        <span style="margin-left:auto;margin-right:8px;font-size:10px;color:#bbb;">v42</span>
+        <span style="margin-left:auto;margin-right:8px;font-size:10px;color:#bbb;">v44</span>
         <button id="nearby-panel-close" onclick="closeNearby()">×</button>
     </div>
     <div class="nearby-section-label">カテゴリ（スポット以外は複数選択可）</div>
@@ -381,8 +381,10 @@
         container: 'map',
         style: 'https://tiles.openfreemap.org/styles/liberty',
         center: [139.76, 35.68],
-        zoom: 11
+        zoom: 11,
+        attributionControl: false
     });
+    map.addControl(new maplibregl.AttributionControl({ compact: true }), 'bottom-right');
     const geolocate = new maplibregl.GeolocateControl({
         positionOptions: { enableHighAccuracy: true },
         trackUserLocation: false,
