@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -8,7 +9,6 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="マップ">
-    <link rel="icon" href="icon.svg" type="image/svg+xml">
     <link rel="icon" href="icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="icon.svg">
     <script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
@@ -285,7 +285,7 @@
 <div id="nearby-panel">
     <div id="nearby-panel-header">
         <span id="nearby-panel-title">周辺を探す</span>
-        <span style="margin-left:auto;margin-right:8px;font-size:10px;color:#bbb;">v49</span>
+        <span style="margin-left:auto;margin-right:8px;font-size:10px;color:#bbb;">v44</span>
         <button id="nearby-panel-close" onclick="closeNearby()">×</button>
     </div>
     <div class="nearby-section-label">カテゴリ（スポット以外は複数選択可）</div>
@@ -442,17 +442,19 @@
                         ['!', ['==', ['get', 'class'], 'car']],
                         ['!', ['==', ['get', 'subclass'], 'bus_stop']]
                     ]);
+                    // 駅はズーム1から、バス停はズーム14から表示
                     map.setLayerZoomRange(layer.id, 1, 24);
                     map.setLayoutProperty(layer.id, 'visibility', 'visible');
                     map.setPaintProperty(layer.id, 'text-color', [
                         'case',
                         ['in', ['get', 'subclass'], ['literal', ['station', 'subway']]], '#1565C0',
+                        ['==', ['get', 'subclass'], 'bus_stop'], '#2E7D32',
                         '#333333'
                     ]);
                     map.setPaintProperty(layer.id, 'text-halo-color', '#FFFFFF');
                     map.setPaintProperty(layer.id, 'text-halo-width', [
                         'case',
-                        ['in', ['get', 'subclass'], ['literal', ['station', 'subway']]], 2,
+                        ['in', ['get', 'subclass'], ['literal', ['station', 'subway', 'bus_stop']]], 2,
                         1
                     ]);
                     map.setLayoutProperty(layer.id, 'text-size', [
@@ -461,36 +463,6 @@
                         12
                     ]);
 
-                    // 駅専用レイヤーをテキストのみで追加（アイコンは元レイヤーに任せる）
-                    const stationLayerId = `station-overlay-${layer.id}`;
-                    if (!map.getLayer(stationLayerId)) {
-                        map.addLayer({
-                            id: stationLayerId,
-                            type: 'symbol',
-                            source: layer.source,
-                            'source-layer': layer['source-layer'],
-                            filter: ['all',
-                                ['has', 'name'],
-                                ['in', ['get', 'subclass'], ['literal', ['station', 'subway']]]
-                            ],
-                            minzoom: 1,
-                            maxzoom: 24,
-                            layout: {
-                                'text-field': ['coalesce', ['get', 'name:ja'], ['get', 'name']],
-                                'text-size': 14,
-                                'text-font': ['Noto Sans Bold'],
-                                'text-allow-overlap': true,
-                                'text-ignore-placement': true,
-                                'icon-size': 0,
-                                'visibility': 'visible'
-                            },
-                            paint: {
-                                'text-color': '#1565C0',
-                                'text-halo-color': '#FFFFFF',
-                                'text-halo-width': 2
-                            }
-                        });
-                    }
                 }
 
                 // poi_transit：バス停（緑・ズーム14以上）
