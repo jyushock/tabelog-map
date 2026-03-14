@@ -27,6 +27,21 @@
             border: 3px solid white;
             border-radius: 50%;
             box-shadow: 0 0 6px rgba(0,0,0,0.3);
+            position: relative;
+        }
+        .current-location-dot::after {
+            content: '';
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 16px; height: 16px;
+            background: rgba(66, 133, 244, 0.4);
+            border-radius: 50%;
+            animation: gps-pulse 2s ease-out infinite;
+        }
+        @keyframes gps-pulse {
+            0%   { transform: translate(-50%, -50%) scale(1); opacity: 0.8; }
+            100% { transform: translate(-50%, -50%) scale(3.5); opacity: 0; }
         }
         #geolocate-btn-wrap {
             position: fixed;
@@ -336,7 +351,7 @@
 <div id="nearby-panel">
     <div id="nearby-panel-header">
         <span id="nearby-panel-title">表示フィルター</span>
-        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v71</span>
+        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v72</span>
         <button id="nearby-panel-close" onclick="closeNearby()">×</button>
     </div>
     <div id="filter-checkboxes">
