@@ -331,7 +331,6 @@
 <body>
 <div id="search-results"><div id="search-results-inner"></div></div>
 <div id="map"></div>
-<div id="debug-overlay" style="position:fixed;top:10px;left:10px;z-index:9999;background:rgba(0,0,0,0.7);color:white;font-size:11px;padding:6px 10px;border-radius:6px;font-family:monospace;pointer-events:none;max-width:280px;"></div>
 <div id="geolocate-btn-wrap">
     <button id="geolocate-btn" title="現在地">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -354,7 +353,7 @@
 <div id="nearby-panel">
     <div id="nearby-panel-header">
         <span id="nearby-panel-title">表示フィルター</span>
-        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v73</span>
+        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v74</span>
         <button id="nearby-panel-close" onclick="closeNearby()">×</button>
     </div>
     <div id="filter-checkboxes">
@@ -583,8 +582,7 @@
                 const lng = pos.coords.longitude;
                 const lat = pos.coords.latitude;
                 currentLocation = { lat, lng };
-                const dbg = document.getElementById('debug-overlay');
-                if (dbg) dbg.innerHTML = 'GPS発火: ' + new Date().toLocaleTimeString() + '<br>isTracking: ' + isTracking + '<br>hadFirstFix: ' + hadFirstFix + '<br>lat: ' + lat.toFixed(5) + '<br>lng: ' + lng.toFixed(5);
+
 
                 // 現在地マーカーを更新
                 if (!currentMarker) {
@@ -603,8 +601,7 @@
                     if (currentMarker) currentMarker.getElement().classList.add('tracking');
                     map.jumpTo({ center: [lng, lat], zoom: trackingZoom });
                 } else if (isTracking && !isZooming) {
-                    const dbg2 = document.getElementById('debug-overlay');
-                    if (dbg2) dbg2.style.background = 'rgba(0,100,0,0.8)';
+
                     map.jumpTo({ center: [lng, lat], zoom: trackingZoom });
                 }
             }, (err) => {
