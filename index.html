@@ -1125,8 +1125,8 @@
             const screenH = window.innerHeight;
             const bottomBarH = 52;
             const availableH = screenH - bottomBarH;
-            // ピンを画面の60%の位置に置くためのオフセット（中心=50%からの差分）
-            const offsetPx = availableH * (0.60 - 0.50);
+            // ピンを画面の75%の位置に置くためのオフセット（中心=50%からの差分）
+            const offsetPx = availableH * (0.75 - 0.50);
             // ピクセルを緯度差に変換（緯度1度 ≈ 111320m）
             const offsetLat = (offsetPx * metersPerPx) / 111320;
 
