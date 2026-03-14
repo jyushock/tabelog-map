@@ -123,31 +123,44 @@
             background: white;
             box-shadow: 0 -4px 12px rgba(0,0,0,0.15);
             max-height: 200px;
-            overflow-y: auto;
             z-index: 200;
+            display: none;
         }
+        #search-results-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .search-col {
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #f0f0f0;
+            min-width: 0;
+        }
+        .search-col:last-child { border-right: none; }
         .search-result-item {
             display: flex;
             align-items: center;
-            padding: 10px 14px;
+            padding: 8px 10px;
             cursor: pointer;
             border-bottom: 1px solid #f0f0f0;
-            gap: 10px;
+            gap: 8px;
         }
         .search-result-item:last-child { border-bottom: none; }
         .search-result-item:hover { background: #f9f9f9; }
         .search-result-icon {
-            width: 28px; height: 28px;
+            width: 24px; height: 24px;
             border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
-            font-size: 13px;
+            font-size: 12px;
             flex-shrink: 0;
             color: white;
         }
         .search-result-text { flex: 1; min-width: 0; }
-        .search-result-name { font-size: 14px; font-weight: bold; color: #333; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-        .search-result-sub  { font-size: 11px; color: #999; margin-top: 1px; }
-        .search-section-header { padding: 6px 14px; font-size: 11px; color: #999; background: #fafafa; border-bottom: 1px solid #f0f0f0; }
+        .search-result-name { font-size: 13px; font-weight: bold; color: #333; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .search-result-sub  { font-size: 10px; color: #999; margin-top: 1px; }
+        .search-section-header { padding: 5px 10px; font-size: 11px; color: #999; background: #fafafa; border-bottom: 1px solid #f0f0f0; position: sticky; top: 0; }
 
         /* 周辺・スーパーボタン */
         #nearby-btn {
@@ -268,7 +281,7 @@
     </style>
 </head>
 <body>
-<div id="search-results"></div>
+<div id="search-results"><div id="search-results-inner"></div></div>
 <div id="map"></div>
 <div id="bottom-bar">
     <button id="filter-btn" onclick="toggleFilter()" title="表示フィルター">🗂</button>
@@ -285,7 +298,7 @@
 <div id="nearby-panel">
     <div id="nearby-panel-header">
         <span id="nearby-panel-title">周辺を探す</span>
-        <span style="margin-left:auto;margin-right:8px;font-size:10px;color:#bbb;">v44</span>
+        <span style="margin-left:auto;margin-right:8px;font-size:10px;color:#bbb;">v45</span>
         <button id="nearby-panel-close" onclick="closeNearby()">×</button>
     </div>
     <div class="nearby-section-label">カテゴリ（スポット以外は複数選択可）</div>
@@ -882,10 +895,11 @@
     // 候補リストを描画
     function renderResults(localItems, placeItems) {
         const box = document.getElementById('search-results');
-        box.innerHTML = '';
+        const inner = document.getElementById('search-results-inner');
+        inner.innerHTML = '';
 
         if (localItems.length === 0 && placeItems.length === 0) {
-            box.innerHTML = '<div style="padding:14px;text-align:center;color:#999;font-size:13px;">候補が見つかりません</div>';
+            inner.innerHTML = '<div style="padding:14px;text-align:center;color:#999;font-size:13px;grid-column:1/-1;">候補が見つかりません</div>';
             box.style.display = 'block';
             return;
         }
@@ -893,7 +907,7 @@
         const makeItem = (item) => {
             const cfg = typeConfig[item.type] || typeConfig.place;
             const iconHtml = cfg.img
-                ? `<img src="${cfg.img}" style="width:16px;height:16px;object-fit:contain;filter:brightness(0) invert(1);">`
+                ? `<img src="${cfg.img}" style="width:14px;height:14px;object-fit:contain;filter:brightness(0) invert(1);">`
                 : cfg.icon;
             const itemColor = getItemColor(item);
             const div = document.createElement('div');
@@ -908,21 +922,29 @@
             return div;
         };
 
-        if (placeItems.length > 0) {
-            const hdr = document.createElement('div');
-            hdr.className = 'search-section-header';
-            hdr.textContent = '地名・場所';
-            box.appendChild(hdr);
-            placeItems.forEach(item => box.appendChild(makeItem(item)));
-        }
-
+        // 左列：スポット
+        const leftCol = document.createElement('div');
+        leftCol.className = 'search-col';
         if (localItems.length > 0) {
             const hdr = document.createElement('div');
             hdr.className = 'search-section-header';
             hdr.textContent = 'スポット';
-            box.appendChild(hdr);
-            localItems.forEach(item => box.appendChild(makeItem(item)));
+            leftCol.appendChild(hdr);
+            localItems.forEach(item => leftCol.appendChild(makeItem(item)));
         }
+        inner.appendChild(leftCol);
+
+        // 右列：地名・場所
+        const rightCol = document.createElement('div');
+        rightCol.className = 'search-col';
+        if (placeItems.length > 0) {
+            const hdr = document.createElement('div');
+            hdr.className = 'search-section-header';
+            hdr.textContent = '地名・場所';
+            rightCol.appendChild(hdr);
+            placeItems.forEach(item => rightCol.appendChild(makeItem(item)));
+        }
+        inner.appendChild(rightCol);
 
         box.style.display = 'block';
     }
