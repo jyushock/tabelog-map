@@ -131,12 +131,15 @@
             grid-template-columns: 1fr 1fr;
             max-height: 200px;
             overflow-y: auto;
+            font-family: sans-serif;
+            -webkit-text-size-adjust: 100%;
         }
         .search-col {
             display: flex;
             flex-direction: column;
             border-right: 1px solid #f0f0f0;
             min-width: 0;
+            font-family: sans-serif;
         }
         .search-col:last-child { border-right: none; }
         .search-result-item {
@@ -298,7 +301,7 @@
 <div id="nearby-panel">
     <div id="nearby-panel-header">
         <span id="nearby-panel-title">周辺を探す</span>
-        <span style="margin-left:auto;margin-right:8px;font-size:10px;color:#bbb;">v45</span>
+        <span style="margin-left:auto;margin-right:8px;font-size:10px;color:#bbb;">v46</span>
         <button id="nearby-panel-close" onclick="closeNearby()">×</button>
     </div>
     <div class="nearby-section-label">カテゴリ（スポット以外は複数選択可）</div>
