@@ -531,8 +531,12 @@
                     map.setLayerZoomRange(layer.id, 1, 24);
                     map.setLayoutProperty(layer.id, 'visibility', 'visible');
 
-                    // ここに以下を追加してください
                     map.setLayoutProperty(layer.id, 'symbol-sort-key', 1);
+                    
+                    // 【追加】他のラベルと重なっても「絶対に」隠さない設定
+                    map.setLayoutProperty(layer.id, 'text-allow-overlap', true);
+                    map.setLayoutProperty(layer.id, 'icon-allow-overlap', true);
+                    map.setLayoutProperty(layer.id, 'text-ignore-placement', true);
                     
                     map.setPaintProperty(layer.id, 'text-color', [
                         'case',
