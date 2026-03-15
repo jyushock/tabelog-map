@@ -524,11 +524,9 @@
                 const isBusLayer = busLayerIds.includes(layer.id);
 
                 if (isStationLayer || isBusLayer) {
-                    // レイヤー名から駅かどうかを判定
-                    const isStation = layer.id.includes('station') || layer.id.includes('rail');
-
-                    if (isStation) {
-                        // 【駅の設定】最優先(1)、重なりを許可、濃い青、サイズ14
+                    // 文字列検索ではなく、配列(isStationLayer)の結果をそのまま使う
+                    if (isStationLayer) {
+                        // 【駅の設定】最優先(1)、重なりを許可(Shield)、濃い青、サイズ14
                         map.setLayoutProperty(layer.id, 'symbol-sort-key', 1);
                         map.setLayoutProperty(layer.id, 'text-allow-overlap', true);
                         map.setLayoutProperty(layer.id, 'text-ignore-placement', true);
@@ -539,8 +537,16 @@
                         
                         // 駅は広域（ズーム1）から表示
                         map.setLayerZoomRange(layer.id, 1, 24);
+
+                        // poi_r系レイヤー特有のフィルタ適用（駅レイヤーのみ）
+                        map.setFilter(layer.id, ['all',
+                            ['has', 'name'],
+                            ['!', ['in', ['get', 'subclass'], ['literal', carSubclasses]]],
+                            ['!', ['==', ['get', 'class'], 'car']],
+                            ['!', ['==', ['get', 'subclass'], 'bus_stop']]
+                        ]);
                     } else {
-                        // 【バス停・その他交通の設定】優先度を下げ(10)、重なり時は駅に譲る、緑、サイズ12
+                        // 【バス停の設定】（isBusLayerの場合）優先度を下げ(10)、緑、サイズ12
                         map.setLayoutProperty(layer.id, 'symbol-sort-key', 10);
                         map.setLayoutProperty(layer.id, 'text-allow-overlap', false);
                         map.setLayoutProperty(layer.id, 'text-ignore-placement', false);
@@ -560,6 +566,7 @@
                     map.setLayoutProperty(layer.id, 'visibility', 'visible');
                     map.setLayoutProperty(layer.id, 'text-font', ['Noto Sans Bold']);
                     map.setPaintProperty(layer.id, 'text-halo-color', '#FFFFFF');
+                }
 
                     // poi_r系レイヤー特有のフィルタ適用
                     if (isStationLayer) {
