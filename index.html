@@ -1113,6 +1113,13 @@
     }
 
     function onResultClick(item) {
+        // --- 追加: 現在地追従をオフにする ---
+        isTracking = false;
+        const btn = document.getElementById('geolocate-btn');
+        if (btn) btn.classList.remove('geolocate-active');
+        if (currentMarker) currentMarker.getElement().classList.remove('tracking');
+        // ----------------------------------
+
         clearSearch();
         map.jumpTo({ center: item.coords, zoom: 15 });
 
@@ -1120,7 +1127,7 @@
             setTimeout(() => showPopupForItem(item), 300);
         }
     }
-
+    
     function clearSearch() {
         document.getElementById('search-input').value = '';
         document.getElementById('search-clear').style.display = 'none';
