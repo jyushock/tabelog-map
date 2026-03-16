@@ -482,8 +482,6 @@
         }
     });
 
-
-
     // スタイル調整：日本語化・駅強調・POI整理・水域色・3D建物
     const ownLayerPrefixes = ['shops-', 'castles-', 'michi-', 'manholes-'];
     const stationLayerIds  = ['poi_r20', 'poi_r7', 'poi_r1', 'poi_transit'];
@@ -491,93 +489,102 @@
     const carSubclasses    = ['parking', 'fuel', 'car_dealer', 'car_rental', 'car_repair', 'car_wash', 'motorcycle', 'charging_station'];
     const stationSubclasses = ['station', 'halt', 'subway', 'tram_stop', 'light_rail', 'stop', 'stop_position', 'platform', 'monorail', 'funicular', 'bus_station', 'bus_stop'];
 
-    map.once('style.load', () => {
-        // 道路番号シールドを非表示
-        try { map.setLayoutProperty('highway-shield-non-us', 'visibility', 'none'); } catch(e) {}
-        try { map.setLayoutProperty('highway-shield-us-interstate', 'visibility', 'none'); } catch(e) {}
-        try { map.setLayoutProperty('road_shield_us', 'visibility', 'none'); } catch(e) {}
-
+map.once('style.load', () => {
         const allLayers = map.getStyle().layers;
-        allLayers.forEach(layer => {
-            // 道路名データ層(transportation_name)またはIDにshieldを含むものを一括非表示
-            if (layer['source-layer'] === 'transportation_name' || layer.id.includes('shield')) {
+        if (!allLayers) return;
+
+allLayers.forEach(layer => {
+            // 1. 不要な情報の非表示（道路シールド・道路名）
+            // 地名（place）は表示したいとのことですので、ここからは除外しています
+            const isShield = layer.id.includes('shield');
+            const isTransName = layer['source-layer'] === 'transportation_name';
+
+            if (isShield || isTransName) {
                 map.setLayoutProperty(layer.id, 'visibility', 'none');
+                return; 
             }
-        });        
 
-        // 日本語化・駅強調・POIフィルター・水域色
-        const layers = map.getStyle().layers;
-        if (!layers) return;
-        layers.forEach(layer => {
+            // 2. 自分のレイヤーはスキップ
             if (ownLayerPrefixes.some(p => layer.id.startsWith(p))) return;
+
             try {
-                const lid = layer.id.toLowerCase();
+                if (layer.type === 'symbol') {
+                    // 日本語優先設定
+                    if (layer.layout && layer.layout['text-field']) {
+                        map.setLayoutProperty(layer.id, 'text-field', ['coalesce', ['get', 'name:ja'], ['get', 'name']]);
+                    }
 
-                // 日本語優先
-                if (layer.type === 'symbol' && layer.layout && layer.layout['text-field']) {
-                    map.setLayoutProperty(layer.id, 'text-field', [
-                        'coalesce', ['get', 'name:ja'], ['get', 'name']
-                    ]);
-                }
+// --- 交通関連・POI（駅・店・バス停など）の調整 ---
+                    if (stationLayerIds.includes(layer.id)) {
+                        
+                        // 1. 【フィルタ】駐車場以外はすべて表示
+                        map.setFilter(layer.id, ['all',
+                            ['has', 'name'],
+                            ['!', ['in', ['get', 'subclass'], ['literal', carSubclasses]]]
+                        ]);
 
-                // poi_r系：車関連・名前なし除外、駅・バス停強調
-                if (stationLayerIds.includes(layer.id)) {
-                    map.setFilter(layer.id, ['all',
-                        ['has', 'name'],
-                        ['!', ['in', ['get', 'subclass'], ['literal', carSubclasses]]],
-                        ['any',
-                            ['in', ['get', 'subclass'], ['literal', stationSubclasses]],
+                        // 2. 【判定の再定義】所沢駅などの主要駅を確実に捕まえる
+                        const isMainStation = ['any',
+                            // 既存の駅判定
+                            ['in', ['get', 'subclass'], ['literal', ['station', 'subway', 'monorail', 'halt', 'tram_stop']]],
+                            // レイヤーの「class」属性が鉄道関連なら駅とみなす
                             ['==', ['get', 'class'], 'railway'],
-                            ['==', ['get', 'class'], 'public_transport']
-                        ]
-                    ]);
-                    // 駅はズーム1から、バス停はズーム14から表示
-                    map.setLayerZoomRange(layer.id, 1, 24);
-                    map.setLayoutProperty(layer.id, 'text-allow-overlap', [
-                        'case',
-                        ['in', ['get', 'subclass'], ['literal', stationSubclasses]],
-                        true,
-                        false
-                    ]);
-                    map.setLayoutProperty(layer.id, 'visibility', 'visible');
-                    map.setPaintProperty(layer.id, 'text-color', [
-                        'case',
-                        ['in', ['get', 'subclass'], ['literal', ['station', 'subway']]], '#1565C0',
-                        ['==', ['get', 'subclass'], 'bus_stop'], '#2E7D32',
-                        '#333333'
-                    ]);
-                    map.setPaintProperty(layer.id, 'text-halo-color', '#FFFFFF');
-                    map.setPaintProperty(layer.id, 'text-halo-width', [
-                        'case',
-                        ['in', ['get', 'subclass'], ['literal', ['station', 'subway', 'bus_stop']]], 2,
-                        1
-                    ]);
-                    map.setLayoutProperty(layer.id, 'text-size', [
-                        'case',
-                        ['in', ['get', 'subclass'], ['literal', ['station', 'subway']]], 14,
-                        12
-                    ]);
+                            ['==', ['get', 'class'], 'public_transport'],
+                            // 主要ターミナル駅が持つ可能性のある判定を追加
+                            ['has', 'railway'] 
+                        ];
+                        const isBusStop = ['==', ['get', 'subclass'], 'bus_stop'];
+
+                        // 3. 【消滅防止の徹底】
+                        // 駅判定されたものは、衝突判定を完全に無効化して「常に最前面に強制描画」
+                        map.setLayoutProperty(layer.id, 'text-ignore-placement', ['case', isMainStation, true, false]);
+                        map.setLayoutProperty(layer.id, 'icon-ignore-placement', ['case', isMainStation, true, false]);
+                        map.setLayoutProperty(layer.id, 'text-allow-overlap', ['case', isMainStation, true, false]);
+                        map.setLayoutProperty(layer.id, 'icon-allow-overlap', ['case', isMainStation, true, false]);
+
+                        // 4. 【描画順位（Symbol Sort Key）の極大化】
+                        // 値が小さいほど優先される。駅を「1」に固定し、お店（100）より圧倒的に優先
+                        map.setLayoutProperty(layer.id, 'symbol-sort-key', ['case', isMainStation, 1, 100]);
+
+                        // 5. 【配置の固定】
+                        map.setLayoutProperty(layer.id, 'text-variable-anchor', ['literal', null]);
+                        map.setLayoutProperty(layer.id, 'text-anchor', 'top');
+                        map.setLayoutProperty(layer.id, 'text-offset', [
+                            'case',
+                            isMainStation, ['literal', [0, 0.9]], // 駅は少し離して視認性アップ
+                            isBusStop, ['literal', [0, 0.6]],
+                            ['literal', [0, 0.4]]
+                        ]);
+
+                        // 6. 【サイズと配色】
+                        map.setLayoutProperty(layer.id, 'icon-size', ['case', isMainStation, 1.25, 0.8]);
+                        map.setLayoutProperty(layer.id, 'text-size', ['case', isMainStation, 15, 11]);
+
+                        // 7. 【全ズーム表示の強制】
+                        map.setLayoutProperty(layer.id, 'visibility', 'visible');
+                        map.setLayerZoomRange(layer.id, 1, 24); 
+
+                        map.setPaintProperty(layer.id, 'text-color', [
+                            'case',
+                            isMainStation, '#0D47A1', // より濃い青で強調
+                            isBusStop, '#2E7D32',
+                            '#444444'
+                        ]);
+                        map.setPaintProperty(layer.id, 'text-halo-color', '#FFFFFF');
+                        map.setPaintProperty(layer.id, 'text-halo-width', ['case', isMainStation, 2.5, 1.0]);
+                    }
                 }
 
-                // poi_transit：バス停（緑・ズーム14以上）
-                if (busLayerIds.includes(layer.id)) {
-                    map.setLayerZoomRange(layer.id, 14, 24);
-                    map.setPaintProperty(layer.id, 'text-color', '#2E7D32');
-                    map.setPaintProperty(layer.id, 'text-halo-color', '#FFFFFF');
-                    map.setPaintProperty(layer.id, 'text-halo-width', 1.5);
-                    try { map.setPaintProperty(layer.id, 'icon-color', '#2E7D32'); } catch(e) {}
-                }
-
-                // 水域・公園の色
+                // 3. 水域・公園の色（fillレイヤー）
                 if (layer.type === 'fill') {
+                    const lid = layer.id.toLowerCase();
                     if (lid.includes('water')) {
                         map.setPaintProperty(layer.id, 'fill-color', '#AAD3DF');
                     } else if (lid.includes('park') || lid.includes('green') || lid.includes('forest') || lid.includes('wood')) {
                         map.setPaintProperty(layer.id, 'fill-color', '#C8FACC');
                     }
                 }
-
-            } catch(e) {}
+            } catch (e) {}
         });
     });
 
