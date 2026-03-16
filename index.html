@@ -514,7 +514,7 @@ allLayers.forEach(layer => {
                         map.setLayoutProperty(layer.id, 'text-field', ['coalesce', ['get', 'name:ja'], ['get', 'name']]);
                     }
 
-// --- 交通関連・POI（駅・店・バス停など）の調整 ---
+                    // --- 交通関連・POI（駅・店・バス停など）の調整 ---
                     if (stationLayerIds.includes(layer.id)) {
                         
                         // 1. 【フィルタ】駐車場以外はすべて表示
@@ -557,7 +557,7 @@ allLayers.forEach(layer => {
                         ]);
 
                         // 6. 【サイズと配色】
-                        map.setLayoutProperty(layer.id, 'icon-size', ['case', isMainStation, 1.25, 0.8]);
+                        map.setLayoutProperty(layer.id, 'icon-size', ['case', isMainStation, 1.2, 0.8]);
                         map.setLayoutProperty(layer.id, 'text-size', ['case', isMainStation, 15, 11]);
 
                         // 7. 【全ズーム表示の強制】
