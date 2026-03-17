@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -28,6 +27,25 @@
             border-radius: 50%;
             box-shadow: 0 0 6px rgba(0,0,0,0.3);
             position: relative;
+        }
+        .current-location-dot .heading-arrow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            border-bottom: 18px solid #1A73E8;
+            transform-origin: 50% 100%;
+            transform: translate(-50%, -60%) rotate(0deg);
+            transition: transform 0.2s ease-out;
+            opacity: 0;
+            z-index: -1;
+            filter: drop-shadow(0 1px 2px rgba(0,0,0,0.3));
+        }
+        .current-location-dot .heading-arrow.visible {
+            opacity: 1;
         }
         .current-location-dot::after {
             content: '';
@@ -456,31 +474,93 @@
         attributionControl: false
     });
     map.addControl(new maplibregl.AttributionControl({ compact: true }), 'bottom-right');
-    // 現在地マーカー
+
+    // 現在地関連の変数
     let currentMarker = null;
-    let isTracking = true;
+    let currentLocation = null;
+    let trackingMode = 0; // 0:オフ, 1:追従, 2:追従+ヘディング
     let trackingZoom = 17;
     let hadFirstFix = false;
     let isZooming = false;
+    let deviceHeading = 0;
 
-    // ドラッグで追従OFF
+    // ボタンのSVGアイコン
+    const iconLocate = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg>`;
+    const iconNav = `<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>`;
+
+    // iOS向けに向き取得の権限をリクエスト
+    function requestDeviceOrientation() {
+        if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
+            DeviceOrientationEvent.requestPermission().then(state => {
+                if (state === 'granted') {
+                    window.addEventListener('deviceorientation', handleOrientation);
+                }
+            }).catch(console.error);
+        } else {
+            window.addEventListener('deviceorientation', handleOrientation);
+        }
+    }
+
+    // 向きの更新ハンドラ
+    function handleOrientation(event) {
+        let heading = 0;
+        if (event.webkitCompassHeading) { // iOS
+            heading = event.webkitCompassHeading;
+        } else if (event.alpha !== null) { // Android
+            heading = 360 - event.alpha;
+        }
+        deviceHeading = heading;
+
+        if (currentMarker) {
+            const arrow = currentMarker.getElement().querySelector('.heading-arrow');
+            if (arrow && trackingMode === 2) {
+                arrow.style.transform = `translate(-50%, -60%) rotate(${deviceHeading}deg)`;
+            }
+        }
+    }
+
+    // 地図ドラッグで追従解除
     map.on('dragstart', () => {
-        if (isTracking) {
-            isTracking = false;
-            const btn = document.getElementById('geolocate-btn');
-            if (btn) btn.classList.remove('geolocate-active');
-            if (currentMarker) currentMarker.getElement().classList.remove('tracking');
+        if (trackingMode > 0) {
+            trackingMode = 0;
+            updateGeolocateButton();
+            map.easeTo({ bearing: 0, pitch: 0 });
         }
     });
 
-    // ズーム操作時にtrackingZoomを更新、ズーム中はjumpToを抑制
+    // ズーム操作
     map.on('zoomstart', () => { isZooming = true; });
     map.on('zoomend', () => {
         isZooming = false;
-        if (isTracking) {
+        if (trackingMode > 0) {
             trackingZoom = map.getZoom();
         }
     });
+
+    // ボタンの見た目を更新
+    function updateGeolocateButton() {
+        const btn = document.getElementById('geolocate-btn');
+        if (!btn) return;
+        const markerEl = currentMarker ? currentMarker.getElement() : null;
+        const arrow = markerEl ? markerEl.querySelector('.heading-arrow') : null;
+
+        if (trackingMode === 0) {
+            btn.classList.remove('geolocate-active');
+            btn.innerHTML = iconLocate;
+            if (markerEl) markerEl.classList.remove('tracking');
+            if (arrow) arrow.classList.remove('visible');
+        } else if (trackingMode === 1) {
+            btn.classList.add('geolocate-active');
+            btn.innerHTML = iconLocate;
+            if (markerEl) markerEl.classList.add('tracking');
+            if (arrow) arrow.classList.remove('visible');
+        } else { // mode 2
+            btn.classList.add('geolocate-active');
+            btn.innerHTML = iconNav;
+            if (markerEl) markerEl.classList.add('tracking');
+            if (arrow) arrow.classList.add('visible');
+        }
+    }
 
     // スタイル調整：日本語化・駅強調・POI整理・水域色・3D建物
     const ownLayerPrefixes = ['shops-', 'castles-', 'michi-', 'manholes-'];
@@ -489,100 +569,46 @@
     const carSubclasses    = ['parking', 'fuel', 'car_dealer', 'car_rental', 'car_repair', 'car_wash', 'motorcycle', 'charging_station'];
     const stationSubclasses = ['station', 'halt', 'subway', 'tram_stop', 'light_rail', 'stop', 'stop_position', 'platform', 'monorail', 'funicular', 'bus_station', 'bus_stop'];
 
-map.once('style.load', () => {
+    map.once('style.load', () => {
         const allLayers = map.getStyle().layers;
         if (!allLayers) return;
 
-allLayers.forEach(layer => {
-            // 1. 不要な情報の非表示（道路シールド・道路名）
-            // 地名（place）は表示したいとのことですので、ここからは除外しています
+        allLayers.forEach(layer => {
             const isShield = layer.id.includes('shield');
             const isTransName = layer['source-layer'] === 'transportation_name';
-
             if (isShield || isTransName) {
                 map.setLayoutProperty(layer.id, 'visibility', 'none');
                 return; 
             }
-
-            // 2. 自分のレイヤーはスキップ
             if (ownLayerPrefixes.some(p => layer.id.startsWith(p))) return;
-
             try {
-                if (layer.type === 'symbol') {
-                    // 日本語優先設定
-                    if (layer.layout && layer.layout['text-field']) {
-                        map.setLayoutProperty(layer.id, 'text-field', ['coalesce', ['get', 'name:ja'], ['get', 'name']]);
-                    }
-
-                    // --- 交通関連・POI（駅・店・バス停など）の調整 ---
-                    if (stationLayerIds.includes(layer.id)) {
-                        
-                        // 1. 【フィルタ】駐車場以外はすべて表示
-                        map.setFilter(layer.id, ['all',
-                            ['has', 'name'],
-                            ['!', ['in', ['get', 'subclass'], ['literal', carSubclasses]]]
-                        ]);
-
-                        // 2. 【判定の再定義】所沢駅などの主要駅を確実に捕まえる
-                        const isMainStation = ['any',
-                            // 既存の駅判定
-                            ['in', ['get', 'subclass'], ['literal', ['station', 'subway', 'monorail', 'halt', 'tram_stop']]],
-                            // レイヤーの「class」属性が鉄道関連なら駅とみなす
-                            ['==', ['get', 'class'], 'railway'],
-                            ['==', ['get', 'class'], 'public_transport'],
-                            // 主要ターミナル駅が持つ可能性のある判定を追加
-                            ['has', 'railway'] 
-                        ];
-                        const isBusStop = ['==', ['get', 'subclass'], 'bus_stop'];
-
-                        // 3. 【消滅防止の徹底】
-                        // 駅判定されたものは、衝突判定を完全に無効化して「常に最前面に強制描画」
-                        map.setLayoutProperty(layer.id, 'text-ignore-placement', ['case', isMainStation, true, false]);
-                        map.setLayoutProperty(layer.id, 'icon-ignore-placement', ['case', isMainStation, true, false]);
-                        map.setLayoutProperty(layer.id, 'text-allow-overlap', ['case', isMainStation, true, false]);
-                        map.setLayoutProperty(layer.id, 'icon-allow-overlap', ['case', isMainStation, true, false]);
-
-                        // 4. 【描画順位（Symbol Sort Key）の極大化】
-                        // 値が小さいほど優先される。駅を「1」に固定し、お店（100）より圧倒的に優先
-                        map.setLayoutProperty(layer.id, 'symbol-sort-key', ['case', isMainStation, 1, 100]);
-
-                        // 5. 【配置の固定】
-                        map.setLayoutProperty(layer.id, 'text-variable-anchor', ['literal', null]);
-                        map.setLayoutProperty(layer.id, 'text-anchor', 'top');
-                        map.setLayoutProperty(layer.id, 'text-offset', [
-                            'case',
-                            isMainStation, ['literal', [0, 0.9]], // 駅は少し離して視認性アップ
-                            isBusStop, ['literal', [0, 0.6]],
-                            ['literal', [0, 0.4]]
-                        ]);
-
-                        // 6. 【サイズと配色】
-                        map.setLayoutProperty(layer.id, 'icon-size', ['case', isMainStation, 1.2, 0.8]);
-                        map.setLayoutProperty(layer.id, 'text-size', ['case', isMainStation, 15, 11]);
-
-                        // 7. 【全ズーム表示の強制】
-                        map.setLayoutProperty(layer.id, 'visibility', 'visible');
-                        map.setLayerZoomRange(layer.id, 1, 24); 
-
-                        map.setPaintProperty(layer.id, 'text-color', [
-                            'case',
-                            isMainStation, '#0D47A1', // より濃い青で強調
-                            isBusStop, '#2E7D32',
-                            '#444444'
-                        ]);
-                        map.setPaintProperty(layer.id, 'text-halo-color', '#FFFFFF');
-                        map.setPaintProperty(layer.id, 'text-halo-width', ['case', isMainStation, 2.5, 1.0]);
-                    }
+                if (layer.type === 'symbol' && layer.layout && layer.layout['text-field']) {
+                    map.setLayoutProperty(layer.id, 'text-field', ['coalesce', ['get', 'name:ja'], ['get', 'name']]);
                 }
-
-                // 3. 水域・公園の色（fillレイヤー）
+                if (stationLayerIds.includes(layer.id)) {
+                    map.setFilter(layer.id, ['all', ['has', 'name'], ['!', ['in', ['get', 'subclass'], ['literal', carSubclasses]]]]);
+                    const isMainStation = ['any', ['in', ['get', 'subclass'], ['literal', ['station', 'subway', 'monorail', 'halt', 'tram_stop']]], ['==', ['get', 'class'], 'railway'], ['==', ['get', 'class'], 'public_transport'], ['has', 'railway']];
+                    const isBusStop = ['==', ['get', 'subclass'], 'bus_stop'];
+                    map.setLayoutProperty(layer.id, 'text-ignore-placement', ['case', isMainStation, true, false]);
+                    map.setLayoutProperty(layer.id, 'icon-ignore-placement', ['case', isMainStation, true, false]);
+                    map.setLayoutProperty(layer.id, 'text-allow-overlap', ['case', isMainStation, true, false]);
+                    map.setLayoutProperty(layer.id, 'icon-allow-overlap', ['case', isMainStation, true, false]);
+                    map.setLayoutProperty(layer.id, 'symbol-sort-key', ['case', isMainStation, 1, 100]);
+                    map.setLayoutProperty(layer.id, 'text-variable-anchor', ['literal', null]);
+                    map.setLayoutProperty(layer.id, 'text-anchor', 'top');
+                    map.setLayoutProperty(layer.id, 'text-offset', ['case', isMainStation, ['literal', [0, 0.9]], isBusStop, ['literal', [0, 0.6]], ['literal', [0, 0.4]]]);
+                    map.setLayoutProperty(layer.id, 'icon-size', ['case', isMainStation, 1.2, 0.8]);
+                    map.setLayoutProperty(layer.id, 'text-size', ['case', isMainStation, 15, 11]);
+                    map.setLayoutProperty(layer.id, 'visibility', 'visible');
+                    map.setLayerZoomRange(layer.id, 1, 24); 
+                    map.setPaintProperty(layer.id, 'text-color', ['case', isMainStation, '#0D47A1', isBusStop, '#2E7D32', '#444444']);
+                    map.setPaintProperty(layer.id, 'text-halo-color', '#FFFFFF');
+                    map.setPaintProperty(layer.id, 'text-halo-width', ['case', isMainStation, 2.5, 1.0]);
+                }
                 if (layer.type === 'fill') {
                     const lid = layer.id.toLowerCase();
-                    if (lid.includes('water')) {
-                        map.setPaintProperty(layer.id, 'fill-color', '#AAD3DF');
-                    } else if (lid.includes('park') || lid.includes('green') || lid.includes('forest') || lid.includes('wood')) {
-                        map.setPaintProperty(layer.id, 'fill-color', '#C8FACC');
-                    }
+                    if (lid.includes('water')) map.setPaintProperty(layer.id, 'fill-color', '#AAD3DF');
+                    else if (lid.includes('park') || lid.includes('green') || lid.includes('forest') || lid.includes('wood')) map.setPaintProperty(layer.id, 'fill-color', '#C8FACC');
                 }
             } catch (e) {}
         });
@@ -591,13 +617,23 @@ allLayers.forEach(layer => {
     map.on('load', () => {
         // 現在地ボタンのクリック処理
         document.getElementById('geolocate-btn').addEventListener('click', () => {
-            isTracking = true;
-            trackingZoom = 17;
-            document.getElementById('geolocate-btn').classList.add('geolocate-active');
-            if (currentMarker) currentMarker.getElement().classList.add('tracking');
-            if (currentLocation) {
-                map.jumpTo({ center: [currentLocation.lng, currentLocation.lat], zoom: trackingZoom });
+            trackingMode = (trackingMode + 1) % 3;
+            if (trackingMode === 2) {
+                requestDeviceOrientation(); // 向き追従モードで権限要求
             }
+
+            if (trackingMode > 0 && currentLocation) {
+                map.easeTo({
+                    center: [currentLocation.lng, currentLocation.lat],
+                    zoom: trackingZoom,
+                    bearing: trackingMode === 2 ? deviceHeading : 0,
+                    pitch: trackingMode === 2 ? 50 : 0,
+                    duration: 500
+                });
+            } else if (trackingMode === 0) {
+                map.easeTo({ bearing: 0, pitch: 0 }); // 追従オフで回転と傾きをリセット
+            }
+            updateGeolocateButton();
         });
 
         // watchPositionで常時位置監視（地図ロード後に開始）
@@ -607,30 +643,35 @@ allLayers.forEach(layer => {
                 const lat = pos.coords.latitude;
                 currentLocation = { lat, lng };
 
-
-                // 現在地マーカーを更新
                 if (!currentMarker) {
                     const el = document.createElement('div');
                     el.className = 'current-location-dot';
+                    el.innerHTML = '<div class="heading-arrow"></div>';
                     currentMarker = new maplibregl.Marker({ element: el }).setLngLat([lng, lat]).addTo(map);
                 } else {
                     currentMarker.setLngLat([lng, lat]);
                 }
 
-                // 初回取得時は自動で現在地に移動し追従ONボタンを青くする
                 if (!hadFirstFix) {
                     hadFirstFix = true;
-                    isTracking = true;
-                    document.getElementById('geolocate-btn').classList.add('geolocate-active');
-                    if (currentMarker) currentMarker.getElement().classList.add('tracking');
-                    map.jumpTo({ center: [lng, lat], zoom: trackingZoom });
-                } else if (isTracking && !isZooming) {
-
-                    map.jumpTo({ center: [lng, lat], zoom: trackingZoom });
+                    trackingMode = 1;
+                    updateGeolocateButton();
+                    map.easeTo({ center: [lng, lat], zoom: trackingZoom });
+                } else if (trackingMode > 0 && !isZooming) {
+                     map.easeTo({
+                        center: [lng, lat],
+                        zoom: trackingZoom,
+                        bearing: trackingMode === 2 ? deviceHeading : map.getBearing(),
+                        pitch: trackingMode === 2 ? 50 : 0,
+                        duration: 300
+                    });
                 }
             }, (err) => {
                 console.warn('[GPS] エラー:', err.code, err.message);
+                alert('現在地が取得できませんでした。');
             }, { enableHighAccuracy: true, maximumAge: 3000, timeout: 10000 });
+        } else {
+            alert('お使いのブラウザは現在地取得に対応していません。');
         }
 
         const loadSDF = (url, id) => new Promise(res =>
@@ -649,7 +690,6 @@ allLayers.forEach(layer => {
             const configs = [
                 { id: 'michi',    data: michiGeoJSON,         color: '#34A853', icon: 'michi-icon',   type: 'michi',   clusterColor: '#34A853' },
                 { id: 'shops',    data: shopData,             color: '#FF9800', icon: 'tabe-icon',    type: 'shop',    clusterColor: '#FF9800' },
-                // manholes に既存＋ポケふたのマージデータを渡す
                 { id: 'manholes', data: mergedManholeGeoJSON, color: '#9E9E9E', icon: 'manhole-icon', type: 'manhole', clusterColor: '#9E9E9E' },
                 { id: 'castles',  data: castleData,           color: '#000000', icon: 'castle-icon',  type: 'castle',  clusterColor: '#000000' },
             ];
@@ -662,758 +702,280 @@ allLayers.forEach(layer => {
                     clusterMaxZoom: 13,
                     clusterRadius: 50
                 });
+                map.addLayer({ id: `${conf.id}-cluster`, type: 'circle', source: conf.id, filter: ['has', 'point_count'], paint: { 'circle-color': conf.clusterColor, 'circle-radius': 20, 'circle-stroke-width': 3, 'circle-stroke-color': '#FFFFFF' } });
+                map.addLayer({ id: `${conf.id}-cluster-count`, type: 'symbol', source: conf.id, filter: ['has', 'point_count'], layout: { 'text-field': '{point_count_abbreviated}', 'text-size': 12, 'text-font': ['Noto Sans Bold'] }, paint: { 'text-color': '#FFFFFF' } });
+                map.addLayer({ id: `${conf.id}-bg`, type: 'circle', source: conf.id, filter: ['!', ['has', 'point_count']], paint: { 'circle-color': conf.type === 'castle' ? ['match', ['get', 'genre'], '日本100名城', '#4285F4', '続日本100名城', '#EA4335', '#000000'] : conf.type === 'manhole' ? ['match', ['get', 'source'], 'pokefuta', '#FBBC04', '#9E9E9E'] : conf.color, 'circle-radius': 14, 'circle-stroke-width': 3, 'circle-stroke-color': '#FFFFFF' } });
+                map.addLayer({ id: `${conf.id}-icon`, type: 'symbol', source: conf.id, filter: ['!', ['has', 'point_count']], layout: { 'icon-image': conf.icon, 'icon-size': 0.35, 'icon-allow-overlap': true }, paint: { 'icon-color': '#FFFFFF' } });
 
-                map.addLayer({
-                    id: `${conf.id}-cluster`,
-                    type: 'circle',
-                    source: conf.id,
-                    filter: ['has', 'point_count'],
-                    paint: {
-                        'circle-color': conf.clusterColor,
-                        'circle-radius': 20,
-                        'circle-stroke-width': 3,
-                        'circle-stroke-color': '#FFFFFF'
-                    }
-                });
-                map.addLayer({
-                    id: `${conf.id}-cluster-count`,
-                    type: 'symbol',
-                    source: conf.id,
-                    filter: ['has', 'point_count'],
-                    layout: {
-                        'text-field': '{point_count_abbreviated}',
-                        'text-size': 12,
-                        'text-font': ['Noto Sans Bold']
-                    },
-                    paint: { 'text-color': '#FFFFFF' }
-                });
-                map.addLayer({
-                    id: `${conf.id}-bg`,
-                    type: 'circle',
-                    source: conf.id,
-                    filter: ['!', ['has', 'point_count']],
-                    paint: {
-                        'circle-color': conf.type === 'castle' ? [
-                            'match', ['get', 'genre'],
-                            '日本100名城', '#4285F4',
-                            '続日本100名城', '#EA4335',
-                            '#000000'
-                        ] : conf.type === 'manhole' ? [
-                            'match', ['get', 'source'],
-                            'pokefuta', '#FBBC04',
-                            '#9E9E9E'
-                        ] : conf.color,
-                        'circle-radius': 14,
-                        'circle-stroke-width': 3,
-                        'circle-stroke-color': '#FFFFFF'
-                    }
-                });
-                map.addLayer({
-                    id: `${conf.id}-icon`,
-                    type: 'symbol',
-                    source: conf.id,
-                    filter: ['!', ['has', 'point_count']],
-                    layout: {
-                        'icon-image': conf.icon,
-                        'icon-size': 0.35,
-                        'icon-allow-overlap': true
-                    },
-                    paint: { 'icon-color': '#FFFFFF' }
-                });
-
-
-                // クラスタークリック → 展開
                 map.on('click', `${conf.id}-cluster`, (e) => {
                     const features = map.queryRenderedFeatures(e.point, { layers: [`${conf.id}-cluster`] });
-                    map.getSource(conf.id).getClusterExpansionZoom(
-                        features[0].properties.cluster_id,
-                        (err, zoom) => { if (!err) map.easeTo({ center: features[0].geometry.coordinates, zoom: zoom + 1 }); }
-                    );
+                    if (!features.length) return;
+                    map.getSource(conf.id).getClusterExpansionZoom(features[0].properties.cluster_id, (err, zoom) => { if (!err) map.easeTo({ center: features[0].geometry.coordinates, zoom: zoom + 1 }); });
                 });
 
-                // 個別ピンクリック → ポップアップ
                 map.on('click', `${conf.id}-bg`, (e) => {
+                    if (!e.features || !e.features.length) return;
                     const p = e.features[0].properties;
-                    const c = e.features[0].geometry.coordinates;
-                    // Universal Links方式：https://のままGoogleマップアプリが開く（iOS/Android共通）
-                    // dirflg=w で徒歩モード
-                    const gMapUrl = `https://www.google.com/maps?daddr=${c[1]},${c[0]}&dirflg=w`;
-                    const navUrl = gMapUrl;
+                    const c = e.features[0].geometry.coordinates.slice();
+                    const navUrl = `https://www.google.com/maps?daddr=${c[1]},${c[0]}&dirflg=w`;
+                    
+                    while (Math.abs(e.lngLat.lng - c[0]) > 180) { c[0] += e.lngLat.lng > c[0] ? 360 : -360; }
 
+                    let popupHtml = '';
                     if (conf.type === 'manhole') {
-                        let imgHtml = '';
-
                         if (p.source === 'pokefuta') {
-                            // ── ポケふた ──────────────────────────────────
-                            const imgUrl = p.image_url_full || p.image_url || '';
-                            const title  = `${p.pokemon || ''} (${p.city || p.location || ''})`;
-                            imgHtml = imgUrl
-                                ? `<div class="manhole-img-container">
-                                       <img src="${imgUrl}" class="manhole-img"
-                                            onerror="this.src='${p.image_url || ''}'">
-                                   </div>`
-                                : '';
-                            new maplibregl.Popup({ closeButton: false, anchor: getPopupAnchor(c) })
-                                .setLngLat(c)
-                                .setHTML(`
-                                    <div class="popup-card">
-                                        <span class="popup-title">${title}</span>
-                                        <span class="popup-genre">ポケふた</span>
-                                        ${imgHtml}
-                                        <a href="${p.detail_url}" target="_blank" class="btn btn-pokefuta">ポケふた公式ページ</a>
-                                        <a href="${navUrl}" target="_blank" class="btn btn-nav" >ここへ行く</a>
-                                    </div>
-                                `)
-                                .addTo(map);
+                            const title = `${p.pokemon || ''} (${p.city || p.location || ''})`;
+                            const imgHtml = p.image_url_full ? `<div class="manhole-img-container"><img src="${p.image_url_full}" class="manhole-img" onerror="this.src='${p.image_url || ''}'"></div>` : '';
+                            popupHtml = `<div class="popup-card"><span class="popup-title">${title}</span><span class="popup-genre">ポケふた</span>${imgHtml}<a href="${p.detail_url}" target="_blank" class="btn btn-pokefuta">ポケふた公式ページ</a><a href="${navUrl}" target="_blank" class="btn btn-nav" >ここへ行く</a></div>`;
                         } else {
-                            // ── 既存マンホール ────────────────────────────
-                            const imgUrl = p.cardId
-                                ? `https://ekikaramanhole.whitebeach.org/ext/manholecard/image/getimage.cgi?file=card/${p.cardId}.jpg`
-                                : '';
-                            imgHtml = imgUrl
-                                ? `<div class="manhole-img-container">
-                                       <img src="${imgUrl}" class="manhole-img-large">
-                                   </div>`
-                                : '';
-                            new maplibregl.Popup({ closeButton: false, anchor: getPopupAnchor(c) })
-                                .setLngLat(c)
-                                .setHTML(`
-                                    <div class="popup-card">
-                                        <span class="popup-title">${p.name || ''}</span>
-                                        <span class="popup-genre">${p.genre || ''}</span>
-                                        ${imgHtml}
-                                        <a href="${navUrl}" target="_blank" class="btn btn-nav" >ここへ行く</a>
-                                    </div>
-                                `)
-                                .addTo(map);
+                            const imgHtml = p.cardId ? `<div class="manhole-img-container"><img src="https://ekikaramanhole.whitebeach.org/ext/manholecard/image/getimage.cgi?file=card/${p.cardId}.jpg" class="manhole-img-large"></div>` : '';
+                            popupHtml = `<div class="popup-card"><span class="popup-title">${p.name || ''}</span><span class="popup-genre">${p.genre || ''}</span>${imgHtml}<a href="${navUrl}" target="_blank" class="btn btn-nav" >ここへ行く</a></div>`;
                         }
+                    } else if (conf.type === 'michi') {
+                        const gmapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name)}`;
+                        const addressHtml = p.address ? `<span class="popup-address">${p.address}</span>` : '';
+                        const roadHtml    = p.road    ? `<span class="popup-road">📍 ${p.road}</span>` : '';
+                        const urlBtn      = p.url     ? `<a href="${p.url}" target="_blank" class="btn btn-michi-web">公式サイト</a>` : '';
+                        popupHtml = `<div class="popup-card"><span class="popup-title">${p.name}</span>${roadHtml}${addressHtml}<a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>${urlBtn}<a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a></div>`;
                     } else {
-                        // ── その他（レストラン・お城・道の駅）────────────
                         const gmapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name)}`;
                         let extraBtn = '';
                         if (conf.type === 'shop')   extraBtn = `<a href="${p.url}" target="_blank" class="btn btn-tabelog">食べログ</a>`;
                         if (conf.type === 'castle') extraBtn = `<a href="https://ja.wikipedia.org/wiki/${encodeURIComponent(p.name)}" target="_blank" class="btn btn-wiki">Wikipedia</a>`;
-                        if (conf.type === 'michi') {
-                            const addressHtml = p.address ? `<span class="popup-address">${p.address}</span>` : '';
-                            const roadHtml    = p.road    ? `<span class="popup-road">📍 ${p.road}</span>` : '';
-                            const urlBtn      = p.url     ? `<a href="${p.url}" target="_blank" class="btn btn-michi-web">公式サイト</a>` : '';
-                            new maplibregl.Popup({ closeButton: false, anchor: getPopupAnchor(c) })
-                                .setLngLat(c)
-                                .setHTML(`
-                                    <div class="popup-card">
-                                        <span class="popup-title">${p.name}</span>
-                                        ${roadHtml}
-                                        ${addressHtml}
-                                        <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>
-                                        ${urlBtn}
-                                        <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
-                                    </div>
-                                `)
-                                .addTo(map);
-                        } else {
-                            new maplibregl.Popup({ closeButton: false, anchor: getPopupAnchor(c) })
-                                .setLngLat(c)
-                                .setHTML(`
-                                    <div class="popup-card">
-                                        <span class="popup-title">${p.name}</span>
-                                        <span class="popup-genre">${p.genre || ''}</span>
-                                        <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>
-                                        ${extraBtn}
-                                        <a href="${navUrl}" target="_blank" class="btn btn-nav" >ここへ行く</a>
-                                    </div>
-                                `)
-                                .addTo(map);
-                        }
+                        popupHtml = `<div class="popup-card"><span class="popup-title">${p.name}</span><span class="popup-genre">${p.genre || ''}</span><a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>${extraBtn}<a href="${navUrl}" target="_blank" class="btn btn-nav" >ここへ行く</a></div>`;
                     }
+                    new maplibregl.Popup({ closeButton: false, anchor: getPopupAnchor(c) }).setLngLat(c).setHTML(popupHtml).addTo(map);
                 });
 
-                const hover = (l, cur) => {
-                    map.on('mouseenter', l, () => map.getCanvas().style.cursor = cur);
-                    map.on('mouseleave', l, () => map.getCanvas().style.cursor = '');
-                };
+                const hover = (l, cur) => { map.on('mouseenter', l, () => map.getCanvas().style.cursor = cur); map.on('mouseleave', l, () => map.getCanvas().style.cursor = ''); };
                 hover(`${conf.id}-bg`, 'pointer');
                 hover(`${conf.id}-cluster`, 'pointer');
             });
         });
+
+        buildSearchIndex();
     });
 
     // ══════════════════════════════════════════════════════════════
     //  検索機能
     // ══════════════════════════════════════════════════════════════
-    // 自前データをフラットなリストに展開（地図ロード後に構築）
     let searchIndex = [];
     function buildSearchIndex() {
         searchIndex = [];
-
-        // ポケふた
-        pokefutaGeoJSON.features.forEach(f => {
-            const p = f.properties;
-            searchIndex.push({
-                type: 'pokefuta',
-                label: p.pokemon || p.location,
-                sub: p.location,
-                coords: f.geometry.coordinates,
-                properties: p,
+        const sources = [
+            { type: 'pokefuta', data: pokefutaGeoJSON.features, labelKey: 'pokemon', subKey: 'location' },
+            { type: 'manhole', data: manholeGeoJSON.features, labelKey: 'name', subKey: 'genre' },
+            { type: 'castle', data: castleData.features, labelKey: 'name', subKey: 'genre' },
+            { type: 'michi', data: michiNoEkiGeoJSON.features, labelKey: 'name', sub: '道の駅' },
+            { type: 'shop', data: shopData.features, labelKey: 'name', subKey: 'genre' }
+        ];
+        sources.forEach(s => {
+            if (s.data) s.data.forEach(f => {
+                searchIndex.push({ type: s.type, label: f.properties[s.labelKey] || '', sub: s.sub || f.properties[s.subKey] || '', coords: f.geometry.coordinates, properties: f.properties });
             });
         });
-
-        // マンホール
-        if (typeof manholeGeoJSON !== 'undefined') {
-            manholeGeoJSON.features.forEach(f => {
-                const p = f.properties;
-                searchIndex.push({
-                    type: 'manhole',
-                    label: p.name || '',
-                    sub: p.genre || 'マンホール',
-                    coords: f.geometry.coordinates,
-                    properties: p,
-                });
-            });
-        }
-
-        // お城
-        if (typeof castleData !== 'undefined') {
-            castleData.features.forEach(f => {
-                const p = f.properties;
-                searchIndex.push({
-                    type: 'castle',
-                    label: p.name || '',
-                    sub: p.genre || 'お城',
-                    coords: f.geometry.coordinates,
-                    properties: p,
-                });
-            });
-        }
-
-        // 道の駅
-        if (typeof michiNoEkiGeoJSON !== 'undefined') {
-            michiNoEkiGeoJSON.features.forEach(f => {
-                const d = f.properties;
-                searchIndex.push({
-                    type: 'michi',
-                    label: d.name || '',
-                    sub: '道の駅',
-                    coords: f.geometry.coordinates,
-                    properties: d,
-                });
-            });
-        }
-
-        // レストラン
-        if (typeof shopData !== 'undefined' && shopData.features) {
-            shopData.features.forEach(f => {
-                const p = f.properties;
-                searchIndex.push({
-                    type: 'shop',
-                    label: p.name || '',
-                    sub: p.genre || 'レストラン',
-                    coords: f.geometry.coordinates,
-                    properties: p,
-                });
-            });
-        }
-    }
-
-    // アイコン設定（imgはsearch-result-iconとnearby-item-iconで使用）
-    function getItemColor(item) {
-        if (item.type === 'castle') {
-            const genre = item.properties && item.properties.genre;
-            if (genre === '日本100名城')   return '#4285F4';
-            if (genre === '続日本100名城') return '#EA4335';
-            return '#1a1a1a';
-        }
-        if (item.type === 'pokefuta') return '#FBBC04';
-        return (typeConfig[item.type] || typeConfig.place).color;
     }
 
     const typeConfig = {
-        pokefuta: { color: '#FBBC04', icon: '🟡', img: 'manhole.png', label: 'ポケふた' },
-        manhole:  { color: '#9E9E9E', icon: '🔘', img: 'manhole.png', label: 'マンホール' },
-        castle:   { color: '#1a1a1a', icon: '🏯', img: 'castle.png',  label: 'お城' },
-        michi:    { color: '#34A853', icon: '🛣',  img: 'michi.png',   label: '道の駅' },
-        shop:     { color: '#FF9800', icon: '🍽',  img: 'tabe.png',    label: 'レストラン' },
-        place:    { color: '#4285F4', icon: '📍', img: null,           label: '地名' },
+        pokefuta: { color: '#FBBC04', img: 'manhole.png', label: 'ポケふた' },
+        manhole:  { color: '#9E9E9E', img: 'manhole.png', label: 'マンホール' },
+        castle:   { color: '#1a1a1a', img: 'castle.png',  label: 'お城' },
+        michi:    { color: '#34A853', img: 'michi.png',   label: '道の駅' },
+        shop:     { color: '#FF9800', img: 'tabe.png',    label: 'レストラン' },
+        place:    { color: '#4285F4', icon: '📍',        label: '地名' },
     };
+    function getItemColor(item) {
+        if (item.type === 'castle') {
+            const genre = item.properties && item.properties.genre;
+            if (genre === '日本100名城') return '#4285F4';
+            if (genre === '続日本100名城') return '#EA4335';
+        }
+        return (typeConfig[item.type] || {}).color || '#1a1a1a';
+    }
 
-    // 自前データ検索
     function searchLocal(query) {
         const q = query.toLowerCase();
-        return searchIndex
-            .filter(item => item.label.toLowerCase().includes(q) || item.sub.toLowerCase().includes(q))
-            .slice(0, 6);
+        return searchIndex.filter(item => (item.label && item.label.toLowerCase().includes(q)) || (item.sub && item.sub.toLowerCase().includes(q))).slice(0, 6);
     }
-
-    // 国土地理院 ジオコーディングAPI で地名・駅名検索
-    let geocodeTimer = null;
-    let searchRequestId = 0;
-
-    // 都道府県コード（addressCodeの上2桁）→ 都道府県名
-    const PREF_MAP = {
-        '01':'北海道','02':'青森県','03':'岩手県','04':'宮城県','05':'秋田県',
-        '06':'山形県','07':'福島県','08':'茨城県','09':'栃木県','10':'群馬県',
-        '11':'埼玉県','12':'千葉県','13':'東京都','14':'神奈川県','15':'新潟県',
-        '16':'富山県','17':'石川県','18':'福井県','19':'山梨県','20':'長野県',
-        '21':'岐阜県','22':'静岡県','23':'愛知県','24':'三重県','25':'滋賀県',
-        '26':'京都府','27':'大阪府','28':'兵庫県','29':'奈良県','30':'和歌山県',
-        '31':'鳥取県','32':'島根県','33':'岡山県','34':'広島県','35':'山口県',
-        '36':'徳島県','37':'香川県','38':'愛媛県','39':'高知県','40':'福岡県',
-        '41':'佐賀県','42':'長崎県','43':'熊本県','44':'大分県','45':'宮崎県',
-        '46':'鹿児島県','47':'沖縄県',
-    };
-
-    function getPref(addressCode) {
-        if (!addressCode) return '';
-        const code = String(addressCode).padStart(5, '0');
-        return PREF_MAP[code.slice(0, 2)] || '';
-    }
-
-    // スコアリング：キーワードとの一致度で優先順位を決める
-    function scoreResult(title, query) {
-        if (title === query)                                        return 100; // 完全一致
-        if (title.startsWith(query))                               return 80;  // 前方一致
-        if (title.includes('駅') && query.includes('駅'))          return 60;  // 駅同士
-        if (title.startsWith(query.replace(/駅$/, '')))            return 40;  // 「駅」除いて前方一致
-        return 10;                                                              // その他
-    }
-
+    
+    let geocodeTimer = null, searchRequestId = 0;
     async function searchGeocode(query) {
         try {
-            const url = `https://msearch.gsi.go.jp/address-search/AddressSearch?q=${encodeURIComponent(query)}`;
-            const res  = await fetch(url);
+            const PREF_MAP={'01':'北海道','02':'青森県','03':'岩手県','04':'宮城県','05':'秋田県','06':'山形県','07':'福島県','08':'茨城県','09':'栃木県','10':'群馬県','11':'埼玉県','12':'千葉県','13':'東京都','14':'神奈川県','15':'新潟県','16':'富山県','17':'石川県','18':'福井県','19':'山梨県','20':'長野県','21':'岐阜県','22':'静岡県','23':'愛知県','24':'三重県','25':'滋賀県','26':'京都府','27':'大阪府','28':'兵庫県','29':'奈良県','30':'和歌山県','31':'鳥取県','32':'島根県','33':'岡山県','34':'広島県','35':'山口県','36':'徳島県','37':'香川県','38':'愛媛県','39':'高知県','40':'福岡県','41':'佐賀県','42':'長崎県','43':'熊本県','44':'大分県','45':'宮崎県','46':'鹿児島県','47':'沖縄県'};
+            const getPref = code => PREF_MAP[(String(code).padStart(5,'0')).slice(0,2)] || '';
+            const scoreResult = (title, q) => { if(title===q)return 100; if(title.startsWith(q))return 80; if(title.includes('駅')&&q.includes('駅'))return 60; if(title.startsWith(q.replace(/駅$/,'')))return 40; return 10; };
+            const res = await fetch(`https://msearch.gsi.go.jp/address-search/AddressSearch?q=${encodeURIComponent(query)}`);
             const data = await res.json();
-            return data
-                .map(f => {
-                    const pref  = getPref(f.properties.addressCode);
-                    const label = f.properties.title;
-                    // 都道府県名がtitleに含まれていなければ括弧で付記
-                    const displayLabel = (pref && !label.includes(pref))
-                        ? `${label}（${pref}）`
-                        : label;
-                    return {
-                        type: 'place',
-                        label: displayLabel,
-                        sub: '地名',
-                        coords: f.geometry.coordinates,
-                        properties: {},
-                        _score: scoreResult(label, query),
-                    };
-                })
-                .sort((a, b) => b._score - a._score)
-                .slice(0, 6);
+            return data.map(f => {
+                const label = f.properties.title, pref = getPref(f.properties.addressCode);
+                return { type: 'place', label: (pref && !label.includes(pref)) ? `${label}（${pref}）` : label, sub: '地名', coords: f.geometry.coordinates, properties: {}, _score: scoreResult(label, query) };
+            }).sort((a, b) => b._score - a._score).slice(0, 6);
         } catch { return []; }
     }
 
-    // 候補リストを描画
     function renderResults(localItems, placeItems) {
-        const box = document.getElementById('search-results');
         const inner = document.getElementById('search-results-inner');
         inner.innerHTML = '';
-
         if (localItems.length === 0 && placeItems.length === 0) {
             inner.innerHTML = '<div style="padding:14px;text-align:center;color:#999;font-size:13px;grid-column:1/-1;">候補が見つかりません</div>';
-            box.style.display = 'block';
-            return;
-        }
-
-        const makeItem = (item) => {
-            const cfg = typeConfig[item.type] || typeConfig.place;
-            const iconHtml = cfg.img
-                ? `<img src="${cfg.img}" style="width:14px;height:14px;object-fit:contain;filter:brightness(0) invert(1);">`
-                : cfg.icon;
-            const itemColor = getItemColor(item);
-            const div = document.createElement('div');
-            div.className = 'search-result-item';
-            div.innerHTML = `
-                <div class="search-result-icon" style="background:${itemColor}">${iconHtml}</div>
-                <div class="search-result-text">
-                    <div class="search-result-name">${item.label}</div>
-                    <div class="search-result-sub">${cfg.label}　${item.sub}</div>
-                </div>`;
-            div.addEventListener('click', () => onResultClick(item));
-            return div;
-        };
-
-        // 左列：スポット
-        const leftCol = document.createElement('div');
-        leftCol.className = 'search-col';
-        if (localItems.length > 0) {
-            const hdr = document.createElement('div');
-            hdr.className = 'search-section-header';
-            hdr.textContent = 'スポット';
-            leftCol.appendChild(hdr);
-            localItems.forEach(item => leftCol.appendChild(makeItem(item)));
-        }
-        inner.appendChild(leftCol);
-
-        // 右列：地名・場所
-        const rightCol = document.createElement('div');
-        rightCol.className = 'search-col';
-        if (placeItems.length > 0) {
-            const hdr = document.createElement('div');
-            hdr.className = 'search-section-header';
-            hdr.textContent = '地名・場所';
-            rightCol.appendChild(hdr);
-            placeItems.forEach(item => rightCol.appendChild(makeItem(item)));
-        }
-        inner.appendChild(rightCol);
-
-        box.style.display = 'block';
-    }
-
-    // 候補タップ時の処理
-    function showPopupForItem(item) {
-        const p = item.properties;
-        const c = item.coords;
-        const gMapUrl = `https://www.google.com/maps?daddr=${c[1]},${c[0]}&dirflg=w`;
-        const navUrl  = gMapUrl;
-
-        if (item.type === 'manhole' || item.type === 'pokefuta') {
-            let imgHtml = '';
-            if (p.source === 'pokefuta' || item.type === 'pokefuta') {
-                const imgUrl = p.image_url_full || p.image_url || '';
-                const title  = `${p.pokemon || ''} (${p.city || p.location || ''})`;
-                imgHtml = imgUrl
-                    ? `<div class="manhole-img-container"><img src="${imgUrl}" class="manhole-img" onerror="this.src='${p.image_url || ''}'"></div>`
-                    : '';
-                new maplibregl.Popup({ closeButton: false, anchor: getPopupAnchor(c) })
-                    .setLngLat(c)
-                    .setHTML(`<div class="popup-card">
-                        <span class="popup-title">${title}</span>
-                        <span class="popup-genre">ポケふた</span>
-                        ${imgHtml}
-                        <a href="${p.detail_url}" target="_blank" class="btn btn-pokefuta">ポケふた公式ページ</a>
-                        <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
-                    </div>`)
-                    .addTo(map);
-            } else {
-                const imgUrl = p.cardId
-                    ? `https://ekikaramanhole.whitebeach.org/ext/manholecard/image/getimage.cgi?file=card/${p.cardId}.jpg`
-                    : '';
-                imgHtml = imgUrl
-                    ? `<div class="manhole-img-container"><img src="${imgUrl}" class="manhole-img-large"></div>`
-                    : '';
-                new maplibregl.Popup({ closeButton: false, anchor: getPopupAnchor(c) })
-                    .setLngLat(c)
-                    .setHTML(`<div class="popup-card">
-                        <span class="popup-title">${p.name || ''}</span>
-                        <span class="popup-genre">${p.genre || ''}</span>
-                        ${imgHtml}
-                        <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
-                    </div>`)
-                    .addTo(map);
-            }
-        } else if (item.type === 'michi') {
-            const gmapUrl     = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name)}`;
-            const addressHtml = p.address ? `<span class="popup-address">${p.address}</span>` : '';
-            const roadHtml    = p.road    ? `<span class="popup-road">📍 ${p.road}</span>` : '';
-            const urlBtn      = p.url     ? `<a href="${p.url}" target="_blank" class="btn btn-michi-web">公式サイト</a>` : '';
-            new maplibregl.Popup({ closeButton: false, anchor: getPopupAnchor(c) })
-                .setLngLat(c)
-                .setHTML(`<div class="popup-card">
-                    <span class="popup-title">${p.name}</span>
-                    ${roadHtml}
-                    ${addressHtml}
-                    <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>
-                    ${urlBtn}
-                    <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
-                </div>`)
-                .addTo(map);
         } else {
-            const gmapUrl  = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name)}`;
-            let extraBtn = '';
-            if (item.type === 'shop')   extraBtn = `<a href="${p.url}" target="_blank" class="btn btn-tabelog">食べログ</a>`;
-            if (item.type === 'castle') extraBtn = `<a href="https://ja.wikipedia.org/wiki/${encodeURIComponent(p.name)}" target="_blank" class="btn btn-wiki">Wikipedia</a>`;
-            new maplibregl.Popup({ closeButton: false, anchor: getPopupAnchor(c) })
-                .setLngLat(c)
-                .setHTML(`<div class="popup-card">
-                    <span class="popup-title">${p.name}</span>
-                    <span class="popup-genre">${p.genre || ''}</span>
-                    <a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>
-                    ${extraBtn}
-                    <a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く</a>
-                </div>`)
-                .addTo(map);
+            const makeItem = (item, col) => {
+                const cfg = typeConfig[item.type];
+                const iconHtml = cfg.img ? `<img src="${cfg.img}" style="width:14px;height:14px;object-fit:contain;filter:brightness(0) invert(1);">` : cfg.icon;
+                const div = document.createElement('div');
+                div.className = 'search-result-item';
+                div.innerHTML = `<div class="search-result-icon" style="background:${getItemColor(item)}">${iconHtml}</div><div class="search-result-text"><div class="search-result-name">${item.label}</div><div class="search-result-sub">${cfg.label}　${item.sub}</div></div>`;
+                div.addEventListener('click', () => onResultClick(item));
+                col.appendChild(div);
+            };
+            const leftCol = document.createElement('div'); leftCol.className = 'search-col';
+            const rightCol = document.createElement('div'); rightCol.className = 'search-col';
+            if(localItems.length>0) { leftCol.innerHTML='<div class="search-section-header">スポット</div>'; localItems.forEach(item => makeItem(item, leftCol)); }
+            if(placeItems.length>0) { rightCol.innerHTML='<div class="search-section-header">地名・場所</div>'; placeItems.forEach(item => makeItem(item, rightCol)); }
+            inner.append(leftCol, rightCol);
         }
+        document.getElementById('search-results').style.display = 'block';
     }
 
     function onResultClick(item) {
-        // --- 追加: 現在地追従をオフにする ---
-        isTracking = false;
-        const btn = document.getElementById('geolocate-btn');
-        if (btn) btn.classList.remove('geolocate-active');
-        if (currentMarker) currentMarker.getElement().classList.remove('tracking');
-        // ----------------------------------
-
+        if (trackingMode > 0) {
+            trackingMode = 0;
+            updateGeolocateButton();
+            map.easeTo({ bearing: 0, pitch: 0 });
+        }
         clearSearch();
         map.jumpTo({ center: item.coords, zoom: 15 });
-
         if (item.type !== 'place') {
             setTimeout(() => showPopupForItem(item), 300);
         }
     }
     
     function clearSearch() {
-        document.getElementById('search-input').value = '';
-        document.getElementById('search-clear').style.display = 'none';
-        document.getElementById('search-results').style.display = 'none';
+        const input = document.getElementById('search-input');
+        input.value = '';
+        input.dispatchEvent(new Event('input'));
     }
 
-    // 入力イベント
     document.getElementById('search-input').addEventListener('input', async (e) => {
         const q = e.target.value.trim();
         document.getElementById('search-clear').style.display = q ? 'block' : 'none';
-
-        if (!q) {
-            clearTimeout(geocodeTimer);
-            searchRequestId++;
-            document.getElementById('search-results').style.display = 'none';
-            return;
-        }
+        document.getElementById('search-results').style.display = q ? 'block' : 'none';
+        if (!q) return;
 
         const local = searchLocal(q);
-
-        // レースコンディション対策：リクエストIDで最新のみ反映
         const reqId = ++searchRequestId;
         clearTimeout(geocodeTimer);
         geocodeTimer = setTimeout(async () => {
             const places = await searchGeocode(q);
-            if (reqId !== searchRequestId) return; // 古いリクエストは破棄
-            renderResults(local, places);
+            if (reqId === searchRequestId) renderResults(local, places);
         }, 300);
     });
-
     document.getElementById('search-clear').addEventListener('click', clearSearch);
-
-    // 地図タップで候補リストを閉じる
     document.getElementById('map').addEventListener('click', () => {
         document.getElementById('search-results').style.display = 'none';
         closeNearby();
     });
 
-    // 地図ロード後にインデックス構築
-    map.on('load', () => { buildSearchIndex(); });
-
-    // ── 距離計算（Haversine）─────────────────────────────────────
     function calcDist(lat1, lng1, lat2, lng2) {
-        const R = 6371;
-        const dLat = (lat2 - lat1) * Math.PI / 180;
-        const dLng = (lng2 - lng1) * Math.PI / 180;
-        const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180) * Math.cos(lat2*Math.PI/180) * Math.sin(dLng/2)**2;
+        const R = 6371, dLat = (lat2-lat1)*Math.PI/180, dLng = (lng2-lng1)*Math.PI/180;
+        const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*Math.sin(dLng/2)**2;
         return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
     }
 
-    // ── 現在地周辺スポット ────────────────────────────────────────
-    let currentLocation = null;
-
-    // 周辺検索の選択状態（記憶）
-    const gmapKeywords = {
-        supermarket: 'スーパー',
-        busstop:     'バス停',
-        station:     '駅',
-        restaurant:  'レストラン OR カフェ',
-        noodle:      'ラーメン OR うどん OR そば',
-        museum:      '歴史館 OR 資料館 OR 博物館 OR 記念館',
-        sightseeing: '観光スポット OR 像',
-    };
-    let nearbyState = {
-        cats: ['supermarket'],  // デフォルト：スーパー（配列）
-        dist: 5                 // デフォルト：5km
-    };
-
-    // フィルター状態管理
+    const gmapKeywords = { supermarket: 'スーパー', busstop: 'バス停', station: '駅', restaurant: 'レストラン OR カフェ', noodle: 'ラーメン OR うどん OR そば', museum: '歴史館 OR 資料館 OR 博物館 OR 記念館', sightseeing: '観光スポット OR 像' };
+    let nearbyState = { cats: ['supermarket'], dist: 5 };
     const filterState = { shop: true, castle: true, michi: true, manhole: true };
-
     function onFilterChange(el) {
         const id = el.id.replace('check-', '');
         filterState[id] = el.checked;
-        const confMap = { shop: 'shops', castle: 'castles', michi: 'michi', manhole: 'manholes' };
-        const sourceId = confMap[id];
+        const sourceId = { shop: 'shops', castle: 'castles', michi: 'michi', manhole: 'manholes' }[id];
         const val = el.checked ? 'visible' : 'none';
-        [`${sourceId}-cluster`, `${sourceId}-cluster-count`, `${sourceId}-bg`, `${sourceId}-icon`]
-            .forEach(l => { if (map.getLayer(l)) map.setLayoutProperty(l, 'visibility', val); });
+        [`${sourceId}-cluster`, `${sourceId}-cluster-count`, `${sourceId}-bg`, `${sourceId}-icon`].forEach(l => { if (map.getLayer(l)) map.setLayoutProperty(l, 'visibility', val); });
     }
-
-
 
     function toggleNearby() {
         const panel = document.getElementById('nearby-panel');
-        if (panel.classList.contains('open')) {
-            closeNearby();
-        } else {
-            openNearbyPanel();
-        }
+        panel.classList.contains('open') ? closeNearby() : openNearbyPanel();
     }
-
     function openNearbyPanel() {
-        // フィルター選択状態を復元
-        Object.keys(filterState).forEach(id => {
-            const el = document.getElementById(`check-${id}`);
-            if (el) el.checked = filterState[id];
-        });
-        // カテゴリ選択状態を復元
-        document.querySelectorAll('.nearby-cat-item').forEach(el => {
-            el.classList.toggle('selected', nearbyState.cats.includes(el.dataset.cat));
-        });
-        document.querySelectorAll('.nearby-chip').forEach(el => {
-            el.classList.toggle('selected', parseInt(el.dataset.dist) === nearbyState.dist);
-        });
-        // スポット選択時のみ距離表示
-        document.getElementById('nearby-dist-section').style.display =
-            nearbyState.cats.includes('spot') ? 'block' : 'none';
+        Object.keys(filterState).forEach(id => { const el=document.getElementById(`check-${id}`); if(el) el.checked=filterState[id]; });
+        document.querySelectorAll('.nearby-cat-item').forEach(el => el.classList.toggle('selected', nearbyState.cats.includes(el.dataset.cat)));
+        document.querySelectorAll('.nearby-chip').forEach(el => el.classList.toggle('selected', parseInt(el.dataset.dist) === nearbyState.dist));
+        document.getElementById('nearby-dist-section').style.display = nearbyState.cats.includes('spot') ? 'block' : 'none';
         document.getElementById('nearby-list').innerHTML = '';
         document.getElementById('nearby-panel').classList.add('open');
         document.getElementById('nearby-overlay').classList.add('open');
     }
-
     function selectNearbyCat(el) {
         const cat = el.dataset.cat;
-        if (cat === 'spot') {
-            // スポット選択時は他を全解除
-            document.querySelectorAll('.nearby-cat-item').forEach(e => e.classList.remove('selected'));
-            el.classList.add('selected');
+        const isSpot = cat === 'spot';
+        document.querySelectorAll('.nearby-cat-item').forEach(e => e.classList.toggle('selected', e === el && isSpot));
+        if (isSpot) {
             nearbyState.cats = ['spot'];
         } else {
-            // スポットを解除して複数選択トグル
-            document.querySelectorAll('.nearby-cat-item[data-cat="spot"]').forEach(e => e.classList.remove('selected'));
-            nearbyState.cats = nearbyState.cats.filter(c => c !== 'spot');
-            if (el.classList.contains('selected')) {
-                el.classList.remove('selected');
-                nearbyState.cats = nearbyState.cats.filter(c => c !== cat);
-            } else {
-                el.classList.add('selected');
-                if (!nearbyState.cats.includes(cat)) nearbyState.cats.push(cat);
-            }
+            el.classList.toggle('selected');
+            nearbyState.cats = Array.from(document.querySelectorAll('.nearby-cat-item.selected')).map(e=>e.dataset.cat).filter(c=>c!=='spot');
         }
-        // スポット選択時のみ距離表示
-        document.getElementById('nearby-dist-section').style.display =
-            nearbyState.cats.includes('spot') ? 'block' : 'none';
-        document.getElementById('nearby-list').innerHTML = '';
+        document.getElementById('nearby-dist-section').style.display = nearbyState.cats.includes('spot') ? 'block' : 'none';
     }
-
     function selectNearbyDist(el) {
         document.querySelectorAll('.nearby-chip').forEach(e => e.classList.remove('selected'));
         el.classList.add('selected');
         nearbyState.dist = parseInt(el.dataset.dist);
-        document.getElementById('nearby-list').innerHTML = '';
     }
-
     function execNearbySearch() {
-        if (!currentLocation) {
-            alert('現在地が取得できていません。しばらく待ってから再度お試しください。');
-            return;
-        }
-        const { lat, lng } = currentLocation;
-        const cats = nearbyState.cats;
-
-        // 未選択チェック
-        if (cats.length === 0) {
-            alert('カテゴリが選択されていません');
-            return;
+        if (!currentLocation) return alert('現在地が取得できていません。');
+        if (nearbyState.cats.length === 0) return alert('カテゴリが選択されていません');
+        
+        if (!nearbyState.cats.includes('spot')) {
+            const keyword = nearbyState.cats.map(c => gmapKeywords[c]).filter(Boolean).join(' OR ');
+            return window.location.href = `https://www.google.com/maps/search/${encodeURIComponent(keyword)}/@${currentLocation.lat},${currentLocation.lng},14z`;
         }
 
-        // スポット以外はGoogleMap遷移（複数選択時はORでつなぐ）
-        if (!cats.includes('spot')) {
-            const keyword = cats.map(c => gmapKeywords[c]).filter(Boolean).join(' OR ');
-            const url = `https://www.google.com/maps/search/${encodeURIComponent(keyword)}/@${lat},${lng},14z`;
-            window.location.href = url;
-            return;
-        }
-
-        // スポット：自前データを距離で検索
         const RADIUS = nearbyState.dist;
-        const results = searchIndex
-            .map(item => ({
-                ...item,
-                dist: calcDist(lat, lng, item.coords[1], item.coords[0])
-            }))
-            .filter(item => item.dist <= RADIUS)
-            .sort((a, b) => a.dist - b.dist)
-            .slice(0, 20);
-
+        const results = searchIndex.map(item => ({...item, dist: calcDist(currentLocation.lat, currentLocation.lng, item.coords[1], item.coords[0])})).filter(item => item.dist <= RADIUS).sort((a, b) => a.dist - b.dist).slice(0, 20);
+        
         closeNearby();
-
         const list = document.getElementById('nearby-list');
-        list.innerHTML = '';
         document.getElementById('nearby-result-title').textContent = `現在地から${RADIUS}km以内`;
-
         if (results.length === 0) {
             list.innerHTML = `<div style="padding:16px;text-align:center;color:#999;font-size:13px;">${RADIUS}km以内にスポットが見つかりません</div>`;
         } else {
+            list.innerHTML = '';
             results.forEach(item => {
-                const cfg = typeConfig[item.type] || typeConfig.place;
-                const iconHtml = cfg.img
-                    ? `<img src="${cfg.img}" style="width:16px;height:16px;object-fit:contain;filter:brightness(0) invert(1);">`
-                    : cfg.icon;
-                const itemColor = getItemColor(item);
-                const distStr = item.dist < 1
-                    ? `${Math.round(item.dist * 1000)}m`
-                    : `${item.dist.toFixed(1)}km`;
+                const cfg = typeConfig[item.type];
+                const iconHtml = cfg.img ? `<img src="${cfg.img}" style="width:16px;height:16px;object-fit:contain;filter:brightness(0) invert(1);">` : cfg.icon;
+                const distStr = item.dist < 1 ? `${Math.round(item.dist * 1000)}m` : `${item.dist.toFixed(1)}km`;
                 const div = document.createElement('div');
                 div.className = 'nearby-item';
-                div.innerHTML = `
-                    <div class="nearby-item-icon" style="background:${itemColor}">${iconHtml}</div>
-                    <div class="nearby-item-text">
-                        <div class="nearby-item-name">${item.label}</div>
-                        <div class="nearby-item-sub">${cfg.label}　${item.sub}</div>
-                    </div>
-                    <div class="nearby-item-dist">${distStr}</div>`;
-                div.addEventListener('click', () => {
-                    closeNearbyResult();
-                    onResultClick(item);
-                });
+                div.innerHTML = `<div class="nearby-item-icon" style="background:${getItemColor(item)}">${iconHtml}</div><div class="nearby-item-text"><div class="nearby-item-name">${item.label}</div><div class="nearby-item-sub">${cfg.label}　${item.sub}</div></div><div class="nearby-item-dist">${distStr}</div>`;
+                div.addEventListener('click', () => { closeNearbyResult(); onResultClick(item); });
                 list.appendChild(div);
             });
         }
-
-        // 結果パネルを表示
         document.getElementById('nearby-result-panel').style.bottom = '0';
         document.getElementById('nearby-result-overlay').style.display = 'block';
     }
-
     function closeNearbyResult() {
         document.getElementById('nearby-result-panel').style.bottom = '-100%';
         document.getElementById('nearby-result-overlay').style.display = 'none';
     }
-
     function closeNearby() {
         document.getElementById('nearby-panel').classList.remove('open');
         document.getElementById('nearby-overlay').classList.remove('open');
     }
 
-    // 下スワイプでメニューを閉じる
     (function() {
         const panel = document.getElementById('nearby-panel');
         let startY = 0;
-        panel.addEventListener('touchstart', (e) => {
-            startY = e.touches[0].clientY;
-        }, { passive: true });
-        panel.addEventListener('touchend', (e) => {
-            const diff = e.changedTouches[0].clientY - startY;
-            if (diff > 60) closeNearby();
-        }, { passive: true });
+        panel.addEventListener('touchstart', (e) => { startY = e.touches[0].clientY; }, { passive: true });
+        panel.addEventListener('touchend', (e) => { if (e.changedTouches[0].clientY - startY > 60) closeNearby(); }, { passive: true });
     })();
 
-
-    // ── ポップアップ表示位置を動的に調整 ──────────────────────────
-    // ピンの画面上の位置に応じて anchor を切り替える
-function getPopupAnchor(lngLat) {
-        const point = map.project(lngLat);
-        const h = window.innerHeight;
-        const w = window.innerWidth;
-        const top    = point.y < h * 0.4;
-        const bottom = point.y > h * 0.6;
-        const left   = point.x < w * 0.3;
-        const right  = point.x > w * 0.7;
-        if (top && left)  return 'top-left';
-        if (top && right) return 'top-right';
-        if (top)          return 'top';
-        if (bottom && left)  return 'bottom-left';
-        if (bottom && right) return 'bottom-right';
-        if (left)  return 'left';
-        if (right) return 'right';
-        return 'bottom';
+    function getPopupAnchor(lngLat) {
+        const point=map.project(lngLat), h=window.innerHeight, w=window.innerWidth, t=point.y<h*0.4, b=point.y>h*0.6, l=point.x<w*0.3, r=point.x>w*0.7;
+        if(t&&l)return 'top-left'; if(t&&r)return 'top-right'; if(t)return 'top'; if(b&&l)return 'bottom-left'; if(b&&r)return 'bottom-right'; if(l)return 'left'; if(r)return 'right'; return 'bottom';
     }
-
 </script>
 </body>
 </html>
