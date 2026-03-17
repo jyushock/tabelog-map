@@ -491,29 +491,43 @@
 
     // iOS向けに向き取得の権限をリクエスト
     function requestDeviceOrientation() {
+        const startListening = () => {
+            const eventName = 'ondeviceorientationabsolute' in window ? 'deviceorientationabsolute' : 'deviceorientation';
+            window.addEventListener(eventName, handleOrientation, true);
+        };
+
         if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
             DeviceOrientationEvent.requestPermission().then(state => {
                 if (state === 'granted') {
-                    window.addEventListener('deviceorientation', handleOrientation);
+                    startListening();
                 }
             }).catch(console.error);
         } else {
-            window.addEventListener('deviceorientation', handleOrientation);
+            startListening();
         }
     }
 
     // 向きの更新ハンドラ
     function handleOrientation(event) {
-        let heading = 0;
-        if (event.webkitCompassHeading) { // iOS
+        let heading = null;
+        // iOSはwebkitCompassHeadingが最も信頼できる
+        if (event.webkitCompassHeading) {
             heading = event.webkitCompassHeading;
-        } else if (event.alpha !== null) { // Android
+        } 
+        // deviceorientationabsolute イベントは event.alpha が常に北基準
+        else if (event.absolute === true && event.alpha !== null) {
             heading = 360 - event.alpha;
         }
-        deviceHeading = heading;
+        // 通常の deviceorientation は基準が不定な場合があるがフォールバックとして使用
+        else if (event.alpha !== null) {
+            heading = 360 - event.alpha;
+        }
 
-        if (currentMarker) {
-            currentMarker.getElement().style.setProperty('--heading', `${deviceHeading}deg`);
+        if (heading !== null) {
+            deviceHeading = heading;
+            if (currentMarker) {
+                currentMarker.getElement().style.setProperty('--heading', `${deviceHeading}deg`);
+            }
         }
     }
 
