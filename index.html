@@ -631,26 +631,16 @@ function handleOrientation(event) {
                     map.setFilter(layer.id, ['all', ['has', 'name'], ['!', ['in', ['get', 'subclass'], ['literal', carSubclasses]]]]);
                     const isMainStation = ['any', ['in', ['get', 'subclass'], ['literal', ['station', 'subway', 'monorail', 'halt', 'tram_stop']]], ['==', ['get', 'class'], 'railway'], ['==', ['get', 'class'], 'public_transport'], ['has', 'railway']];
                     const isBusStop = ['==', ['get', 'subclass'], 'bus_stop'];
-                    const isStationFeature = ['any', ['in', ['get', 'subclass'], ['literal', stationSubclasses]], ['==', ['get', 'class'], 'railway']];
-
-                    // --- NEW STRATEGY ---
-                    // 1. Force everything to be rendered, avoiding the "disappearing station" problem entirely.
-                    map.setLayoutProperty(layer.id, 'text-ignore-placement', true);
-                    map.setLayoutProperty(layer.id, 'icon-ignore-placement', true);
-                    map.setLayoutProperty(layer.id, 'text-allow-overlap', true);
-                    map.setLayoutProperty(layer.id, 'icon-allow-overlap', true);
-
-                    // Keep station symbols on top of others in the same layer
+                    map.setLayoutProperty(layer.id, 'text-ignore-placement', ['case', isMainStation, true, false]);
+                    map.setLayoutProperty(layer.id, 'icon-ignore-placement', ['case', isMainStation, true, false]);
+                    map.setLayoutProperty(layer.id, 'text-allow-overlap', ['case', isMainStation, true, false]);
+                    map.setLayoutProperty(layer.id, 'icon-allow-overlap', ['case', isMainStation, true, false]);
                     map.setLayoutProperty(layer.id, 'symbol-sort-key', ['case', isMainStation, 1, 100]);
-                    
                     map.setLayoutProperty(layer.id, 'text-variable-anchor', ['literal', null]);
                     map.setLayoutProperty(layer.id, 'text-anchor', 'top');
                     map.setLayoutProperty(layer.id, 'text-offset', ['case', isMainStation, ['literal', [0, 0.9]], isBusStop, ['literal', [0, 0.6]], ['literal', [0, 0.4]]]);
-                    
-                    // 2. Control clutter by making non-stations tiny, instead of hiding them.
-                    map.setLayoutProperty(layer.id, 'icon-size', ['case', isStationFeature, 1.0, 0.5]);
-                    map.setLayoutProperty(layer.id, 'text-size', ['case', isStationFeature, 13, 6]);
-
+                    map.setLayoutProperty(layer.id, 'icon-size', ['case', isMainStation, 1.2, 0.8]);
+                    map.setLayoutProperty(layer.id, 'text-size', ['case', isMainStation, 15, 11]);
                     map.setLayoutProperty(layer.id, 'visibility', 'visible');
                     map.setLayerZoomRange(layer.id, 1, 24); 
                     map.setPaintProperty(layer.id, 'text-color', ['case', isMainStation, '#0D47A1', isBusStop, '#2E7D32', '#444444']);
@@ -1005,7 +995,7 @@ function handleOrientation(event) {
                 const distStr = item.dist < 1 ? `${Math.round(item.dist * 1000)}m` : `${item.dist.toFixed(1)}km`;
                 const div = document.createElement('div');
                 div.className = 'nearby-item';
-                div.innerHTML = `<div class="nearby-item-icon" style="background:${getItemColor(item)}">${iconHtml}</div><div class="nearby-item-text"><div class="nearby-item-name">${item.label}</div><div class="nearby-item-sub">${cfg.label}　${item.sub}</div></div><div class="nearby-item-dist">${distStr}</div>`;
+                div.innerHTML = `<div class="nearby-item-icon" style="background:${getItemColor(item)}">${iconHtml}</div><div class="nearby-item-text"><div class="nearby-item-name">${item.label}</div><div class="nearby-item-sub">${cfg.label}t${item.sub}</div></div><div class="nearby-item-dist">${distStr}</div>`;
                 div.addEventListener('click', () => { closeNearbyResult(); onResultClick(item); });
                 list.appendChild(div);
             });
