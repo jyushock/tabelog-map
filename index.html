@@ -671,7 +671,7 @@ function handleOrientation(event) {
 // --- 1. 地図ドラッグ（移動）開始時の処理を修正 ---
 map.on('dragstart', () => {
     // ズーム操作中（ピンチズームなど）の移動であれば、追従モードを解除せずに無視する
-    if (isZooming) return; 
+    // if (isZooming) return; 
 
     if (trackingMode > 0) {
         trackingMode = 0;
