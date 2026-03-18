@@ -508,50 +508,68 @@
         }
     }
 
+// --- 1. スムージング用の変数を追加（既存の変数定義付近に配置） ---
+let currentSmoothedHeading = null;
+const smoothingFactor = 0.15; // 0.1〜0.2程度にするとGoogleマップ風の「しっとり」した動きになります
+
+// 角度の差分を-180〜180の範囲で計算するヘルパー（最短距離で回転させるため）
+function getShortestAngleDiff(current, target) {
+    let diff = target - current;
+    while (diff < -180) diff += 360;
+    while (diff > 180) diff -= 360;
+    return diff;
+}
+
+// --- 2. handleOrientation 関数を全面差し替え ---
 function handleOrientation(event) {
-    let heading = null;
+    let rawHeading = null;
 
-    // iOS (Safari) provides a direct compass heading.
     if (event.webkitCompassHeading !== undefined) {
-        heading = event.webkitCompassHeading;
-    }
-    // For other browsers, use the alpha value from deviceorientation
-    else if (event.alpha !== null) {
-        // event.absolute indicates whether the orientation is relative to the Earth's coordinate system.
-        if (event.absolute === true || event.type === 'deviceorientationabsolute') {
-            // W3C spec: 0 is North, increases clockwise. This is a fix for incorrect direction.
-            heading = event.alpha;
-        } else {
-            // For non-absolute orientation, it's relative. The old code used (360 - alpha).
-            // This might be a legacy device behavior. We'll stick to it as a fallback.
-            heading = 360 - event.alpha;
-        }
+        rawHeading = event.webkitCompassHeading; // iOS
+    } else if (event.alpha !== null) {
+        // Android等のデバイス
+        rawHeading = (event.absolute === true || event.type === 'deviceorientationabsolute') 
+                     ? event.alpha 
+                     : 360 - event.alpha;
     }
 
-    if (heading !== null) {
-        // Correct for screen orientation.
+    if (rawHeading !== null) {
+        // 画面の向き（縦・横）を補正
         let screenAngle = 0;
-        if (window.screen && window.screen.orientation && typeof window.screen.orientation.angle === 'number') {
-            screenAngle = window.screen.orientation.angle; // New API: 0, 90, 180, 270
+        if (window.screen && window.screen.orientation) {
+            screenAngle = window.screen.orientation.angle;
         } else if (typeof window.orientation === 'number') {
-            screenAngle = window.orientation; // Deprecated API: -90, 0, 90, 180
+            screenAngle = window.orientation;
         }
         
-        // Combine device heading with screen orientation.
-        // The formula is (heading - screenAngle) to correctly align the device's physical top with the on-screen representation.
-        // We add 360 to ensure the result of the modulo is positive.
-        deviceHeading = (heading - screenAngle + 360) % 360;
+        // デバイスの物理的な向きを計算
+        const targetHeading = (rawHeading + screenAngle + 360) % 360;
+
+        // 【重要】ローパスフィルタによる平滑化
+        if (currentSmoothedHeading === null) {
+            currentSmoothedHeading = targetHeading;
+        } else {
+            const diff = getShortestAngleDiff(currentSmoothedHeading, targetHeading);
+            currentSmoothedHeading = (currentSmoothedHeading + diff * smoothingFactor + 360) % 360;
+        }
+
+        deviceHeading = currentSmoothedHeading;
 
         if (currentMarker) {
-            // The fan's rotation must be relative to the map's current bearing.
-            // When the map is rotated (heading-up), the fan's rotation should be near 0 to point "up".
             const mapBearing = map.getBearing() || 0;
-            const relativeHeading = (deviceHeading - mapBearing + 360) % 360;
+            // 扇のエフェクトも平滑化された値を使う
+            const relativeHeading = getShortestAngleDiff(mapBearing, deviceHeading);
             currentMarker.getElement().style.setProperty('--heading', `${relativeHeading}deg`);
             
-            // If in heading-up tracking mode, rotate the map.
+            // ヘディングアップモード時の処理
             if (trackingMode === 2 && map && !isZooming) {
-                map.setBearing(deviceHeading);
+                // setBearing ではなく easeTo を使うことで Googleマップ風の滑らかさに
+                map.easeTo({
+                    bearing: deviceHeading,
+                    duration: 200,    // 0.2秒かけて動く
+                    easing: (t) => t, // 線形移動
+                    essential: true
+                });
             }
         }
     }
