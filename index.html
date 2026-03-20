@@ -604,7 +604,7 @@
 
 // --- 1. スムージング用の変数を追加（既存の変数定義付近に配置） ---
 let currentSmoothedHeading = null;
-const smoothingFactor = 0.1; // 0.1〜0.2程度にするとGoogleマップ風の「しっとり」した動きになります
+const smoothingFactor = 0.07; // 0.1〜0.2程度にするとGoogleマップ風の「しっとり」した動きになります
 
 // 角度の差分を-180〜180の範囲で計算するヘルパー（最短距離で回転させるため）
 function getShortestAngleDiff(current, target) {
