@@ -467,7 +467,7 @@
 <div id="nearby-panel">
     <div id="nearby-panel-header">
         <span id="nearby-panel-title">表示フィルター</span>
-        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v79</span>
+        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v80</span>
         <button id="nearby-panel-close" onclick="closeNearby()">×</button>
     </div>
     <div id="filter-checkboxes">
@@ -499,13 +499,29 @@
             <div class="nearby-cat-icon">🍽</div>
             <div class="nearby-cat-label">レストラン</div>
         </div>
-        <div class="nearby-cat-item" data-cat="noodle" onclick="selectNearbyCat(this)">
-            <div class="nearby-cat-icon">🍜</div>
-            <div class="nearby-cat-label">麺</div>
-        </div>
         <div class="nearby-cat-item" data-cat="museum" onclick="selectNearbyCat(this)">
             <div class="nearby-cat-icon">🏛</div>
             <div class="nearby-cat-label">ミュージアム</div>
+        </div>
+        <div class="nearby-cat-item" data-cat="history" onclick="selectNearbyCat(this)">
+            <div class="nearby-cat-icon">📜</div>
+            <div class="nearby-cat-label">歴史資料館</div>
+        </div>
+        <div class="nearby-cat-item" data-cat="memorial" onclick="selectNearbyCat(this)">
+            <div class="nearby-cat-icon">🏺</div>
+            <div class="nearby-cat-label">博物記念館</div>
+        </div>
+        <div class="nearby-cat-item" data-cat="ramen" onclick="selectNearbyCat(this)">
+            <div class="nearby-cat-icon">🍜</div>
+            <div class="nearby-cat-label">ラーメン</div>
+        </div>
+        <div class="nearby-cat-item" data-cat="udon" onclick="selectNearbyCat(this)">
+            <div class="nearby-cat-icon">🍲</div>
+            <div class="nearby-cat-label">うどん</div>
+        </div>
+        <div class="nearby-cat-item" data-cat="soba" onclick="selectNearbyCat(this)">
+            <div class="nearby-cat-icon">🥢</div>
+            <div class="nearby-cat-label">そば</div>
         </div>
         <div class="nearby-cat-item" data-cat="sightseeing" onclick="selectNearbyCat(this)">
             <div class="nearby-cat-icon">🗺</div>
@@ -1135,7 +1151,7 @@ map.on('zoomend', () => {
         return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
     }
 
-    const gmapKeywords = { supermarket: 'スーパー', busstop: 'バス停', station: '駅', restaurant: 'レストラン OR カフェ', noodle: 'ラーメン OR うどん OR そば', museum: '歴史館 OR 資料館 OR 博物館', sightseeing: '観光スポット OR 像' };
+    const gmapKeywords = { supermarket: 'スーパー', busstop: 'バス停', station: '駅', restaurant: 'レストラン OR カフェ', museum: 'ミュージアム', history: '歴史館 OR 資料館', memorial: '博物館 OR 記念館', ramen: 'ラーメン', udon: 'うどん', soba: 'そば', sightseeing: '観光スポット OR 像' };
     let nearbyState = { cats: ['supermarket'], dist: 5 };
     const filterState = { shop: true, castle: true, michi: true, manhole: true };
     function onFilterChange(el) {
