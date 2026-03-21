@@ -604,7 +604,7 @@
 
 // --- 1. スムージング用の変数を追加（既存の変数定義付近に配置） ---
 let currentSmoothedHeading = null;
-const smoothingFactor = 0.07; // 0.1〜0.2程度にするとGoogleマップ風の「しっとり」した動きになります
+const smoothingFactor = 0.05; // センサー入力の平滑化（小さいほど滑らか）
 
 // 角度の差分を-180〜180の範囲で計算するヘルパー（最短距離で回転させるため）
 function getShortestAngleDiff(current, target) {
@@ -649,18 +649,47 @@ function handleOrientation(event) {
 
         deviceHeading = currentSmoothedHeading;
 
+        // マーカーの扇アイコン更新のみここで行う（地図回転はrAFループに任せる）
         if (currentMarker) {
             const mapBearing = map.getBearing() || 0;
-            // 扇のエフェクトも平滑化された値を使う
             const relativeHeading = getShortestAngleDiff(mapBearing, deviceHeading);
             currentMarker.getElement().style.setProperty('--heading', `${relativeHeading}deg`);
-            
-                            // ヘディングアップモード時の処理
-                        if (trackingMode === 2 && map && !isZooming) {
-                            // setBearing を直接呼び出して、他のアニメーションと競合させない
-                            map.setBearing(deviceHeading);
-                        }        }
+        }
     }
+}
+
+// --- rAFループで地図bearingをなめらかに追従（震え防止） ---
+// 閾値未満の変化は無視することで静止中の震えを抑える
+const BEARING_THRESHOLD = 1.0; // この角度(度)未満の変化は無視
+const BEARING_LERP      = 0.12; // 1フレームあたりの追従率（小さいほどゆっくり）
+let rafBearing = null;
+
+function bearingRafLoop() {
+    if (trackingMode === 2 && !isZooming) {
+        const target = deviceHeading;
+
+        if (rafBearing === null) {
+            rafBearing = target;
+        }
+
+        const diff = getShortestAngleDiff(rafBearing, target);
+
+        // 閾値以上の差があるときだけ地図を動かす
+        if (Math.abs(diff) >= BEARING_THRESHOLD) {
+            rafBearing = (rafBearing + diff * BEARING_LERP + 360) % 360;
+            map.setBearing(rafBearing);
+
+            // マーカー扇も地図bearing基準で同期
+            if (currentMarker) {
+                const relativeHeading = getShortestAngleDiff(rafBearing, deviceHeading);
+                currentMarker.getElement().style.setProperty('--heading', `${relativeHeading}deg`);
+            }
+        }
+    } else {
+        rafBearing = null;
+    }
+
+    requestAnimationFrame(bearingRafLoop);
 }
 
 // --- 1. 地図ドラッグ（移動）開始時の処理を修正 ---
@@ -798,6 +827,9 @@ map.on('zoomend', () => {
             map.easeTo({ zoom: map.getZoom() - 0.5, duration: 300, essential: true });
         });
 
+
+        // bearingのrAFループ開始
+        requestAnimationFrame(bearingRafLoop);
 
         // watchPositionで常時位置監視（地図ロード後に開始）
         if (navigator.geolocation) {
