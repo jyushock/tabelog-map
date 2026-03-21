@@ -467,7 +467,7 @@
 <div id="nearby-panel">
     <div id="nearby-panel-header">
         <span id="nearby-panel-title">表示フィルター</span>
-        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v76</span>
+        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v77</span>
         <button id="nearby-panel-close" onclick="closeNearby()">×</button>
     </div>
     <div id="filter-checkboxes">
@@ -1102,6 +1102,19 @@ map.on('zoomend', () => {
         document.getElementById('search-results').style.display = q ? 'block' : 'none';
         if (!q) return;
 
+        const local = searchLocal(q);
+        const reqId = ++searchRequestId;
+        clearTimeout(geocodeTimer);
+        geocodeTimer = setTimeout(async () => {
+            const places = await searchGeocode(q);
+            if (reqId === searchRequestId) renderResults(local, places);
+        }, 300);
+    });
+    // 検索ボックスにフォーカスが戻ったとき、ワードが残っていれば結果を再表示
+    document.getElementById('search-input').addEventListener('focus', async (e) => {
+        const q = e.target.value.trim();
+        if (!q) return;
+        document.getElementById('search-clear').style.display = 'block';
         const local = searchLocal(q);
         const reqId = ++searchRequestId;
         clearTimeout(geocodeTimer);
