@@ -11,13 +11,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01001",
+        "id": "18786",
         "name": "道の駅三笠",
         "prefecture": "北海道",
         "city": "三笠市",
         "address": "北海道三笠市岡山1056-1",
-        "road": "国道12号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18786"
       }
     },
     {
@@ -30,13 +30,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01002",
-        "name": "道の駅スタープラザ芦別",
-        "prefecture": "北海道",
-        "city": "芦別市",
-        "address": "北海道芦別市北4条東1丁目1",
-        "road": "国道38号",
-        "url": "https://www.michi-no-eki.jp/stations/view/2"
+        "id": "18787",
+        "name": "道の駅スタープラザ 芦別",
+        "prefecture": "スタープラザ　芦別",
+        "city": "",
+        "address": "北海道芦別市北４条東1-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18787"
       }
     },
     {
@@ -49,13 +49,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01003",
+        "id": "18788",
         "name": "道の駅南ふらの",
         "prefecture": "北海道",
-        "city": "空知郡南富良野町",
-        "address": "北海道空知郡南富良野町字幾寅687-1",
-        "road": "国道38号",
-        "url": "https://www.michi-no-eki.jp/stations/view/3"
+        "city": "南富良野町",
+        "address": "北海道空知郡南富良野町字幾寅687",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18788"
       }
     },
     {
@@ -63,18 +63,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          144.1981267,
-          42.9927351
+          144.1897390,
+          42.9905330
         ]
       },
       "properties": {
-        "id": "01004",
-        "name": "道の駅しらぬか恋問",
+        "id": "18789",
+        "name": "道の駅しらぬか恋問館",
         "prefecture": "北海道",
-        "city": "白糠郡白糠町",
-        "address": "北海道白糠郡白糠町恋問3丁目3番地1",
-        "road": "国道38号",
-        "url": "https://www.michi-no-eki.jp/stations/view/4"
+        "city": "白糠町",
+        "address": "北海道白糠郡白糠町恋問3丁目2-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18789"
       }
     },
     {
@@ -87,13 +87,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01005",
+        "id": "18790",
         "name": "道の駅びふか",
         "prefecture": "北海道",
-        "city": "中川郡美深町",
+        "city": "美深町",
         "address": "北海道中川郡美深町字大手307-1",
-        "road": "国道40号",
-        "url": "https://www.michi-no-eki.jp/stations/view/5"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18790"
       }
     },
     {
@@ -106,13 +106,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01006",
+        "id": "18791",
         "name": "道の駅江差",
         "prefecture": "北海道",
-        "city": "檜山郡江差町",
+        "city": "江差町",
         "address": "北海道檜山郡江差町字尾山町1",
-        "road": "国道227号",
-        "url": "https://www.michi-no-eki.jp/stations/view/6"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18791"
       }
     },
     {
@@ -125,13 +125,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01007",
+        "id": "18792",
         "name": "道の駅望羊中山",
         "prefecture": "北海道",
-        "city": "虻田郡喜茂別町",
+        "city": "喜茂別町",
         "address": "北海道虻田郡喜茂別町字川上345",
-        "road": "国道230号",
-        "url": "https://www.michi-no-eki.jp/stations/view/7"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18792"
       }
     },
     {
@@ -144,13 +144,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01008",
-        "name": "道の駅富士見",
+        "id": "18793",
+        "name": "道の駅えんべつ富士見",
         "prefecture": "北海道",
-        "city": "天塩郡遠別町",
-        "address": "北海道天塩郡遠別町字富士見46-21",
-        "road": "国道232号",
-        "url": "https://www.michi-no-eki.jp/stations/view/8"
+        "city": "遠別町",
+        "address": "北海道天塩郡遠別町字富士見46-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18793"
       }
     },
     {
@@ -163,13 +163,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01009",
+        "id": "18794",
         "name": "道の駅忠類",
         "prefecture": "北海道",
-        "city": "中川郡幕別町",
+        "city": "幕別町",
         "address": "北海道中川郡幕別町忠類白銀町384-12",
-        "road": "国道236号",
-        "url": "https://www.michi-no-eki.jp/stations/view/9"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18794"
       }
     },
     {
@@ -182,13 +182,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01011",
+        "id": "18796",
         "name": "道の駅摩周温泉",
         "prefecture": "北海道",
-        "city": "川上郡弟子屈町",
-        "address": "北海道川上郡弟子屈町湯の島3丁目5-5",
-        "road": "国道241号",
-        "url": "https://www.michi-no-eki.jp/stations/view/11"
+        "city": "弟子屈町",
+        "address": "北海道川上郡弟子屈町湯の島3-5-5",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18796"
       }
     },
     {
@@ -196,18 +196,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          142.257872,
-          44.729078
+          142.2578720,
+          44.7290780
         ]
       },
       "properties": {
-        "id": "01012",
+        "id": "18797",
         "name": "道の駅おといねっぷ",
         "prefecture": "北海道",
-        "city": "中川郡音威子府村",
+        "city": "音威子府村",
         "address": "北海道中川郡音威子府村字音威子府155",
-        "road": "国道40号",
-        "url": "https://www.michi-no-eki.jp/stations/view/12"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18797"
       }
     },
     {
@@ -220,13 +220,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01013",
+        "id": "18798",
         "name": "道の駅かみゆうべつ温泉チューリップの湯",
         "prefecture": "北海道",
-        "city": "紋別郡湧別町",
+        "city": "湧別町",
         "address": "北海道紋別郡湧別町中湧別中町3020-1",
-        "road": "北海道道712号緑蔭中湧別停車場線",
-        "url": "https://www.michi-no-eki.jp/stations/view/13"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18798"
       }
     },
     {
@@ -239,32 +239,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01014",
+        "id": "18799",
         "name": "道の駅いわない",
         "prefecture": "北海道",
-        "city": "岩内郡岩内町",
+        "city": "岩内町",
         "address": "北海道岩内郡岩内町字万代47-4",
-        "road": "北海道道270号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          143.3287235,
-          43.9959412
-        ]
-      },
-      "properties": {
-        "id": "01015",
-        "name": "道の駅まるせっぷ",
-        "prefecture": "北海道",
-        "city": "紋別郡遠軽町",
-        "address": "北海道紋別郡遠軽町丸瀬布元町42-2",
-        "road": "国道333号",
-        "url": "https://www.michi-no-eki.jp/stations/view/15"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18799"
       }
     },
     {
@@ -277,13 +258,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01016",
+        "id": "18801",
         "name": "道の駅厚岸グルメパーク",
         "prefecture": "北海道",
-        "city": "厚岸郡厚岸町",
-        "address": "北海道厚岸郡厚岸町住の江2丁目2",
-        "road": "国道44号",
-        "url": "https://www.michi-no-eki.jp/stations/view/16"
+        "city": "厚岸町",
+        "address": "北海道厚岸郡厚岸町住の江町2-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18801"
       }
     },
     {
@@ -291,18 +272,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.875302,
+          141.8753020,
           43.7510483
         ]
       },
       "properties": {
-        "id": "01017",
+        "id": "18802",
         "name": "道の駅サンフラワー北竜",
         "prefecture": "北海道",
-        "city": "雨竜郡北竜町",
+        "city": "北竜町",
         "address": "北海道雨竜郡北竜町字板谷163-2",
-        "road": "国道275号",
-        "url": "https://www.michi-no-eki.jp/stations/view/17"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18802"
       }
     },
     {
@@ -315,13 +296,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01018",
+        "id": "18803",
         "name": "道の駅みついし",
         "prefecture": "北海道",
-        "city": "日高郡新ひだか町",
+        "city": "新ひだか町",
         "address": "北海道日高郡新ひだか町三石鳧舞161-2",
-        "road": "国道235号",
-        "url": "https://www.michi-no-eki.jp/stations/view/18"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18803"
       }
     },
     {
@@ -334,13 +315,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01019",
+        "id": "18804",
         "name": "道の駅あっさぶ",
         "prefecture": "北海道",
-        "city": "檜山郡厚沢部町",
+        "city": "厚沢部町",
         "address": "北海道檜山郡厚沢部町緑町72-1",
-        "road": "国道227号",
-        "url": "https://www.michi-no-eki.jp/stations/view/19"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18804"
       }
     },
     {
@@ -353,13 +334,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01020",
-        "name": "道の駅よってけ!島牧",
+        "id": "18805",
+        "name": "道の駅よってけ！島牧",
         "prefecture": "北海道",
-        "city": "島牧郡島牧村",
+        "city": "島牧村",
         "address": "北海道島牧郡島牧村字千走11-1",
-        "road": "国道229号",
-        "url": "https://www.michi-no-eki.jp/stations/view/20"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18805"
       }
     },
     {
@@ -367,18 +348,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.876681,
-          42.212366
+          139.8766810,
+          42.2123660
         ]
       },
       "properties": {
-        "id": "01021",
+        "id": "18806",
         "name": "道の駅てっくいランド大成",
         "prefecture": "北海道",
-        "city": "久遠郡せたな町",
+        "city": "せたな町",
         "address": "北海道久遠郡せたな町大成区平浜378",
-        "road": "国道229号",
-        "url": "https://www.michi-no-eki.jp/stations/view/21"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18806"
       }
     },
     {
@@ -391,13 +372,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01022",
+        "id": "18807",
         "name": "道の駅オホーツク紋別",
         "prefecture": "北海道",
         "city": "紋別市",
         "address": "北海道紋別市元紋別11-6",
-        "road": "北海道道304号",
-        "url": "https://www.michi-no-eki.jp/stations/view/22"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18807"
       }
     },
     {
@@ -405,18 +386,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.568716,
-          42.098901
+          140.5687160,
+          42.0989010
         ]
       },
       "properties": {
-        "id": "01023",
-        "name": "道の駅YOU・遊・もり",
+        "id": "18808",
+        "name": "道の駅YOU･遊･もり",
         "prefecture": "北海道",
-        "city": "茅部郡森町",
+        "city": "森町",
         "address": "北海道茅部郡森町字上台町326-18",
-        "road": "国道5号",
-        "url": "https://www.michi-no-eki.jp/stations/view/23"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18808"
       }
     },
     {
@@ -424,18 +405,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          143.5005308,
-          43.7546445
+          143.5005319,
+          43.7535201
         ]
       },
       "properties": {
-        "id": "01024",
+        "id": "18809",
         "name": "道の駅おんねゆ温泉",
         "prefecture": "北海道",
         "city": "北見市",
         "address": "北海道北見市留辺蘂町松山1-4",
-        "road": "国道39号",
-        "url": "https://www.michi-no-eki.jp/stations/view/24"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18809"
       }
     },
     {
@@ -448,13 +429,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01025",
+        "id": "18810",
         "name": "道の駅ルート229元和台",
         "prefecture": "北海道",
-        "city": "爾志郡乙部町",
+        "city": "乙部町",
         "address": "北海道爾志郡乙部町字元和169",
-        "road": "国道229号",
-        "url": "https://www.michi-no-eki.jp/stations/view/25"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18810"
       }
     },
     {
@@ -467,13 +448,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01026",
+        "id": "18811",
         "name": "道の駅ハウスヤルビ奈井江",
         "prefecture": "北海道",
-        "city": "空知郡奈井江町",
+        "city": "奈井江町",
         "address": "北海道空知郡奈井江町字奈井江28-1",
-        "road": "国道12号",
-        "url": "https://www.michi-no-eki.jp/stations/view/26"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18811"
       }
     },
     {
@@ -481,18 +462,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.654956,
-          44.137022
+          141.6549560,
+          44.1370220
         ]
       },
       "properties": {
-        "id": "01027",
+        "id": "18812",
         "name": "道の駅おびら鰊番屋",
         "prefecture": "北海道",
-        "city": "留萌郡小平町",
+        "city": "小平町",
         "address": "北海道留萌郡小平町字鬼鹿広富",
-        "road": "国道232号",
-        "url": "https://www.michi-no-eki.jp/stations/view/27"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18812"
       }
     },
     {
@@ -500,18 +481,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          142.631813,
+          142.6318130,
           44.8783757
         ]
       },
       "properties": {
-        "id": "01028",
+        "id": "18813",
         "name": "道の駅マリーンアイランド岡島",
         "prefecture": "北海道",
-        "city": "枝幸郡枝幸町",
-        "address": "北海道枝幸郡枝幸町岡島1978-13",
-        "road": "国道238号",
-        "url": "https://www.michi-no-eki.jp/stations/view/28"
+        "city": "枝幸町",
+        "address": "北海道枝幸郡枝幸町字岡島1978-13",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18813"
       }
     },
     {
@@ -519,18 +500,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          143.116955,
-          44.469498
+          143.1169550,
+          44.4694980
         ]
       },
       "properties": {
-        "id": "01029",
+        "id": "18814",
         "name": "道の駅おこっぺ",
         "prefecture": "北海道",
-        "city": "紋別郡興部町",
-        "address": "北海道紋別郡興部町興部1322-21",
-        "road": "国道239号",
-        "url": "https://www.michi-no-eki.jp/stations/view/29"
+        "city": "興部町",
+        "address": "北海道紋別郡興部町字興部（幸町）",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18814"
       }
     },
     {
@@ -543,13 +524,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01030",
+        "id": "18815",
         "name": "道の駅阿寒丹頂の里",
         "prefecture": "北海道",
         "city": "釧路市",
         "address": "北海道釧路市阿寒町上阿寒23-36-1",
-        "road": "国道240号",
-        "url": "https://www.michi-no-eki.jp/stations/view/30"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18815"
       }
     },
     {
@@ -557,18 +538,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          143.207419,
-          42.976584
+          143.1816940,
+          42.9749170
         ]
       },
       "properties": {
-        "id": "01031",
+        "id": "18816",
         "name": "道の駅おとふけ",
         "prefecture": "北海道",
-        "city": "河東郡音更町",
+        "city": "音更町",
         "address": "北海道河東郡音更町なつぞら2",
-        "road": "国道241号",
-        "url": "https://www.michi-no-eki.jp/stations/view/31"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18816"
       }
     },
     {
@@ -581,13 +562,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01032",
+        "id": "18817",
         "name": "道の駅ピンネシリ",
         "prefecture": "北海道",
-        "city": "枝幸郡中頓別町",
+        "city": "中頓別町",
         "address": "北海道枝幸郡中頓別町字敏音知72-7",
-        "road": "国道275号",
-        "url": "https://www.michi-no-eki.jp/stations/view/32"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18817"
       }
     },
     {
@@ -600,13 +581,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01034",
+        "id": "18819",
         "name": "道の駅上ノ国もんじゅ",
         "prefecture": "北海道",
-        "city": "檜山郡上ノ国町",
+        "city": "上ノ国町",
         "address": "北海道檜山郡上ノ国町字原歌3",
-        "road": "国道228号",
-        "url": "https://www.michi-no-eki.jp/stations/view/34"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18819"
       }
     },
     {
@@ -619,13 +600,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01035",
-        "name": "道の駅オスコイ!かもえない",
+        "id": "18820",
+        "name": "道の駅オスコイ！かもえない",
         "prefecture": "北海道",
-        "city": "古宇郡神恵内村",
-        "address": "北海道古宇郡神恵内村大字赤石村字大森34-1",
-        "road": "国道229号",
-        "url": "https://www.michi-no-eki.jp/stations/view/35"
+        "city": "神恵内村",
+        "address": "北海道古宇郡神恵内村大字赤石村字大森292-１",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18820"
       }
     },
     {
@@ -633,18 +614,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          143.126839,
-          42.69214
+          143.1268390,
+          42.6921400
         ]
       },
       "properties": {
-        "id": "01036",
+        "id": "18821",
         "name": "道の駅なかさつない",
         "prefecture": "北海道",
-        "city": "河西郡中札内村",
-        "address": "北海道河西郡中札内村大通南7丁目14",
-        "road": "国道236号",
-        "url": "https://www.michi-no-eki.jp/stations/view/36"
+        "city": "中札内村",
+        "address": "北海道河西郡中札内村大通南7-14",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18821"
       }
     },
     {
@@ -652,18 +633,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.716616,
-          42.94998
+          141.7166160,
+          42.9499800
         ]
       },
       "properties": {
-        "id": "01037",
+        "id": "18822",
         "name": "道の駅マオイの丘公園",
         "prefecture": "北海道",
-        "city": "夕張郡長沼町",
+        "city": "長沼町",
         "address": "北海道夕張郡長沼町東10線南7番地",
-        "road": "国道274号",
-        "url": "https://www.michi-no-eki.jp/stations/view/37"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18822"
       }
     },
     {
@@ -676,13 +657,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01038",
+        "id": "18823",
         "name": "道の駅樹海ロード日高",
         "prefecture": "北海道",
-        "city": "沙流郡日高町",
-        "address": "北海道沙流郡日高町本町東1丁目298-1",
-        "road": "国道274号",
-        "url": "https://www.michi-no-eki.jp/stations/view/38"
+        "city": "日高町",
+        "address": "北海道沙流郡日高町本町東1-298-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18823"
       }
     },
     {
@@ -691,17 +672,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           140.8990485,
-          42.559133
+          42.5591330
         ]
       },
       "properties": {
-        "id": "01039",
-        "name": "道の駅そうべつ情報館i(アイ)",
+        "id": "18824",
+        "name": "道の駅そうべつ情報館ｉ（アイ）",
         "prefecture": "北海道",
-        "city": "有珠郡壮瞥町",
+        "city": "壮瞥町",
         "address": "北海道有珠郡壮瞥町字滝之町384-1",
-        "road": "国道453号",
-        "url": "https://www.michi-no-eki.jp/stations/view/39"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18824"
       }
     },
     {
@@ -714,13 +695,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01040",
+        "id": "18825",
         "name": "道の駅ニセコビュープラザ",
         "prefecture": "北海道",
-        "city": "虻田郡ニセコ町",
+        "city": "ニセコ町",
         "address": "北海道虻田郡ニセコ町字元町77-10",
-        "road": "国道5号",
-        "url": "https://www.michi-no-eki.jp/stations/view/40"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18825"
       }
     },
     {
@@ -733,13 +714,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01041",
+        "id": "18826",
         "name": "道の駅しりうち",
         "prefecture": "北海道",
-        "city": "上磯郡知内町",
-        "address": "北海道上磯郡知内町字湯ノ里48-13",
-        "road": "国道228号",
-        "url": "https://www.michi-no-eki.jp/stations/view/41"
+        "city": "知内町",
+        "address": "北海道上磯郡知内町字湯の里48-13",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18826"
       }
     },
     {
@@ -747,18 +728,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.255731,
-          41.479134
+          140.2557310,
+          41.4791340
         ]
       },
       "properties": {
-        "id": "01042",
+        "id": "18827",
         "name": "道の駅横綱の里ふくしま",
         "prefecture": "北海道",
-        "city": "松前郡福島町",
+        "city": "福島町",
         "address": "北海道松前郡福島町字福島143-1",
-        "road": "国道228号",
-        "url": "https://www.michi-no-eki.jp/stations/view/42"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18827"
       }
     },
     {
@@ -771,13 +752,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01043",
+        "id": "18828",
         "name": "道の駅サラブレッドロード新冠",
         "prefecture": "北海道",
-        "city": "新冠郡新冠町",
+        "city": "新冠町",
         "address": "北海道新冠郡新冠町字中央町1-20",
-        "road": "国道235号",
-        "url": "https://www.michi-no-eki.jp/stations/view/43"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18828"
       }
     },
     {
@@ -785,18 +766,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          143.239275611,
-          43.1443124354
+          143.2392430,
+          43.1443424
         ]
       },
       "properties": {
-        "id": "01044",
+        "id": "18829",
         "name": "道の駅ピア21しほろ",
         "prefecture": "北海道",
-        "city": "河東郡士幌町",
-        "address": "北海道河東郡士幌町字士幌西2線134-1",
-        "road": "国道241号",
-        "url": "https://www.michi-no-eki.jp/stations/view/44"
+        "city": "士幌町",
+        "address": "北海道河東郡士幌町字士幌西2線147",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18829"
       }
     },
     {
@@ -804,18 +785,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          143.090986,
-          44.19689
+          143.0909860,
+          44.1968900
         ]
       },
       "properties": {
-        "id": "01045",
+        "id": "18830",
         "name": "道の駅香りの里たきのうえ",
         "prefecture": "北海道",
-        "city": "紋別郡滝上町",
+        "city": "滝上町",
         "address": "北海道紋別郡滝上町旭町",
-        "road": "国道273号",
-        "url": "https://www.michi-no-eki.jp/stations/view/45"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18830"
       }
     },
     {
@@ -828,13 +809,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01046",
+        "id": "18831",
         "name": "道の駅田園の里うりゅう",
         "prefecture": "北海道",
-        "city": "雨竜郡雨竜町",
+        "city": "雨竜町",
         "address": "北海道雨竜郡雨竜町字満寿28-3",
-        "road": "国道275号",
-        "url": "https://www.michi-no-eki.jp/stations/view/46"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18831"
       }
     },
     {
@@ -842,18 +823,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.943745,
-          42.342012
+          140.9437450,
+          42.3420120
         ]
       },
       "properties": {
-        "id": "01047",
+        "id": "18832",
         "name": "道の駅みたら室蘭",
         "prefecture": "北海道",
         "city": "室蘭市",
-        "address": "北海道室蘭市祝津町4丁目16-15",
-        "road": "国道37号",
-        "url": "https://www.michi-no-eki.jp/stations/view/47"
+        "address": "北海道室蘭市祝津町4-16-15",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18832"
       }
     },
     {
@@ -861,18 +842,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          142.4895,
-          43.844134
+          142.4895000,
+          43.8441340
         ]
       },
       "properties": {
-        "id": "01048",
+        "id": "18833",
         "name": "道の駅とうま",
         "prefecture": "北海道",
-        "city": "上川郡当麻町",
-        "address": "北海道上川郡当麻町宇園別2区",
-        "road": "国道39号",
-        "url": "https://www.michi-no-eki.jp/stations/view/48"
+        "city": "当麻町",
+        "address": "北海道上川郡当麻町字園別２区",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18833"
       }
     },
     {
@@ -885,13 +866,32 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01049",
+        "id": "18834",
         "name": "道の駅スペース・アップルよいち",
         "prefecture": "北海道",
-        "city": "余市郡余市町",
-        "address": "北海道余市郡余市町黒川町6丁目4-1",
-        "road": "国道229号",
-        "url": "https://www.michi-no-eki.jp/stations/view/49"
+        "city": "余市町",
+        "address": "北海道余市郡余市町黒川町6-4",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18834"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.7065768,
+          44.3673322
+        ]
+      },
+      "properties": {
+        "id": "18835",
+        "name": "道の駅ほっと♡はぼろ",
+        "prefecture": "北海道",
+        "city": "羽幌町",
+        "address": "北海道苫前郡羽幌町北3条1-29",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18835"
       }
     },
     {
@@ -904,13 +904,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01051",
+        "id": "18836",
         "name": "道の駅サロマ湖",
         "prefecture": "北海道",
-        "city": "常呂郡佐呂間町",
+        "city": "佐呂間町",
         "address": "北海道常呂郡佐呂間町字浪速121-3",
-        "road": "国道238号",
-        "url": "https://www.michi-no-eki.jp/stations/view/51"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18836"
       }
     },
     {
@@ -923,13 +923,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01052",
+        "id": "18837",
         "name": "道の駅愛ランド湧別",
         "prefecture": "北海道",
-        "city": "紋別郡湧別町",
+        "city": "湧別町",
         "address": "北海道紋別郡湧別町志撫子6-2",
-        "road": "国道238号",
-        "url": "https://www.michi-no-eki.jp/stations/view/52"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18837"
       }
     },
     {
@@ -942,13 +942,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01053",
+        "id": "18838",
         "name": "道の駅おうむ",
         "prefecture": "北海道",
-        "city": "紋別郡雄武町",
+        "city": "雄武町",
         "address": "北海道紋別郡雄武町字雄武1885-14",
-        "road": "国道238号",
-        "url": "https://www.michi-no-eki.jp/stations/view/53"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18838"
       }
     },
     {
@@ -956,18 +956,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          142.177348,
-          45.329219
+          142.1773480,
+          45.3292190
         ]
       },
       "properties": {
-        "id": "01054",
+        "id": "18839",
         "name": "道の駅さるふつ公園",
         "prefecture": "北海道",
-        "city": "宗谷郡猿払村",
-        "address": "北海道宗谷郡猿払村浜鬼志別214-7",
-        "road": "国道238号",
-        "url": "https://www.michi-no-eki.jp/stations/view/54"
+        "city": "猿払村",
+        "address": "北海道宗谷郡猿払村字浜鬼志別241-7",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18839"
       }
     },
     {
@@ -975,18 +975,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          142.139546,
-          44.114633
+          142.1395460,
+          44.1146330
         ]
       },
       "properties": {
-        "id": "01055",
+        "id": "18840",
         "name": "道の駅森と湖の里ほろかない",
         "prefecture": "北海道",
-        "city": "雨竜郡幌加内町",
-        "address": "北海道雨竜郡幌加内町字政和第一",
-        "road": "国道275号",
-        "url": "https://www.michi-no-eki.jp/stations/view/55"
+        "city": "幌加内町",
+        "address": "北海道雨竜郡幌加内町字政和第1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18840"
       }
     },
     {
@@ -994,18 +994,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          142.004244,
-          43.503388
+          142.0058387,
+          43.5032933
         ]
       },
       "properties": {
-        "id": "01056",
+        "id": "18841",
         "name": "道の駅うたしないチロルの湯",
         "prefecture": "北海道",
         "city": "歌志内市",
-        "address": "北海道歌志内市字中村72-2",
-        "road": "北海道道114号",
-        "url": "https://www.michi-no-eki.jp/stations/view/56"
+        "address": "北海道歌志内市字中村72-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18841"
       }
     },
     {
@@ -1018,13 +1018,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01057",
+        "id": "18842",
         "name": "道の駅くろまつない",
         "prefecture": "北海道",
-        "city": "寿都郡黒松内町",
+        "city": "黒松内町",
         "address": "北海道寿都郡黒松内町字白井川8-10",
-        "road": "国道5号",
-        "url": "https://www.michi-no-eki.jp/stations/view/57"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18842"
       }
     },
     {
@@ -1032,18 +1032,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.941478,
+          141.9414780,
           43.6234396
         ]
       },
       "properties": {
-        "id": "01058",
+        "id": "18843",
         "name": "道の駅たきかわ",
         "prefecture": "北海道",
         "city": "滝川市",
-        "address": "北海道滝川市江部乙町東11丁目13-3",
-        "road": "国道12号",
-        "url": "https://www.michi-no-eki.jp/stations/view/58"
+        "address": "北海道滝川市江部乙町東11-13-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18843"
       }
     },
     {
@@ -1056,13 +1056,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01059",
+        "id": "18844",
         "name": "道の駅スワン44ねむろ",
         "prefecture": "北海道",
         "city": "根室市",
         "address": "北海道根室市酪陽1",
-        "road": "国道44号",
-        "url": "https://www.michi-no-eki.jp/stations/view/59"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18844"
       }
     },
     {
@@ -1075,13 +1075,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01060",
+        "id": "18845",
         "name": "道の駅つるぬま",
         "prefecture": "北海道",
-        "city": "樺戸郡浦臼町",
-        "address": "北海道樺戸郡浦臼町字キナウスナイ188",
-        "road": "国道275号",
-        "url": "https://www.michi-no-eki.jp/stations/view/60"
+        "city": "浦臼町",
+        "address": "北海道樺戸郡浦臼町字キナウスナイ186-214",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18845"
       }
     },
     {
@@ -1094,13 +1094,32 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01061",
+        "id": "18846",
         "name": "道の駅なとわ・えさん",
         "prefecture": "北海道",
         "city": "函館市",
         "address": "北海道函館市日ノ浜町31-2",
-        "road": "国道278号",
-        "url": "https://www.michi-no-eki.jp/stations/view/61"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18846"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.6673361,
+          42.1253109
+        ]
+      },
+      "properties": {
+        "id": "18847",
+        "name": "道の駅つど～る・プラザ・さわら",
+        "prefecture": "北海道",
+        "city": "森町",
+        "address": "北海道茅部郡森町砂原2-358-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18847"
       }
     },
     {
@@ -1113,13 +1132,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01063",
+        "id": "18848",
         "name": "道の駅知床・らうす",
         "prefecture": "北海道",
-        "city": "目梨郡羅臼町",
+        "city": "羅臼町",
         "address": "北海道目梨郡羅臼町本町361-1",
-        "road": "国道335号",
-        "url": "https://www.michi-no-eki.jp/stations/view/63"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18848"
       }
     },
     {
@@ -1132,13 +1151,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01064",
+        "id": "18849",
         "name": "道の駅さらべつ",
         "prefecture": "北海道",
-        "city": "河西郡更別村",
+        "city": "更別村",
         "address": "北海道河西郡更別村字弘和464-1",
-        "road": "北海道道238号",
-        "url": "https://www.michi-no-eki.jp/stations/view/64"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18849"
       }
     },
     {
@@ -1146,18 +1165,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.8771001,
-          42.4717206
+          140.8754915,
+          42.4705023
         ]
       },
       "properties": {
-        "id": "01065",
+        "id": "18850",
         "name": "道の駅だて歴史の杜",
         "prefecture": "北海道",
         "city": "伊達市",
         "address": "北海道伊達市松ヶ枝町34-1",
-        "road": "国道37号",
-        "url": "https://www.michi-no-eki.jp/stations/view/65"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18850"
       }
     },
     {
@@ -1170,13 +1189,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01066",
+        "id": "18851",
         "name": "道の駅あさひかわ",
         "prefecture": "北海道",
         "city": "旭川市",
-        "address": "北海道旭川市神楽4条6丁目1-12",
-        "road": "国道237号",
-        "url": "https://www.michi-no-eki.jp/stations/view/66"
+        "address": "北海道旭川市神楽4条6-1-12",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18851"
       }
     },
     {
@@ -1184,18 +1203,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          142.39758,
-          42.978859
+          142.3975800,
+          42.9788590
         ]
       },
       "properties": {
-        "id": "01067",
+        "id": "18852",
         "name": "道の駅自然体感しむかっぷ",
         "prefecture": "北海道",
-        "city": "勇払郡占冠村",
+        "city": "占冠村",
         "address": "北海道勇払郡占冠村字中央",
-        "road": "国道237号",
-        "url": "https://www.michi-no-eki.jp/stations/view/67"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18852"
       }
     },
     {
@@ -1208,13 +1227,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01068",
+        "id": "18853",
         "name": "道の駅にしおこっぺ花夢",
         "prefecture": "北海道",
-        "city": "紋別郡西興部村",
+        "city": "西興部村",
         "address": "北海道紋別郡西興部村字上興部37",
-        "road": "国道239号",
-        "url": "https://www.michi-no-eki.jp/stations/view/68"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18853"
       }
     },
     {
@@ -1222,18 +1241,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          143.742367,
-          43.467863
+          143.7423670,
+          43.4678630
         ]
       },
       "properties": {
-        "id": "01069",
+        "id": "18854",
         "name": "道の駅オーロラタウン93りくべつ",
         "prefecture": "北海道",
-        "city": "足寄郡陸別町",
+        "city": "陸別町",
         "address": "北海道足寄郡陸別町大通",
-        "road": "国道242号",
-        "url": "https://www.michi-no-eki.jp/stations/view/69"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18854"
       }
     },
     {
@@ -1241,18 +1260,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          144.453268,
+          144.4532680,
           43.9339211
         ]
       },
       "properties": {
-        "id": "01070",
+        "id": "18855",
         "name": "道の駅はなやか（葉菜野花）小清水",
         "prefecture": "北海道",
-        "city": "斜里郡小清水町",
+        "city": "小清水町",
         "address": "北海道斜里郡小清水町字浜小清水474-7",
-        "road": "国道244号",
-        "url": "https://www.michi-no-eki.jp/stations/view/70"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18855"
       }
     },
     {
@@ -1260,18 +1279,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          142.070593,
+          142.0705930,
           43.6994831
         ]
       },
       "properties": {
-        "id": "01071",
+        "id": "18856",
         "name": "道の駅ライスランドふかがわ",
         "prefecture": "北海道",
         "city": "深川市",
         "address": "北海道深川市音江町字広里59-7",
-        "road": "国道12号|国道233号",
-        "url": "https://www.michi-no-eki.jp/stations/view/71"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18856"
       }
     },
     {
@@ -1284,13 +1303,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01072",
+        "id": "18857",
         "name": "道の駅なかがわ",
         "prefecture": "北海道",
-        "city": "中川郡中川町",
+        "city": "中川町",
         "address": "北海道中川郡中川町字誉498-1",
-        "road": "国道40号",
-        "url": "https://www.michi-no-eki.jp/stations/view/72"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18857"
       }
     },
     {
@@ -1303,13 +1322,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01073",
+        "id": "18858",
         "name": "道の駅230ルスツ",
         "prefecture": "北海道",
-        "city": "虻田郡留寿都村",
-        "address": "北海道虻田郡留寿都村字留寿都127-191",
-        "road": "国道230号",
-        "url": "https://www.michi-no-eki.jp/stations/view/73"
+        "city": "留寿都村",
+        "address": "北海道虻田郡留寿都村字留寿都127",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18858"
       }
     },
     {
@@ -1322,13 +1341,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01074",
+        "id": "18859",
         "name": "道の駅てしお",
         "prefecture": "北海道",
-        "city": "天塩郡天塩町",
-        "address": "北海道天塩郡天塩町新開通4丁目7227-2",
-        "road": "国道232号",
-        "url": "https://www.michi-no-eki.jp/stations/view/74"
+        "city": "天塩町",
+        "address": "北海道天塩郡天塩町新開通4-7227-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18859"
       }
     },
     {
@@ -1336,18 +1355,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          143.273259,
-          42.489824
+          143.2732590,
+          42.4898240
         ]
       },
       "properties": {
-        "id": "01075",
+        "id": "18860",
         "name": "道の駅コスモール大樹",
         "prefecture": "北海道",
-        "city": "広尾郡大樹町",
+        "city": "大樹町",
         "address": "北海道広尾郡大樹町西本通98",
-        "road": "国道236号",
-        "url": "https://www.michi-no-eki.jp/stations/view/75"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18860"
       }
     },
     {
@@ -1355,18 +1374,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          144.24901,
-          43.647837
+          144.2478543,
+          43.6482861
         ]
       },
       "properties": {
-        "id": "01076",
+        "id": "18861",
         "name": "道の駅ぐるっとパノラマ美幌峠",
         "prefecture": "北海道",
-        "city": "網走郡美幌町",
+        "city": "美幌町",
         "address": "北海道網走郡美幌町字古梅",
-        "road": "国道243号",
-        "url": "https://www.michi-no-eki.jp/stations/view/76"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18861"
       }
     },
     {
@@ -1379,13 +1398,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01077",
+        "id": "18862",
         "name": "道の駅らんこし・ふるさとの丘",
         "prefecture": "北海道",
-        "city": "磯谷郡蘭越町",
+        "city": "蘭越町",
         "address": "北海道磯谷郡蘭越町字相生969",
-        "road": "国道5号",
-        "url": "https://www.michi-no-eki.jp/stations/view/77"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18862"
       }
     },
     {
@@ -1393,18 +1412,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.722382,
-          42.577551
+          140.7223820,
+          42.5775510
         ]
       },
       "properties": {
-        "id": "01078",
+        "id": "18863",
         "name": "道の駅とようら",
         "prefecture": "北海道",
-        "city": "虻田郡豊浦町",
+        "city": "豊浦町",
         "address": "北海道虻田郡豊浦町字旭町65-8",
-        "road": "国道37号",
-        "url": "https://www.michi-no-eki.jp/stations/view/78"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18863"
       }
     },
     {
@@ -1417,13 +1436,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01079",
+        "id": "18864",
         "name": "道の駅メルヘンの丘めまんべつ",
         "prefecture": "北海道",
-        "city": "網走郡大空町",
+        "city": "大空町",
         "address": "北海道網走郡大空町女満別昭和96",
-        "road": "国道39号",
-        "url": "https://www.michi-no-eki.jp/stations/view/79"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18864"
       }
     },
     {
@@ -1436,13 +1455,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01080",
+        "id": "18865",
         "name": "道の駅むかわ四季の館",
         "prefecture": "北海道",
-        "city": "勇払郡むかわ町",
-        "address": "北海道勇払郡むかわ町美幸3丁目3-1",
-        "road": "国道235号",
-        "url": "https://www.michi-no-eki.jp/stations/view/80"
+        "city": "むかわ町",
+        "address": "北海道勇払郡むかわ町美幸3-3-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18865"
       }
     },
     {
@@ -1450,18 +1469,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          143.980525,
-          43.545622
+          143.9805250,
+          43.5456220
         ]
       },
       "properties": {
-        "id": "01081",
+        "id": "18866",
         "name": "道の駅あいおい",
         "prefecture": "北海道",
-        "city": "網走郡津別町",
+        "city": "津別町",
         "address": "北海道網走郡津別町字相生",
-        "road": "国道240号",
-        "url": "https://www.michi-no-eki.jp/stations/view/81"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18866"
       }
     },
     {
@@ -1469,18 +1488,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          142.9902764,
-          43.0977132
+          142.9885700,
+          43.0981880
         ]
       },
       "properties": {
-        "id": "01082",
+        "id": "18867",
         "name": "道の駅しかおい",
         "prefecture": "北海道",
-        "city": "河東郡鹿追町",
-        "address": "北海道河東郡鹿追町東町3丁目2",
-        "road": "国道274号",
-        "url": "https://www.michi-no-eki.jp/stations/view/82"
+        "city": "鹿追町",
+        "address": "北海道河東郡鹿追町東町3-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18867"
       }
     },
     {
@@ -1488,18 +1507,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          143.076278,
-          43.870061
+          143.0762780,
+          43.8700610
         ]
       },
       "properties": {
-        "id": "01083",
-        "name": "白滝パーキングエリア",
+        "id": "18868",
+        "name": "道の駅しらたき",
         "prefecture": "北海道",
-        "city": "紋別郡遠軽町",
+        "city": "遠軽町",
         "address": "北海道紋別郡遠軽町奥白滝",
-        "road": "旭川紋別自動車道",
-        "url": "https://www.michi-no-eki.jp/stations/view/83"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18868"
       }
     },
     {
@@ -1507,18 +1526,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          143.546455,
-          43.244332
+          143.5464550,
+          43.2443320
         ]
       },
       "properties": {
-        "id": "01084",
+        "id": "18869",
         "name": "道の駅あしょろ銀河ホール21",
         "prefecture": "北海道",
-        "city": "足寄郡足寄町",
-        "address": "北海道足寄郡足寄町北1条1丁目",
-        "road": "国道241号|国道242号",
-        "url": "https://www.michi-no-eki.jp/stations/view/84"
+        "city": "足寄町",
+        "address": "北海道足寄郡足寄町北１条1丁目",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18869"
       }
     },
     {
@@ -1526,18 +1545,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.65933,
-          42.833788
+          141.6593300,
+          42.8337880
         ]
       },
       "properties": {
-        "id": "01085",
+        "id": "18870",
         "name": "道の駅サーモンパーク千歳",
         "prefecture": "北海道",
         "city": "千歳市",
-        "address": "北海道千歳市花園2丁目4-2",
-        "road": "国道337号",
-        "url": "https://www.michi-no-eki.jp/stations/view/85"
+        "address": "北海道千歳市花園2-4-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18870"
       }
     },
     {
@@ -1550,13 +1569,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01086",
-        "name": "道の駅ひがしかわ「道草館」",
+        "id": "18871",
+        "name": "道の駅ひがしかわ「道草館",
         "prefecture": "北海道",
-        "city": "上川郡東川町",
-        "address": "北海道上川郡東川町東町1丁目1-15",
-        "road": "北海道道1160号",
-        "url": "https://www.michi-no-eki.jp/stations/view/86"
+        "city": "東川町",
+        "address": "北海道上川郡東川町東町1丁目1番15号",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18871"
       }
     },
     {
@@ -1569,13 +1588,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01087",
-        "name": "道と川の駅花ロードえにわ",
+        "id": "18872",
+        "name": "道の駅花ロードえにわ",
         "prefecture": "北海道",
         "city": "恵庭市",
         "address": "北海道恵庭市南島松817-18",
-        "road": "国道36号",
-        "url": "https://www.michi-no-eki.jp/stations/view/87"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18872"
       }
     },
     {
@@ -1583,18 +1602,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.370027,
+          140.3700270,
           42.8801825
         ]
       },
       "properties": {
-        "id": "01088",
+        "id": "18873",
         "name": "道の駅シェルプラザ・港",
         "prefecture": "北海道",
-        "city": "磯谷郡蘭越町",
-        "address": "北海道磯谷郡蘭越町港町1402-1",
-        "road": "国道229号",
-        "url": "https://www.michi-no-eki.jp/stations/view/88"
+        "city": "蘭越町",
+        "address": "北海道磯谷郡蘭越町港町1402-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18873"
       }
     },
     {
@@ -1607,13 +1626,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01089",
+        "id": "18874",
         "name": "道の駅真狩フラワーセンター",
         "prefecture": "北海道",
-        "city": "虻田郡真狩村",
+        "city": "真狩村",
         "address": "北海道虻田郡真狩村字光8-3",
-        "road": "北海道道66号",
-        "url": "https://www.michi-no-eki.jp/stations/view/89"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18874"
       }
     },
     {
@@ -1626,13 +1645,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01090",
+        "id": "18875",
         "name": "道の駅鐘のなるまち・ちっぷべつ",
         "prefecture": "北海道",
-        "city": "雨竜郡秩父別町",
+        "city": "秩父別町",
         "address": "北海道雨竜郡秩父別町2085",
-        "road": "国道233号",
-        "url": "https://www.michi-no-eki.jp/stations/view/90"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18875"
       }
     },
     {
@@ -1645,13 +1664,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01091",
+        "id": "18876",
         "name": "道の駅あぷた",
         "prefecture": "北海道",
-        "city": "虻田郡洞爺湖町",
+        "city": "洞爺湖町",
         "address": "北海道虻田郡洞爺湖町入江84-2",
-        "road": "国道37号",
-        "url": "https://www.michi-no-eki.jp/stations/view/91"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18876"
       }
     },
     {
@@ -1664,13 +1683,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01092",
+        "id": "18877",
         "name": "道の駅うりまく",
         "prefecture": "北海道",
-        "city": "河東郡鹿追町",
-        "address": "北海道河東郡鹿追町瓜幕西3丁目1",
-        "road": "国道274号",
-        "url": "https://www.michi-no-eki.jp/stations/view/92"
+        "city": "鹿追町",
+        "address": "北海道河東郡鹿追町瓜幕西3-1外",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18877"
       }
     },
     {
@@ -1683,13 +1702,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01093",
+        "id": "18878",
         "name": "道の駅絵本の里けんぶち",
         "prefecture": "北海道",
-        "city": "上川郡剣淵町",
+        "city": "剣淵町",
         "address": "北海道上川郡剣淵町東町2420",
-        "road": "国道40号",
-        "url": "https://www.michi-no-eki.jp/stations/view/93"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18878"
       }
     },
     {
@@ -1702,13 +1721,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01094",
-        "name": "道の駅風Wとままえ",
+        "id": "18879",
+        "name": "道の駅風Ｗとままえ",
         "prefecture": "北海道",
-        "city": "苫前郡苫前町",
-        "address": "北海道苫前郡苫前町字苫前119-1",
-        "road": "国道232号",
-        "url": "https://www.michi-no-eki.jp/stations/view/94"
+        "city": "苫前町",
+        "address": "北海道苫前郡苫前町字苫前119-１",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18879"
       }
     },
     {
@@ -1716,18 +1735,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          143.367911,
-          43.138881
+          143.3679110,
+          43.1388810
         ]
       },
       "properties": {
-        "id": "01095",
+        "id": "18880",
         "name": "道の駅しほろ温泉",
         "prefecture": "北海道",
-        "city": "河東郡士幌町",
-        "address": "北海道河東郡士幌町字下居辺西2線134",
-        "road": "北海道道134号",
-        "url": "https://www.michi-no-eki.jp/stations/view/95"
+        "city": "士幌町",
+        "address": "北海道河東郡士幌町字下居辺西２-134",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18880"
       }
     },
     {
@@ -1740,13 +1759,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01096",
+        "id": "18881",
         "name": "道の駅名水の郷きょうごく",
         "prefecture": "北海道",
-        "city": "虻田郡京極町",
+        "city": "京極町",
         "address": "北海道虻田郡京極町字川西45-1",
-        "road": "北海道道478号",
-        "url": "https://www.michi-no-eki.jp/stations/view/96"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18881"
       }
     },
     {
@@ -1759,13 +1778,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01097",
-        "name": "道の駅びえい「丘のくら」",
+        "id": "18882",
+        "name": "道の駅びえい「丘のくら",
         "prefecture": "北海道",
-        "city": "上川郡美瑛町",
-        "address": "北海道上川郡美瑛町本町1丁目9-21",
-        "road": "北海道道213号",
-        "url": "https://www.michi-no-eki.jp/stations/view/97"
+        "city": "美瑛町",
+        "address": "北海道上川郡美瑛町本町1-9-21",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18882"
       }
     },
     {
@@ -1778,13 +1797,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01098",
+        "id": "18883",
         "name": "道の駅☆ロマン街道しょさんべつ",
         "prefecture": "北海道",
-        "city": "苫前郡初山別村",
+        "city": "初山別村",
         "address": "北海道苫前郡初山別村字豊岬153-1",
-        "road": "国道232号",
-        "url": "https://www.michi-no-eki.jp/stations/view/98"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18883"
       }
     },
     {
@@ -1797,13 +1816,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01099",
+        "id": "18884",
         "name": "道の駅うとろ・シリエトク",
         "prefecture": "北海道",
-        "city": "斜里郡斜里町",
+        "city": "斜里町",
         "address": "北海道斜里郡斜里町ウトロ西186-8",
-        "road": "国道334号",
-        "url": "https://www.michi-no-eki.jp/stations/view/99"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18884"
       }
     },
     {
@@ -1816,13 +1835,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01100",
+        "id": "18885",
         "name": "道の駅しゃり",
         "prefecture": "北海道",
-        "city": "斜里郡斜里町",
+        "city": "斜里町",
         "address": "北海道斜里郡斜里町本町37",
-        "road": "北海道道92号",
-        "url": "https://www.michi-no-eki.jp/stations/view/100"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18885"
       }
     },
     {
@@ -1835,13 +1854,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01101",
+        "id": "18886",
         "name": "道の駅パパスランドさっつる",
         "prefecture": "北海道",
-        "city": "斜里郡清里町",
+        "city": "清里町",
         "address": "北海道斜里郡清里町字神威1071",
-        "road": "北海道道1115号",
-        "url": "https://www.michi-no-eki.jp/stations/view/101"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18886"
       }
     },
     {
@@ -1854,13 +1873,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01102",
+        "id": "18887",
         "name": "道の駅もち米の里☆なよろ",
         "prefecture": "北海道",
         "city": "名寄市",
         "address": "北海道名寄市風連町西町334-1",
-        "road": "国道40号",
-        "url": "https://www.michi-no-eki.jp/stations/view/102"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18887"
       }
     },
     {
@@ -1873,13 +1892,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01103",
+        "id": "18888",
         "name": "道の駅みなとま～れ寿都",
         "prefecture": "北海道",
-        "city": "寿都郡寿都町",
+        "city": "寿都町",
         "address": "北海道寿都郡寿都町字大磯町29-1",
-        "road": "北海道道9号",
-        "url": "https://www.michi-no-eki.jp/stations/view/103"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18888"
       }
     },
     {
@@ -1892,13 +1911,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01104",
+        "id": "18889",
         "name": "道の駅とうや湖",
         "prefecture": "北海道",
-        "city": "虻田郡洞爺湖町",
+        "city": "洞爺湖町",
         "address": "北海道虻田郡洞爺湖町香川9-4",
-        "road": "国道230号",
-        "url": "https://www.michi-no-eki.jp/stations/view/104"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18889"
       }
     },
     {
@@ -1906,18 +1925,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          144.273893,
-          44.022034
+          144.2738930,
+          44.0220340
         ]
       },
       "properties": {
-        "id": "01105",
+        "id": "18890",
         "name": "道の駅流氷街道網走",
         "prefecture": "北海道",
         "city": "網走市",
         "address": "北海道網走市南3条東4丁目",
-        "road": "北海道道1083号",
-        "url": "https://www.michi-no-eki.jp/stations/view/105"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18890"
       }
     },
     {
@@ -1930,13 +1949,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01106",
-        "name": "道の駅北前船_松前",
+        "id": "18891",
+        "name": "道の駅北前船 松前",
         "prefecture": "北海道",
-        "city": "松前郡松前町",
+        "city": "松前町",
         "address": "北海道松前郡松前町字唐津379",
-        "road": "国道228号",
-        "url": "https://www.michi-no-eki.jp/stations/view/106"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18891"
       }
     },
     {
@@ -1949,13 +1968,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01107",
+        "id": "18892",
         "name": "道の駅ステラ★ほんべつ",
         "prefecture": "北海道",
-        "city": "中川郡本別町",
-        "address": "北海道中川郡本別町北3丁目1-1",
-        "road": "国道242号",
-        "url": "https://www.michi-no-eki.jp/stations/view/107"
+        "city": "本別町",
+        "address": "北海道中川郡本別町北3-1-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18892"
       }
     },
     {
@@ -1968,13 +1987,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01108",
+        "id": "18893",
         "name": "道の駅ウトナイ湖",
         "prefecture": "北海道",
         "city": "苫小牧市",
-        "address": "北海道苫小牧市植苗156-30",
-        "road": "国道36号",
-        "url": "https://www.michi-no-eki.jp/stations/view/108"
+        "address": "北海道苫小牧市字植苗156-30",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18893"
       }
     },
     {
@@ -1983,17 +2002,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           143.6636566,
-          42.81399805
+          42.8139981
         ]
       },
       "properties": {
-        "id": "01109",
+        "id": "18894",
         "name": "道の駅うらほろ",
         "prefecture": "北海道",
-        "city": "十勝郡浦幌町",
-        "address": "北海道十勝郡浦幌町字北町16",
-        "road": "国道38号",
-        "url": "https://www.michi-no-eki.jp/stations/view/109"
+        "city": "浦幌町",
+        "address": "北海道十勝郡浦幌町字北町16-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18894"
       }
     },
     {
@@ -2006,13 +2025,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "01110",
+        "id": "18895",
         "name": "道の駅しんしのつ",
         "prefecture": "北海道",
-        "city": "石狩郡新篠津村",
-        "address": "北海道石狩郡新篠津村第45線北2",
-        "road": "北海道道139号",
-        "url": "https://www.michi-no-eki.jp/stations/view/110"
+        "city": "新篠津村",
+        "address": "北海道石狩郡新篠津村第45線北２",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18895"
       }
     },
     {
@@ -2020,18 +2039,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          142.038078,
-          42.93699
+          142.0380780,
+          42.9369900
         ]
       },
       "properties": {
-        "id": "01111",
+        "id": "18896",
         "name": "道の駅夕張メロード",
         "prefecture": "北海道",
         "city": "夕張市",
-        "address": "北海道夕張市紅葉山526-19",
-        "road": "国道274号",
-        "url": "https://www.michi-no-eki.jp/stations/view/111"
+        "address": "北海道夕張市紅葉山529",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18896"
       }
     },
     {
@@ -2040,17 +2059,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           145.2368756,
-          43.533413
+          43.5334130
         ]
       },
       "properties": {
-        "id": "01112",
+        "id": "18897",
         "name": "道の駅おだいとう",
         "prefecture": "北海道",
-        "city": "野付郡別海町",
+        "city": "別海町",
         "address": "北海道野付郡別海町尾岱沼5-27",
-        "road": "国道244号",
-        "url": "https://www.michi-no-eki.jp/stations/view/112"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18897"
       }
     },
     {
@@ -2058,170 +2077,37 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.677348,
-          45.41725
+          140.9447498,
+          41.9279214
         ]
       },
       "properties": {
-        "id": "01114",
+        "id": "18898",
+        "name": "道の駅縄文ロマン 南かやべ",
+        "prefecture": "縄文ロマン　南かやべ",
+        "city": "",
+        "address": "北海道函館市臼尻町551-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18898"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.6773480,
+          45.4172500
+        ]
+      },
+      "properties": {
+        "id": "18899",
         "name": "道の駅わっかない",
         "prefecture": "北海道",
         "city": "稚内市",
-        "address": "北海道稚内市開運2丁目1",
-        "road": "国道40号",
-        "url": "https://www.michi-no-eki.jp/stations/view/114"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          140.844843,
-          43.05086768
-        ]
-      },
-      "properties": {
-        "id": "01115",
-        "name": "道の駅あかいがわ",
-        "prefecture": "北海道",
-        "city": "余市郡赤井川村",
-        "address": "北海道余市郡赤井川村字都190-16",
-        "road": "国道393号",
-        "url": "https://www.michi-no-eki.jp/stations/view/7978"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          140.4353634,
-          41.6780521
-        ]
-      },
-      "properties": {
-        "id": "01116",
-        "name": "道の駅みそぎの郷_きこない",
-        "prefecture": "北海道",
-        "city": "上磯郡木古内町",
-        "address": "北海道上磯郡木古内町字本町338-14",
-        "road": "北海道道383号木古内停車場線[1]",
-        "url": "https://www.michi-no-eki.jp/stations/view/9721"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          140.8305528,
-          42.0285219
-        ]
-      },
-      "properties": {
-        "id": "01117",
-        "name": "道の駅しかべ間歇泉公園",
-        "prefecture": "北海道",
-        "city": "茅部郡鹿部町",
-        "address": "北海道茅部郡鹿部町字鹿部18-1",
-        "road": "国道278号",
-        "url": "https://www.michi-no-eki.jp/stations/view/9724"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          144.294951,
-          43.845319
-        ]
-      },
-      "properties": {
-        "id": "01118",
-        "name": "道の駅ノンキーランド_ひがしもこと",
-        "prefecture": "北海道",
-        "city": "網走郡大空町",
-        "address": "北海道網走郡大空町東藻琴100",
-        "road": "国道334号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14155"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          141.448498,
-          43.177254
-        ]
-      },
-      "properties": {
-        "id": "01119",
-        "name": "道の駅北欧の風_道の駅とうべつ",
-        "prefecture": "北海道",
-        "city": "石狩郡当別町",
-        "address": "北海道石狩郡当別町当別太774-11",
-        "road": "国道337号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14156"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          141.43118,
-          43.403873
-        ]
-      },
-      "properties": {
-        "id": "01120",
-        "name": "道の駅石狩「あいろーど厚田」",
-        "prefecture": "北海道",
-        "city": "石狩市",
-        "address": "北海道石狩市厚田区厚田98-2",
-        "road": "国道231号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14165"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          140.655973,
-          41.925666
-        ]
-      },
-      "properties": {
-        "id": "01121",
-        "name": "道の駅なないろ・ななえ",
-        "prefecture": "北海道",
-        "city": "亀田郡七飯町",
-        "address": "北海道亀田郡七飯町字峠下380-2",
-        "road": "国道5号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14166"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          142.597223333,
-          43.5030558333
-        ]
-      },
-      "properties": {
-        "id": "01122",
-        "name": "道の駅びえい「白金ビルケ」",
-        "prefecture": "北海道",
-        "city": "上川郡美瑛町",
-        "address": "北海道上川郡美瑛町字白金",
-        "road": "北海道道966号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14182"
+        "address": "北海道稚内市開運2丁目",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18899"
       }
     },
     {
@@ -2234,13 +2120,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "02001",
+        "id": "18900",
         "name": "道の駅しちのへ",
         "prefecture": "青森県",
-        "city": "上北郡七戸町",
-        "address": "青森県上北郡七戸町字荒熊内67番地997",
-        "road": "国道4号",
-        "url": "https://www.michi-no-eki.jp/stations/view/115"
+        "city": "七戸町",
+        "address": "青森県上北郡七戸町字荒熊内67-94",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18900"
       }
     },
     {
@@ -2253,13 +2139,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "02002",
+        "id": "18901",
         "name": "道の駅はしかみ",
         "prefecture": "青森県",
-        "city": "三戸郡階上町",
+        "city": "階上町",
         "address": "青森県三戸郡階上町大字道仏字耳ヶ吠3-3",
-        "road": "国道45号",
-        "url": "https://www.michi-no-eki.jp/stations/view/116"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18901"
       }
     },
     {
@@ -2267,18 +2153,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.687643,
-          40.581966
+          140.6874847,
+          40.5808332
         ]
       },
       "properties": {
-        "id": "02003",
+        "id": "18902",
         "name": "道の駅虹の湖",
         "prefecture": "青森県",
         "city": "黒石市",
         "address": "青森県黒石市大字沖浦字山神1-5",
-        "road": "国道102号",
-        "url": "https://www.michi-no-eki.jp/stations/view/117"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18902"
       }
     },
     {
@@ -2286,18 +2172,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.80477,
-          41.167961
+          140.8047700,
+          41.1679610
         ]
       },
       "properties": {
-        "id": "02004",
+        "id": "18903",
         "name": "道の駅わきのさわ",
         "prefecture": "青森県",
         "city": "むつ市",
-        "address": "青森県むつ市脇野沢七引201-5",
-        "road": "国道338号",
-        "url": "https://www.michi-no-eki.jp/stations/view/118"
+        "address": "青森県むつ市脇野沢七引205-5",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18903"
       }
     },
     {
@@ -2310,13 +2196,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "02005",
+        "id": "18904",
         "name": "道の駅かわうち湖",
         "prefecture": "青森県",
         "city": "むつ市",
         "address": "青森県むつ市川内町福浦山314",
-        "road": "青森県道253号",
-        "url": "https://www.michi-no-eki.jp/stations/view/119"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18904"
       }
     },
     {
@@ -2324,18 +2210,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.0744455,
-          40.4317584
+          141.0691523,
+          40.4296234
         ]
       },
       "properties": {
-        "id": "02006",
+        "id": "18905",
         "name": "道の駅しんごう",
         "prefecture": "青森県",
-        "city": "三戸郡新郷村",
+        "city": "新郷村",
         "address": "青森県三戸郡新郷村大字戸来字雨池11-2",
-        "road": "国道454号",
-        "url": "https://www.michi-no-eki.jp/stations/view/120"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18905"
       }
     },
     {
@@ -2348,13 +2234,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "02007",
+        "id": "18906",
         "name": "道の駅ひろさき",
         "prefecture": "青森県",
         "city": "弘前市",
         "address": "青森県弘前市大字石川字泉田62-1",
-        "road": "国道7号",
-        "url": "https://www.michi-no-eki.jp/stations/view/121"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18906"
       }
     },
     {
@@ -2362,18 +2248,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.117434,
-          40.586204
+          141.1174340,
+          40.5862040
         ]
       },
       "properties": {
-        "id": "02008",
+        "id": "18907",
         "name": "道の駅奥入瀬",
         "prefecture": "青森県",
         "city": "十和田市",
-        "address": "青森県十和田市奥瀬字堰道39-1",
-        "road": "国道102号",
-        "url": "https://www.michi-no-eki.jp/stations/view/122"
+        "address": "青森県十和田市大字奥瀬字堰道39-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18907"
       }
     },
     {
@@ -2382,17 +2268,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           141.2554758,
-          40.387808
+          40.3878080
         ]
       },
       "properties": {
-        "id": "02009",
+        "id": "18908",
         "name": "道の駅さんのへ",
         "prefecture": "青森県",
-        "city": "三戸郡三戸町",
+        "city": "三戸町",
         "address": "青森県三戸郡三戸町大字川守田字西張渡39-1",
-        "road": "国道4号",
-        "url": "https://www.michi-no-eki.jp/stations/view/123"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18908"
       }
     },
     {
@@ -2400,18 +2286,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.579519,
+          140.5795190,
           40.7179284
         ]
       },
       "properties": {
-        "id": "02010",
+        "id": "18909",
         "name": "道の駅なみおか",
         "prefecture": "青森県",
         "city": "青森市",
-        "address": "青森県青森市浪岡大字女鹿沢字野尻2番地3",
-        "road": "国道7号",
-        "url": "https://www.michi-no-eki.jp/stations/view/124"
+        "address": "青森県青森市浪岡大字女鹿沢字野尻2-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18909"
       }
     },
     {
@@ -2419,18 +2305,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.385462,
-          41.045391
+          140.3839499,
+          41.0456909
         ]
       },
       "properties": {
-        "id": "02011",
+        "id": "18910",
         "name": "道の駅十三湖高原",
         "prefecture": "青森県",
         "city": "五所川原市",
         "address": "青森県五所川原市相内実取287-1058",
-        "road": "国道339号",
-        "url": "https://www.michi-no-eki.jp/stations/view/125"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18910"
       }
     },
     {
@@ -2438,18 +2324,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.514335,
-          41.145511
+          140.5143350,
+          41.1455110
         ]
       },
       "properties": {
-        "id": "02012",
+        "id": "18911",
         "name": "道の駅いまべつ",
         "prefecture": "青森県",
-        "city": "東津軽郡今別町",
+        "city": "今別町",
         "address": "青森県東津軽郡今別町大字大川平字清川87-16",
-        "road": "青森県道14号",
-        "url": "https://www.michi-no-eki.jp/stations/view/126"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18911"
       }
     },
     {
@@ -2462,13 +2348,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "02013",
-        "name": "道の駅なんごう_(青森県)",
+        "id": "18912",
+        "name": "道の駅なんごう",
         "prefecture": "青森県",
         "city": "八戸市",
         "address": "青森県八戸市南郷大字中野字舘野4-4",
-        "road": "青森県道42号",
-        "url": "https://www.michi-no-eki.jp/stations/view/127"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18912"
       }
     },
     {
@@ -2476,18 +2362,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.322251,
-          40.784406
+          140.3222510,
+          40.7844060
         ]
       },
       "properties": {
-        "id": "02014",
+        "id": "18913",
         "name": "道の駅もりた",
         "prefecture": "青森県",
         "city": "つがる市",
         "address": "青森県つがる市森田町床舞稚桜4-1",
-        "road": "国道101号",
-        "url": "https://www.michi-no-eki.jp/stations/view/128"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18913"
       }
     },
     {
@@ -2495,18 +2381,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.86137,
-          40.891692
+          140.8613700,
+          40.8916920
         ]
       },
       "properties": {
-        "id": "02015",
+        "id": "18914",
         "name": "道の駅浅虫温泉",
         "prefecture": "青森県",
         "city": "青森市",
         "address": "青森県青森市大字浅虫字螢谷341-19",
-        "road": "国道4号",
-        "url": "https://www.michi-no-eki.jp/stations/view/129"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18914"
       }
     },
     {
@@ -2519,13 +2405,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "02016",
+        "id": "18915",
         "name": "道の駅いかりがせき",
         "prefecture": "青森県",
         "city": "平川市",
         "address": "青森県平川市碇ヶ関碇石13-1",
-        "road": "国道7号",
-        "url": "https://www.michi-no-eki.jp/stations/view/130"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18915"
       }
     },
     {
@@ -2533,18 +2419,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.577686,
+          140.5776860,
           40.6336189
         ]
       },
       "properties": {
-        "id": "02017",
+        "id": "18916",
         "name": "道の駅いなかだて",
         "prefecture": "青森県",
-        "city": "南津軽郡田舎館村",
-        "address": "青森県南津軽郡田舎館村大字高樋字八幡10",
-        "road": "国道102号",
-        "url": "https://www.michi-no-eki.jp/stations/view/131"
+        "city": "田舎館村",
+        "address": "青森県南津軽郡田舎館村大字高樋字八幡10",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18916"
       }
     },
     {
@@ -2552,18 +2438,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.256588,
-          41.083731
+          141.2565880,
+          41.0837310
         ]
       },
       "properties": {
-        "id": "02018",
+        "id": "18917",
         "name": "道の駅よこはま",
         "prefecture": "青森県",
-        "city": "上北郡横浜町",
+        "city": "横浜町",
         "address": "青森県上北郡横浜町字林ノ脇79-12",
-        "road": "国道279号",
-        "url": "https://www.michi-no-eki.jp/stations/view/132"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18917"
       }
     },
     {
@@ -2576,13 +2462,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "02019",
+        "id": "18918",
         "name": "道の駅みんまや",
         "prefecture": "青森県",
-        "city": "東津軽郡外ヶ浜町",
+        "city": "外ヶ浜町",
         "address": "青森県東津軽郡外ヶ浜町字三厩龍浜99",
-        "road": "国道339号",
-        "url": "https://www.michi-no-eki.jp/stations/view/133"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18918"
       }
     },
     {
@@ -2595,13 +2481,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "02020",
+        "id": "18919",
         "name": "道の駅こどまり",
         "prefecture": "青森県",
-        "city": "北津軽郡中泊町",
-        "address": "青森県北津軽郡中泊町小泊字折腰内45",
-        "road": "国道339号",
-        "url": "https://www.michi-no-eki.jp/stations/view/134"
+        "city": "中泊町",
+        "address": "青森県北津軽郡中泊町大字小泊字折腰内45",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18919"
       }
     },
     {
@@ -2614,13 +2500,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "02021",
+        "id": "18920",
         "name": "道の駅みさわ",
         "prefecture": "青森県",
         "city": "三沢市",
-        "address": "青森県三沢市谷地頭4丁目298-652",
-        "road": "青森県道170号",
-        "url": "https://www.michi-no-eki.jp/stations/view/135"
+        "address": "青森県三沢市谷地頭4-298-652",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18920"
       }
     },
     {
@@ -2629,17 +2515,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           141.2646116,
-          40.574645
+          40.5746450
         ]
       },
       "properties": {
-        "id": "02022",
+        "id": "18921",
         "name": "道の駅とわだ",
         "prefecture": "青森県",
         "city": "十和田市",
         "address": "青森県十和田市大字伝法寺字平窪37-2",
-        "road": "国道4号",
-        "url": "https://www.michi-no-eki.jp/stations/view/136"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18921"
       }
     },
     {
@@ -2652,13 +2538,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "02023",
+        "id": "18922",
         "name": "道の駅つるた",
         "prefecture": "青森県",
-        "city": "北津軽郡鶴田町",
+        "city": "鶴田町",
         "address": "青森県北津軽郡鶴田町大字境字里見176-1",
-        "road": "国道339号",
-        "url": "https://www.michi-no-eki.jp/stations/view/137"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18922"
       }
     },
     {
@@ -2671,13 +2557,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "02024",
+        "id": "18923",
         "name": "道の駅ふかうら",
         "prefecture": "青森県",
-        "city": "西津軽郡深浦町",
+        "city": "深浦町",
         "address": "青森県西津軽郡深浦町大字風合瀬字上砂子川144-1",
-        "road": "国道101号",
-        "url": "https://www.michi-no-eki.jp/stations/view/138"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18923"
       }
     },
     {
@@ -2685,18 +2571,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.274961,
-          40.728039
+          141.2749610,
+          40.7280390
         ]
       },
       "properties": {
-        "id": "02025",
+        "id": "18924",
         "name": "道の駅おがわら湖",
         "prefecture": "青森県",
-        "city": "上北郡東北町",
+        "city": "東北町",
         "address": "青森県上北郡東北町大字上野字南谷地122",
-        "road": "青森県道8号",
-        "url": "https://www.michi-no-eki.jp/stations/view/139"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18924"
       }
     },
     {
@@ -2709,13 +2595,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "02026",
+        "id": "18925",
         "name": "道の駅たいらだて",
         "prefecture": "青森県",
-        "city": "東津軽郡外ヶ浜町",
-        "address": "青森県東津軽郡外ヶ浜町字平舘太郎右エ門沢1番地3",
-        "road": "国道280号",
-        "url": "https://www.michi-no-eki.jp/stations/view/140"
+        "city": "外ヶ浜町",
+        "address": "青森県東津軽郡外ヶ浜町字平舘太郎右ェ門沢1-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18925"
       }
     },
     {
@@ -2728,32 +2614,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "02027",
+        "id": "18926",
         "name": "道の駅ろくのへ",
         "prefecture": "青森県",
-        "city": "上北郡六戸町",
+        "city": "六戸町",
         "address": "青森県上北郡六戸町大字犬落瀬字後田87",
-        "road": "国道45号",
-        "url": "https://www.michi-no-eki.jp/stations/view/141"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          140.300462,
-          40.577739
-        ]
-      },
-      "properties": {
-        "id": "02028",
-        "name": "道の駅津軽白神",
-        "prefecture": "青森県",
-        "city": "中津軽郡西目屋村",
-        "address": "青森県中津軽郡西目屋村大字田代字神田219番地1",
-        "road": "主要地方道岩崎西目屋弘前線",
-        "url": "https://www.michi-no-eki.jp/stations/view/14167"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18926"
       }
     },
     {
@@ -2766,13 +2633,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "03001",
+        "id": "18927",
         "name": "道の駅石鳥谷",
         "prefecture": "岩手県",
         "city": "花巻市",
-        "address": "岩手県花巻市石鳥谷町中寺林第7地割17番地3",
-        "road": "国道4号",
-        "url": "https://www.michi-no-eki.jp/stations/view/142"
+        "address": "岩手県花巻市石鳥谷町中寺林7-17-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18927"
       }
     },
     {
@@ -2780,18 +2647,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.62854,
-          39.008465
+          141.6266896,
+          39.0069963
         ]
       },
       "properties": {
-        "id": "03002",
+        "id": "18928",
         "name": "道の駅高田松原",
         "prefecture": "岩手県",
         "city": "陸前高田市",
-        "address": "岩手県陸前高田市気仙町字土手影180番地（高田松原津波復興祈念公園内）",
-        "road": "国道45号",
-        "url": "https://www.michi-no-eki.jp/stations/view/143"
+        "address": "岩手県陸前高田市気仙町字土手影180 高田松原津波復興祈念公園内",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18928"
       }
     },
     {
@@ -2804,13 +2671,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "03003",
+        "id": "18929",
         "name": "道の駅区界高原",
         "prefecture": "岩手県",
         "city": "宮古市",
-        "address": "岩手県宮古市区界第2地割434-2",
-        "road": "国道106号",
-        "url": "https://www.michi-no-eki.jp/stations/view/144"
+        "address": "岩手県宮古市区界2-434-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18929"
       }
     },
     {
@@ -2818,18 +2685,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.6634076,
-          40.2792091
+          141.6655361,
+          40.2778395
         ]
       },
       "properties": {
-        "id": "03004",
-        "name": "道の駅おおの_(岩手県)",
+        "id": "18930",
+        "name": "道の駅おおの",
         "prefecture": "岩手県",
-        "city": "九戸郡洋野町",
-        "address": "岩手県九戸郡洋野町大野第58地割12番地30",
-        "road": "国道395号",
-        "url": "https://www.michi-no-eki.jp/stations/view/145"
+        "city": "洋野町",
+        "address": "岩手県九戸郡洋野町大野58-12-30",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18930"
       }
     },
     {
@@ -2842,13 +2709,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "03005",
+        "id": "18931",
         "name": "道の駅種山ヶ原",
         "prefecture": "岩手県",
-        "city": "気仙郡住田町",
+        "city": "住田町",
         "address": "岩手県気仙郡住田町世田米字子飼沢30-39",
-        "road": "国道397号",
-        "url": "https://www.michi-no-eki.jp/stations/view/146"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18931"
       }
     },
     {
@@ -2861,13 +2728,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "03006",
+        "id": "18932",
         "name": "道の駅いわいずみ",
         "prefecture": "岩手県",
-        "city": "下閉伊郡岩泉町",
-        "address": "岩手県下閉伊郡岩泉町乙茂字乙茂90番地1",
-        "road": "国道455号",
-        "url": "https://www.michi-no-eki.jp/stations/view/147"
+        "city": "岩泉町",
+        "address": "岩手県下閉伊郡岩泉町乙茂字乙茂90-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18932"
       }
     },
     {
@@ -2875,18 +2742,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.818707,
-          40.116105
+          141.8187070,
+          40.1161050
         ]
       },
       "properties": {
-        "id": "03007",
+        "id": "18933",
         "name": "道の駅のだ",
         "prefecture": "岩手県",
-        "city": "九戸郡野田村",
+        "city": "野田村",
         "address": "岩手県九戸郡野田村大字野田31-31-1",
-        "road": "国道45号",
-        "url": "https://www.michi-no-eki.jp/stations/view/148"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18933"
       }
     },
     {
@@ -2894,18 +2761,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.965689,
-          39.7634891
+          141.9719870,
+          39.7375540
         ]
       },
       "properties": {
-        "id": "03008",
+        "id": "18934",
         "name": "道の駅たろう",
         "prefecture": "岩手県",
         "city": "宮古市",
-        "address": "岩手県宮古市田老2-5-1",
-        "road": "国道45号",
-        "url": "https://www.michi-no-eki.jp/stations/view/149"
+        "address": "岩手県宮古市田老二丁目5-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18934"
       }
     },
     {
@@ -2913,18 +2780,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.902577,
-          39.909617
+          141.9026370,
+          39.9142740
         ]
       },
       "properties": {
-        "id": "03009",
-        "name": "道の駅たのはた",
-        "prefecture": "岩手県",
-        "city": "下閉伊郡田野畑村",
+        "id": "18935",
+        "name": "道の駅たのはた 思惟の風",
+        "prefecture": "たのはた　思惟の風",
+        "city": "",
         "address": "岩手県下閉伊郡田野畑村菅窪151-6",
-        "road": "国道45号",
-        "url": "https://www.michi-no-eki.jp/stations/view/150"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18935"
       }
     },
     {
@@ -2932,18 +2799,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.181477,
-          39.094217
+          141.1814770,
+          39.0942170
         ]
       },
       "properties": {
-        "id": "03010",
+        "id": "18936",
         "name": "道の駅みずさわ",
         "prefecture": "岩手県",
         "city": "奥州市",
         "address": "岩手県奥州市水沢姉体町字石川原51-3",
-        "road": "国道343号",
-        "url": "https://www.michi-no-eki.jp/stations/view/151"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18936"
       }
     },
     {
@@ -2956,13 +2823,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "03011",
+        "id": "18937",
         "name": "道の駅にしね",
         "prefecture": "岩手県",
         "city": "八幡平市",
         "address": "岩手県八幡平市大更2-154-36",
-        "road": "国道282号",
-        "url": "https://www.michi-no-eki.jp/stations/view/152"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18937"
       }
     },
     {
@@ -2975,13 +2842,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "03012",
+        "id": "18938",
         "name": "道の駅白樺の里やまがた",
         "prefecture": "岩手県",
         "city": "久慈市",
-        "address": "岩手県久慈市山形町川井第8地割12番地1",
-        "road": "国道281号",
-        "url": "https://www.michi-no-eki.jp/stations/view/153"
+        "address": "岩手郡久慈市山形町川井8-12-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18938"
       }
     },
     {
@@ -2994,13 +2861,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "03013",
+        "id": "18939",
         "name": "道の駅みやもり",
         "prefecture": "岩手県",
         "city": "遠野市",
         "address": "岩手県遠野市宮守町下宮守30-37-1",
-        "road": "国道283号",
-        "url": "https://www.michi-no-eki.jp/stations/view/154"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18939"
       }
     },
     {
@@ -3013,13 +2880,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "03014",
+        "id": "18940",
         "name": "道の駅紫波",
         "prefecture": "岩手県",
-        "city": "紫波郡紫波町",
+        "city": "紫波町",
         "address": "岩手県紫波郡紫波町遠山字松原7-8",
-        "road": "国道396号",
-        "url": "https://www.michi-no-eki.jp/stations/view/155"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18940"
       }
     },
     {
@@ -3032,13 +2899,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "03015",
+        "id": "18941",
         "name": "道の駅はやちね",
         "prefecture": "岩手県",
         "city": "花巻市",
-        "address": "岩手県花巻市大迫町内川目第10地割30番地114",
-        "road": "岩手県道43号",
-        "url": "https://www.michi-no-eki.jp/stations/view/156"
+        "address": "岩手県花巻市大迫町内川目10-30-114",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18941"
       }
     },
     {
@@ -3046,18 +2913,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.973205,
-          39.4369048
+          141.9529950,
+          39.4782940
         ]
       },
       "properties": {
-        "id": "03016",
-        "name": "道の駅やまだ",
-        "prefecture": "岩手県",
-        "city": "下閉伊郡山田町",
-        "address": "岩手県下閉伊郡山田町山田第5地割66番地1",
-        "road": "国道45号",
-        "url": "https://www.michi-no-eki.jp/stations/view/157"
+        "id": "18942",
+        "name": "道の駅やまだ おいすた",
+        "prefecture": "やまだ　おいすた",
+        "city": "",
+        "address": "岩手県下閉伊郡山田町山田2-111-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18942"
       }
     },
     {
@@ -3065,18 +2932,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.501123,
+          141.5011230,
           39.3309253
         ]
       },
       "properties": {
-        "id": "03017",
+        "id": "18943",
         "name": "道の駅遠野風の丘",
         "prefecture": "岩手県",
         "city": "遠野市",
-        "address": "岩手県遠野市綾織町新里8地割2番地1",
-        "road": "国道283号",
-        "url": "https://www.michi-no-eki.jp/stations/view/158"
+        "address": "岩手県遠野市綾織町新里8-2-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18943"
       }
     },
     {
@@ -3084,18 +2951,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.798998,
-          39.121158
+          141.7989980,
+          39.1211580
         ]
       },
       "properties": {
-        "id": "03018",
+        "id": "18944",
         "name": "道の駅さんりく",
         "prefecture": "岩手県",
         "city": "大船渡市",
-        "address": "岩手県大船渡市三陸町越喜来字井戸洞95-27",
-        "road": "国道45号",
-        "url": "https://www.michi-no-eki.jp/stations/view/159"
+        "address": "岩手県大船渡市三陸町越善来字井戸洞95-27",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18944"
       }
     },
     {
@@ -3103,18 +2970,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.875147,
+          140.8751470,
           39.3007195
         ]
       },
       "properties": {
-        "id": "03019",
+        "id": "18945",
         "name": "道の駅錦秋湖",
         "prefecture": "岩手県",
-        "city": "和賀郡西和賀町",
-        "address": "岩手県和賀郡西和賀町杉名畑44地割264番地",
-        "road": "国道107号",
-        "url": "https://www.michi-no-eki.jp/stations/view/160"
+        "city": "西和賀町",
+        "address": "岩手県和賀郡西和賀町杉名畑44-264",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18945"
       }
     },
     {
@@ -3123,17 +2990,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           141.3399576,
-          39.984567
+          39.9845670
         ]
       },
       "properties": {
-        "id": "03020",
+        "id": "18946",
         "name": "道の駅くずまき高原",
         "prefecture": "岩手県",
-        "city": "岩手郡葛巻町",
+        "city": "葛巻町",
         "address": "岩手県岩手郡葛巻町葛巻39-159-3",
-        "road": "国道281号",
-        "url": "https://www.michi-no-eki.jp/stations/view/161"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18946"
       }
     },
     {
@@ -3141,18 +3008,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.21381,
-          39.968545
+          141.2138100,
+          39.9685450
         ]
       },
       "properties": {
-        "id": "03021",
+        "id": "18947",
         "name": "道の駅石神の丘",
         "prefecture": "岩手県",
-        "city": "岩手郡岩手町",
+        "city": "岩手町",
         "address": "岩手県岩手郡岩手町大字五日市10-121-20",
-        "road": "国道4号",
-        "url": "https://www.michi-no-eki.jp/stations/view/162"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18947"
       }
     },
     {
@@ -3160,18 +3027,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.874886,
-          39.706412
+          140.8748860,
+          39.7064120
         ]
       },
       "properties": {
-        "id": "03022",
+        "id": "18948",
         "name": "道の駅雫石あねっこ",
         "prefecture": "岩手県",
-        "city": "岩手郡雫石町",
-        "address": "岩手県岩手郡雫石町橋場坂本118番地10",
-        "road": "国道46号",
-        "url": "https://www.michi-no-eki.jp/stations/view/163"
+        "city": "雫石町",
+        "address": "岩手県岩手郡雫石町橋場坂本118-10",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18948"
       }
     },
     {
@@ -3184,13 +3051,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "03023",
+        "id": "18949",
         "name": "道の駅とうわ",
         "prefecture": "岩手県",
         "city": "花巻市",
-        "address": "岩手県花巻市東和町安俵6区147番地2",
-        "road": "岩手県道39号",
-        "url": "https://www.michi-no-eki.jp/stations/view/164"
+        "address": "岩手県花巻市東和町安俵6区147-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18949"
       }
     },
     {
@@ -3203,13 +3070,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "03024",
+        "id": "18950",
         "name": "道の駅厳美渓",
         "prefecture": "岩手県",
         "city": "一関市",
         "address": "岩手県一関市厳美町字沖野々220-1",
-        "road": "国道342号",
-        "url": "https://www.michi-no-eki.jp/stations/view/165"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18950"
       }
     },
     {
@@ -3218,17 +3085,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           141.4165286,
-          40.248349
+          40.2483490
         ]
       },
       "properties": {
-        "id": "03025",
+        "id": "18951",
         "name": "道の駅おりつめ",
         "prefecture": "岩手県",
-        "city": "九戸郡九戸村",
+        "city": "九戸村",
         "address": "岩手県九戸郡九戸村大字山屋2-28-1",
-        "road": "岩手県道22号",
-        "url": "https://www.michi-no-eki.jp/stations/view/166"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18951"
       }
     },
     {
@@ -3241,13 +3108,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "03026",
+        "id": "18952",
         "name": "道の駅かわさき",
         "prefecture": "岩手県",
         "city": "一関市",
         "address": "岩手県一関市川崎町薄衣字法道地42-3",
-        "road": "国道284号",
-        "url": "https://www.michi-no-eki.jp/stations/view/167"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18952"
       }
     },
     {
@@ -3260,13 +3127,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "03027",
+        "id": "18953",
         "name": "道の駅やまびこ館",
         "prefecture": "岩手県",
         "city": "宮古市",
-        "address": "岩手県宮古市内8-2",
-        "road": "国道106号",
-        "url": "https://www.michi-no-eki.jp/stations/view/168"
+        "address": "岩手県宮古市川内8-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18953"
       }
     },
     {
@@ -3279,13 +3146,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "03028",
+        "id": "18954",
         "name": "道の駅みやこ",
         "prefecture": "岩手県",
         "city": "宮古市",
         "address": "岩手県宮古市臨港通1-20",
-        "road": "国道45号",
-        "url": "https://www.michi-no-eki.jp/stations/view/169"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18954"
       }
     },
     {
@@ -3293,18 +3160,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.589311,
-          39.871122
+          141.5893110,
+          39.8711220
         ]
       },
       "properties": {
-        "id": "03029",
+        "id": "18955",
         "name": "道の駅三田貝分校",
         "prefecture": "岩手県",
-        "city": "下閉伊郡岩泉町",
-        "address": "岩手県下閉伊郡岩泉町門字三田貝47番地2",
-        "road": "国道455号",
-        "url": "https://www.michi-no-eki.jp/stations/view/170"
+        "city": "岩泉町",
+        "address": "岩手県下閉伊郡岩泉町門字三田貝47-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18955"
       }
     },
     {
@@ -3317,13 +3184,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "03030",
+        "id": "18956",
         "name": "道の駅くじ",
         "prefecture": "岩手県",
         "city": "久慈市",
-        "address": "岩手県久慈市中町2丁目5番6",
-        "road": "国道281号",
-        "url": "https://www.michi-no-eki.jp/stations/view/171"
+        "address": "岩手県久慈市中町2-5-6",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18956"
       }
     },
     {
@@ -3331,75 +3198,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.7816824,
-          39.25363306
+          140.4665020,
+          37.9826910
         ]
       },
       "properties": {
-        "id": "03031",
-        "name": "道の駅釜石仙人峠",
-        "prefecture": "岩手県",
-        "city": "釜石市",
-        "address": "岩手県釜石市甲子町第7地割155番4",
-        "road": "国道283号",
-        "url": "https://www.michi-no-eki.jp/stations/view/7980"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          141.121791,
-          38.991816
-        ]
-      },
-      "properties": {
-        "id": "03032",
-        "name": "道の駅平泉",
-        "prefecture": "岩手県",
-        "city": "西磐井郡平泉町",
-        "address": "岩手県西磐井郡平泉町平泉字伽羅楽112-2",
-        "road": "国道4号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14132"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          141.447163,
-          38.933199
-        ]
-      },
-      "properties": {
-        "id": "03033",
-        "name": "道の駅むろね",
-        "prefecture": "岩手県",
-        "city": "一関市",
-        "address": "岩手県一関市室根町折壁字向山131番地9",
-        "road": "国道284号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14168"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          140.505066,
-          37.971123
-        ]
-      },
-      "properties": {
-        "id": "04001",
+        "id": "18957",
         "name": "道の駅七ヶ宿",
         "prefecture": "宮城県",
-        "city": "刈田郡七ヶ宿町",
-        "address": "宮城県刈田郡七ヶ宿町字上野地内",
-        "road": "国道113号",
-        "url": "https://www.michi-no-eki.jp/stations/view/172"
+        "city": "七ヶ宿町",
+        "address": "宮城県刈田郡七ヶ宿町字上野8-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18957"
       }
     },
     {
@@ -3407,18 +3217,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.325525,
-          38.619593
+          141.3255250,
+          38.6195930
         ]
       },
       "properties": {
-        "id": "04002",
+        "id": "18958",
         "name": "道の駅津山",
         "prefecture": "宮城県",
         "city": "登米市",
-        "address": "宮城県登米市津山町横山字細屋26-1",
-        "road": "国道45号",
-        "url": "https://www.michi-no-eki.jp/stations/view/173"
+        "address": "宮城県登米市津山町横山字細谷26-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18958"
       }
     },
     {
@@ -3426,18 +3236,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.938388,
-          38.521611
+          140.9383880,
+          38.5216110
         ]
       },
       "properties": {
-        "id": "04003",
+        "id": "18959",
         "name": "道の駅三本木",
         "prefecture": "宮城県",
         "city": "大崎市",
         "address": "宮城県大崎市三本木字大豆坂63-13",
-        "road": "国道4号",
-        "url": "https://www.michi-no-eki.jp/stations/view/174"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18959"
       }
     },
     {
@@ -3445,18 +3255,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.844319,
-          38.794418
+          140.8443190,
+          38.7944180
         ]
       },
       "properties": {
-        "id": "04004",
+        "id": "18960",
         "name": "道の駅路田里はなやま",
         "prefecture": "宮城県",
         "city": "栗原市",
         "address": "宮城県栗原市花山字本沢北ノ前112-1",
-        "road": "国道398号",
-        "url": "https://www.michi-no-eki.jp/stations/view/175"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18960"
       }
     },
     {
@@ -3464,18 +3274,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.5664822,
-          38.8140093
+          141.5626547,
+          38.8149841
         ]
       },
       "properties": {
-        "id": "04005",
+        "id": "18961",
         "name": "道の駅大谷海岸",
         "prefecture": "宮城県",
         "city": "気仙沼市",
-        "address": "宮城県気仙沼市本吉町三島9",
-        "road": "国道45号",
-        "url": "https://www.michi-no-eki.jp/stations/view/176"
+        "address": "宮城県気仙沼市本吉町三島94-12",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18961"
       }
     },
     {
@@ -3483,18 +3293,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.992791,
-          38.424053
+          140.9927910,
+          38.4240530
         ]
       },
       "properties": {
-        "id": "04006",
+        "id": "18962",
         "name": "道の駅おおさと",
         "prefecture": "宮城県",
-        "city": "黒川郡大郷町",
-        "address": "宮城県黒川郡大郷町中村字北浦51-6",
-        "road": "宮城県道9号",
-        "url": "https://www.michi-no-eki.jp/stations/view/177"
+        "city": "大郷町",
+        "address": "宮城県黒川郡大郷町中村字北浦 51-6",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18962"
       }
     },
     {
@@ -3507,13 +3317,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "04007",
+        "id": "18963",
         "name": "道の駅米山",
         "prefecture": "宮城県",
         "city": "登米市",
         "address": "宮城県登米市米山町西野字新遠田67",
-        "road": "国道346号",
-        "url": "https://www.michi-no-eki.jp/stations/view/178"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18963"
       }
     },
     {
@@ -3521,18 +3331,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.833294,
-          38.70744
+          140.8332940,
+          38.7074400
         ]
       },
       "properties": {
-        "id": "04008",
-        "name": "あ・ら・伊達な道の駅",
+        "id": "18964",
+        "name": "道の駅あ・ら・伊達な道の駅",
         "prefecture": "宮城県",
         "city": "大崎市",
         "address": "宮城県大崎市岩出山池月字下宮道下4-1",
-        "road": "国道47号",
-        "url": "https://www.michi-no-eki.jp/stations/view/179"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18964"
       }
     },
     {
@@ -3540,18 +3350,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.316076,
-          38.742664
+          141.3160760,
+          38.7426640
         ]
       },
       "properties": {
-        "id": "04009",
+        "id": "18965",
         "name": "道の駅林林館",
         "prefecture": "宮城県",
         "city": "登米市",
         "address": "宮城県登米市東和町米川字六反33-1",
-        "road": "国道346号",
-        "url": "https://www.michi-no-eki.jp/stations/view/180"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18965"
       }
     },
     {
@@ -3559,18 +3369,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.295318,
-          38.501033
+          141.2953180,
+          38.5010330
         ]
       },
       "properties": {
-        "id": "04010",
+        "id": "18966",
         "name": "道の駅上品の郷",
         "prefecture": "宮城県",
         "city": "石巻市",
-        "address": "宮城県石巻市小船越字二子下1-1",
-        "road": "国道45号",
-        "url": "https://www.michi-no-eki.jp/stations/view/181"
+        "address": "宮城県石巻市小船越字二子北下1-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18966"
       }
     },
     {
@@ -3578,18 +3388,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.160641,
-          38.66488
+          141.1606410,
+          38.6648800
         ]
       },
       "properties": {
-        "id": "04011",
+        "id": "18967",
         "name": "道の駅みなみかた",
         "prefecture": "宮城県",
         "city": "登米市",
         "address": "宮城県登米市南方町新高石浦150-1",
-        "road": "宮城県道1号",
-        "url": "https://www.michi-no-eki.jp/stations/view/182"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18967"
       }
     },
     {
@@ -3597,18 +3407,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.717279,
-          38.118639
+          140.7172790,
+          38.1186390
         ]
       },
       "properties": {
-        "id": "04012",
+        "id": "18968",
         "name": "道の駅村田",
         "prefecture": "宮城県",
-        "city": "柴田郡村田町",
+        "city": "村田町",
         "address": "宮城県柴田郡村田町大字村田字北塩内41",
-        "road": "宮城県道14号",
-        "url": "https://www.michi-no-eki.jp/stations/view/183"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18968"
       }
     },
     {
@@ -3616,37 +3426,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.327823,
-          38.7079696
+          140.3758560,
+          40.2515130
         ]
       },
       "properties": {
-        "id": "04013",
-        "name": "道の駅三滝堂",
-        "prefecture": "宮城県",
-        "city": "登米市",
-        "address": "宮城県登米市東和町米谷字福平191-1",
-        "road": "国道45号",
-        "url": "https://www.michi-no-eki.jp/stations/view/9726"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          140.375856,
-          40.251513
-        ]
-      },
-      "properties": {
-        "id": "05001",
+        "id": "18969",
         "name": "道の駅たかのす",
         "prefecture": "秋田県",
         "city": "北秋田市",
         "address": "秋田県北秋田市綴子字大堤道下62-1",
-        "road": "国道7号",
-        "url": "https://www.michi-no-eki.jp/stations/view/184"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18969"
       }
     },
     {
@@ -3654,18 +3445,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.260873,
-          40.21843
+          140.2598230,
+          40.2163480
         ]
       },
       "properties": {
-        "id": "05002",
+        "id": "18970",
         "name": "道の駅ふたつい",
         "prefecture": "秋田県",
         "city": "能代市",
-        "address": "秋田県能代市二ツ井町小繋字泉51",
-        "road": "国道7号",
-        "url": "https://www.michi-no-eki.jp/stations/view/185"
+        "address": "秋田県能代市二ツ井町小繋字泉51番地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18970"
       }
     },
     {
@@ -3673,18 +3464,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.014564,
-          39.36288
+          140.0145640,
+          39.3628800
         ]
       },
       "properties": {
-        "id": "05003",
+        "id": "18971",
         "name": "道の駅にしめ",
         "prefecture": "秋田県",
         "city": "由利本荘市",
         "address": "秋田県由利本荘市西目町沼田字新道下1112-2",
-        "road": "国道7号",
-        "url": "https://www.michi-no-eki.jp/stations/view/186"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18971"
       }
     },
     {
@@ -3692,18 +3483,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.624429,
+          140.6244290,
           40.4210338
         ]
       },
       "properties": {
-        "id": "05004",
+        "id": "18972",
         "name": "道の駅やたて峠",
         "prefecture": "秋田県",
         "city": "大館市",
         "address": "秋田県大館市長走字陣場311",
-        "road": "国道7号",
-        "url": "https://www.michi-no-eki.jp/stations/view/187"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18972"
       }
     },
     {
@@ -3711,18 +3502,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.948678,
-          40.421583
+          139.9486780,
+          40.4215830
         ]
       },
       "properties": {
-        "id": "05005",
+        "id": "18973",
         "name": "道の駅はちもり",
         "prefecture": "秋田県",
-        "city": "山本郡八峰町",
+        "city": "八峰町",
         "address": "秋田県山本郡八峰町八森字乙の水72-4",
-        "road": "国道101号",
-        "url": "https://www.michi-no-eki.jp/stations/view/188"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18973"
       }
     },
     {
@@ -3735,13 +3526,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "05006",
+        "id": "18974",
         "name": "道の駅かづの",
         "prefecture": "秋田県",
         "city": "鹿角市",
         "address": "秋田県鹿角市花輪字新田町11-4",
-        "road": "国道282号",
-        "url": "https://www.michi-no-eki.jp/stations/view/189"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18974"
       }
     },
     {
@@ -3754,13 +3545,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "05007",
+        "id": "18975",
         "name": "道の駅かみおか",
         "prefecture": "秋田県",
         "city": "大仙市",
         "address": "秋田県大仙市北楢岡字船戸187",
-        "road": "国道13号",
-        "url": "https://www.michi-no-eki.jp/stations/view/190"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18975"
       }
     },
     {
@@ -3768,18 +3559,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.08035,
-          40.022308
+          140.0803500,
+          40.0223080
         ]
       },
       "properties": {
-        "id": "05008",
+        "id": "18976",
         "name": "道の駅ことおか",
         "prefecture": "秋田県",
-        "city": "山本郡三種町",
+        "city": "三種町",
         "address": "秋田県山本郡三種町鹿渡字高石野126-1",
-        "road": "国道7号",
-        "url": "https://www.michi-no-eki.jp/stations/view/191"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18976"
       }
     },
     {
@@ -3787,18 +3578,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.285026,
+          140.2850260,
           39.3016038
         ]
       },
       "properties": {
-        "id": "05009",
+        "id": "18977",
         "name": "道の駅東由利",
         "prefecture": "秋田県",
         "city": "由利本荘市",
         "address": "秋田県由利本荘市東由利老方字畑田28",
-        "road": "国道107号",
-        "url": "https://www.michi-no-eki.jp/stations/view/192"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18977"
       }
     },
     {
@@ -3806,18 +3597,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.297203,
-          40.063515
+          140.2972030,
+          40.0635150
         ]
       },
       "properties": {
-        "id": "05010",
+        "id": "18978",
         "name": "道の駅かみこあに",
         "prefecture": "秋田県",
-        "city": "北秋田郡上小阿仁村",
+        "city": "上小阿仁村",
         "address": "秋田県北秋田郡上小阿仁村小沢田字向川原66-1",
-        "road": "国道285号",
-        "url": "https://www.michi-no-eki.jp/stations/view/193"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18978"
       }
     },
     {
@@ -3826,17 +3617,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           139.9001819,
-          39.220129
+          39.2201290
         ]
       },
       "properties": {
-        "id": "05011",
+        "id": "18979",
         "name": "道の駅象潟",
         "prefecture": "秋田県",
         "city": "にかほ市",
         "address": "秋田県にかほ市象潟町字大塩越73-1",
-        "road": "国道7号",
-        "url": "https://www.michi-no-eki.jp/stations/view/194"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18979"
       }
     },
     {
@@ -3849,13 +3640,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "05012",
+        "id": "18980",
         "name": "道の駅なかせん",
         "prefecture": "秋田県",
         "city": "大仙市",
         "address": "秋田県大仙市長野字高畑95-1",
-        "road": "国道105号",
-        "url": "https://www.michi-no-eki.jp/stations/view/195"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18980"
       }
     },
     {
@@ -3863,18 +3654,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.460393,
+          140.4603930,
           39.0651389
         ]
       },
       "properties": {
-        "id": "05013",
+        "id": "18981",
         "name": "道の駅おがち",
         "prefecture": "秋田県",
         "city": "湯沢市",
         "address": "秋田県湯沢市小野字橋本90",
-        "road": "国道13号",
-        "url": "https://www.michi-no-eki.jp/stations/view/196"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18981"
       }
     },
     {
@@ -3887,13 +3678,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "05014",
+        "id": "18982",
         "name": "道の駅てんのう",
         "prefecture": "秋田県",
         "city": "潟上市",
         "address": "秋田県潟上市天王字江川上谷地109-2",
-        "road": "秋田県道56号",
-        "url": "https://www.michi-no-eki.jp/stations/view/197"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18982"
       }
     },
     {
@@ -3901,18 +3692,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.052933,
+          140.0529330,
           39.5420844
         ]
       },
       "properties": {
-        "id": "05015",
+        "id": "18983",
         "name": "道の駅岩城",
         "prefecture": "秋田県",
         "city": "由利本荘市",
-        "address": "秋田県由利本荘市岩城内道川字新鶴潟192-43",
-        "road": "国道7号",
-        "url": "https://www.michi-no-eki.jp/stations/view/198"
+        "address": "秋田県由利本荘市岩城内道川 字新鶴潟192-43",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18983"
       }
     },
     {
@@ -3920,18 +3711,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.077799,
-          39.864734
+          140.0777990,
+          39.8647340
         ]
       },
       "properties": {
-        "id": "05016",
+        "id": "18984",
         "name": "道の駅しょうわ",
         "prefecture": "秋田県",
         "city": "潟上市",
         "address": "秋田県潟上市昭和豊川竜毛字山ノ下1-1",
-        "road": "国道7号",
-        "url": "https://www.michi-no-eki.jp/stations/view/199"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18984"
       }
     },
     {
@@ -3939,18 +3730,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.028074,
-          40.2668499
+          140.0280046,
+          40.2645782
         ]
       },
       "properties": {
-        "id": "05017",
+        "id": "18985",
         "name": "道の駅みねはま",
         "prefecture": "秋田県",
-        "city": "山本郡八峰町",
-        "address": "秋田県山本郡八峰町峰浜沼田字ホンコ谷地147",
-        "road": "国道101号",
-        "url": "https://www.michi-no-eki.jp/stations/view/200"
+        "city": "八峰町",
+        "address": "秋田県山本郡八峰町峰浜沼田字ホンコ谷地147-6",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18985"
       }
     },
     {
@@ -3963,13 +3754,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "05018",
+        "id": "18986",
         "name": "道の駅さんない",
         "prefecture": "秋田県",
         "city": "横手市",
         "address": "秋田県横手市山内土渕字小目倉沢34",
-        "road": "国道107号",
-        "url": "https://www.michi-no-eki.jp/stations/view/201"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18986"
       }
     },
     {
@@ -3982,13 +3773,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "05019",
+        "id": "18987",
         "name": "道の駅おおうち",
         "prefecture": "秋田県",
         "city": "由利本荘市",
         "address": "秋田県由利本荘市岩谷町字西越36",
-        "road": "国道105号",
-        "url": "https://www.michi-no-eki.jp/stations/view/202"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18987"
       }
     },
     {
@@ -3996,18 +3787,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.456774,
-          39.901824
+          140.4567740,
+          39.9018240
         ]
       },
       "properties": {
-        "id": "05020",
+        "id": "18988",
         "name": "道の駅あに",
         "prefecture": "秋田県",
         "city": "北秋田市",
-        "address": "秋田県北秋田市阿仁比立内字家ノ後8-1外",
-        "road": "国道105号",
-        "url": "https://www.michi-no-eki.jp/stations/view/203"
+        "address": "秋田県北秋田市阿仁比立内字家ノ後8-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18988"
       }
     },
     {
@@ -4015,18 +3806,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.585214,
-          40.219348
+          140.5852140,
+          40.2193480
         ]
       },
       "properties": {
-        "id": "05021",
+        "id": "18989",
         "name": "道の駅ひない",
         "prefecture": "秋田県",
         "city": "大館市",
         "address": "秋田県大館市比内町扇田字新大堤下93-11",
-        "road": "国道285号",
-        "url": "https://www.michi-no-eki.jp/stations/view/204"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18989"
       }
     },
     {
@@ -4039,13 +3830,32 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "05022",
+        "id": "18990",
         "name": "道の駅五城目",
         "prefecture": "秋田県",
-        "city": "南秋田郡五城目町",
+        "city": "五城目町",
         "address": "秋田県南秋田郡五城目町富津内下山内字上広ヶ野76-1",
-        "road": "国道285号",
-        "url": "https://www.michi-no-eki.jp/stations/view/205"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18990"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.2915146,
+          39.1095406
+        ]
+      },
+      "properties": {
+        "id": "18991",
+        "name": "道の駅清水の里・鳥海郷",
+        "prefecture": "秋田県",
+        "city": "由利本荘市",
+        "address": "秋田県由利本荘市鳥海町上笹子字堺台100",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18991"
       }
     },
     {
@@ -4058,13 +3868,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "05024",
+        "id": "18992",
         "name": "道の駅美郷",
         "prefecture": "秋田県",
-        "city": "仙北郡美郷町",
+        "city": "美郷町",
         "address": "秋田県仙北郡美郷町金沢字下舘124",
-        "road": "国道13号",
-        "url": "https://www.michi-no-eki.jp/stations/view/207"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18992"
       }
     },
     {
@@ -4072,18 +3882,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.362517,
-          39.61884
+          140.3625170,
+          39.6188400
         ]
       },
       "properties": {
-        "id": "05025",
+        "id": "18993",
         "name": "道の駅協和",
         "prefecture": "秋田県",
         "city": "大仙市",
         "address": "秋田県大仙市協和荒川字新田表15-2",
-        "road": "国道46号",
-        "url": "https://www.michi-no-eki.jp/stations/view/208"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18993"
       }
     },
     {
@@ -4091,18 +3901,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.521447,
-          39.226174
+          140.5214470,
+          39.2261740
         ]
       },
       "properties": {
-        "id": "05026",
+        "id": "18994",
         "name": "道の駅十文字",
         "prefecture": "秋田県",
         "city": "横手市",
-        "address": "秋田県横手市十文字町字海道下21番地4",
-        "road": "国道13号",
-        "url": "https://www.michi-no-eki.jp/stations/view/209"
+        "address": "秋田県横手市十文字町字海道下21-4",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18994"
       }
     },
     {
@@ -4115,13 +3925,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "05027",
+        "id": "18995",
         "name": "道の駅おおがた",
         "prefecture": "秋田県",
-        "city": "南秋田郡大潟村",
-        "address": "秋田県南秋田郡大潟村字西五丁目2番地",
-        "road": "秋田県道42号",
-        "url": "https://www.michi-no-eki.jp/stations/view/210"
+        "city": "大潟村",
+        "address": "秋田県南秋田郡大潟村字西5-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18995"
       }
     },
     {
@@ -4129,18 +3939,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.061005,
+          140.0610050,
           39.7527085
         ]
       },
       "properties": {
-        "id": "05028",
-        "name": "セリオン_(秋田市)",
+        "id": "18996",
+        "name": "道の駅あきた港",
         "prefecture": "秋田県",
         "city": "秋田市",
-        "address": "秋田県秋田市土崎港西一丁目9-1",
-        "road": "国道7号",
-        "url": "https://www.michi-no-eki.jp/stations/view/211"
+        "address": "秋田県秋田市土崎港西1-9-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18996"
       }
     },
     {
@@ -4148,18 +3958,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.781686,
-          40.356598
+          140.7816860,
+          40.3565980
         ]
       },
       "properties": {
-        "id": "05029",
+        "id": "18997",
         "name": "道の駅こさか七滝",
         "prefecture": "秋田県",
-        "city": "鹿角郡小坂町",
-        "address": "秋田県鹿角郡小坂町上向字藤原35番地3",
-        "road": "秋田県道2号",
-        "url": "https://www.michi-no-eki.jp/stations/view/212"
+        "city": "小坂町",
+        "address": "秋田県鹿角郡小坂町上向字藤原35-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18997"
       }
     },
     {
@@ -4167,18 +3977,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.371628,
-          40.19197
+          140.3721642,
+          40.1955280
         ]
       },
       "properties": {
-        "id": "05030",
+        "id": "18998",
         "name": "道の駅大館能代空港",
         "prefecture": "秋田県",
         "city": "北秋田市",
-        "address": "秋田県北秋田市脇神字カラムシ岱21-144 外",
-        "road": "秋田県道324号大館能代空港東線",
-        "url": "https://www.michi-no-eki.jp/stations/view/213"
+        "address": "秋田県北秋田市脇神字カラムシ岱21-144",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18998"
       }
     },
     {
@@ -4186,75 +3996,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.412438,
-          39.200532
-        ]
-      },
-      "properties": {
-        "id": "05031",
-        "name": "道の駅うご",
-        "prefecture": "秋田県",
-        "city": "雄勝郡羽後町",
-        "address": "秋田県雄勝郡羽後町西馬音内字中野200番地",
-        "road": "国道398号",
-        "url": "https://www.michi-no-eki.jp/stations/view/11974"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          140.82593,
-          40.295831
-        ]
-      },
-      "properties": {
-        "id": "05032",
-        "name": "道の駅おおゆ",
-        "prefecture": "秋田県",
-        "city": "鹿角市",
-        "address": "秋田県鹿角市十和田大湯字中谷地19番地",
-        "road": "市道大湯川向線",
-        "url": "https://www.michi-no-eki.jp/stations/view/14169"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.848335,
-          39.8819452778
-        ]
-      },
-      "properties": {
-        "id": "05033",
-        "name": "道の駅おが",
-        "prefecture": "秋田県",
-        "city": "男鹿市",
-        "address": "秋田県男鹿市船川港船川字新浜町1番地19",
-        "road": "男鹿市道新浜町・外ヶ沢線",
-        "url": "https://www.michi-no-eki.jp/stations/view/14183"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.874501,
+          139.8745010,
           38.5869944
         ]
       },
       "properties": {
-        "id": "06001",
+        "id": "18999",
         "name": "道の駅月山",
         "prefecture": "山形県",
         "city": "鶴岡市",
         "address": "山形県鶴岡市越中山字名平3-1",
-        "road": "国道112号",
-        "url": "https://www.michi-no-eki.jp/stations/view/214"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/18999"
       }
     },
     {
@@ -4262,18 +4015,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.328447,
-          38.41304
+          140.3284470,
+          38.4130400
         ]
       },
       "properties": {
-        "id": "06002",
+        "id": "19000",
         "name": "道の駅河北",
         "prefecture": "山形県",
-        "city": "西村山郡河北町",
+        "city": "河北町",
         "address": "山形県西村山郡河北町谷地字真木335-1",
-        "road": "国道287号",
-        "url": "https://www.michi-no-eki.jp/stations/view/215"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19000"
       }
     },
     {
@@ -4281,18 +4034,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.269891,
-          38.399013
+          140.2698910,
+          38.3990130
         ]
       },
       "properties": {
-        "id": "06003",
+        "id": "19001",
         "name": "道の駅寒河江",
         "prefecture": "山形県",
         "city": "寒河江市",
         "address": "山形県寒河江市大字八鍬字川原919-8",
-        "road": "国道112号",
-        "url": "https://www.michi-no-eki.jp/stations/view/216"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19001"
       }
     },
     {
@@ -4301,17 +4054,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           139.5581086,
-          38.580422
+          38.5804220
         ]
       },
       "properties": {
-        "id": "06004",
+        "id": "19002",
         "name": "道の駅あつみ",
         "prefecture": "山形県",
         "city": "鶴岡市",
         "address": "山形県鶴岡市早田字戸ノ浦606",
-        "road": "国道7号",
-        "url": "https://www.michi-no-eki.jp/stations/view/217"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19002"
       }
     },
     {
@@ -4319,18 +4072,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.099237,
-          38.436059
+          140.0992370,
+          38.4360590
         ]
       },
       "properties": {
-        "id": "06005",
+        "id": "19003",
         "name": "道の駅にしかわ",
         "prefecture": "山形県",
-        "city": "西村山郡西川町",
+        "city": "西川町",
         "address": "山形県西村山郡西川町大字水沢2304",
-        "road": "国道112号",
-        "url": "https://www.michi-no-eki.jp/stations/view/218"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19003"
       }
     },
     {
@@ -4338,18 +4091,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.994671,
-          38.026065
+          139.9946710,
+          38.0260650
         ]
       },
       "properties": {
-        "id": "06006",
+        "id": "19004",
         "name": "道の駅いいで",
         "prefecture": "山形県",
-        "city": "西置賜郡飯豊町",
-        "address": "山形県西置賜郡飯豊町大字松原1898番地",
-        "road": "国道113号",
-        "url": "https://www.michi-no-eki.jp/stations/view/219"
+        "city": "飯豊町",
+        "address": "山形県西置賜郡飯豊町大字松原1898",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19004"
       }
     },
     {
@@ -4362,13 +4115,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "06007",
+        "id": "19005",
         "name": "道の駅むらやま",
         "prefecture": "山形県",
         "city": "村山市",
         "address": "山形県村山市大字楯岡7635-1",
-        "road": "国道13号",
-        "url": "https://www.michi-no-eki.jp/stations/view/220"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19005"
       }
     },
     {
@@ -4376,18 +4129,37 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.161431,
-          38.728688
+          140.1614310,
+          38.7286880
         ]
       },
       "properties": {
-        "id": "06008",
+        "id": "19006",
         "name": "道の駅とざわ",
         "prefecture": "山形県",
-        "city": "最上郡戸沢村",
-        "address": "山形県最上郡戸沢村大字蔵岡字黒渕3704-12",
-        "road": "国道47号",
-        "url": "https://www.michi-no-eki.jp/stations/view/221"
+        "city": "戸沢村",
+        "address": "山形県最上郡戸沢村大字蔵岡字黒渕3008-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19006"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8755830,
+          39.0601630
+        ]
+      },
+      "properties": {
+        "id": "19007",
+        "name": "道の駅鳥海",
+        "prefecture": "山形県",
+        "city": "遊佐町",
+        "address": "山形県飽海郡遊佐町大字菅里字菅野308-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19007"
       }
     },
     {
@@ -4400,13 +4172,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "06010",
+        "id": "19008",
         "name": "道の駅田沢",
         "prefecture": "山形県",
         "city": "米沢市",
         "address": "山形県米沢市大字入田沢573-19",
-        "road": "国道121号",
-        "url": "https://www.michi-no-eki.jp/stations/view/223"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19008"
       }
     },
     {
@@ -4419,13 +4191,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "06011",
+        "id": "19009",
         "name": "道の駅白い森おぐに",
         "prefecture": "山形県",
-        "city": "西置賜郡小国町",
+        "city": "小国町",
         "address": "山形県西置賜郡小国町大字小国小坂町616-1",
-        "road": "国道113号",
-        "url": "https://www.michi-no-eki.jp/stations/view/224"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19009"
       }
     },
     {
@@ -4433,18 +4205,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.213291,
-          38.367756
+          140.2132910,
+          38.3677560
         ]
       },
       "properties": {
-        "id": "06012",
+        "id": "19010",
         "name": "道の駅おおえ",
         "prefecture": "山形県",
-        "city": "西村山郡大江町",
-        "address": "山形県西村山郡大江町大字藤田218-1",
-        "road": "国道287号",
-        "url": "https://www.michi-no-eki.jp/stations/view/225"
+        "city": "大江町",
+        "address": "山形県西村山郡大江町大字藤田218-6",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19010"
       }
     },
     {
@@ -4457,13 +4229,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "06013",
+        "id": "19011",
         "name": "道の駅庄内みかわ",
         "prefecture": "山形県",
-        "city": "東田川郡三川町",
+        "city": "三川町",
         "address": "山形県東田川郡三川町大字横山字堤172-1",
-        "road": "山形県道333号",
-        "url": "https://www.michi-no-eki.jp/stations/view/226"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19011"
       }
     },
     {
@@ -4471,18 +4243,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.217442,
-          38.006775
+          140.2174420,
+          38.0067750
         ]
       },
       "properties": {
-        "id": "06014",
+        "id": "19012",
         "name": "道の駅たかはた",
         "prefecture": "山形県",
-        "city": "東置賜郡高畠町",
+        "city": "高畠町",
         "address": "山形県東置賜郡高畠町大字安久津2072-1",
-        "road": "国道113号",
-        "url": "https://www.michi-no-eki.jp/stations/view/227"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19012"
       }
     },
     {
@@ -4490,18 +4262,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.387127,
-          38.354481
+          140.3871270,
+          38.3544810
         ]
       },
       "properties": {
-        "id": "06015",
+        "id": "19013",
         "name": "道の駅天童温泉",
         "prefecture": "山形県",
         "city": "天童市",
-        "address": "山形県天童市大字貫津字鍬ノ町2551",
-        "road": "国道13号",
-        "url": "https://www.michi-no-eki.jp/stations/view/228"
+        "address": "山形県天童市鍬ノ町二丁目３番４１号",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19013"
       }
     },
     {
@@ -4514,13 +4286,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "06016",
+        "id": "19014",
         "name": "道の駅尾花沢",
         "prefecture": "山形県",
         "city": "尾花沢市",
-        "address": "山形県尾花沢市大字芦沢1195番地1",
-        "road": "国道13号",
-        "url": "https://www.michi-no-eki.jp/stations/view/229"
+        "address": "山形県尾花沢市芦沢1195-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19014"
       }
     },
     {
@@ -4533,13 +4305,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "06017",
+        "id": "19015",
         "name": "道の駅白鷹ヤナ公園",
         "prefecture": "山形県",
-        "city": "西置賜郡白鷹町",
+        "city": "白鷹町",
         "address": "山形県西置賜郡白鷹町大字下山661-1",
-        "road": "国道287号",
-        "url": "https://www.michi-no-eki.jp/stations/view/230"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19015"
       }
     },
     {
@@ -4547,94 +4319,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.1692573,
-          38.32738812
+          140.3342940,
+          37.6551200
         ]
       },
       "properties": {
-        "id": "06018",
-        "name": "道の駅あさひまち",
-        "prefecture": "山形県",
-        "city": "西村山郡朝日町",
-        "address": "山形県西村山郡朝日町大字和合字北又2724",
-        "road": "国道287号",
-        "url": "https://www.michi-no-eki.jp/stations/view/7982"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.984412,
-          38.794158
-        ]
-      },
-      "properties": {
-        "id": "06019",
-        "name": "道の駅しょうない",
-        "prefecture": "山形県",
-        "city": "東田川郡庄内町",
-        "address": "山形県東田川郡庄内町狩川字外北割97番地1",
-        "road": "国道47号",
-        "url": "https://www.michi-no-eki.jp/stations/view/11975"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          140.043516,
-          38.108211
-        ]
-      },
-      "properties": {
-        "id": "06020",
-        "name": "道の駅川のみなと長井",
-        "prefecture": "山形県",
-        "city": "長井市",
-        "address": "山形県長井市東町2番50号",
-        "road": "国道287号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14136"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          140.137017,
-          37.922055
-        ]
-      },
-      "properties": {
-        "id": "06021",
-        "name": "道の駅米沢",
-        "prefecture": "山形県",
-        "city": "米沢市",
-        "address": "山形県米沢市大字川井1039番地の1",
-        "road": "主要地方道米沢高畠線",
-        "url": "https://www.michi-no-eki.jp/stations/view/14170"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          140.334294,
-          37.65512
-        ]
-      },
-      "properties": {
-        "id": "07001",
+        "id": "19016",
         "name": "道の駅つちゆ",
         "prefecture": "福島県",
         "city": "福島市",
         "address": "福島県福島市松川町水原字南沢41-2",
-        "road": "国道115号",
-        "url": "https://www.michi-no-eki.jp/stations/view/231"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19016"
       }
     },
     {
@@ -4647,13 +4343,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "07002",
+        "id": "19017",
         "name": "道の駅川俣",
         "prefecture": "福島県",
-        "city": "伊達郡川俣町",
+        "city": "川俣町",
         "address": "福島県伊達郡川俣町大字鶴沢字東13-1",
-        "road": "国道114号",
-        "url": "https://www.michi-no-eki.jp/stations/view/232"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19017"
       }
     },
     {
@@ -4666,13 +4362,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "07003",
+        "id": "19018",
         "name": "道の駅たじま",
         "prefecture": "福島県",
-        "city": "南会津郡南会津町",
-        "address": "福島県南会津郡南会津町糸沢字男鹿沼原3242-6",
-        "road": "国道121号",
-        "url": "https://www.michi-no-eki.jp/stations/view/233"
+        "city": "南会津町",
+        "address": "福島県南会津郡南会津町糸沢 字男鹿沼原3242-8",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19018"
       }
     },
     {
@@ -4680,18 +4376,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.483688,
-          37.635666
+          140.4836880,
+          37.6356660
         ]
       },
       "properties": {
-        "id": "07004",
-        "name": "道の駅安達",
-        "prefecture": "福島県",
-        "city": "二本松市",
-        "address": "福島県二本松市下川崎字上平33-1（上り線）|福島県二本松市米沢字下川原田105-2（下り線）",
-        "road": "国道4号",
-        "url": "https://www.michi-no-eki.jp/stations/view/234"
+        "id": "19019",
+        "name": "道の駅道の駅安達智恵子の里 上り線",
+        "prefecture": "道の駅「安達」智恵子の里　上り線",
+        "city": "",
+        "address": "9691511 福島県二本松市下川崎字上平33-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19019"
       }
     },
     {
@@ -4704,13 +4400,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "07005",
+        "id": "19020",
         "name": "道の駅喜多の郷",
         "prefecture": "福島県",
         "city": "喜多方市",
         "address": "福島県喜多方市松山町鳥見山字三町歩5598-1",
-        "road": "国道121号",
-        "url": "https://www.michi-no-eki.jp/stations/view/235"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19020"
       }
     },
     {
@@ -4723,13 +4419,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "07006",
+        "id": "19021",
         "name": "道の駅裏磐梯",
         "prefecture": "福島県",
-        "city": "耶麻郡北塩原村",
+        "city": "北塩原村",
         "address": "福島県耶麻郡北塩原村大字桧原字南黄連沢山1157",
-        "road": "国道459号",
-        "url": "https://www.michi-no-eki.jp/stations/view/236"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19021"
       }
     },
     {
@@ -4742,13 +4438,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "07007",
+        "id": "19022",
         "name": "道の駅ならは",
         "prefecture": "福島県",
-        "city": "双葉郡楢葉町",
+        "city": "楢葉町",
         "address": "福島県双葉郡楢葉町大字山田岡字大堤入22-1",
-        "road": "国道6号",
-        "url": "https://www.michi-no-eki.jp/stations/view/237"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19022"
       }
     },
     {
@@ -4761,13 +4457,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "07008",
+        "id": "19023",
         "name": "道の駅そうま",
         "prefecture": "福島県",
         "city": "相馬市",
         "address": "福島県相馬市日下石字金谷74-1",
-        "road": "国道6号",
-        "url": "https://www.michi-no-eki.jp/stations/view/238"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19023"
       }
     },
     {
@@ -4780,13 +4476,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "07009",
+        "id": "19024",
         "name": "道の駅はなわ",
         "prefecture": "福島県",
-        "city": "東白川郡塙町",
+        "city": "塙町",
         "address": "福島県東白川郡塙町大字塙字桜木町388-1",
-        "road": "国道118号",
-        "url": "https://www.michi-no-eki.jp/stations/view/239"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19024"
       }
     },
     {
@@ -4795,17 +4491,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           139.7221754,
-          37.527693
+          37.5276930
         ]
       },
       "properties": {
-        "id": "07010",
+        "id": "19025",
         "name": "道の駅会津柳津",
         "prefecture": "福島県",
-        "city": "河沼郡柳津町",
-        "address": "福島県河沼郡柳津町大字柳津字下平乙181-1",
-        "road": "国道252号",
-        "url": "https://www.michi-no-eki.jp/stations/view/240"
+        "city": "柳津町",
+        "address": "福島県河沼郡柳津町字下平乙181-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19025"
       }
     },
     {
@@ -4818,13 +4514,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "07011",
+        "id": "19026",
         "name": "道の駅ふくしま東和",
         "prefecture": "福島県",
         "city": "二本松市",
         "address": "福島県二本松市太田字下田2-3",
-        "road": "国道349号",
-        "url": "https://www.michi-no-eki.jp/stations/view/241"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19026"
       }
     },
     {
@@ -4837,13 +4533,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "07012",
+        "id": "19027",
         "name": "道の駅にしあいづ",
         "prefecture": "福島県",
-        "city": "耶麻郡西会津町",
+        "city": "西会津町",
         "address": "福島県耶麻郡西会津町野沢字下條乙1969-26",
-        "road": "国道49号",
-        "url": "https://www.michi-no-eki.jp/stations/view/242"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19027"
       }
     },
     {
@@ -4851,18 +4547,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.670802,
+          139.6708020,
           37.4777576
         ]
       },
       "properties": {
-        "id": "07013",
+        "id": "19028",
         "name": "道の駅尾瀬街道みしま宿",
         "prefecture": "福島県",
-        "city": "大沼郡三島町",
+        "city": "三島町",
         "address": "福島県大沼郡三島町大字川井字天屋原610",
-        "road": "国道252号",
-        "url": "https://www.michi-no-eki.jp/stations/view/243"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19028"
       }
     },
     {
@@ -4875,13 +4571,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "07014",
+        "id": "19029",
         "name": "道の駅たまかわ",
         "prefecture": "福島県",
-        "city": "石川郡玉川村",
+        "city": "玉川村",
         "address": "福島県石川郡玉川村大字岩法寺字宮ノ前140-2",
-        "road": "福島県道208号",
-        "url": "https://www.michi-no-eki.jp/stations/view/244"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19029"
       }
     },
     {
@@ -4894,13 +4590,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "07015",
+        "id": "19030",
         "name": "道の駅羽鳥湖高原",
         "prefecture": "福島県",
-        "city": "岩瀬郡天栄村",
+        "city": "天栄村",
         "address": "福島県岩瀬郡天栄村大字田良尾字芝草1-3552",
-        "road": "福島県道37号",
-        "url": "https://www.michi-no-eki.jp/stations/view/245"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19030"
       }
     },
     {
@@ -4908,18 +4604,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.983582,
-          37.635707
+          140.9835820,
+          37.6357070
         ]
       },
       "properties": {
-        "id": "07016",
+        "id": "19031",
         "name": "道の駅南相馬",
         "prefecture": "福島県",
         "city": "南相馬市",
-        "address": "福島県南相馬市原町区高見町2丁目30番地1",
-        "road": "国道6号",
-        "url": "https://www.michi-no-eki.jp/stations/view/246"
+        "address": "福島県南相馬市原町区高見町2-30-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19031"
       }
     },
     {
@@ -4932,13 +4628,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "07017",
+        "id": "19032",
         "name": "道の駅しもごう",
         "prefecture": "福島県",
-        "city": "南会津郡下郷町",
-        "address": "福島県南会津郡下郷町大字南倉沢字木賊844-1882",
-        "road": "国道289号",
-        "url": "https://www.michi-no-eki.jp/stations/view/247"
+        "city": "下郷町",
+        "address": "福島県南会津郡下郷町大字南倉沢 字木賊844-188",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19032"
       }
     },
     {
@@ -4951,13 +4647,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "07018",
+        "id": "19033",
         "name": "道の駅ひらた",
         "prefecture": "福島県",
-        "city": "石川郡平田村",
+        "city": "平田村",
         "address": "福島県石川郡平田村大字上蓬田字横森後160",
-        "road": "国道49号",
-        "url": "https://www.michi-no-eki.jp/stations/view/248"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19033"
       }
     },
     {
@@ -4965,18 +4661,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.992995,
-          37.107429
+          140.9929950,
+          37.1074290
         ]
       },
       "properties": {
-        "id": "07019",
+        "id": "19034",
         "name": "道の駅よつくら港",
         "prefecture": "福島県",
         "city": "いわき市",
-        "address": "福島県いわき市四倉町字五丁目218-1",
-        "road": "国道6号",
-        "url": "https://www.michi-no-eki.jp/stations/view/249"
+        "address": "福島県いわき市四倉町5-218-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19034"
       }
     },
     {
@@ -4989,13 +4685,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "07020",
+        "id": "19035",
         "name": "道の駅ばんだい",
         "prefecture": "福島県",
-        "city": "耶麻郡磐梯町",
-        "address": "福島県耶麻郡磐梯町大字磐梯字十王堂38番地",
-        "road": "福島県道7号",
-        "url": "https://www.michi-no-eki.jp/stations/view/250"
+        "city": "磐梯町",
+        "address": "福島県耶麻郡磐梯町大字磐梯字十王堂38",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19035"
       }
     },
     {
@@ -5008,13 +4704,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "07021",
+        "id": "19036",
         "name": "道の駅ふるどの",
         "prefecture": "福島県",
-        "city": "石川郡古殿町",
-        "address": "福島県石川郡古殿町大字田口字平館25",
-        "road": "国道349号",
-        "url": "https://www.michi-no-eki.jp/stations/view/251"
+        "city": "古殿町",
+        "address": "福島県石川郡古殿町大字田口字平舘25",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19036"
       }
     },
     {
@@ -5027,13 +4723,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "07022",
+        "id": "19037",
         "name": "道の駅番屋",
         "prefecture": "福島県",
-        "city": "南会津郡南会津町",
+        "city": "南会津町",
         "address": "福島県南会津郡南会津町番屋4",
-        "road": "国道352号",
-        "url": "https://www.michi-no-eki.jp/stations/view/252"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19037"
       }
     },
     {
@@ -5046,13 +4742,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "07023",
+        "id": "19038",
         "name": "道の駅季の里天栄",
         "prefecture": "福島県",
-        "city": "岩瀬郡天栄村",
-        "address": "福島県岩瀬郡天栄村大字大里字天房50-1",
-        "road": "国道294号",
-        "url": "https://www.michi-no-eki.jp/stations/view/253"
+        "city": "天栄村",
+        "address": "福島県岩瀬郡天栄村大字大里字天房41-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19038"
       }
     },
     {
@@ -5065,13 +4761,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "07024",
+        "id": "19039",
         "name": "道の駅きらら289",
         "prefecture": "福島県",
-        "city": "南会津郡南会津町",
-        "address": "福島県南会津郡南会津町山口字橋尻1番地",
-        "road": "国道289号",
-        "url": "https://www.michi-no-eki.jp/stations/view/254"
+        "city": "南会津町",
+        "address": "福島県南会津郡南会津町山口字橋尻1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19039"
       }
     },
     {
@@ -5084,13 +4780,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "07025",
+        "id": "19040",
         "name": "道の駅奥会津かねやま",
         "prefecture": "福島県",
-        "city": "大沼郡金山町",
-        "address": "福島県大沼郡金山町大字中川字上居平949番地8",
-        "road": "国道252号",
-        "url": "https://www.michi-no-eki.jp/stations/view/255"
+        "city": "金山町",
+        "address": "福島県大沼郡金山町大字中川字上居平949-8",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19040"
       }
     },
     {
@@ -5099,17 +4795,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           140.5902479,
-          37.53478
+          37.5347800
         ]
       },
       "properties": {
-        "id": "07026",
+        "id": "19041",
         "name": "道の駅さくらの郷",
         "prefecture": "福島県",
         "city": "二本松市",
         "address": "福島県二本松市東新殿字平石田12-2",
-        "road": "国道349号",
-        "url": "https://www.michi-no-eki.jp/stations/view/256"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19041"
       }
     },
     {
@@ -5122,13 +4818,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "07027",
-        "name": "道の駅あいづ_湯川・会津坂下",
+        "id": "19042",
+        "name": "道の駅あいづ 湯川・会津坂下",
         "prefecture": "福島県",
-        "city": "河沼郡湯川村",
-        "address": "福島県河沼郡湯川村大字佐野目字五丁ノ目78番地1",
-        "road": "国道49号",
-        "url": "https://www.michi-no-eki.jp/stations/view/257"
+        "city": "湯川村",
+        "address": "福島県河沼郡湯川村大字佐野目字五丁ノ目78-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19042"
       }
     },
     {
@@ -5136,113 +4832,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.630139,
-          37.325463
+          139.6301390,
+          37.3254630
         ]
       },
       "properties": {
-        "id": "07028",
+        "id": "19043",
         "name": "道の駅からむし織の里しょうわ",
         "prefecture": "福島県",
-        "city": "大沼郡昭和村",
-        "address": "福島県大沼郡昭和村大字佐倉字上ノ原1番地",
-        "road": "国道400号",
-        "url": "https://www.michi-no-eki.jp/stations/view/258"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          140.107459,
-          37.538341
-        ]
-      },
-      "properties": {
-        "id": "07029",
-        "name": "道の駅猪苗代",
-        "prefecture": "福島県",
-        "city": "耶麻郡猪苗代町",
-        "address": "福島県耶麻郡猪苗代町大字堅田字五百苅1番地",
-        "road": "国道115号",
-        "url": "https://www.michi-no-eki.jp/stations/view/11976"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          140.545612,
-          37.872681
-        ]
-      },
-      "properties": {
-        "id": "07030",
-        "name": "道の駅国見_あつかしの郷",
-        "prefecture": "福島県",
-        "city": "伊達郡国見町",
-        "address": "福島県伊達郡国見町大字藤田字日渡二18番１",
-        "road": "国道4号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14134"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          140.735624,
-          37.697267
-        ]
-      },
-      "properties": {
-        "id": "07031",
-        "name": "道の駅いいたて村の道の駅までい館",
-        "prefecture": "福島県",
-        "city": "相馬郡飯舘村",
-        "address": "福島県相馬郡飯舘村深谷字深谷前12-1",
-        "road": "福島県道12号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14157"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.395721,
-          37.032756
-        ]
-      },
-      "properties": {
-        "id": "07032",
-        "name": "道の駅尾瀬檜枝岐",
-        "prefecture": "福島県",
-        "city": "南会津郡檜枝岐村",
-        "address": "福島県伊達市霊山町下小国字桜町3番地1",
-        "road": "国道352号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14158"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          140.58845,
-          37.766524
-        ]
-      },
-      "properties": {
-        "id": "07033",
-        "name": "道の駅伊達の郷りょうぜん",
-        "prefecture": "福島県",
-        "city": "伊達市",
-        "address": "福島県伊達市霊山町下小国字桜町3番地1",
-        "road": "国道115号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14171"
+        "city": "昭和村",
+        "address": "福島県大沼郡昭和村大字佐倉字上ノ原1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19043"
       }
     },
     {
@@ -5255,32 +4856,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "08001",
+        "id": "19044",
         "name": "道の駅かつら",
         "prefecture": "茨城県",
-        "city": "東茨城郡城里町",
+        "city": "城里町",
         "address": "茨城県東茨城郡城里町大字御前山37",
-        "road": "国道123号",
-        "url": "https://www.michi-no-eki.jp/stations/view/259"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          140.2800036,
-          36.6558574
-        ]
-      },
-      "properties": {
-        "id": "08002",
-        "name": "道の駅みわ",
-        "prefecture": "茨城県",
-        "city": "常陸大宮市",
-        "address": "茨城県常陸大宮市鷲子272",
-        "road": "国道293号",
-        "url": "https://www.michi-no-eki.jp/stations/view/260"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19044"
       }
     },
     {
@@ -5293,13 +4875,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "08003",
+        "id": "19045",
         "name": "道の駅さとみ",
         "prefecture": "茨城県",
         "city": "常陸太田市",
-        "address": "茨城県常陸太田市小菅町694-3",
-        "road": "国道349号",
-        "url": "https://www.michi-no-eki.jp/stations/view/261"
+        "address": "茨城県常陸太田市小菅694-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19045"
       }
     },
     {
@@ -5307,18 +4889,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.795303,
-          36.102676
+          139.7953030,
+          36.1026760
         ]
       },
       "properties": {
-        "id": "08004",
-        "name": "道の駅さかい_(茨城県)",
+        "id": "19046",
+        "name": "道の駅さかい",
         "prefecture": "茨城県",
-        "city": "猿島郡境町",
+        "city": "境町",
         "address": "茨城県猿島郡境町1341-1",
-        "road": "国道354号",
-        "url": "https://www.michi-no-eki.jp/stations/view/262"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19046"
       }
     },
     {
@@ -5331,13 +4913,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "08005",
+        "id": "19047",
         "name": "道の駅奥久慈だいご",
         "prefecture": "茨城県",
         "city": "久慈郡大子町",
         "address": "茨城県久慈郡大子町大字池田2830-1",
-        "road": "国道118号",
-        "url": "https://www.michi-no-eki.jp/stations/view/263"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19047"
       }
     },
     {
@@ -5350,13 +4932,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "08006",
+        "id": "19048",
         "name": "道の駅しもつま",
         "prefecture": "茨城県",
         "city": "下妻市",
         "address": "茨城県下妻市数須140",
-        "road": "国道294号",
-        "url": "https://www.michi-no-eki.jp/stations/view/264"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19048"
       }
     },
     {
@@ -5369,13 +4951,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "08007",
+        "id": "19049",
         "name": "道の駅たまつくり",
         "prefecture": "茨城県",
         "city": "行方市",
-        "address": "茨城県行方市玉造甲1962",
-        "road": "国道354号",
-        "url": "https://www.michi-no-eki.jp/stations/view/265"
+        "address": "茨城県行方市玉造甲1963-5",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19049"
       }
     },
     {
@@ -5388,13 +4970,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "08008",
+        "id": "19050",
         "name": "道の駅いたこ",
         "prefecture": "茨城県",
         "city": "潮来市",
         "address": "茨城県潮来市前川1326-1",
-        "road": "茨城県道101号潮来佐原線",
-        "url": "https://www.michi-no-eki.jp/stations/view/266"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19050"
       }
     },
     {
@@ -5407,13 +4989,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "08009",
+        "id": "19051",
         "name": "道の駅ごか",
         "prefecture": "茨城県",
-        "city": "猿島郡五霞町",
+        "city": "五霞町",
         "address": "茨城県猿島郡五霞町ごかみらい13-3",
-        "road": "国道4号",
-        "url": "https://www.michi-no-eki.jp/stations/view/267"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19051"
       }
     },
     {
@@ -5421,18 +5003,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.789732,
-          36.191431
+          139.7897320,
+          36.1914310
         ]
       },
       "properties": {
-        "id": "08010",
-        "name": "道の駅まくらがの里こが",
-        "prefecture": "茨城県",
-        "city": "古河市",
+        "id": "19052",
+        "name": "道の駅まくらがの里 こが",
+        "prefecture": "まくらがの里　こが",
+        "city": "",
         "address": "茨城県古河市大和田2623",
-        "road": "国道4号",
-        "url": "https://www.michi-no-eki.jp/stations/view/268"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19052"
       }
     },
     {
@@ -5445,51 +5027,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "08011",
+        "id": "19053",
         "name": "道の駅日立おさかなセンター",
         "prefecture": "茨城県",
         "city": "日立市",
         "address": "茨城県日立市みなと町5779-24",
-        "road": "国道245号",
-        "url": "https://www.michi-no-eki.jp/stations/view/269"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          140.4096155,
-          36.5969609
-        ]
-      },
-      "properties": {
-        "id": "08012",
-        "name": "道の駅常陸大宮",
-        "prefecture": "茨城県",
-        "city": "常陸大宮市",
-        "address": "茨城県常陸大宮市岩崎717-1",
-        "road": "国道118号",
-        "url": "https://www.michi-no-eki.jp/stations/view/9728"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          140.5254761,
-          36.5103878
-        ]
-      },
-      "properties": {
-        "id": "08013",
-        "name": "道の駅ひたちおおた",
-        "prefecture": "茨城県",
-        "city": "常陸太田市",
-        "address": "茨城県常陸太田市下河合町1016-1",
-        "road": "国道349号",
-        "url": "https://www.michi-no-eki.jp/stations/view/9730"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19053"
       }
     },
     {
@@ -5502,13 +5046,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "09001",
+        "id": "19054",
         "name": "道の駅もてぎ",
         "prefecture": "栃木県",
-        "city": "芳賀郡茂木町",
+        "city": "茂木町",
         "address": "栃木県芳賀郡茂木町大字茂木1090-1",
-        "road": "国道123号",
-        "url": "https://www.michi-no-eki.jp/stations/view/270"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19054"
       }
     },
     {
@@ -5516,18 +5060,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.964996,
+          139.9649960,
           36.3673361
         ]
       },
       "properties": {
-        "id": "09002",
+        "id": "19055",
         "name": "道の駅にのみや",
         "prefecture": "栃木県",
         "city": "真岡市",
-        "address": "栃木県真岡市久下田2204-2",
-        "road": "国道294号",
-        "url": "https://www.michi-no-eki.jp/stations/view/271"
+        "address": "栃木県真岡市久下田2204-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19055"
       }
     },
     {
@@ -5540,13 +5084,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "09003",
+        "id": "19056",
         "name": "道の駅湯の香しおばら",
         "prefecture": "栃木県",
         "city": "那須塩原市",
         "address": "栃木県那須塩原市関谷442",
-        "road": "国道400号",
-        "url": "https://www.michi-no-eki.jp/stations/view/272"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19056"
       }
     },
     {
@@ -5559,13 +5103,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "09004",
+        "id": "19057",
         "name": "道の駅那須高原友愛の森",
         "prefecture": "栃木県",
-        "city": "那須郡那須町",
+        "city": "那須町",
         "address": "栃木県那須郡那須町大字高久乙593-8",
-        "road": "栃木県道17号",
-        "url": "https://www.michi-no-eki.jp/stations/view/273"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19057"
       }
     },
     {
@@ -5573,18 +5117,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.984479,
-          37.000375
+          139.9844790,
+          37.0003750
         ]
       },
       "properties": {
-        "id": "09005",
+        "id": "19058",
         "name": "道の駅明治の森・黒磯",
         "prefecture": "栃木県",
         "city": "那須塩原市",
         "address": "栃木県那須塩原市青木27",
-        "road": "栃木県道369号黒磯田島線",
-        "url": "https://www.michi-no-eki.jp/stations/view/274"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19058"
       }
     },
     {
@@ -5597,13 +5141,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "09006",
+        "id": "19059",
         "name": "道の駅ばとう",
         "prefecture": "栃木県",
-        "city": "那須郡那珂川町",
-        "address": "栃木県那須郡那珂川町北向田183-1",
-        "road": "国道293号",
-        "url": "https://www.michi-no-eki.jp/stations/view/275"
+        "city": "那珂川町",
+        "address": "栃木県那須郡那珂川町北向田181-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19059"
       }
     },
     {
@@ -5611,18 +5155,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.157412,
+          140.1574120,
           36.9540486
         ]
       },
       "properties": {
-        "id": "09007",
+        "id": "19060",
         "name": "道の駅東山道伊王野",
         "prefecture": "栃木県",
-        "city": "那須郡那須町",
+        "city": "那須町",
         "address": "栃木県那須郡那須町大字伊王野459",
-        "road": "国道294号",
-        "url": "https://www.michi-no-eki.jp/stations/view/276"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19060"
       }
     },
     {
@@ -5635,13 +5179,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "09008",
+        "id": "19061",
         "name": "道の駅きつれがわ",
         "prefecture": "栃木県",
         "city": "さくら市",
         "address": "栃木県さくら市喜連川4145-10",
-        "road": "国道293号",
-        "url": "https://www.michi-no-eki.jp/stations/view/277"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19061"
       }
     },
     {
@@ -5654,13 +5198,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "09009",
-        "name": "道の駅どまんなか_たぬま",
-        "prefecture": "栃木県",
-        "city": "佐野市",
+        "id": "19062",
+        "name": "道の駅どまんなか たぬま",
+        "prefecture": "どまんなか　たぬま",
+        "city": "",
         "address": "栃木県佐野市吉水町366-2",
-        "road": "栃木県道16号",
-        "url": "https://www.michi-no-eki.jp/stations/view/278"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19062"
       }
     },
     {
@@ -5673,13 +5217,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "09010",
-        "name": "道の駅はが_(栃木県)",
+        "id": "19063",
+        "name": "道の駅はが",
         "prefecture": "栃木県",
-        "city": "芳賀郡芳賀町",
+        "city": "芳賀町",
         "address": "栃木県芳賀郡芳賀町大字祖母井842-1",
-        "road": "栃木県道69号",
-        "url": "https://www.michi-no-eki.jp/stations/view/279"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19063"
       }
     },
     {
@@ -5692,13 +5236,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "09011",
+        "id": "19064",
         "name": "道の駅那須与一の郷",
         "prefecture": "栃木県",
         "city": "大田原市",
         "address": "栃木県大田原市南金丸1584-6",
-        "road": "国道461号",
-        "url": "https://www.michi-no-eki.jp/stations/view/280"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19064"
       }
     },
     {
@@ -5706,18 +5250,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.969139,
-          36.899706
+          139.9691390,
+          36.8997060
         ]
       },
       "properties": {
-        "id": "09012",
+        "id": "19065",
         "name": "道の駅那須野が原博物館",
         "prefecture": "栃木県",
         "city": "那須塩原市",
         "address": "栃木県那須塩原市三島5-1",
-        "road": "市道塩原街道線",
-        "url": "https://www.michi-no-eki.jp/stations/view/281"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19065"
       }
     },
     {
@@ -5725,18 +5269,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.625248,
-          36.296714
+          139.6252480,
+          36.2967140
         ]
       },
       "properties": {
-        "id": "09013",
+        "id": "19066",
         "name": "道の駅みかも",
         "prefecture": "栃木県",
         "city": "栃木市",
-        "address": "栃木県栃木市藤岡町大田和678",
-        "road": "国道50号",
-        "url": "https://www.michi-no-eki.jp/stations/view/282"
+        "address": "栃木県栃木市藤岡町大和田678",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19066"
       }
     },
     {
@@ -5749,13 +5293,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "09014",
+        "id": "19067",
         "name": "道の駅思川",
         "prefecture": "栃木県",
         "city": "小山市",
         "address": "栃木県小山市大字下国府塚25-1",
-        "road": "国道50号",
-        "url": "https://www.michi-no-eki.jp/stations/view/283"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19067"
       }
     },
     {
@@ -5763,18 +5307,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.686957,
-          36.930014
+          139.6869570,
+          36.9300140
         ]
       },
       "properties": {
-        "id": "09015",
+        "id": "19068",
         "name": "道の駅湯西川",
         "prefecture": "栃木県",
         "city": "日光市",
         "address": "栃木県日光市西川478-1",
-        "road": "国道121号",
-        "url": "https://www.michi-no-eki.jp/stations/view/284"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19068"
       }
     },
     {
@@ -5787,13 +5331,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "09016",
+        "id": "19069",
         "name": "道の駅みぶ",
         "prefecture": "栃木県",
-        "city": "下都賀郡壬生町",
+        "city": "壬生町",
         "address": "栃木県下都賀郡壬生町大字国谷1870-2",
-        "road": "栃木県道71号",
-        "url": "https://www.michi-no-eki.jp/stations/view/285"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19069"
       }
     },
     {
@@ -5806,13 +5350,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "09017",
+        "id": "19070",
         "name": "道の駅にしかた",
         "prefecture": "栃木県",
         "city": "栃木市",
         "address": "栃木県栃木市西方町元369-1",
-        "road": "国道293号",
-        "url": "https://www.michi-no-eki.jp/stations/view/286"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19070"
       }
     },
     {
@@ -5825,13 +5369,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "09018",
+        "id": "19071",
         "name": "道の駅しもつけ",
         "prefecture": "栃木県",
         "city": "下野市",
         "address": "栃木県下野市薬師寺3720-1",
-        "road": "国道4号",
-        "url": "https://www.michi-no-eki.jp/stations/view/287"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19071"
       }
     },
     {
@@ -5840,17 +5384,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           139.9216154,
-          36.805614
+          36.8056140
         ]
       },
       "properties": {
-        "id": "09019",
+        "id": "19072",
         "name": "道の駅やいた",
         "prefecture": "栃木県",
         "city": "矢板市",
-        "address": "栃木県矢板市矢板114番地1",
-        "road": "栃木県道30号",
-        "url": "https://www.michi-no-eki.jp/stations/view/288"
+        "address": "栃木県矢板市矢板114-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19072"
       }
     },
     {
@@ -5863,13 +5407,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "09020",
+        "id": "19073",
         "name": "道の駅湧水の郷しおや",
         "prefecture": "栃木県",
-        "city": "塩谷郡塩谷町",
-        "address": "栃木県塩谷郡塩谷町大字船生字上桜3733-1",
-        "road": "国道461号",
-        "url": "https://www.michi-no-eki.jp/stations/view/289"
+        "city": "塩谷町",
+        "address": "栃木県塩谷郡塩谷町大字船生3733-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19073"
       }
     },
     {
@@ -5878,17 +5422,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           139.8313127,
-          36.633391
+          36.6333910
         ]
       },
       "properties": {
-        "id": "09021",
-        "name": "道の駅うつのみや_ろまんちっく村",
-        "prefecture": "栃木県",
-        "city": "宇都宮市",
-        "address": "栃木県宇都宮市新里町丙254番地",
-        "road": "国道293号",
-        "url": "https://www.michi-no-eki.jp/stations/view/290"
+        "id": "19074",
+        "name": "道の駅うつのみや ろまんちっく村",
+        "prefecture": "うつのみや　ろまんちっく村",
+        "city": "",
+        "address": "栃木県宇都宮市新里町丙254",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19074"
       }
     },
     {
@@ -5896,18 +5440,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.10118,
-          36.543766
+          140.1011800,
+          36.5437660
         ]
       },
       "properties": {
-        "id": "09022",
+        "id": "19075",
         "name": "道の駅サシバの里いちかい",
         "prefecture": "栃木県",
-        "city": "芳賀郡市貝町",
+        "city": "市貝町",
         "address": "栃木県芳賀郡市貝町大字市塙1270",
-        "road": "栃木県道69号",
-        "url": "https://www.michi-no-eki.jp/stations/view/291"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19075"
       }
     },
     {
@@ -5915,56 +5459,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.6878876,
-          36.72453076
+          138.7841060,
+          36.0805320
         ]
       },
       "properties": {
-        "id": "09023",
-        "name": "道の駅日光",
-        "prefecture": "栃木県",
-        "city": "日光市",
-        "address": "栃木県日光市今市719番地1",
-        "road": "国道119号",
-        "url": "https://www.michi-no-eki.jp/stations/view/7984"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          140.071976,
-          36.431168
-        ]
-      },
-      "properties": {
-        "id": "09024",
-        "name": "道の駅ましこ",
-        "prefecture": "栃木県",
-        "city": "芳賀郡益子町",
-        "address": "栃木県芳賀郡益子町大字長堤2271",
-        "road": "栃木県道41号つくば益子線",
-        "url": "https://www.michi-no-eki.jp/stations/view/11977"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.784106,
-          36.080532
-        ]
-      },
-      "properties": {
-        "id": "10001",
+        "id": "19076",
         "name": "道の駅上野",
         "prefecture": "群馬県",
         "city": "多野郡上野村",
         "address": "群馬県多野郡上野村大字勝山甲131",
-        "road": "国道299号",
-        "url": "https://www.michi-no-eki.jp/stations/view/292"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19076"
       }
     },
     {
@@ -5972,18 +5478,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.136429,
+          139.1364290,
           36.4590603
         ]
       },
       "properties": {
-        "id": "10002",
+        "id": "19077",
         "name": "道の駅ぐりーんふらわー牧場・大胡",
         "prefecture": "群馬県",
         "city": "前橋市",
         "address": "群馬県前橋市滝窪町1369-1",
-        "road": "国道353号",
-        "url": "https://www.michi-no-eki.jp/stations/view/293"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19077"
       }
     },
     {
@@ -5991,18 +5497,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          138.638618,
-          36.607483
+          138.6386180,
+          36.6074830
         ]
       },
       "properties": {
-        "id": "10003",
+        "id": "19078",
         "name": "道の駅六合",
         "prefecture": "群馬県",
         "city": "吾妻郡中之条町",
-        "address": "群馬県吾妻郡中之条町大字小雨29",
-        "road": "国道292号",
-        "url": "https://www.michi-no-eki.jp/stations/view/294"
+        "address": "群馬県吾妻郡中之条町大字小雨22",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19078"
       }
     },
     {
@@ -6015,13 +5521,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "10004",
+        "id": "19079",
         "name": "道の駅おのこ",
         "prefecture": "群馬県",
         "city": "渋川市",
-        "address": "群馬県渋川市小野子1980番地",
-        "road": "国道353号",
-        "url": "https://www.michi-no-eki.jp/stations/view/295"
+        "address": "群馬県渋川市小野子1980",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19079"
       }
     },
     {
@@ -6034,13 +5540,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "10005",
+        "id": "19080",
         "name": "道の駅上州おにし",
         "prefecture": "群馬県",
         "city": "藤岡市",
-        "address": "群馬県藤岡市白井2318-1",
-        "road": "国道462号",
-        "url": "https://www.michi-no-eki.jp/stations/view/296"
+        "address": "群馬県藤岡市譲原1089-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19080"
       }
     },
     {
@@ -6053,13 +5559,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "10006",
+        "id": "19081",
         "name": "道の駅川場田園プラザ",
         "prefecture": "群馬県",
-        "city": "利根郡川場村",
-        "address": "群馬県利根郡川場村大字萩室385番地",
-        "road": "群馬県道64号",
-        "url": "https://www.michi-no-eki.jp/stations/view/297"
+        "city": "川場村",
+        "address": "群馬県利根郡川場村大字萩室385",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19081"
       }
     },
     {
@@ -6067,18 +5573,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          138.96767,
+          138.9676700,
           36.7645152
         ]
       },
       "properties": {
-        "id": "10007",
+        "id": "19082",
         "name": "道の駅みなかみ水紀行館",
         "prefecture": "群馬県",
         "city": "利根郡みなかみ町",
         "address": "群馬県利根郡みなかみ町湯原1681-1",
-        "road": "国道291号",
-        "url": "https://www.michi-no-eki.jp/stations/view/298"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19082"
       }
     },
     {
@@ -6091,13 +5597,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "10008",
+        "id": "19083",
         "name": "道の駅白沢",
         "prefecture": "群馬県",
         "city": "沼田市",
         "address": "群馬県沼田市白沢町平出1297",
-        "road": "国道120号",
-        "url": "https://www.michi-no-eki.jp/stations/view/299"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19083"
       }
     },
     {
@@ -6105,18 +5611,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          138.590048,
-          36.614528
+          138.5900480,
+          36.6145280
         ]
       },
       "properties": {
-        "id": "10009",
+        "id": "19084",
         "name": "道の駅草津運動茶屋公園",
         "prefecture": "群馬県",
         "city": "吾妻郡草津町",
         "address": "群馬県吾妻郡草津町大字草津2-1",
-        "road": "国道292号",
-        "url": "https://www.michi-no-eki.jp/stations/view/300"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19084"
       }
     },
     {
@@ -6125,17 +5631,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           139.2719912,
-          36.491184
+          36.4911840
         ]
       },
       "properties": {
-        "id": "10010",
+        "id": "19085",
         "name": "道の駅くろほね・やまびこ",
         "prefecture": "群馬県",
         "city": "桐生市",
         "address": "群馬県桐生市黒保根町下田沢91-4",
-        "road": "国道122号",
-        "url": "https://www.michi-no-eki.jp/stations/view/301"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19085"
       }
     },
     {
@@ -6148,13 +5654,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "10011",
+        "id": "19086",
         "name": "道の駅ららん藤岡",
         "prefecture": "群馬県",
         "city": "藤岡市",
-        "address": "群馬県藤岡市中1131番地8",
-        "road": "群馬県道13号前橋長瀞線",
-        "url": "https://www.michi-no-eki.jp/stations/view/302"
+        "address": "群馬県藤岡市中1060-5",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19086"
       }
     },
     {
@@ -6167,13 +5673,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "10012",
+        "id": "19087",
         "name": "道の駅こもち",
         "prefecture": "群馬県",
         "city": "渋川市",
         "address": "群馬県渋川市白井2318-1",
-        "road": "国道17号",
-        "url": "https://www.michi-no-eki.jp/stations/view/303"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19087"
       }
     },
     {
@@ -6186,13 +5692,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "10013",
+        "id": "19088",
         "name": "道の駅月夜野矢瀬親水公園",
         "prefecture": "群馬県",
         "city": "利根郡みなかみ町",
         "address": "群馬県利根郡みなかみ町月夜野2936",
-        "road": "群馬県道61号",
-        "url": "https://www.michi-no-eki.jp/stations/view/304"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19088"
       }
     },
     {
@@ -6200,18 +5706,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          138.765967,
+          138.7659670,
           36.2996438
         ]
       },
       "properties": {
-        "id": "10014",
+        "id": "19089",
         "name": "道の駅みょうぎ",
         "prefecture": "群馬県",
         "city": "富岡市",
         "address": "群馬県富岡市妙義町岳322-7",
-        "road": "群馬県道196号",
-        "url": "https://www.michi-no-eki.jp/stations/view/305"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19089"
       }
     },
     {
@@ -6224,13 +5730,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "10015",
+        "id": "19090",
         "name": "道の駅万葉の里",
         "prefecture": "群馬県",
         "city": "多野郡神流町",
         "address": "群馬県多野郡神流町大字黒田742-1",
-        "road": "国道462号",
-        "url": "https://www.michi-no-eki.jp/stations/view/306"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19090"
       }
     },
     {
@@ -6243,13 +5749,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "10016",
+        "id": "19091",
         "name": "道の駅しもにた",
         "prefecture": "群馬県",
-        "city": "甘楽郡下仁田町",
+        "city": "下仁田町",
         "address": "群馬県甘楽郡下仁田町大字馬山3766-11",
-        "road": "国道254号",
-        "url": "https://www.michi-no-eki.jp/stations/view/307"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19091"
       }
     },
     {
@@ -6262,13 +5768,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "10017",
+        "id": "19092",
         "name": "道の駅富弘美術館",
         "prefecture": "群馬県",
         "city": "みどり市",
         "address": "群馬県みどり市東町草木86",
-        "road": "国道122号",
-        "url": "https://www.michi-no-eki.jp/stations/view/308"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19092"
       }
     },
     {
@@ -6277,17 +5783,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           138.9083498,
-          36.69608
+          36.6960800
         ]
       },
       "properties": {
-        "id": "10018",
+        "id": "19093",
         "name": "道の駅たくみの里",
         "prefecture": "群馬県",
         "city": "利根郡みなかみ町",
         "address": "群馬県利根郡みなかみ町須川847",
-        "road": "群馬県道53号",
-        "url": "https://www.michi-no-eki.jp/stations/view/309"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19093"
       }
     },
     {
@@ -6300,13 +5806,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "10019",
+        "id": "19094",
         "name": "道の駅霊山たけやま",
         "prefecture": "群馬県",
         "city": "吾妻郡中之条町",
         "address": "群馬県吾妻郡中之条町大字五反田222-1",
-        "road": "群馬県道53号",
-        "url": "https://www.michi-no-eki.jp/stations/view/310"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19094"
       }
     },
     {
@@ -6314,18 +5820,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.035164,
+          139.0351640,
           36.4413405
         ]
       },
       "properties": {
-        "id": "10020",
+        "id": "19095",
         "name": "道の駅よしおか温泉",
         "prefecture": "群馬県",
         "city": "北群馬郡吉岡町",
-        "address": "群馬県北群馬郡吉岡町大字漆原2004番地",
-        "road": "国道17号",
-        "url": "https://www.michi-no-eki.jp/stations/view/311"
+        "address": "群馬県北群馬郡吉岡町大字漆原2004",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19095"
       }
     },
     {
@@ -6338,13 +5844,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "10021",
+        "id": "19096",
         "name": "道の駅赤城の恵",
         "prefecture": "群馬県",
         "city": "前橋市",
         "address": "群馬県前橋市荻窪町437-11",
-        "road": "群馬県道34号",
-        "url": "https://www.michi-no-eki.jp/stations/view/312"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19096"
       }
     },
     {
@@ -6357,13 +5863,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "10022",
+        "id": "19097",
         "name": "道の駅甘楽",
         "prefecture": "群馬県",
         "city": "甘楽郡甘楽町",
         "address": "群馬県甘楽郡甘楽町大字小幡444-1",
-        "road": "群馬県道46号",
-        "url": "https://www.michi-no-eki.jp/stations/view/313"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19097"
       }
     },
     {
@@ -6372,17 +5878,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           139.0689353,
-          36.612775
+          36.6127750
         ]
       },
       "properties": {
-        "id": "10023",
+        "id": "19098",
         "name": "道の駅あぐりーむ昭和",
         "prefecture": "群馬県",
-        "city": "利根郡昭和村",
+        "city": "昭和村",
         "address": "群馬県利根郡昭和村大字森下2406-2",
-        "road": "群馬県道65号昭和インター線|村道森下赤城原線",
-        "url": "https://www.michi-no-eki.jp/stations/view/314"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19098"
       }
     },
     {
@@ -6395,13 +5901,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "10024",
+        "id": "19099",
         "name": "道の駅オアシスなんもく",
         "prefecture": "群馬県",
         "city": "甘楽郡南牧村",
         "address": "群馬県甘楽郡南牧村大字千原3-1",
-        "road": "群馬県道45号",
-        "url": "https://www.michi-no-eki.jp/stations/view/315"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19099"
       }
     },
     {
@@ -6414,13 +5920,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "10025",
+        "id": "19100",
         "name": "道の駅ふじみ",
         "prefecture": "群馬県",
         "city": "前橋市",
         "address": "群馬県前橋市富士見町石井1569-1",
-        "road": "国道353号",
-        "url": "https://www.michi-no-eki.jp/stations/view/316"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19100"
       }
     },
     {
@@ -6433,13 +5939,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "10026",
+        "id": "19101",
         "name": "道の駅おおた",
         "prefecture": "群馬県",
         "city": "太田市",
         "address": "群馬県太田市粕川町701-1",
-        "road": "国道17号",
-        "url": "https://www.michi-no-eki.jp/stations/view/317"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19101"
       }
     },
     {
@@ -6452,13 +5958,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "10027",
+        "id": "19102",
         "name": "道の駅八ッ場ふるさと館",
         "prefecture": "群馬県",
         "city": "吾妻郡長野原町",
         "address": "群馬県吾妻郡長野原町大字林1567-4",
-        "road": "国道145号",
-        "url": "https://www.michi-no-eki.jp/stations/view/318"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19102"
       }
     },
     {
@@ -6471,13 +5977,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "10028",
+        "id": "19103",
         "name": "道の駅中山盆地",
         "prefecture": "群馬県",
-        "city": "吾妻郡高山村",
+        "city": "高山村",
         "address": "群馬県吾妻郡高山村大字中山2357-1",
-        "road": "群馬県道36号",
-        "url": "https://www.michi-no-eki.jp/stations/view/319"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19103"
       }
     },
     {
@@ -6490,13 +5996,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "10029",
+        "id": "19104",
         "name": "道の駅くらぶち小栗の里",
         "prefecture": "群馬県",
         "city": "高崎市",
-        "address": "群馬県高崎市倉渕町三ノ倉296番地1",
-        "road": "国道406号",
-        "url": "https://www.michi-no-eki.jp/stations/view/320"
+        "address": "群馬県高崎市倉渕町三ノ倉296-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19104"
       }
     },
     {
@@ -6504,56 +6010,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          138.73569,
-          36.57048
+          138.7356900,
+          36.5704800
         ]
       },
       "properties": {
-        "id": "10030",
+        "id": "19105",
         "name": "道の駅あがつま峡",
         "prefecture": "群馬県",
-        "city": "吾妻郡東吾妻町",
-        "address": "群馬県吾妻郡東吾妻町大字三島6441番地",
-        "road": "東吾妻町道5284号線",
-        "url": "https://www.michi-no-eki.jp/stations/view/321"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.0945846,
-          36.30833423
-        ]
-      },
-      "properties": {
-        "id": "10031",
-        "name": "道の駅玉村宿",
-        "prefecture": "群馬県",
-        "city": "佐波郡玉村町",
-        "address": "群馬県佐波郡玉村町大字上新田604-1",
-        "road": "国道354号",
-        "url": "https://www.michi-no-eki.jp/stations/view/7986"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.225238,
-          36.773231
-        ]
-      },
-      "properties": {
-        "id": "10032",
-        "name": "道の駅尾瀬かたしな",
-        "prefecture": "群馬県",
-        "city": "利根郡片品村",
-        "address": "群馬県利根郡片品村大字鎌田3967-1",
-        "road": "国道120号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14172"
+        "city": "東吾妻町",
+        "address": "群馬県吾妻郡東吾妻町大字三島6441",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19105"
       }
     },
     {
@@ -6566,13 +6034,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "11001",
+        "id": "19106",
         "name": "道の駅あらかわ",
         "prefecture": "埼玉県",
         "city": "秩父市",
-        "address": "埼玉県秩父市荒川日野538-1",
-        "road": "国道140号",
-        "url": "https://www.michi-no-eki.jp/stations/view/322"
+        "address": "埼玉県秩父市荒川日野538番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19106"
       }
     },
     {
@@ -6585,13 +6053,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "11002",
+        "id": "19107",
         "name": "道の駅おがわまち",
         "prefecture": "埼玉県",
-        "city": "比企郡小川町",
-        "address": "埼玉県比企郡小川町大字小川1220",
-        "road": "国道254号",
-        "url": "https://www.michi-no-eki.jp/stations/view/323"
+        "city": "小川町",
+        "address": "埼玉県比企郡小川町大字小川1220番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19107"
       }
     },
     {
@@ -6599,18 +6067,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.765769,
-          35.848019
+          139.7657690,
+          35.8480190
         ]
       },
       "properties": {
-        "id": "11003",
+        "id": "19108",
         "name": "道の駅川口・あんぎょう",
         "prefecture": "埼玉県",
         "city": "川口市",
-        "address": "埼玉県川口市大字安行領家844-2",
-        "road": "国道298号",
-        "url": "https://www.michi-no-eki.jp/stations/view/324"
+        "address": "埼玉県川口市安行領家844-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19108"
       }
     },
     {
@@ -6623,13 +6091,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "11004",
+        "id": "19109",
         "name": "道の駅大滝温泉",
         "prefecture": "埼玉県",
         "city": "秩父市",
         "address": "埼玉県秩父市大滝4277-2",
-        "road": "国道140号",
-        "url": "https://www.michi-no-eki.jp/stations/view/325"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19109"
       }
     },
     {
@@ -6642,13 +6110,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "11005",
+        "id": "19110",
         "name": "道の駅おかべ",
         "prefecture": "埼玉県",
         "city": "深谷市",
         "address": "埼玉県深谷市岡688-1",
-        "road": "国道17号",
-        "url": "https://www.michi-no-eki.jp/stations/view/326"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19110"
       }
     },
     {
@@ -6661,13 +6129,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "11006",
+        "id": "19111",
         "name": "道の駅龍勢会館",
         "prefecture": "埼玉県",
         "city": "秩父市",
         "address": "埼玉県秩父市吉田久長32",
-        "road": "埼玉県道37号",
-        "url": "https://www.michi-no-eki.jp/stations/view/327"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19111"
       }
     },
     {
@@ -6676,17 +6144,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           139.6451589,
-          36.170307
+          36.1703070
         ]
       },
       "properties": {
-        "id": "11007",
+        "id": "19112",
         "name": "道の駅童謡のふる里おおとね",
         "prefecture": "埼玉県",
         "city": "加須市",
         "address": "埼玉県加須市佐波258-1",
-        "road": "埼玉県道46号",
-        "url": "https://www.michi-no-eki.jp/stations/view/328"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19112"
       }
     },
     {
@@ -6694,18 +6162,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.227294,
+          139.2272940,
           36.1218906
         ]
       },
       "properties": {
-        "id": "11008",
+        "id": "19113",
         "name": "道の駅はなぞの",
         "prefecture": "埼玉県",
         "city": "深谷市",
         "address": "埼玉県深谷市小前田458-1",
-        "road": "国道140号",
-        "url": "https://www.michi-no-eki.jp/stations/view/329"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19113"
       }
     },
     {
@@ -6718,13 +6186,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "11009",
+        "id": "19114",
         "name": "道の駅両神温泉薬師の湯",
         "prefecture": "埼玉県",
-        "city": "秩父郡小鹿野町",
-        "address": "埼玉県秩父郡小鹿野町両神薄2380番地",
-        "road": "埼玉県道37号",
-        "url": "https://www.michi-no-eki.jp/stations/view/330"
+        "city": "小鹿野町",
+        "address": "368－0201 埼玉県秩父郡小鹿野町両神薄2380",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19114"
       }
     },
     {
@@ -6737,13 +6205,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "11010",
+        "id": "19115",
         "name": "道の駅かわもと",
         "prefecture": "埼玉県",
         "city": "深谷市",
-        "address": "埼玉県深谷市長在家1279番地2",
-        "road": "国道140号",
-        "url": "https://www.michi-no-eki.jp/stations/view/331"
+        "address": "埼玉県深谷市長在家1279-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19115"
       }
     },
     {
@@ -6756,13 +6224,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "11011",
+        "id": "19116",
         "name": "道の駅めぬま",
         "prefecture": "埼玉県",
         "city": "熊谷市",
         "address": "埼玉県熊谷市弥藤吾720",
-        "road": "国道407号",
-        "url": "https://www.michi-no-eki.jp/stations/view/332"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19116"
       }
     },
     {
@@ -6775,13 +6243,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "11012",
+        "id": "19117",
         "name": "道の駅ちちぶ",
         "prefecture": "埼玉県",
         "city": "秩父市",
-        "address": "埼玉県秩父市大宮4625番地",
-        "road": "国道140号",
-        "url": "https://www.michi-no-eki.jp/stations/view/333"
+        "address": "埼玉県秩父市大宮4625",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19117"
       }
     },
     {
@@ -6794,13 +6262,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "11013",
+        "id": "19118",
         "name": "道の駅アグリパークゆめすぎと",
         "prefecture": "埼玉県",
-        "city": "北葛飾郡杉戸町",
-        "address": "埼玉県北葛飾郡杉戸町才羽823-2",
-        "road": "埼葛広域農道",
-        "url": "https://www.michi-no-eki.jp/stations/view/334"
+        "city": "杉戸町",
+        "address": "埼玉県北葛飾郡杉戸町大字才羽823-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19118"
       }
     },
     {
@@ -6813,13 +6281,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "11014",
-        "name": "道の駅果樹公園_あしがくぼ",
+        "id": "19119",
+        "name": "道の駅果樹公園あしがくぼ",
         "prefecture": "埼玉県",
-        "city": "秩父郡横瀬町",
+        "city": "横瀬町",
         "address": "埼玉県秩父郡横瀬町大字芦ヶ久保1915-6",
-        "road": "国道299号",
-        "url": "https://www.michi-no-eki.jp/stations/view/335"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19119"
       }
     },
     {
@@ -6832,13 +6300,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "11015",
-        "name": "道の駅いちごの里_よしみ",
-        "prefecture": "埼玉県",
-        "city": "比企郡吉見町",
-        "address": "埼玉県比企郡吉見町大字久保田1737番地",
-        "road": "埼玉県道27号",
-        "url": "https://www.michi-no-eki.jp/stations/view/336"
+        "id": "19120",
+        "name": "道の駅いちごの里 よしみ",
+        "prefecture": "いちごの里　よしみ",
+        "city": "",
+        "address": "埼玉県比企郡吉見町大字久保田1737",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19120"
       }
     },
     {
@@ -6846,18 +6314,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.6627834,
-          36.2110887
+          139.6620917,
+          36.2106455
         ]
       },
       "properties": {
-        "id": "11016",
+        "id": "19121",
         "name": "道の駅かぞわたらせ",
         "prefecture": "埼玉県",
         "city": "加須市",
-        "address": "埼玉県加須市小野袋1737",
-        "road": "埼玉県道9号佐野古河線",
-        "url": "https://www.michi-no-eki.jp/stations/view/337"
+        "address": "埼玉県加須市小野袋1745-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19121"
       }
     },
     {
@@ -6870,13 +6338,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "11017",
+        "id": "19122",
         "name": "道の駅庄和",
         "prefecture": "埼玉県",
         "city": "春日部市",
-        "address": "埼玉県春日部市上柳995番地",
-        "road": "国道4号",
-        "url": "https://www.michi-no-eki.jp/stations/view/338"
+        "address": "埼玉県春日部市上柳995",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19122"
       }
     },
     {
@@ -6889,13 +6357,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "11018",
+        "id": "19123",
         "name": "道の駅はにゅう",
         "prefecture": "埼玉県",
         "city": "羽生市",
         "address": "埼玉県羽生市大字上新郷7066",
-        "road": "国道122号",
-        "url": "https://www.michi-no-eki.jp/stations/view/339"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19123"
       }
     },
     {
@@ -6908,32 +6376,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "11019",
+        "id": "19124",
         "name": "道の駅みなの",
         "prefecture": "埼玉県",
-        "city": "秩父郡皆野町",
-        "address": "埼玉県秩父郡皆野町大字皆野3236-35",
-        "road": "埼玉県道348号",
-        "url": "https://www.michi-no-eki.jp/stations/view/340"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.203506,
-          36.052482
-        ]
-      },
-      "properties": {
-        "id": "11020",
-        "name": "道の駅和紙の里ひがしちちぶ",
-        "prefecture": "埼玉県",
-        "city": "秩父郡東秩父村",
-        "address": "埼玉県秩父郡東秩父村大字御堂441",
-        "road": "東秩父村道1-1号線",
-        "url": "https://www.michi-no-eki.jp/stations/view/14140"
+        "city": "皆野町",
+        "address": "埼玉県秩父郡皆野町皆野3236-35",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19124"
       }
     },
     {
@@ -6946,13 +6395,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "12001",
+        "id": "19125",
         "name": "道の駅とみうら",
         "prefecture": "千葉県",
         "city": "南房総市",
-        "address": "千葉県南房総市富浦町青木123番地1",
-        "road": "国道127号",
-        "url": "https://www.michi-no-eki.jp/stations/view/341"
+        "address": "千葉県南房総市富浦町青木123-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19125"
       }
     },
     {
@@ -6965,13 +6414,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "12002",
+        "id": "19126",
         "name": "道の駅三芳村",
         "prefecture": "千葉県",
         "city": "南房総市",
         "address": "千葉県南房総市川田82-2",
-        "road": "千葉県道88号",
-        "url": "https://www.michi-no-eki.jp/stations/view/342"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19126"
       }
     },
     {
@@ -6984,13 +6433,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "12003",
+        "id": "19127",
         "name": "道の駅やちよ",
         "prefecture": "千葉県",
         "city": "八千代市",
         "address": "千葉県八千代市米本4905-1",
-        "road": "国道16号",
-        "url": "https://www.michi-no-eki.jp/stations/view/343"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19127"
       }
     },
     {
@@ -7003,13 +6452,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "12004",
+        "id": "19128",
         "name": "道の駅きょなん",
         "prefecture": "千葉県",
         "city": "安房郡鋸南町",
-        "address": "千葉県安房郡鋸南町吉浜516-1",
-        "road": "国道127号",
-        "url": "https://www.michi-no-eki.jp/stations/view/344"
+        "address": "千葉県安房郡鋸南町吉浜517-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19128"
       }
     },
     {
@@ -7022,13 +6471,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "12005",
+        "id": "19129",
         "name": "道の駅鴨川オーシャンパーク",
         "prefecture": "千葉県",
         "city": "鴨川市",
         "address": "千葉県鴨川市江見太夫崎22",
-        "road": "国道128号",
-        "url": "https://www.michi-no-eki.jp/stations/view/345"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19129"
       }
     },
     {
@@ -7041,13 +6490,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "12006",
+        "id": "19130",
         "name": "道の駅ローズマリー公園",
         "prefecture": "千葉県",
         "city": "南房総市",
         "address": "千葉県南房総市白子1501",
-        "road": "千葉県道297号",
-        "url": "https://www.michi-no-eki.jp/stations/view/346"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19130"
       }
     },
     {
@@ -7055,18 +6504,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.069545,
-          35.198557
+          140.0695450,
+          35.1985570
         ]
       },
       "properties": {
-        "id": "12007",
+        "id": "19131",
         "name": "道の駅ふれあいパーク・きみつ",
         "prefecture": "千葉県",
         "city": "君津市",
         "address": "千葉県君津市笹字椿1766-3",
-        "road": "千葉県道24号",
-        "url": "https://www.michi-no-eki.jp/stations/view/347"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19131"
       }
     },
     {
@@ -7079,13 +6528,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "12008",
+        "id": "19132",
         "name": "道の駅しょうなん",
         "prefecture": "千葉県",
         "city": "柏市",
-        "address": "千葉県柏市箕輪新田59-2",
-        "road": "千葉県道8号",
-        "url": "https://www.michi-no-eki.jp/stations/view/348"
+        "address": "277－0911 千葉県柏市箕輪新田59-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19132"
       }
     },
     {
@@ -7093,18 +6542,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.258616,
-          35.254825
+          140.2586160,
+          35.2548250
         ]
       },
       "properties": {
-        "id": "12009",
+        "id": "19133",
         "name": "道の駅たけゆらの里おおたき",
         "prefecture": "千葉県",
         "city": "夷隅郡大多喜町",
-        "address": "千葉県夷隅郡大多喜町石神870-5",
-        "road": "国道297号",
-        "url": "https://www.michi-no-eki.jp/stations/view/349"
+        "address": "千葉県夷隅郡大多喜町石神855",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19133"
       }
     },
     {
@@ -7117,13 +6566,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "12010",
+        "id": "19134",
         "name": "道の駅多古",
         "prefecture": "千葉県",
         "city": "香取郡多古町",
         "address": "千葉県香取郡多古町多古1069-1",
-        "road": "国道296号",
-        "url": "https://www.michi-no-eki.jp/stations/view/350"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19134"
       }
     },
     {
@@ -7131,18 +6580,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.109646,
+          140.1096460,
           35.4638588
         ]
       },
       "properties": {
-        "id": "12011",
+        "id": "19135",
         "name": "道の駅あずの里いちはら",
         "prefecture": "千葉県",
         "city": "市原市",
         "address": "千葉県市原市浅井小向492-1",
-        "road": "市原市道13号",
-        "url": "https://www.michi-no-eki.jp/stations/view/351"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19135"
       }
     },
     {
@@ -7151,17 +6600,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           140.4699424,
-          35.805852
+          35.8058520
         ]
       },
       "properties": {
-        "id": "12012",
-        "name": "道の駅くりもと",
+        "id": "19136",
+        "name": "道の駅くりもと 紅小町の郷",
         "prefecture": "千葉県",
         "city": "香取市",
         "address": "千葉県香取市沢1372-1",
-        "road": "千葉県道44号成田小見川鹿島港線",
-        "url": "https://www.michi-no-eki.jp/stations/view/352"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19136"
       }
     },
     {
@@ -7174,13 +6623,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "12013",
+        "id": "19137",
         "name": "道の駅ちくら・潮風王国",
         "prefecture": "千葉県",
         "city": "南房総市",
         "address": "千葉県南房総市千倉町千田1051",
-        "road": "国道410号",
-        "url": "https://www.michi-no-eki.jp/stations/view/353"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19137"
       }
     },
     {
@@ -7193,13 +6642,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "12014",
+        "id": "19138",
         "name": "道の駅富楽里とみやま",
         "prefecture": "千葉県",
         "city": "南房総市",
-        "address": "千葉県南房総市二部1900番地",
-        "road": "千葉県道184号",
-        "url": "https://www.michi-no-eki.jp/stations/view/354"
+        "address": "千葉県南房総市二部2211",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19138"
       }
     },
     {
@@ -7212,13 +6661,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "12015",
+        "id": "19139",
         "name": "道の駅おおつの里",
         "prefecture": "千葉県",
         "city": "南房総市",
         "address": "千葉県南房総市富浦町大津320",
-        "road": "千葉県道185号",
-        "url": "https://www.michi-no-eki.jp/stations/view/355"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19139"
       }
     },
     {
@@ -7231,13 +6680,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "12016",
+        "id": "19140",
         "name": "道の駅オライはすぬま",
         "prefecture": "千葉県",
         "city": "山武市",
         "address": "千葉県山武市蓮沼ハ4826",
-        "road": "千葉県道58号",
-        "url": "https://www.michi-no-eki.jp/stations/view/356"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19140"
       }
     },
     {
@@ -7250,13 +6699,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "12017",
+        "id": "19141",
         "name": "道の駅ながら",
         "prefecture": "千葉県",
         "city": "長生郡長柄町",
         "address": "千葉県長生郡長柄町六地蔵138-1",
-        "road": "千葉県道14号",
-        "url": "https://www.michi-no-eki.jp/stations/view/357"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19141"
       }
     },
     {
@@ -7264,18 +6713,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.3036799,
-          35.352183
+          140.3034841,
+          35.3535864
         ]
       },
       "properties": {
-        "id": "12018",
-        "name": "道の駅むつざわ つどいの郷",
+        "id": "19142",
+        "name": "道の駅むつざわスマートウェルネスタウン・道の駅・つどいの郷",
         "prefecture": "千葉県",
-        "city": "長生郡睦沢町",
+        "city": "睦沢町",
         "address": "千葉県長生郡睦沢町森2-1",
-        "road": "千葉県道150号",
-        "url": "https://www.michi-no-eki.jp/stations/view/358"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19142"
       }
     },
     {
@@ -7288,13 +6737,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "12019",
+        "id": "19143",
         "name": "道の駅白浜野島崎",
         "prefecture": "千葉県",
         "city": "南房総市",
         "address": "千葉県南房総市白浜町滝口9240",
-        "road": "国道410号",
-        "url": "https://www.michi-no-eki.jp/stations/view/359"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19143"
       }
     },
     {
@@ -7302,37 +6751,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.8216178,
-          34.9398785
+          140.5059080,
+          35.8963130
         ]
       },
       "properties": {
-        "id": "12020",
-        "name": "道の駅南房パラダイス",
-        "prefecture": "千葉県",
-        "city": "館山市",
-        "address": "千葉県館山市藤原1495番地",
-        "road": "千葉県道257号",
-        "url": "https://www.michi-no-eki.jp/stations/view/360"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          140.505908,
-          35.896313
-        ]
-      },
-      "properties": {
-        "id": "12021",
+        "id": "19145",
         "name": "道の駅水の郷さわら",
         "prefecture": "千葉県",
         "city": "香取市",
         "address": "千葉県香取市佐原イ3981-2",
-        "road": "国道356号",
-        "url": "https://www.michi-no-eki.jp/stations/view/361"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19145"
       }
     },
     {
@@ -7345,13 +6775,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "12022",
+        "id": "19146",
         "name": "道の駅風和里しばやま",
         "prefecture": "千葉県",
         "city": "山武郡芝山町",
         "address": "千葉県山武郡芝山町小池2568",
-        "road": "千葉県道62号",
-        "url": "https://www.michi-no-eki.jp/stations/view/362"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19146"
       }
     },
     {
@@ -7359,18 +6789,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.02057,
-          35.042582
+          140.0205700,
+          35.0425820
         ]
       },
       "properties": {
-        "id": "12023",
-        "name": "道の駅和田浦WA・O!",
-        "prefecture": "千葉県",
-        "city": "南房総市",
+        "id": "19147",
+        "name": "道の駅和田浦 WA・O！",
+        "prefecture": "和田浦　WA・O！",
+        "city": "",
         "address": "千葉県南房総市和田町仁我浦243",
-        "road": "国道128号",
-        "url": "https://www.michi-no-eki.jp/stations/view/363"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19147"
       }
     },
     {
@@ -7378,113 +6808,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          140.3797,
-          35.90023
+          140.3797000,
+          35.9002300
         ]
       },
       "properties": {
-        "id": "12024",
+        "id": "19148",
         "name": "道の駅発酵の里こうざき",
         "prefecture": "千葉県",
-        "city": "香取郡神崎町",
+        "city": "神崎町",
         "address": "千葉県香取郡神崎町松崎855",
-        "road": "町道松崎356号線",
-        "url": "https://www.michi-no-eki.jp/stations/view/364"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          140.675557,
-          35.71785572
-        ]
-      },
-      "properties": {
-        "id": "12025",
-        "name": "道の駅季楽里あさひ",
-        "prefecture": "千葉県",
-        "city": "旭市",
-        "address": "千葉県旭市イの5238",
-        "road": "市道1級59号線",
-        "url": "https://www.michi-no-eki.jp/stations/view/7988"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.8439449,
-          35.1430213
-        ]
-      },
-      "properties": {
-        "id": "12026",
-        "name": "道の駅保田小学校",
-        "prefecture": "千葉県",
-        "city": "安房郡鋸南町",
-        "address": "千葉県安房郡鋸南町保田724",
-        "road": "千葉県道34号",
-        "url": "https://www.michi-no-eki.jp/stations/view/7991"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          140.3836754,
-          35.5772141
-        ]
-      },
-      "properties": {
-        "id": "12027",
-        "name": "道の駅みのりの郷東金",
-        "prefecture": "千葉県",
-        "city": "東金市",
-        "address": "千葉県東金市田間1300-3",
-        "road": "国道126号",
-        "url": "https://www.michi-no-eki.jp/stations/view/9733"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          140.052479,
-          35.359948
-        ]
-      },
-      "properties": {
-        "id": "12028",
-        "name": "道の駅木更津_うまくたの里",
-        "prefecture": "千葉県",
-        "city": "木更津市",
-        "address": "千葉県木更津市下郡1369-1",
-        "road": "国道410号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14159"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.9194133,
-          35.7488419
-        ]
-      },
-      "properties": {
-        "id": "12029",
-        "name": "道の駅いちかわ",
-        "prefecture": "千葉県",
-        "city": "市川市",
-        "address": "千葉県市川市国分6丁目10-1",
-        "road": "国道298号（東京外かく環状道路）",
-        "url": "https://www.michi-no-eki.jp/stations/view/14173"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19148"
       }
     },
     {
@@ -7497,13 +6832,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "13001",
+        "id": "19149",
         "name": "道の駅八王子滝山",
         "prefecture": "東京都",
         "city": "八王子市",
         "address": "東京都八王子市滝山町1-592-2",
-        "road": "東京都道169号",
-        "url": "https://www.michi-no-eki.jp/stations/view/365"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19149"
       }
     },
     {
@@ -7516,13 +6851,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "14001",
+        "id": "19150",
         "name": "道の駅箱根峠",
         "prefecture": "神奈川県",
-        "city": "足柄下郡箱根町",
-        "address": "神奈川県足柄下郡箱根町箱根字畑引山381-22",
-        "road": "国道1号",
-        "url": "https://www.michi-no-eki.jp/stations/view/366"
+        "city": "箱根町",
+        "address": "神奈川県足柄下郡箱根町箱根381-22",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19150"
       }
     },
     {
@@ -7535,1799 +6870,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "14002",
+        "id": "19151",
         "name": "道の駅山北",
         "prefecture": "神奈川県",
-        "city": "足柄上郡山北町",
+        "city": "山北町",
         "address": "神奈川県足柄上郡山北町湯触317",
-        "road": "神奈川県道76号",
-        "url": "https://www.michi-no-eki.jp/stations/view/367"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.2771732,
-          35.4825222
-        ]
-      },
-      "properties": {
-        "id": "14003",
-        "name": "道の駅清川",
-        "prefecture": "神奈川県",
-        "city": "愛甲郡清川村",
-        "address": "神奈川県愛甲郡清川村煤ヶ谷2129番地",
-        "road": "神奈川県道64号",
-        "url": "https://www.michi-no-eki.jp/stations/view/9735"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.22301,
-          37.957911
-        ]
-      },
-      "properties": {
-        "id": "15001",
-        "name": "道の駅豊栄",
-        "prefecture": "新潟県",
-        "city": "新潟市",
-        "address": "新潟県新潟市北区木崎切尾山3644番地乙",
-        "road": "国道7号",
-        "url": "https://www.michi-no-eki.jp/stations/view/415"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.3724223,
-          38.0023437
-        ]
-      },
-      "properties": {
-        "id": "15002",
-        "name": "道の駅加治川",
-        "prefecture": "新潟県",
-        "city": "新発田市",
-        "address": "新潟県新発田市横岡1147番地",
-        "road": "国道7号",
-        "url": "https://www.michi-no-eki.jp/stations/view/416"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.4610655,
-          38.1724825
-        ]
-      },
-      "properties": {
-        "id": "15003",
-        "name": "道の駅神林",
-        "prefecture": "新潟県",
-        "city": "村上市",
-        "address": "新潟県村上市九日市809",
-        "road": "国道7号",
-        "url": "https://www.michi-no-eki.jp/stations/view/417"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.5224236,
-          38.2821299
-        ]
-      },
-      "properties": {
-        "id": "15004",
-        "name": "道の駅朝日",
-        "prefecture": "新潟県",
-        "city": "村上市",
-        "address": "新潟県村上市猿沢1212",
-        "road": "国道7号",
-        "url": "https://www.michi-no-eki.jp/stations/view/418"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.020212,
-          37.866345
-        ]
-      },
-      "properties": {
-        "id": "15005",
-        "name": "道の駅新潟ふるさと村",
-        "prefecture": "新潟県",
-        "city": "新潟市",
-        "address": "新潟県新潟市西区山田2307",
-        "road": "国道8号",
-        "url": "https://www.michi-no-eki.jp/stations/view/419"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.003775,
-          37.113566
-        ]
-      },
-      "properties": {
-        "id": "15006",
-        "name": "道の駅能生",
-        "prefecture": "新潟県",
-        "city": "糸魚川市",
-        "address": "新潟県糸魚川市大字能生小泊3596番地2",
-        "road": "国道8号",
-        "url": "https://www.michi-no-eki.jp/stations/view/420"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.3600965,
-          37.7177569
-        ]
-      },
-      "properties": {
-        "id": "15007",
-        "name": "道の駅みかわ_(新潟県)",
-        "prefecture": "新潟県",
-        "city": "東蒲原郡阿賀町",
-        "address": "新潟県東蒲原郡阿賀町岩谷2865",
-        "road": "国道49号",
-        "url": "https://www.michi-no-eki.jp/stations/view/421"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.567001,
-          38.091473
-        ]
-      },
-      "properties": {
-        "id": "15008",
-        "name": "道の駅関川",
-        "prefecture": "新潟県",
-        "city": "岩船郡関川村",
-        "address": "新潟県岩船郡関川村大字上関1252番地1",
-        "road": "国道113号",
-        "url": "https://www.michi-no-eki.jp/stations/view/422"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.3071892,
-          37.7380141
-        ]
-      },
-      "properties": {
-        "id": "15010",
-        "name": "道の駅阿賀の里",
-        "prefecture": "新潟県",
-        "city": "東蒲原郡阿賀町",
-        "address": "新潟県東蒲原郡阿賀町石間4301",
-        "road": "国道49号",
-        "url": "https://www.michi-no-eki.jp/stations/view/424"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.4585211,
-          38.3751788
-        ]
-      },
-      "properties": {
-        "id": "15011",
-        "name": "道の駅笹川流れ",
-        "prefecture": "新潟県",
-        "city": "村上市",
-        "address": "新潟県村上市桑川891番地1",
-        "road": "国道345号",
-        "url": "https://www.michi-no-eki.jp/stations/view/425"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.6787088,
-          37.5388864
-        ]
-      },
-      "properties": {
-        "id": "15012",
-        "name": "道の駅越後出雲崎天領の里",
-        "prefecture": "新潟県",
-        "city": "三島郡出雲崎町",
-        "address": "新潟県三島郡出雲崎町大字尼瀬6-57",
-        "road": "国道352号",
-        "url": "https://www.michi-no-eki.jp/stations/view/426"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.4529738,
-          38.0634898
-        ]
-      },
-      "properties": {
-        "id": "15013",
-        "name": "道の駅胎内",
-        "prefecture": "新潟県",
-        "city": "胎内市",
-        "address": "新潟県胎内市下赤谷387-1",
-        "road": "新潟県道53号",
-        "url": "https://www.michi-no-eki.jp/stations/view/427"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.9830342,
-          37.2238403
-        ]
-      },
-      "properties": {
-        "id": "15014",
-        "name": "道の駅ゆのたに",
-        "prefecture": "新潟県",
-        "city": "魚沼市",
-        "address": "新潟県魚沼市吉田1148",
-        "road": "新潟県道50号",
-        "url": "https://www.michi-no-eki.jp/stations/view/428"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.7590595,
-          37.5816068
-        ]
-      },
-      "properties": {
-        "id": "15015",
-        "name": "道の駅良寛の里わしま",
-        "prefecture": "新潟県",
-        "city": "長岡市",
-        "address": "新潟県長岡市島崎5713番2",
-        "road": "国道116号",
-        "url": "https://www.michi-no-eki.jp/stations/view/429"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.6138286,
-          37.1326116
-        ]
-      },
-      "properties": {
-        "id": "15016",
-        "name": "道の駅まつだいふるさと会館",
-        "prefecture": "新潟県",
-        "city": "十日町市",
-        "address": "新潟県十日町市松代3816番地1",
-        "road": "国道253号",
-        "url": "https://www.michi-no-eki.jp/stations/view/430"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.644765,
-          36.979982
-        ]
-      },
-      "properties": {
-        "id": "15017",
-        "name": "道の駅越後市振の関",
-        "prefecture": "新潟県",
-        "city": "糸魚川市",
-        "address": "新潟県糸魚川市大字市振1035番地50",
-        "road": "国道8号",
-        "url": "https://www.michi-no-eki.jp/stations/view/431"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.761379,
-          37.1384419
-        ]
-      },
-      "properties": {
-        "id": "15018",
-        "name": "道の駅クロス10十日町",
-        "prefecture": "新潟県",
-        "city": "十日町市",
-        "address": "新潟県十日町市本町六の一丁目71番地26",
-        "road": "国道117号",
-        "url": "https://www.michi-no-eki.jp/stations/view/432"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.1020031,
-          37.5418094
-        ]
-      },
-      "properties": {
-        "id": "15019",
-        "name": "道の駅漢学の里しただ",
-        "prefecture": "新潟県",
-        "city": "三条市",
-        "address": "新潟県三条市庭月451-1",
-        "road": "国道289号",
-        "url": "https://www.michi-no-eki.jp/stations/view/433"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.4899212,
-          37.3465151
-        ]
-      },
-      "properties": {
-        "id": "15020",
-        "name": "道の駅風の丘米山",
-        "prefecture": "新潟県",
-        "city": "柏崎市",
-        "address": "新潟県柏崎市大字青海川175-1",
-        "road": "国道8号",
-        "url": "https://www.michi-no-eki.jp/stations/view/434"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.057244,
-          37.355921
-        ]
-      },
-      "properties": {
-        "id": "15021",
-        "name": "道の駅いりひろせ",
-        "prefecture": "新潟県",
-        "city": "魚沼市",
-        "address": "新潟県魚沼市大栃山356-2",
-        "road": "国道252号",
-        "url": "https://www.michi-no-eki.jp/stations/view/435"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.6621316,
-          37.4506748
-        ]
-      },
-      "properties": {
-        "id": "15022",
-        "name": "道の駅西山ふるさと公苑",
-        "prefecture": "新潟県",
-        "city": "柏崎市",
-        "address": "新潟県柏崎市西山町坂田717番地4",
-        "road": "国道116号",
-        "url": "https://www.michi-no-eki.jp/stations/view/436"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.2258864,
-          37.0261176
-        ]
-      },
-      "properties": {
-        "id": "15023",
-        "name": "道の駅あらい",
-        "prefecture": "新潟県",
-        "city": "妙高市",
-        "address": "新潟県妙高市大字猪野山58番地1",
-        "road": "国道18号",
-        "url": "https://www.michi-no-eki.jp/stations/view/437"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.0072657,
-          37.4595997
-        ]
-      },
-      "properties": {
-        "id": "15024",
-        "name": "道の駅R290とちお",
-        "prefecture": "新潟県",
-        "city": "長岡市",
-        "address": "新潟県長岡市栃尾宮沢1764",
-        "road": "国道290号",
-        "url": "https://www.michi-no-eki.jp/stations/view/438"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.4441345,
-          38.0456376
-        ]
-      },
-      "properties": {
-        "id": "15025",
-        "name": "道の駅芸能とトキの里",
-        "prefecture": "新潟県",
-        "city": "佐渡市",
-        "address": "新潟県佐渡市吾潟1839-1",
-        "road": "新潟県道65号",
-        "url": "https://www.michi-no-eki.jp/stations/view/439"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.730284,
-          37.0031567
-        ]
-      },
-      "properties": {
-        "id": "15026",
-        "name": "道の駅親不知ピアパーク",
-        "prefecture": "新潟県",
-        "city": "糸魚川市",
-        "address": "新潟県糸魚川市大字外波903番地1",
-        "road": "国道8号",
-        "url": "https://www.michi-no-eki.jp/stations/view/440"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.6863544,
-          37.1990419
-        ]
-      },
-      "properties": {
-        "id": "15027",
-        "name": "道の駅瀬替えの郷せんだ",
-        "prefecture": "新潟県",
-        "city": "十日町市",
-        "address": "新潟県十日町市中仙田甲826",
-        "road": "国道252号",
-        "url": "https://www.michi-no-eki.jp/stations/view/441"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.470325,
-          37.095594
-        ]
-      },
-      "properties": {
-        "id": "15028",
-        "name": "道の駅雪のふるさとやすづか",
-        "prefecture": "新潟県",
-        "city": "上越市",
-        "address": "新潟県上越市安塚区樽田140",
-        "road": "国道403号",
-        "url": "https://www.michi-no-eki.jp/stations/view/442"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.6342079,
-          37.2133616
-        ]
-      },
-      "properties": {
-        "id": "15029",
-        "name": "道の駅じょんのびの里高柳",
-        "prefecture": "新潟県",
-        "city": "柏崎市",
-        "address": "新潟県柏崎市高柳町高尾10-1",
-        "road": "新潟県道12号",
-        "url": "https://www.michi-no-eki.jp/stations/view/443"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.078895,
-          37.7925908
-        ]
-      },
-      "properties": {
-        "id": "15030",
-        "name": "道の駅花夢里にいつ",
-        "prefecture": "新潟県",
-        "city": "新潟市",
-        "address": "新潟県新潟市秋葉区川根438",
-        "road": "国道460号",
-        "url": "https://www.michi-no-eki.jp/stations/view/444"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.8251803,
-          37.6628849
-        ]
-      },
-      "properties": {
-        "id": "15031",
-        "name": "道の駅国上",
-        "prefecture": "新潟県",
-        "city": "燕市",
-        "address": "新潟県燕市国上5866-1",
-        "road": "新潟県道2号",
-        "url": "https://www.michi-no-eki.jp/stations/view/445"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.8676387,
-          37.2608955
-        ]
-      },
-      "properties": {
-        "id": "15032",
-        "name": "道の駅越後川口",
-        "prefecture": "新潟県",
-        "city": "長岡市",
-        "address": "新潟県長岡市川口中山84-2",
-        "road": "国道17号",
-        "url": "https://www.michi-no-eki.jp/stations/view/446"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.3769706,
-          37.2416518
-        ]
-      },
-      "properties": {
-        "id": "15033",
-        "name": "道の駅よしかわ杜氏の郷",
-        "prefecture": "新潟県",
-        "city": "上越市",
-        "address": "新潟県上越市吉川区杜氏の郷1",
-        "road": "新潟県道30号",
-        "url": "https://www.michi-no-eki.jp/stations/view/447"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.0866912,
-          37.163533
-        ]
-      },
-      "properties": {
-        "id": "15034",
-        "name": "道の駅うみてらす名立",
-        "prefecture": "新潟県",
-        "city": "上越市",
-        "address": "新潟県上越市名立区名立大町4280番地1",
-        "road": "国道8号",
-        "url": "https://www.michi-no-eki.jp/stations/view/448"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.819214,
-          37.0030693
-        ]
-      },
-      "properties": {
-        "id": "15035",
-        "name": "道の駅南魚沼",
-        "prefecture": "新潟県",
-        "city": "南魚沼市",
-        "address": "新潟県南魚沼市下一日市855",
-        "road": "国道17号",
-        "url": "https://www.michi-no-eki.jp/stations/view/449"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.883471,
-          37.546709
-        ]
-      },
-      "properties": {
-        "id": "15036",
-        "name": "道の駅パティオにいがた",
-        "prefecture": "新潟県",
-        "city": "見附市",
-        "address": "新潟県見附市今町1丁目3358番地",
-        "road": "新潟県道20号",
-        "url": "https://www.michi-no-eki.jp/stations/view/450"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.777175,
-          36.8996915
-        ]
-      },
-      "properties": {
-        "id": "15037",
-        "name": "道の駅みつまた",
-        "prefecture": "新潟県",
-        "city": "南魚沼郡湯沢町",
-        "address": "新潟県南魚沼郡湯沢町大字三俣1000番地",
-        "road": "国道17号",
-        "url": "https://www.michi-no-eki.jp/stations/view/451"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.9334638,
-          37.6492628
-        ]
-      },
-      "properties": {
-        "id": "15038",
-        "name": "道の駅燕三条地場産センター",
-        "prefecture": "新潟県",
-        "city": "三条市",
-        "address": "新潟県三条市須頃1丁目17番地",
-        "road": "市道燕三条停車場線",
-        "url": "https://www.michi-no-eki.jp/stations/view/9737"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.026294,
-          37.647125
-        ]
-      },
-      "properties": {
-        "id": "15039",
-        "name": "道の駅庭園の郷保内",
-        "prefecture": "新潟県",
-        "city": "三条市",
-        "address": "新潟県三条市下保内4035番地",
-        "road": "市道大崎547号線",
-        "url": "https://www.michi-no-eki.jp/stations/view/14142"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.2381219,
-          36.4885782
-        ]
-      },
-      "properties": {
-        "id": "16001",
-        "name": "道の駅細入",
-        "prefecture": "富山県",
-        "city": "富山市",
-        "address": "富山県富山市片掛3-5",
-        "road": "国道41号",
-        "url": "https://www.michi-no-eki.jp/stations/view/452"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.960092,
-          36.6414874
-        ]
-      },
-      "properties": {
-        "id": "16002",
-        "name": "道の駅砺波",
-        "prefecture": "富山県",
-        "city": "砺波市",
-        "address": "富山県砺波市宮沢町3番9号",
-        "road": "国道156号",
-        "url": "https://www.michi-no-eki.jp/stations/view/453"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.871469,
-          36.377491
-        ]
-      },
-      "properties": {
-        "id": "16003",
-        "name": "道の駅上平",
-        "prefecture": "富山県",
-        "city": "南砺市",
-        "address": "富山県南砺市西赤尾町72番地1",
-        "road": "国道156号",
-        "url": "https://www.michi-no-eki.jp/stations/view/454"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.026689,
-          36.524368
-        ]
-      },
-      "properties": {
-        "id": "16004",
-        "name": "道の駅利賀",
-        "prefecture": "富山県",
-        "city": "南砺市",
-        "address": "富山県南砺市利賀村171番地（南砺市利賀市民センター内）",
-        "road": "国道471号",
-        "url": "https://www.michi-no-eki.jp/stations/view/455"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.977887,
-          36.5615091
-        ]
-      },
-      "properties": {
-        "id": "16005",
-        "name": "道の駅井波",
-        "prefecture": "富山県",
-        "city": "南砺市",
-        "address": "富山県南砺市北川730番地",
-        "road": "国道471号",
-        "url": "https://www.michi-no-eki.jp/stations/view/456"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.8618918,
-          36.5664199
-        ]
-      },
-      "properties": {
-        "id": "16006",
-        "name": "道の駅福光",
-        "prefecture": "富山県",
-        "city": "南砺市",
-        "address": "富山県南砺市中ノ江16番地",
-        "road": "国道304号",
-        "url": "https://www.michi-no-eki.jp/stations/view/457"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.9739623,
-          36.445401
-        ]
-      },
-      "properties": {
-        "id": "16007",
-        "name": "道の駅たいら",
-        "prefecture": "富山県",
-        "city": "南砺市",
-        "address": "富山県南砺市東中江215番地",
-        "road": "国道156号",
-        "url": "https://www.michi-no-eki.jp/stations/view/458"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.9799087,
-          36.5743326
-        ]
-      },
-      "properties": {
-        "id": "16008",
-        "name": "道の駅庄川",
-        "prefecture": "富山県",
-        "city": "砺波市",
-        "address": "富山県砺波市庄川町示野437番地",
-        "road": "国道156号",
-        "url": "https://www.michi-no-eki.jp/stations/view/459"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.5415592,
-          36.8604263
-        ]
-      },
-      "properties": {
-        "id": "16009",
-        "name": "道の駅うなづき",
-        "prefecture": "富山県",
-        "city": "黒部市",
-        "address": "富山県黒部市宇奈月町下立687番地（宇奈月麦酒館・うなづき食菜館）|宇奈月町下立682番地（うなづき友学館）",
-        "road": "富山県道14号",
-        "url": "https://www.michi-no-eki.jp/stations/view/460"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.0849678,
-          36.7520114
-        ]
-      },
-      "properties": {
-        "id": "16010",
-        "name": "道の駅カモンパーク新湊",
-        "prefecture": "富山県",
-        "city": "射水市",
-        "address": "富山県射水市鏡宮296番地",
-        "road": "国道8号",
-        "url": "https://www.michi-no-eki.jp/stations/view/461"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.3444564,
-          36.7743768
-        ]
-      },
-      "properties": {
-        "id": "16011",
-        "name": "道の駅ウェーブパークなめりかわ",
-        "prefecture": "富山県",
-        "city": "滑川市",
-        "address": "富山県滑川市中川原410番地",
-        "road": "富山県道1号",
-        "url": "https://www.michi-no-eki.jp/stations/view/462"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.98721,
-          36.864417
-        ]
-      },
-      "properties": {
-        "id": "16012",
-        "name": "道の駅氷見",
-        "prefecture": "富山県",
-        "city": "氷見市",
-        "address": "富山県氷見市北大町25番5号",
-        "road": "国道415号",
-        "url": "https://www.michi-no-eki.jp/stations/view/463"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.9693519,
-          36.7367136
-        ]
-      },
-      "properties": {
-        "id": "16013",
-        "name": "道の駅万葉の里_高岡",
-        "prefecture": "富山県",
-        "city": "高岡市",
-        "address": "富山県高岡市蜂ヶ島131番地1",
-        "road": "国道8号",
-        "url": "https://www.michi-no-eki.jp/stations/view/464"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.8766877,
-          36.6894706
-        ]
-      },
-      "properties": {
-        "id": "16014",
-        "name": "道の駅メルヘンおやべ",
-        "prefecture": "富山県",
-        "city": "小矢部市",
-        "address": "富山県小矢部市桜町1535番地1",
-        "road": "国道8号",
-        "url": "https://www.michi-no-eki.jp/stations/view/465"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.041623,
-          36.814906
-        ]
-      },
-      "properties": {
-        "id": "16015",
-        "name": "道の駅雨晴",
-        "prefecture": "富山県",
-        "city": "高岡市",
-        "address": "富山県高岡市太田24番地74",
-        "road": "国道415号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14177"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.997631,
-          37.424166
-        ]
-      },
-      "properties": {
-        "id": "17001",
-        "name": "道の駅千枚田ポケットパーク",
-        "prefecture": "石川県",
-        "city": "輪島市",
-        "address": "石川県輪島市白米町ハ部99番地5",
-        "road": "国道249号",
-        "url": "https://www.michi-no-eki.jp/stations/view/466"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.724691,
-          36.786301
-        ]
-      },
-      "properties": {
-        "id": "17002",
-        "name": "道の駅高松",
-        "prefecture": "石川県",
-        "city": "かほく市",
-        "address": "石川県かほく市二ツ屋フ16番地3（里山館）|二ツ屋フ13番地1（里海館）",
-        "road": "石川県道60号",
-        "url": "https://www.michi-no-eki.jp/stations/view/467"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.0465297,
-          37.0288253
-        ]
-      },
-      "properties": {
-        "id": "17003",
-        "name": "道の駅いおり",
-        "prefecture": "石川県",
-        "city": "七尾市",
-        "address": "石川県七尾市庵町笹ヶ谷内3-1",
-        "road": "国道160号",
-        "url": "https://www.michi-no-eki.jp/stations/view/468"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.0112551,
-          37.3313915
-        ]
-      },
-      "properties": {
-        "id": "17004",
-        "name": "道の駅桜峠",
-        "prefecture": "石川県",
-        "city": "鳳珠郡能登町",
-        "address": "石川県鳳珠郡能登町字当目2-24-24",
-        "road": "石川県道57号",
-        "url": "https://www.michi-no-eki.jp/stations/view/469"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.630473,
-          36.436858
-        ]
-      },
-      "properties": {
-        "id": "17005",
-        "name": "道の駅しらやまさん",
-        "prefecture": "石川県",
-        "city": "能美市",
-        "address": "石川県能美市和佐谷町200",
-        "road": "国道157号",
-        "url": "https://www.michi-no-eki.jp/stations/view/470"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.863246,
-          37.130547
-        ]
-      },
-      "properties": {
-        "id": "17006",
-        "name": "道の駅なかじまロマン峠",
-        "prefecture": "石川県",
-        "city": "七尾市",
-        "address": "石川県七尾市中島町中島二部1番地19",
-        "road": "国道249号",
-        "url": "https://www.michi-no-eki.jp/stations/view/471"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.7094471,
-          37.2482394
-        ]
-      },
-      "properties": {
-        "id": "17007",
-        "name": "道の駅赤神",
-        "prefecture": "石川県",
-        "city": "輪島市",
-        "address": "石川県輪島市門前町赤神1の110番地",
-        "road": "国道249号",
-        "url": "https://www.michi-no-eki.jp/stations/view/472"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.724883,
-          37.140177
-        ]
-      },
-      "properties": {
-        "id": "17008",
-        "name": "道の駅とぎ海街道",
-        "prefecture": "石川県",
-        "city": "羽咋郡志賀町",
-        "address": "石川県羽咋郡志賀町富来領家町タの2の11番地",
-        "road": "国道249号",
-        "url": "https://www.michi-no-eki.jp/stations/view/473"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.905971,
-          37.388618
-        ]
-      },
-      "properties": {
-        "id": "17009",
-        "name": "道の駅輪島",
-        "prefecture": "石川県",
-        "city": "輪島市",
-        "address": "石川県輪島市河井町20部1番地131",
-        "road": "石川県道1号",
-        "url": "https://www.michi-no-eki.jp/stations/view/474"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.780021,
-          37.0068731
-        ]
-      },
-      "properties": {
-        "id": "17010",
-        "name": "道の駅ころ柿の里しか",
-        "prefecture": "石川県",
-        "city": "羽咋郡志賀町",
-        "address": "石川県羽咋郡志賀町末吉新保向10番地",
-        "road": "国道249号",
-        "url": "https://www.michi-no-eki.jp/stations/view/475"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.6493869,
-          36.2881213
-        ]
-      },
-      "properties": {
-        "id": "17011",
-        "name": "道の駅瀬女",
-        "prefecture": "石川県",
-        "city": "白山市",
-        "address": "石川県白山市瀬戸寅163番地1",
-        "road": "国道360号",
-        "url": "https://www.michi-no-eki.jp/stations/view/476"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.5990833,
-          36.3604418
-        ]
-      },
-      "properties": {
-        "id": "17012",
-        "name": "道の駅一向一揆の里",
-        "prefecture": "石川県",
-        "city": "白山市",
-        "address": "石川県白山市出合町甲36番地",
-        "road": "国道360号",
-        "url": "https://www.michi-no-eki.jp/stations/view/477"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.768516,
-          36.662745
-        ]
-      },
-      "properties": {
-        "id": "17014",
-        "name": "道の駅倶利伽羅_源平の郷",
-        "prefecture": "石川県",
-        "city": "河北郡津幡町",
-        "address": "石川県河北郡津幡町字竹橋西270番地",
-        "road": "石川県道215号",
-        "url": "https://www.michi-no-eki.jp/stations/view/479"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.3675157,
-          36.2377003
-        ]
-      },
-      "properties": {
-        "id": "17015",
-        "name": "道の駅山中温泉_ゆけむり健康村",
-        "prefecture": "石川県",
-        "city": "加賀市",
-        "address": "石川県加賀市山中温泉こおろぎ町イ19番地",
-        "road": "国道364号",
-        "url": "https://www.michi-no-eki.jp/stations/view/480"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.9982406,
-          37.1373588
-        ]
-      },
-      "properties": {
-        "id": "17016",
-        "name": "道の駅のとじま",
-        "prefecture": "石川県",
-        "city": "七尾市",
-        "address": "石川県七尾市能登島向田町122部14番地",
-        "road": "石川県道47号",
-        "url": "https://www.michi-no-eki.jp/stations/view/481"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.113786,
-          37.486335
-        ]
-      },
-      "properties": {
-        "id": "17017",
-        "name": "道の駅すず塩田村",
-        "prefecture": "石川県",
-        "city": "珠洲市",
-        "address": "石川県珠洲市清水町1部58番1",
-        "road": "国道249号",
-        "url": "https://www.michi-no-eki.jp/stations/view/482"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.648897,
-          36.6591958
-        ]
-      },
-      "properties": {
-        "id": "17018",
-        "name": "道の駅内灘サンセットパーク",
-        "prefecture": "石川県",
-        "city": "河北郡内灘町",
-        "address": "石川県河北郡内灘町字大学1丁目4番地1",
-        "road": "石川県道162号",
-        "url": "https://www.michi-no-eki.jp/stations/view/483"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.968984,
-          37.0489849
-        ]
-      },
-      "properties": {
-        "id": "17019",
-        "name": "道の駅能登食祭市場",
-        "prefecture": "石川県",
-        "city": "七尾市",
-        "address": "石川県七尾市府中町員外13番地1",
-        "road": "石川県道132号",
-        "url": "https://www.michi-no-eki.jp/stations/view/484"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.4623598,
-          36.3700059
-        ]
-      },
-      "properties": {
-        "id": "17020",
-        "name": "道の駅こまつ木場潟",
-        "prefecture": "石川県",
-        "city": "小松市",
-        "address": "石川県小松市蓮代寺町ケ2番2",
-        "road": "国道8号",
-        "url": "https://www.michi-no-eki.jp/stations/view/485"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.324423,
-          37.525975
-        ]
-      },
-      "properties": {
-        "id": "17021",
-        "name": "道の駅狼煙",
-        "prefecture": "石川県",
-        "city": "珠洲市",
-        "address": "石川県珠洲市狼煙町テ部11",
-        "road": "石川県道28号",
-        "url": "https://www.michi-no-eki.jp/stations/view/486"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.269964,
-          37.441561
-        ]
-      },
-      "properties": {
-        "id": "17022",
-        "name": "道の駅すずなり",
-        "prefecture": "石川県",
-        "city": "珠洲市",
-        "address": "石川県珠洲市野々江町シ部15番地",
-        "road": "石川県道12号",
-        "url": "https://www.michi-no-eki.jp/stations/view/487"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.904789,
-          36.969954
-        ]
-      },
-      "properties": {
-        "id": "17023",
-        "name": "道の駅織姫の里なかのと",
-        "prefecture": "石川県",
-        "city": "鹿島郡中能登町",
-        "address": "石川県鹿島郡中能登町井田ぬ部10番地1",
-        "road": "国道159号",
-        "url": "https://www.michi-no-eki.jp/stations/view/488"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.9056837,
-          37.2283748
-        ]
-      },
-      "properties": {
-        "id": "17024",
-        "name": "道の駅あなみず",
-        "prefecture": "石川県",
-        "city": "鳳珠郡穴水町",
-        "address": "石川県鳳珠郡穴水町字大町チ41番地6",
-        "road": "石川県道113号",
-        "url": "https://www.michi-no-eki.jp/stations/view/9739"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.768455,
-          36.886027
-        ]
-      },
-      "properties": {
-        "id": "17025",
-        "name": "道の駅のと千里浜",
-        "prefecture": "石川県",
-        "city": "羽咋市",
-        "address": "石川県羽咋市千里浜町タ1番地62",
-        "road": "市道羽咋3号線",
-        "url": "https://www.michi-no-eki.jp/stations/view/14144"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.553443,
-          36.506041
-        ]
-      },
-      "properties": {
-        "id": "17026",
-        "name": "道の駅めぐみ白山",
-        "prefecture": "石川県",
-        "city": "白山市",
-        "address": "石川県白山市宮丸町2183番地",
-        "road": "国道8号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14178"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.091944,
-          35.796725
-        ]
-      },
-      "properties": {
-        "id": "18001",
-        "name": "道の駅河野",
-        "prefecture": "福井県",
-        "city": "南条郡南越前町",
-        "address": "福井県南条郡南越前町大谷第119号86番地の1",
-        "road": "国道8号",
-        "url": "https://www.michi-no-eki.jp/stations/view/610"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.6614651,
-          35.904237
-        ]
-      },
-      "properties": {
-        "id": "18002",
-        "name": "道の駅九頭竜",
-        "prefecture": "福井県",
-        "city": "大野市",
-        "address": "福井県大野市朝日第26号30番地の1（和泉ふれあい会館）",
-        "road": "国道158号",
-        "url": "https://www.michi-no-eki.jp/stations/view/611"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.119514,
-          35.969483
-        ]
-      },
-      "properties": {
-        "id": "18003",
-        "name": "道の駅パークイン丹生ケ丘",
-        "prefecture": "福井県",
-        "city": "丹生郡越前町",
-        "address": "福井県丹生郡越前町上川去第45号1番地7",
-        "road": "国道417号",
-        "url": "https://www.michi-no-eki.jp/stations/view/612"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          135.5842232,
-          35.3946307
-        ]
-      },
-      "properties": {
-        "id": "18004",
-        "name": "道の駅名田庄",
-        "prefecture": "福井県",
-        "city": "大飯郡おおい町",
-        "address": "福井県大飯郡おおい町名田庄納田終第109号4番地1",
-        "road": "国道162号",
-        "url": "https://www.michi-no-eki.jp/stations/view/613"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.1390707,
-          36.1895672
-        ]
-      },
-      "properties": {
-        "id": "18005",
-        "name": "道の駅みくに",
-        "prefecture": "福井県",
-        "city": "坂井市",
-        "address": "福井県坂井市三国町山岸67-3-1",
-        "road": "国道305号",
-        "url": "https://www.michi-no-eki.jp/stations/view/614"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          135.906077,
-          35.440696
-        ]
-      },
-      "properties": {
-        "id": "18006",
-        "name": "道の駅若狭熊川宿",
-        "prefecture": "福井県",
-        "city": "三方上中郡若狭町",
-        "address": "福井県三方上中郡若狭町熊川第11号1番地1",
-        "road": "国道303号",
-        "url": "https://www.michi-no-eki.jp/stations/view/615"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.22097197,
-          36.1709701565
-        ]
-      },
-      "properties": {
-        "id": "18007",
-        "name": "道の駅さかい_(福井県)",
-        "prefecture": "福井県",
-        "city": "坂井市",
-        "address": "福井県坂井市坂井町蔵垣内第34号14番地1",
-        "road": "福井県道29号",
-        "url": "https://www.michi-no-eki.jp/stations/view/616"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          135.595496429,
-          35.4890515715
-        ]
-      },
-      "properties": {
-        "id": "18008",
-        "name": "道の駅シーサイド高浜",
-        "prefecture": "福井県",
-        "city": "大飯郡高浜町",
-        "address": "福井県大飯郡高浜町下車持第46号10番地1",
-        "road": "国道27号",
-        "url": "https://www.michi-no-eki.jp/stations/view/617"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          135.7630954,
-          35.4919688
-        ]
-      },
-      "properties": {
-        "id": "18009",
-        "name": "道の駅若狭おばま",
-        "prefecture": "福井県",
-        "city": "小浜市",
-        "address": "福井県小浜市和久里第24号45番2",
-        "road": "福井県道24号",
-        "url": "https://www.michi-no-eki.jp/stations/view/618"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          135.6299804,
-          35.4812687
-        ]
-      },
-      "properties": {
-        "id": "18010",
-        "name": "道の駅うみんぴあ大飯",
-        "prefecture": "福井県",
-        "city": "大飯郡おおい町",
-        "address": "福井県大飯郡おおい町成海第1号1番地2",
-        "road": "国道27号",
-        "url": "https://www.michi-no-eki.jp/stations/view/619"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.180677319,
-          35.9486607158
-        ]
-      },
-      "properties": {
-        "id": "18011",
-        "name": "道の駅西山公園",
-        "prefecture": "福井県",
-        "city": "鯖江市",
-        "address": "福井県鯖江市桜町3丁目950番",
-        "road": "国道417号",
-        "url": "https://www.michi-no-eki.jp/stations/view/620"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          135.997047,
-          35.91988
-        ]
-      },
-      "properties": {
-        "id": "18012",
-        "name": "道の駅越前",
-        "prefecture": "福井県",
-        "city": "丹生郡越前町",
-        "address": "福井県丹生郡越前町厨第71号335番地1",
-        "road": "国道305号",
-        "url": "https://www.michi-no-eki.jp/stations/view/621"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          135.894361,
-          35.56019
-        ]
-      },
-      "properties": {
-        "id": "18013",
-        "name": "道の駅三方五湖",
-        "prefecture": "福井県",
-        "city": "三方上中郡若狭町",
-        "address": "福井県三方上中郡若狭町鳥浜第122号31番地1",
-        "road": "国道162号",
-        "url": "https://www.michi-no-eki.jp/stations/view/622"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.29458,
-          36.020564
-        ]
-      },
-      "properties": {
-        "id": "18014",
-        "name": "道の駅一乗谷あさくら水の駅",
-        "prefecture": "福井県",
-        "city": "福井市",
-        "address": "福井県福井市安波賀中島町第1号1番地1",
-        "road": "福井県道31号",
-        "url": "https://www.michi-no-eki.jp/stations/view/623"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.3986545,
-          36.0800489
-        ]
-      },
-      "properties": {
-        "id": "18015",
-        "name": "道の駅禅の里",
-        "prefecture": "福井県",
-        "city": "吉田郡永平寺町",
-        "address": "福井県吉田郡永平寺町清水第2号21番1",
-        "road": "国道416号",
-        "url": "https://www.michi-no-eki.jp/stations/view/9740"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19151"
       }
     },
     {
@@ -9340,13 +6889,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "19001",
+        "id": "19152",
         "name": "道の駅とみざわ",
         "prefecture": "山梨県",
         "city": "南巨摩郡南部町",
         "address": "山梨県南巨摩郡南部町福士28507-1",
-        "road": "国道52号",
-        "url": "https://www.michi-no-eki.jp/stations/view/368"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19152"
       }
     },
     {
@@ -9359,13 +6908,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "19002",
+        "id": "19153",
         "name": "道の駅甲斐大和",
         "prefecture": "山梨県",
         "city": "甲州市",
-        "address": "山梨県甲州市大和町初鹿野2248番地",
-        "road": "国道20号",
-        "url": "https://www.michi-no-eki.jp/stations/view/369"
+        "address": "山梨県甲州市大和町初鹿野2248",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19153"
       }
     },
     {
@@ -9373,18 +6922,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          138.698504,
-          35.480152
+          138.6920392,
+          35.4778049
         ]
       },
       "properties": {
-        "id": "19003",
+        "id": "19154",
         "name": "道の駅なるさわ",
         "prefecture": "山梨県",
-        "city": "南都留郡鳴沢村",
+        "city": "鳴沢村",
         "address": "山梨県南都留郡鳴沢村字ジラゴンノ8532-63",
-        "road": "国道139号",
-        "url": "https://www.michi-no-eki.jp/stations/view/370"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19154"
       }
     },
     {
@@ -9392,18 +6941,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          138.7552499,
-          35.8625522
+          138.7560582,
+          35.8590657
         ]
       },
       "properties": {
-        "id": "19004",
+        "id": "19155",
         "name": "道の駅みとみ",
         "prefecture": "山梨県",
         "city": "山梨市",
         "address": "山梨県山梨市三富川浦1822-1",
-        "road": "国道140号",
-        "url": "https://www.michi-no-eki.jp/stations/view/371"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19155"
       }
     },
     {
@@ -9411,18 +6960,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          138.512894,
-          35.469985
+          138.5128940,
+          35.4699850
         ]
       },
       "properties": {
-        "id": "19005",
+        "id": "19156",
         "name": "道の駅しもべ",
         "prefecture": "山梨県",
         "city": "南巨摩郡身延町",
         "address": "山梨県南巨摩郡身延町古関字大境4321",
-        "road": "国道300号",
-        "url": "https://www.michi-no-eki.jp/stations/view/372"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19156"
       }
     },
     {
@@ -9435,13 +6984,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "19006",
+        "id": "19157",
         "name": "道の駅とよとみ",
         "prefecture": "山梨県",
         "city": "中央市",
         "address": "山梨県中央市浅利1010-1",
-        "road": "国道140号",
-        "url": "https://www.michi-no-eki.jp/stations/view/373"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19157"
       }
     },
     {
@@ -9454,13 +7003,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "19007",
+        "id": "19158",
         "name": "道の駅にらさき",
         "prefecture": "山梨県",
         "city": "韮崎市",
-        "address": "山梨県韮崎市中田町中條1795",
-        "road": "国道141号",
-        "url": "https://www.michi-no-eki.jp/stations/view/374"
+        "address": "山梨県韮崎市中田町中条1795",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19158"
       }
     },
     {
@@ -9468,18 +7017,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          138.989848,
-          35.503387
+          138.9898480,
+          35.5033870
         ]
       },
       "properties": {
-        "id": "19008",
+        "id": "19159",
         "name": "道の駅どうし",
         "prefecture": "山梨県",
-        "city": "南都留郡道志村",
-        "address": "山梨県南都留郡道志村9745番地",
-        "road": "国道413号",
-        "url": "https://www.michi-no-eki.jp/stations/view/375"
+        "city": "道志村",
+        "address": "山梨県南都留郡道志村9745",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19159"
       }
     },
     {
@@ -9492,13 +7041,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "19009",
+        "id": "19160",
         "name": "道の駅かつやま",
         "prefecture": "山梨県",
         "city": "南都留郡富士河口湖町",
         "address": "山梨県南都留郡富士河口湖町勝山3758",
-        "road": "山梨県道710号",
-        "url": "https://www.michi-no-eki.jp/stations/view/376"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19160"
       }
     },
     {
@@ -9511,13 +7060,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "19010",
+        "id": "19161",
         "name": "道の駅花かげの郷まきおか",
         "prefecture": "山梨県",
         "city": "山梨市",
         "address": "山梨県山梨市牧丘町室伏2120",
-        "road": "国道140号",
-        "url": "https://www.michi-no-eki.jp/stations/view/377"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19161"
       }
     },
     {
@@ -9530,13 +7079,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "19011",
+        "id": "19162",
         "name": "道の駅はくしゅう",
         "prefecture": "山梨県",
         "city": "北杜市",
         "address": "山梨県北杜市白州町白須1308",
-        "road": "国道20号",
-        "url": "https://www.michi-no-eki.jp/stations/view/378"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19162"
       }
     },
     {
@@ -9549,13 +7098,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "19012",
+        "id": "19163",
         "name": "道の駅富士吉田",
         "prefecture": "山梨県",
         "city": "富士吉田市",
-        "address": "山梨県富士吉田市新屋1936-6",
-        "road": "国道138号",
-        "url": "https://www.michi-no-eki.jp/stations/view/379"
+        "address": "山梨県富士吉田市新屋3-7-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19163"
       }
     },
     {
@@ -9568,13 +7117,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "19013",
+        "id": "19164",
         "name": "道の駅南きよさと",
         "prefecture": "山梨県",
         "city": "北杜市",
         "address": "山梨県北杜市高根町長沢760",
-        "road": "国道141号",
-        "url": "https://www.michi-no-eki.jp/stations/view/380"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19164"
       }
     },
     {
@@ -9582,18 +7131,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          138.471159,
+          138.4711590,
           35.6380315
         ]
       },
       "properties": {
-        "id": "19014",
+        "id": "19165",
         "name": "道の駅しらね",
         "prefecture": "山梨県",
         "city": "南アルプス市",
         "address": "山梨県南アルプス市在家塚595-1",
-        "road": "国道52号",
-        "url": "https://www.michi-no-eki.jp/stations/view/381"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19165"
       }
     },
     {
@@ -9606,13 +7155,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "19015",
+        "id": "19166",
         "name": "道の駅こぶちさわ",
         "prefecture": "山梨県",
         "city": "北杜市",
         "address": "山梨県北杜市小淵沢町2968-1",
-        "road": "山梨県道11号北杜富士見線",
-        "url": "https://www.michi-no-eki.jp/stations/view/382"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19166"
       }
     },
     {
@@ -9620,18 +7169,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          138.437249,
-          35.418592
+          138.4372490,
+          35.4185920
         ]
       },
       "properties": {
-        "id": "19016",
+        "id": "19167",
         "name": "道の駅みのぶ",
         "prefecture": "山梨県",
         "city": "南巨摩郡身延町",
-        "address": "山梨県南巨摩郡身延町下山1597富士川クラフトパーク内",
-        "road": "山梨県道37号",
-        "url": "https://www.michi-no-eki.jp/stations/view/383"
+        "address": "山梨県南巨摩郡身延町下山1597 富士川クラフトパーク内",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19167"
       }
     },
     {
@@ -9639,18 +7188,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          138.923819,
-          35.78926
+          138.9238190,
+          35.7892600
         ]
       },
       "properties": {
-        "id": "19017",
+        "id": "19168",
         "name": "道の駅たばやま",
         "prefecture": "山梨県",
         "city": "北都留郡丹波山村",
         "address": "山梨県北都留郡丹波山村2901",
-        "road": "国道411号",
-        "url": "https://www.michi-no-eki.jp/stations/view/384"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19168"
       }
     },
     {
@@ -9658,18 +7207,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          138.472064,
-          35.557015
+          138.4720640,
+          35.5570150
         ]
       },
       "properties": {
-        "id": "19018",
+        "id": "19169",
         "name": "道の駅富士川",
         "prefecture": "山梨県",
         "city": "南巨摩郡富士川町",
         "address": "山梨県南巨摩郡富士川町青柳町1655-3",
-        "road": "国道52号|富士川町道青柳横通り線",
-        "url": "https://www.michi-no-eki.jp/stations/view/385"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19169"
       }
     },
     {
@@ -9677,18 +7226,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          138.949946,
-          35.75396
+          138.9499460,
+          35.7539600
         ]
       },
       "properties": {
-        "id": "19019",
+        "id": "19170",
         "name": "道の駅こすげ",
         "prefecture": "山梨県",
-        "city": "北都留郡小菅村",
+        "city": "小菅村",
         "address": "山梨県北都留郡小菅村3445",
-        "road": "村道大久保4号",
-        "url": "https://www.michi-no-eki.jp/stations/view/386"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19170"
       }
     },
     {
@@ -9696,56 +7245,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          138.931227,
-          35.582917
+          138.0527420,
+          36.5854170
         ]
       },
       "properties": {
-        "id": "19020",
-        "name": "道の駅つる",
-        "prefecture": "山梨県",
-        "city": "都留市",
-        "address": "山梨県都留市大原88番地",
-        "road": "市道大原線",
-        "url": "https://www.michi-no-eki.jp/stations/view/11978"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.446941,
-          35.306755
-        ]
-      },
-      "properties": {
-        "id": "19021",
-        "name": "道の駅なんぶ",
-        "prefecture": "山梨県",
-        "city": "南巨摩郡南部町",
-        "address": "山梨県南巨摩郡南部町中野3034-1",
-        "road": "国道52号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14174"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.052742,
-          36.585417
-        ]
-      },
-      "properties": {
-        "id": "20001",
+        "id": "19171",
         "name": "道の駅信州新町",
         "prefecture": "長野県",
         "city": "長野市",
-        "address": "長野県長野市信州新町水内4619番地",
-        "road": "国道19号",
-        "url": "https://www.michi-no-eki.jp/stations/view/387"
+        "address": "長野県長野市信州新町水内4619",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19171"
       }
     },
     {
@@ -9758,13 +7269,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "20002",
+        "id": "19172",
         "name": "道の駅長野市大岡特産センター",
         "prefecture": "長野県",
         "city": "長野市",
-        "address": "長野県長野市大岡甲5275番地1",
-        "road": "国道19号",
-        "url": "https://www.michi-no-eki.jp/stations/view/388"
+        "address": "長野県長野市大岡甲5275-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19172"
       }
     },
     {
@@ -9777,13 +7288,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "20003",
+        "id": "19173",
         "name": "道の駅信越さかえ",
         "prefecture": "長野県",
-        "city": "下水内郡栄村",
+        "city": "栄村",
         "address": "長野県下水内郡栄村大字北信3746-1",
-        "road": "国道117号",
-        "url": "https://www.michi-no-eki.jp/stations/view/389"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19173"
       }
     },
     {
@@ -9796,13 +7307,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "20004",
+        "id": "19174",
         "name": "道の駅小坂田公園",
         "prefecture": "長野県",
         "city": "塩尻市",
-        "address": "長野県塩尻市大字塩尻町1090番地",
-        "road": "国道20号",
-        "url": "https://www.michi-no-eki.jp/stations/view/390"
+        "address": "長野県塩尻市大字塩尻町1090",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19174"
       }
     },
     {
@@ -9815,13 +7326,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "20005",
+        "id": "19175",
         "name": "道の駅池田",
         "prefecture": "長野県",
-        "city": "北安曇郡池田町",
+        "city": "池田町",
         "address": "長野県北安曇郡池田町大字会染6330-1",
-        "road": "長野県道51号",
-        "url": "https://www.michi-no-eki.jp/stations/view/391"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19175"
       }
     },
     {
@@ -9834,13 +7345,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "20006",
+        "id": "19176",
         "name": "道の駅中条",
         "prefecture": "長野県",
         "city": "長野市",
-        "address": "長野県長野市中条住良木1704番地",
-        "road": "長野県道31号",
-        "url": "https://www.michi-no-eki.jp/stations/view/392"
+        "address": "長野県長野市中条住良木1704",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19176"
       }
     },
     {
@@ -9853,13 +7364,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "20007",
+        "id": "19177",
         "name": "道の駅みまき",
         "prefecture": "長野県",
         "city": "東御市",
         "address": "長野県東御市布下35-4",
-        "road": "長野県道40号",
-        "url": "https://www.michi-no-eki.jp/stations/view/393"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19177"
       }
     },
     {
@@ -9868,17 +7379,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           137.8473274,
-          36.65359
+          36.6535900
         ]
       },
       "properties": {
-        "id": "20008",
+        "id": "19178",
         "name": "道の駅白馬",
         "prefecture": "長野県",
-        "city": "北安曇郡白馬村",
-        "address": "長野県北安曇郡白馬村大字神城21462番地1",
-        "road": "国道148号",
-        "url": "https://www.michi-no-eki.jp/stations/view/394"
+        "city": "白馬村",
+        "address": "長野県北安曇郡白馬村大字神城21462",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19178"
       }
     },
     {
@@ -9886,18 +7397,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          138.322324,
+          138.3223240,
           36.8005161
         ]
       },
       "properties": {
-        "id": "20009",
+        "id": "19179",
         "name": "道の駅ふるさと豊田",
         "prefecture": "長野県",
         "city": "中野市",
         "address": "長野県中野市大字永江2136",
-        "road": "国道117号",
-        "url": "https://www.michi-no-eki.jp/stations/view/395"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19179"
       }
     },
     {
@@ -9910,13 +7421,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "20010",
+        "id": "19180",
         "name": "道の駅マルメロの駅ながと",
         "prefecture": "長野県",
         "city": "小県郡長和町",
-        "address": "長野県小県郡長和町古町2424番地19",
-        "road": "国道152号",
-        "url": "https://www.michi-no-eki.jp/stations/view/396"
+        "address": "長野県小県郡長和町古町2424-19",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19180"
       }
     },
     {
@@ -9929,13 +7440,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "20011",
+        "id": "19181",
         "name": "道の駅ほっとぱ～く・浅科",
         "prefecture": "長野県",
         "city": "佐久市",
-        "address": "長野県佐久市甲2177番地1",
-        "road": "国道142号",
-        "url": "https://www.michi-no-eki.jp/stations/view/397"
+        "address": "384－2104 長野県佐久市甲2177-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19181"
       }
     },
     {
@@ -9943,18 +7454,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          137.87772,
+          137.8777200,
           36.2934956
         ]
       },
       "properties": {
-        "id": "20012",
-        "name": "道の駅アルプス安曇野ほりがねの里",
-        "prefecture": "長野県",
-        "city": "安曇野市",
-        "address": "長野県安曇野市堀金烏川2696番地",
-        "road": "長野県道57号",
-        "url": "https://www.michi-no-eki.jp/stations/view/398"
+        "id": "19182",
+        "name": "道の駅アルプス安曇野 ほりがねの里",
+        "prefecture": "アルプス安曇野　ほりがねの里",
+        "city": "",
+        "address": "長野県安曇野市堀金烏川2696",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19182"
       }
     },
     {
@@ -9962,18 +7473,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          137.867643,
-          36.396278
+          137.8676430,
+          36.3962780
         ]
       },
       "properties": {
-        "id": "20013",
+        "id": "19183",
         "name": "道の駅安曇野松川",
         "prefecture": "長野県",
         "city": "北安曇郡松川村",
-        "address": "長野県北安曇郡松川村細野5375番地1",
-        "road": "長野県道306号",
-        "url": "https://www.michi-no-eki.jp/stations/view/399"
+        "address": "長野県北安曇郡松川村細野5375-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19183"
       }
     },
     {
@@ -9986,13 +7497,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "20014",
+        "id": "19184",
         "name": "道の駅風穴の里",
         "prefecture": "長野県",
         "city": "松本市",
-        "address": "長野県松本市安曇3528番地1",
-        "road": "国道158号",
-        "url": "https://www.michi-no-eki.jp/stations/view/400"
+        "address": "長野県松本市安曇3528-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19184"
       }
     },
     {
@@ -10005,13 +7516,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "20015",
+        "id": "19185",
         "name": "道の駅北信州やまのうち",
         "prefecture": "長野県",
-        "city": "下高井郡山ノ内町",
-        "address": "長野県下高井郡山ノ内町大字佐野393番地2",
-        "road": "国道292号",
-        "url": "https://www.michi-no-eki.jp/stations/view/401"
+        "city": "山ノ内町",
+        "address": "長野県下高井郡山ノ内町大字佐野393-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19185"
       }
     },
     {
@@ -10019,18 +7530,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          138.205586,
-          36.407122
+          138.2055860,
+          36.4071220
         ]
       },
       "properties": {
-        "id": "20016",
-        "name": "道の駅上田道と川の駅",
+        "id": "19186",
+        "name": "道の駅上田 道と川の駅",
         "prefecture": "長野県",
-        "city": "上田市",
-        "address": "長野県上田市大字小泉字塩田川原2575-2",
-        "road": "国道18号",
-        "url": "https://www.michi-no-eki.jp/stations/view/402"
+        "city": "東信地域",
+        "address": "長野県上田市小泉字塩田川原2575-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19186"
       }
     },
     {
@@ -10043,13 +7554,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "20017",
+        "id": "19187",
         "name": "道の駅信州蔦木宿",
         "prefecture": "長野県",
-        "city": "諏訪郡富士見町",
-        "address": "長野県諏訪郡富士見町落合1984番地1",
-        "road": "国道20号",
-        "url": "https://www.michi-no-eki.jp/stations/view/403"
+        "city": "富士見町",
+        "address": "長野県諏訪郡富士見町落合1984-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19187"
       }
     },
     {
@@ -10062,13 +7573,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "20018",
+        "id": "19188",
         "name": "道の駅しなの",
         "prefecture": "長野県",
-        "city": "上水内郡信濃町",
-        "address": "長野県上水内郡信濃町大字柏原1260番地4",
-        "road": "国道18号",
-        "url": "https://www.michi-no-eki.jp/stations/view/404"
+        "city": "信濃町",
+        "address": "長野県上水内郡信濃町大字柏原1260-4",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19188"
       }
     },
     {
@@ -10081,13 +7592,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "20019",
+        "id": "19189",
         "name": "道の駅小谷",
         "prefecture": "長野県",
-        "city": "北安曇郡小谷村",
-        "address": "長野県北安曇郡小谷村大字北小谷1861-1",
-        "road": "国道148号",
-        "url": "https://www.michi-no-eki.jp/stations/view/405"
+        "city": "小谷村",
+        "address": "長野県北安曇郡小谷村大宇北小谷1861-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19189"
       }
     },
     {
@@ -10100,13 +7611,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "20020",
+        "id": "19190",
         "name": "道の駅さかきた",
         "prefecture": "長野県",
-        "city": "東筑摩郡筑北村",
-        "address": "長野県東筑摩郡筑北村坂北4340番地",
-        "road": "国道403号",
-        "url": "https://www.michi-no-eki.jp/stations/view/406"
+        "city": "筑北村",
+        "address": "長野県東筑摩郡筑北村坂北4340",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19190"
       }
     },
     {
@@ -10114,18 +7625,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          137.895563,
+          137.8955630,
           36.6053378
         ]
       },
       "properties": {
-        "id": "20021",
+        "id": "19191",
         "name": "道の駅ぽかぽかランド美麻",
         "prefecture": "長野県",
         "city": "大町市",
         "address": "長野県大町市美麻16784",
-        "road": "長野県道31号",
-        "url": "https://www.michi-no-eki.jp/stations/view/407"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19191"
       }
     },
     {
@@ -10134,17 +7645,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           138.2948649,
-          36.689123
+          36.6891230
         ]
       },
       "properties": {
-        "id": "20022",
+        "id": "19192",
         "name": "道の駅オアシスおぶせ",
         "prefecture": "長野県",
-        "city": "上高井郡小布施町",
+        "city": "小布施町",
         "address": "長野県上高井郡小布施町大字大島601",
-        "road": "長野県道343号",
-        "url": "https://www.michi-no-eki.jp/stations/view/408"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19192"
       }
     },
     {
@@ -10157,13 +7668,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "20023",
+        "id": "19193",
         "name": "道の駅雷電くるみの里",
         "prefecture": "長野県",
         "city": "東御市",
         "address": "長野県東御市滋野乙4524-1",
-        "road": "長野県道79号",
-        "url": "https://www.michi-no-eki.jp/stations/view/409"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19193"
       }
     },
     {
@@ -10176,13 +7687,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "20024",
-        "name": "道の駅花の駅_千曲川",
+        "id": "19194",
+        "name": "道の駅花の駅 千曲川",
         "prefecture": "長野県",
         "city": "飯山市",
-        "address": "長野県飯山市大字常盤7425番地",
-        "road": "国道117号",
-        "url": "https://www.michi-no-eki.jp/stations/view/410"
+        "address": "長野県飯山市大字常盤7425",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19194"
       }
     },
     {
@@ -10190,227 +7701,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          138.140884,
-          36.372865
+          138.1408840,
+          36.3728650
         ]
       },
       "properties": {
-        "id": "20025",
+        "id": "19195",
         "name": "道の駅あおき",
         "prefecture": "長野県",
-        "city": "小県郡青木村",
-        "address": "長野県小県郡青木村大字村松字大沖29-1",
-        "road": "国道143号",
-        "url": "https://www.michi-no-eki.jp/stations/view/411"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.7400334,
-          35.8664703
-        ]
-      },
-      "properties": {
-        "id": "20026",
-        "name": "道の駅日義木曽駒高原",
-        "prefecture": "長野県",
-        "city": "木曽郡木曽町",
-        "address": "長野県木曽郡木曽町日義4730-3",
-        "road": "国道19号",
-        "url": "https://www.michi-no-eki.jp/stations/view/489"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.653467,
-          35.6820939
-        ]
-      },
-      "properties": {
-        "id": "20027",
-        "name": "道の駅大桑",
-        "prefecture": "長野県",
-        "city": "木曽郡大桑村",
-        "address": "長野県木曽郡大桑村大字野尻160-27",
-        "road": "国道19号",
-        "url": "https://www.michi-no-eki.jp/stations/view/490"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.814405,
-          35.965946
-        ]
-      },
-      "properties": {
-        "id": "20028",
-        "name": "道の駅奈良井木曽の大橋",
-        "prefecture": "長野県",
-        "city": "塩尻市",
-        "address": "長野県塩尻市大字奈良井1346の3",
-        "road": "国道19号",
-        "url": "https://www.michi-no-eki.jp/stations/view/491"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.631746,
-          35.324356
-        ]
-      },
-      "properties": {
-        "id": "20029",
-        "name": "道の駅信州平谷",
-        "prefecture": "長野県",
-        "city": "下伊那郡平谷村",
-        "address": "長野県下伊那郡平谷村252",
-        "road": "国道153号",
-        "url": "https://www.michi-no-eki.jp/stations/view/493"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.7942491,
-          35.4171252
-        ]
-      },
-      "properties": {
-        "id": "20030",
-        "name": "道の駅信濃路下條",
-        "prefecture": "長野県",
-        "city": "下伊那郡下條村",
-        "address": "長野県下伊那郡下條村睦沢2514-2",
-        "road": "国道151号",
-        "url": "https://www.michi-no-eki.jp/stations/view/494"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.0837089,
-          35.809814
-        ]
-      },
-      "properties": {
-        "id": "20031",
-        "name": "道の駅南アルプスむら長谷",
-        "prefecture": "長野県",
-        "city": "伊那市",
-        "address": "長野県伊那市長谷非持1400番地",
-        "road": "国道152号",
-        "url": "https://www.michi-no-eki.jp/stations/view/495"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.8419591,
-          35.9862023
-        ]
-      },
-      "properties": {
-        "id": "20032",
-        "name": "道の駅木曽ならかわ",
-        "prefecture": "長野県",
-        "city": "塩尻市",
-        "address": "長野塩尻市大字木曽平沢2272-7",
-        "road": "国道19号",
-        "url": "https://www.michi-no-eki.jp/stations/view/496"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.6480735,
-          35.8225594
-        ]
-      },
-      "properties": {
-        "id": "20033",
-        "name": "道の駅三岳",
-        "prefecture": "長野県",
-        "city": "木曽郡木曽町",
-        "address": "長野県木曽郡木曽町三岳10491-9",
-        "road": "長野県道20号",
-        "url": "https://www.michi-no-eki.jp/stations/view/497"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.745387,
-          35.257481
-        ]
-      },
-      "properties": {
-        "id": "20034",
-        "name": "道の駅信州新野千石平",
-        "prefecture": "長野県",
-        "city": "下伊那郡阿南町",
-        "address": "長野県下伊那郡阿南町新野2700",
-        "road": "国道151号",
-        "url": "https://www.michi-no-eki.jp/stations/view/498"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.9100456,
-          35.6620051
-        ]
-      },
-      "properties": {
-        "id": "20035",
-        "name": "道の駅花の里いいじま",
-        "prefecture": "長野県",
-        "city": "上伊那郡飯島町",
-        "address": "長野県上伊那郡飯島町七久保2252",
-        "road": "長野県道15号",
-        "url": "https://www.michi-no-eki.jp/stations/view/499"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.9309442,
-          35.3213462
-        ]
-      },
-      "properties": {
-        "id": "20036",
-        "name": "道の駅遠山郷",
-        "prefecture": "長野県",
-        "city": "飯田市",
-        "address": "長野県飯田市南信濃和田456",
-        "road": "国道152号",
-        "url": "https://www.michi-no-eki.jp/stations/view/500"
+        "city": "青木村",
+        "address": "長野県小県郡青木村大字村松26-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19195"
       }
     },
     {
@@ -10423,13 +7725,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "20037",
+        "id": "19196",
         "name": "道の駅おがわ",
         "prefecture": "長野県",
-        "city": "上水内郡小川村",
-        "address": "長野県上水内郡小川村大字高府1502番地2",
-        "road": "長野県道31号",
-        "url": "https://www.michi-no-eki.jp/stations/view/412"
+        "city": "小川村",
+        "address": "長野県上水内郡小川村大字高府1502-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19196"
       }
     },
     {
@@ -10442,13 +7744,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "20038",
+        "id": "19197",
         "name": "道の駅美ヶ原高原",
         "prefecture": "長野県",
         "city": "上田市",
         "address": "長野県上田市武石上本入2085-70",
-        "road": "長野県道464号",
-        "url": "https://www.michi-no-eki.jp/stations/view/413"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19197"
       }
     },
     {
@@ -10457,17 +7759,1651 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           137.9027543,
-          36.148281
+          36.1482810
         ]
       },
       "properties": {
-        "id": "20039",
-        "name": "道の駅今井_恵みの里",
+        "id": "19198",
+        "name": "道の駅今井 恵みの里",
+        "prefecture": "今井　恵みの里",
+        "city": "",
+        "address": "長野県松本市大字今井886-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19198"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.2230100,
+          37.9579110
+        ]
+      },
+      "properties": {
+        "id": "19199",
+        "name": "道の駅豊栄",
+        "prefecture": "新潟県",
+        "city": "新潟市",
+        "address": "新潟県新潟市北区木崎字切尾山3644-乙",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19199"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.3724223,
+          38.0023437
+        ]
+      },
+      "properties": {
+        "id": "19200",
+        "name": "道の駅加治川",
+        "prefecture": "新潟県",
+        "city": "新発田市",
+        "address": "新潟県新発田市横岡1147",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19200"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4610655,
+          38.1724825
+        ]
+      },
+      "properties": {
+        "id": "19201",
+        "name": "道の駅神林",
+        "prefecture": "新潟県",
+        "city": "村上市",
+        "address": "新潟県村上市九日市809",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19201"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5224236,
+          38.2821299
+        ]
+      },
+      "properties": {
+        "id": "19202",
+        "name": "道の駅朝日",
+        "prefecture": "新潟県",
+        "city": "村上市",
+        "address": "新潟県村上市猿沢1215",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19202"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.0202120,
+          37.8663450
+        ]
+      },
+      "properties": {
+        "id": "19203",
+        "name": "道の駅新潟ふるさと村",
+        "prefecture": "新潟県",
+        "city": "新潟市",
+        "address": "新潟県新潟市西区山田2307",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19203"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0037750,
+          37.1135660
+        ]
+      },
+      "properties": {
+        "id": "19204",
+        "name": "道の駅能生",
+        "prefecture": "新潟県",
+        "city": "糸魚川市",
+        "address": "新潟県糸魚川市大字能生小泊3596-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19204"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.3600965,
+          37.7177569
+        ]
+      },
+      "properties": {
+        "id": "19205",
+        "name": "道の駅みかわ",
+        "prefecture": "新潟県",
+        "city": "阿賀町",
+        "address": "新潟県東蒲原郡阿賀町岩谷2865",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19205"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5670010,
+          38.0914730
+        ]
+      },
+      "properties": {
+        "id": "19206",
+        "name": "道の駅関川",
+        "prefecture": "新潟県",
+        "city": "関川村",
+        "address": "新潟県岩船郡関川村大字上関1252-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19206"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.8229080,
+          37.3051430
+        ]
+      },
+      "properties": {
+        "id": "19207",
+        "name": "道の駅ちぢみの里おぢや",
+        "prefecture": "新潟県",
+        "city": "小千谷市",
+        "address": "新潟県小千谷市稗生甲1670-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19207"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.3071892,
+          37.7380141
+        ]
+      },
+      "properties": {
+        "id": "19208",
+        "name": "道の駅阿賀の里",
+        "prefecture": "新潟県",
+        "city": "阿賀町",
+        "address": "新潟県東蒲原郡阿賀町石間4301",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19208"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4585211,
+          38.3751788
+        ]
+      },
+      "properties": {
+        "id": "19209",
+        "name": "道の駅笹川流れ",
+        "prefecture": "新潟県",
+        "city": "村上市",
+        "address": "新潟県村上市桑川891-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19209"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.6787088,
+          37.5388864
+        ]
+      },
+      "properties": {
+        "id": "19210",
+        "name": "道の駅越後出雲崎 天領の里",
+        "prefecture": "越後出雲崎　天領の里",
+        "city": "",
+        "address": "新潟県三島郡出雲崎町大字尼瀬6-57",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19210"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4529738,
+          38.0634898
+        ]
+      },
+      "properties": {
+        "id": "19211",
+        "name": "道の駅胎内",
+        "prefecture": "新潟県",
+        "city": "胎内市",
+        "address": "新潟県胎内市下赤谷387-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19211"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.9830342,
+          37.2238403
+        ]
+      },
+      "properties": {
+        "id": "19212",
+        "name": "道の駅ゆのたに",
+        "prefecture": "新潟県",
+        "city": "魚沼市",
+        "address": "新潟県魚沼市吉田1144",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19212"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.7590595,
+          37.5816068
+        ]
+      },
+      "properties": {
+        "id": "19213",
+        "name": "道の駅良寛の里 わしま",
+        "prefecture": "良寛の里　わしま",
+        "city": "",
+        "address": "新潟県長岡市島崎5713-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19213"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.6138286,
+          37.1326116
+        ]
+      },
+      "properties": {
+        "id": "19214",
+        "name": "道の駅まつだいふるさと会館",
+        "prefecture": "新潟県",
+        "city": "十日町市",
+        "address": "新潟県十日町市松代3816",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19214"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6447650,
+          36.9799820
+        ]
+      },
+      "properties": {
+        "id": "19215",
+        "name": "道の駅越後市振の関",
+        "prefecture": "新潟県",
+        "city": "糸魚川市",
+        "address": "新潟県糸魚川市大字市振1035-50",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19215"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.7613790,
+          37.1384419
+        ]
+      },
+      "properties": {
+        "id": "19216",
+        "name": "道の駅クロス10十日町",
+        "prefecture": "新潟県",
+        "city": "十日町市",
+        "address": "新潟県十日町市本町六の1-71-26",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19216"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.1020031,
+          37.5418094
+        ]
+      },
+      "properties": {
+        "id": "19217",
+        "name": "道の駅漢学の里しただ",
+        "prefecture": "新潟県",
+        "city": "三条市",
+        "address": "新潟県三条市大字庭月451-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19217"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.4899212,
+          37.3465151
+        ]
+      },
+      "properties": {
+        "id": "19218",
+        "name": "道の駅風の丘米山（本館のみリニューアルのため休止中）",
+        "prefecture": "新潟県",
+        "city": "柏崎市",
+        "address": "新潟県柏崎市大字青海川175-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19218"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.0572440,
+          37.3559210
+        ]
+      },
+      "properties": {
+        "id": "19219",
+        "name": "道の駅いりひろせ",
+        "prefecture": "新潟県",
+        "city": "魚沼市",
+        "address": "新潟県魚沼市大栃山356-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19219"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.6621316,
+          37.4506748
+        ]
+      },
+      "properties": {
+        "id": "19220",
+        "name": "道の駅西山ふるさと公苑",
+        "prefecture": "新潟県",
+        "city": "柏崎市",
+        "address": "新潟県柏崎市西山町坂田717-4",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19220"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2258864,
+          37.0261176
+        ]
+      },
+      "properties": {
+        "id": "19221",
+        "name": "道の駅あらい",
+        "prefecture": "新潟県",
+        "city": "妙高市",
+        "address": "新潟県妙高市大字猪野山58-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19221"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.0072657,
+          37.4595997
+        ]
+      },
+      "properties": {
+        "id": "19222",
+        "name": "道の駅R290とちお",
+        "prefecture": "新潟県",
+        "city": "長岡市",
+        "address": "新潟県長岡市栃尾宮沢1764",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19222"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.4362432,
+          38.0836587
+        ]
+      },
+      "properties": {
+        "id": "19223",
+        "name": "道の駅あいぽーと佐渡",
+        "prefecture": "新潟県",
+        "city": "佐渡市",
+        "address": "952－0011 新潟県佐渡市両津夷384-11",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19223"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.7302840,
+          37.0031567
+        ]
+      },
+      "properties": {
+        "id": "19224",
+        "name": "道の駅親不知ピアパーク",
+        "prefecture": "新潟県",
+        "city": "糸魚川市",
+        "address": "新潟県糸魚川市大字外波903-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19224"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.6863544,
+          37.1990419
+        ]
+      },
+      "properties": {
+        "id": "19225",
+        "name": "道の駅瀬替えの郷せんだ",
+        "prefecture": "新潟県",
+        "city": "十日町市",
+        "address": "新潟県十日町市中仙田甲826",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19225"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.4703250,
+          37.0955940
+        ]
+      },
+      "properties": {
+        "id": "19226",
+        "name": "道の駅雪のふるさと やすづか",
+        "prefecture": "雪のふるさと　やすづか",
+        "city": "",
+        "address": "新潟県上越市安塚区樽田140",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19226"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.6342079,
+          37.2133616
+        ]
+      },
+      "properties": {
+        "id": "19227",
+        "name": "道の駅じょんのびの里高柳",
+        "prefecture": "新潟県",
+        "city": "柏崎市",
+        "address": "新潟県柏崎市高柳町高尾10-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19227"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.0788950,
+          37.7925908
+        ]
+      },
+      "properties": {
+        "id": "19228",
+        "name": "道の駅花夢里にいつ",
+        "prefecture": "新潟県",
+        "city": "新潟市",
+        "address": "新潟県新潟市川根438",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19228"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.8251803,
+          37.6628849
+        ]
+      },
+      "properties": {
+        "id": "19229",
+        "name": "道の駅国上",
+        "prefecture": "新潟県",
+        "city": "燕市",
+        "address": "新潟県燕市国上5866-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19229"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.8676387,
+          37.2608955
+        ]
+      },
+      "properties": {
+        "id": "19230",
+        "name": "道の駅越後川口",
+        "prefecture": "新潟県",
+        "city": "長岡市",
+        "address": "新潟県長岡市大字中山84-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19230"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.3769706,
+          37.2416518
+        ]
+      },
+      "properties": {
+        "id": "19231",
+        "name": "道の駅よしかわ杜氏の郷",
+        "prefecture": "新潟県",
+        "city": "上越市",
+        "address": "新潟県上越市吉川区杜氏の郷1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19231"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0866912,
+          37.1635330
+        ]
+      },
+      "properties": {
+        "id": "19232",
+        "name": "道の駅うみてらす名立",
+        "prefecture": "新潟県",
+        "city": "上越市",
+        "address": "新潟県上越市名立区名立大町4280-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19232"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.8192140,
+          37.0030693
+        ]
+      },
+      "properties": {
+        "id": "19233",
+        "name": "道の駅南魚沼",
+        "prefecture": "新潟県",
+        "city": "南魚沼市",
+        "address": "新潟県南魚沼市下一日市855",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19233"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.8834710,
+          37.5467090
+        ]
+      },
+      "properties": {
+        "id": "19234",
+        "name": "道の駅パティオにいがた",
+        "prefecture": "新潟県",
+        "city": "見附市",
+        "address": "新潟県見附市今町一丁目3358",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19234"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.7771750,
+          36.8996915
+        ]
+      },
+      "properties": {
+        "id": "19235",
+        "name": "道の駅みつまた",
+        "prefecture": "新潟県",
+        "city": "湯沢町",
+        "address": "新潟県南魚沼郡湯沢町大字三俣1000",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19235"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.2381219,
+          36.4885782
+        ]
+      },
+      "properties": {
+        "id": "19236",
+        "name": "道の駅細入",
+        "prefecture": "富山県",
+        "city": "富山市",
+        "address": "富山県富山市片掛3-5",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19236"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.9600920,
+          36.6414874
+        ]
+      },
+      "properties": {
+        "id": "19237",
+        "name": "道の駅砺波",
+        "prefecture": "富山県",
+        "city": "砺波市",
+        "address": "富山県砺波市宮沢町3-9",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19237"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.8714690,
+          36.3774910
+        ]
+      },
+      "properties": {
+        "id": "19238",
+        "name": "道の駅上平",
+        "prefecture": "富山県",
+        "city": "南砺市",
+        "address": "富山県南砺市西赤尾町72-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19238"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.0265146,
+          36.4580109
+        ]
+      },
+      "properties": {
+        "id": "19239",
+        "name": "道の駅利賀",
+        "prefecture": "富山県",
+        "city": "南砺市",
+        "address": "富山県南砺市利賀村171",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19239"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.9778870,
+          36.5615091
+        ]
+      },
+      "properties": {
+        "id": "19240",
+        "name": "道の駅井波",
+        "prefecture": "富山県",
+        "city": "南砺市",
+        "address": "富山県南砺市北川730",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19240"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.8618918,
+          36.5664199
+        ]
+      },
+      "properties": {
+        "id": "19241",
+        "name": "道の駅福光",
+        "prefecture": "富山県",
+        "city": "南砺市",
+        "address": "富山県南砺市中ノ江16",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19241"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.9739623,
+          36.4454010
+        ]
+      },
+      "properties": {
+        "id": "19242",
+        "name": "道の駅たいら",
+        "prefecture": "富山県",
+        "city": "南砺市",
+        "address": "富山県南砺市東中江215",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19242"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.9799087,
+          36.5743326
+        ]
+      },
+      "properties": {
+        "id": "19243",
+        "name": "道の駅庄川",
+        "prefecture": "富山県",
+        "city": "砺波市",
+        "address": "富山県砺波市庄川町示野437",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19243"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.5415592,
+          36.8604263
+        ]
+      },
+      "properties": {
+        "id": "19244",
+        "name": "道の駅うなづき",
+        "prefecture": "富山県",
+        "city": "黒部市",
+        "address": "富山県黒部市宇奈月町下立686",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19244"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.0849678,
+          36.7520114
+        ]
+      },
+      "properties": {
+        "id": "19245",
+        "name": "道の駅まるごと射水",
+        "prefecture": "富山県",
+        "city": "射水市",
+        "address": "富山県射水市鏡宮２９６",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19245"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.3444564,
+          36.7743768
+        ]
+      },
+      "properties": {
+        "id": "19246",
+        "name": "道の駅ウェーブパークなめりかわ",
+        "prefecture": "富山県",
+        "city": "滑川市",
+        "address": "富山県滑川市中川原410",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19246"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.9872100,
+          36.8644170
+        ]
+      },
+      "properties": {
+        "id": "19247",
+        "name": "道の駅氷見",
+        "prefecture": "富山県",
+        "city": "氷見市",
+        "address": "富山県氷見市北大町25-5",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19247"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.9693519,
+          36.7367136
+        ]
+      },
+      "properties": {
+        "id": "19248",
+        "name": "道の駅万葉の里 高岡",
+        "prefecture": "万葉の里　高岡",
+        "city": "",
+        "address": "富山県高岡市蜂ヶ島131-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19248"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.8766877,
+          36.6894706
+        ]
+      },
+      "properties": {
+        "id": "19249",
+        "name": "道の駅メルヘンおやべ",
+        "prefecture": "富山県",
+        "city": "小矢部市",
+        "address": "富山県小矢部市桜町1535-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19249"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.9976310,
+          37.4241660
+        ]
+      },
+      "properties": {
+        "id": "19250",
+        "name": "道の駅千枚田ポケットパーク",
+        "prefecture": "石川県",
+        "city": "輪島市",
+        "address": "石川県輪島市白米町ハ部99-5",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19250"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.7246910,
+          36.7863010
+        ]
+      },
+      "properties": {
+        "id": "19251",
+        "name": "道の駅高松",
+        "prefecture": "石川県",
+        "city": "かほく市",
+        "address": "石川県かほく市二ツ屋16-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19251"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.0465297,
+          37.0288253
+        ]
+      },
+      "properties": {
+        "id": "19252",
+        "name": "道の駅いおり",
+        "prefecture": "石川県",
+        "city": "七尾市",
+        "address": "石川県七尾市庵町笹ヶ谷内3-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19252"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.0112551,
+          37.3313915
+        ]
+      },
+      "properties": {
+        "id": "19253",
+        "name": "道の駅桜峠",
+        "prefecture": "石川県",
+        "city": "能登町",
+        "address": "石川県鳳珠郡能登町字当目2-24-24",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19253"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.6304730,
+          36.4368580
+        ]
+      },
+      "properties": {
+        "id": "19254",
+        "name": "道の駅しらやまさん",
+        "prefecture": "石川県",
+        "city": "白山市",
+        "address": "石川県能美市和佐谷町200",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19254"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.8632460,
+          37.1305470
+        ]
+      },
+      "properties": {
+        "id": "19255",
+        "name": "道の駅なかじまロマン峠",
+        "prefecture": "石川県",
+        "city": "七尾市",
+        "address": "石川県七尾市中島町中島二部1-19",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19255"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.7094471,
+          37.2482394
+        ]
+      },
+      "properties": {
+        "id": "19256",
+        "name": "道の駅赤神",
+        "prefecture": "石川県",
+        "city": "輪島市",
+        "address": "石川県輪島市門前町赤神壱110",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19256"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.7248830,
+          37.1401770
+        ]
+      },
+      "properties": {
+        "id": "19257",
+        "name": "道の駅とぎ海街道",
+        "prefecture": "石川県",
+        "city": "志賀町",
+        "address": "石川県羽咋郡志賀町富来領家町タ2-11",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19257"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.9059710,
+          37.3886180
+        ]
+      },
+      "properties": {
+        "id": "19258",
+        "name": "道の駅輪島",
+        "prefecture": "石川県",
+        "city": "輪島市",
+        "address": "石川県輪島市河井町20-1-131",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19258"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.7800210,
+          37.0068731
+        ]
+      },
+      "properties": {
+        "id": "19259",
+        "name": "道の駅ころ柿の里しか",
+        "prefecture": "石川県",
+        "city": "志賀町",
+        "address": "石川県羽咋郡志賀町末吉新保向10",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19259"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.6493869,
+          36.2881213
+        ]
+      },
+      "properties": {
+        "id": "19260",
+        "name": "道の駅瀬女",
+        "prefecture": "石川県",
+        "city": "白山市",
+        "address": "石川県白山市瀬戸寅163-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19260"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.5990833,
+          36.3604418
+        ]
+      },
+      "properties": {
+        "id": "19261",
+        "name": "道の駅一向一揆の里",
+        "prefecture": "石川県",
+        "city": "白山市",
+        "address": "石川県白山市出合町甲36",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19261"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.9571283,
+          37.2950414
+        ]
+      },
+      "properties": {
+        "id": "19262",
+        "name": "道の駅のと里山空港",
+        "prefecture": "石川県",
+        "city": "輪島市",
+        "address": "石川県輪島市三井町洲衛10-11-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19262"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.7685160,
+          36.6627450
+        ]
+      },
+      "properties": {
+        "id": "19263",
+        "name": "道の駅倶利伽羅 源平の郷",
+        "prefecture": "倶利伽羅　源平の郷",
+        "city": "",
+        "address": "石川県河北郡津幡町字竹橋西239-14",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19263"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.3675157,
+          36.2377003
+        ]
+      },
+      "properties": {
+        "id": "19264",
+        "name": "道の駅山中温泉 ゆけむり健康村",
+        "prefecture": "山中温泉　ゆけむり健康村",
+        "city": "",
+        "address": "石川県加賀市山中温泉こおろぎ町イ19",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19264"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.9982406,
+          37.1373588
+        ]
+      },
+      "properties": {
+        "id": "19265",
+        "name": "道の駅のとじま",
+        "prefecture": "石川県",
+        "city": "七尾市",
+        "address": "石川県七尾市能登島向田町122-14",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19265"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.1137860,
+          37.4863350
+        ]
+      },
+      "properties": {
+        "id": "19266",
+        "name": "道の駅すず塩田村",
+        "prefecture": "石川県",
+        "city": "珠洲市",
+        "address": "石川県珠洲市清水町1-58-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19266"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.6488970,
+          36.6591958
+        ]
+      },
+      "properties": {
+        "id": "19267",
+        "name": "道の駅内灘サンセットパーク",
+        "prefecture": "石川県",
+        "city": "内灘町",
+        "address": "石川県河北郡内灘町字大学1-4-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19267"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.9689840,
+          37.0489849
+        ]
+      },
+      "properties": {
+        "id": "19268",
+        "name": "道の駅能登食祭市場",
+        "prefecture": "石川県",
+        "city": "七尾市",
+        "address": "石川県七尾市府中町員外13-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19268"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.4623598,
+          36.3700059
+        ]
+      },
+      "properties": {
+        "id": "19269",
+        "name": "道の駅こまつ木場潟",
+        "prefecture": "石川県",
+        "city": "小松市",
+        "address": "石川県小松市蓮代寺町ケ2-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19269"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.3244230,
+          37.5259750
+        ]
+      },
+      "properties": {
+        "id": "19270",
+        "name": "道の駅狼煙",
+        "prefecture": "石川県",
+        "city": "珠洲市",
+        "address": "石川県珠洲市狼煙町テ部11",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19270"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.2699640,
+          37.4415610
+        ]
+      },
+      "properties": {
+        "id": "19271",
+        "name": "道の駅すずなり",
+        "prefecture": "石川県",
+        "city": "珠洲市",
+        "address": "石川県珠洲市野々江町シ-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19271"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.9047890,
+          36.9699540
+        ]
+      },
+      "properties": {
+        "id": "19272",
+        "name": "道の駅織姫の里なかのと",
+        "prefecture": "石川県",
+        "city": "中能登町",
+        "address": "石川県鹿島郡中能登町井田ぬ部10-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19272"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.7400334,
+          35.8664703
+        ]
+      },
+      "properties": {
+        "id": "19273",
+        "name": "道の駅日義木曽駒高原",
         "prefecture": "長野県",
-        "city": "松本市",
-        "address": "長野県松本市大字今井886番地2",
-        "road": "長野県道298号",
-        "url": "https://www.michi-no-eki.jp/stations/view/414"
+        "city": "木曽町",
+        "address": "長野県木曽郡木曽町日義4730-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19273"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6534670,
+          35.6820939
+        ]
+      },
+      "properties": {
+        "id": "19274",
+        "name": "道の駅大桑",
+        "prefecture": "長野県",
+        "city": "大桑村",
+        "address": "長野県木曽郡大桑村大字野尻160-27",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19274"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.8144050,
+          35.9659460
+        ]
+      },
+      "properties": {
+        "id": "19275",
+        "name": "道の駅奈良井木曽の大橋",
+        "prefecture": "長野県",
+        "city": "塩尻市",
+        "address": "長野県塩尻市大字奈良井1346-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19275"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.5504388,
+          35.5861120
+        ]
+      },
+      "properties": {
+        "id": "19276",
+        "name": "道の駅賤母",
+        "prefecture": "岐阜県",
+        "city": "中津川市",
+        "address": "岐阜県中津川市山口1-14",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19276"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6317460,
+          35.3243560
+        ]
+      },
+      "properties": {
+        "id": "19277",
+        "name": "道の駅信州平谷",
+        "prefecture": "長野県",
+        "city": "平谷村",
+        "address": "長野県下伊那郡平谷村252",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19277"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.7942491,
+          35.4171252
+        ]
+      },
+      "properties": {
+        "id": "19278",
+        "name": "道の駅信濃路下條",
+        "prefecture": "長野県",
+        "city": "下條村",
+        "address": "長野県下伊那郡下條村睦沢4331-5",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19278"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0837089,
+          35.8098140
+        ]
+      },
+      "properties": {
+        "id": "19279",
+        "name": "道の駅南アルプスむら長谷",
+        "prefecture": "長野県",
+        "city": "伊那市",
+        "address": "長野県伊那市長谷非持1400",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19279"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.8419591,
+          35.9862023
+        ]
+      },
+      "properties": {
+        "id": "19280",
+        "name": "道の駅木曽ならかわ",
+        "prefecture": "長野県",
+        "city": "塩尻市",
+        "address": "長野県塩尻市大字木曽平沢2272-7",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19280"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6480735,
+          35.8225594
+        ]
+      },
+      "properties": {
+        "id": "19281",
+        "name": "道の駅三岳",
+        "prefecture": "長野県",
+        "city": "木曽町",
+        "address": "長野県木曽郡木曽町三岳10491-9",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19281"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.7453870,
+          35.2574810
+        ]
+      },
+      "properties": {
+        "id": "19282",
+        "name": "道の駅信州新野千石平",
+        "prefecture": "長野県",
+        "city": "阿南町",
+        "address": "長野県下伊那郡阿南町2700",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19282"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.9100456,
+          35.6620051
+        ]
+      },
+      "properties": {
+        "id": "19283",
+        "name": "道の駅花の里いいじま",
+        "prefecture": "長野県",
+        "city": "飯島町",
+        "address": "長野県上伊那郡飯島町七久保2252",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19283"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.9309442,
+          35.3213462
+        ]
+      },
+      "properties": {
+        "id": "19284",
+        "name": "道の駅遠山郷",
+        "prefecture": "長野県",
+        "city": "飯田市",
+        "address": "長野県飯田市南信濃和田456-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19284"
       }
     },
     {
@@ -10480,13 +9416,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "20040",
+        "id": "19285",
         "name": "道の駅木曽福島",
         "prefecture": "長野県",
-        "city": "木曽郡木曽町",
-        "address": "木曽郡木曽町福島4061-1",
-        "road": "国道19号",
-        "url": "https://www.michi-no-eki.jp/stations/view/501"
+        "city": "木曽町",
+        "address": "長野県木曽郡木曽町福島4061-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19285"
       }
     },
     {
@@ -10499,184 +9435,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "20041",
-        "name": "道の駅木曽川源流の里_きそむら",
-        "prefecture": "長野県",
-        "city": "木曽郡木祖村",
-        "address": "長野県木曽郡木祖村薮原163-1",
-        "road": "国道19号",
-        "url": "https://www.michi-no-eki.jp/stations/view/502"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.388223,
-          36.8521479
-        ]
-      },
-      "properties": {
-        "id": "20042",
-        "name": "道の駅FARMUS木島平",
-        "prefecture": "長野県",
-        "city": "下高井郡木島平村",
-        "address": "長野県下高井郡木島平村大字上木島38番地1",
-        "road": "国道403号",
-        "url": "https://www.michi-no-eki.jp/stations/view/7993"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.939944,
-          35.691023
-        ]
-      },
-      "properties": {
-        "id": "20043",
-        "name": "道の駅田切の里",
-        "prefecture": "長野県",
-        "city": "上伊那郡飯島町",
-        "address": "長野県上伊那郡飯島町田切2598-1",
-        "road": "国道153号",
-        "url": "https://www.michi-no-eki.jp/stations/view/11981"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.440822,
-          36.236692
-        ]
-      },
-      "properties": {
-        "id": "20044",
-        "name": "道の駅ヘルシーテラス佐久南",
-        "prefecture": "長野県",
-        "city": "佐久市",
-        "address": "長野県佐久市伴野7-1",
-        "road": "国道142号|市道25-3号線",
-        "url": "https://www.michi-no-eki.jp/stations/view/14138"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.331675,
-          36.276288
-        ]
-      },
-      "properties": {
-        "id": "20045",
-        "name": "道の駅女神の里たてしな",
-        "prefecture": "長野県",
-        "city": "北佐久郡立科町",
-        "address": "長野県北佐久郡立科町大字茂田井2480番地",
-        "road": "国道142号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14175"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.891347,
-          35.544442
-        ]
-      },
-      "properties": {
-        "id": "20046",
-        "name": "道の駅南信州とよおかマルシェ",
-        "prefecture": "長野県",
-        "city": "下伊那郡豊丘村",
-        "address": "長野県下伊那郡豊丘村大字神稲12410",
-        "road": "村道竜東一貫道路",
-        "url": "https://www.michi-no-eki.jp/stations/view/14176"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.94389,
-          35.8866675
-        ]
-      },
-      "properties": {
-        "id": "20047",
-        "name": "道の駅大芝高原",
-        "prefecture": "長野県",
-        "city": "上伊那郡南箕輪村",
-        "address": "長野県上伊那郡南箕輪村2358-5",
-        "road": "村道3134号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14184"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.709445278,
-          35.2738888889
-        ]
-      },
-      "properties": {
-        "id": "20048",
-        "name": "道の駅南信州_うるぎ",
-        "prefecture": "長野県",
-        "city": "下伊那郡売木村",
-        "address": "長野県下伊那郡売木村543番地1",
-        "road": "長野県道46号阿南根羽線",
-        "url": "https://www.michi-no-eki.jp/stations/view/14185"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.036946667,
-          35.5650011111
-        ]
-      },
-      "properties": {
-        "id": "20049",
-        "name": "道の駅歌舞伎の里大鹿",
-        "prefecture": "長野県",
-        "city": "下伊那郡大鹿村",
-        "address": "長野県下伊那郡大鹿村大字大河原390番地",
-        "road": "国道152号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14186"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.931389167,
-          36.4241688889
-        ]
-      },
-      "properties": {
-        "id": "20050",
-        "name": "道の駅いくさかの郷",
-        "prefecture": "長野県",
-        "city": "東筑摩郡生坂村",
-        "address": "長野県東筑摩郡生坂村5204-1",
-        "road": "長野県道275号上生坂信濃松川停車場線",
-        "url": "https://www.michi-no-eki.jp/stations/view/14192"
+        "id": "19286",
+        "name": "道の駅木曽川源流の里 きそむら",
+        "prefecture": "木曽川源流の里　きそむら",
+        "city": "",
+        "address": "長野県木曽郡木祖村大字薮原163-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19286"
       }
     },
     {
@@ -10689,13 +9454,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21001",
+        "id": "19287",
         "name": "道の駅美並",
         "prefecture": "岐阜県",
         "city": "郡上市",
         "address": "岐阜県郡上市美並町上田2605",
-        "road": "国道156号",
-        "url": "https://www.michi-no-eki.jp/stations/view/503"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19287"
       }
     },
     {
@@ -10708,13 +9473,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21002",
+        "id": "19288",
         "name": "道の駅パスカル清見",
         "prefecture": "岐阜県",
         "city": "高山市",
-        "address": "岐阜県高山市清見町大原858番地1",
-        "road": "国道257号",
-        "url": "https://www.michi-no-eki.jp/stations/view/504"
+        "address": "岐阜県高山市清見町大原858-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19288"
       }
     },
     {
@@ -10727,13 +9492,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21003",
-        "name": "道の駅明宝",
+        "id": "19289",
+        "name": "道の駅明宝 (磨墨の里）",
         "prefecture": "岐阜県",
         "city": "郡上市",
         "address": "岐阜県郡上市明宝大谷1015",
-        "road": "国道472号",
-        "url": "https://www.michi-no-eki.jp/stations/view/505"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19289"
       }
     },
     {
@@ -10746,13 +9511,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21004",
+        "id": "19290",
         "name": "道の駅花街道付知",
         "prefecture": "岐阜県",
         "city": "中津川市",
-        "address": "岐阜県中津川市付知町8581番地1",
-        "road": "国道256号",
-        "url": "https://www.michi-no-eki.jp/stations/view/506"
+        "address": "岐阜県中津川市付知町8581-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19290"
       }
     },
     {
@@ -10765,13 +9530,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21005",
+        "id": "19291",
         "name": "道の駅美濃白川",
         "prefecture": "岐阜県",
-        "city": "加茂郡白川町",
+        "city": "白川町",
         "address": "岐阜県加茂郡白川町河東3500-1",
-        "road": "国道41号",
-        "url": "https://www.michi-no-eki.jp/stations/view/507"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19291"
       }
     },
     {
@@ -10784,13 +9549,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21006",
+        "id": "19292",
         "name": "道の駅ラステンほらど",
         "prefecture": "岐阜県",
         "city": "関市",
-        "address": "岐阜県関市洞戸菅谷545番地",
-        "road": "国道256号",
-        "url": "https://www.michi-no-eki.jp/stations/view/508"
+        "address": "岐阜県関市洞戸菅谷539-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19292"
       }
     },
     {
@@ -10798,37 +9563,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          136.8321178,
-          35.9233631
+          137.4996540,
+          36.2490020
         ]
       },
       "properties": {
-        "id": "21007",
-        "name": "道の駅白山文化の里長滝",
-        "prefecture": "岐阜県",
-        "city": "郡上市",
-        "address": "岐阜県郡上市白鳥町長滝402番地19",
-        "road": "国道156号",
-        "url": "https://www.michi-no-eki.jp/stations/view/509"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.499654,
-          36.249002
-        ]
-      },
-      "properties": {
-        "id": "21008",
+        "id": "19293",
         "name": "道の駅奥飛騨温泉郷上宝",
         "prefecture": "岐阜県",
         "city": "高山市",
-        "address": "岐阜県高山市奥飛騨温泉郷田頃家11番地1",
-        "road": "国道471号",
-        "url": "https://www.michi-no-eki.jp/stations/view/510"
+        "address": "岐阜県高山市奥飛騨温泉郷田頃家字東垣内11-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19293"
       }
     },
     {
@@ -10836,18 +9582,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          137.11445,
-          35.533911
+          137.1144500,
+          35.5339110
         ]
       },
       "properties": {
-        "id": "21009",
-        "name": "道の駅ロック・ガーデンひちそう",
-        "prefecture": "岐阜県",
-        "city": "加茂郡七宗町",
-        "address": "岐阜県加茂郡七宗町中麻生1176-3",
-        "road": "国道41号",
-        "url": "https://www.michi-no-eki.jp/stations/view/511"
+        "id": "19294",
+        "name": "道の駅ロック・ガーデン ひちそう",
+        "prefecture": "ロック・ガーデン　ひちそう",
+        "city": "",
+        "address": "岐阜県加茂郡七宗町大字中麻生1169-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19294"
       }
     },
     {
@@ -10860,13 +9606,32 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21010",
-        "name": "道の駅星のふる里ふじはし",
+        "id": "19295",
+        "name": "道の駅星のふる里 ふじはし",
+        "prefecture": "星のふる里　ふじはし",
+        "city": "",
+        "address": "岐阜県揖斐郡揖斐川町東横山264-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19295"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.9015389,
+          36.2789273
+        ]
+      },
+      "properties": {
+        "id": "19296",
+        "name": "道の駅白川郷",
         "prefecture": "岐阜県",
-        "city": "揖斐郡揖斐川町",
-        "address": "岐阜県揖斐郡揖斐川町東横山264番地1",
-        "road": "国道303号",
-        "url": "https://www.michi-no-eki.jp/stations/view/512"
+        "city": "白川村",
+        "address": "岐阜県大野郡白川村大字飯島411",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19296"
       }
     },
     {
@@ -10875,17 +9640,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           136.9972918,
-          35.552245
+          35.5522450
         ]
       },
       "properties": {
-        "id": "21012",
+        "id": "19297",
         "name": "道の駅平成",
         "prefecture": "岐阜県",
         "city": "関市",
         "address": "岐阜県関市下之保2503-2",
-        "road": "岐阜県道58号",
-        "url": "https://www.michi-no-eki.jp/stations/view/514"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19297"
       }
     },
     {
@@ -10893,18 +9658,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          137.192351,
-          36.220446
+          137.1923510,
+          36.2204460
         ]
       },
       "properties": {
-        "id": "21013",
+        "id": "19298",
         "name": "道の駅アルプ飛騨古川",
         "prefecture": "岐阜県",
         "city": "飛騨市",
-        "address": "岐阜県飛騨市古川町上町1348番地2",
-        "road": "国道41号",
-        "url": "https://www.michi-no-eki.jp/stations/view/515"
+        "address": "岐阜県飛騨市古川町上町下落1348-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19298"
       }
     },
     {
@@ -10917,13 +9682,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21014",
+        "id": "19299",
         "name": "道の駅飛騨金山ぬく森の里温泉",
         "prefecture": "岐阜県",
         "city": "下呂市",
-        "address": "岐阜県下呂市金山町金山911番地1",
-        "road": "国道256号",
-        "url": "https://www.michi-no-eki.jp/stations/view/516"
+        "address": "岐阜県下呂市金山町金山911-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19299"
       }
     },
     {
@@ -10931,18 +9696,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          137.471578,
-          35.323636
+          137.4715780,
+          35.3236360
         ]
       },
       "properties": {
-        "id": "21015",
+        "id": "19300",
         "name": "道の駅上矢作ラ・フォーレ福寿の里",
         "prefecture": "岐阜県",
         "city": "恵那市",
         "address": "岐阜県恵那市上矢作町3566-1",
-        "road": "国道257号",
-        "url": "https://www.michi-no-eki.jp/stations/view/517"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19300"
       }
     },
     {
@@ -10955,13 +9720,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21016",
+        "id": "19301",
         "name": "道の駅モンデウス飛騨位山",
         "prefecture": "岐阜県",
         "city": "高山市",
-        "address": "岐阜県高山市一之宮町7846番地1",
-        "road": "岐阜県道98号",
-        "url": "https://www.michi-no-eki.jp/stations/view/518"
+        "address": "岐阜県高山市一之宮町7846-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19301"
       }
     },
     {
@@ -10974,13 +9739,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21017",
+        "id": "19302",
         "name": "道の駅南飛騨小坂",
         "prefecture": "岐阜県",
         "city": "下呂市",
         "address": "岐阜県下呂市小坂町赤沼田811-1",
-        "road": "岐阜県道437号",
-        "url": "https://www.michi-no-eki.jp/stations/view/519"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19302"
       }
     },
     {
@@ -10993,13 +9758,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21018",
+        "id": "19303",
         "name": "道の駅夢さんさん谷汲",
         "prefecture": "岐阜県",
-        "city": "揖斐郡揖斐川町",
-        "address": "岐阜県揖斐郡揖斐川町谷汲名礼1766番地27",
-        "road": "滋賀県道・岐阜県道40号山東本巣線",
-        "url": "https://www.michi-no-eki.jp/stations/view/520"
+        "city": "揖斐川町",
+        "address": "岐阜県揖斐郡揖斐川町谷汲名礼1766-27",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19303"
       }
     },
     {
@@ -11008,17 +9773,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           137.2231904,
-          35.336059
+          35.3360590
         ]
       },
       "properties": {
-        "id": "21019",
+        "id": "19304",
         "name": "道の駅土岐美濃焼街道",
         "prefecture": "岐阜県",
         "city": "土岐市",
         "address": "岐阜県土岐市肥田町肥田286-15",
-        "road": "岐阜県道66号",
-        "url": "https://www.michi-no-eki.jp/stations/view/521"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19304"
       }
     },
     {
@@ -11031,13 +9796,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21020",
+        "id": "19305",
         "name": "道の駅富有柿の里いとぬき",
         "prefecture": "岐阜県",
         "city": "本巣市",
-        "address": "岐阜県本巣市上保18番地2",
-        "road": "国道157号",
-        "url": "https://www.michi-no-eki.jp/stations/view/522"
+        "address": "岐阜県本巣市上保18-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19305"
       }
     },
     {
@@ -11050,13 +9815,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21021",
+        "id": "19306",
         "name": "道の駅ななもり清見",
         "prefecture": "岐阜県",
         "city": "高山市",
-        "address": "岐阜県高山市清見町牧ケ洞2145番地",
-        "road": "国道158号",
-        "url": "https://www.michi-no-eki.jp/stations/view/523"
+        "address": "岐阜県高山市清見町牧ヶ洞2145",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19306"
       }
     },
     {
@@ -11064,18 +9829,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          137.534574,
+          137.5345740,
           35.5704301
         ]
       },
       "properties": {
-        "id": "21022",
+        "id": "19307",
         "name": "道の駅きりら坂下",
         "prefecture": "岐阜県",
         "city": "中津川市",
-        "address": "岐阜県中津川市坂下450番地2",
-        "road": "国道256号",
-        "url": "https://www.michi-no-eki.jp/stations/view/524"
+        "address": "岐阜県中津川市坂下450-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19307"
       }
     },
     {
@@ -11088,13 +9853,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21023",
+        "id": "19308",
         "name": "道の駅クレール平田",
         "prefecture": "岐阜県",
         "city": "海津市",
         "address": "岐阜県海津市平田町野寺2357-2",
-        "road": "岐阜県道23号北方多度線",
-        "url": "https://www.michi-no-eki.jp/stations/view/525"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19308"
       }
     },
     {
@@ -11102,18 +9867,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          137.187413,
-          35.819913
+          137.1874130,
+          35.8199130
         ]
       },
       "properties": {
-        "id": "21024",
-        "name": "道の駅馬瀬_美輝の里",
-        "prefecture": "岐阜県",
-        "city": "下呂市",
-        "address": "岐阜県下呂市馬瀬西村1450",
-        "road": "岐阜県道431号",
-        "url": "https://www.michi-no-eki.jp/stations/view/526"
+        "id": "19309",
+        "name": "道の駅馬瀬 美輝の里",
+        "prefecture": "馬瀬　美輝の里",
+        "city": "",
+        "address": "岐阜県下呂市馬瀬西村1447-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19309"
       }
     },
     {
@@ -11126,13 +9891,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21025",
-        "name": "道の駅飛騨街道なぎさ",
-        "prefecture": "岐阜県",
-        "city": "高山市",
-        "address": "岐阜県高山市久々野町渚2685番地",
-        "road": "国道41号",
-        "url": "https://www.michi-no-eki.jp/stations/view/527"
+        "id": "19310",
+        "name": "道の駅飛騨街道 なぎさ",
+        "prefecture": "飛騨街道　なぎさ",
+        "city": "",
+        "address": "岐阜県高山市久々野町渚2685",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19310"
       }
     },
     {
@@ -11145,13 +9910,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21026",
+        "id": "19311",
         "name": "道の駅ひだ朝日村",
         "prefecture": "岐阜県",
         "city": "高山市",
-        "address": "岐阜県高山市朝日町万石150番地",
-        "road": "国道361号",
-        "url": "https://www.michi-no-eki.jp/stations/view/528"
+        "address": "岐阜県高山市朝日町万石150",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19311"
       }
     },
     {
@@ -11164,13 +9929,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21027",
-        "name": "道の駅そばの郷らっせぃみさと",
-        "prefecture": "岐阜県",
-        "city": "恵那市",
-        "address": "岐阜県恵那市三郷町佐々良木1461番地1",
-        "road": "岐阜県道66号",
-        "url": "https://www.michi-no-eki.jp/stations/view/529"
+        "id": "19312",
+        "name": "道の駅そばの郷 らっせぃみさと",
+        "prefecture": "そばの郷　らっせぃみさと",
+        "city": "",
+        "address": "岐阜県恵那市三郷町佐々良木1461-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19312"
       }
     },
     {
@@ -11178,18 +9943,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          136.667187,
-          35.500115
+          136.6671870,
+          35.5001150
         ]
       },
       "properties": {
-        "id": "21028",
-        "name": "道の駅織部の里もとす",
+        "id": "19313",
+        "name": "道の駅織部の里・もとす",
         "prefecture": "岐阜県",
         "city": "本巣市",
-        "address": "岐阜県本巣市山口676番地",
-        "road": "国道157号",
-        "url": "https://www.michi-no-eki.jp/stations/view/530"
+        "address": "岐阜県本巣市本巣町山口676",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19313"
       }
     },
     {
@@ -11202,13 +9967,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21029",
+        "id": "19314",
         "name": "道の駅飛騨たかね工房",
         "prefecture": "岐阜県",
         "city": "高山市",
-        "address": "岐阜県高山市高根町中洞767番地4",
-        "road": "国道361号",
-        "url": "https://www.michi-no-eki.jp/stations/view/531"
+        "address": "岐阜県高山市高根町中洞767-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19314"
       }
     },
     {
@@ -11221,13 +9986,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21030",
+        "id": "19315",
         "name": "道の駅大日岳",
         "prefecture": "岐阜県",
         "city": "郡上市",
-        "address": "岐阜県郡上市高鷲町西洞3628番地5",
-        "road": "国道156号",
-        "url": "https://www.michi-no-eki.jp/stations/view/532"
+        "address": "岐阜県郡上市高鷲町西洞3628-5",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19315"
       }
     },
     {
@@ -11240,13 +10005,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21031",
-        "name": "道の駅桜の郷_荘川",
-        "prefecture": "岐阜県",
-        "city": "高山市",
-        "address": "岐阜県高山市荘川町猿丸82-1",
-        "road": "国道158号",
-        "url": "https://www.michi-no-eki.jp/stations/view/533"
+        "id": "19316",
+        "name": "道の駅桜の郷 荘川",
+        "prefecture": "桜の郷　荘川",
+        "city": "",
+        "address": "岐阜県高山市荘川町猿丸88-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19316"
       }
     },
     {
@@ -11259,13 +10024,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21032",
+        "id": "19317",
         "name": "道の駅むげ川",
         "prefecture": "岐阜県",
         "city": "関市",
-        "address": "岐阜県関市武芸川町跡部1810番地",
-        "road": "岐阜県道94号",
-        "url": "https://www.michi-no-eki.jp/stations/view/534"
+        "address": "岐阜県関市武芸川町跡部1810",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19317"
       }
     },
     {
@@ -11273,18 +10038,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          136.901735,
+          136.9017350,
           35.8160909
         ]
       },
       "properties": {
-        "id": "21033",
+        "id": "19318",
         "name": "道の駅古今伝授の里やまと",
         "prefecture": "岐阜県",
         "city": "郡上市",
-        "address": "岐阜県郡上市大和町剣164番地",
-        "road": "岐阜県道317号",
-        "url": "https://www.michi-no-eki.jp/stations/view/535"
+        "address": "岐阜県郡上市大和町剣164",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19318"
       }
     },
     {
@@ -11297,13 +10062,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21034",
-        "name": "道の駅日本昭和村",
+        "id": "19319",
+        "name": "道の駅みのかも",
         "prefecture": "岐阜県",
         "city": "美濃加茂市",
-        "address": "岐阜県美濃加茂市山之上町2292番地1",
-        "road": "岐阜県道342号",
-        "url": "https://www.michi-no-eki.jp/stations/view/536"
+        "address": "岐阜県美濃加茂市山之上町2292-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19319"
       }
     },
     {
@@ -11316,13 +10081,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21035",
-        "name": "道の駅茶の里_東白川",
+        "id": "19320",
+        "name": "道の駅茶の里東白川",
         "prefecture": "岐阜県",
-        "city": "加茂郡東白川村",
+        "city": "東白川村",
         "address": "岐阜県加茂郡東白川村越原1061",
-        "road": "国道256号",
-        "url": "https://www.michi-no-eki.jp/stations/view/537"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19320"
       }
     },
     {
@@ -11335,13 +10100,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21036",
+        "id": "19321",
         "name": "道の駅和良",
         "prefecture": "岐阜県",
         "city": "郡上市",
-        "address": "岐阜県郡上市和良町宮地1155番地",
-        "road": "国道256号",
-        "url": "https://www.michi-no-eki.jp/stations/view/538"
+        "address": "岐阜県郡上市和良町宮地1155",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19321"
       }
     },
     {
@@ -11349,18 +10114,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          136.589241,
-          35.660163
+          136.5892410,
+          35.6601630
         ]
       },
       "properties": {
-        "id": "21037",
+        "id": "19322",
         "name": "道の駅うすずみ桜の里・ねお",
         "prefecture": "岐阜県",
         "city": "本巣市",
-        "address": "岐阜県本巣市根尾門脇433番地3",
-        "road": "国道157号",
-        "url": "https://www.michi-no-eki.jp/stations/view/539"
+        "address": "岐阜県本巣市根尾門脇433-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19322"
       }
     },
     {
@@ -11373,13 +10138,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21038",
+        "id": "19323",
         "name": "道の駅志野・織部",
         "prefecture": "岐阜県",
         "city": "土岐市",
         "address": "岐阜県土岐市泉北山町2-13-1",
-        "road": "国道21号",
-        "url": "https://www.michi-no-eki.jp/stations/view/540"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19323"
       }
     },
     {
@@ -11392,13 +10157,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21039",
+        "id": "19324",
         "name": "道の駅加子母",
         "prefecture": "岐阜県",
         "city": "中津川市",
         "address": "岐阜県中津川市加子母3900-29",
-        "road": "国道257号",
-        "url": "https://www.michi-no-eki.jp/stations/view/541"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19324"
       }
     },
     {
@@ -11406,18 +10171,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          136.413732,
-          35.602032
+          136.4137320,
+          35.6020320
         ]
       },
       "properties": {
-        "id": "21040",
-        "name": "道の駅夜叉ケ池の里さかうち",
+        "id": "19325",
+        "name": "道の駅夜叉ヶ池の里さかうち",
         "prefecture": "岐阜県",
-        "city": "揖斐郡揖斐川町",
-        "address": "岐阜県揖斐郡揖斐川町坂内広瀬306",
-        "road": "国道303号",
-        "url": "https://www.michi-no-eki.jp/stations/view/542"
+        "city": "揖斐川町",
+        "address": "揖斐郡揖斐川町坂内広瀬306",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19325"
       }
     },
     {
@@ -11430,13 +10195,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21041",
+        "id": "19326",
         "name": "道の駅おばあちゃん市・山岡",
         "prefecture": "岐阜県",
         "city": "恵那市",
-        "address": "岐阜県恵那市山岡町田代1569番地169",
-        "road": "岐阜県道33号",
-        "url": "https://www.michi-no-eki.jp/stations/view/543"
+        "address": "岐阜県恵那市山岡町田代1565-169",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19326"
       }
     },
     {
@@ -11444,37 +10209,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          137.150621,
-          36.213988
+          136.6006910,
+          35.2150870
         ]
       },
       "properties": {
-        "id": "21042",
-        "name": "道の駅飛騨古川いぶし",
-        "prefecture": "岐阜県",
-        "city": "飛騨市",
-        "address": "岐阜県飛騨市古川町畦畑2173-1",
-        "road": "岐阜県道90号",
-        "url": "https://www.michi-no-eki.jp/stations/view/544"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.600691,
-          35.215087
-        ]
-      },
-      "properties": {
-        "id": "21043",
-        "name": "道の駅月見の里_南濃",
-        "prefecture": "岐阜県",
-        "city": "海津市",
-        "address": "岐阜県海津市南濃町羽沢673番地1",
-        "road": "国道258号",
-        "url": "https://www.michi-no-eki.jp/stations/view/545"
+        "id": "19328",
+        "name": "道の駅月見の里 南濃",
+        "prefecture": "月見の里　南濃",
+        "city": "",
+        "address": "岐阜県海津市南濃町羽沢673-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19328"
       }
     },
     {
@@ -11487,13 +10233,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21044",
+        "id": "19329",
         "name": "道の駅柳津",
         "prefecture": "岐阜県",
         "city": "岐阜市",
-        "address": "岐阜県岐阜市柳津町仙右城7696番地1",
-        "road": "岐阜県道1号",
-        "url": "https://www.michi-no-eki.jp/stations/view/546"
+        "address": "岐阜県岐阜市柳津町北塚仙右城7696-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19329"
       }
     },
     {
@@ -11501,37 +10247,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          137.5504388,
-          35.586112
+          137.5018640,
+          35.6023520
         ]
       },
       "properties": {
-        "id": "21045",
-        "name": "道の駅賤母",
-        "prefecture": "岐阜県",
-        "city": "中津川市",
-        "address": "岐阜県中津川市山口1番地14",
-        "road": "国道19号",
-        "url": "https://www.michi-no-eki.jp/stations/view/492"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.501864,
-          35.602352
-        ]
-      },
-      "properties": {
-        "id": "21046",
+        "id": "19330",
         "name": "道の駅五木のやかた・かわうえ",
         "prefecture": "岐阜県",
         "city": "中津川市",
-        "address": "岐阜県中津川市川上1849-3",
-        "road": "岐阜県道3号",
-        "url": "https://www.michi-no-eki.jp/stations/view/547"
+        "address": "岐阜県中津川市川上字上平1849-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19330"
       }
     },
     {
@@ -11544,13 +10271,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21047",
+        "id": "19331",
         "name": "道の駅宙ドーム・神岡",
         "prefecture": "岐阜県",
         "city": "飛騨市",
-        "address": "岐阜県飛騨市神岡町夕陽ヶ丘6番地",
-        "road": "国道471号",
-        "url": "https://www.michi-no-eki.jp/stations/view/548"
+        "address": "岐阜県飛騨市神岡町夕陽ヶ丘6",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19331"
       }
     },
     {
@@ -11558,18 +10285,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          136.891924,
-          35.889671
+          136.8919240,
+          35.8896710
         ]
       },
       "properties": {
-        "id": "21048",
+        "id": "19332",
         "name": "道の駅白尾ふれあいパーク",
         "prefecture": "岐阜県",
         "city": "郡上市",
-        "address": "岐阜県郡上市白鳥町恩地11番地1",
-        "road": "岐阜県道82号",
-        "url": "https://www.michi-no-eki.jp/stations/view/549"
+        "address": "岐阜県郡上市白鳥町恩地7-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19332"
       }
     },
     {
@@ -11577,18 +10304,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          136.913733,
-          35.554599
+          136.9137330,
+          35.5545990
         ]
       },
       "properties": {
-        "id": "21049",
+        "id": "19333",
         "name": "道の駅美濃にわか茶屋",
         "prefecture": "岐阜県",
         "city": "美濃市",
-        "address": "岐阜県美濃市曽代2007番地",
-        "road": "国道156号",
-        "url": "https://www.michi-no-eki.jp/stations/view/550"
+        "address": "岐阜県美濃市曽代2007",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19333"
       }
     },
     {
@@ -11596,18 +10323,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          136.901648,
-          36.17388
+          136.9016480,
+          36.1738800
         ]
       },
       "properties": {
-        "id": "21050",
+        "id": "19334",
         "name": "道の駅飛騨白山",
         "prefecture": "岐阜県",
-        "city": "大野郡白川村",
-        "address": "岐阜県大野郡白川村大字平瀬字高ダイ516番62",
-        "road": "国道156号",
-        "url": "https://www.michi-no-eki.jp/stations/view/551"
+        "city": "白川村",
+        "address": "岐阜県大野郡白川村平瀬高ダイ516-12",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19334"
       }
     },
     {
@@ -11615,18 +10342,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          136.980146,
+          136.9801460,
           35.4743201
         ]
       },
       "properties": {
-        "id": "21051",
-        "name": "道の駅半布里の郷_とみか",
-        "prefecture": "岐阜県",
-        "city": "加茂郡富加町",
+        "id": "19335",
+        "name": "道の駅半布里の郷 とみか",
+        "prefecture": "半布里の郷　とみか",
+        "city": "",
         "address": "岐阜県加茂郡富加町羽生2174-1",
-        "road": "国道418号",
-        "url": "https://www.michi-no-eki.jp/stations/view/552"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19335"
       }
     },
     {
@@ -11634,18 +10361,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          137.101163,
-          35.430055
+          137.1011630,
+          35.4300550
         ]
       },
       "properties": {
-        "id": "21052",
-        "name": "道の駅可児ッテ",
+        "id": "19336",
+        "name": "道の駅可児ッテ「ＣＡＮＩＴＴＥ",
         "prefecture": "岐阜県",
         "city": "可児市",
-        "address": "岐阜県可児市柿田416番地1",
-        "road": "国道21号",
-        "url": "https://www.michi-no-eki.jp/stations/view/553"
+        "address": "岐阜県可児市柿田416-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19336"
       }
     },
     {
@@ -11653,18 +10380,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          136.559814,
-          35.419442
+          136.5598140,
+          35.4194420
         ]
       },
       "properties": {
-        "id": "21053",
+        "id": "19337",
         "name": "道の駅池田温泉",
         "prefecture": "岐阜県",
-        "city": "揖斐郡池田町",
-        "address": "岐阜県揖斐郡池田町片山1953番地1",
-        "road": "岐阜県道53号",
-        "url": "https://www.michi-no-eki.jp/stations/view/554"
+        "city": "池田町",
+        "address": "岐阜県揖斐郡池田町片山1953-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19337"
       }
     },
     {
@@ -11677,51 +10404,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "21054",
-        "name": "道の駅 清流白川 クオーレの里",
-        "prefecture": "岐阜県",
-        "city": "加茂郡白川町",
-        "address": "岐阜県加茂郡白川町和泉181-1,97-1",
-        "road": "岐阜県道62号",
-        "url": "https://www.michi-no-eki.jp/stations/view/555"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.854767,
-          35.881564
-        ]
-      },
-      "properties": {
-        "id": "21055",
-        "name": "道の駅清流の里しろとり",
-        "prefecture": "岐阜県",
-        "city": "郡上市",
-        "address": "岐阜県郡上市白鳥町向小駄良693番地2",
-        "road": "国道156号|国道158号",
-        "url": "https://www.michi-no-eki.jp/stations/view/11980"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.628084,
-          35.431918
-        ]
-      },
-      "properties": {
-        "id": "21056",
-        "name": "道の駅パレットピアおおの",
-        "prefecture": "岐阜県",
-        "city": "揖斐郡大野町",
-        "address": "岐阜県揖斐郡大野町大字下磯313-2",
-        "road": "岐阜県道53号岐阜関ケ原線",
-        "url": "https://www.michi-no-eki.jp/stations/view/14160"
+        "id": "19338",
+        "name": "道の駅清流白川 クオーレの里",
+        "prefecture": "清流白川　クオーレの里",
+        "city": "",
+        "address": "岐阜県加茂郡白川町和泉181-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19338"
       }
     },
     {
@@ -11734,13 +10423,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "22001",
+        "id": "19339",
         "name": "道の駅富士",
         "prefecture": "静岡県",
         "city": "富士市",
         "address": "静岡県富士市五貫島669-1",
-        "road": "国道1号",
-        "url": "https://www.michi-no-eki.jp/stations/view/556"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19339"
       }
     },
     {
@@ -11748,18 +10437,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          137.7332279,
-          34.9608241
+          137.7328384,
+          34.9624115
         ]
       },
       "properties": {
-        "id": "22002",
+        "id": "19340",
         "name": "道の駅くんま水車の里",
         "prefecture": "静岡県",
         "city": "浜松市",
-        "address": "静岡県浜松市天竜区熊1976-1",
-        "road": "静岡県道9号天竜東栄線",
-        "url": "https://www.michi-no-eki.jp/stations/view/557"
+        "address": "静岡県浜松市天竜区熊1977-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19340"
       }
     },
     {
@@ -11772,32 +10461,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "22003",
+        "id": "19341",
         "name": "道の駅花の三聖苑伊豆松崎",
         "prefecture": "静岡県",
-        "city": "賀茂郡松崎町",
-        "address": "静岡県賀茂郡松崎町大沢20番地の1",
-        "road": "静岡県道15号",
-        "url": "https://www.michi-no-eki.jp/stations/view/558"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.300822,
-          34.92545
-        ]
-      },
-      "properties": {
-        "id": "22004",
-        "name": "道の駅宇津ノ谷峠",
-        "prefecture": "静岡県",
-        "city": "静岡市駿河区",
-        "address": "静岡県静岡市駿河区宇津ノ谷82-2",
-        "road": "国道1号",
-        "url": "https://www.michi-no-eki.jp/stations/view/559"
+        "city": "松崎町",
+        "address": "静岡県賀茂郡松崎町大沢20-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19341"
       }
     },
     {
@@ -11810,13 +10480,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "22005",
+        "id": "19342",
         "name": "道の駅いっぷく処横川",
         "prefecture": "静岡県",
         "city": "浜松市",
         "address": "静岡県浜松市天竜区横川3085",
-        "road": "国道362号",
-        "url": "https://www.michi-no-eki.jp/stations/view/560"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19342"
       }
     },
     {
@@ -11829,13 +10499,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "22006",
+        "id": "19343",
         "name": "道の駅フォーレなかかわね茶茗舘",
         "prefecture": "静岡県",
-        "city": "榛原郡川根本町",
+        "city": "川根本町",
         "address": "静岡県榛原郡川根本町水川71-1",
-        "road": "国道362号",
-        "url": "https://www.michi-no-eki.jp/stations/view/561"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19343"
       }
     },
     {
@@ -11843,18 +10513,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          138.921935,
+          138.9219350,
           34.8558282
         ]
       },
       "properties": {
-        "id": "22007",
+        "id": "19344",
         "name": "道の駅天城越え",
         "prefecture": "静岡県",
         "city": "伊豆市",
         "address": "静岡県伊豆市湯ヶ島892-6",
-        "road": "国道414号",
-        "url": "https://www.michi-no-eki.jp/stations/view/562"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19344"
       }
     },
     {
@@ -11862,18 +10532,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          138.136841686,
-          35.1084211208
+          138.1368417,
+          35.1084211
         ]
       },
       "properties": {
-        "id": "22008",
+        "id": "19345",
         "name": "道の駅奥大井音戯の郷",
         "prefecture": "静岡県",
-        "city": "榛原郡川根本町",
+        "city": "川根本町",
         "address": "静岡県榛原郡川根本町千頭1217-2",
-        "road": "静岡県道77号",
-        "url": "https://www.michi-no-eki.jp/stations/view/563"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19345"
       }
     },
     {
@@ -11886,13 +10556,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "22009",
+        "id": "19346",
         "name": "道の駅朝霧高原",
         "prefecture": "静岡県",
         "city": "富士宮市",
-        "address": "静岡県富士宮市根原字宝山492-14",
-        "road": "国道139号",
-        "url": "https://www.michi-no-eki.jp/stations/view/564"
+        "address": "静岡県富士宮市根原492-14",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19346"
       }
     },
     {
@@ -11905,13 +10575,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "22010",
+        "id": "19347",
         "name": "道の駅川根温泉",
         "prefecture": "静岡県",
         "city": "島田市",
         "address": "静岡県島田市川根町笹間渡220",
-        "road": "静岡県道63号",
-        "url": "https://www.michi-no-eki.jp/stations/view/565"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19347"
       }
     },
     {
@@ -11924,13 +10594,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "22011",
+        "id": "19348",
         "name": "道の駅富士川楽座",
         "prefecture": "静岡県",
         "city": "富士市",
         "address": "静岡県富士市岩渕1488-1",
-        "road": "静岡県道10号富士川身延線",
-        "url": "https://www.michi-no-eki.jp/stations/view/566"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19348"
       }
     },
     {
@@ -11943,13 +10613,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "22012",
+        "id": "19349",
         "name": "道の駅玉露の里",
         "prefecture": "静岡県",
         "city": "藤枝市",
         "address": "静岡県藤枝市岡部町新舟1214-3",
-        "road": "静岡県道209号",
-        "url": "https://www.michi-no-eki.jp/stations/view/567"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19349"
       }
     },
     {
@@ -11958,17 +10628,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           137.8150063,
-          34.911788
+          34.9117880
         ]
       },
       "properties": {
-        "id": "22013",
-        "name": "道の駅天竜相津花桃の里",
-        "prefecture": "静岡県",
-        "city": "浜松市",
+        "id": "19350",
+        "name": "道の駅天竜相津 花桃の里",
+        "prefecture": "天竜相津　花桃の里",
+        "city": "",
         "address": "静岡県浜松市天竜区大川31-10",
-        "road": "国道152号",
-        "url": "https://www.michi-no-eki.jp/stations/view/568"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19350"
       }
     },
     {
@@ -11976,18 +10646,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          139.094386,
+          139.0943860,
           34.9846432
         ]
       },
       "properties": {
-        "id": "22014",
+        "id": "19351",
         "name": "道の駅伊東マリンタウン",
         "prefecture": "静岡県",
         "city": "伊東市",
-        "address": "静岡県伊東市湯川571番地の19",
-        "road": "国道135号",
-        "url": "https://www.michi-no-eki.jp/stations/view/569"
+        "address": "静岡県伊東市湯川571-19",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19351"
       }
     },
     {
@@ -12000,13 +10670,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "22015",
+        "id": "19352",
         "name": "道の駅開国下田みなと",
         "prefecture": "静岡県",
         "city": "下田市",
         "address": "静岡県下田市外ヶ岡1-1",
-        "road": "国道135号",
-        "url": "https://www.michi-no-eki.jp/stations/view/570"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19352"
       }
     },
     {
@@ -12014,18 +10684,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          138.076064,
+          138.0760640,
           34.7942015
         ]
       },
       "properties": {
-        "id": "22016",
+        "id": "19353",
         "name": "道の駅掛川",
         "prefecture": "静岡県",
         "city": "掛川市",
         "address": "静岡県掛川市八坂882-1",
-        "road": "国道1号",
-        "url": "https://www.michi-no-eki.jp/stations/view/571"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19353"
       }
     },
     {
@@ -12038,13 +10708,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "22017",
+        "id": "19354",
         "name": "道の駅ふじおやま",
         "prefecture": "静岡県",
-        "city": "駿東郡小山町",
+        "city": "小山町",
         "address": "静岡県駿東郡小山町用沢72-2",
-        "road": "国道246号",
-        "url": "https://www.michi-no-eki.jp/stations/view/572"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19354"
       }
     },
     {
@@ -12057,13 +10727,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "22018",
+        "id": "19355",
         "name": "道の駅潮見坂",
         "prefecture": "静岡県",
         "city": "湖西市",
         "address": "静岡県湖西市白須賀1896-2",
-        "road": "国道1号",
-        "url": "https://www.michi-no-eki.jp/stations/view/573"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19355"
       }
     },
     {
@@ -12076,13 +10746,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "22019",
+        "id": "19356",
         "name": "道の駅伊豆のへそ",
         "prefecture": "静岡県",
         "city": "伊豆の国市",
         "address": "静岡県伊豆の国市田京195-2",
-        "road": "国道414号",
-        "url": "https://www.michi-no-eki.jp/stations/view/574"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19356"
       }
     },
     {
@@ -12095,13 +10765,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "22020",
-        "name": "道の駅下賀茂温泉_湯の花",
-        "prefecture": "静岡県",
-        "city": "賀茂郡南伊豆町",
-        "address": "静岡県賀茂郡南伊豆町下賀茂157番地の1",
-        "road": "国道136号",
-        "url": "https://www.michi-no-eki.jp/stations/view/575"
+        "id": "19357",
+        "name": "道の駅下賀茂温泉 湯の花",
+        "prefecture": "下賀茂温泉　湯の花",
+        "city": "",
+        "address": "静岡県賀茂郡南伊豆町下賀茂157-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19357"
       }
     },
     {
@@ -12114,13 +10784,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "22021",
+        "id": "19358",
         "name": "道の駅すばしり",
         "prefecture": "静岡県",
-        "city": "駿東郡小山町",
+        "city": "小山町",
         "address": "静岡県駿東郡小山町須走338-41",
-        "road": "国道138号",
-        "url": "https://www.michi-no-eki.jp/stations/view/576"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19358"
       }
     },
     {
@@ -12128,18 +10798,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          138.110751,
-          34.640677
+          138.1107510,
+          34.6406770
         ]
       },
       "properties": {
-        "id": "22022",
-        "name": "道の駅風のマルシェ_御前崎",
+        "id": "19359",
+        "name": "道の駅風のマルシェ御前崎",
         "prefecture": "静岡県",
         "city": "御前崎市",
-        "address": "静岡県御前崎市合戸字海岸4384番地の1",
-        "road": "国道150号",
-        "url": "https://www.michi-no-eki.jp/stations/view/577"
+        "address": "静岡県御前崎市合戸海岸4384-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19359"
       }
     },
     {
@@ -12147,37 +10817,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          138.7868,
-          34.9713
+          138.7868000,
+          34.9713000
         ]
       },
       "properties": {
-        "id": "22023",
+        "id": "19360",
         "name": "道の駅くるら戸田",
         "prefecture": "静岡県",
         "city": "沼津市",
-        "address": "静岡県沼津市戸田1294番地の3",
-        "road": "静岡県道18号",
-        "url": "https://www.michi-no-eki.jp/stations/view/578"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.926014,
-          35.075604
-        ]
-      },
-      "properties": {
-        "id": "22024",
-        "name": "道の駅伊豆ゲートウェイ函南",
-        "prefecture": "静岡県",
-        "city": "田方郡函南町",
-        "address": "静岡県田方郡函南町塚本887-1",
-        "road": "国道136号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14146"
+        "address": "静岡県沼津市戸田1294-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19360"
       }
     },
     {
@@ -12190,13 +10841,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "23001",
+        "id": "19361",
         "name": "道の駅豊根グリーンポート宮嶋",
         "prefecture": "愛知県",
-        "city": "北設楽郡豊根村",
-        "address": "愛知県北設楽郡豊根村坂宇場宮ノ嶋29-3",
-        "road": "国道151号",
-        "url": "https://www.michi-no-eki.jp/stations/view/579"
+        "city": "豊根村",
+        "address": "愛知県北設楽郡豊根村大字坂宇場字宮ノ嶋29-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19361"
       }
     },
     {
@@ -12209,13 +10860,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "23002",
+        "id": "19362",
         "name": "道の駅鳳来三河三石",
         "prefecture": "愛知県",
         "city": "新城市",
         "address": "愛知県新城市下吉田字田中106-1",
-        "road": "国道257号",
-        "url": "https://www.michi-no-eki.jp/stations/view/580"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19362"
       }
     },
     {
@@ -12223,18 +10874,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          137.272428,
+          137.2724280,
           34.6613618
         ]
       },
       "properties": {
-        "id": "23003",
+        "id": "19363",
         "name": "道の駅田原めっくんはうす",
         "prefecture": "愛知県",
         "city": "田原市",
         "address": "愛知県田原市東赤石5-74",
-        "road": "国道259号",
-        "url": "https://www.michi-no-eki.jp/stations/view/581"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19363"
       }
     },
     {
@@ -12242,18 +10893,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          137.020198234,
-          34.5836256978
+          137.0201982,
+          34.5836257
         ]
       },
       "properties": {
-        "id": "23004",
+        "id": "19364",
         "name": "道の駅伊良湖クリスタルポルト",
         "prefecture": "愛知県",
         "city": "田原市",
         "address": "愛知県田原市伊良湖町宮下3000-65",
-        "road": "国道42号",
-        "url": "https://www.michi-no-eki.jp/stations/view/582"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19364"
       }
     },
     {
@@ -12261,18 +10912,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          137.6091672,
-          35.1975534
+          137.6048058,
+          35.2003459
         ]
       },
       "properties": {
-        "id": "23005",
+        "id": "19365",
         "name": "道の駅つぐ高原グリーンパーク",
         "prefecture": "愛知県",
-        "city": "北設楽郡設楽町",
+        "city": "設楽町",
         "address": "愛知県北設楽郡設楽町津具字東山2-156",
-        "road": "愛知県道10号設楽根羽線",
-        "url": "https://www.michi-no-eki.jp/stations/view/583"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19365"
       }
     },
     {
@@ -12280,18 +10931,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          137.503069358,
-          35.2139047729
+          137.5030694,
+          35.2139048
         ]
       },
       "properties": {
-        "id": "23006",
-        "name": "道の駅どんぐりの里いなぶ",
-        "prefecture": "愛知県",
-        "city": "豊田市",
-        "address": "愛知県豊田市武節町針原4-1",
-        "road": "国道153号",
-        "url": "https://www.michi-no-eki.jp/stations/view/584"
+        "id": "19366",
+        "name": "道の駅どんぐりの里 いなぶ",
+        "prefecture": "どんぐりの里　いなぶ",
+        "city": "",
+        "address": "愛知県豊田市武節町針原４番地１",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19366"
       }
     },
     {
@@ -12304,13 +10955,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "23007",
+        "id": "19367",
         "name": "道の駅アグリステーションなぐら",
         "prefecture": "愛知県",
-        "city": "北設楽郡設楽町",
+        "city": "設楽町",
         "address": "愛知県北設楽郡設楽町西納庫字森田32",
-        "road": "国道257号",
-        "url": "https://www.michi-no-eki.jp/stations/view/585"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19367"
       }
     },
     {
@@ -12318,18 +10969,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          137.05818645,
-          34.9305143344
+          137.0581864,
+          34.9305143
         ]
       },
       "properties": {
-        "id": "23008",
+        "id": "19368",
         "name": "道の駅デンパーク安城",
         "prefecture": "愛知県",
         "city": "安城市",
         "address": "愛知県安城市赤松町梶5",
-        "road": "国道23号",
-        "url": "https://www.michi-no-eki.jp/stations/view/586"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19368"
       }
     },
     {
@@ -12337,18 +10988,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          137.420692,
+          137.4206920,
           34.9631966
         ]
       },
       "properties": {
-        "id": "23009",
+        "id": "19369",
         "name": "道の駅つくで手作り村",
         "prefecture": "愛知県",
         "city": "新城市",
         "address": "愛知県新城市作手清岳字ナガラミ10-2",
-        "road": "国道301号",
-        "url": "https://www.michi-no-eki.jp/stations/view/587"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19369"
       }
     },
     {
@@ -12361,13 +11012,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "23010",
-        "name": "道の駅立田ふれあいの里",
+        "id": "19370",
+        "name": "道の駅ふれあいの里HASUパーク",
         "prefecture": "愛知県",
         "city": "愛西市",
         "address": "愛知県愛西市森川町井桁西27",
-        "road": "愛知県道125号佐屋多度線",
-        "url": "https://www.michi-no-eki.jp/stations/view/588"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19370"
       }
     },
     {
@@ -12380,13 +11031,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "23011",
+        "id": "19371",
         "name": "道の駅あかばねロコステーション",
         "prefecture": "愛知県",
         "city": "田原市",
         "address": "愛知県田原市赤羽根町大西32-4",
-        "road": "国道42号",
-        "url": "https://www.michi-no-eki.jp/stations/view/589"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19371"
       }
     },
     {
@@ -12394,18 +11045,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          137.138304,
+          137.1383040,
           34.8485237
         ]
       },
       "properties": {
-        "id": "23012",
+        "id": "19372",
         "name": "道の駅筆柿の里・幸田",
         "prefecture": "愛知県",
-        "city": "額田郡幸田町",
-        "address": "愛知県額田郡幸田町須美東山17番地5",
-        "road": "国道23号",
-        "url": "https://www.michi-no-eki.jp/stations/view/590"
+        "city": "幸田町",
+        "address": "愛知県額田郡幸田町大字須見字東山17-5",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19372"
       }
     },
     {
@@ -12418,13 +11069,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "23013",
+        "id": "19373",
         "name": "道の駅にしお岡ノ山",
         "prefecture": "愛知県",
         "city": "西尾市",
-        "address": "愛知県西尾市小島町岡ノ山105番地57",
-        "road": "国道23号",
-        "url": "https://www.michi-no-eki.jp/stations/view/591"
+        "address": "愛知県西尾市小島町岡ノ山105-57",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19373"
       }
     },
     {
@@ -12437,13 +11088,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "23014",
+        "id": "19374",
         "name": "道の駅瀬戸しなの",
         "prefecture": "愛知県",
         "city": "瀬戸市",
-        "address": "愛知県瀬戸市品野町1丁目126-1",
-        "road": "愛知県道210号中水野品野線",
-        "url": "https://www.michi-no-eki.jp/stations/view/592"
+        "address": "愛知県瀬戸市品野町1-126-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19374"
       }
     },
     {
@@ -12456,13 +11107,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "23015",
+        "id": "19375",
         "name": "道の駅藤川宿",
         "prefecture": "愛知県",
         "city": "岡崎市",
-        "address": "愛知県岡崎市藤川町字東沖田44番地",
-        "road": "国道1号",
-        "url": "https://www.michi-no-eki.jp/stations/view/593"
+        "address": "愛知県岡崎市藤川町字東沖田44",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19375"
       }
     },
     {
@@ -12470,18 +11121,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          137.5337,
-          34.91757
+          137.5337000,
+          34.9175700
         ]
       },
       "properties": {
-        "id": "23016",
+        "id": "19376",
         "name": "道の駅もっくる新城",
         "prefecture": "愛知県",
         "city": "新城市",
-        "address": "愛知県新城市八束穂字五反田329番地7",
-        "road": "国道151号",
-        "url": "https://www.michi-no-eki.jp/stations/view/594"
+        "address": "愛知県新城市八束穂字五反田329-7",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19376"
       }
     },
     {
@@ -12494,13 +11145,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "24001",
+        "id": "19377",
         "name": "道の駅飯高駅",
         "prefecture": "三重県",
         "city": "松阪市",
-        "address": "三重県松阪市飯高町宮前177番地",
-        "road": "国道166号",
-        "url": "https://www.michi-no-eki.jp/stations/view/595"
+        "address": "三重県松阪市飯高町宮前177",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19377"
       }
     },
     {
@@ -12509,17 +11160,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           136.5030552,
-          35.013663
+          35.0136630
         ]
       },
       "properties": {
-        "id": "24002",
+        "id": "19378",
         "name": "道の駅菰野",
         "prefecture": "三重県",
-        "city": "三重郡菰野町",
-        "address": "三重県三重郡菰野町大字菰野2256番地",
-        "road": "国道477号",
-        "url": "https://www.michi-no-eki.jp/stations/view/596"
+        "city": "菰野町",
+        "address": "三重県三重郡菰野町大字菰野2256",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19378"
       }
     },
     {
@@ -12532,13 +11183,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "24003",
+        "id": "19379",
         "name": "道の駅紀宝町ウミガメ公園",
         "prefecture": "三重県",
-        "city": "南牟婁郡紀宝町",
+        "city": "紀宝町",
         "address": "三重県南牟婁郡紀宝町井田568-7",
-        "road": "国道42号",
-        "url": "https://www.michi-no-eki.jp/stations/view/597"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19379"
       }
     },
     {
@@ -12551,13 +11202,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "24004",
+        "id": "19380",
         "name": "道の駅パーク七里御浜",
         "prefecture": "三重県",
-        "city": "南牟婁郡御浜町",
-        "address": "三重県南牟婁郡御浜町大字阿田和4926番地5",
-        "road": "国道42号",
-        "url": "https://www.michi-no-eki.jp/stations/view/598"
+        "city": "御浜町",
+        "address": "三重県南牟婁郡御浜町大字阿田和4926-5",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19380"
       }
     },
     {
@@ -12565,18 +11216,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          136.214084,
-          34.102363
+          136.2140840,
+          34.1023630
         ]
       },
       "properties": {
-        "id": "24005",
+        "id": "19381",
         "name": "道の駅海山",
         "prefecture": "三重県",
-        "city": "北牟婁郡紀北町",
-        "address": "三重県北牟婁郡紀北町相賀1439-3",
-        "road": "国道42号",
-        "url": "https://www.michi-no-eki.jp/stations/view/599"
+        "city": "紀北町",
+        "address": "三重県北牟婁郡紀北町海山区相賀1439-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19381"
       }
     },
     {
@@ -12589,13 +11240,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "24006",
+        "id": "19382",
         "name": "道の駅奥伊勢木つつ木館",
         "prefecture": "三重県",
-        "city": "度会郡大紀町",
+        "city": "大紀町",
         "address": "三重県度会郡大紀町滝原870-37",
-        "road": "国道42号",
-        "url": "https://www.michi-no-eki.jp/stations/view/600"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19382"
       }
     },
     {
@@ -12604,17 +11255,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           136.1042538,
-          33.959915
+          33.9599150
         ]
       },
       "properties": {
-        "id": "24007",
+        "id": "19383",
         "name": "道の駅熊野きのくに",
         "prefecture": "三重県",
         "city": "熊野市",
         "address": "三重県熊野市飛鳥町大又109-21",
-        "road": "国道42号",
-        "url": "https://www.michi-no-eki.jp/stations/view/601"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19383"
       }
     },
     {
@@ -12627,13 +11278,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "24008",
+        "id": "19384",
         "name": "道の駅茶倉駅",
         "prefecture": "三重県",
         "city": "松阪市",
         "address": "三重県松阪市飯南町粥見452-1",
-        "road": "国道166号",
-        "url": "https://www.michi-no-eki.jp/stations/view/602"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19384"
       }
     },
     {
@@ -12646,13 +11297,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "24009",
+        "id": "19385",
         "name": "道の駅奥伊勢おおだい",
         "prefecture": "三重県",
-        "city": "多気郡大台町",
-        "address": "三重県多気郡大台町佐原663番地1",
-        "road": "国道42号",
-        "url": "https://www.michi-no-eki.jp/stations/view/603"
+        "city": "大台町",
+        "address": "三重県多気郡大台町大字佐原663-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19385"
       }
     },
     {
@@ -12665,13 +11316,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "24010",
+        "id": "19386",
         "name": "道の駅美杉",
         "prefecture": "三重県",
         "city": "津市",
         "address": "三重県津市美杉町上多気267",
-        "road": "国道368号",
-        "url": "https://www.michi-no-eki.jp/stations/view/604"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19386"
       }
     },
     {
@@ -12680,17 +11331,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           136.3926996,
-          34.849508
+          34.8495080
         ]
       },
       "properties": {
-        "id": "24011",
+        "id": "19387",
         "name": "道の駅関宿",
         "prefecture": "三重県",
         "city": "亀山市",
-        "address": "三重県亀山市関町新所674番地8",
-        "road": "国道1号",
-        "url": "https://www.michi-no-eki.jp/stations/view/605"
+        "address": "三重県亀山市関町新所674-8",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19387"
       }
     },
     {
@@ -12703,13 +11354,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "24012",
+        "id": "19388",
         "name": "道の駅伊勢志摩",
         "prefecture": "三重県",
         "city": "志摩市",
-        "address": "三重県志摩市磯部町穴川511番地5",
-        "road": "国道167号",
-        "url": "https://www.michi-no-eki.jp/stations/view/606"
+        "address": "三重県志摩市磯部町穴川511-5",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19388"
       }
     },
     {
@@ -12722,13 +11373,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "24013",
+        "id": "19389",
         "name": "道の駅紀伊長島マンボウ",
         "prefecture": "三重県",
-        "city": "北牟婁郡紀北町",
-        "address": "三重県北牟婁郡紀北町東長島2410番地73",
-        "road": "国道42号",
-        "url": "https://www.michi-no-eki.jp/stations/view/607"
+        "city": "紀北町",
+        "address": "三重県北牟婁郡紀北町東長島2410-73",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19389"
       }
     },
     {
@@ -12741,13 +11392,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "24014",
+        "id": "19390",
         "name": "道の駅あやま",
         "prefecture": "三重県",
         "city": "伊賀市",
         "address": "三重県伊賀市川合3370-29",
-        "road": "三重県道49号甲南阿山伊賀線",
-        "url": "https://www.michi-no-eki.jp/stations/view/608"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19390"
       }
     },
     {
@@ -12755,18 +11406,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          136.5179906,
-          34.7967069
+          136.2534017,
+          34.8371363
         ]
       },
       "properties": {
-        "id": "24016",
-        "name": "道の駅津かわげ",
+        "id": "19391",
+        "name": "道の駅いが",
         "prefecture": "三重県",
-        "city": "津市",
-        "address": "三重県津市河芸町三行255番地4",
-        "road": "国道23号",
-        "url": "https://www.michi-no-eki.jp/stations/view/9741"
+        "city": "伊賀市",
+        "address": "三重県伊賀市柘植町6187-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19391"
       }
     },
     {
@@ -12774,18 +11425,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          136.092541,
-          33.878939
+          136.0919440,
+          35.7967250
         ]
       },
       "properties": {
-        "id": "24017",
-        "name": "道の駅熊野・花の窟",
-        "prefecture": "三重県",
-        "city": "熊野市",
-        "address": "三重県熊野市有馬町137番地",
-        "road": "国道42号",
-        "url": "https://www.michi-no-eki.jp/stations/view/11979"
+        "id": "19392",
+        "name": "道の駅河野",
+        "prefecture": "福井県",
+        "city": "南越前町",
+        "address": "福井県南条郡南越前町大谷86-1-6",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19392"
       }
     },
     {
@@ -12793,18 +11444,246 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          135.915236,
-          33.876518
+          136.6614651,
+          35.9042370
         ]
       },
       "properties": {
-        "id": "24018",
-        "name": "道の駅熊野・板屋九郎兵衛の里",
-        "prefecture": "三重県",
-        "city": "熊野市",
-        "address": "三重県熊野市紀和町板屋82番地",
-        "road": "国道311号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14179"
+        "id": "19393",
+        "name": "道の駅九頭竜",
+        "prefecture": "福井県",
+        "city": "大野市",
+        "address": "福井県大野市朝日26-30-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19393"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.1195140,
+          35.9694830
+        ]
+      },
+      "properties": {
+        "id": "19394",
+        "name": "道の駅パークイン丹生ヶ丘",
+        "prefecture": "福井県",
+        "city": "越前町",
+        "address": "福井県丹生郡越前町上川去45-1-7",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19394"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5842232,
+          35.3946307
+        ]
+      },
+      "properties": {
+        "id": "19395",
+        "name": "道の駅名田庄",
+        "prefecture": "福井県",
+        "city": "おおい町",
+        "address": "福井県大飯郡おおい町名田庄納田終109-4-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19395"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.1390707,
+          36.1895672
+        ]
+      },
+      "properties": {
+        "id": "19396",
+        "name": "道の駅みくに",
+        "prefecture": "福井県",
+        "city": "坂井市",
+        "address": "福井県坂井市三国町山岸67-3-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19396"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.9060770,
+          35.4406960
+        ]
+      },
+      "properties": {
+        "id": "19397",
+        "name": "道の駅若狭熊川宿",
+        "prefecture": "福井県",
+        "city": "若狭町",
+        "address": "福井県三方上中郡若狭町熊川11-1-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19397"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.2215746,
+          36.1710160
+        ]
+      },
+      "properties": {
+        "id": "19398",
+        "name": "道の駅さかい",
+        "prefecture": "福井県",
+        "city": "坂井市",
+        "address": "福井県坂井市坂井町蔵垣内34-14-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19398"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5954964,
+          35.4890516
+        ]
+      },
+      "properties": {
+        "id": "19399",
+        "name": "道の駅シーサイド高浜",
+        "prefecture": "福井県",
+        "city": "高浜町",
+        "address": "福井県高浜町下車持46-10",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19399"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7630954,
+          35.4919688
+        ]
+      },
+      "properties": {
+        "id": "19400",
+        "name": "道の駅若狭おばま",
+        "prefecture": "福井県",
+        "city": "小浜市",
+        "address": "福井県小浜市和久里24-45-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19400"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.6299804,
+          35.4812687
+        ]
+      },
+      "properties": {
+        "id": "19401",
+        "name": "道の駅うみんぴあ大飯",
+        "prefecture": "福井県",
+        "city": "おおい町",
+        "address": "福井県大飯郡おおい町成海1-1-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19401"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.1806773,
+          35.9486607
+        ]
+      },
+      "properties": {
+        "id": "19402",
+        "name": "道の駅西山公園",
+        "prefecture": "福井県",
+        "city": "鯖江市",
+        "address": "福井県鯖江市桜町3-950",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19402"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.9970470,
+          35.9198800
+        ]
+      },
+      "properties": {
+        "id": "19403",
+        "name": "道の駅越前",
+        "prefecture": "福井県",
+        "city": "越前町",
+        "address": "福井県丹生郡越前町厨71-335-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19403"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.8943610,
+          35.5601900
+        ]
+      },
+      "properties": {
+        "id": "19404",
+        "name": "道の駅三方五湖",
+        "prefecture": "福井県",
+        "city": "若狭町",
+        "address": "福井県三方上中郡若狭町鳥浜122-31-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19404"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.2945800,
+          36.0205640
+        ]
+      },
+      "properties": {
+        "id": "19405",
+        "name": "道の駅一乗谷あさくら水の駅",
+        "prefecture": "福井県",
+        "city": "福井市",
+        "address": "福井県福井市安波賀中島町1-1-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19405"
       }
     },
     {
@@ -12817,13 +11696,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "25001",
+        "id": "19406",
         "name": "道の駅あいの土山",
         "prefecture": "滋賀県",
         "city": "甲賀市",
-        "address": "滋賀県甲賀市土山町北土山2900番地",
-        "road": "国道1号",
-        "url": "https://www.michi-no-eki.jp/stations/view/624"
+        "address": "滋賀県甲賀市土山町北土山505-13",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19406"
       }
     },
     {
@@ -12836,13 +11715,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "25002",
+        "id": "19407",
         "name": "道の駅くつき新本陣",
         "prefecture": "滋賀県",
         "city": "高島市",
-        "address": "滋賀県高島市朽木市場777番地",
-        "road": "国道367号",
-        "url": "https://www.michi-no-eki.jp/stations/view/625"
+        "address": "滋賀県高島市朽木市場777",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19407"
       }
     },
     {
@@ -12855,13 +11734,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "25003",
+        "id": "19408",
         "name": "道の駅しんあさひ風車村",
         "prefecture": "滋賀県",
         "city": "高島市",
-        "address": "滋賀県高島市新旭町藁園336番地",
-        "road": "滋賀県道333号",
-        "url": "https://www.michi-no-eki.jp/stations/view/626"
+        "address": "滋賀県高島市新旭町藁園336",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19408"
       }
     },
     {
@@ -12874,13 +11753,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "25004",
+        "id": "19409",
         "name": "道の駅東近江市あいとうマーガレットステーション",
         "prefecture": "滋賀県",
         "city": "東近江市",
-        "address": "滋賀県東近江市妹町184番地1",
-        "road": "国道307号",
-        "url": "https://www.michi-no-eki.jp/stations/view/627"
+        "address": "滋賀県東近江市妹町184-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19409"
       }
     },
     {
@@ -12893,13 +11772,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "25005",
+        "id": "19410",
         "name": "道の駅びわ湖大橋米プラザ",
         "prefecture": "滋賀県",
         "city": "大津市",
-        "address": "滋賀県大津市今堅田三丁目1番1号",
-        "road": "国道477号",
-        "url": "https://www.michi-no-eki.jp/stations/view/628"
+        "address": "滋賀県大津市今堅田3-1-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19410"
       }
     },
     {
@@ -12912,13 +11791,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "25006",
+        "id": "19411",
         "name": "道の駅近江母の郷",
         "prefecture": "滋賀県",
         "city": "米原市",
-        "address": "滋賀県米原市宇賀野1364番地1",
-        "road": "滋賀県道2号",
-        "url": "https://www.michi-no-eki.jp/stations/view/629"
+        "address": "滋賀県米原市宇賀野1364-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19411"
       }
     },
     {
@@ -12931,13 +11810,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "25007",
+        "id": "19412",
         "name": "道の駅こんぜの里りっとう",
         "prefecture": "滋賀県",
         "city": "栗東市",
-        "address": "滋賀県栗東市荒張1番地11",
-        "road": "滋賀県道12号",
-        "url": "https://www.michi-no-eki.jp/stations/view/630"
+        "address": "滋賀県栗東市荒張1-11",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19412"
       }
     },
     {
@@ -12945,18 +11824,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          136.190765,
+          136.1907650,
           35.4450126
         ]
       },
       "properties": {
-        "id": "25008",
+        "id": "19413",
         "name": "道の駅湖北みずどりステーション",
         "prefecture": "滋賀県",
         "city": "長浜市",
-        "address": "滋賀県長浜市湖北町今西1731番地1",
-        "road": "滋賀県道331号",
-        "url": "https://www.michi-no-eki.jp/stations/view/631"
+        "address": "滋賀県長浜市湖北町今西1731-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19413"
       }
     },
     {
@@ -12969,13 +11848,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "25009",
+        "id": "19414",
         "name": "道の駅草津",
         "prefecture": "滋賀県",
         "city": "草津市",
-        "address": "滋賀県草津市下物町1436番地",
-        "road": "滋賀県道559号",
-        "url": "https://www.michi-no-eki.jp/stations/view/632"
+        "address": "滋賀県草津市下物町1436",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19414"
       }
     },
     {
@@ -12983,18 +11862,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          136.079297,
-          35.085777
+          136.0792970,
+          35.0857770
         ]
       },
       "properties": {
-        "id": "25010",
+        "id": "19415",
         "name": "道の駅竜王かがみの里",
         "prefecture": "滋賀県",
-        "city": "蒲生郡竜王町",
-        "address": "滋賀県蒲生郡竜王町大字鏡1231番地2",
-        "road": "国道8号",
-        "url": "https://www.michi-no-eki.jp/stations/view/633"
+        "city": "竜王町",
+        "address": "滋賀県蒲生郡竜王町大字鏡1231-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19415"
       }
     },
     {
@@ -13007,13 +11886,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "25011",
+        "id": "19416",
         "name": "道の駅アグリの郷栗東",
         "prefecture": "滋賀県",
         "city": "栗東市",
-        "address": "滋賀県栗東市出庭961番地1",
-        "road": "滋賀県道145号",
-        "url": "https://www.michi-no-eki.jp/stations/view/634"
+        "address": "滋賀県栗東市出庭961-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19416"
       }
     },
     {
@@ -13022,17 +11901,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           136.0830386,
-          35.481102
+          35.4811020
         ]
       },
       "properties": {
-        "id": "25012",
+        "id": "19417",
         "name": "道の駅マキノ追坂峠",
         "prefecture": "滋賀県",
         "city": "高島市",
-        "address": "滋賀県高島市マキノ町海津897番地27",
-        "road": "国道161号",
-        "url": "https://www.michi-no-eki.jp/stations/view/635"
+        "address": "滋賀県高島市マキノ町海津897-27",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19417"
       }
     },
     {
@@ -13045,13 +11924,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "25013",
+        "id": "19418",
         "name": "道の駅藤樹の里あどがわ",
         "prefecture": "滋賀県",
         "city": "高島市",
-        "address": "滋賀県高島市安曇川町青柳1162番地1",
-        "road": "国道161号",
-        "url": "https://www.michi-no-eki.jp/stations/view/636"
+        "address": "滋賀県高島市安曇川町青柳1162-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19418"
       }
     },
     {
@@ -13064,13 +11943,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "25014",
+        "id": "19419",
         "name": "道の駅伊吹の里",
         "prefecture": "滋賀県",
         "city": "米原市",
         "address": "滋賀県米原市伊吹1732-1",
-        "road": "滋賀県道・岐阜県道40号山東本巣線",
-        "url": "https://www.michi-no-eki.jp/stations/view/637"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19419"
       }
     },
     {
@@ -13078,18 +11957,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          136.162805,
+          136.1628050,
           35.5205935
         ]
       },
       "properties": {
-        "id": "25015",
-        "name": "道の駅塩津海道_あぢかまの里",
+        "id": "19420",
+        "name": "道の駅塩津海道あぢかまの里",
         "prefecture": "滋賀県",
         "city": "長浜市",
-        "address": "滋賀県長浜市西浅井町塩津浜1765番地",
-        "road": "国道8号",
-        "url": "https://www.michi-no-eki.jp/stations/view/638"
+        "address": "滋賀県長浜市西浅井町塩津浜1765",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19420"
       }
     },
     {
@@ -13102,13 +11981,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "25016",
+        "id": "19421",
         "name": "道の駅せせらぎの里こうら",
         "prefecture": "滋賀県",
-        "city": "犬上郡甲良町",
-        "address": "滋賀県犬上郡甲良町大字金屋1549番地4",
-        "road": "国道307号",
-        "url": "https://www.michi-no-eki.jp/stations/view/639"
+        "city": "甲良町",
+        "address": "滋賀県犬上郡甲良町金屋1549-4",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19421"
       }
     },
     {
@@ -13121,13 +12000,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "25017",
+        "id": "19422",
         "name": "道の駅妹子の郷",
         "prefecture": "滋賀県",
         "city": "大津市",
-        "address": "滋賀県大津市和邇中528番地",
-        "road": "国道161号|湖西道路",
-        "url": "https://www.michi-no-eki.jp/stations/view/640"
+        "address": "滋賀県大津市和邇中528",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19422"
       }
     },
     {
@@ -13135,56 +12014,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          136.371792,
-          35.105711
+          136.3717920,
+          35.1057110
         ]
       },
       "properties": {
-        "id": "25018",
+        "id": "19423",
         "name": "道の駅奥永源寺渓流の里",
         "prefecture": "滋賀県",
         "city": "東近江市",
-        "address": "滋賀県東近江市蓼畑町510番地 ",
-        "road": "国道421号",
-        "url": "https://www.michi-no-eki.jp/stations/view/641"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.1452664,
-          35.0436549
-        ]
-      },
-      "properties": {
-        "id": "25019",
-        "name": "道の駅アグリパーク竜王",
-        "prefecture": "滋賀県",
-        "city": "蒲生郡竜王町",
-        "address": "滋賀県蒲生郡竜王町山之上6526番地",
-        "road": "国道477号",
-        "url": "https://www.michi-no-eki.jp/stations/view/7995"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.3054291,
-          35.4300512
-        ]
-      },
-      "properties": {
-        "id": "25020",
-        "name": "道の駅浅井三姉妹の郷",
-        "prefecture": "滋賀県",
-        "city": "長浜市",
-        "address": "滋賀県長浜市内保町2843番地",
-        "road": "国道365号",
-        "url": "https://www.michi-no-eki.jp/stations/view/9742"
+        "address": "滋賀県東近江市蓼畑町510",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19423"
       }
     },
     {
@@ -13197,13 +12038,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "26002",
-        "name": "道の駅舟屋の里_伊根",
+        "id": "19424",
+        "name": "道の駅舟屋の里伊根",
         "prefecture": "京都府",
-        "city": "与謝郡伊根町",
-        "address": "京都府与謝郡伊根町字亀島459番地",
-        "road": "国道178号",
-        "url": "https://www.michi-no-eki.jp/stations/view/642"
+        "city": "伊根町",
+        "address": "京都府与謝郡伊根町字亀島459",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19424"
       }
     },
     {
@@ -13216,13 +12057,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "26003",
-        "name": "道の駅シルクのまち_かや",
-        "prefecture": "京都府",
-        "city": "与謝郡与謝野町",
-        "address": "京都府与謝郡与謝野町字滝98番地",
-        "road": "国道176号",
-        "url": "https://www.michi-no-eki.jp/stations/view/643"
+        "id": "19425",
+        "name": "道の駅シルクのまち かや",
+        "prefecture": "シルクのまち　かや",
+        "city": "",
+        "address": "京都府与謝郡与謝野町字滝98",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19425"
       }
     },
     {
@@ -13235,13 +12076,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "26004",
+        "id": "19426",
         "name": "道の駅てんきてんき丹後",
         "prefecture": "京都府",
         "city": "京丹後市",
         "address": "京都府京丹後市丹後町竹野313-1",
-        "road": "国道178号",
-        "url": "https://www.michi-no-eki.jp/stations/view/644"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19426"
       }
     },
     {
@@ -13254,13 +12095,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "26005",
+        "id": "19427",
         "name": "道の駅和",
         "prefecture": "京都府",
-        "city": "船井郡京丹波町",
-        "address": "京都府船井郡京丹波町坂原上モジリ11番地",
-        "road": "国道27号",
-        "url": "https://www.michi-no-eki.jp/stations/view/645"
+        "city": "京丹波町",
+        "address": "京都府船井郡京丹波町坂原上モジリ11",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19427"
       }
     },
     {
@@ -13268,18 +12109,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          135.566682,
+          135.5666820,
           35.0145442
         ]
       },
       "properties": {
-        "id": "26006",
+        "id": "19428",
         "name": "道の駅ガレリアかめおか",
         "prefecture": "京都府",
         "city": "亀岡市",
-        "address": "京都府亀岡市余部町宝久保1番地の1",
-        "road": "国道9号",
-        "url": "https://www.michi-no-eki.jp/stations/view/646"
+        "address": "京都府亀岡市余部町宝久保1-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19428"
       }
     },
     {
@@ -13288,17 +12129,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           135.4287046,
-          35.154813
+          35.1548130
         ]
       },
       "properties": {
-        "id": "26007",
+        "id": "19429",
         "name": "道の駅丹波マーケス",
         "prefecture": "京都府",
-        "city": "船井郡京丹波町",
-        "address": "京都府船井郡京丹波町須知色紙田3番地5",
-        "road": "国道9号",
-        "url": "https://www.michi-no-eki.jp/stations/view/647"
+        "city": "京丹波町",
+        "address": "京都府船井郡京丹波町須知色紙田3-5",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19429"
       }
     },
     {
@@ -13311,13 +12152,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "26008",
+        "id": "19430",
         "name": "道の駅瑞穂の里・さらびき",
         "prefecture": "京都府",
-        "city": "船井郡京丹波町",
-        "address": "京都府船井郡京丹波町大朴休石10番地1",
-        "road": "国道173号",
-        "url": "https://www.michi-no-eki.jp/stations/view/648"
+        "city": "京丹波町",
+        "address": "京都府船井郡京丹波町大朴休石10-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19430"
       }
     },
     {
@@ -13325,18 +12166,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          134.929796,
+          134.9297960,
           35.3383704
         ]
       },
       "properties": {
-        "id": "26009",
+        "id": "19431",
         "name": "道の駅農匠の郷やくの",
         "prefecture": "京都府",
         "city": "福知山市",
-        "address": "京都府福知山市夜久野町平野2150番地",
-        "road": "国道9号",
-        "url": "https://www.michi-no-eki.jp/stations/view/649"
+        "address": "京都府福知山市夜久野町平野2150",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19431"
       }
     },
     {
@@ -13345,17 +12186,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           135.3145072,
-          35.450349
+          35.4503490
         ]
       },
       "properties": {
-        "id": "26010",
+        "id": "19432",
         "name": "道の駅舞鶴港とれとれセンター",
         "prefecture": "京都府",
         "city": "舞鶴市",
-        "address": "京都府舞鶴市下福井905番地",
-        "road": "国道175号",
-        "url": "https://www.michi-no-eki.jp/stations/view/650"
+        "address": "京都府舞鶴市字下福井905",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19432"
       }
     },
     {
@@ -13363,18 +12204,75 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          135.633108,
+          135.4822130,
+          35.1238860
+        ]
+      },
+      "properties": {
+        "id": "19433",
+        "name": "道の駅京都新光悦村",
+        "prefecture": "京都府",
+        "city": "南丹市",
+        "address": "京都府南丹市園部町曽我谷縄手15-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19433"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.0681027,
+          35.6746549
+        ]
+      },
+      "properties": {
+        "id": "19434",
+        "name": "道の駅丹後王国「食のみやこ",
+        "prefecture": "京都府",
+        "city": "京丹後市",
+        "address": "京都府京丹後市弥栄町鳥取123",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19434"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5880350,
+          35.2771210
+        ]
+      },
+      "properties": {
+        "id": "19435",
+        "name": "道の駅美山ふれあい広場",
+        "prefecture": "京都府",
+        "city": "南丹市",
+        "address": "京都府南丹市美山町安掛下23-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19435"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.6331080,
           35.1558354
         ]
       },
       "properties": {
-        "id": "26014",
+        "id": "19436",
         "name": "道の駅ウッディー京北",
         "prefecture": "京都府",
         "city": "京都市",
-        "address": "京都府京都市右京区京北周山町上寺田1番地の1[1]",
-        "road": "国道162号",
-        "url": "https://www.michi-no-eki.jp/stations/view/654"
+        "address": "京都府京都市右京区京北周山町上寺田1-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19436"
       }
     },
     {
@@ -13387,13 +12285,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "26015",
+        "id": "19437",
         "name": "道の駅くみはまSANKAIKAN",
         "prefecture": "京都府",
         "city": "京丹後市",
-        "address": "京都府京丹後市久美浜町浦明1709番地",
-        "road": "国道178号",
-        "url": "https://www.michi-no-eki.jp/stations/view/655"
+        "address": "京都府京丹後市久美浜町浦明1709",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19437"
       }
     },
     {
@@ -13401,18 +12299,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          135.517810225,
-          35.1524243823
+          135.5178102,
+          35.1524244
         ]
       },
       "properties": {
-        "id": "26016",
+        "id": "19438",
         "name": "道の駅スプリングスひよし",
         "prefecture": "京都府",
         "city": "南丹市",
-        "address": "京都府南丹市日吉町中宮ノ向8番地",
-        "road": "京都府道19号",
-        "url": "https://www.michi-no-eki.jp/stations/view/656"
+        "address": "京都府南丹市日吉町中宮の向8",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19438"
       }
     },
     {
@@ -13420,18 +12318,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          135.426755,
-          35.149554
+          135.4158524,
+          35.1561887
         ]
       },
       "properties": {
-        "id": "26017",
-        "name": "道の駅 京丹波味夢の里",
+        "id": "19439",
+        "name": "道の駅京丹波 味夢の里",
         "prefecture": "京都府",
-        "city": "船井郡京丹波町",
+        "city": "京丹波町",
         "address": "京都府船井郡京丹波町曽根深シノ65-1",
-        "road": "国道478号",
-        "url": "https://www.michi-no-eki.jp/stations/view/657"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19439"
       }
     },
     {
@@ -13439,56 +12337,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          135.1939786,
-          35.5383355
+          135.6259364,
+          34.4642762
         ]
       },
       "properties": {
-        "id": "26018",
-        "name": "道の駅海の京都_宮津",
-        "prefecture": "京都府",
-        "city": "宮津市",
-        "address": "京都府宮津市字浜町3007番地",
-        "road": "国道176号",
-        "url": "https://www.michi-no-eki.jp/stations/view/9743"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.024007,
-          34.765472
-        ]
-      },
-      "properties": {
-        "id": "26019",
-        "name": "道の駅お茶の京都みなみやましろ村",
-        "prefecture": "京都府",
-        "city": "相楽郡南山城村",
-        "address": "京都府相楽郡南山城村北大河原殿田102",
-        "road": "国道163号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14148"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          135.625936428,
-          34.4642761555
-        ]
-      },
-      "properties": {
-        "id": "27001",
+        "id": "19440",
         "name": "道の駅ちはやあかさか",
         "prefecture": "大阪府",
         "city": "南河内郡千早赤阪村",
         "address": "大阪府南河内郡千早赤阪村二河原辺7",
-        "road": "国道309号",
-        "url": "https://www.michi-no-eki.jp/stations/view/658"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19440"
       }
     },
     {
@@ -13501,13 +12361,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "27002",
+        "id": "19441",
         "name": "道の駅近つ飛鳥の里太子",
         "prefecture": "大阪府",
         "city": "南河内郡太子町",
-        "address": "大阪府南河内郡太子町大字山田2254の3",
-        "road": "国道166号",
-        "url": "https://www.michi-no-eki.jp/stations/view/659"
+        "address": "大阪府南河内郡太子町大字山田２２５４ー３",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19441"
       }
     },
     {
@@ -13520,13 +12380,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "27003",
+        "id": "19442",
         "name": "道の駅能勢（くりの郷）",
         "prefecture": "大阪府",
         "city": "豊能郡能勢町",
         "address": "大阪府豊能郡能勢町平野535",
-        "road": "国道173号",
-        "url": "https://www.michi-no-eki.jp/stations/view/660"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19442"
       }
     },
     {
@@ -13534,18 +12394,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          135.617062,
-          34.478438
+          135.6170620,
+          34.4784380
         ]
       },
       "properties": {
-        "id": "27004",
+        "id": "19443",
         "name": "道の駅かなん",
         "prefecture": "大阪府",
         "city": "南河内郡河南町",
-        "address": "大阪府南河内郡河南町大字神山523番地の1",
-        "road": "国道309号",
-        "url": "https://www.michi-no-eki.jp/stations/view/661"
+        "address": "大阪府南河内郡河南町大字神山523-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19443"
       }
     },
     {
@@ -13553,18 +12413,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          135.587747,
-          34.533043
+          135.5877470,
+          34.5330430
         ]
       },
       "properties": {
-        "id": "27005",
+        "id": "19444",
         "name": "道の駅しらとりの郷・羽曳野",
         "prefecture": "大阪府",
         "city": "羽曳野市",
-        "address": "大阪府羽曳野市埴生野975番3",
-        "road": "大阪府道32号",
-        "url": "https://www.michi-no-eki.jp/stations/view/662"
+        "address": "大阪府羽曳野市埴生野975-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19444"
       }
     },
     {
@@ -13573,17 +12433,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           135.4830003,
-          34.423154
+          34.4231540
         ]
       },
       "properties": {
-        "id": "27006",
+        "id": "19445",
         "name": "道の駅いずみ山愛の里",
         "prefecture": "大阪府",
         "city": "和泉市",
         "address": "大阪府和泉市仏並町398-1",
-        "road": "国道170号",
-        "url": "https://www.michi-no-eki.jp/stations/view/663"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19445"
       }
     },
     {
@@ -13596,13 +12456,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "27007",
+        "id": "19446",
         "name": "道の駅とっとパーク小島",
         "prefecture": "大阪府",
         "city": "泉南郡岬町",
         "address": "大阪府泉南郡岬町多奈川小島455-1",
-        "road": "大阪府道65号岬加太港線",
-        "url": "https://www.michi-no-eki.jp/stations/view/664"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19446"
       }
     },
     {
@@ -13610,18 +12470,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          135.42543,
+          135.4254300,
           34.4225565
         ]
       },
       "properties": {
-        "id": "27008",
+        "id": "19447",
         "name": "道の駅愛彩ランド",
         "prefecture": "大阪府",
         "city": "岸和田市",
         "address": "大阪府岸和田市岸の丘町3-6-18",
-        "road": "国道170号",
-        "url": "https://www.michi-no-eki.jp/stations/view/665"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19447"
       }
     },
     {
@@ -13629,56 +12489,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          135.17379,
-          34.325936
+          134.5221635,
+          35.2017064
         ]
       },
       "properties": {
-        "id": "27009",
-        "name": "道の駅みさき",
-        "prefecture": "大阪府",
-        "city": "泉南郡岬町",
-        "address": "大阪府泉南郡岬町淡輪5654番地の3",
-        "road": "国道26号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14130"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          135.551096,
-          34.435966
-        ]
-      },
-      "properties": {
-        "id": "27010",
-        "name": "道の駅奥河内くろまろの郷",
-        "prefecture": "大阪府",
-        "city": "河内長野市",
-        "address": "大阪府河内長野市高向1218番地1",
-        "road": "国道170号|市道宮ノ下線",
-        "url": "https://www.michi-no-eki.jp/stations/view/14161"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          134.522187649,
-          35.2016226779
-        ]
-      },
-      "properties": {
-        "id": "28001",
-        "name": "道の駅はが_(兵庫県)",
+        "id": "19448",
+        "name": "道の駅はが",
         "prefecture": "兵庫県",
         "city": "宍粟市",
         "address": "兵庫県宍粟市波賀町原149",
-        "road": "国道29号",
-        "url": "https://www.michi-no-eki.jp/stations/view/666"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19448"
       }
     },
     {
@@ -13686,18 +12508,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          134.803884,
-          35.247009
+          134.8038840,
+          35.2470090
         ]
       },
       "properties": {
-        "id": "28003",
+        "id": "19449",
         "name": "道の駅あさご",
         "prefecture": "兵庫県",
         "city": "朝来市",
         "address": "兵庫県朝来市多々良木字牧野213-1",
-        "road": "国道312号",
-        "url": "https://www.michi-no-eki.jp/stations/view/667"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19449"
       }
     },
     {
@@ -13710,13 +12532,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "28004",
+        "id": "19450",
         "name": "道の駅ちくさ",
         "prefecture": "兵庫県",
         "city": "宍粟市",
-        "address": "兵庫県宍粟市千種町下河野745番地5",
-        "road": "兵庫県道72号若桜下三河線",
-        "url": "https://www.michi-no-eki.jp/stations/view/668"
+        "address": "兵庫県宍粟市千種町下河野745-5",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19450"
       }
     },
     {
@@ -13729,13 +12551,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "28005",
+        "id": "19451",
         "name": "道の駅神鍋高原",
         "prefecture": "兵庫県",
         "city": "豊岡市",
-        "address": "兵庫県豊岡市日高町栗栖野59番地の13",
-        "road": "国道482号",
-        "url": "https://www.michi-no-eki.jp/stations/view/669"
+        "address": "兵庫県豊岡市日高町栗栖野59-13",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19451"
       }
     },
     {
@@ -13748,13 +12570,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "28006",
+        "id": "19452",
         "name": "道の駅村岡ファームガーデン",
         "prefecture": "兵庫県",
-        "city": "美方郡香美町",
+        "city": "香美町",
         "address": "兵庫県美方郡香美町村岡区大糠32-1",
-        "road": "国道9号",
-        "url": "https://www.michi-no-eki.jp/stations/view/670"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19452"
       }
     },
     {
@@ -13767,13 +12589,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "28007",
+        "id": "19453",
         "name": "道の駅やぶ",
         "prefecture": "兵庫県",
         "city": "養父市",
-        "address": "兵庫県養父市養父市場1294番地77",
-        "road": "兵庫県道104号",
-        "url": "https://www.michi-no-eki.jp/stations/view/671"
+        "address": "兵庫県養父市養父市場1294-77",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19453"
       }
     },
     {
@@ -13786,13 +12608,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "28008",
+        "id": "19454",
         "name": "道の駅但馬楽座",
         "prefecture": "兵庫県",
         "city": "養父市",
         "address": "兵庫県養父市上野299",
-        "road": "国道9号",
-        "url": "https://www.michi-no-eki.jp/stations/view/672"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19454"
       }
     },
     {
@@ -13805,13 +12627,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "28009",
+        "id": "19455",
         "name": "道の駅みなみ波賀",
         "prefecture": "兵庫県",
         "city": "宍粟市",
         "address": "兵庫県宍粟市波賀町安賀8-1",
-        "road": "国道29号",
-        "url": "https://www.michi-no-eki.jp/stations/view/673"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19455"
       }
     },
     {
@@ -13824,51 +12646,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "28010",
+        "id": "19456",
         "name": "道の駅しんぐう",
         "prefecture": "兵庫県",
         "city": "たつの市",
-        "address": "兵庫県たつの市新宮町平野99番地の2",
-        "road": "国道179号",
-        "url": "https://www.michi-no-eki.jp/stations/view/674"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          134.930123,
-          35.1889597
-        ]
-      },
-      "properties": {
-        "id": "28011",
-        "name": "道の駅杉原紙の里・多可",
-        "prefecture": "兵庫県",
-        "city": "多可郡多可町",
-        "address": "兵庫県多可郡多可町加美区鳥羽733-1",
-        "road": "国道427号",
-        "url": "https://www.michi-no-eki.jp/stations/view/675"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          135.0098438,
-          35.241267
-        ]
-      },
-      "properties": {
-        "id": "28012",
-        "name": "道の駅あおがき",
-        "prefecture": "兵庫県",
-        "city": "丹波市",
-        "address": "兵庫県丹波市青垣町西芦田540番地",
-        "road": "兵庫県道7号青垣柏原線",
-        "url": "https://www.michi-no-eki.jp/stations/view/676"
+        "address": "兵庫県たつの市新宮町平野99-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19456"
       }
     },
     {
@@ -13877,17 +12661,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           134.5998095,
-          35.411442
+          35.4114420
         ]
       },
       "properties": {
-        "id": "28013",
+        "id": "19457",
         "name": "道の駅ハチ北",
         "prefecture": "兵庫県",
-        "city": "美方郡香美町",
-        "address": "兵庫県美方郡香美町村岡区福岡608番地1",
-        "road": "国道9号",
-        "url": "https://www.michi-no-eki.jp/stations/view/677"
+        "city": "香美町",
+        "address": "兵庫県美方郡香美町村岡区福岡608-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19457"
       }
     },
     {
@@ -13900,13 +12684,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "28014",
+        "id": "19458",
         "name": "道の駅あわじ",
         "prefecture": "兵庫県",
         "city": "淡路市",
-        "address": "兵庫県淡路市岩屋1873番地1",
-        "road": "兵庫県道31号",
-        "url": "https://www.michi-no-eki.jp/stations/view/678"
+        "address": "兵庫県淡路市岩屋1873-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19458"
       }
     },
     {
@@ -13914,18 +12698,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          134.977205271,
-          34.7873424932
+          134.9772053,
+          34.7873425
         ]
       },
       "properties": {
-        "id": "28015",
+        "id": "19459",
         "name": "道の駅みき",
         "prefecture": "兵庫県",
         "city": "三木市",
-        "address": "兵庫県三木市福井字三木山2426番地先",
-        "road": "国道175号",
-        "url": "https://www.michi-no-eki.jp/stations/view/679"
+        "address": "兵庫県三木市福井2426",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19459"
       }
     },
     {
@@ -13933,18 +12717,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          134.6597796,
-          34.2420275
+          134.6599131,
+          34.2423186
         ]
       },
       "properties": {
-        "id": "28016",
+        "id": "19460",
         "name": "道の駅うずしお",
         "prefecture": "兵庫県",
         "city": "南あわじ市",
-        "address": "兵庫県南あわじ市福良丙947-8",
-        "road": "兵庫県道237号",
-        "url": "https://www.michi-no-eki.jp/stations/view/680"
+        "address": "兵庫県南あわじ市福良丙947-22",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19460"
       }
     },
     {
@@ -13957,13 +12741,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "28017",
+        "id": "19461",
         "name": "道の駅播磨いちのみや",
         "prefecture": "兵庫県",
         "city": "宍粟市",
-        "address": "兵庫県宍粟市一宮町須行名",
-        "road": "国道29号",
-        "url": "https://www.michi-no-eki.jp/stations/view/681"
+        "address": "兵庫県宍粟市一宮町須行名510-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19461"
       }
     },
     {
@@ -13976,13 +12760,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "28018",
+        "id": "19462",
         "name": "道の駅フレッシュあさご",
         "prefecture": "兵庫県",
         "city": "朝来市",
-        "address": "兵庫県朝来市岩津96番地",
-        "road": "播但連絡道路|国道312号",
-        "url": "https://www.michi-no-eki.jp/stations/view/682"
+        "address": "兵庫県朝来市岩津96（播但連絡道路 朝来SA内）",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19462"
       }
     },
     {
@@ -13995,13 +12779,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "28019",
+        "id": "19463",
         "name": "道の駅宿場町ひらふく",
         "prefecture": "兵庫県",
-        "city": "佐用郡佐用町",
+        "city": "佐用町",
         "address": "兵庫県佐用郡佐用町平福988-1",
-        "road": "国道373号",
-        "url": "https://www.michi-no-eki.jp/stations/view/683"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19463"
       }
     },
     {
@@ -14014,13 +12798,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "28020",
+        "id": "19464",
         "name": "道の駅あゆの里矢田川",
         "prefecture": "兵庫県",
-        "city": "美方郡香美町",
+        "city": "香美町",
         "address": "兵庫県美方郡香美町村岡区長瀬933-1",
-        "road": "兵庫県道4号",
-        "url": "https://www.michi-no-eki.jp/stations/view/684"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19464"
       }
     },
     {
@@ -14033,13 +12817,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "28021",
+        "id": "19465",
         "name": "道の駅とうじょう",
         "prefecture": "兵庫県",
         "city": "加東市",
-        "address": "兵庫県加東市南山1丁目5番地1",
-        "road": "兵庫県道313号",
-        "url": "https://www.michi-no-eki.jp/stations/view/685"
+        "address": "兵庫県加東市南山1-5-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19465"
       }
     },
     {
@@ -14052,13 +12836,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "28022",
+        "id": "19466",
         "name": "道の駅いながわ",
         "prefecture": "兵庫県",
         "city": "川辺郡猪名川町",
         "address": "兵庫県川辺郡猪名川町万善字竹添70-1",
-        "road": "兵庫県道12号",
-        "url": "https://www.michi-no-eki.jp/stations/view/686"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19466"
       }
     },
     {
@@ -14071,13 +12855,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "28023",
+        "id": "19467",
         "name": "道の駅東浦ターミナルパーク",
         "prefecture": "兵庫県",
         "city": "淡路市",
-        "address": "兵庫県淡路市浦648番地",
-        "road": "国道28号",
-        "url": "https://www.michi-no-eki.jp/stations/view/687"
+        "address": "兵庫県淡路市浦648",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19467"
       }
     },
     {
@@ -14085,18 +12869,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          134.987129,
-          35.007794
+          134.9871290,
+          35.0077940
         ]
       },
       "properties": {
-        "id": "28024",
+        "id": "19468",
         "name": "道の駅北はりまエコミュージアム",
         "prefecture": "兵庫県",
         "city": "西脇市",
-        "address": "兵庫県西脇市寺内字天神池517番地1",
-        "road": "国道175号",
-        "url": "https://www.michi-no-eki.jp/stations/view/688"
+        "address": "兵庫県西脇市寺内517-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19468"
       }
     },
     {
@@ -14104,37 +12888,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          134.461841,
-          34.804286
+          134.4618410,
+          34.8042860
         ]
       },
       "properties": {
-        "id": "28025",
+        "id": "19469",
         "name": "道の駅あいおい白龍城",
         "prefecture": "兵庫県",
         "city": "相生市",
-        "address": "兵庫県相生市那波南本町8番55号",
-        "road": "国道250号",
-        "url": "https://www.michi-no-eki.jp/stations/view/689"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          135.097418,
-          34.813904
-        ]
-      },
-      "properties": {
-        "id": "28026",
-        "name": "道の駅淡河",
-        "prefecture": "兵庫県",
-        "city": "神戸市",
-        "address": "兵庫県神戸市北区淡河町淡河字弘法垣643番1",
-        "road": "兵庫県道38号",
-        "url": "https://www.michi-no-eki.jp/stations/view/695"
+        "address": "兵庫県相生市那波南本町8-55",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19469"
       }
     },
     {
@@ -14147,13 +12912,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "28027",
+        "id": "19470",
         "name": "道の駅丹波おばあちゃんの里",
         "prefecture": "兵庫県",
         "city": "丹波市",
-        "address": "兵庫県丹波市春日町七日市710番地",
-        "road": "国道175号",
-        "url": "https://www.michi-no-eki.jp/stations/view/690"
+        "address": "兵庫県丹波市春日町七日市710",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19470"
       }
     },
     {
@@ -14166,13 +12931,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "28028",
+        "id": "19471",
         "name": "道の駅但馬のまほろば",
         "prefecture": "兵庫県",
         "city": "朝来市",
-        "address": "兵庫県朝来市山東町大月字北山92番地6",
-        "road": "国道483号|北近畿豊岡自動車道",
-        "url": "https://www.michi-no-eki.jp/stations/view/691"
+        "address": "兵庫県朝来市山東町大月92-6",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19471"
       }
     },
     {
@@ -14180,18 +12945,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          134.742487,
-          35.393994
+          134.7424870,
+          35.3939940
         ]
       },
       "properties": {
-        "id": "28029",
+        "id": "19472",
         "name": "道の駅ようか但馬蔵",
         "prefecture": "兵庫県",
         "city": "養父市",
-        "address": "兵庫県養父市八鹿町高柳241-1",
-        "road": "国道9号",
-        "url": "https://www.michi-no-eki.jp/stations/view/692"
+        "address": "兵庫県養父市八鹿町高柳241番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19472"
       }
     },
     {
@@ -14204,13 +12969,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "28030",
+        "id": "19473",
         "name": "道の駅みつ",
         "prefecture": "兵庫県",
         "city": "たつの市",
         "address": "兵庫県たつの市御津町室津896-23",
-        "road": "国道250号",
-        "url": "https://www.michi-no-eki.jp/stations/view/693"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19473"
       }
     },
     {
@@ -14223,13 +12988,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "28031",
+        "id": "19474",
         "name": "道の駅あまるべ",
         "prefecture": "兵庫県",
-        "city": "美方郡香美町",
-        "address": "兵庫県美方郡香美町香住区余部1723番地の4",
-        "road": "国道178号",
-        "url": "https://www.michi-no-eki.jp/stations/view/694"
+        "city": "香美町",
+        "address": "兵庫県美方郡香美町香住区余部1723-4",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19474"
       }
     },
     {
@@ -14237,37 +13002,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          134.9187617,
-          35.0590116
+          135.0974180,
+          34.8139040
         ]
       },
       "properties": {
-        "id": "28033",
-        "name": "道の駅山田錦発祥のまち・多可",
-        "prefecture": "兵庫県",
-        "city": "多可郡多可町",
-        "address": "兵庫県多可郡多可町中区岸上281-1",
-        "road": "国道427号",
-        "url": "https://www.michi-no-eki.jp/stations/view/9744"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          135.190522,
-          34.850249
-        ]
-      },
-      "properties": {
-        "id": "28034",
-        "name": "道の駅神戸フルーツ・フラワーパーク大沢",
+        "id": "19475",
+        "name": "道の駅淡河",
         "prefecture": "兵庫県",
         "city": "神戸市",
-        "address": "兵庫県神戸市北区大沢町上大沢2150",
-        "road": "兵庫県道73号",
-        "url": "https://www.michi-no-eki.jp/stations/view/11982"
+        "address": "兵庫県神戸市北区淡河町淡河字弘法垣643-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19475"
       }
     },
     {
@@ -14275,37 +13021,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          134.469807,
-          35.610649
+          134.7192560,
+          34.2556400
         ]
       },
       "properties": {
-        "id": "28035",
-        "name": "道の駅山陰海岸ジオパーク浜坂の郷",
+        "id": "19476",
+        "name": "道の駅福良",
         "prefecture": "兵庫県",
-        "city": "美方郡新温泉町",
-        "address": "兵庫県美方郡新温泉町栃谷57",
-        "road": "兵庫県道47号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14150"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          134.77821,
-          35.091049
-        ]
-      },
-      "properties": {
-        "id": "28036",
-        "name": "道の駅銀の馬車道・神河",
-        "prefecture": "兵庫県",
-        "city": "神崎郡神河町",
-        "address": "兵庫県神崎郡神河町吉冨88-10",
-        "road": "国道312号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14162"
+        "city": "南あわじ市",
+        "address": "兵庫県南あわじ市福良甲1528-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19476"
       }
     },
     {
@@ -14318,13 +13045,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "29001",
-        "name": "道の駅吉野路_大塔",
-        "prefecture": "奈良県",
-        "city": "五條市",
-        "address": "奈良県五條市大塔町阪本225番地の6",
-        "road": "国道168号",
-        "url": "https://www.michi-no-eki.jp/stations/view/697"
+        "id": "19477",
+        "name": "道の駅吉野路 大塔",
+        "prefecture": "吉野路　大塔",
+        "city": "",
+        "address": "奈良県五條市大塔町阪本225-6",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19477"
       }
     },
     {
@@ -14332,18 +13059,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          136.000117,
-          34.139756
+          136.0001170,
+          34.1397560
         ]
       },
       "properties": {
-        "id": "29002",
-        "name": "道の駅吉野路_上北山",
-        "prefecture": "奈良県",
-        "city": "吉野郡上北山村",
-        "address": "奈良県吉野郡上北山村大字河合1-1",
-        "road": "国道169号",
-        "url": "https://www.michi-no-eki.jp/stations/view/698"
+        "id": "19478",
+        "name": "道の駅吉野路 上北山",
+        "prefecture": "吉野路　上北山",
+        "city": "",
+        "address": "奈良県吉野郡上北山村大字河合字ハジ1-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19478"
       }
     },
     {
@@ -14356,13 +13083,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "29003",
-        "name": "道の駅杉の湯_川上",
-        "prefecture": "奈良県",
-        "city": "吉野郡川上村",
+        "id": "19479",
+        "name": "道の駅杉の湯 川上",
+        "prefecture": "杉の湯　川上",
+        "city": "",
         "address": "奈良県吉野郡川上村迫695",
-        "road": "国道169号",
-        "url": "https://www.michi-no-eki.jp/stations/view/699"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19479"
       }
     },
     {
@@ -14375,13 +13102,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "29004",
-        "name": "道の駅吉野路_黒滝",
-        "prefecture": "奈良県",
-        "city": "吉野郡黒滝村",
-        "address": "奈良県吉野郡黒滝村長瀬22",
-        "road": "国道309号",
-        "url": "https://www.michi-no-eki.jp/stations/view/700"
+        "id": "19480",
+        "name": "道の駅吉野路 黒滝",
+        "prefecture": "吉野路　黒滝",
+        "city": "",
+        "address": "奈良県吉野郡黒滝村大字長瀬22",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19480"
       }
     },
     {
@@ -14394,13 +13121,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "29005",
+        "id": "19481",
         "name": "道の駅ふたかみパーク當麻",
         "prefecture": "奈良県",
         "city": "葛城市",
         "address": "奈良県葛城市新在家402-1",
-        "road": "国道165号",
-        "url": "https://www.michi-no-eki.jp/stations/view/701"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19481"
       }
     },
     {
@@ -14413,13 +13140,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "29006",
-        "name": "道の駅宇陀路_大宇陀",
+        "id": "19482",
+        "name": "道の駅宇陀路大宇陀",
         "prefecture": "奈良県",
         "city": "宇陀市",
-        "address": "奈良県宇陀市大宇陀拾生714番地の1",
-        "road": "国道166号",
-        "url": "https://www.michi-no-eki.jp/stations/view/702"
+        "address": "奈良県宇陀市大宇陀拾生714-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19482"
       }
     },
     {
@@ -14432,13 +13159,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "29007",
+        "id": "19483",
         "name": "道の駅十津川郷",
         "prefecture": "奈良県",
-        "city": "吉野郡十津川村",
-        "address": "奈良県吉野郡十津川村小原225-1",
-        "road": "国道168号",
-        "url": "https://www.michi-no-eki.jp/stations/view/703"
+        "city": "十津川村",
+        "address": "奈良県吉野郡十津川村大字小原225-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19483"
       }
     },
     {
@@ -14451,13 +13178,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "29008",
+        "id": "19484",
         "name": "道の駅宇陀路室生",
         "prefecture": "奈良県",
         "city": "宇陀市",
-        "address": "奈良県宇陀市室生三本松3176番地の1",
-        "road": "国道165号",
-        "url": "https://www.michi-no-eki.jp/stations/view/704"
+        "address": "奈良県宇陀市室生三本松3176-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19484"
       }
     },
     {
@@ -14465,18 +13192,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          135.963208,
-          34.610429
+          135.9632080,
+          34.6104290
         ]
       },
       "properties": {
-        "id": "29009",
-        "name": "道の駅針T・R・S",
+        "id": "19485",
+        "name": "道の駅針Ｔ・Ｒ・Ｓ",
         "prefecture": "奈良県",
         "city": "奈良市",
-        "address": "奈良県奈良市針町345番地",
-        "road": "国道25号|名阪国道",
-        "url": "https://www.michi-no-eki.jp/stations/view/705"
+        "address": "奈良県奈良市針町345",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19485"
       }
     },
     {
@@ -14489,13 +13216,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "29010",
+        "id": "19486",
         "name": "道の駅大和路へぐり",
         "prefecture": "奈良県",
-        "city": "生駒郡平群町",
-        "address": "奈良県生駒郡平群町平等寺75-1",
-        "road": "国道168号",
-        "url": "https://www.michi-no-eki.jp/stations/view/706"
+        "city": "平群町",
+        "address": "奈良県生駒郡平群町大字平等寺75-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19486"
       }
     },
     {
@@ -14508,13 +13235,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "29011",
-        "name": "道の駅吉野路_大淀iセンター",
-        "prefecture": "奈良県",
-        "city": "吉野郡大淀町",
-        "address": "奈良県吉野郡大淀町芦原536-1",
-        "road": "国道169号",
-        "url": "https://www.michi-no-eki.jp/stations/view/707"
+        "id": "19487",
+        "name": "道の駅吉野路 大淀ｉセンター",
+        "prefecture": "吉野路　大淀ｉセンター",
+        "city": "",
+        "address": "奈良県吉野郡大淀町大字芦原536-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19487"
       }
     },
     {
@@ -14527,70 +13254,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "29012",
-        "name": "道の駅伊勢本街道_御杖",
-        "prefecture": "奈良県",
-        "city": "宇陀郡御杖村",
-        "address": "奈良県宇陀郡御杖村神末6325",
-        "road": "国道368号",
-        "url": "https://www.michi-no-eki.jp/stations/view/708"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          135.704788,
-          34.495401
-        ]
-      },
-      "properties": {
-        "id": "29013",
-        "name": "道の駅かつらぎ",
-        "prefecture": "奈良県",
-        "city": "葛城市",
-        "address": "奈良県葛城市太田1257",
-        "road": "国道166号",
-        "url": "https://www.michi-no-eki.jp/stations/view/11983"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          135.797418,
-          34.571407
-        ]
-      },
-      "properties": {
-        "id": "29014",
-        "name": "道の駅レスティ_唐古・鍵",
-        "prefecture": "奈良県",
-        "city": "磯城郡田原本町",
-        "address": "奈良県磯城郡田原本町大字唐古70番地の1",
-        "road": "国道24号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14180"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          135.798611389,
-          34.4647244444
-        ]
-      },
-      "properties": {
-        "id": "29015",
-        "name": "道の駅飛鳥",
-        "prefecture": "奈良県",
-        "city": "高市郡明日香村",
-        "address": "奈良県高市郡明日香村大字越6番地の2",
-        "road": "国道169号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14187"
+        "id": "19488",
+        "name": "道の駅伊勢本街道 御杖",
+        "prefecture": "伊勢本街道　御杖",
+        "city": "",
+        "address": "奈良県宇陀郡御杖村大字神末6325",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19488"
       }
     },
     {
@@ -14603,13 +13273,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "30001",
+        "id": "19489",
         "name": "道の駅しみず",
         "prefecture": "和歌山県",
-        "city": "有田郡有田川町",
-        "address": "和歌山県有田郡有田川町清水607",
-        "road": "国道480号",
-        "url": "https://www.michi-no-eki.jp/stations/view/709"
+        "city": "有田川町",
+        "address": "和歌山県有田郡有田川町大字清水607",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19489"
       }
     },
     {
@@ -14618,17 +13288,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           135.2633365,
-          33.950318
+          33.9503180
         ]
       },
       "properties": {
-        "id": "30002",
-        "name": "道の駅San_Pin_中津",
-        "prefecture": "和歌山県",
-        "city": "日高郡日高川町",
-        "address": "和歌山県日高郡日高川町船津820",
-        "road": "和歌山県道26号",
-        "url": "https://www.michi-no-eki.jp/stations/view/710"
+        "id": "19490",
+        "name": "道の駅San Pin 中津",
+        "prefecture": "San　Pin",
+        "city": "中津",
+        "address": "和歌山県日高郡日高川町大字船津820",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19490"
       }
     },
     {
@@ -14641,13 +13311,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "30003",
+        "id": "19491",
         "name": "道の駅ふるさとセンター大塔",
         "prefecture": "和歌山県",
         "city": "田辺市",
-        "address": "和歌山県田辺市鮎川997番地の1",
-        "road": "国道311号",
-        "url": "https://www.michi-no-eki.jp/stations/view/711"
+        "address": "和歌山県田辺市鮎川997-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19491"
       }
     },
     {
@@ -14660,13 +13330,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "30004",
+        "id": "19492",
         "name": "道の駅龍神",
         "prefecture": "和歌山県",
         "city": "田辺市",
         "address": "和歌山県田辺市龍神村龍神170-3",
-        "road": "国道371号",
-        "url": "https://www.michi-no-eki.jp/stations/view/712"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19492"
       }
     },
     {
@@ -14674,18 +13344,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          135.545723,
-          33.519882
+          135.5457230,
+          33.5198820
         ]
       },
       "properties": {
-        "id": "30005",
+        "id": "19493",
         "name": "道の駅イノブータンランド・すさみ",
         "prefecture": "和歌山県",
-        "city": "西牟婁郡すさみ町",
-        "address": "和歌山県西牟婁郡すさみ町見老津1-32",
-        "road": "国道42号",
-        "url": "https://www.michi-no-eki.jp/stations/view/713"
+        "city": "すさみ町",
+        "address": "和歌山県西牟婁郡すさみ町見老津地内",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19493"
       }
     },
     {
@@ -14698,13 +13368,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "30006",
+        "id": "19494",
         "name": "道の駅志原海岸",
         "prefecture": "和歌山県",
-        "city": "西牟婁郡白浜町",
-        "address": "和歌山県西牟婁郡白浜町日置2039番地の73",
-        "road": "国道42号",
-        "url": "https://www.michi-no-eki.jp/stations/view/714"
+        "city": "白浜町",
+        "address": "和歌山県西牟婁郡白浜町日置2039-73",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19494"
       }
     },
     {
@@ -14717,13 +13387,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "30007",
+        "id": "19495",
         "name": "道の駅熊野古道中辺路",
         "prefecture": "和歌山県",
         "city": "田辺市",
         "address": "和歌山県田辺市中辺路町近露2474-1",
-        "road": "国道311号",
-        "url": "https://www.michi-no-eki.jp/stations/view/715"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19495"
       }
     },
     {
@@ -14736,13 +13406,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "30008",
+        "id": "19496",
         "name": "道の駅しらまの里",
         "prefecture": "和歌山県",
-        "city": "有田郡有田川町",
-        "address": "和歌山県有田郡有田川町宇井苔213番地1",
-        "road": "国道424号",
-        "url": "https://www.michi-no-eki.jp/stations/view/716"
+        "city": "有田川町",
+        "address": "和歌山県有田郡有田川町大字宇井苔213-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19496"
       }
     },
     {
@@ -14755,13 +13425,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "30009",
+        "id": "19497",
         "name": "道の駅みなべうめ振興館",
         "prefecture": "和歌山県",
-        "city": "日高郡みなべ町",
+        "city": "みなべ町",
         "address": "和歌山県日高郡みなべ町谷口538-1",
-        "road": "国道424号",
-        "url": "https://www.michi-no-eki.jp/stations/view/717"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19497"
       }
     },
     {
@@ -14769,18 +13439,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          135.427282,
-          33.803251
+          135.4272820,
+          33.8032510
         ]
       },
       "properties": {
-        "id": "30010",
+        "id": "19498",
         "name": "道の駅紀州備長炭記念公園",
         "prefecture": "和歌山県",
         "city": "田辺市",
         "address": "和歌山県田辺市秋津川1491-1",
-        "road": "和歌山県道29号",
-        "url": "https://www.michi-no-eki.jp/stations/view/718"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19498"
       }
     },
     {
@@ -14788,18 +13458,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          135.897097,
-          33.791406
+          135.8967536,
+          33.7904898
         ]
       },
       "properties": {
-        "id": "30011",
-        "name": "道の駅瀞峡街道_熊野川",
+        "id": "19499",
+        "name": "道の駅瀞峡街道熊野川",
         "prefecture": "和歌山県",
         "city": "新宮市",
         "address": "和歌山県新宮市熊野川町田長47",
-        "road": "国道168号",
-        "url": "https://www.michi-no-eki.jp/stations/view/719"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19499"
       }
     },
     {
@@ -14807,18 +13477,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          135.464531,
-          34.28451
+          135.4645310,
+          34.2845100
         ]
       },
       "properties": {
-        "id": "30012",
+        "id": "19500",
         "name": "道の駅紀の川万葉の里",
         "prefecture": "和歌山県",
-        "city": "伊都郡かつらぎ町",
-        "address": "和歌山県伊都郡かつらぎ町窪487",
-        "road": "国道24号",
-        "url": "https://www.michi-no-eki.jp/stations/view/720"
+        "city": "かつらぎ町",
+        "address": "和歌山県伊都郡かつらぎ町窪487-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19500"
       }
     },
     {
@@ -14826,18 +13496,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          135.761985,
+          135.7619850,
           33.8652408
         ]
       },
       "properties": {
-        "id": "30013",
+        "id": "19501",
         "name": "道の駅奥熊野古道ほんぐう",
         "prefecture": "和歌山県",
         "city": "田辺市",
         "address": "和歌山県田辺市本宮町伏拝904-4",
-        "road": "国道168号",
-        "url": "https://www.michi-no-eki.jp/stations/view/721"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19501"
       }
     },
     {
@@ -14845,18 +13515,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          135.946428,
-          33.939828
+          135.9464280,
+          33.9398280
         ]
       },
       "properties": {
-        "id": "30014",
+        "id": "19502",
         "name": "道の駅おくとろ",
         "prefecture": "和歌山県",
-        "city": "東牟婁郡北山村",
-        "address": "和歌山県東牟婁郡北山村下尾井335",
-        "road": "国道169号",
-        "url": "https://www.michi-no-eki.jp/stations/view/722"
+        "city": "北山村",
+        "address": "和歌山県東牟婁郡北山村大字下尾井字浦地335",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19502"
       }
     },
     {
@@ -14865,17 +13535,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           135.4393106,
-          33.895542
+          33.8955420
         ]
       },
       "properties": {
-        "id": "30015",
-        "name": "道の駅水の郷日高川_龍游",
-        "prefecture": "和歌山県",
-        "city": "田辺市",
+        "id": "19503",
+        "name": "道の駅水の郷日高川 龍游",
+        "prefecture": "水の郷日高川　龍游",
+        "city": "",
         "address": "和歌山県田辺市龍神村福井511",
-        "road": "国道424号",
-        "url": "https://www.michi-no-eki.jp/stations/view/723"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19503"
       }
     },
     {
@@ -14888,13 +13558,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "30016",
+        "id": "19504",
         "name": "道の駅明恵ふるさと館",
         "prefecture": "和歌山県",
-        "city": "有田郡有田川町",
-        "address": "和歌山県有田郡有田川町金屋322-1",
-        "road": "国道480号",
-        "url": "https://www.michi-no-eki.jp/stations/view/724"
+        "city": "有田川町",
+        "address": "和歌山県有田郡有田川町大字金屋322-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19504"
       }
     },
     {
@@ -14907,13 +13577,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "30017",
+        "id": "19505",
         "name": "道の駅根来さくらの里",
         "prefecture": "和歌山県",
         "city": "岩出市",
         "address": "和歌山県岩出市押川37-1",
-        "road": "和歌山県道63号泉佐野岩出線",
-        "url": "https://www.michi-no-eki.jp/stations/view/725"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19505"
       }
     },
     {
@@ -14926,13 +13596,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "30018",
+        "id": "19506",
         "name": "道の駅あらぎの里",
         "prefecture": "和歌山県",
-        "city": "有田郡有田川町",
-        "address": "和歌山県有田郡有田川町大字三田664-1",
-        "road": "国道480号",
-        "url": "https://www.michi-no-eki.jp/stations/view/726"
+        "city": "有田川町",
+        "address": "和歌山県有田郡有田川町三田664-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19506"
       }
     },
     {
@@ -14945,13 +13615,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "30019",
+        "id": "19507",
         "name": "道の駅一枚岩",
         "prefecture": "和歌山県",
-        "city": "東牟婁郡古座川町",
+        "city": "古座川町",
         "address": "和歌山県東牟婁郡古座川町相瀬290-2",
-        "road": "国道371号",
-        "url": "https://www.michi-no-eki.jp/stations/view/727"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19507"
       }
     },
     {
@@ -14959,18 +13629,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          135.0697275,
-          33.9773454
+          135.0725698,
+          33.9770018
         ]
       },
       "properties": {
-        "id": "30020",
+        "id": "19508",
         "name": "道の駅白崎海洋公園",
         "prefecture": "和歌山県",
-        "city": "日高郡由良町",
+        "city": "由良町",
         "address": "和歌山県日高郡由良町大字大引960-1",
-        "road": "和歌山県道24号",
-        "url": "https://www.michi-no-eki.jp/stations/view/728"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19508"
       }
     },
     {
@@ -14983,13 +13653,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "30021",
+        "id": "19509",
         "name": "道の駅椿はなの湯",
         "prefecture": "和歌山県",
-        "city": "西牟婁郡白浜町",
-        "address": "和歌山県西牟婁郡白浜町椿1058番地の1",
-        "road": "国道42号",
-        "url": "https://www.michi-no-eki.jp/stations/view/729"
+        "city": "白浜町",
+        "address": "和歌山県西牟婁郡白浜町椿1058-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19509"
       }
     },
     {
@@ -15002,13 +13672,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "30022",
+        "id": "19510",
         "name": "道の駅なち",
         "prefecture": "和歌山県",
-        "city": "東牟婁郡那智勝浦町",
-        "address": "和歌山県東牟婁郡那智勝浦町浜ノ宮361番地2",
-        "road": "国道42号",
-        "url": "https://www.michi-no-eki.jp/stations/view/730"
+        "city": "那智勝浦町",
+        "address": "和歌山県東牟婁郡那智勝浦町浜ノ宮361-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19510"
       }
     },
     {
@@ -15016,18 +13686,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          135.765646,
-          33.601578
+          135.7656460,
+          33.6015780
         ]
       },
       "properties": {
-        "id": "30023",
+        "id": "19511",
         "name": "道の駅瀧之拝太郎",
         "prefecture": "和歌山県",
-        "city": "東牟婁郡古座川町",
-        "address": "和歌山県東牟婁郡古座川町小川774番地",
-        "road": "和歌山県道43号",
-        "url": "https://www.michi-no-eki.jp/stations/view/731"
+        "city": "古座川町",
+        "address": "和歌山県東牟婁郡古座川町小川774-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19511"
       }
     },
     {
@@ -15040,13 +13710,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "30024",
+        "id": "19512",
         "name": "道の駅田辺市龍神ごまさんスカイタワー",
         "prefecture": "和歌山県",
         "city": "田辺市",
-        "address": "和歌山県田辺市龍神村龍神1020番地の6",
-        "road": "国道371号",
-        "url": "https://www.michi-no-eki.jp/stations/view/732"
+        "address": "和歌山県田辺市龍神村龍神1020－6",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19512"
       }
     },
     {
@@ -15055,17 +13725,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           135.7944057,
-          33.488152
+          33.4881520
         ]
       },
       "properties": {
-        "id": "30025",
+        "id": "19513",
         "name": "道の駅くしもと橋杭岩",
         "prefecture": "和歌山県",
-        "city": "東牟婁郡串本町",
-        "address": "和歌山県東牟婁郡串本町鬮野川1549",
-        "road": "国道42号",
-        "url": "https://www.michi-no-eki.jp/stations/view/733"
+        "city": "串本町",
+        "address": "和歌山県東牟婁郡串本町鬮野川1549-8",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19513"
       }
     },
     {
@@ -15073,18 +13743,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          135.555557,
-          34.2932
+          135.5555570,
+          34.2932000
         ]
       },
       "properties": {
-        "id": "30026",
+        "id": "19514",
         "name": "道の駅柿の郷くどやま",
         "prefecture": "和歌山県",
-        "city": "伊都郡九度山町",
-        "address": "和歌山県伊都郡九度山町入郷5番5",
-        "road": "和歌山県道4号",
-        "url": "https://www.michi-no-eki.jp/stations/view/734"
+        "city": "九度山町",
+        "address": "和歌山県伊都郡九度山町入郷5-5",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19514"
       }
     },
     {
@@ -15092,151 +13762,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          135.826121,
-          33.539756
+          135.8261210,
+          33.5397560
         ]
       },
       "properties": {
-        "id": "30027",
+        "id": "19515",
         "name": "道の駅虫喰岩",
         "prefecture": "和歌山県",
-        "city": "東牟婁郡古座川町",
-        "address": "和歌山県東牟婁郡古座川町池野山705番1",
-        "road": "和歌山県道227号",
-        "url": "https://www.michi-no-eki.jp/stations/view/735"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          135.4145694,
-          33.69142499
-        ]
-      },
-      "properties": {
-        "id": "30028",
-        "name": "道の駅くちくまの",
-        "prefecture": "和歌山県",
-        "city": "西牟婁郡上富田町",
-        "address": "和歌山県西牟婁郡上富田町岩崎555-5",
-        "road": "近畿自動車道紀勢線|紀勢自動車道",
-        "url": "https://www.michi-no-eki.jp/stations/view/7997"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          135.599887,
-          33.50583784
-        ]
-      },
-      "properties": {
-        "id": "30029",
-        "name": "道の駅すさみ",
-        "prefecture": "和歌山県",
-        "city": "西牟婁郡すさみ町",
-        "address": "和歌山県西牟婁郡すさみ町江住808-1",
-        "road": "国道42号",
-        "url": "https://www.michi-no-eki.jp/stations/view/7999"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          135.4738277,
-          34.2977409
-        ]
-      },
-      "properties": {
-        "id": "30030",
-        "name": "道の駅かつらぎ西",
-        "prefecture": "和歌山県",
-        "city": "伊都郡かつらぎ町",
-        "address": "和歌山県伊都郡かつらぎ町大字笠田東1271番地28",
-        "road": "京奈和自動車道|国道24号紀北東道路",
-        "url": "https://www.michi-no-eki.jp/stations/view/8001"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          135.9337127,
-          33.5923615
-        ]
-      },
-      "properties": {
-        "id": "30031",
-        "name": "道の駅たいじ",
-        "prefecture": "和歌山県",
-        "city": "東牟婁郡太地町",
-        "address": "和歌山県東牟婁郡太地町大字森浦143番地の1",
-        "road": "国道42号",
-        "url": "https://www.michi-no-eki.jp/stations/view/8003"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          135.4417553,
-          34.2807411
-        ]
-      },
-      "properties": {
-        "id": "30032",
-        "name": "道の駅青洲の里",
-        "prefecture": "和歌山県",
-        "city": "紀の川市",
-        "address": "和歌山県紀の川市西野山473番地",
-        "road": "紀の川市道西野山平山線",
-        "url": "https://www.michi-no-eki.jp/stations/view/9745"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          135.477346,
-          34.31829
-        ]
-      },
-      "properties": {
-        "id": "30033",
-        "name": "道の駅くしがきの里",
-        "prefecture": "和歌山県",
-        "city": "伊都郡かつらぎ町",
-        "address": "和歌山県伊都郡かつらぎ町大字滝53番地の1",
-        "road": "国道480号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14128"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          135.311361,
-          34.286813
-        ]
-      },
-      "properties": {
-        "id": "30034",
-        "name": "道の駅ねごろ歴史の丘",
-        "prefecture": "和歌山県",
-        "city": "岩出市",
-        "address": "和歌山県岩出市根来2020-1",
-        "road": "和歌山県道63号泉佐野岩出線|市道根来3号線",
-        "url": "https://www.michi-no-eki.jp/stations/view/14163"
+        "city": "古座川町",
+        "address": "和歌山県東牟婁郡古座川町池野山705-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19515"
       }
     },
     {
@@ -15249,13 +13786,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "31001",
+        "id": "19516",
         "name": "道の駅大栄",
         "prefecture": "鳥取県",
-        "city": "東伯郡北栄町",
+        "city": "北栄町",
         "address": "鳥取県東伯郡北栄町由良宿1458-10",
-        "road": "国道9号",
-        "url": "https://www.michi-no-eki.jp/stations/view/736"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19516"
       }
     },
     {
@@ -15268,13 +13805,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "31002",
+        "id": "19517",
         "name": "道の駅三朝・楽市楽座",
         "prefecture": "鳥取県",
-        "city": "東伯郡三朝町",
-        "address": "鳥取県東伯郡三朝町大柿591",
-        "road": "国道179号",
-        "url": "https://www.michi-no-eki.jp/stations/view/737"
+        "city": "三朝町",
+        "address": "鳥取県東伯郡三朝町大字大柿591",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19517"
       }
     },
     {
@@ -15287,13 +13824,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "31003",
-        "name": "道の駅北条公園",
-        "prefecture": "鳥取県",
-        "city": "東伯郡北栄町",
+        "id": "19518",
+        "name": "道の駅ほうじょう 【4/25(金)リニューアルオープン】",
+        "prefecture": "ほうじょう　【4/25(金)リニューアルオープン】",
+        "city": "",
         "address": "鳥取県東伯郡北栄町国坂1525-92",
-        "road": "国道9号",
-        "url": "https://www.michi-no-eki.jp/stations/view/738"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19518"
       }
     },
     {
@@ -15302,17 +13839,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           133.6624616,
-          35.507059
+          35.5070590
         ]
       },
       "properties": {
-        "id": "31004",
+        "id": "19519",
         "name": "道の駅ポート赤碕",
         "prefecture": "鳥取県",
-        "city": "東伯郡琴浦町",
-        "address": "鳥取県東伯郡琴浦町別所255",
-        "road": "国道9号",
-        "url": "https://www.michi-no-eki.jp/stations/view/739"
+        "city": "琴浦町",
+        "address": "鳥取県東伯郡琴浦町大字別所255",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19519"
       }
     },
     {
@@ -15325,13 +13862,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "31005",
+        "id": "19520",
         "name": "道の駅はっとう",
         "prefecture": "鳥取県",
-        "city": "八頭郡八頭町",
+        "city": "八頭町",
         "address": "鳥取県八頭郡八頭町徳丸625",
-        "road": "国道29号",
-        "url": "https://www.michi-no-eki.jp/stations/view/740"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19520"
       }
     },
     {
@@ -15344,13 +13881,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "31006",
+        "id": "19521",
         "name": "道の駅犬挟",
         "prefecture": "鳥取県",
         "city": "倉吉市",
         "address": "鳥取県倉吉市関金町山口2030-46",
-        "road": "国道313号",
-        "url": "https://www.michi-no-eki.jp/stations/view/741"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19521"
       }
     },
     {
@@ -15363,13 +13900,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "31007",
+        "id": "19522",
         "name": "道の駅はわい",
         "prefecture": "鳥取県",
-        "city": "東伯郡湯梨浜町",
-        "address": "鳥取県東伯郡湯梨浜町宇野2343",
-        "road": "山陰自動車道|国道9号青谷羽合道路",
-        "url": "https://www.michi-no-eki.jp/stations/view/742"
+        "city": "湯梨浜町",
+        "address": "鳥取県東伯郡湯梨浜町大字宇野2343",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19522"
       }
     },
     {
@@ -15382,13 +13919,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "31008",
-        "name": "道の駅神話の里_白うさぎ",
-        "prefecture": "鳥取県",
-        "city": "鳥取市",
+        "id": "19523",
+        "name": "道の駅神話の里 白うさぎ",
+        "prefecture": "神話の里　白うさぎ",
+        "city": "",
         "address": "鳥取県鳥取市白兎613",
-        "road": "国道9号",
-        "url": "https://www.michi-no-eki.jp/stations/view/743"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19523"
       }
     },
     {
@@ -15401,13 +13938,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "31009",
-        "name": "道の駅清流茶屋_かわはら",
-        "prefecture": "鳥取県",
-        "city": "鳥取市",
+        "id": "19524",
+        "name": "道の駅清流茶屋 かわはら",
+        "prefecture": "清流茶屋　かわはら",
+        "city": "",
         "address": "鳥取県鳥取市河原町高福837",
-        "road": "国道53号",
-        "url": "https://www.michi-no-eki.jp/stations/view/744"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19524"
       }
     },
     {
@@ -15415,18 +13952,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          134.400272,
-          35.343886
+          134.4002720,
+          35.3438860
         ]
       },
       "properties": {
-        "id": "31010",
+        "id": "19525",
         "name": "道の駅若桜",
         "prefecture": "鳥取県",
-        "city": "八頭郡若桜町",
+        "city": "若桜町",
         "address": "鳥取県八頭郡若桜町若桜983-2",
-        "road": "国道29号",
-        "url": "https://www.michi-no-eki.jp/stations/view/745"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19525"
       }
     },
     {
@@ -15439,13 +13976,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "31011",
+        "id": "19526",
         "name": "道の駅大山恵みの里",
         "prefecture": "鳥取県",
-        "city": "西伯郡大山町",
+        "city": "大山町",
         "address": "鳥取県西伯郡大山町名和951-6",
-        "road": "鳥取県道240号",
-        "url": "https://www.michi-no-eki.jp/stations/view/746"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19526"
       }
     },
     {
@@ -15453,18 +13990,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          134.3259855,
-          35.56741079
+          133.8926402,
+          35.4646909
         ]
       },
       "properties": {
-        "id": "31013",
-        "name": "道の駅きなんせ岩美",
+        "id": "19527",
+        "name": "道の駅燕趙園",
         "prefecture": "鳥取県",
-        "city": "岩美郡岩美町",
-        "address": "鳥取県岩美郡岩美町新井337-4",
-        "road": "国道9号",
-        "url": "https://www.michi-no-eki.jp/stations/view/8007"
+        "city": "湯梨浜町",
+        "address": "鳥取県東伯郡湯梨浜町引地563-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19527"
       }
     },
     {
@@ -15472,56 +14009,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          133.4740758,
-          35.2961102
-        ]
-      },
-      "properties": {
-        "id": "31014",
-        "name": "道の駅奥大山",
-        "prefecture": "鳥取県",
-        "city": "日野郡江府町",
-        "address": "鳥取県日野郡江府町佐川908-3",
-        "road": "国道181号",
-        "url": "https://www.michi-no-eki.jp/stations/view/8009"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          133.3109329,
-          35.1706825
-        ]
-      },
-      "properties": {
-        "id": "31015",
-        "name": "道の駅にちなん日野川の郷",
-        "prefecture": "鳥取県",
-        "city": "日野郡日南町",
-        "address": "鳥取県日野郡日南町生山386",
-        "road": "鳥取県道8号新見日南線",
-        "url": "https://www.michi-no-eki.jp/stations/view/9746"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          132.817038,
+          132.8170380,
           35.2109317
         ]
       },
       "properties": {
-        "id": "32001",
+        "id": "19528",
         "name": "道の駅掛合の里",
         "prefecture": "島根県",
         "city": "雲南市",
-        "address": "島根県雲南市掛合町掛合1800-2",
-        "road": "国道54号",
-        "url": "https://www.michi-no-eki.jp/stations/view/748"
+        "address": "島根県雲南市掛合町大字掛合1800-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19528"
       }
     },
     {
@@ -15534,13 +14033,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "32002",
+        "id": "19529",
         "name": "道の駅頓原",
         "prefecture": "島根県",
-        "city": "飯石郡飯南町",
+        "city": "飯南町",
         "address": "島根県飯石郡飯南町花栗48",
-        "road": "国道54号",
-        "url": "https://www.michi-no-eki.jp/stations/view/749"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19529"
       }
     },
     {
@@ -15553,13 +14052,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "32003",
+        "id": "19530",
         "name": "道の駅ゆうひパーク浜田",
         "prefecture": "島根県",
         "city": "浜田市",
         "address": "島根県浜田市原井町1203-1",
-        "road": "国道9号",
-        "url": "https://www.michi-no-eki.jp/stations/view/750"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19530"
       }
     },
     {
@@ -15572,13 +14071,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "32004",
+        "id": "19531",
         "name": "道の駅ゆうひパーク三隅",
         "prefecture": "島根県",
         "city": "浜田市",
         "address": "島根県浜田市三隅町折居220-1",
-        "road": "国道9号",
-        "url": "https://www.michi-no-eki.jp/stations/view/751"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19531"
       }
     },
     {
@@ -15586,18 +14085,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          132.51885,
-          34.854446
+          132.5188500,
+          34.8544460
         ]
       },
       "properties": {
-        "id": "32005",
+        "id": "19532",
         "name": "道の駅瑞穂",
         "prefecture": "島根県",
-        "city": "邑智郡邑南町",
+        "city": "邑南町",
         "address": "島根県邑智郡邑南町下田所260-3",
-        "road": "国道261号",
-        "url": "https://www.michi-no-eki.jp/stations/view/752"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19532"
       }
     },
     {
@@ -15610,13 +14109,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "32006",
+        "id": "19533",
         "name": "道の駅グリーンロード大和",
         "prefecture": "島根県",
-        "city": "邑智郡美郷町",
+        "city": "美郷町",
         "address": "島根県邑智郡美郷町長藤248-2",
-        "road": "国道375号",
-        "url": "https://www.michi-no-eki.jp/stations/view/753"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19533"
       }
     },
     {
@@ -15624,18 +14123,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          132.686398,
+          132.6863980,
           35.3892258
         ]
       },
       "properties": {
-        "id": "32007",
+        "id": "19534",
         "name": "道の駅大社ご縁広場",
         "prefecture": "島根県",
         "city": "出雲市",
         "address": "島根県出雲市大社町修理免735-5",
-        "road": "島根県道161号",
-        "url": "https://www.michi-no-eki.jp/stations/view/754"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19534"
       }
     },
     {
@@ -15648,13 +14147,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "32008",
+        "id": "19535",
         "name": "道の駅サンエイト美都",
         "prefecture": "島根県",
         "city": "益田市",
-        "address": "島根県益田市美都町宇津川ロ586-2",
-        "road": "国道191号",
-        "url": "https://www.michi-no-eki.jp/stations/view/755"
+        "address": "島根県益田市美都町宇津川 口586-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19535"
       }
     },
     {
@@ -15667,13 +14166,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "32009",
+        "id": "19536",
         "name": "道の駅奥出雲おろちループ",
         "prefecture": "島根県",
-        "city": "仁多郡奥出雲町",
+        "city": "奥出雲町",
         "address": "島根県仁多郡奥出雲町八川2500-294",
-        "road": "国道314号",
-        "url": "https://www.michi-no-eki.jp/stations/view/756"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19536"
       }
     },
     {
@@ -15686,13 +14185,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "32010",
+        "id": "19537",
         "name": "道の駅広瀬・富田城",
         "prefecture": "島根県",
         "city": "安来市",
         "address": "島根県安来市広瀬町町帳775-1",
-        "road": "島根県道45号",
-        "url": "https://www.michi-no-eki.jp/stations/view/757"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19537"
       }
     },
     {
@@ -15705,13 +14204,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "32011",
+        "id": "19538",
         "name": "道の駅赤来高原",
         "prefecture": "島根県",
-        "city": "飯石郡飯南町",
+        "city": "飯南町",
         "address": "島根県飯石郡飯南町下赤名880-3",
-        "road": "国道54号",
-        "url": "https://www.michi-no-eki.jp/stations/view/758"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19538"
       }
     },
     {
@@ -15724,13 +14223,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "32012",
+        "id": "19539",
         "name": "道の駅かきのきむら",
         "prefecture": "島根県",
-        "city": "鹿足郡吉賀町",
-        "address": "島根県鹿足郡吉賀町柿木500-1",
-        "road": "国道187号",
-        "url": "https://www.michi-no-eki.jp/stations/view/759"
+        "city": "吉賀町",
+        "address": "島根県鹿足郡吉賀町柿木村柿木500-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19539"
       }
     },
     {
@@ -15743,13 +14242,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "32013",
+        "id": "19540",
         "name": "道の駅キララ多伎",
         "prefecture": "島根県",
         "city": "出雲市",
         "address": "島根県出雲市多伎町多岐135-1",
-        "road": "国道9号",
-        "url": "https://www.michi-no-eki.jp/stations/view/760"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19540"
       }
     },
     {
@@ -15762,13 +14261,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "32014",
+        "id": "19541",
         "name": "道の駅湯の川",
         "prefecture": "島根県",
         "city": "出雲市",
         "address": "島根県出雲市斐川町学頭825-2",
-        "road": "国道9号",
-        "url": "https://www.michi-no-eki.jp/stations/view/761"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19541"
       }
     },
     {
@@ -15777,17 +14276,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           131.8080661,
-          34.553541
+          34.5535410
         ]
       },
       "properties": {
-        "id": "32015",
+        "id": "19542",
         "name": "道の駅シルクウェイにちはら",
         "prefecture": "島根県",
-        "city": "鹿足郡津和野町",
-        "address": "島根県鹿足郡津和野町池村1997-4",
-        "road": "国道9号",
-        "url": "https://www.michi-no-eki.jp/stations/view/762"
+        "city": "津和野町",
+        "address": "島根県鹿足郡津和野町池村1997",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19542"
       }
     },
     {
@@ -15800,13 +14299,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "32016",
+        "id": "19543",
         "name": "道の駅秋鹿なぎさ公園",
         "prefecture": "島根県",
         "city": "松江市",
         "address": "島根県松江市岡本町1048-1",
-        "road": "国道431号",
-        "url": "https://www.michi-no-eki.jp/stations/view/763"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19543"
       }
     },
     {
@@ -15814,18 +14313,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          131.760771,
+          131.7607710,
           34.4501785
         ]
       },
       "properties": {
-        "id": "32017",
+        "id": "19544",
         "name": "道の駅津和野温泉なごみの里",
         "prefecture": "島根県",
-        "city": "鹿足郡津和野町",
+        "city": "津和野町",
         "address": "島根県鹿足郡津和野町鷲原イ256",
-        "road": "島根県道13号萩津和野線",
-        "url": "https://www.michi-no-eki.jp/stations/view/764"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19544"
       }
     },
     {
@@ -15833,18 +14332,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          132.912142,
-          35.318905
+          132.9121420,
+          35.3189050
         ]
       },
       "properties": {
-        "id": "32018",
+        "id": "19545",
         "name": "道の駅さくらの里きすき",
         "prefecture": "島根県",
         "city": "雲南市",
-        "address": "島根県雲南市木次町山方1134-9",
-        "road": "国道54号",
-        "url": "https://www.michi-no-eki.jp/stations/view/765"
+        "address": "島根県雲南市木次町山方1134-31",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19545"
       }
     },
     {
@@ -15853,17 +14352,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           133.1365866,
-          35.518244
+          35.5182440
         ]
       },
       "properties": {
-        "id": "32019",
+        "id": "19546",
         "name": "道の駅本庄",
         "prefecture": "島根県",
         "city": "松江市",
         "address": "島根県松江市野原町401-8",
-        "road": "国道431号",
-        "url": "https://www.michi-no-eki.jp/stations/view/766"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19546"
       }
     },
     {
@@ -15871,18 +14370,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          132.091414708,
-          34.6434408363
+          132.0914147,
+          34.6434408
         ]
       },
       "properties": {
-        "id": "32020",
+        "id": "19547",
         "name": "道の駅匹見峡",
         "prefecture": "島根県",
         "city": "益田市",
         "address": "島根県益田市匹見町道川イ65-1",
-        "road": "国道191号",
-        "url": "https://www.michi-no-eki.jp/stations/view/767"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19547"
       }
     },
     {
@@ -15895,13 +14394,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "32021",
+        "id": "19548",
         "name": "道の駅酒蔵奥出雲交流館",
         "prefecture": "島根県",
-        "city": "仁多郡奥出雲町",
+        "city": "奥出雲町",
         "address": "島根県仁多郡奥出雲町亀嵩1380-1",
-        "road": "国道432号",
-        "url": "https://www.michi-no-eki.jp/stations/view/768"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19548"
       }
     },
     {
@@ -15914,13 +14413,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "32022",
+        "id": "19549",
         "name": "道の駅インフォメーションセンターかわもと",
         "prefecture": "島根県",
-        "city": "邑智郡川本町",
+        "city": "川本町",
         "address": "島根県邑智郡川本町大字因原505-5",
-        "road": "国道261号",
-        "url": "https://www.michi-no-eki.jp/stations/view/769"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19549"
       }
     },
     {
@@ -15933,13 +14432,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "32023",
+        "id": "19550",
         "name": "道の駅むいかいち温泉",
         "prefecture": "島根県",
-        "city": "鹿足郡吉賀町",
+        "city": "吉賀町",
         "address": "島根県鹿足郡吉賀町有飯225-2",
-        "road": "島根県道16号六日市錦線",
-        "url": "https://www.michi-no-eki.jp/stations/view/770"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19550"
       }
     },
     {
@@ -15952,13 +14451,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "32024",
+        "id": "19551",
         "name": "道の駅ロード銀山",
         "prefecture": "島根県",
         "city": "大田市",
         "address": "島根県大田市久手町刺鹿1945-1",
-        "road": "国道9号",
-        "url": "https://www.michi-no-eki.jp/stations/view/771"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19551"
       }
     },
     {
@@ -15966,18 +14465,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          132.29894,
+          132.2989400,
           35.0451252
         ]
       },
       "properties": {
-        "id": "32025",
+        "id": "19552",
         "name": "道の駅サンピコごうつ",
         "prefecture": "島根県",
         "city": "江津市",
         "address": "島根県江津市後地町995-1",
-        "road": "国道9号",
-        "url": "https://www.michi-no-eki.jp/stations/view/772"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19552"
       }
     },
     {
@@ -15990,13 +14489,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "32026",
+        "id": "19553",
         "name": "道の駅おろちの里",
         "prefecture": "島根県",
         "city": "雲南市",
         "address": "島根県雲南市木次町北原1603",
-        "road": "国道314号",
-        "url": "https://www.michi-no-eki.jp/stations/view/773"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19553"
       }
     },
     {
@@ -16009,13 +14508,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "32027",
+        "id": "19554",
         "name": "道の駅あらエッサ",
         "prefecture": "島根県",
         "city": "安来市",
         "address": "島根県安来市中海町118-1",
-        "road": "国道9号",
-        "url": "https://www.michi-no-eki.jp/stations/view/774"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19554"
       }
     },
     {
@@ -16024,17 +14523,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           132.8302795,
-          35.167018
+          35.1670180
         ]
       },
       "properties": {
-        "id": "32028",
+        "id": "19555",
         "name": "道の駅たたらば壱番地",
         "prefecture": "島根県",
         "city": "雲南市",
         "address": "島根県雲南市吉田町吉田4378-31",
-        "road": "松江自動車道|雲南市道雲南吉田インター線",
-        "url": "https://www.michi-no-eki.jp/stations/view/775"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19555"
       }
     },
     {
@@ -16047,13 +14546,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "33001",
+        "id": "19556",
         "name": "道の駅かもがわ円城",
         "prefecture": "岡山県",
-        "city": "加賀郡吉備中央町",
+        "city": "吉備中央町",
         "address": "岡山県加賀郡吉備中央町上田西2325-1",
-        "road": "国道429号",
-        "url": "https://www.michi-no-eki.jp/stations/view/776"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19556"
       }
     },
     {
@@ -16061,18 +14560,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          133.571876,
-          35.175467
+          133.5718760,
+          35.1754670
         ]
       },
       "properties": {
-        "id": "33002",
-        "name": "道の駅がいせん桜_新庄宿",
+        "id": "19557",
+        "name": "道の駅がいせん桜 新庄宿",
         "prefecture": "岡山県",
-        "city": "真庭郡新庄村",
+        "city": "新庄村",
         "address": "岡山県真庭郡新庄村2190-1",
-        "road": "国道181号",
-        "url": "https://www.michi-no-eki.jp/stations/view/777"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19557"
       }
     },
     {
@@ -16085,13 +14584,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "33003",
+        "id": "19558",
         "name": "道の駅あわくらんど",
         "prefecture": "岡山県",
-        "city": "英田郡西粟倉村",
+        "city": "西粟倉村",
         "address": "岡山県英田郡西粟倉村影石418",
-        "road": "国道373号",
-        "url": "https://www.michi-no-eki.jp/stations/view/778"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19558"
       }
     },
     {
@@ -16099,18 +14598,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          133.947028,
-          34.91226658
+          133.9470280,
+          34.9122666
         ]
       },
       "properties": {
-        "id": "33004",
+        "id": "19559",
         "name": "道の駅くめなん",
         "prefecture": "岡山県",
-        "city": "久米郡久米南町",
+        "city": "久米南町",
         "address": "岡山県久米郡久米南町下二ケ1367-1",
-        "road": "国道53号",
-        "url": "https://www.michi-no-eki.jp/stations/view/779"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19559"
       }
     },
     {
@@ -16118,18 +14617,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          133.926904,
-          34.520201
+          133.9269040,
+          34.5202010
         ]
       },
       "properties": {
-        "id": "33005",
-        "name": "みやま公園",
+        "id": "19560",
+        "name": "道の駅みやま公園",
         "prefecture": "岡山県",
         "city": "玉野市",
-        "address": "岡山県玉野市田井二丁目4490番地",
-        "road": "国道30号",
-        "url": "https://www.michi-no-eki.jp/stations/view/780"
+        "address": "岡山県玉野市田井2-4464",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19560"
       }
     },
     {
@@ -16138,17 +14637,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           134.1657126,
-          34.65635976
+          34.6563598
         ]
       },
       "properties": {
-        "id": "33006",
+        "id": "19561",
         "name": "道の駅一本松展望園",
         "prefecture": "岡山県",
         "city": "瀬戸内市",
         "address": "岡山県瀬戸内市邑久町尻海3539",
-        "road": "岡山県道397号",
-        "url": "https://www.michi-no-eki.jp/stations/view/781"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19561"
       }
     },
     {
@@ -16161,13 +14660,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "33007",
+        "id": "19562",
         "name": "道の駅黒井山グリーンパーク",
         "prefecture": "岡山県",
         "city": "瀬戸内市",
-        "address": "岡山県瀬戸内市邑久町虫明5231-1",
-        "road": "岡山県道397号",
-        "url": "https://www.michi-no-eki.jp/stations/view/782"
+        "address": "岡山県瀬戸内市邑久町虫明5165-196",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19562"
       }
     },
     {
@@ -16180,13 +14679,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "33008",
+        "id": "19563",
         "name": "道の駅鯉が窪",
         "prefecture": "岡山県",
         "city": "新見市",
         "address": "岡山県新見市哲西町矢田3585-1",
-        "road": "国道182号",
-        "url": "https://www.michi-no-eki.jp/stations/view/783"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19563"
       }
     },
     {
@@ -16194,18 +14693,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          133.667559857,
-          35.2949044551
+          133.6675599,
+          35.2949045
         ]
       },
       "properties": {
-        "id": "33009",
+        "id": "19564",
         "name": "道の駅蒜山高原",
         "prefecture": "岡山県",
         "city": "真庭市",
         "address": "岡山県真庭市蒜山富山根694-129",
-        "road": "岡山県道422号",
-        "url": "https://www.michi-no-eki.jp/stations/view/784"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19564"
       }
     },
     {
@@ -16218,13 +14717,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "33010",
+        "id": "19565",
         "name": "道の駅風の家",
         "prefecture": "岡山県",
         "city": "真庭市",
         "address": "岡山県真庭市蒜山上徳山1380-6",
-        "road": "国道482号",
-        "url": "https://www.michi-no-eki.jp/stations/view/785"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19565"
       }
     },
     {
@@ -16233,17 +14732,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           134.1508967,
-          35.014721
+          35.0147210
         ]
       },
       "properties": {
-        "id": "33011",
+        "id": "19566",
         "name": "道の駅彩菜茶屋",
         "prefecture": "岡山県",
         "city": "美作市",
         "address": "岡山県美作市明見167",
-        "road": "岡山県道51号",
-        "url": "https://www.michi-no-eki.jp/stations/view/786"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19566"
       }
     },
     {
@@ -16256,13 +14755,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "33012",
+        "id": "19567",
         "name": "道の駅奥津温泉",
         "prefecture": "岡山県",
-        "city": "苫田郡鏡野町",
-        "address": "岡山県苫田郡鏡野町奥津463-1",
-        "road": "国道179号",
-        "url": "https://www.michi-no-eki.jp/stations/view/787"
+        "city": "鏡野町",
+        "address": "岡山県苫田郡鏡野町奥津463",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19567"
       }
     },
     {
@@ -16275,13 +14774,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "33013",
+        "id": "19568",
         "name": "道の駅久米の里",
         "prefecture": "岡山県",
         "city": "津山市",
         "address": "岡山県津山市宮尾563-1",
-        "road": "国道181号",
-        "url": "https://www.michi-no-eki.jp/stations/view/788"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19568"
       }
     },
     {
@@ -16294,13 +14793,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "33014",
+        "id": "19569",
         "name": "道の駅醍醐の里",
         "prefecture": "岡山県",
         "city": "真庭市",
-        "address": "岡山県真庭市鹿田391番地1",
-        "road": "国道313号",
-        "url": "https://www.michi-no-eki.jp/stations/view/789"
+        "address": "岡山県真庭市鹿田391-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19569"
       }
     },
     {
@@ -16313,13 +14812,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "33015",
+        "id": "19570",
         "name": "道の駅かよう",
         "prefecture": "岡山県",
-        "city": "加賀郡吉備中央町",
+        "city": "吉備中央町",
         "address": "岡山県加賀郡吉備中央町北1977-1",
-        "road": "国道484号",
-        "url": "https://www.michi-no-eki.jp/stations/view/790"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19570"
       }
     },
     {
@@ -16327,18 +14826,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          133.500244,
-          34.473317
+          133.5002440,
+          34.4733170
         ]
       },
       "properties": {
-        "id": "33016",
+        "id": "19571",
         "name": "道の駅笠岡ベイファーム",
         "prefecture": "岡山県",
         "city": "笠岡市",
-        "address": "岡山県笠岡市カブト南町245-5",
-        "road": "国道2号",
-        "url": "https://www.michi-no-eki.jp/stations/view/791"
+        "address": "岡山県笠岡市カブト南町245-4",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19571"
       }
     },
     {
@@ -16347,17 +14846,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           133.0713142,
-          34.784591
+          34.7845910
         ]
       },
       "properties": {
-        "id": "34001",
+        "id": "19572",
         "name": "道の駅リストアステーション",
         "prefecture": "広島県",
         "city": "庄原市",
-        "address": "広島県庄原市総領町下領家1番地3",
-        "road": "国道432号",
-        "url": "https://www.michi-no-eki.jp/stations/view/792"
+        "address": "広島県庄原市総領町下領家1-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19572"
       }
     },
     {
@@ -16366,17 +14865,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           133.2757124,
-          34.88967
+          34.8896700
         ]
       },
       "properties": {
-        "id": "34002",
+        "id": "19573",
         "name": "道の駅遊YOUさろん東城",
         "prefecture": "広島県",
         "city": "庄原市",
         "address": "広島県庄原市東城町川東877",
-        "road": "国道182号",
-        "url": "https://www.michi-no-eki.jp/stations/view/793"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19573"
       }
     },
     {
@@ -16389,13 +14888,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "34003",
+        "id": "19574",
         "name": "道の駅さんわ182ステーション",
         "prefecture": "広島県",
-        "city": "神石郡神石高原町",
+        "city": "神石高原町",
         "address": "広島県神石郡神石高原町坂瀬川5146-2",
-        "road": "国道182号",
-        "url": "https://www.michi-no-eki.jp/stations/view/794"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19574"
       }
     },
     {
@@ -16408,13 +14907,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "34004",
+        "id": "19575",
         "name": "道の駅豊平どんぐり村",
         "prefecture": "広島県",
-        "city": "山県郡北広島町",
-        "address": "広島県山県郡北広島町都志見2609",
-        "road": "広島県道40号",
-        "url": "https://www.michi-no-eki.jp/stations/view/795"
+        "city": "北広島町",
+        "address": "広島県山県郡北広島町都志見12609",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19575"
       }
     },
     {
@@ -16427,13 +14926,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "34005",
+        "id": "19576",
         "name": "道の駅来夢とごうち",
         "prefecture": "広島県",
-        "city": "山県郡安芸太田町",
-        "address": "広島県山県郡安芸太田町上殿632-2",
-        "road": "国道191号",
-        "url": "https://www.michi-no-eki.jp/stations/view/796"
+        "city": "安芸太田町",
+        "address": "広島県山県郡安芸太田町大字上殿632-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19576"
       }
     },
     {
@@ -16441,18 +14940,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          132.913945,
+          132.9139450,
           34.5064709
         ]
       },
       "properties": {
-        "id": "34006",
+        "id": "19577",
         "name": "道の駅よがんす白竜",
         "prefecture": "広島県",
         "city": "三原市",
         "address": "広島県三原市大和町和木652-3",
-        "road": "国道432号",
-        "url": "https://www.michi-no-eki.jp/stations/view/797"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19577"
       }
     },
     {
@@ -16461,17 +14960,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           133.3173083,
-          34.394684
+          34.3946840
         ]
       },
       "properties": {
-        "id": "34007",
+        "id": "19578",
         "name": "道の駅アリストぬまくま",
         "prefecture": "広島県",
         "city": "福山市",
         "address": "広島県福山市沼隈町大字常石1805",
-        "road": "広島県道47号",
-        "url": "https://www.michi-no-eki.jp/stations/view/798"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19578"
       }
     },
     {
@@ -16480,17 +14979,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           132.1042513,
-          34.389119
+          34.3891190
         ]
       },
       "properties": {
-        "id": "34008",
+        "id": "19579",
         "name": "道の駅スパ羅漢",
         "prefecture": "広島県",
         "city": "廿日市市",
         "address": "広島県廿日市市飯山21-5",
-        "road": "国道186号",
-        "url": "https://www.michi-no-eki.jp/stations/view/799"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19579"
       }
     },
     {
@@ -16503,13 +15002,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "34009",
+        "id": "19580",
         "name": "道の駅ゆめランド布野",
         "prefecture": "広島県",
         "city": "三次市",
-        "address": "広島県三次市布野町下布野661番地1",
-        "road": "国道54号",
-        "url": "https://www.michi-no-eki.jp/stations/view/800"
+        "address": "広島県三次市布野町下布野661-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19580"
       }
     },
     {
@@ -16522,13 +15021,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "34010",
+        "id": "19581",
         "name": "道の駅ふぉレスト君田",
         "prefecture": "広島県",
         "city": "三次市",
         "address": "広島県三次市君田町泉吉田311-3",
-        "road": "広島県道39号",
-        "url": "https://www.michi-no-eki.jp/stations/view/801"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19581"
       }
     },
     {
@@ -16541,13 +15040,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "34011",
+        "id": "19582",
         "name": "道の駅クロスロードみつぎ",
         "prefecture": "広島県",
         "city": "尾道市",
         "address": "広島県尾道市御調町大田33",
-        "road": "国道486号",
-        "url": "https://www.michi-no-eki.jp/stations/view/802"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19582"
       }
     },
     {
@@ -16560,13 +15059,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "34012",
+        "id": "19583",
         "name": "道の駅舞ロードIC千代田",
         "prefecture": "広島県",
-        "city": "山県郡北広島町",
+        "city": "北広島町",
         "address": "広島県山県郡北広島町有田1122",
-        "road": "広島県道5号浜田八重可部線",
-        "url": "https://www.michi-no-eki.jp/stations/view/803"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19583"
       }
     },
     {
@@ -16579,13 +15078,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "34013",
+        "id": "19584",
         "name": "道の駅北の関宿安芸高田",
         "prefecture": "広島県",
         "city": "安芸高田市",
         "address": "広島県安芸高田市美土里町横田331",
-        "road": "広島県道64号",
-        "url": "https://www.michi-no-eki.jp/stations/view/804"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19584"
       }
     },
     {
@@ -16598,13 +15097,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "34014",
+        "id": "19585",
         "name": "道の駅湖畔の里福富",
         "prefecture": "広島県",
         "city": "東広島市",
         "address": "広島県東広島市福富町久芳1506",
-        "road": "国道375号",
-        "url": "https://www.michi-no-eki.jp/stations/view/805"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19585"
       }
     },
     {
@@ -16617,13 +15116,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "34015",
+        "id": "19586",
         "name": "道の駅たけはら",
         "prefecture": "広島県",
         "city": "竹原市",
-        "address": "広島県竹原市本町一丁目1-1",
-        "road": "国道185号",
-        "url": "https://www.michi-no-eki.jp/stations/view/806"
+        "address": "広島県竹原市本町1-1-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19586"
       }
     },
     {
@@ -16636,13 +15135,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "34016",
+        "id": "19587",
         "name": "道の駅みはら神明の里",
         "prefecture": "広島県",
         "city": "三原市",
-        "address": "広島県三原市糸崎4丁目21番1号",
-        "road": "国道2号",
-        "url": "https://www.michi-no-eki.jp/stations/view/807"
+        "address": "広島県三原市糸崎4-21-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19587"
       }
     },
     {
@@ -16651,17 +15150,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           132.8815981,
-          35.024058
+          35.0240580
         ]
       },
       "properties": {
-        "id": "34017",
+        "id": "19588",
         "name": "道の駅たかの",
         "prefecture": "広島県",
         "city": "庄原市",
-        "address": "広島県庄原市高野町下門田49番地",
-        "road": "広島県道39号",
-        "url": "https://www.michi-no-eki.jp/stations/view/808"
+        "address": "広島県庄原市高野町下門田49",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19588"
       }
     },
     {
@@ -16669,37 +15168,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          133.0841,
-          34.59638
+          133.0841000,
+          34.5963800
         ]
       },
       "properties": {
-        "id": "34018",
+        "id": "19589",
         "name": "道の駅世羅",
         "prefecture": "広島県",
-        "city": "世羅郡世羅町",
-        "address": "広島県世羅郡世羅町大字川尻字大柳2402番地1",
-        "road": "国道432号",
-        "url": "https://www.michi-no-eki.jp/stations/view/809"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          133.235633,
-          34.56977
-        ]
-      },
-      "properties": {
-        "id": "34019",
-        "name": "道の駅びんご府中",
-        "prefecture": "広島県",
-        "city": "府中市",
-        "address": "広島県府中市府川町230-1",
-        "road": "市道府川11号線",
-        "url": "https://www.michi-no-eki.jp/stations/view/11984"
+        "city": "世羅町",
+        "address": "広島県世羅郡世羅町大字川尻字大柳2402-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19589"
       }
     },
     {
@@ -16712,13 +15192,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "35001",
+        "id": "19590",
         "name": "道の駅阿武町",
         "prefecture": "山口県",
-        "city": "阿武郡阿武町",
-        "address": "山口県阿武郡阿武町大字奈古2249番地",
-        "road": "国道191号",
-        "url": "https://www.michi-no-eki.jp/stations/view/810"
+        "city": "阿武町",
+        "address": "山口県阿武郡阿武町大字奈古2249",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19590"
       }
     },
     {
@@ -16727,17 +15207,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           131.4130646,
-          34.36952669
+          34.3695267
         ]
       },
       "properties": {
-        "id": "35002",
+        "id": "19591",
         "name": "道の駅萩往還",
         "prefecture": "山口県",
         "city": "萩市",
-        "address": "山口県萩市大字椿字鹿背ケ坂1258",
-        "road": "山口県道32号",
-        "url": "https://www.michi-no-eki.jp/stations/view/811"
+        "address": "山口県萩市大字椿字悴ヶ坂1258",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19591"
       }
     },
     {
@@ -16746,17 +15226,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           131.4595121,
-          34.286296
+          34.2862960
         ]
       },
       "properties": {
-        "id": "35003",
+        "id": "19592",
         "name": "道の駅あさひ",
         "prefecture": "山口県",
         "city": "萩市",
         "address": "山口県萩市大字佐々並2476-1",
-        "road": "国道262号",
-        "url": "https://www.michi-no-eki.jp/stations/view/812"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19592"
       }
     },
     {
@@ -16769,13 +15249,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "35004",
+        "id": "19593",
         "name": "道の駅あいお",
         "prefecture": "山口県",
         "city": "山口市",
         "address": "山口県山口市秋穂東1520-4",
-        "road": "山口県道338号",
-        "url": "https://www.michi-no-eki.jp/stations/view/813"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19593"
       }
     },
     {
@@ -16788,13 +15268,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "35005",
+        "id": "19594",
         "name": "道の駅ゆとりパークたまがわ",
         "prefecture": "山口県",
         "city": "萩市",
         "address": "山口県萩市大字下田万2849-1",
-        "road": "国道191号",
-        "url": "https://www.michi-no-eki.jp/stations/view/814"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19594"
       }
     },
     {
@@ -16807,13 +15287,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "35006",
+        "id": "19595",
         "name": "道の駅サザンセトとうわ",
         "prefecture": "山口県",
-        "city": "大島郡周防大島町",
-        "address": "山口県大島郡周防大島町大字西方高田1958-77",
-        "road": "国道437号",
-        "url": "https://www.michi-no-eki.jp/stations/view/815"
+        "city": "周防大島町",
+        "address": "山口県大島郡周防大島町西方1958-77",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19595"
       }
     },
     {
@@ -16826,13 +15306,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "35007",
+        "id": "19596",
         "name": "道の駅きくがわ",
         "prefecture": "山口県",
         "city": "下関市",
         "address": "山口県下関市菊川町大字上岡枝766-1",
-        "road": "国道491号",
-        "url": "https://www.michi-no-eki.jp/stations/view/816"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19596"
       }
     },
     {
@@ -16845,13 +15325,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "35008",
+        "id": "19597",
         "name": "道の駅ハピネスふくえ",
         "prefecture": "山口県",
         "city": "萩市",
         "address": "山口県萩市大字福井下4014-2",
-        "road": "山口県道11号",
-        "url": "https://www.michi-no-eki.jp/stations/view/817"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19597"
       }
     },
     {
@@ -16864,13 +15344,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "35009",
+        "id": "19598",
         "name": "道の駅長門峡",
         "prefecture": "山口県",
         "city": "山口市",
         "address": "山口県山口市阿東生雲東分47-1",
-        "road": "国道9号",
-        "url": "https://www.michi-no-eki.jp/stations/view/818"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19598"
       }
     },
     {
@@ -16883,13 +15363,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "35010",
+        "id": "19599",
         "name": "道の駅ピュアラインにしき",
         "prefecture": "山口県",
         "city": "岩国市",
-        "address": "山口県岩国市錦町府谷117",
-        "road": "国道187号",
-        "url": "https://www.michi-no-eki.jp/stations/view/819"
+        "address": "山口県岩国市錦町大字府谷117",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19599"
       }
     },
     {
@@ -16898,17 +15378,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           131.2084956,
-          34.23794705
+          34.2379471
         ]
       },
       "properties": {
-        "id": "35011",
+        "id": "19600",
         "name": "道の駅おふく",
         "prefecture": "山口県",
         "city": "美祢市",
         "address": "山口県美祢市於福町上4383-1",
-        "road": "国道316号",
-        "url": "https://www.michi-no-eki.jp/stations/view/820"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19600"
       }
     },
     {
@@ -16917,17 +15397,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           131.3439343,
-          34.21818272
+          34.2181827
         ]
       },
       "properties": {
-        "id": "35012",
+        "id": "19601",
         "name": "道の駅みとう",
         "prefecture": "山口県",
         "city": "美祢市",
-        "address": "山口県美祢市美東町大田字近光5480-1",
-        "road": "国道435号",
-        "url": "https://www.michi-no-eki.jp/stations/view/821"
+        "address": "山口県美祢市美東町大田近光5480-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19601"
       }
     },
     {
@@ -16940,13 +15420,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "35013",
+        "id": "19602",
         "name": "道の駅仁保の郷",
         "prefecture": "山口県",
         "city": "山口市",
         "address": "山口県山口市仁保中郷1034",
-        "road": "国道376号",
-        "url": "https://www.michi-no-eki.jp/stations/view/822"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19602"
       }
     },
     {
@@ -16955,17 +15435,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           131.4146209,
-          34.42624582
+          34.4262458
         ]
       },
       "properties": {
-        "id": "35014",
+        "id": "19603",
         "name": "道の駅萩しーまーと",
         "prefecture": "山口県",
         "city": "萩市",
-        "address": "山口県萩市椿東字北前小畑4160-61",
-        "road": "山口県道67号",
-        "url": "https://www.michi-no-eki.jp/stations/view/823"
+        "address": "山口県萩市椿東4160-61",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19603"
       }
     },
     {
@@ -16978,13 +15458,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "35015",
+        "id": "19604",
         "name": "道の駅願成就温泉",
         "prefecture": "山口県",
         "city": "山口市",
-        "address": "山口県山口市阿東徳佐上2-95",
-        "road": "国道9号",
-        "url": "https://www.michi-no-eki.jp/stations/view/824"
+        "address": "山口県山口市阿東徳佐上10002-116",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19604"
       }
     },
     {
@@ -16997,13 +15477,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "35016",
-        "name": "道の駅うり坊の郷_katamata",
+        "id": "19605",
+        "name": "道の駅うり坊の郷katamata",
         "prefecture": "山口県",
         "city": "萩市",
         "address": "山口県萩市大字片俣字円明1244-7",
-        "road": "国道315号",
-        "url": "https://www.michi-no-eki.jp/stations/view/825"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19605"
       }
     },
     {
@@ -17016,13 +15496,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "35017",
+        "id": "19606",
         "name": "道の駅蛍街道西ノ市",
         "prefecture": "山口県",
         "city": "下関市",
-        "address": "山口県下関市豊田町大字中村876番地4",
-        "road": "山口県道34号",
-        "url": "https://www.michi-no-eki.jp/stations/view/826"
+        "address": "山口県下関市豊田町大字中村876-4",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19606"
       }
     },
     {
@@ -17035,13 +15515,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "35018",
-        "name": "道の駅きらら_あじす",
-        "prefecture": "山口県",
-        "city": "山口市",
-        "address": "山口県山口市阿知須509-88",
-        "road": "山口県道212号山口阿知須宇部線|山口県道213号きらら浜沖の原線",
-        "url": "https://www.michi-no-eki.jp/stations/view/827"
+        "id": "19607",
+        "name": "道の駅きらら あじす",
+        "prefecture": "きらら　あじす",
+        "city": "",
+        "address": "山口県山口市阿知須10509-88",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19607"
       }
     },
     {
@@ -17054,13 +15534,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "35019",
+        "id": "19608",
         "name": "道の駅萩・さんさん三見",
         "prefecture": "山口県",
         "city": "萩市",
         "address": "山口県萩市三見1028-2",
-        "road": "国道191号|萩・三隅道路",
-        "url": "https://www.michi-no-eki.jp/stations/view/828"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19608"
       }
     },
     {
@@ -17073,13 +15553,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "35020",
-        "name": "道の駅北浦街道_豊北",
-        "prefecture": "山口県",
-        "city": "下関市",
+        "id": "19609",
+        "name": "道の駅北浦街道 豊北",
+        "prefecture": "北浦街道　豊北",
+        "city": "",
         "address": "山口県下関市豊北町大字神田上314-1",
-        "road": "国道191号",
-        "url": "https://www.michi-no-eki.jp/stations/view/829"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19609"
       }
     },
     {
@@ -17088,17 +15568,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           131.6882042,
-          34.07489931
+          34.0748993
         ]
       },
       "properties": {
-        "id": "35021",
+        "id": "19610",
         "name": "道の駅ソレーネ周南",
         "prefecture": "山口県",
         "city": "周南市",
-        "address": "山口県周南市大字戸田2713番地",
-        "road": "国道2号",
-        "url": "https://www.michi-no-eki.jp/stations/view/830"
+        "address": "周南市大字戸田2713",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19610"
       }
     },
     {
@@ -17106,56 +15586,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          132.1165198,
-          33.8330038
+          132.1167326,
+          33.8346819
         ]
       },
       "properties": {
-        "id": "35022",
+        "id": "19611",
         "name": "道の駅上関海峡",
         "prefecture": "山口県",
-        "city": "熊毛郡上関町",
-        "address": "山口県熊毛郡上関町室津904-15",
-        "road": "山口県道23号",
-        "url": "https://www.michi-no-eki.jp/stations/view/831"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          131.5976786,
-          34.0380706
-        ]
-      },
-      "properties": {
-        "id": "35023",
-        "name": "道の駅潮彩市場防府",
-        "prefecture": "山口県",
-        "city": "防府市",
-        "address": "山口県防府市新築地町2番地3",
-        "road": "市道_新築地一号線",
-        "url": "https://www.michi-no-eki.jp/stations/view/8011"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          131.202713,
-          34.388466
-        ]
-      },
-      "properties": {
-        "id": "35024",
-        "name": "道の駅センザキッチン",
-        "prefecture": "山口県",
-        "city": "長門市",
-        "address": "山口県長門市仙崎4297番地1",
-        "road": "山口県道282号仙崎停車場小浜線",
-        "url": "https://www.michi-no-eki.jp/stations/view/14181"
+        "city": "上関町",
+        "address": "山口県熊毛郡上関町大字室津904-15",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19611"
       }
     },
     {
@@ -17164,17 +15606,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           134.0600296,
-          34.042626
+          34.0426260
         ]
       },
       "properties": {
-        "id": "36001",
+        "id": "19612",
         "name": "道の駅貞光ゆうゆう館",
         "prefecture": "徳島県",
-        "city": "美馬郡つるぎ町",
-        "address": "徳島県美馬郡つるぎ町貞光字大須賀11番地1",
-        "road": "国道192号",
-        "url": "https://www.michi-no-eki.jp/stations/view/832"
+        "city": "つるぎ町",
+        "address": "徳島県美馬郡つるぎ町貞光字大須賀11-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19612"
       }
     },
     {
@@ -17183,17 +15625,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           134.5022843,
-          33.86319896
+          33.8631990
         ]
       },
       "properties": {
-        "id": "36002",
+        "id": "19613",
         "name": "道の駅鷲の里",
         "prefecture": "徳島県",
-        "city": "那賀郡那賀町",
-        "address": "徳島県那賀郡那賀町和喰字田野89",
-        "road": "徳島県道19号阿南鷲敷日和佐線",
-        "url": "https://www.michi-no-eki.jp/stations/view/833"
+        "city": "那賀町",
+        "address": "徳島県那賀郡那賀町和食字田野89",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19613"
       }
     },
     {
@@ -17202,17 +15644,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           134.3072826,
-          33.56906339
+          33.5690634
         ]
       },
       "properties": {
-        "id": "36003",
+        "id": "19614",
         "name": "道の駅宍喰温泉",
         "prefecture": "徳島県",
-        "city": "海部郡海陽町",
-        "address": "徳島県海部郡海陽町大字久保字板取219-6",
-        "road": "国道55号",
-        "url": "https://www.michi-no-eki.jp/stations/view/834"
+        "city": "海陽町",
+        "address": "徳島県海部郡海陽町久保字板取219-6",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19614"
       }
     },
     {
@@ -17221,17 +15663,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           134.3524444,
-          34.150942
+          34.1509420
         ]
       },
       "properties": {
-        "id": "36004",
+        "id": "19615",
         "name": "道の駅どなり",
         "prefecture": "徳島県",
         "city": "阿波市",
         "address": "徳島県阿波市土成町宮川内字平間28-2",
-        "road": "国道318号",
-        "url": "https://www.michi-no-eki.jp/stations/view/835"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19615"
       }
     },
     {
@@ -17239,18 +15681,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          133.811312,
+          133.8113120,
           33.8891692
         ]
       },
       "properties": {
-        "id": "36005",
+        "id": "19616",
         "name": "道の駅にしいや",
         "prefecture": "徳島県",
         "city": "三好市",
         "address": "徳島県三好市西祖谷山村尾井ノ内348-2",
-        "road": "徳島県道45号",
-        "url": "https://www.michi-no-eki.jp/stations/view/836"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19616"
       }
     },
     {
@@ -17263,13 +15705,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "36006",
+        "id": "19617",
         "name": "道の駅わじき",
         "prefecture": "徳島県",
-        "city": "那賀郡那賀町",
+        "city": "那賀町",
         "address": "徳島県那賀郡那賀町中山字関ヶ原34-56",
-        "road": "国道195号",
-        "url": "https://www.michi-no-eki.jp/stations/view/837"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19617"
       }
     },
     {
@@ -17282,13 +15724,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "36007",
+        "id": "19618",
         "name": "道の駅公方の郷なかがわ",
         "prefecture": "徳島県",
         "city": "阿南市",
-        "address": "徳島県阿南市那賀川町工地803番地",
-        "road": "国道55号",
-        "url": "https://www.michi-no-eki.jp/stations/view/838"
+        "address": "徳島県阿南市那賀川町工地803",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19618"
       }
     },
     {
@@ -17301,13 +15743,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "36008",
+        "id": "19619",
         "name": "道の駅もみじ川温泉",
         "prefecture": "徳島県",
-        "city": "那賀郡那賀町",
-        "address": "徳島県那賀郡那賀町大久保西納野4-7",
-        "road": "国道195号",
-        "url": "https://www.michi-no-eki.jp/stations/view/839"
+        "city": "那賀町",
+        "address": "徳島県那賀郡那賀町大久保字西納野4-7",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19619"
       }
     },
     {
@@ -17320,13 +15762,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "36009",
+        "id": "19620",
         "name": "道の駅温泉の里神山",
         "prefecture": "徳島県",
-        "city": "名西郡神山町",
+        "city": "神山町",
         "address": "徳島県名西郡神山町神領字西上角151-1",
-        "road": "国道438号",
-        "url": "https://www.michi-no-eki.jp/stations/view/840"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19620"
       }
     },
     {
@@ -17335,17 +15777,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           134.1465136,
-          34.06697457
+          34.0669746
         ]
       },
       "properties": {
-        "id": "36010",
+        "id": "19621",
         "name": "道の駅藍ランドうだつ",
         "prefecture": "徳島県",
         "city": "美馬市",
         "address": "徳島県美馬市脇町大字脇町55",
-        "road": "徳島県道12号",
-        "url": "https://www.michi-no-eki.jp/stations/view/841"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19621"
       }
     },
     {
@@ -17358,13 +15800,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "36011",
+        "id": "19622",
         "name": "道の駅三野",
         "prefecture": "徳島県",
         "city": "三好市",
         "address": "徳島県三好市三野町太刀野1909-1",
-        "road": "徳島県道12号",
-        "url": "https://www.michi-no-eki.jp/stations/view/842"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19622"
       }
     },
     {
@@ -17377,13 +15819,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "36012",
+        "id": "19623",
         "name": "道の駅日和佐",
         "prefecture": "徳島県",
-        "city": "海部郡美波町",
+        "city": "美波町",
         "address": "徳島県海部郡美波町奥河内字寺前493-6",
-        "road": "国道55号",
-        "url": "https://www.michi-no-eki.jp/stations/view/843"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19623"
       }
     },
     {
@@ -17396,13 +15838,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "36013",
+        "id": "19624",
         "name": "道の駅第九の里",
         "prefecture": "徳島県",
         "city": "鳴門市",
         "address": "徳島県鳴門市大麻町桧字東山田53",
-        "road": "徳島県道41号",
-        "url": "https://www.michi-no-eki.jp/stations/view/844"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19624"
       }
     },
     {
@@ -17411,17 +15853,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           133.7600397,
-          33.881363
+          33.8813630
         ]
       },
       "properties": {
-        "id": "36014",
+        "id": "19625",
         "name": "道の駅大歩危",
         "prefecture": "徳島県",
         "city": "三好市",
         "address": "徳島県三好市山城町上名1553-1",
-        "road": "国道32号",
-        "url": "https://www.michi-no-eki.jp/stations/view/845"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19625"
       }
     },
     {
@@ -17430,17 +15872,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           134.5228323,
-          33.93219181
+          33.9321918
         ]
       },
       "properties": {
-        "id": "36015",
+        "id": "19626",
         "name": "道の駅ひなの里かつうら",
         "prefecture": "徳島県",
-        "city": "勝浦郡勝浦町",
-        "address": "徳島県勝浦郡勝浦町大字生名字月ノ瀬",
-        "road": "徳島県道16号",
-        "url": "https://www.michi-no-eki.jp/stations/view/846"
+        "city": "勝浦町",
+        "address": "徳島県勝浦郡勝浦町大字生名字月ノ瀬4-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19626"
       }
     },
     {
@@ -17448,18 +15890,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          134.05889,
-          34.0505572222
+          133.8261282,
+          34.3526893
         ]
       },
       "properties": {
-        "id": "36016",
-        "name": "道の駅みまの里",
-        "prefecture": "徳島県",
-        "city": "美馬市",
-        "address": "徳島県美馬市美馬町字願勝寺72番地",
-        "road": "徳島県道12号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14188"
+        "id": "19627",
+        "name": "道の駅瀬戸大橋記念公園",
+        "prefecture": "香川県",
+        "city": "坂出市",
+        "address": "香川県坂出市番の州緑町6-13",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19627"
       }
     },
     {
@@ -17472,13 +15914,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "37002",
+        "id": "19628",
         "name": "道の駅津田の松原",
         "prefecture": "香川県",
         "city": "さぬき市",
-        "address": "香川県さぬき市津田町津田103番地3",
-        "road": "国道11号",
-        "url": "https://www.michi-no-eki.jp/stations/view/848"
+        "address": "香川県さぬき市津田町津田103-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19628"
       }
     },
     {
@@ -17491,13 +15933,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "37003",
+        "id": "19629",
         "name": "道の駅ことひき",
         "prefecture": "香川県",
         "city": "観音寺市",
-        "address": "香川県観音寺市有明町3番37号",
-        "road": "香川県道21号",
-        "url": "https://www.michi-no-eki.jp/stations/view/849"
+        "address": "香川県観音寺市有明町3-37",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19629"
       }
     },
     {
@@ -17510,13 +15952,32 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "37004",
+        "id": "19630",
         "name": "道の駅ふれあいパークみの",
         "prefecture": "香川県",
         "city": "三豊市",
-        "address": "香川県三豊市三野町大見乙74番地",
-        "road": "香川県道48号",
-        "url": "https://www.michi-no-eki.jp/stations/view/850"
+        "address": "香川県三豊市三野町大見乙74",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19630"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.2736405,
+          34.4728481
+        ]
+      },
+      "properties": {
+        "id": "19631",
+        "name": "道の駅小豆島オリーブ公園",
+        "prefecture": "香川県",
+        "city": "小豆島町",
+        "address": "香川県小豆郡小豆島町西村甲1941-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19631"
       }
     },
     {
@@ -17525,17 +15986,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           134.2361538,
-          34.47101922
+          34.4710192
         ]
       },
       "properties": {
-        "id": "37006",
+        "id": "19632",
         "name": "道の駅小豆島ふるさと村",
         "prefecture": "香川県",
-        "city": "小豆郡小豆島町",
-        "address": "香川県小豆郡小豆島町室生2084番地1",
-        "road": "香川県道250号三都港平木線",
-        "url": "https://www.michi-no-eki.jp/stations/view/852"
+        "city": "小豆島町",
+        "address": "香川県小豆郡小豆島町室生2084-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19632"
       }
     },
     {
@@ -17548,13 +16009,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "37007",
+        "id": "19633",
         "name": "道の駅空の夢もみの木パーク",
         "prefecture": "香川県",
-        "city": "仲多度郡まんのう町",
-        "address": "香川県仲多度郡まんのう町追上424番地1",
-        "road": "国道32号",
-        "url": "https://www.michi-no-eki.jp/stations/view/853"
+        "city": "まんのう町",
+        "address": "香川県仲多度郡まんのう町追上424-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19633"
       }
     },
     {
@@ -17563,17 +16024,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           134.2424659,
-          34.25819
+          34.2581900
         ]
       },
       "properties": {
-        "id": "37008",
+        "id": "19634",
         "name": "道の駅みろく",
         "prefecture": "香川県",
         "city": "さぬき市",
-        "address": "香川県さぬき市大川町富田中3298番地1",
-        "road": "香川県道10号",
-        "url": "https://www.michi-no-eki.jp/stations/view/854"
+        "address": "香川県さぬき市大川町富田中3298-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19634"
       }
     },
     {
@@ -17582,17 +16043,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           134.0820671,
-          34.17020407
+          34.1702041
         ]
       },
       "properties": {
-        "id": "37009",
+        "id": "19635",
         "name": "道の駅しおのえ",
         "prefecture": "香川県",
         "city": "高松市",
-        "address": "香川県高松市塩江町安原上東390番地21",
-        "road": "国道193号",
-        "url": "https://www.michi-no-eki.jp/stations/view/855"
+        "address": "香川県高松市塩江町安原上東字塩江390-21",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19635"
       }
     },
     {
@@ -17600,18 +16061,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          133.917359488,
-          34.2497767902
+          133.9173595,
+          34.2497768
         ]
       },
       "properties": {
-        "id": "37010",
+        "id": "19636",
         "name": "道の駅滝宮",
         "prefecture": "香川県",
-        "city": "綾歌郡綾川町",
-        "address": "香川県綾歌郡綾川町大字滝宮1578番地",
-        "road": "国道32号",
-        "url": "https://www.michi-no-eki.jp/stations/view/856"
+        "city": "綾川町",
+        "address": "香川県綾歌郡綾川町滝宮字川西1578",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19636"
       }
     },
     {
@@ -17619,18 +16080,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          134.007744,
+          134.0077440,
           34.0950942
         ]
       },
       "properties": {
-        "id": "37011",
+        "id": "19637",
         "name": "道の駅ことなみ",
         "prefecture": "香川県",
-        "city": "仲多度郡まんのう町",
-        "address": "香川県仲多度郡まんのう町川東2355番地1",
-        "road": "国道438号",
-        "url": "https://www.michi-no-eki.jp/stations/view/857"
+        "city": "まんのう町",
+        "address": "香川県仲多度郡まんのう町川東2355-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19637"
       }
     },
     {
@@ -17638,18 +16099,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          133.807966,
-          34.31338818
+          133.8079660,
+          34.3133882
         ]
       },
       "properties": {
-        "id": "37012",
-        "name": "道の駅恋人の聖地_うたづ臨海公園",
-        "prefecture": "香川県",
-        "city": "綾歌郡宇多津町",
-        "address": "香川県綾歌郡宇多津町浜一番丁4番地",
-        "road": "香川県道194号",
-        "url": "https://www.michi-no-eki.jp/stations/view/858"
+        "id": "19638",
+        "name": "道の駅恋人の聖地 うたづ臨海公園",
+        "prefecture": "恋人の聖地　うたづ臨海公園",
+        "city": "",
+        "address": "香川県綾歌郡宇多津町浜一番丁4",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19638"
       }
     },
     {
@@ -17658,17 +16119,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           133.6013067,
-          34.04276798
+          34.0427680
         ]
       },
       "properties": {
-        "id": "37013",
+        "id": "19639",
         "name": "道の駅とよはま",
         "prefecture": "香川県",
         "city": "観音寺市",
-        "address": "香川県観音寺市豊浜町箕浦字大西甲2506番地",
-        "road": "国道11号",
-        "url": "https://www.michi-no-eki.jp/stations/view/859"
+        "address": "香川県観音寺市豊浜町箕浦字大西甲2506",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19639"
       }
     },
     {
@@ -17676,18 +16137,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          133.796699286,
-          34.1096518757
+          133.7980270,
+          34.1100368
         ]
       },
       "properties": {
-        "id": "37014",
+        "id": "19640",
         "name": "道の駅たからだの里さいた",
         "prefecture": "香川県",
         "city": "三豊市",
-        "address": "香川県三豊市財田町財田上180番地6",
-        "road": "香川県道5号観音寺池田線",
-        "url": "https://www.michi-no-eki.jp/stations/view/860"
+        "address": "香川県三豊市財田町財田上108-6",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19640"
       }
     },
     {
@@ -17696,17 +16157,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           134.2421851,
-          34.53390705
+          34.5339071
         ]
       },
       "properties": {
-        "id": "37015",
+        "id": "19641",
         "name": "道の駅大坂城残石記念公園",
         "prefecture": "香川県",
-        "city": "小豆郡土庄町",
+        "city": "土庄町",
         "address": "香川県小豆郡土庄町小海甲909-1",
-        "road": "香川県道26号",
-        "url": "https://www.michi-no-eki.jp/stations/view/861"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19641"
       }
     },
     {
@@ -17715,17 +16176,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           134.1750001,
-          34.22135991
+          34.2213599
         ]
       },
       "properties": {
-        "id": "37016",
+        "id": "19642",
         "name": "道の駅ながお",
         "prefecture": "香川県",
         "city": "さぬき市",
-        "address": "香川県さぬき市前山940番地12",
-        "road": "香川県道3号志度山川線",
-        "url": "https://www.michi-no-eki.jp/stations/view/862"
+        "address": "香川県さぬき市前山940-12",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19642"
       }
     },
     {
@@ -17738,13 +16199,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "37017",
+        "id": "19643",
         "name": "道の駅香南楽湯",
         "prefecture": "香川県",
         "city": "高松市",
-        "address": "香川県高松市香南町横井997番地2",
-        "road": "香川県道13号",
-        "url": "https://www.michi-no-eki.jp/stations/view/863"
+        "address": "香川県高松市香南町横井997-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19643"
       }
     },
     {
@@ -17757,13 +16218,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "37018",
+        "id": "19644",
         "name": "道の駅源平の里むれ",
         "prefecture": "香川県",
         "city": "高松市",
-        "address": "香川県高松市牟礼町原631番地7",
-        "road": "国道11号",
-        "url": "https://www.michi-no-eki.jp/stations/view/864"
+        "address": "香川県高松市牟礼町原631-5",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19644"
       }
     },
     {
@@ -17776,13 +16237,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "38001",
-        "name": "道の駅瀬戸農業公園",
+        "id": "19645",
+        "name": "道の駅佐田岬半島ミュージアム",
         "prefecture": "愛媛県",
         "city": "西宇和郡伊方町",
         "address": "愛媛県西宇和郡伊方町塩成乙293",
-        "road": "国道197号",
-        "url": "https://www.michi-no-eki.jp/stations/view/865"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19645"
       }
     },
     {
@@ -17795,13 +16256,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "38002",
-        "name": "マイントピア別子",
+        "id": "19646",
+        "name": "道の駅マイントピア別子",
         "prefecture": "愛媛県",
         "city": "新居浜市",
         "address": "愛媛県新居浜市立川町707-3",
-        "road": "愛媛県道47号",
-        "url": "https://www.michi-no-eki.jp/stations/view/866"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19646"
       }
     },
     {
@@ -17810,17 +16271,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           132.7982451,
-          33.33023396
+          33.3302340
         ]
       },
       "properties": {
-        "id": "38003",
+        "id": "19647",
         "name": "道の駅日吉夢産地",
         "prefecture": "愛媛県",
         "city": "北宇和郡鬼北町",
-        "address": "愛媛県北宇和郡鬼北町下鍵山54番地",
-        "road": "国道320号",
-        "url": "https://www.michi-no-eki.jp/stations/view/867"
+        "address": "愛媛県北宇和郡鬼北町大字下鍵山54",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19647"
       }
     },
     {
@@ -17833,13 +16294,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "38004",
+        "id": "19648",
         "name": "道の駅ひろた",
         "prefecture": "愛媛県",
-        "city": "伊予郡砥部町",
+        "city": "砥部町",
         "address": "愛媛県伊予郡砥部町総津162-1",
-        "road": "国道379号",
-        "url": "https://www.michi-no-eki.jp/stations/view/868"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19648"
       }
     },
     {
@@ -17848,17 +16309,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           132.6340324,
-          33.68511817
+          33.6851182
         ]
       },
       "properties": {
-        "id": "38005",
+        "id": "19649",
         "name": "道の駅ふたみ",
         "prefecture": "愛媛県",
         "city": "伊予市",
-        "address": "愛媛県伊予市双海町高岸2326",
-        "road": "国道378号",
-        "url": "https://www.michi-no-eki.jp/stations/view/869"
+        "address": "愛媛県伊予市双海町高岸甲2326",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19649"
       }
     },
     {
@@ -17867,17 +16328,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           132.6582901,
-          33.55490563
+          33.5549056
         ]
       },
       "properties": {
-        "id": "38006",
+        "id": "19650",
         "name": "道の駅内子フレッシュパークからり",
         "prefecture": "愛媛県",
         "city": "喜多郡内子町",
-        "address": "愛媛県喜多郡内子町大字内子2452",
-        "road": "国道379号",
-        "url": "https://www.michi-no-eki.jp/stations/view/870"
+        "address": "愛媛県喜多郡内子町内子2452",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19650"
       }
     },
     {
@@ -17886,17 +16347,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           132.3075462,
-          33.48089422
+          33.4808942
         ]
       },
       "properties": {
-        "id": "38007",
+        "id": "19651",
         "name": "道の駅伊方きらら館",
         "prefecture": "愛媛県",
-        "city": "西宇和郡伊方町",
-        "address": "愛媛県西宇和郡伊方町九町越",
-        "road": "国道197号",
-        "url": "https://www.michi-no-eki.jp/stations/view/871"
+        "city": "伊方町",
+        "address": "愛媛県西宇和郡伊方町九町字3番耕地179-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19651"
       }
     },
     {
@@ -17905,17 +16366,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           132.7493583,
-          33.379789
+          33.3797890
         ]
       },
       "properties": {
-        "id": "38008",
+        "id": "19652",
         "name": "道の駅きなはい屋しろかわ",
         "prefecture": "愛媛県",
         "city": "西予市",
-        "address": "愛媛県西予市城川町下相1008番地1",
-        "road": "国道197号",
-        "url": "https://www.michi-no-eki.jp/stations/view/872"
+        "address": "愛媛県西予市城川町下相1008-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19652"
       }
     },
     {
@@ -17923,18 +16384,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          132.561599,
+          132.5615990,
           32.9587802
         ]
       },
       "properties": {
-        "id": "38009",
+        "id": "19653",
         "name": "道の駅みしょうMIC",
         "prefecture": "愛媛県",
         "city": "南宇和郡愛南町",
-        "address": "愛媛県南宇和郡愛南町御荘平城4296番地1",
-        "road": "国道56号",
-        "url": "https://www.michi-no-eki.jp/stations/view/873"
+        "address": "愛媛県南宇和郡愛南町御荘平城4296-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19653"
       }
     },
     {
@@ -17943,17 +16404,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           133.0484121,
-          33.99285832
+          33.9928583
         ]
       },
       "properties": {
-        "id": "38010",
+        "id": "19654",
         "name": "道の駅今治湯ノ浦温泉",
         "prefecture": "愛媛県",
         "city": "今治市",
         "address": "愛媛県今治市長沢甲252-2",
-        "road": "国道317号",
-        "url": "https://www.michi-no-eki.jp/stations/view/874"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19654"
       }
     },
     {
@@ -17962,17 +16423,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           132.7094931,
-          33.22978492
+          33.2297849
         ]
       },
       "properties": {
-        "id": "38011",
+        "id": "19655",
         "name": "道の駅虹の森公園まつの",
         "prefecture": "愛媛県",
         "city": "北宇和郡松野町",
-        "address": "愛媛県北宇和郡松野町大字延野々1510-1",
-        "road": "国道381号",
-        "url": "https://www.michi-no-eki.jp/stations/view/875"
+        "address": "愛媛県北宇和郡松野町延野々1510-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19655"
       }
     },
     {
@@ -17981,17 +16442,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           132.6871266,
-          33.25385686
+          33.2538569
         ]
       },
       "properties": {
-        "id": "38012",
+        "id": "19656",
         "name": "道の駅広見森の三角ぼうし",
         "prefecture": "愛媛県",
-        "city": "北宇和郡鬼北町",
-        "address": "愛媛県北宇和郡鬼北町大字永野市138番地6",
-        "road": "国道320号",
-        "url": "https://www.michi-no-eki.jp/stations/view/876"
+        "city": "鬼北町",
+        "address": "愛媛県北宇和郡鬼北町大字永野市138-6",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19656"
       }
     },
     {
@@ -18000,17 +16461,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           133.0755153,
-          34.20281321
+          34.2028132
         ]
       },
       "properties": {
-        "id": "38013",
-        "name": "道の駅伯方S・Cパーク",
+        "id": "19657",
+        "name": "道の駅伯方S･Cパーク",
         "prefecture": "愛媛県",
         "city": "今治市",
         "address": "愛媛県今治市伯方町叶浦甲1668-1",
-        "road": "国道317号",
-        "url": "https://www.michi-no-eki.jp/stations/view/877"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19657"
       }
     },
     {
@@ -18023,13 +16484,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "38014",
+        "id": "19658",
         "name": "道の駅今治市多々羅しまなみ公園",
         "prefecture": "愛媛県",
         "city": "今治市",
-        "address": "愛媛県今治市上浦町大字井口9180-2",
-        "road": "国道317号",
-        "url": "https://www.michi-no-eki.jp/stations/view/878"
+        "address": "愛媛県今治市上浦町井口9180-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19658"
       }
     },
     {
@@ -18042,13 +16503,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "38015",
+        "id": "19659",
         "name": "道の駅しまなみの駅御島",
         "prefecture": "愛媛県",
         "city": "今治市",
         "address": "愛媛県今治市大三島町宮浦3260",
-        "road": "愛媛県道21号",
-        "url": "https://www.michi-no-eki.jp/stations/view/879"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19659"
       }
     },
     {
@@ -18057,17 +16518,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           133.1076222,
-          33.88368862
+          33.8836886
         ]
       },
       "properties": {
-        "id": "38016",
+        "id": "19660",
         "name": "道の駅小松オアシス",
         "prefecture": "愛媛県",
         "city": "西条市",
         "address": "愛媛県西条市小松町新屋敷乙22-29",
-        "road": "国道11号",
-        "url": "https://www.michi-no-eki.jp/stations/view/880"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19660"
       }
     },
     {
@@ -18075,18 +16536,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          132.969656416,
-          33.6145334818
+          132.9699614,
+          33.6142159
         ]
       },
       "properties": {
-        "id": "38017",
-        "name": "道の駅みかわ_(愛媛県)",
+        "id": "19661",
+        "name": "道の駅みかわ",
         "prefecture": "愛媛県",
-        "city": "上浮穴郡久万高原町",
+        "city": "久万高原町",
         "address": "愛媛県上浮穴郡久万高原町上黒岩2840-1",
-        "road": "国道33号",
-        "url": "https://www.michi-no-eki.jp/stations/view/881"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19661"
       }
     },
     {
@@ -18095,17 +16556,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           132.6766988,
-          33.46112194
+          33.4611219
         ]
       },
       "properties": {
-        "id": "38018",
+        "id": "19662",
         "name": "道の駅清流の里ひじかわ",
         "prefecture": "愛媛県",
         "city": "大洲市",
-        "address": "愛媛県大洲市肱川町宇和川3030番地",
-        "road": "国道197号",
-        "url": "https://www.michi-no-eki.jp/stations/view/882"
+        "address": "愛媛県大洲市肱川町宇和川3030",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19662"
       }
     },
     {
@@ -18118,13 +16579,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "38019",
+        "id": "19663",
         "name": "道の駅よしうみいきいき館",
         "prefecture": "愛媛県",
         "city": "今治市",
         "address": "愛媛県今治市吉海町名4520-2",
-        "road": "国道317号",
-        "url": "https://www.michi-no-eki.jp/stations/view/883"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19663"
       }
     },
     {
@@ -18133,17 +16594,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           132.7722822,
-          33.99670576
+          33.9967058
         ]
       },
       "properties": {
-        "id": "38020",
+        "id": "19664",
         "name": "道の駅風早の郷風和里",
         "prefecture": "愛媛県",
         "city": "松山市",
-        "address": "愛媛県松山市大浦119番地",
-        "road": "国道196号",
-        "url": "https://www.michi-no-eki.jp/stations/view/884"
+        "address": "愛媛県松山市大浦119",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19664"
       }
     },
     {
@@ -18156,13 +16617,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "38021",
+        "id": "19665",
         "name": "道の駅みま",
         "prefecture": "愛媛県",
         "city": "宇和島市",
         "address": "愛媛県宇和島市三間町務田180-1",
-        "road": "愛媛県道31号",
-        "url": "https://www.michi-no-eki.jp/stations/view/885"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19665"
       }
     },
     {
@@ -18175,13 +16636,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "38022",
+        "id": "19666",
         "name": "道の駅小田の郷せせらぎ",
         "prefecture": "愛媛県",
-        "city": "喜多郡内子町",
-        "address": "愛媛県喜多郡内子町寺村251番地1",
-        "road": "国道380号",
-        "url": "https://www.michi-no-eki.jp/stations/view/886"
+        "city": "内子町",
+        "address": "愛媛県喜多郡内子町寺村251-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19666"
       }
     },
     {
@@ -18190,17 +16651,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           132.5582355,
-          33.22242256
+          33.2224226
         ]
       },
       "properties": {
-        "id": "38023",
-        "name": "道の駅うわじまきさいや広場",
-        "prefecture": "愛媛県",
-        "city": "宇和島市",
-        "address": "愛媛県宇和島市弁天町1丁目318-16",
-        "road": "国道380号",
-        "url": "https://www.michi-no-eki.jp/stations/view/887"
+        "id": "19667",
+        "name": "道の駅うわじま きさいや広場",
+        "prefecture": "うわじま　きさいや広場",
+        "city": "",
+        "address": "愛媛県宇和島市弁天町1-318-16",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19667"
       }
     },
     {
@@ -18209,17 +16670,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           133.6411104,
-          33.92418679
+          33.9241868
         ]
       },
       "properties": {
-        "id": "38024",
+        "id": "19668",
         "name": "道の駅霧の森",
         "prefecture": "愛媛県",
         "city": "四国中央市",
         "address": "愛媛県四国中央市新宮町馬立4491-1",
-        "road": "愛媛県道5号川之江大豊線",
-        "url": "https://www.michi-no-eki.jp/stations/view/888"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19668"
       }
     },
     {
@@ -18227,18 +16688,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          132.418138,
-          33.45816264
+          132.4181380,
+          33.4581626
         ]
       },
       "properties": {
-        "id": "38025",
+        "id": "19669",
         "name": "道の駅八幡浜みなっと",
         "prefecture": "愛媛県",
         "city": "八幡浜市",
-        "address": "愛媛県八幡浜市字沖新田1581番地23",
-        "road": "愛媛県道27号",
-        "url": "https://www.michi-no-eki.jp/stations/view/889"
+        "address": "愛媛県八幡浜市字沖新田1581-23",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19669"
       }
     },
     {
@@ -18247,17 +16708,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           132.5203019,
-          33.139682
+          33.1396820
         ]
       },
       "properties": {
-        "id": "38026",
+        "id": "19670",
         "name": "道の駅津島やすらぎの里",
         "prefecture": "愛媛県",
         "city": "宇和島市",
-        "address": "愛媛県宇和島市津島町高田甲830-1",
-        "road": "愛媛県道4号宿毛津島線",
-        "url": "https://www.michi-no-eki.jp/stations/view/890"
+        "address": "愛媛県宇和島市津島町高田830-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19670"
       }
     },
     {
@@ -18270,13 +16731,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "38027",
+        "id": "19671",
         "name": "道の駅どんぶり館",
         "prefecture": "愛媛県",
         "city": "西予市",
         "address": "愛媛県西予市宇和町稲生118",
-        "road": "愛媛県道29号",
-        "url": "https://www.michi-no-eki.jp/stations/view/891"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19671"
       }
     },
     {
@@ -18289,32 +16750,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "38028",
+        "id": "19672",
         "name": "道の駅天空の郷さんさん",
         "prefecture": "愛媛県",
-        "city": "上浮穴郡久万高原町",
-        "address": "愛媛県上浮穴郡久万高原町入野1855番地6",
-        "road": "国道33号",
-        "url": "https://www.michi-no-eki.jp/stations/view/892"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          132.695,
-          33.6697230556
-        ]
-      },
-      "properties": {
-        "id": "38029",
-        "name": "道の駅なかやま",
-        "prefecture": "愛媛県",
-        "city": "伊予市",
-        "address": "愛媛県伊予市中山町中山子271",
-        "road": "国道56号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14189"
+        "city": "久万高原町",
+        "address": "愛媛県上浮穴郡久万高原町入野1855-6",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19672"
       }
     },
     {
@@ -18323,17 +16765,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           133.6634001,
-          33.750923
+          33.7509230
         ]
       },
       "properties": {
-        "id": "39001",
+        "id": "19673",
         "name": "道の駅大杉",
         "prefecture": "高知県",
         "city": "長岡郡大豊町",
         "address": "高知県長岡郡大豊町杉743-1",
-        "road": "国道32号",
-        "url": "https://www.michi-no-eki.jp/stations/view/893"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19673"
       }
     },
     {
@@ -18342,17 +16784,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           132.7125287,
-          32.91616528
+          32.9161653
         ]
       },
       "properties": {
-        "id": "39002",
+        "id": "19674",
         "name": "道の駅すくも",
         "prefecture": "高知県",
         "city": "宿毛市",
-        "address": "高知県宿毛市坂ノ下1023-44",
-        "road": "国道321号",
-        "url": "https://www.michi-no-eki.jp/stations/view/894"
+        "address": "高知県宿毛市小筑紫町田ノ浦1244-10",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19674"
       }
     },
     {
@@ -18361,17 +16803,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           132.7093139,
-          32.82875238
+          32.8287524
         ]
       },
       "properties": {
-        "id": "39003",
+        "id": "19675",
         "name": "道の駅大月",
         "prefecture": "高知県",
-        "city": "幡多郡大月町",
+        "city": "大月町",
         "address": "高知県幡多郡大月町弘見2610",
-        "road": "国道321号",
-        "url": "https://www.michi-no-eki.jp/stations/view/895"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19675"
       }
     },
     {
@@ -18384,13 +16826,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "39004",
+        "id": "19676",
         "name": "道の駅四万十大正",
         "prefecture": "高知県",
-        "city": "高岡郡四万十町",
-        "address": "高知県高岡郡四万十町大正17-1",
-        "road": "国道381号",
-        "url": "https://www.michi-no-eki.jp/stations/view/896"
+        "city": "四万十町",
+        "address": "高知県高岡郡四万十町大正16-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19676"
       }
     },
     {
@@ -18398,18 +16840,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          132.944983352,
-          33.3883586039
+          132.9449834,
+          33.3883586
         ]
       },
       "properties": {
-        "id": "39005",
+        "id": "19677",
         "name": "道の駅ゆすはら",
         "prefecture": "高知県",
         "city": "高岡郡梼原町",
-        "address": "高知県高岡郡檮原町太郎川3799番地3",
-        "road": "国道197号",
-        "url": "https://www.michi-no-eki.jp/stations/view/897"
+        "address": "高知県高岡郡梼原町太郎川3785",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19677"
       }
     },
     {
@@ -18422,13 +16864,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "39006",
+        "id": "19678",
         "name": "道の駅南国風良里",
         "prefecture": "高知県",
         "city": "南国市",
         "address": "高知県南国市左右山102-1",
-        "road": "国道32号",
-        "url": "https://www.michi-no-eki.jp/stations/view/898"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19678"
       }
     },
     {
@@ -18441,13 +16883,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "39007",
+        "id": "19679",
         "name": "道の駅美良布",
         "prefecture": "高知県",
         "city": "香美市",
         "address": "高知県香美市香北町美良布1211",
-        "road": "国道195号",
-        "url": "https://www.michi-no-eki.jp/stations/view/899"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19679"
       }
     },
     {
@@ -18455,18 +16897,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          133.099612,
+          133.0996120,
           33.4266321
         ]
       },
       "properties": {
-        "id": "39008",
+        "id": "19680",
         "name": "道の駅布施ヶ坂",
         "prefecture": "高知県",
         "city": "高岡郡津野町",
         "address": "高知県高岡郡津野町船戸654-1",
-        "road": "国道197号",
-        "url": "https://www.michi-no-eki.jp/stations/view/900"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19680"
       }
     },
     {
@@ -18479,13 +16921,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "39009",
+        "id": "19681",
         "name": "道の駅キラメッセ室戸",
         "prefecture": "高知県",
         "city": "室戸市",
         "address": "高知県室戸市吉良川町丙890-11",
-        "road": "国道55号",
-        "url": "https://www.michi-no-eki.jp/stations/view/901"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19681"
       }
     },
     {
@@ -18493,18 +16935,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          133.366191,
+          133.3661910,
           33.5735339
         ]
       },
       "properties": {
-        "id": "39010",
+        "id": "19682",
         "name": "道の駅土佐和紙工芸村",
         "prefecture": "高知県",
-        "city": "吾川郡いの町",
+        "city": "いの町",
         "address": "高知県吾川郡いの町鹿敷1226",
-        "road": "国道194号",
-        "url": "https://www.michi-no-eki.jp/stations/view/902"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19682"
       }
     },
     {
@@ -18512,18 +16954,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          133.544235,
+          133.5442350,
           33.7426438
         ]
       },
       "properties": {
-        "id": "39011",
+        "id": "19683",
         "name": "道の駅土佐さめうら",
         "prefecture": "高知県",
-        "city": "土佐郡土佐町",
-        "address": "高知県土佐郡土佐町田井448-2",
-        "road": "国道439号",
-        "url": "https://www.michi-no-eki.jp/stations/view/903"
+        "city": "土佐町",
+        "address": "高知県土佐郡土佐町田井字桜ヶ内448-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19683"
       }
     },
     {
@@ -18532,17 +16974,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           133.9440693,
-          33.47009977
+          33.4700998
         ]
       },
       "properties": {
-        "id": "39012",
+        "id": "19684",
         "name": "道の駅大山",
         "prefecture": "高知県",
         "city": "安芸市",
-        "address": "高知県安芸市下山1400番地",
-        "road": "国道55号",
-        "url": "https://www.michi-no-eki.jp/stations/view/904"
+        "address": "高知県安芸市下山字黒ハエ1400",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19684"
       }
     },
     {
@@ -18555,13 +16997,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "39013",
+        "id": "19685",
         "name": "道の駅かわうその里すさき",
         "prefecture": "高知県",
         "city": "須崎市",
-        "address": "高知県須崎市下分甲263番地3",
-        "road": "国道56号",
-        "url": "https://www.michi-no-eki.jp/stations/view/905"
+        "address": "高知県須崎市下分甲263-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19685"
       }
     },
     {
@@ -18574,13 +17016,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "39014",
+        "id": "19686",
         "name": "道の駅あぐり窪川",
         "prefecture": "高知県",
-        "city": "高岡郡四万十町",
+        "city": "四万十町",
         "address": "高知県高岡郡四万十町平串284-1",
-        "road": "国道56号",
-        "url": "https://www.michi-no-eki.jp/stations/view/906"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19686"
       }
     },
     {
@@ -18589,17 +17031,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           133.3076915,
-          33.77982358
+          33.7798236
         ]
       },
       "properties": {
-        "id": "39015",
+        "id": "19687",
         "name": "道の駅木の香",
         "prefecture": "高知県",
         "city": "吾川郡いの町",
-        "address": "高知県吾川郡いの町桑瀬225番地24",
-        "road": "国道194号",
-        "url": "https://www.michi-no-eki.jp/stations/view/907"
+        "address": "高知県吾川郡いの町桑瀬225-24",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19687"
       }
     },
     {
@@ -18612,13 +17054,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "39016",
+        "id": "19688",
         "name": "道の駅めじかの里土佐清水",
         "prefecture": "高知県",
         "city": "土佐清水市",
         "address": "高知県土佐清水市三崎字西シリソメ671-1",
-        "road": "国道321号",
-        "url": "https://www.michi-no-eki.jp/stations/view/908"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19688"
       }
     },
     {
@@ -18631,13 +17073,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "39017",
+        "id": "19689",
         "name": "道の駅やす",
         "prefecture": "高知県",
         "city": "香南市",
         "address": "高知県香南市夜須町千切537-90",
-        "road": "国道55号",
-        "url": "https://www.michi-no-eki.jp/stations/view/909"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19689"
       }
     },
     {
@@ -18650,13 +17092,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "39018",
+        "id": "19690",
         "name": "道の駅633美の里",
         "prefecture": "高知県",
-        "city": "吾川郡いの町",
-        "address": "高知県吾川郡いの町上八川甲1160番地2",
-        "road": "国道194号",
-        "url": "https://www.michi-no-eki.jp/stations/view/910"
+        "city": "いの町",
+        "address": "高知県吾川郡いの町上八川甲1160-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19690"
       }
     },
     {
@@ -18665,17 +17107,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           134.0078394,
-          33.43015487
+          33.4301549
         ]
       },
       "properties": {
-        "id": "39019",
+        "id": "19691",
         "name": "道の駅田野駅屋",
         "prefecture": "高知県",
         "city": "安芸郡田野町",
         "address": "高知県安芸郡田野町上島田1431-1",
-        "road": "国道55号",
-        "url": "https://www.michi-no-eki.jp/stations/view/911"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19691"
       }
     },
     {
@@ -18688,13 +17130,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "39020",
+        "id": "19692",
         "name": "道の駅ビオスおおがた",
         "prefecture": "高知県",
         "city": "幡多郡黒潮町",
         "address": "高知県幡多郡黒潮町浮鞭953-1",
-        "road": "国道56号",
-        "url": "https://www.michi-no-eki.jp/stations/view/912"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19692"
       }
     },
     {
@@ -18702,18 +17144,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          132.835433,
-          33.22391239
+          132.8354330,
+          33.2239124
         ]
       },
       "properties": {
-        "id": "39021",
+        "id": "19693",
         "name": "道の駅四万十とおわ",
         "prefecture": "高知県",
         "city": "高岡郡四万十町",
         "address": "高知県高岡郡四万十町十和川口62-9",
-        "road": "国道381号",
-        "url": "https://www.michi-no-eki.jp/stations/view/913"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19693"
       }
     },
     {
@@ -18721,56 +17163,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          133.101781,
+          133.1017810,
           33.0867393
         ]
       },
       "properties": {
-        "id": "39022",
+        "id": "19694",
         "name": "道の駅なぶら土佐佐賀",
         "prefecture": "高知県",
-        "city": "幡多郡黒潮町",
-        "address": "高知県幡多郡黒潮町佐賀1350番地",
-        "road": "国道56号",
-        "url": "https://www.michi-no-eki.jp/stations/view/914"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          132.7890999,
-          33.1732559
-        ]
-      },
-      "properties": {
-        "id": "39023",
-        "name": "道の駅よって西土佐",
-        "prefecture": "高知県",
-        "city": "四万十市",
-        "address": "高知県四万十市西土佐江川崎2410-3",
-        "road": "国道441号",
-        "url": "https://www.michi-no-eki.jp/stations/view/9747"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          133.235246,
-          33.322394
-        ]
-      },
-      "properties": {
-        "id": "39024",
-        "name": "道の駅なかとさ",
-        "prefecture": "高知県",
-        "city": "高岡郡中土佐町",
-        "address": "高知県高岡郡中土佐町久礼8645-2",
-        "road": "高知県道25号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14164"
+        "city": "黒潮町",
+        "address": "高知県幡多郡黒潮町佐賀1350",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19694"
       }
     },
     {
@@ -18779,17 +17183,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           130.7846775,
-          33.35376454
+          33.3537645
         ]
       },
       "properties": {
-        "id": "40001",
+        "id": "19695",
         "name": "道の駅原鶴",
         "prefecture": "福岡県",
         "city": "朝倉市",
         "address": "福岡県朝倉市杷木久喜宮1663-1",
-        "road": "国道386号",
-        "url": "https://www.michi-no-eki.jp/stations/view/915"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19695"
       }
     },
     {
@@ -18802,13 +17206,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "40002",
+        "id": "19696",
         "name": "道の駅豊前おこしかけ",
         "prefecture": "福岡県",
         "city": "豊前市",
         "address": "福岡県豊前市大字四郎丸1041-1",
-        "road": "国道10号",
-        "url": "https://www.michi-no-eki.jp/stations/view/916"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19696"
       }
     },
     {
@@ -18817,17 +17221,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           130.8258086,
-          33.46511246
+          33.4651125
         ]
       },
       "properties": {
-        "id": "40003",
+        "id": "19697",
         "name": "道の駅小石原",
         "prefecture": "福岡県",
-        "city": "朝倉郡東峰村",
-        "address": "福岡県朝倉郡東峰村大字小石原941番地3",
-        "road": "国道211号",
-        "url": "https://www.michi-no-eki.jp/stations/view/917"
+        "city": "東峰村",
+        "address": "福岡県朝倉郡東峰村大字小石原941-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19697"
       }
     },
     {
@@ -18836,17 +17240,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           131.1543082,
-          33.58871601
+          33.5887160
         ]
       },
       "properties": {
-        "id": "40004",
+        "id": "19698",
         "name": "道の駅しんよしとみ",
         "prefecture": "福岡県",
-        "city": "築上郡上毛町",
+        "city": "上毛町",
         "address": "福岡県築上郡上毛町大字大ノ瀬304-1",
-        "road": "国道10号",
-        "url": "https://www.michi-no-eki.jp/stations/view/918"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19698"
       }
     },
     {
@@ -18855,17 +17259,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           130.8181663,
-          33.33401533
+          33.3340153
         ]
       },
       "properties": {
-        "id": "40005",
+        "id": "19699",
         "name": "道の駅うきは",
         "prefecture": "福岡県",
         "city": "うきは市",
-        "address": "福岡県うきは市浮羽町山北729番地2",
-        "road": "国道210号",
-        "url": "https://www.michi-no-eki.jp/stations/view/919"
+        "address": "福岡県うきは市浮羽町山北729-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19699"
       }
     },
     {
@@ -18878,13 +17282,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "40006",
+        "id": "19700",
         "name": "道の駅おおむた",
         "prefecture": "福岡県",
         "city": "大牟田市",
         "address": "福岡県大牟田市四箇新町2-1",
-        "road": "熊本県道・福岡県道10号南関大牟田北線",
-        "url": "https://www.michi-no-eki.jp/stations/view/920"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19700"
       }
     },
     {
@@ -18893,17 +17297,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           130.6104152,
-          33.18744243
+          33.1874424
         ]
       },
       "properties": {
-        "id": "40007",
+        "id": "19701",
         "name": "道の駅たちばな",
         "prefecture": "福岡県",
         "city": "八女市",
-        "address": "福岡県八女市立花町下辺春315番地1",
-        "road": "国道3号",
-        "url": "https://www.michi-no-eki.jp/stations/view/921"
+        "address": "福岡県八女市立花町下辺春315-１",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19701"
       }
     },
     {
@@ -18916,13 +17320,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "40008",
+        "id": "19702",
         "name": "道の駅うすい",
         "prefecture": "福岡県",
         "city": "嘉麻市",
-        "address": "福岡県嘉麻市上臼井328番地1",
-        "road": "福岡県道90号穂波嘉穂線",
-        "url": "https://www.michi-no-eki.jp/stations/view/922"
+        "address": "福岡県嘉麻市上臼井328-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19702"
       }
     },
     {
@@ -18931,17 +17335,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           130.8599574,
-          33.54902494
+          33.5490249
         ]
       },
       "properties": {
-        "id": "40009",
+        "id": "19703",
         "name": "道の駅歓遊舎ひこさん",
         "prefecture": "福岡県",
-        "city": "田川郡添田町",
-        "address": "福岡県田川郡添田町大字野田1113番1",
-        "road": "福岡県道52号",
-        "url": "https://www.michi-no-eki.jp/stations/view/923"
+        "city": "添田町",
+        "address": "福岡県田川郡添田町大字野田1113-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19703"
       }
     },
     {
@@ -18949,18 +17353,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          130.503451,
+          130.5034510,
           33.8484732
         ]
       },
       "properties": {
-        "id": "40010",
+        "id": "19704",
         "name": "道の駅むなかた",
         "prefecture": "福岡県",
         "city": "宗像市",
         "address": "福岡県宗像市江口1172",
-        "road": "国道495号",
-        "url": "https://www.michi-no-eki.jp/stations/view/924"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19704"
       }
     },
     {
@@ -18973,13 +17377,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "40011",
+        "id": "19705",
         "name": "道の駅くるめ",
         "prefecture": "福岡県",
         "city": "久留米市",
-        "address": "福岡県久留米市善導寺町木塚221番地33",
-        "road": "国道210号",
-        "url": "https://www.michi-no-eki.jp/stations/view/925"
+        "address": "福岡県久留米市善導寺町木塚221-33",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19705"
       }
     },
     {
@@ -18992,13 +17396,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "40012",
+        "id": "19706",
         "name": "道の駅香春",
         "prefecture": "福岡県",
-        "city": "田川郡香春町",
-        "address": "福岡県田川郡香春町大字鏡山1870番地1",
-        "road": "国道201号",
-        "url": "https://www.michi-no-eki.jp/stations/view/926"
+        "city": "香春町",
+        "address": "福岡県田川郡香春町大字鏡山1870-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19706"
       }
     },
     {
@@ -19006,18 +17410,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          130.437973,
-          33.21790626
+          130.4379730,
+          33.2179063
         ]
       },
       "properties": {
-        "id": "40013",
+        "id": "19707",
         "name": "道の駅おおき",
         "prefecture": "福岡県",
-        "city": "三潴郡大木町",
-        "address": "福岡県三潴郡大木町大字横溝1331番地1",
-        "road": "国道442号",
-        "url": "https://www.michi-no-eki.jp/stations/view/927"
+        "city": "大木町",
+        "address": "福岡県三潴郡大木町大字横溝1331-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19707"
       }
     },
     {
@@ -19026,17 +17430,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           130.8451701,
-          33.626154
+          33.6261540
         ]
       },
       "properties": {
-        "id": "40014",
+        "id": "19708",
         "name": "道の駅おおとう桜街道",
         "prefecture": "福岡県",
-        "city": "田川郡大任町",
+        "city": "大任町",
         "address": "福岡県田川郡大任町大字今任原1339",
-        "road": "福岡県道52号",
-        "url": "https://www.michi-no-eki.jp/stations/view/928"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19708"
       }
     },
     {
@@ -19044,18 +17448,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          130.484540286,
-          33.148217903
+          130.4845403,
+          33.1482179
         ]
       },
       "properties": {
-        "id": "40015",
+        "id": "19709",
         "name": "道の駅みやま",
         "prefecture": "福岡県",
         "city": "みやま市",
         "address": "福岡県みやま市瀬高町大江2328",
-        "road": "国道443号",
-        "url": "https://www.michi-no-eki.jp/stations/view/929"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19709"
       }
     },
     {
@@ -19064,17 +17468,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           130.7646945,
-          33.64191221
+          33.6419122
         ]
       },
       "properties": {
-        "id": "40016",
+        "id": "19710",
         "name": "道の駅いとだ",
         "prefecture": "福岡県",
-        "city": "田川郡糸田町",
+        "city": "糸田町",
         "address": "福岡県田川郡糸田町162-4",
-        "road": "国道201号",
-        "url": "https://www.michi-no-eki.jp/stations/view/930"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19710"
       }
     },
     {
@@ -19083,17 +17487,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           130.1457472,
-          33.07501638
+          33.0750164
         ]
       },
       "properties": {
-        "id": "41001",
+        "id": "19711",
         "name": "道の駅鹿島",
         "prefecture": "佐賀県",
         "city": "鹿島市",
         "address": "佐賀県鹿島市大字音成甲4427-6",
-        "road": "国道207号",
-        "url": "https://www.michi-no-eki.jp/stations/view/931"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19711"
       }
     },
     {
@@ -19101,18 +17505,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          130.071911,
+          130.0719110,
           33.3111192
         ]
       },
       "properties": {
-        "id": "41002",
+        "id": "19712",
         "name": "道の駅厳木",
         "prefecture": "佐賀県",
         "city": "唐津市",
         "address": "佐賀県唐津市厳木町牧瀬692-1",
-        "road": "国道203号",
-        "url": "https://www.michi-no-eki.jp/stations/view/932"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19712"
       }
     },
     {
@@ -19121,17 +17525,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           129.9289587,
-          33.31361997
+          33.3136200
         ]
       },
       "properties": {
-        "id": "41003",
+        "id": "19713",
         "name": "道の駅伊万里",
         "prefecture": "佐賀県",
         "city": "伊万里市",
-        "address": "佐賀県伊万里市南波多町井手野2754番地9",
-        "road": "国道202号",
-        "url": "https://www.michi-no-eki.jp/stations/view/933"
+        "address": "佐賀県伊万里市南波多町井手野2754-9",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19713"
       }
     },
     {
@@ -19144,13 +17548,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "41004",
+        "id": "19714",
         "name": "道の駅桃山天下市",
         "prefecture": "佐賀県",
         "city": "唐津市",
         "address": "佐賀県唐津市鎮西町名護屋1859",
-        "road": "国道204号",
-        "url": "https://www.michi-no-eki.jp/stations/view/934"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19714"
       }
     },
     {
@@ -19163,13 +17567,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "41005",
+        "id": "19715",
         "name": "道の駅山内",
         "prefecture": "佐賀県",
         "city": "武雄市",
         "address": "佐賀県武雄市山内町大字三間坂甲14697-2",
-        "road": "国道35号",
-        "url": "https://www.michi-no-eki.jp/stations/view/935"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19715"
       }
     },
     {
@@ -19182,13 +17586,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "41006",
+        "id": "19716",
         "name": "道の駅大和",
         "prefecture": "佐賀県",
         "city": "佐賀市",
-        "address": "佐賀県佐賀市大和町梅野805番地",
-        "road": "国道263号",
-        "url": "https://www.michi-no-eki.jp/stations/view/936"
+        "address": "佐賀県佐賀市大和町大字梅野805",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19716"
       }
     },
     {
@@ -19201,13 +17605,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "41007",
+        "id": "19717",
         "name": "道の駅吉野ヶ里",
         "prefecture": "佐賀県",
-        "city": "神埼郡吉野ヶ里町",
+        "city": "吉野ヶ里町",
         "address": "佐賀県神埼郡吉野ヶ里町松隈1710-11",
-        "road": "国道385号",
-        "url": "https://www.michi-no-eki.jp/stations/view/937"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19717"
       }
     },
     {
@@ -19220,32 +17624,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "41008",
+        "id": "19718",
         "name": "道の駅太良",
         "prefecture": "佐賀県",
-        "city": "藤津郡太良町",
+        "city": "太良町",
         "address": "佐賀県藤津郡太良町大字伊福甲3488-2",
-        "road": "国道207号",
-        "url": "https://www.michi-no-eki.jp/stations/view/938"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          130.196458,
-          33.176871
-        ]
-      },
-      "properties": {
-        "id": "41009",
-        "name": "道の駅しろいし",
-        "prefecture": "佐賀県",
-        "city": "杵島郡白石町",
-        "address": "佐賀県杵島郡白石町大字福富下分306-4",
-        "road": "佐賀県道36号武雄福富線",
-        "url": "https://www.michi-no-eki.jp/stations/view/14154"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19718"
       }
     },
     {
@@ -19258,13 +17643,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "42001",
+        "id": "19719",
         "name": "道の駅生月大橋",
         "prefecture": "長崎県",
         "city": "平戸市",
         "address": "長崎県平戸市生月町南免4375-1",
-        "road": "長崎県道42号",
-        "url": "https://www.michi-no-eki.jp/stations/view/939"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19719"
       }
     },
     {
@@ -19273,17 +17658,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           130.3675809,
-          32.73970208
+          32.7397021
         ]
       },
       "properties": {
-        "id": "42002",
+        "id": "19720",
         "name": "道の駅ひまわり",
         "prefecture": "長崎県",
         "city": "南島原市",
         "address": "長崎県南島原市深江町丁6077",
-        "road": "国道251号",
-        "url": "https://www.michi-no-eki.jp/stations/view/940"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19720"
       }
     },
     {
@@ -19292,17 +17677,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           129.6031137,
-          33.31770825
+          33.3177083
         ]
       },
       "properties": {
-        "id": "42003",
+        "id": "19721",
         "name": "道の駅昆虫の里たびら",
         "prefecture": "長崎県",
         "city": "平戸市",
-        "address": "長崎県平戸市田平町深月免521番地",
-        "road": "国道204号",
-        "url": "https://www.michi-no-eki.jp/stations/view/941"
+        "address": "長崎県平戸市田平町深月免521番地３",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19721"
       }
     },
     {
@@ -19315,13 +17700,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "42004",
+        "id": "19722",
         "name": "道の駅彼杵の荘",
         "prefecture": "長崎県",
-        "city": "東彼杵郡東彼杵町",
+        "city": "東彼杵町",
         "address": "長崎県東彼杵郡東彼杵町彼杵宿郷747-2",
-        "road": "国道205号",
-        "url": "https://www.michi-no-eki.jp/stations/view/942"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19722"
       }
     },
     {
@@ -19329,18 +17714,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          129.695700982,
-          33.0429925323
+          129.6957010,
+          33.0429925
         ]
       },
       "properties": {
-        "id": "42005",
+        "id": "19723",
         "name": "道の駅さいかい",
         "prefecture": "長崎県",
         "city": "西海市",
         "address": "長崎県西海市西海町木場郷488-1",
-        "road": "長崎県道43号",
-        "url": "https://www.michi-no-eki.jp/stations/view/943"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19723"
       }
     },
     {
@@ -19353,13 +17738,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "42006",
+        "id": "19724",
         "name": "道の駅夕陽が丘そとめ",
         "prefecture": "長崎県",
         "city": "長崎市",
-        "address": "長崎県長崎市東出津町149番地2",
-        "road": "国道202号",
-        "url": "https://www.michi-no-eki.jp/stations/view/944"
+        "address": "長崎県長崎市東出津町149-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19724"
       }
     },
     {
@@ -19372,13 +17757,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "42007",
+        "id": "19725",
         "name": "道の駅松浦海のふるさと館",
         "prefecture": "長崎県",
         "city": "松浦市",
         "address": "長崎県松浦市志佐町庄野免226-30",
-        "road": "国道204号",
-        "url": "https://www.michi-no-eki.jp/stations/view/945"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19725"
       }
     },
     {
@@ -19391,13 +17776,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "42008",
+        "id": "19726",
         "name": "道の駅遣唐使ふるさと館",
         "prefecture": "長崎県",
         "city": "五島市",
-        "address": "長崎県五島市三井楽町浜ノ畔3150-1",
-        "road": "国道384号",
-        "url": "https://www.michi-no-eki.jp/stations/view/946"
+        "address": "長崎県五島市三井楽町濱の畔3150-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19726"
       }
     },
     {
@@ -19410,51 +17795,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "42009",
+        "id": "19727",
         "name": "道の駅鷹ら島",
         "prefecture": "長崎県",
         "city": "松浦市",
-        "address": "長崎県松浦市鷹島町神崎免1636番地",
-        "road": "長崎県道・佐賀県道109号鷹島肥前線",
-        "url": "https://www.michi-no-eki.jp/stations/view/947"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          129.671634,
-          33.2015015
-        ]
-      },
-      "properties": {
-        "id": "42010",
-        "name": "道の駅させぼっくす99",
-        "prefecture": "長崎県",
-        "city": "佐世保市",
-        "address": "長崎県佐世保市愛宕町11番地",
-        "road": "西九州自動車道|国道497号",
-        "url": "https://www.michi-no-eki.jp/stations/view/9748"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          130.0074643,
-          32.8853776
-        ]
-      },
-      "properties": {
-        "id": "42011",
-        "name": "道の駅長崎街道鈴田峠",
-        "prefecture": "長崎県",
-        "city": "大村市",
-        "address": "長崎県大村市中里町452番地22",
-        "road": "国道34号",
-        "url": "https://www.michi-no-eki.jp/stations/view/9749"
+        "address": "長崎県松浦市鷹島町神崎免1636",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19727"
       }
     },
     {
@@ -19463,17 +17810,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           131.0646886,
-          33.123101
+          33.1231010
         ]
       },
       "properties": {
-        "id": "43001",
-        "name": "道の駅小国",
+        "id": "19728",
+        "name": "道の駅小国 ",
         "prefecture": "熊本県",
-        "city": "阿蘇郡小国町",
+        "city": "小国町",
         "address": "熊本県阿蘇郡小国町大字宮原1754-17",
-        "road": "国道387号|国道442号",
-        "url": "https://www.michi-no-eki.jp/stations/view/948"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19728"
       }
     },
     {
@@ -19486,13 +17833,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "43002",
+        "id": "19729",
         "name": "道の駅波野",
         "prefecture": "熊本県",
         "city": "阿蘇市",
-        "address": "熊本県阿蘇市波野小地野1602",
-        "road": "国道57号",
-        "url": "https://www.michi-no-eki.jp/stations/view/949"
+        "address": "熊本県阿蘇市波野大字小地野1602",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19729"
       }
     },
     {
@@ -19505,13 +17852,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "43003",
+        "id": "19730",
         "name": "道の駅旭志",
         "prefecture": "熊本県",
         "city": "菊池市",
-        "address": "熊本県菊池市旭志川辺1886番地",
-        "road": "国道325号",
-        "url": "https://www.michi-no-eki.jp/stations/view/950"
+        "address": "熊本県菊池市旭志川辺1886",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19730"
       }
     },
     {
@@ -19524,13 +17871,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "43004",
+        "id": "19731",
         "name": "道の駅大津",
         "prefecture": "熊本県",
-        "city": "菊池郡大津町",
+        "city": "大津町",
         "address": "熊本県菊池郡大津町大字引水759",
-        "road": "国道57号",
-        "url": "https://www.michi-no-eki.jp/stations/view/951"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19731"
       }
     },
     {
@@ -19543,13 +17890,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "43005",
+        "id": "19732",
         "name": "道の駅坂本",
         "prefecture": "熊本県",
         "city": "八代市",
         "address": "熊本県八代市坂本町荒瀬1239-1",
-        "road": "国道219号",
-        "url": "https://www.michi-no-eki.jp/stations/view/952"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19732"
       }
     },
     {
@@ -19562,13 +17909,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "43006",
+        "id": "19733",
         "name": "道の駅不知火",
         "prefecture": "熊本県",
         "city": "宇城市",
         "address": "熊本県宇城市不知火町永尾1910-1",
-        "road": "国道266号",
-        "url": "https://www.michi-no-eki.jp/stations/view/953"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19733"
       }
     },
     {
@@ -19581,13 +17928,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "43007",
+        "id": "19734",
         "name": "道の駅有明",
         "prefecture": "熊本県",
         "city": "天草市",
-        "address": "熊本県天草市有明町上津浦1955",
-        "road": "国道324号",
-        "url": "https://www.michi-no-eki.jp/stations/view/954"
+        "address": "熊本県天草市有明町大字上津浦1955",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19734"
       }
     },
     {
@@ -19600,13 +17947,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "43008",
+        "id": "19735",
         "name": "道の駅鹿北",
         "prefecture": "熊本県",
         "city": "山鹿市",
         "address": "熊本県山鹿市鹿北町岩野4186-130",
-        "road": "国道3号",
-        "url": "https://www.michi-no-eki.jp/stations/view/955"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19735"
       }
     },
     {
@@ -19619,13 +17966,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "43009",
+        "id": "19736",
         "name": "道の駅七城メロンドーム",
         "prefecture": "熊本県",
         "city": "菊池市",
         "address": "熊本県菊池市七城町岡田306",
-        "road": "国道325号",
-        "url": "https://www.michi-no-eki.jp/stations/view/956"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19736"
       }
     },
     {
@@ -19634,17 +17981,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           130.7713888,
-          32.92503512
+          32.9250351
         ]
       },
       "properties": {
-        "id": "43010",
+        "id": "19737",
         "name": "道の駅泗水",
         "prefecture": "熊本県",
         "city": "菊池市",
-        "address": "熊本県菊池市泗水町豊水3393",
-        "road": "国道387号",
-        "url": "https://www.michi-no-eki.jp/stations/view/957"
+        "address": "熊本県菊池市泗水町豊水3167",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19737"
       }
     },
     {
@@ -19653,17 +18000,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           130.6023182,
-          32.97335053
+          32.9733505
         ]
       },
       "properties": {
-        "id": "43011",
+        "id": "19738",
         "name": "道の駅きくすい",
         "prefecture": "熊本県",
-        "city": "玉名郡和水町",
+        "city": "和水町",
         "address": "熊本県玉名郡和水町江田455",
-        "road": "熊本県道16号",
-        "url": "https://www.michi-no-eki.jp/stations/view/958"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19738"
       }
     },
     {
@@ -19671,18 +18018,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          131.09134999,
-          32.6906432696
+          131.0913500,
+          32.6906433
         ]
       },
       "properties": {
-        "id": "43012",
+        "id": "19739",
         "name": "道の駅清和文楽邑",
         "prefecture": "熊本県",
-        "city": "上益城郡山都町",
-        "address": "熊本県上益城郡山都町大平152番地",
-        "road": "国道218号",
-        "url": "https://www.michi-no-eki.jp/stations/view/959"
+        "city": "山都町",
+        "address": "熊本県上益城郡山都町大平152",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19739"
       }
     },
     {
@@ -19690,18 +18037,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          130.9916631,
-          32.681489
+          130.9914279,
+          32.6887983
         ]
       },
       "properties": {
-        "id": "43013",
+        "id": "19740",
         "name": "道の駅通潤橋",
         "prefecture": "熊本県",
-        "city": "上益城郡山都町",
-        "address": "熊本県上益城郡山都町城平660",
-        "road": "国道218号",
-        "url": "https://www.michi-no-eki.jp/stations/view/960"
+        "city": "山都町",
+        "address": "熊本県上益城郡山都町下市184-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19740"
       }
     },
     {
@@ -19714,13 +18061,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "43014",
+        "id": "19741",
         "name": "道の駅竜北",
         "prefecture": "熊本県",
-        "city": "八代郡氷川町",
+        "city": "氷川町",
         "address": "熊本県八代郡氷川町大野875-3",
-        "road": "国道3号",
-        "url": "https://www.michi-no-eki.jp/stations/view/961"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19741"
       }
     },
     {
@@ -19729,17 +18076,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           130.8451635,
-          32.20586981
+          32.2058698
         ]
       },
       "properties": {
-        "id": "43015",
+        "id": "19742",
         "name": "道の駅錦",
         "prefecture": "熊本県",
-        "city": "球磨郡錦町",
-        "address": "熊本県球磨郡錦町大字一武1544番地1",
-        "road": "国道219号",
-        "url": "https://www.michi-no-eki.jp/stations/view/962"
+        "city": "錦町",
+        "address": "熊本県球磨郡錦町大字一武字浦田1544-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19742"
       }
     },
     {
@@ -19748,17 +18095,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           130.5124497,
-          32.36456725
+          32.3645673
         ]
       },
       "properties": {
-        "id": "43016",
+        "id": "19743",
         "name": "道の駅たのうら",
         "prefecture": "熊本県",
-        "city": "葦北郡芦北町",
-        "address": "熊本県葦北郡芦北町大字田浦657番地",
-        "road": "国道3号",
-        "url": "https://www.michi-no-eki.jp/stations/view/963"
+        "city": "芦北町",
+        "address": "熊本県葦北郡芦北町大字田浦657",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19743"
       }
     },
     {
@@ -19766,18 +18113,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          130.826733,
-          32.39931672
+          130.8267330,
+          32.3993167
         ]
       },
       "properties": {
-        "id": "43017",
-        "name": "道の駅子守唄の里五木",
-        "prefecture": "熊本県",
-        "city": "球磨郡五木村",
-        "address": "熊本県球磨郡五木村甲字下手2672番地の54",
-        "road": "国道445号",
-        "url": "https://www.michi-no-eki.jp/stations/view/964"
+        "id": "19744",
+        "name": "道の駅子守唄の里 五木",
+        "prefecture": "子守唄の里　五木",
+        "city": "",
+        "address": "熊本県球磨郡五木村甲2672-54",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19744"
       }
     },
     {
@@ -19786,17 +18133,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           130.5226985,
-          32.66224214
+          32.6622421
         ]
       },
       "properties": {
-        "id": "43018",
+        "id": "19745",
         "name": "道の駅宇土マリーナ",
         "prefecture": "熊本県",
         "city": "宇土市",
-        "address": "熊本県宇土市下網田町3084番地1",
-        "road": "国道57号",
-        "url": "https://www.michi-no-eki.jp/stations/view/965"
+        "address": "熊本県宇土市下網田町3084-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19745"
       }
     },
     {
@@ -19809,13 +18156,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "43019",
+        "id": "19746",
         "name": "道の駅阿蘇",
         "prefecture": "熊本県",
         "city": "阿蘇市",
         "address": "熊本県阿蘇市黒川1440-1",
-        "road": "国道57号",
-        "url": "https://www.michi-no-eki.jp/stations/view/966"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19746"
       }
     },
     {
@@ -19824,17 +18171,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           130.3817017,
-          32.19916882
+          32.1991688
         ]
       },
       "properties": {
-        "id": "43020",
+        "id": "19747",
         "name": "道の駅みなまた",
         "prefecture": "熊本県",
         "city": "水俣市",
         "address": "熊本県水俣市月浦54-162",
-        "road": "国道3号",
-        "url": "https://www.michi-no-eki.jp/stations/view/967"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19747"
       }
     },
     {
@@ -19847,13 +18194,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "43021",
+        "id": "19748",
         "name": "道の駅うき",
         "prefecture": "熊本県",
         "city": "宇城市",
         "address": "熊本県宇城市松橋町久具757-3",
-        "road": "熊本県道181号松橋停車場線",
-        "url": "https://www.michi-no-eki.jp/stations/view/968"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19748"
       }
     },
     {
@@ -19861,18 +18208,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          131.1634577,
-          32.7266122
+          131.1672290,
+          32.7274600
         ]
       },
       "properties": {
-        "id": "43022",
-        "name": "そよ風パーク",
+        "id": "19749",
+        "name": "道の駅そよ風パーク",
         "prefecture": "熊本県",
-        "city": "上益城郡山都町",
+        "city": "山都町",
         "address": "熊本県上益城郡山都町今297",
-        "road": "国道265号",
-        "url": "https://www.michi-no-eki.jp/stations/view/969"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19749"
       }
     },
     {
@@ -19885,13 +18232,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "43023",
+        "id": "19750",
         "name": "道の駅大野温泉",
         "prefecture": "熊本県",
-        "city": "葦北郡芦北町",
+        "city": "芦北町",
         "address": "熊本県葦北郡芦北町大字天月1000",
-        "road": "熊本県道27号",
-        "url": "https://www.michi-no-eki.jp/stations/view/970"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19750"
       }
     },
     {
@@ -19900,131 +18247,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           130.8227039,
-          32.62359207
+          32.6235921
         ]
       },
       "properties": {
-        "id": "43024",
-        "name": "石段の郷_佐俣の湯",
+        "id": "19751",
+        "name": "道の駅美里『佐俣の湯』",
         "prefecture": "熊本県",
-        "city": "下益城郡美里町",
+        "city": "美里町",
         "address": "熊本県下益城郡美里町佐俣705",
-        "road": "国道218号",
-        "url": "https://www.michi-no-eki.jp/stations/view/971"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          130.4201417,
-          32.57713806
-        ]
-      },
-      "properties": {
-        "id": "43025",
-        "name": "道の駅上天草さんぱーる",
-        "prefecture": "熊本県",
-        "city": "上天草市",
-        "address": "熊本県上天草市大矢野町中11582番地",
-        "road": "国道266号",
-        "url": "https://www.michi-no-eki.jp/stations/view/8013"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          130.026968,
-          32.193836
-        ]
-      },
-      "properties": {
-        "id": "43026",
-        "name": "道の駅うしぶか海彩館",
-        "prefecture": "熊本県",
-        "city": "天草市",
-        "address": "熊本県天草市牛深町2286番地116",
-        "road": "国道266号",
-        "url": "https://www.michi-no-eki.jp/stations/view/8015"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          131.0415257,
-          32.81851
-        ]
-      },
-      "properties": {
-        "id": "43027",
-        "name": "あそ望の郷くぎの",
-        "prefecture": "熊本県",
-        "city": "阿蘇郡南阿蘇村",
-        "address": "熊本県阿蘇郡南阿蘇村大字久石2870",
-        "road": "熊本県道28号熊本高森線",
-        "url": "https://www.michi-no-eki.jp/stations/view/8017"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          130.7559,
-          32.9871618
-        ]
-      },
-      "properties": {
-        "id": "43028",
-        "name": "道の駅水辺プラザかもと",
-        "prefecture": "熊本県",
-        "city": "山鹿市",
-        "address": "熊本県山鹿市鹿本町梶屋1257番地",
-        "road": "国道325号",
-        "url": "https://www.michi-no-eki.jp/stations/view/9750"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          130.692874,
-          32.907939
-        ]
-      },
-      "properties": {
-        "id": "43029",
-        "name": "道の駅すいかの里_植木",
-        "prefecture": "熊本県",
-        "city": "熊本市",
-        "address": "熊本県熊本市北区植木町岩野160番地1",
-        "road": "熊本県道329号原植木線",
-        "url": "https://www.michi-no-eki.jp/stations/view/11985"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          130.508036,
-          32.302882
-        ]
-      },
-      "properties": {
-        "id": "43030",
-        "name": "道の駅芦北でこぽん",
-        "prefecture": "熊本県",
-        "city": "葦北郡芦北町",
-        "address": "熊本県葦北郡芦北町大字佐敷443番地",
-        "road": "熊本県道27号",
-        "url": "https://www.michi-no-eki.jp/stations/view/11986"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19751"
       }
     },
     {
@@ -20037,13 +18270,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "44001",
+        "id": "19752",
         "name": "道の駅原尻の滝",
         "prefecture": "大分県",
         "city": "豊後大野市",
         "address": "大分県豊後大野市緒方町原尻936-1",
-        "road": "大分県道7号緒方高千穂線",
-        "url": "https://www.michi-no-eki.jp/stations/view/972"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19752"
       }
     },
     {
@@ -20056,13 +18289,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "44002",
+        "id": "19753",
         "name": "道の駅宇目",
         "prefecture": "大分県",
         "city": "佐伯市",
-        "address": "大分県佐伯市宇目大字南田原2513番地5",
-        "road": "国道326号",
-        "url": "https://www.michi-no-eki.jp/stations/view/973"
+        "address": "大分県佐伯市宇目大字南田原2513-5",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19753"
       }
     },
     {
@@ -20071,17 +18304,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           131.3404683,
-          32.98558484
+          32.9855848
         ]
       },
       "properties": {
-        "id": "44003",
+        "id": "19754",
         "name": "道の駅竹田",
         "prefecture": "大分県",
         "city": "竹田市",
         "address": "大分県竹田市大字米納663-1",
-        "road": "国道442号",
-        "url": "https://www.michi-no-eki.jp/stations/view/974"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19754"
       }
     },
     {
@@ -20094,13 +18327,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "44004",
+        "id": "19755",
         "name": "道の駅佐賀関",
         "prefecture": "大分県",
         "city": "大分市",
         "address": "大分県大分市大字大平989-6",
-        "road": "国道197号",
-        "url": "https://www.michi-no-eki.jp/stations/view/975"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19755"
       }
     },
     {
@@ -20113,13 +18346,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "44005",
+        "id": "19756",
         "name": "道の駅やまくに",
         "prefecture": "大分県",
         "city": "中津市",
-        "address": "大分県中津市山国町中摩358番地4",
-        "road": "国道212号",
-        "url": "https://www.michi-no-eki.jp/stations/view/976"
+        "address": "大分県中津市山国町大字中摩3485-4",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19756"
       }
     },
     {
@@ -20128,17 +18361,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           131.1745356,
-          33.48984147
+          33.4898415
         ]
       },
       "properties": {
-        "id": "44006",
+        "id": "19757",
         "name": "道の駅耶馬トピア",
         "prefecture": "大分県",
         "city": "中津市",
         "address": "大分県中津市本耶馬渓町曽木2193-1",
-        "road": "国道500号",
-        "url": "https://www.michi-no-eki.jp/stations/view/977"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19757"
       }
     },
     {
@@ -20151,13 +18384,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "44007",
+        "id": "19758",
         "name": "道の駅あさじ",
         "prefecture": "大分県",
         "city": "豊後大野市",
         "address": "大分県豊後大野市朝地町板井迫1018-1",
-        "road": "大分県道57号竹田犬飼線",
-        "url": "https://www.michi-no-eki.jp/stations/view/978"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19758"
       }
     },
     {
@@ -20170,13 +18403,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "44008",
+        "id": "19759",
         "name": "道の駅いんない",
         "prefecture": "大分県",
         "city": "宇佐市",
-        "address": "大分県宇佐市院内町副1381番地2",
-        "road": "国道387号|国道500号",
-        "url": "https://www.michi-no-eki.jp/stations/view/979"
+        "address": "大分県宇佐市院内町副1381-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19759"
       }
     },
     {
@@ -20189,13 +18422,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "44009",
+        "id": "19760",
         "name": "道の駅せせらぎ郷かみつえ",
         "prefecture": "大分県",
         "city": "日田市",
         "address": "大分県日田市上津江町川原3848-1",
-        "road": "国道387号",
-        "url": "https://www.michi-no-eki.jp/stations/view/980"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19760"
       }
     },
     {
@@ -20204,17 +18437,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           131.8386843,
-          32.96456913
+          32.9645691
         ]
       },
       "properties": {
-        "id": "44010",
+        "id": "19761",
         "name": "道の駅やよい",
         "prefecture": "大分県",
         "city": "佐伯市",
         "address": "大分県佐伯市弥生大字上小倉898-1",
-        "road": "国道10号",
-        "url": "https://www.michi-no-eki.jp/stations/view/981"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19761"
       }
     },
     {
@@ -20223,17 +18456,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           130.8826215,
-          33.12915687
+          33.1291569
         ]
       },
       "properties": {
-        "id": "44011",
+        "id": "19762",
         "name": "道の駅鯛生金山",
         "prefecture": "大分県",
         "city": "日田市",
-        "address": "大分県日田市中津江村合瀬3750番地",
-        "road": "国道442号",
-        "url": "https://www.michi-no-eki.jp/stations/view/982"
+        "address": "大分県日田市中津江村合瀬3750",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19762"
       }
     },
     {
@@ -20246,13 +18479,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "44012",
+        "id": "19763",
         "name": "道の駅きよかわ",
         "prefecture": "大分県",
         "city": "豊後大野市",
-        "address": "大分県豊後大野市清川町砂田1574-1",
-        "road": "国道502号",
-        "url": "https://www.michi-no-eki.jp/stations/view/983"
+        "address": "大分県豊後大野市清川町砂田1574",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19763"
       }
     },
     {
@@ -20260,18 +18493,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          131.327088,
+          131.3270880,
           33.2606456
         ]
       },
       "properties": {
-        "id": "44013",
+        "id": "19764",
         "name": "道の駅ゆふいん",
         "prefecture": "大分県",
         "city": "由布市",
         "address": "大分県由布市湯布院町川北899-76",
-        "road": "国道210号",
-        "url": "https://www.michi-no-eki.jp/stations/view/984"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19764"
       }
     },
     {
@@ -20279,18 +18512,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          131.621548,
+          131.6215480,
           33.0286904
         ]
       },
       "properties": {
-        "id": "44014",
+        "id": "19765",
         "name": "道の駅みえ",
         "prefecture": "大分県",
         "city": "豊後大野市",
-        "address": "大分県豊後大野市三重町宮野2791番地1",
-        "road": "国道326号",
-        "url": "https://www.michi-no-eki.jp/stations/view/985"
+        "address": "大分県豊後大野市三重町宮野2791-１",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19765"
       }
     },
     {
@@ -20303,13 +18536,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "44015",
+        "id": "19766",
         "name": "道の駅くにさき",
         "prefecture": "大分県",
         "city": "国東市",
         "address": "大分県国東市国東町小原2662-1",
-        "road": "国道213号",
-        "url": "https://www.michi-no-eki.jp/stations/view/986"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19766"
       }
     },
     {
@@ -20317,18 +18550,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          130.972093,
+          130.9720930,
           33.2479097
         ]
       },
       "properties": {
-        "id": "44016",
+        "id": "19767",
         "name": "道の駅水辺の郷おおやま",
         "prefecture": "大分県",
         "city": "日田市",
         "address": "大分県日田市大山町西大山4106",
-        "road": "国道212号",
-        "url": "https://www.michi-no-eki.jp/stations/view/987"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19767"
       }
     },
     {
@@ -20341,13 +18574,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "44017",
+        "id": "19768",
         "name": "道の駅かまえ",
         "prefecture": "大分県",
         "city": "佐伯市",
         "address": "大分県佐伯市蒲江大字蒲江浦5104-1",
-        "road": "国道388号",
-        "url": "https://www.michi-no-eki.jp/stations/view/988"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19768"
       }
     },
     {
@@ -20360,13 +18593,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "44018",
+        "id": "19769",
         "name": "道の駅ながゆ温泉",
         "prefecture": "大分県",
         "city": "竹田市",
         "address": "大分県竹田市直入町大字長湯8043-1",
-        "road": "大分県道30号",
-        "url": "https://www.michi-no-eki.jp/stations/view/989"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19769"
       }
     },
     {
@@ -20374,18 +18607,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          131.502906425,
-          33.0362528313
+          131.5029247,
+          33.0361891
         ]
       },
       "properties": {
-        "id": "44019",
-        "name": "道の駅おおの_(大分県)",
+        "id": "19770",
+        "name": "道の駅おおの",
         "prefecture": "大分県",
         "city": "豊後大野市",
-        "address": "大分県豊後大野市大野町田中43番地10",
-        "road": "大分県道26号",
-        "url": "https://www.michi-no-eki.jp/stations/view/990"
+        "address": "大分県豊後大野市大野町田中43-10",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19770"
       }
     },
     {
@@ -20394,17 +18627,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           131.6057447,
-          33.68050195
+          33.6805020
         ]
       },
       "properties": {
-        "id": "44020",
+        "id": "19771",
         "name": "道の駅くにみ",
         "prefecture": "大分県",
         "city": "国東市",
-        "address": "大分県国東市国見町伊美4256",
-        "road": "国道213号",
-        "url": "https://www.michi-no-eki.jp/stations/view/991"
+        "address": "大分県国東市国見町伊美4252-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19771"
       }
     },
     {
@@ -20417,13 +18650,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "44021",
-        "name": "道の駅童話の里_くす",
-        "prefecture": "大分県",
-        "city": "玖珠郡玖珠町",
+        "id": "19772",
+        "name": "道の駅童話の里 くす",
+        "prefecture": "童話の里　くす",
+        "city": "",
         "address": "大分県玖珠郡玖珠町大字帆足2121",
-        "road": "国道387号",
-        "url": "https://www.michi-no-eki.jp/stations/view/992"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19772"
       }
     },
     {
@@ -20436,13 +18669,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "44022",
+        "id": "19773",
         "name": "道の駅すごう",
         "prefecture": "大分県",
         "city": "竹田市",
-        "address": "大分県竹田市大字菅生字塚原989-1",
-        "road": "国道57号",
-        "url": "https://www.michi-no-eki.jp/stations/view/993"
+        "address": "大分県竹田市大字菅生989-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19773"
       }
     },
     {
@@ -20455,32 +18688,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "44023",
+        "id": "19774",
         "name": "道の駅なかつ",
         "prefecture": "大分県",
         "city": "中津市",
-        "address": "大分県中津市大字加来814番地4",
-        "road": "国道10号",
-        "url": "https://www.michi-no-eki.jp/stations/view/994"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          131.068506,
-          33.265953
-        ]
-      },
-      "properties": {
-        "id": "44024",
-        "name": "道の駅慈恩の滝_くす",
-        "prefecture": "大分県",
-        "city": "玖珠郡玖珠町",
-        "address": "大分県玖珠郡玖珠町大字山浦618番地の24",
-        "road": "国道210号",
-        "url": "https://www.michi-no-eki.jp/stations/view/11987"
+        "address": "大分県中津市加来814",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19774"
       }
     },
     {
@@ -20493,13 +18707,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "45001",
+        "id": "19775",
         "name": "道の駅高岡",
         "prefecture": "宮崎県",
         "city": "宮崎市",
         "address": "宮崎県宮崎市高岡町花見304-5",
-        "road": "国道10号",
-        "url": "https://www.michi-no-eki.jp/stations/view/995"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19775"
       }
     },
     {
@@ -20512,13 +18726,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "45002",
+        "id": "19776",
         "name": "道の駅北川はゆま",
         "prefecture": "宮崎県",
         "city": "延岡市",
         "address": "宮崎県延岡市北川町長井5751-1",
-        "road": "国道10号",
-        "url": "https://www.michi-no-eki.jp/stations/view/996"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19776"
       }
     },
     {
@@ -20531,13 +18745,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "45003",
+        "id": "19777",
         "name": "道の駅青雲橋",
         "prefecture": "宮崎県",
-        "city": "西臼杵郡日之影町",
-        "address": "宮崎県西臼杵郡日之影町大字七折8705-12",
-        "road": "国道218号",
-        "url": "https://www.michi-no-eki.jp/stations/view/997"
+        "city": "日之影町",
+        "address": "宮崎県西臼杵郡日之影町七折8705-12",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19777"
       }
     },
     {
@@ -20545,18 +18759,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          131.202615,
-          31.79442
+          131.2026150,
+          31.7944200
         ]
       },
       "properties": {
-        "id": "45004",
+        "id": "19778",
         "name": "道の駅山之口",
         "prefecture": "宮崎県",
         "city": "都城市",
         "address": "宮崎県都城市山之口町山之口2304-6",
-        "road": "国道269号",
-        "url": "https://www.michi-no-eki.jp/stations/view/998"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19778"
       }
     },
     {
@@ -20565,17 +18779,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           131.8009041,
-          32.68479224
+          32.6847922
         ]
       },
       "properties": {
-        "id": "45005",
+        "id": "19779",
         "name": "道の駅北浦",
         "prefecture": "宮崎県",
         "city": "延岡市",
         "address": "宮崎県延岡市北浦町古江3337-1",
-        "road": "国道388号",
-        "url": "https://www.michi-no-eki.jp/stations/view/999"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19779"
       }
     },
     {
@@ -20583,18 +18797,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          131.306942591,
-          31.7962179384
+          131.3069426,
+          31.7962179
         ]
       },
       "properties": {
-        "id": "45006",
+        "id": "19780",
         "name": "道の駅田野",
         "prefecture": "宮崎県",
         "city": "宮崎市",
         "address": "宮崎県宮崎市田野町甲7885-164",
-        "road": "宮崎県道28号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1000"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19780"
       }
     },
     {
@@ -20603,17 +18817,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           131.2662425,
-          31.64171361
+          31.6417136
         ]
       },
       "properties": {
-        "id": "45007",
+        "id": "19781",
         "name": "道の駅酒谷",
         "prefecture": "宮崎県",
         "city": "日南市",
-        "address": "宮崎県日南市大字酒谷甲1840番地4",
-        "road": "国道222号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1001"
+        "address": "宮崎県日南市酒谷甲1840-4",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19781"
       }
     },
     {
@@ -20626,13 +18840,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "45008",
+        "id": "19782",
         "name": "道の駅とうごう",
         "prefecture": "宮崎県",
         "city": "日向市",
         "address": "宮崎県日向市東郷町山陰辛244-1",
-        "road": "国道327号|国道446号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1002"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19782"
       }
     },
     {
@@ -20645,13 +18859,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "45009",
-        "name": "道の駅都城",
+        "id": "19783",
+        "name": "道の駅都城NiQLL",
         "prefecture": "宮崎県",
         "city": "都城市",
         "address": "宮崎県都城市都北町5225-1",
-        "road": "国道10号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1003"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19783"
       }
     },
     {
@@ -20664,13 +18878,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "45010",
+        "id": "19784",
         "name": "道の駅ゆ～ぱるのじり",
         "prefecture": "宮崎県",
         "city": "小林市",
-        "address": "宮崎県小林市野尻町三ヶ野山4347-1",
-        "road": "国道268号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1004"
+        "address": "宮崎県小林市野尻町三ケ野山4347-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19784"
       }
     },
     {
@@ -20678,18 +18892,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          131.378932361,
-          31.5030575045
+          131.3789290,
+          31.5031169
         ]
       },
       "properties": {
-        "id": "45011",
-        "name": "道の駅なんごう_(宮崎県)",
+        "id": "19785",
+        "name": "道の駅なんごう",
         "prefecture": "宮崎県",
         "city": "日南市",
         "address": "宮崎県日南市南郷町贄波3220-24",
-        "road": "国道448号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1005"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19785"
       }
     },
     {
@@ -20702,13 +18916,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "45012",
+        "id": "19786",
         "name": "道の駅日向",
         "prefecture": "宮崎県",
         "city": "日向市",
-        "address": "宮崎県日向市大字幸脇241番地7",
-        "road": "国道10号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1006"
+        "address": "宮崎県日向市大字幸脇241-7",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19786"
       }
     },
     {
@@ -20721,13 +18935,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "45013",
+        "id": "19787",
         "name": "道の駅高千穂",
         "prefecture": "宮崎県",
-        "city": "西臼杵郡高千穂町",
-        "address": "宮崎県西臼杵郡高千穂町大字三田井1296-5",
-        "road": "国道218号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1007"
+        "city": "高千穂町",
+        "address": "宮崎県西臼杵郡高千穂町三田井1296-5",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19787"
       }
     },
     {
@@ -20740,13 +18954,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "45014",
+        "id": "19788",
         "name": "道の駅フェニックス",
         "prefecture": "宮崎県",
         "city": "宮崎市",
         "address": "宮崎県宮崎市大字内海字三池381-1",
-        "road": "宮崎県道377号内海加江田線",
-        "url": "https://www.michi-no-eki.jp/stations/view/1008"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19788"
       }
     },
     {
@@ -20759,13 +18973,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "45015",
+        "id": "19789",
         "name": "道の駅つの",
         "prefecture": "宮崎県",
-        "city": "児湯郡都農町",
+        "city": "都農町",
         "address": "宮崎県児湯郡都農町大字川北5129",
-        "road": "国道10号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1009"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19789"
       }
     },
     {
@@ -20774,17 +18988,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           130.8055977,
-          32.05018155
+          32.0501815
         ]
       },
       "properties": {
-        "id": "45016",
+        "id": "19790",
         "name": "道の駅えびの",
         "prefecture": "宮崎県",
         "city": "えびの市",
-        "address": "宮崎県えびの市大字永山1006-1",
-        "road": "国道268号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1010"
+        "address": "宮崎県えびの市永山1006-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19790"
       }
     },
     {
@@ -20792,18 +19006,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          131.49193,
-          32.595757
+          131.4919300,
+          32.5957570
         ]
       },
       "properties": {
-        "id": "45017",
+        "id": "19791",
         "name": "道の駅北方よっちみろ屋",
         "prefecture": "宮崎県",
         "city": "延岡市",
-        "address": "宮崎県延岡市北方町早日渡巳175番地1",
-        "road": "国道218号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1011"
+        "address": "宮崎県延岡市北方町早日渡巳175-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19791"
       }
     },
     {
@@ -20811,18 +19025,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          130.545172,
-          31.378962
+          130.5451720,
+          31.3789620
         ]
       },
       "properties": {
-        "id": "46001",
+        "id": "19792",
         "name": "道の駅喜入",
         "prefecture": "鹿児島県",
         "city": "鹿児島市",
-        "address": "鹿児島県鹿児島市喜入町6094番地1",
-        "road": "国道226号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1012"
+        "address": "鹿児島県鹿児島市喜入町6094-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19792"
       }
     },
     {
@@ -20830,18 +19044,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          130.851291496,
-          31.8632418574
+          130.8512915,
+          31.8632419
         ]
       },
       "properties": {
-        "id": "46002",
+        "id": "19793",
         "name": "道の駅霧島",
         "prefecture": "鹿児島県",
         "city": "霧島市",
         "address": "鹿児島県霧島市霧島田口2583-22",
-        "road": "国道223号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1013"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19793"
       }
     },
     {
@@ -20854,13 +19068,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "46003",
+        "id": "19794",
         "name": "道の駅樋脇",
         "prefecture": "鹿児島県",
         "city": "薩摩川内市",
         "address": "鹿児島県薩摩川内市樋脇町市比野156",
-        "road": "鹿児島県道42号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1014"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19794"
       }
     },
     {
@@ -20873,13 +19087,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "46004",
+        "id": "19795",
         "name": "道の駅松山",
         "prefecture": "鹿児島県",
         "city": "志布志市",
         "address": "鹿児島県志布志市松山町新橋1526-1",
-        "road": "志布志市道飯野松山線",
-        "url": "https://www.michi-no-eki.jp/stations/view/1015"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19795"
       }
     },
     {
@@ -20892,13 +19106,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "46005",
+        "id": "19796",
         "name": "道の駅阿久根",
         "prefecture": "鹿児島県",
         "city": "阿久根市",
         "address": "鹿児島県阿久根市大川4816-6",
-        "road": "国道3号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1016"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19796"
       }
     },
     {
@@ -20911,13 +19125,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "46006",
+        "id": "19797",
         "name": "道の駅長島",
         "prefecture": "鹿児島県",
-        "city": "出水郡長島町",
-        "address": "鹿児島県出水郡長島町指江1576番地1号",
-        "road": "国道389号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1017"
+        "city": "長島町",
+        "address": "鹿児島県出水郡長島町指江1576-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19797"
       }
     },
     {
@@ -20926,17 +19140,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           131.0307584,
-          31.43781975
+          31.4378197
         ]
       },
       "properties": {
-        "id": "46007",
+        "id": "19798",
         "name": "道の駅くにの松原おおさき",
         "prefecture": "鹿児島県",
-        "city": "曽於郡大崎町",
-        "address": "鹿児島県曽於郡大崎町大字神領2419",
-        "road": "国道220号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1018"
+        "city": "大崎町",
+        "address": "鹿児島県曽於郡大崎町大字神領字高尾2388-11",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19798"
       }
     },
     {
@@ -20949,13 +19163,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "46008",
+        "id": "19799",
         "name": "道の駅根占",
         "prefecture": "鹿児島県",
-        "city": "肝属郡南大隅町",
+        "city": "南大隅町",
         "address": "鹿児島県肝属郡南大隅町根占山本6868",
-        "road": "国道269号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1019"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19799"
       }
     },
     {
@@ -20968,13 +19182,32 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "46009",
+        "id": "19800",
         "name": "道の駅川辺やすらぎの郷",
         "prefecture": "鹿児島県",
         "city": "南九州市",
-        "address": "鹿児島県南九州市川辺町清水6910番地",
-        "road": "国道225号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1020"
+        "address": "鹿児島県南九州市川辺町清水6910",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19800"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.4088365,
+          28.2596443
+        ]
+      },
+      "properties": {
+        "id": "19801",
+        "name": "道の駅奄美大島住用",
+        "prefecture": "鹿児島県",
+        "city": "奄美市",
+        "address": "鹿児島県奄美市住用町大字石原478",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19801"
       }
     },
     {
@@ -20987,13 +19220,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "46011",
+        "id": "19802",
         "name": "道の駅桜島",
         "prefecture": "鹿児島県",
         "city": "鹿児島市",
-        "address": "鹿児島県鹿児島市桜島横山町1722番地48号",
-        "road": "国道224号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1022"
+        "address": "鹿児島県鹿児島市桜島横山町1722-48",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19802"
       }
     },
     {
@@ -21006,13 +19239,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "46012",
+        "id": "19803",
         "name": "道の駅きんぽう木花館",
         "prefecture": "鹿児島県",
         "city": "南さつま市",
-        "address": "鹿児島県南さつま市金峰町池辺1383番地",
-        "road": "国道270号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1023"
+        "address": "鹿児島県南さつま市金峰町池辺1383",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19803"
       }
     },
     {
@@ -21020,18 +19253,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          130.991067,
-          31.5931188
+          130.9904677,
+          31.5903175
         ]
       },
       "properties": {
-        "id": "46013",
+        "id": "19804",
         "name": "道の駅おおすみ弥五郎伝説の里",
         "prefecture": "鹿児島県",
         "city": "曽於市",
-        "address": "鹿児島県曽於市大隅町岩川6134番地1",
-        "road": "国道269号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1024"
+        "address": "鹿児島県曽於市大隅町岩川6134",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19804"
       }
     },
     {
@@ -21044,13 +19277,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "46014",
+        "id": "19805",
         "name": "道の駅たからべ",
         "prefecture": "鹿児島県",
         "city": "曽於市",
-        "address": "鹿児島県曽於市財部町南俣17番地1",
-        "road": "鹿児島県道2号都城隼人線",
-        "url": "https://www.michi-no-eki.jp/stations/view/1025"
+        "address": "鹿児島県曽於市財部町南俣17",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19805"
       }
     },
     {
@@ -21063,13 +19296,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "46015",
+        "id": "19806",
         "name": "道の駅いぶすき",
         "prefecture": "鹿児島県",
         "city": "指宿市",
-        "address": "鹿児島県指宿市小牧52番地4",
-        "road": "国道226号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1026"
+        "address": "鹿児島県指宿市小牧52-4",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19806"
       }
     },
     {
@@ -21082,13 +19315,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "46016",
+        "id": "19807",
         "name": "道の駅たるみず",
         "prefecture": "鹿児島県",
         "city": "垂水市",
         "address": "鹿児島県垂水市牛根麓1038-1",
-        "road": "国道220号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1027"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19807"
       }
     },
     {
@@ -21101,13 +19334,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "46017",
+        "id": "19808",
         "name": "道の駅すえよし",
         "prefecture": "鹿児島県",
         "city": "曽於市",
-        "address": "鹿児島県曽於市末吉町深川11051番地1",
-        "road": "国道10号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1028"
+        "address": "鹿児島県曽於市末吉町深川11051-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19808"
       }
     },
     {
@@ -21120,13 +19353,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "46018",
+        "id": "19809",
         "name": "道の駅黒之瀬戸だんだん市場",
         "prefecture": "鹿児島県",
-        "city": "出水郡長島町",
+        "city": "長島町",
         "address": "鹿児島県出水郡長島町山門野4093",
-        "road": "国道389号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1029"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19809"
       }
     },
     {
@@ -21139,13 +19372,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "46019",
+        "id": "19810",
         "name": "道の駅山川港活お海道",
         "prefecture": "鹿児島県",
         "city": "指宿市",
-        "address": "鹿児島県指宿市山川金生町1番地10",
-        "road": "国道269号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1030"
+        "address": "鹿児島県指宿市山川金生町1-10",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19810"
       }
     },
     {
@@ -21153,18 +19386,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          130.792437285,
-          31.2736586433
+          130.7930249,
+          31.2745804
         ]
       },
       "properties": {
-        "id": "46020",
+        "id": "19811",
         "name": "道の駅錦江にしきの里",
         "prefecture": "鹿児島県",
-        "city": "肝属郡錦江町",
+        "city": "錦江町",
         "address": "鹿児島県肝属郡錦江町神川3306-18",
-        "road": "国道269号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1031"
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19811"
       }
     },
     {
@@ -21172,37 +19405,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          130.9242,
-          31.50002
+          130.9242000,
+          31.5000200
         ]
       },
       "properties": {
-        "id": "46021",
+        "id": "19812",
         "name": "道の駅野方あらさの",
         "prefecture": "鹿児島県",
-        "city": "曽於郡大崎町",
-        "address": "鹿児島県曽於郡大崎町野方2810番地7",
-        "road": "鹿児島県道64号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1032"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          130.698057222,
-          31.4686125
-        ]
-      },
-      "properties": {
-        "id": "46022",
-        "name": "道の駅たるみずはまびら",
-        "prefecture": "鹿児島県",
-        "city": "垂水市",
-        "address": "鹿児島県垂水市浜平2036-6",
-        "road": "国道220号",
-        "url": "https://www.michi-no-eki.jp/stations/view/14191"
+        "city": "大崎町",
+        "address": "鹿児島県曽於郡大崎町野方2810-7",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19812"
       }
     },
     {
@@ -21211,17 +19425,17 @@ const michiNoEkiGeoJSON = {
         "type": "Point",
         "coordinates": [
           127.9693201,
-          26.55206898
+          26.5520690
         ]
       },
       "properties": {
-        "id": "47001",
+        "id": "19813",
         "name": "道の駅許田",
         "prefecture": "沖縄県",
         "city": "名護市",
-        "address": "沖縄県名護市字許田17番地の1",
-        "road": "国道58号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1033"
+        "address": "沖縄県名護市許田17-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19813"
       }
     },
     {
@@ -21229,18 +19443,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          128.1081144,
-          26.69032089
+          128.1021800,
+          26.6607400
         ]
       },
       "properties": {
-        "id": "47002",
-        "name": "道の駅おおぎみ",
-        "prefecture": "沖縄県",
-        "city": "国頭郡大宜味村",
-        "address": "沖縄県国頭郡大宜味村津波95番地",
-        "road": "国道58号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1034"
+        "id": "19814",
+        "name": "道の駅おおぎみ やんばるの森ビジターセンター",
+        "prefecture": "おおぎみ　やんばるの森ビジターセンター",
+        "city": "",
+        "address": "沖縄県国頭郡大宜味村字津波95",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19814"
       }
     },
     {
@@ -21253,13 +19467,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "47003",
+        "id": "19815",
         "name": "道の駅ゆいゆい国頭",
         "prefecture": "沖縄県",
-        "city": "国頭郡国頭村",
-        "address": "沖縄県国頭郡国頭村字奥間1605番地",
-        "road": "国道58号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1035"
+        "city": "国頭村",
+        "address": "沖縄県国頭郡国頭村字奥間1605",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19815"
       }
     },
     {
@@ -21272,13 +19486,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "47004",
+        "id": "19816",
         "name": "道の駅かでな",
         "prefecture": "沖縄県",
-        "city": "中頭郡嘉手納町",
-        "address": "沖縄県中頭郡嘉手納町屋良1026番地3",
-        "road": "沖縄県道74号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1036"
+        "city": "嘉手納町",
+        "address": "沖縄県中頭郡嘉手納町字屋良1026-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19816"
       }
     },
     {
@@ -21286,18 +19500,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          127.758204,
+          127.7582040,
           26.3993416
         ]
       },
       "properties": {
-        "id": "47005",
+        "id": "19817",
         "name": "道の駅喜名番所",
         "prefecture": "沖縄県",
-        "city": "中頭郡読谷村",
-        "address": "沖縄県中頭郡読谷村字喜名1番地2",
-        "road": "国道58号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1037"
+        "city": "読谷村",
+        "address": "沖縄県中頭郡読谷村字喜名1-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19817"
       }
     },
     {
@@ -21310,13 +19524,13 @@ const michiNoEkiGeoJSON = {
         ]
       },
       "properties": {
-        "id": "47006",
+        "id": "19818",
         "name": "道の駅豊崎",
         "prefecture": "沖縄県",
         "city": "豊見城市",
-        "address": "沖縄県豊見城市字豊崎3番地の39",
-        "road": "国道331号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1038"
+        "address": "沖縄県豊見城市字豊崎3-39",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19818"
       }
     },
     {
@@ -21324,18 +19538,18 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          127.661156,
+          127.6611560,
           26.1384965
         ]
       },
       "properties": {
-        "id": "47007",
+        "id": "19819",
         "name": "道の駅いとまん",
         "prefecture": "沖縄県",
         "city": "糸満市",
-        "address": "沖縄県糸満市西崎町4丁目19番地の1",
-        "road": "国道331号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1039"
+        "address": "沖縄県糸満市西崎町4-19-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19819"
       }
     },
     {
@@ -21343,18 +19557,3894 @@ const michiNoEkiGeoJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          127.952328,
-          26.473874
+          127.9523280,
+          26.4738740
         ]
       },
       "properties": {
-        "id": "47008",
+        "id": "19820",
         "name": "道の駅ぎのざ",
         "prefecture": "沖縄県",
-        "city": "国頭郡宜野座村",
-        "address": "沖縄県国頭郡宜野座村字漢那1633番地",
-        "road": "国道329号",
-        "url": "https://www.michi-no-eki.jp/stations/view/1040"
+        "city": "宜野座村",
+        "address": "沖縄県国頭郡宜野座字漢那1633",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19820"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.8448430,
+          43.0508677
+        ]
+      },
+      "properties": {
+        "id": "19821",
+        "name": "道の駅あかいがわ",
+        "prefecture": "北海道",
+        "city": "赤井川村",
+        "address": "北海道余市郡赤井川村字都190-16",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19821"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.7816824,
+          39.2536331
+        ]
+      },
+      "properties": {
+        "id": "19822",
+        "name": "道の駅釜石仙人峠",
+        "prefecture": "岩手県",
+        "city": "釜石市",
+        "address": "岩手県釜石市甲子町7-155-4",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19822"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.1692573,
+          38.3273881
+        ]
+      },
+      "properties": {
+        "id": "19823",
+        "name": "道の駅あさひまち",
+        "prefecture": "山形県",
+        "city": "朝日町",
+        "address": "山形県西村山郡朝日町大字和合字北又2724",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19823"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6878876,
+          36.7245308
+        ]
+      },
+      "properties": {
+        "id": "19824",
+        "name": "道の駅日光",
+        "prefecture": "栃木県",
+        "city": "日光市",
+        "address": "栃木県日光市今市719-１",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19824"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.0945846,
+          36.3083342
+        ]
+      },
+      "properties": {
+        "id": "19825",
+        "name": "道の駅玉村宿",
+        "prefecture": "群馬県",
+        "city": "玉村町",
+        "address": "群馬県佐波郡玉村町大字上新田604-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19825"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.6755570,
+          35.7178557
+        ]
+      },
+      "properties": {
+        "id": "19826",
+        "name": "道の駅季楽里あさひ",
+        "prefecture": "千葉県",
+        "city": "旭市",
+        "address": "千葉県旭市イの5238",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19826"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8439449,
+          35.1430213
+        ]
+      },
+      "properties": {
+        "id": "19827",
+        "name": "道の駅保田小学校",
+        "prefecture": "千葉県",
+        "city": "鋸南町",
+        "address": "千葉県安房郡鋸南町保田724",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19827"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.3882230,
+          36.8521479
+        ]
+      },
+      "properties": {
+        "id": "19828",
+        "name": "道の駅FARMUS 木島平",
+        "prefecture": "長野県",
+        "city": "木島平村",
+        "address": "長野県下高井郡木島平村大字上木島38-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19828"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.1452664,
+          35.0436549
+        ]
+      },
+      "properties": {
+        "id": "19829",
+        "name": "道の駅アグリパーク竜王",
+        "prefecture": "滋賀県",
+        "city": "竜王町",
+        "address": "滋賀県蒲生郡竜王町大字山之上6526",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19829"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4145694,
+          33.6914250
+        ]
+      },
+      "properties": {
+        "id": "19830",
+        "name": "道の駅くちくまの",
+        "prefecture": "和歌山県",
+        "city": "上富田町",
+        "address": "和歌山県西牟婁郡上富田町岩崎555-5",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19830"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5998870,
+          33.5058378
+        ]
+      },
+      "properties": {
+        "id": "19831",
+        "name": "道の駅すさみ",
+        "prefecture": "和歌山県",
+        "city": "すさみ町",
+        "address": "和歌山県西牟婁郡すさみ町江住808-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19831"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4738277,
+          34.2977409
+        ]
+      },
+      "properties": {
+        "id": "19832",
+        "name": "道の駅かつらぎ西（上り線）",
+        "prefecture": "和歌山県",
+        "city": "かつらぎ町",
+        "address": "和歌山県伊都郡かつらぎ町大字笠田東1271-28",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19832"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.9337127,
+          33.5923615
+        ]
+      },
+      "properties": {
+        "id": "19833",
+        "name": "道の駅たいじ",
+        "prefecture": "和歌山県",
+        "city": "太地町",
+        "address": "和歌山県東牟婁郡太地町大字森浦143-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19833"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.3259855,
+          35.5674108
+        ]
+      },
+      "properties": {
+        "id": "19834",
+        "name": "道の駅きなんせ岩美",
+        "prefecture": "鳥取県",
+        "city": "岩美町",
+        "address": "鳥取県岩美郡岩美町新井337-4",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19834"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.4740758,
+          35.2961102
+        ]
+      },
+      "properties": {
+        "id": "19835",
+        "name": "道の駅奥大山",
+        "prefecture": "鳥取県",
+        "city": "江府町",
+        "address": "鳥取県日野郡江府町佐川908−3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19835"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.5976786,
+          34.0380706
+        ]
+      },
+      "properties": {
+        "id": "19836",
+        "name": "道の駅潮彩市場防府",
+        "prefecture": "山口県",
+        "city": "防府市",
+        "address": "山口県防府市新築地町2-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19836"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.4201417,
+          32.5771381
+        ]
+      },
+      "properties": {
+        "id": "19837",
+        "name": "道の駅上天草さんぱーる",
+        "prefecture": "熊本県",
+        "city": "上天草市",
+        "address": "熊本県上天草市大矢野町中11582-24",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19837"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.0269680,
+          32.1938360
+        ]
+      },
+      "properties": {
+        "id": "19838",
+        "name": "道の駅うしぶか海彩館",
+        "prefecture": "熊本県",
+        "city": "天草市",
+        "address": "熊本県天草市牛深町2286-116",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19838"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.0415257,
+          32.8185100
+        ]
+      },
+      "properties": {
+        "id": "19839",
+        "name": "道の駅あそ望の郷くぎの",
+        "prefecture": "熊本県",
+        "city": "南阿蘇村",
+        "address": "熊本県阿蘇郡南阿蘇村大字久石2807",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19839"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.4353634,
+          41.6780521
+        ]
+      },
+      "properties": {
+        "id": "19840",
+        "name": "道の駅みそぎの郷 きこない",
+        "prefecture": "みそぎの郷　きこない",
+        "city": "",
+        "address": "北海道上磯郡木古内町字本町338-14",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19840"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.8305528,
+          42.0285219
+        ]
+      },
+      "properties": {
+        "id": "19841",
+        "name": "道の駅しかべ間歇泉公園",
+        "prefecture": "北海道",
+        "city": "鹿部町",
+        "address": "北海道茅部郡鹿部町字鹿部18-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19841"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.3278230,
+          38.7079696
+        ]
+      },
+      "properties": {
+        "id": "19842",
+        "name": "道の駅三滝堂",
+        "prefecture": "宮城県",
+        "city": "登米市",
+        "address": "宮城県登米市東和町米谷字福平191-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19842"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.4096155,
+          36.5969609
+        ]
+      },
+      "properties": {
+        "id": "19843",
+        "name": "道の駅常陸大宮～かわプラザ～",
+        "prefecture": "茨城県",
+        "city": "常陸大宮市",
+        "address": "茨城県常陸大宮市岩崎717-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19843"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.5254761,
+          36.5103878
+        ]
+      },
+      "properties": {
+        "id": "19844",
+        "name": "道の駅ひたちおおた",
+        "prefecture": "茨城県",
+        "city": "常陸太田市",
+        "address": "茨城県常陸太田市下河合町1016-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19844"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.3836754,
+          35.5772141
+        ]
+      },
+      "properties": {
+        "id": "19845",
+        "name": "道の駅みのりの郷東金",
+        "prefecture": "千葉県",
+        "city": "東金市",
+        "address": "千葉県東金市田間1300-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19845"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.2771732,
+          35.4825222
+        ]
+      },
+      "properties": {
+        "id": "19846",
+        "name": "道の駅清川",
+        "prefecture": "神奈川県",
+        "city": "清川村",
+        "address": "神奈川県愛甲郡清川村煤ヶ谷2129",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19846"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.9334638,
+          37.6492628
+        ]
+      },
+      "properties": {
+        "id": "19847",
+        "name": "道の駅燕三条地場産センター",
+        "prefecture": "新潟県",
+        "city": "三条市",
+        "address": "新潟県三条市須頃1-17",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19847"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.9056837,
+          37.2283748
+        ]
+      },
+      "properties": {
+        "id": "19848",
+        "name": "道の駅あなみず",
+        "prefecture": "石川県",
+        "city": "穴水町",
+        "address": "石川県鳳珠郡穴水町字大町チ41-6",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19848"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.3986545,
+          36.0800489
+        ]
+      },
+      "properties": {
+        "id": "19849",
+        "name": "道の駅禅の里",
+        "prefecture": "福井県",
+        "city": "永平寺町",
+        "address": "福井県吉田郡永平寺町清水2-21-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19849"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.5179906,
+          34.7967069
+        ]
+      },
+      "properties": {
+        "id": "19850",
+        "name": "道の駅津かわげ",
+        "prefecture": "三重県",
+        "city": "津市",
+        "address": "三重県津市河芸町三行255-4",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19850"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.3054291,
+          35.4300512
+        ]
+      },
+      "properties": {
+        "id": "19851",
+        "name": "道の駅浅井三姉妹の郷",
+        "prefecture": "滋賀県",
+        "city": "長浜市",
+        "address": "滋賀県長浜市内保町2843",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19851"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.1939786,
+          35.5383355
+        ]
+      },
+      "properties": {
+        "id": "19852",
+        "name": "道の駅海の京都 宮津",
+        "prefecture": "海の京都　宮津",
+        "city": "",
+        "address": "京都府宮津市字浜町3007",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19852"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.9187617,
+          35.0590116
+        ]
+      },
+      "properties": {
+        "id": "19853",
+        "name": "道の駅山田錦発祥のまち・多可",
+        "prefecture": "兵庫県",
+        "city": "多可町",
+        "address": "兵庫県多可郡多可町中区岸上281-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19853"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4417553,
+          34.2807411
+        ]
+      },
+      "properties": {
+        "id": "19854",
+        "name": "道の駅青洲の里",
+        "prefecture": "和歌山県",
+        "city": "紀の川市",
+        "address": "和歌山県紀の川市西野山473",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19854"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.3109329,
+          35.1706825
+        ]
+      },
+      "properties": {
+        "id": "19855",
+        "name": "道の駅にちなん日野川の郷",
+        "prefecture": "鳥取県",
+        "city": "日南町",
+        "address": "鳥取県日野郡日南町生山385",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19855"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.7890999,
+          33.1732559
+        ]
+      },
+      "properties": {
+        "id": "19856",
+        "name": "道の駅よって西土佐",
+        "prefecture": "高知県",
+        "city": "四万十市",
+        "address": "高知県四万十市西土佐江川﨑2410-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19856"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.6716340,
+          33.2015015
+        ]
+      },
+      "properties": {
+        "id": "19857",
+        "name": "道の駅させぼっくす99",
+        "prefecture": "長崎県",
+        "city": "佐世保市",
+        "address": "長崎県佐世保市愛宕町11",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19857"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.0074643,
+          32.8853776
+        ]
+      },
+      "properties": {
+        "id": "19858",
+        "name": "道の駅長崎街道鈴田峠",
+        "prefecture": "長崎県",
+        "city": "大村市",
+        "address": "長崎県大村市中里町452-22",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19858"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.7559000,
+          32.9871618
+        ]
+      },
+      "properties": {
+        "id": "19859",
+        "name": "道の駅水辺プラザかもと",
+        "prefecture": "熊本県",
+        "city": "山鹿市",
+        "address": "熊本県山鹿市鹿本町梶屋1257",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19859"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.4124380,
+          39.2005320
+        ]
+      },
+      "properties": {
+        "id": "19860",
+        "name": "道の駅うご",
+        "prefecture": "秋田県",
+        "city": "羽後町",
+        "address": "秋田県雄勝郡羽後町西馬音内字中野200",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19860"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.9844120,
+          38.7941580
+        ]
+      },
+      "properties": {
+        "id": "19861",
+        "name": "道の駅しょうない",
+        "prefecture": "山形県",
+        "city": "庄内町",
+        "address": "山形県東田川郡庄内町狩川字外北割97-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19861"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.1074590,
+          37.5383410
+        ]
+      },
+      "properties": {
+        "id": "19862",
+        "name": "道の駅猪苗代",
+        "prefecture": "福島県",
+        "city": "猪苗代町",
+        "address": "福島県耶麻郡猪苗代町大字堅田字五百苅１",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19862"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.0719760,
+          36.4311680
+        ]
+      },
+      "properties": {
+        "id": "19863",
+        "name": "道の駅ましこ",
+        "prefecture": "栃木県",
+        "city": "益子町",
+        "address": "栃木県芳賀郡益子町大字長堤2271",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19863"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.9312270,
+          35.5829170
+        ]
+      },
+      "properties": {
+        "id": "19864",
+        "name": "道の駅つる",
+        "prefecture": "山梨県",
+        "city": "都留市",
+        "address": "山梨県都留市大原88",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19864"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.0925410,
+          33.8789390
+        ]
+      },
+      "properties": {
+        "id": "19865",
+        "name": "道の駅熊野・花の窟",
+        "prefecture": "三重県",
+        "city": "熊野市",
+        "address": "三重県熊野市有馬町137",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19865"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.8547670,
+          35.8815640
+        ]
+      },
+      "properties": {
+        "id": "19866",
+        "name": "道の駅清流の里しろとり",
+        "prefecture": "岐阜県",
+        "city": "郡上市",
+        "address": "岐阜県郡上市白鳥町向小駄良693-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19866"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.9399440,
+          35.6910230
+        ]
+      },
+      "properties": {
+        "id": "19867",
+        "name": "道の駅田切の里",
+        "prefecture": "長野県",
+        "city": "飯島町",
+        "address": "長野県上伊那郡飯島町田切2598-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19867"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.1905220,
+          34.8502490
+        ]
+      },
+      "properties": {
+        "id": "19868",
+        "name": "道の駅神戸フルーツ・フラワーパーク 大沢",
+        "prefecture": "兵庫県",
+        "city": "神戸市",
+        "address": "兵庫県神戸市北区大沢町上大沢2150",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19868"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7047880,
+          34.4954010
+        ]
+      },
+      "properties": {
+        "id": "19869",
+        "name": "道の駅かつらぎ",
+        "prefecture": "奈良県",
+        "city": "葛城市",
+        "address": "奈良県葛城市太田1257",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19869"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.2356330,
+          34.5697700
+        ]
+      },
+      "properties": {
+        "id": "19870",
+        "name": "道の駅びんご府中",
+        "prefecture": "広島県",
+        "city": "府中市",
+        "address": "広島県府中市府川町230-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19870"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.6928740,
+          32.9079390
+        ]
+      },
+      "properties": {
+        "id": "19871",
+        "name": "道の駅すいかの里 植木",
+        "prefecture": "熊本県",
+        "city": "熊本市",
+        "address": "熊本県熊本市北区植木町岩野160-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19871"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.5080360,
+          32.3028820
+        ]
+      },
+      "properties": {
+        "id": "19872",
+        "name": "道の駅芦北でこぽん",
+        "prefecture": "熊本県",
+        "city": "芦北町",
+        "address": "熊本県葦北郡芦北町大字佐敷443",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19872"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.0685060,
+          33.2659530
+        ]
+      },
+      "properties": {
+        "id": "19873",
+        "name": "道の駅慈恩の滝 くす",
+        "prefecture": "大分県",
+        "city": "玖珠町",
+        "address": "大分県玖珠郡玖珠町大字山浦618-24",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19873"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4773460,
+          34.3182900
+        ]
+      },
+      "properties": {
+        "id": "19874",
+        "name": "道の駅くしがきの里",
+        "prefecture": "和歌山県",
+        "city": "かつらぎ町",
+        "address": "和歌山県伊都郡かつらぎ町大字滝53-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19874"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.1737900,
+          34.3259360
+        ]
+      },
+      "properties": {
+        "id": "19875",
+        "name": "道の駅みさき",
+        "prefecture": "大阪府",
+        "city": "岬町",
+        "address": "大阪府泉南郡岬町淡輪5654-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19875"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.1217910,
+          38.9918160
+        ]
+      },
+      "properties": {
+        "id": "19876",
+        "name": "道の駅平泉",
+        "prefecture": "岩手県",
+        "city": "平泉町",
+        "address": "岩手県西磐井郡平泉町平泉字伽羅楽112-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19876"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.5456120,
+          37.8726810
+        ]
+      },
+      "properties": {
+        "id": "19877",
+        "name": "道の駅国見 あつかしの郷",
+        "prefecture": "福島県",
+        "city": "国見町",
+        "address": "福島県伊達郡国見町大字藤田字日渡二18-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19877"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.0435160,
+          38.1082110
+        ]
+      },
+      "properties": {
+        "id": "19878",
+        "name": "道の駅川のみなと長井",
+        "prefecture": "山形県",
+        "city": "長井市",
+        "address": "山形県長井市東町2-50",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19878"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.4408220,
+          36.2366920
+        ]
+      },
+      "properties": {
+        "id": "19879",
+        "name": "道の駅ヘルシーテラス佐久南",
+        "prefecture": "長野県",
+        "city": "佐久市",
+        "address": "長野県佐久市伴野7-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19879"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.2035060,
+          36.0524820
+        ]
+      },
+      "properties": {
+        "id": "19880",
+        "name": "道の駅和紙の里ひがしちちぶ",
+        "prefecture": "埼玉県",
+        "city": "東秩父村",
+        "address": "埼玉県秩父郡東秩父村御堂441",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19880"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.0262940,
+          37.6471250
+        ]
+      },
+      "properties": {
+        "id": "19881",
+        "name": "道の駅庭園の郷 保内",
+        "prefecture": "新潟県",
+        "city": "三条市",
+        "address": "新潟県三条市下保内4035",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19881"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.7684550,
+          36.8860270
+        ]
+      },
+      "properties": {
+        "id": "19882",
+        "name": "道の駅のと千里浜",
+        "prefecture": "石川県",
+        "city": "羽咋市",
+        "address": "石川県羽咋市千里浜町夕1番地62",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19882"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.9260140,
+          35.0756040
+        ]
+      },
+      "properties": {
+        "id": "19883",
+        "name": "道の駅伊豆ゲートウェイ函南",
+        "prefecture": "静岡県",
+        "city": "函南町",
+        "address": "静岡県田方郡函南町塚本887-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19883"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.0240070,
+          34.7654720
+        ]
+      },
+      "properties": {
+        "id": "19884",
+        "name": "道の駅お茶の京都 みなみやましろ村",
+        "prefecture": "京都府",
+        "city": "南山城村",
+        "address": "京都府相楽郡南山城村大字北大河原小字殿田102",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19884"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.4698070,
+          35.6106490
+        ]
+      },
+      "properties": {
+        "id": "19885",
+        "name": "道の駅山陰海岸ジオパーク浜坂の郷",
+        "prefecture": "兵庫県",
+        "city": "新温泉町",
+        "address": "兵庫県美方郡新温泉町栃谷57",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19885"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.6585000,
+          35.5024270
+        ]
+      },
+      "properties": {
+        "id": "19886",
+        "name": "道の駅琴の浦",
+        "prefecture": "鳥取県",
+        "city": "琴浦町",
+        "address": "鳥取県東伯郡琴浦町大字別所1030-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19886"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.1964580,
+          33.1768710
+        ]
+      },
+      "properties": {
+        "id": "19887",
+        "name": "道の駅しろいし",
+        "prefecture": "佐賀県",
+        "city": "白石町",
+        "address": "佐賀県杵島郡白石町大字福富下分306番地4",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19887"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.2949510,
+          43.8453190
+        ]
+      },
+      "properties": {
+        "id": "19888",
+        "name": "道の駅ノンキーランドひがしもこと",
+        "prefecture": "北海道",
+        "city": "大空町",
+        "address": "北海道網走郡大空町東藻琴100",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19888"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.4484980,
+          43.1772540
+        ]
+      },
+      "properties": {
+        "id": "19889",
+        "name": "道の駅北欧の風 道の駅とうべつ",
+        "prefecture": "北海道",
+        "city": "当別町",
+        "address": "北海道石狩郡当別町当別太774-11",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19889"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.7356240,
+          37.6972670
+        ]
+      },
+      "properties": {
+        "id": "19890",
+        "name": "道の駅いいたて村の道の駅までい館",
+        "prefecture": "福島県",
+        "city": "飯舘村",
+        "address": "福島県相馬郡飯舘村深谷字深谷前12-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19890"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.3957210,
+          37.0327560
+        ]
+      },
+      "properties": {
+        "id": "19891",
+        "name": "道の駅尾瀬檜枝岐",
+        "prefecture": "福島県",
+        "city": "檜枝岐村",
+        "address": "福島県南会津郡檜枝岐村字見通1136-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19891"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.0524790,
+          35.3599480
+        ]
+      },
+      "properties": {
+        "id": "19892",
+        "name": "道の駅木更津うまくたの里",
+        "prefecture": "千葉県",
+        "city": "木更津市",
+        "address": "千葉県木更津市下郡1369-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19892"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.6280840,
+          35.4319180
+        ]
+      },
+      "properties": {
+        "id": "19893",
+        "name": "道の駅パレットピアおおの",
+        "prefecture": "岐阜県",
+        "city": "大野町",
+        "address": "岐阜県揖斐郡大野町大字下磯313番地２",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19893"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.7782100,
+          35.0910490
+        ]
+      },
+      "properties": {
+        "id": "19894",
+        "name": "道の駅銀の馬車道・神河",
+        "prefecture": "兵庫県",
+        "city": "神河町",
+        "address": "兵庫県神崎郡神河町吉冨88-10",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19894"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.3113610,
+          34.2868130
+        ]
+      },
+      "properties": {
+        "id": "19895",
+        "name": "道の駅ねごろ歴史の丘",
+        "prefecture": "和歌山県",
+        "city": "岩出市",
+        "address": "和歌山県岩出市根来2020番地の１",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19895"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.2352460,
+          33.3223940
+        ]
+      },
+      "properties": {
+        "id": "19896",
+        "name": "道の駅なかとさ",
+        "prefecture": "高知県",
+        "city": "中土佐町",
+        "address": "高知県高岡郡中土佐町久礼8645-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19896"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.4311800,
+          43.4038730
+        ]
+      },
+      "properties": {
+        "id": "19897",
+        "name": "道の駅石狩「あいろーど厚田",
+        "prefecture": "北海道",
+        "city": "石狩市",
+        "address": "北海道石狩市厚田区厚田98-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19897"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.6559730,
+          41.9256660
+        ]
+      },
+      "properties": {
+        "id": "19898",
+        "name": "道の駅なないろ・ななえ",
+        "prefecture": "北海道",
+        "city": "七飯町",
+        "address": "北海道亀田郡七飯町字峠下380-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19898"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.3004620,
+          40.5777390
+        ]
+      },
+      "properties": {
+        "id": "19899",
+        "name": "道の駅津軽白神",
+        "prefecture": "青森県",
+        "city": "西目屋村",
+        "address": "青森県中津軽郡西目屋村大字田代字神田219-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19899"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.4484167,
+          38.9312134
+        ]
+      },
+      "properties": {
+        "id": "19900",
+        "name": "道の駅むろね",
+        "prefecture": "岩手県",
+        "city": "一関市",
+        "address": "岩手県一関市室根町折壁字向山131-9",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19900"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.8259300,
+          40.2958310
+        ]
+      },
+      "properties": {
+        "id": "19901",
+        "name": "道の駅おおゆ",
+        "prefecture": "秋田県",
+        "city": "鹿角市",
+        "address": "秋田県鹿角市十和田大湯字中谷地19",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19901"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.1370170,
+          37.9220550
+        ]
+      },
+      "properties": {
+        "id": "19902",
+        "name": "道の駅米沢",
+        "prefecture": "山形県",
+        "city": "米沢市",
+        "address": "山形県米沢市大字川井1039-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19902"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.5884500,
+          37.7665240
+        ]
+      },
+      "properties": {
+        "id": "19903",
+        "name": "道の駅伊達の郷 りょうぜん",
+        "prefecture": "福島県",
+        "city": "伊達市",
+        "address": "福島県伊達市霊山町下小国字桜町3-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19903"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.2252380,
+          36.7732310
+        ]
+      },
+      "properties": {
+        "id": "19904",
+        "name": "道の駅尾瀬かたしな",
+        "prefecture": "群馬県",
+        "city": "片品村",
+        "address": "群馬県利根郡片品村大字鎌田3967-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19904"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.9194133,
+          35.7488419
+        ]
+      },
+      "properties": {
+        "id": "19905",
+        "name": "道の駅いちかわ",
+        "prefecture": "千葉県",
+        "city": "市川市",
+        "address": "千葉県市川市国分6-10-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19905"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.4469410,
+          35.3067550
+        ]
+      },
+      "properties": {
+        "id": "19906",
+        "name": "道の駅なんぶ",
+        "prefecture": "山梨県",
+        "city": "南部町",
+        "address": "山梨県南巨摩郡南部町中野3034-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19906"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.3293187,
+          36.2758194
+        ]
+      },
+      "properties": {
+        "id": "19907",
+        "name": "道の駅女神の里 たてしな",
+        "prefecture": "長野県",
+        "city": "立科町",
+        "address": "長野県北佐久郡立科町大字茂田井2480",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19907"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.8913470,
+          35.5444420
+        ]
+      },
+      "properties": {
+        "id": "19908",
+        "name": "道の駅南信州 とよおかマルシェ",
+        "prefecture": "長野県",
+        "city": "豊丘村",
+        "address": "長野県下伊那郡豊丘村大字神稲12410",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19908"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.0416230,
+          36.8149060
+        ]
+      },
+      "properties": {
+        "id": "19909",
+        "name": "道の駅雨晴",
+        "prefecture": "富山県",
+        "city": "高岡市",
+        "address": "富山県高岡市太田24-74",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19909"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.5467190,
+          36.5014570
+        ]
+      },
+      "properties": {
+        "id": "19910",
+        "name": "道の駅めぐみ白山",
+        "prefecture": "石川県",
+        "city": "白山市",
+        "address": "石川県白山市宮丸町2183",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19910"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.9152360,
+          33.8765180
+        ]
+      },
+      "properties": {
+        "id": "19911",
+        "name": "道の駅熊野・板屋 九郎兵衛の里",
+        "prefecture": "三重県",
+        "city": "熊野市",
+        "address": "三重県熊野市紀和町板屋82",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19911"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7974180,
+          34.5714070
+        ]
+      },
+      "properties": {
+        "id": "19912",
+        "name": "道の駅レスティ 唐古・鍵",
+        "prefecture": "レスティ　唐古・鍵",
+        "city": "",
+        "address": "奈良県磯城郡田原本町大字唐古70-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19912"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.2027130,
+          34.3884660
+        ]
+      },
+      "properties": {
+        "id": "19913",
+        "name": "道の駅センザキッチン",
+        "prefecture": "山口県",
+        "city": "長門市",
+        "address": "山口県長門市仙崎4297-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19913"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.5973420,
+          43.5030710
+        ]
+      },
+      "properties": {
+        "id": "19914",
+        "name": "道の駅びえい「白金ビルケ",
+        "prefecture": "北海道",
+        "city": "美瑛町",
+        "address": "北海道上川郡美瑛町字白金",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19914"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8484910,
+          39.8820270
+        ]
+      },
+      "properties": {
+        "id": "19915",
+        "name": "道の駅おが",
+        "prefecture": "秋田県",
+        "city": "男鹿市",
+        "address": "秋田県男鹿市船川港船川字新浜町1番地19",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19915"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.9440050,
+          35.8867530
+        ]
+      },
+      "properties": {
+        "id": "19916",
+        "name": "道の駅大芝高原",
+        "prefecture": "長野県",
+        "city": "南箕輪村",
+        "address": "長野県上伊那郡南箕輪村2358番地5",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19916"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.7095340,
+          35.2739000
+        ]
+      },
+      "properties": {
+        "id": "19917",
+        "name": "道の駅南信州うるぎ",
+        "prefecture": "長野県",
+        "city": "売木村",
+        "address": "長野県下伊那郡売木村543番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19917"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.0371590,
+          35.5651070
+        ]
+      },
+      "properties": {
+        "id": "19918",
+        "name": "道の駅歌舞伎の里大鹿",
+        "prefecture": "長野県",
+        "city": "大鹿村",
+        "address": "長野県下伊那郡大鹿村大字大河原390番地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19918"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.9327702,
+          36.4243601
+        ]
+      },
+      "properties": {
+        "id": "19919",
+        "name": "道の駅いくさかの郷",
+        "prefecture": "長野県",
+        "city": "生坂村",
+        "address": "長野県東筑摩郡生坂村5204番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19919"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7986360,
+          34.4649310
+        ]
+      },
+      "properties": {
+        "id": "19920",
+        "name": "道の駅飛鳥",
+        "prefecture": "奈良県",
+        "city": "明日香村",
+        "address": "奈良県高市郡明日香村大字越6番2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19920"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.0576060,
+          34.0544370
+        ]
+      },
+      "properties": {
+        "id": "19921",
+        "name": "道の駅みまの里",
+        "prefecture": "徳島県",
+        "city": "美馬市",
+        "address": "徳島県美馬市美馬町字願勝寺72番地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19921"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.6950050,
+          33.6697940
+        ]
+      },
+      "properties": {
+        "id": "19922",
+        "name": "道の駅なかやま",
+        "prefecture": "愛媛県",
+        "city": "伊予市",
+        "address": "愛媛県伊予市中山町中山子271番地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19922"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.0255110,
+          32.3167730
+        ]
+      },
+      "properties": {
+        "id": "19923",
+        "name": "道の駅﨑津",
+        "prefecture": "熊本県",
+        "city": "天草市",
+        "address": "熊本県天草市河浦町﨑津1117番地10",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19923"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.6982340,
+          31.4687390
+        ]
+      },
+      "properties": {
+        "id": "19924",
+        "name": "道の駅たるみずはまびら（たるたるぱあく）",
+        "prefecture": "鹿児島県",
+        "city": "垂水市",
+        "address": "鹿児島県垂水市浜平2036番地6",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19924"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5510960,
+          34.4359660
+        ]
+      },
+      "properties": {
+        "id": "19925",
+        "name": "道の駅奥河内くろまろの郷",
+        "prefecture": "大阪府",
+        "city": "河内長野市",
+        "address": "大阪府河内長野市高向1218-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19925"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.4815520,
+          37.6358770
+        ]
+      },
+      "properties": {
+        "id": "19926",
+        "name": "道の駅道の駅安達智恵子の里 下り線",
+        "prefecture": "道の駅「安達」智恵子の里　下り線",
+        "city": "",
+        "address": "福島県二本松市米沢字下川原田105-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19926"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.3604370,
+          45.1249360
+        ]
+      },
+      "properties": {
+        "id": "19927",
+        "name": "道の駅北オホーツクはまとんべつ",
+        "prefecture": "北海道",
+        "city": "浜頓別町",
+        "address": "北海道枝幸郡浜頓別町中央北21番1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19927"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.8187660,
+          42.8760950
+        ]
+      },
+      "properties": {
+        "id": "19928",
+        "name": "道の駅あびらD51ステーション",
+        "prefecture": "北海道",
+        "city": "安平町",
+        "address": "北海道勇払郡安平町追分柏が丘49番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19928"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.8076477,
+          37.9688314
+        ]
+      },
+      "properties": {
+        "id": "19929",
+        "name": "道の駅かくだ",
+        "prefecture": "宮城県",
+        "city": "角田市",
+        "address": "宮城県角田市枝野字北島81番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19929"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.4145090,
+          34.6958630
+        ]
+      },
+      "properties": {
+        "id": "19930",
+        "name": "道の駅とよはし",
+        "prefecture": "愛知県",
+        "city": "豊橋市",
+        "address": "愛知県豊橋市東七根町字一の沢113番地2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19930"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.0534720,
+          35.4974820
+        ]
+      },
+      "properties": {
+        "id": "19931",
+        "name": "道の駅西いなば気楽里",
+        "prefecture": "鳥取県",
+        "city": "鳥取市",
+        "address": "鳥取県鳥取市鹿野町岡木280-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19931"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.1304560,
+          32.5455060
+        ]
+      },
+      "properties": {
+        "id": "19932",
+        "name": "道の駅天草市イルカセンター",
+        "prefecture": "熊本県",
+        "city": "天草市",
+        "address": "熊本県天草市五和町二江4689番地20",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19932"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.7892790,
+          32.1931360
+        ]
+      },
+      "properties": {
+        "id": "19933",
+        "name": "道の駅人吉",
+        "prefecture": "熊本県",
+        "city": "人吉市",
+        "address": "熊本県人吉市赤池原町字牛渡瀬1425-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19933"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.4926600,
+          33.1268010
+        ]
+      },
+      "properties": {
+        "id": "19934",
+        "name": "道の駅のつはる",
+        "prefecture": "大分県",
+        "city": "大分市",
+        "address": "大分県大分市大字下原1717番地の1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19934"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.9567970,
+          38.5799370
+        ]
+      },
+      "properties": {
+        "id": "19935",
+        "name": "道の駅おおさき",
+        "prefecture": "宮城県",
+        "city": "大崎市",
+        "address": "宮城県大崎市古川千手寺町二丁目5番50号",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19935"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.4984880,
+          44.0237590
+        ]
+      },
+      "properties": {
+        "id": "19936",
+        "name": "道の駅遠軽 森のオホーツク",
+        "prefecture": "北海道",
+        "city": "紋別郡",
+        "address": "北海道紋別郡遠軽町野上150番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19936"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.9938330,
+          36.3228070
+        ]
+      },
+      "properties": {
+        "id": "19937",
+        "name": "道の駅グランテラス筑西",
+        "prefecture": "茨城県",
+        "city": "筑西市",
+        "address": "茨城県筑西市川澄1850番地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19937"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.0532500,
+          36.6327210
+        ]
+      },
+      "properties": {
+        "id": "19938",
+        "name": "道の駅たかねざわ 元気あっぷむら",
+        "prefecture": "たかねざわ　元気あっぷむら",
+        "city": "",
+        "address": "栃木県塩谷郡高根沢町大字上柏崎588番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19938"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.4480680,
+          36.9600990
+        ]
+      },
+      "properties": {
+        "id": "19939",
+        "name": "道の駅野沢温泉",
+        "prefecture": "長野県",
+        "city": "下高井郡",
+        "address": "長野県下高井郡野沢温泉村大字虫生2375",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19939"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.9305550,
+          34.9227540
+        ]
+      },
+      "properties": {
+        "id": "19940",
+        "name": "道の駅伊豆月ケ瀬",
+        "prefecture": "静岡県",
+        "city": "伊豆市",
+        "address": "静岡県伊豆市月ヶ瀬78-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19940"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.6244730,
+          33.4666380
+        ]
+      },
+      "properties": {
+        "id": "19941",
+        "name": "道の駅筑前みなみの里",
+        "prefecture": "福岡県",
+        "city": "朝倉郡",
+        "address": "福岡県朝倉郡筑前町三並866番地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19941"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.2917800,
+          43.2246370
+        ]
+      },
+      "properties": {
+        "id": "19942",
+        "name": "道の駅かみしほろ",
+        "prefecture": "北海道",
+        "city": "",
+        "address": "北海道河東郡上士幌町字上士幌東3線227番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19942"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.6488170,
+          43.9444540
+        ]
+      },
+      "properties": {
+        "id": "19943",
+        "name": "道の駅るもい",
+        "prefecture": "北海道",
+        "city": "",
+        "address": "北海道留萌市船場町2丁目114",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19943"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.0560100,
+          39.3657520
+        ]
+      },
+      "properties": {
+        "id": "19944",
+        "name": "道の駅はなまき西南",
+        "prefecture": "岩手県",
+        "city": "",
+        "address": "岩手県花巻市轟木7地割203番地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19944"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.0001220,
+          37.4964560
+        ]
+      },
+      "properties": {
+        "id": "19945",
+        "name": "道の駅なみえ",
+        "prefecture": "福島県",
+        "city": "浪江町",
+        "address": "福島県双葉郡浪江町大字幾世橋字知命寺60",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19945"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.1184160,
+          35.3261970
+        ]
+      },
+      "properties": {
+        "id": "19946",
+        "name": "道の駅足柄・金太郎のふるさと",
+        "prefecture": "神奈川県",
+        "city": "",
+        "address": "神奈川県南足柄市竹松1117番1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19946"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2576780,
+          36.0513230
+        ]
+      },
+      "properties": {
+        "id": "19947",
+        "name": "道の駅ビーナスライン蓼科湖",
+        "prefecture": "長野県",
+        "city": "",
+        "address": "長野県茅野市北山4035番地2906",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19947"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.0591310,
+          37.6989760
+        ]
+      },
+      "properties": {
+        "id": "19948",
+        "name": "道の駅たがみ",
+        "prefecture": "新潟県",
+        "city": "",
+        "address": "新潟県南蒲原郡田上町大字原ヶ崎新田3072番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19948"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.8044700,
+          37.4551060
+        ]
+      },
+      "properties": {
+        "id": "19949",
+        "name": "道の駅ながおか花火館",
+        "prefecture": "新潟県",
+        "city": "",
+        "address": "新潟県長岡市喜多町707番地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19949"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.4789920,
+          36.0717660
+        ]
+      },
+      "properties": {
+        "id": "19950",
+        "name": "道の駅恐竜渓谷かつやま",
+        "prefecture": "福井県",
+        "city": "",
+        "address": "福井県勝山市荒土町松ヶ崎第1号17番地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19950"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.2573740,
+          34.2149800
+        ]
+      },
+      "properties": {
+        "id": "19951",
+        "name": "道の駅四季の郷公園",
+        "prefecture": "和歌山県",
+        "city": "",
+        "address": "和歌山県和歌山市明王寺85番地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19951"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.6735560,
+          34.6484390
+        ]
+      },
+      "properties": {
+        "id": "19952",
+        "name": "道の駅三矢の里あきたかた",
+        "prefecture": "広島県",
+        "city": "",
+        "address": "731-523 広島県安芸高田市吉田町山手1059番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19952"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.1264320,
+          32.3850930
+        ]
+      },
+      "properties": {
+        "id": "19953",
+        "name": "道の駅宮地岳かかしの里",
+        "prefecture": "熊本県",
+        "city": "",
+        "address": "熊本県天草市宮地岳町5516-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19953"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.1535320,
+          26.6309490
+        ]
+      },
+      "properties": {
+        "id": "19954",
+        "name": "道の駅サンライズひがし",
+        "prefecture": "沖縄県",
+        "city": "",
+        "address": "沖縄県国頭郡東村字平良550番地23",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19954"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.3008350,
+          42.9334380
+        ]
+      },
+      "properties": {
+        "id": "19955",
+        "name": "道の駅ガーデンスパ十勝川温泉",
+        "prefecture": "北海道",
+        "city": "河東郡",
+        "address": "北海道河東郡音更町十勝川温泉北14丁目1番地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19955"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.5490520,
+          35.0641490
+        ]
+      },
+      "properties": {
+        "id": "19956",
+        "name": "道の駅したら",
+        "prefecture": "愛知県",
+        "city": "北設楽郡",
+        "address": "愛知県北設楽郡設楽町清崎字中田17番地7",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19956"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.5919460,
+          34.6236150
+        ]
+      },
+      "properties": {
+        "id": "19957",
+        "name": "道の駅山陽道やかげ宿",
+        "prefecture": "岡山県",
+        "city": "小田郡",
+        "address": "岡山県小田郡矢掛町矢掛1988番10",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19957"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.4131100,
+          35.1456300
+        ]
+      },
+      "properties": {
+        "id": "19958",
+        "name": "道の駅ごいせ仁摩",
+        "prefecture": "島根県",
+        "city": "大田市",
+        "address": "島根県大田市仁摩町大国42番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19958"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.4746310,
+          34.1362680
+        ]
+      },
+      "properties": {
+        "id": "19959",
+        "name": "道の駅いたの",
+        "prefecture": "徳島県",
+        "city": "板野郡",
+        "address": "徳島県板野郡板野町川端字中手崎39番地5",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19959"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.7157310,
+          32.5477910
+        ]
+      },
+      "properties": {
+        "id": "19960",
+        "name": "道の駅東陽",
+        "prefecture": "熊本県",
+        "city": "八代市",
+        "address": "熊本県八代市東陽町南1051番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19960"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.2293780,
+          31.4628630
+        ]
+      },
+      "properties": {
+        "id": "19961",
+        "name": "道の駅くしま",
+        "prefecture": "宮崎県",
+        "city": "串間市",
+        "address": "宮崎県串間市大字西方5503番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19961"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.3928839,
+          44.1767258
+        ]
+      },
+      "properties": {
+        "id": "19962",
+        "name": "道の駅羊のまち 侍・しべつ",
+        "prefecture": "北海道",
+        "city": "士別市",
+        "address": "北海道士別市大通東5丁目440番地23",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19962"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.8859325,
+          40.0029518
+        ]
+      },
+      "properties": {
+        "id": "19963",
+        "name": "道の駅青の国ふだい",
+        "prefecture": "岩手県",
+        "city": "下閉伊郡",
+        "address": "岩手県下閉伊郡普代村第9地割字銅屋5番地3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19963"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.4687829,
+          38.5207813
+        ]
+      },
+      "properties": {
+        "id": "19964",
+        "name": "道の駅硯上の里おがつ",
+        "prefecture": "宮城県",
+        "city": "石巻市",
+        "address": "宮城県石巻市雄勝町下雄勝二丁目5番地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19964"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.4459847,
+          38.4458100
+        ]
+      },
+      "properties": {
+        "id": "19965",
+        "name": "道の駅おながわ",
+        "prefecture": "宮城県",
+        "city": "牡鹿郡",
+        "address": "宮城県牡鹿郡女川町女川二丁目66番地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19965"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.4483266,
+          38.6781259
+        ]
+      },
+      "properties": {
+        "id": "19966",
+        "name": "道の駅さんさん南三陸",
+        "prefecture": "宮城県",
+        "city": "本吉郡",
+        "address": "宮城県本吉郡南三陸町志津川字五日町200-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19966"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.5520817,
+          35.9726187
+        ]
+      },
+      "properties": {
+        "id": "19967",
+        "name": "道の駅越前おおの荒島の郷",
+        "prefecture": "福井県",
+        "city": "大野市",
+        "address": "福井県大野市蕨生第137号21番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19967"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.2022951,
+          35.8303474
+        ]
+      },
+      "properties": {
+        "id": "19968",
+        "name": "道の駅南えちぜん山海里",
+        "prefecture": "福井県",
+        "city": "南条郡",
+        "address": "福井県南条郡南越前町牧谷39-2-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19968"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.3008493,
+          34.9254899
+        ]
+      },
+      "properties": {
+        "id": "19969",
+        "name": "道の駅宇津ノ谷峠（藤枝側）",
+        "prefecture": "静岡県",
+        "city": "藤枝市",
+        "address": "静岡県藤枝市岡部町岡部2190-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19969"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.3097174,
+          34.9374615
+        ]
+      },
+      "properties": {
+        "id": "19970",
+        "name": "道の駅宇津ノ谷峠（静岡側）",
+        "prefecture": "静岡県",
+        "city": "静岡市",
+        "address": "静岡県静岡市駿河区宇津ノ谷82-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19970"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.4105638,
+          37.8040262
+        ]
+      },
+      "properties": {
+        "id": "19971",
+        "name": "道の駅ふくしま",
+        "prefecture": "福島県",
+        "city": "福島市",
+        "address": "福島県福島市大笹生字月崎1番地の1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19971"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.2743740,
+          36.3555952
+        ]
+      },
+      "properties": {
+        "id": "19972",
+        "name": "道の駅かさま",
+        "prefecture": "茨城県",
+        "city": "笠間市",
+        "address": "茨城県笠間市手越22番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19972"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.4282285,
+          36.8778957
+        ]
+      },
+      "properties": {
+        "id": "19973",
+        "name": "道の駅KOKOくろべ",
+        "prefecture": "富山県",
+        "city": "黒部市",
+        "address": "富山県黒部市堀切925番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19973"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.8477336,
+          34.5889028
+        ]
+      },
+      "properties": {
+        "id": "19974",
+        "name": "道の駅なら歴史芸術文化村",
+        "prefecture": "奈良県",
+        "city": "天理市",
+        "address": "奈良県天理市杣之内町437-3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19974"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.5801255,
+          34.1581891
+        ]
+      },
+      "properties": {
+        "id": "19975",
+        "name": "道の駅くるくる なると",
+        "prefecture": "徳島県",
+        "city": "鳴門市",
+        "address": "徳島県鳴門市大津町備前島字蟹田の越338番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19975"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.2802085,
+          26.7046257
+        ]
+      },
+      "properties": {
+        "id": "19976",
+        "name": "道の駅やんばるパイナップルの丘 安波",
+        "prefecture": "沖縄県",
+        "city": "国頭村",
+        "address": "沖縄県国頭郡国頭村字安波1089番地7",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/19976"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.8321178,
+          35.9233631
+        ]
+      },
+      "properties": {
+        "id": "20043",
+        "name": "道の駅白山文化の里長滝",
+        "prefecture": "岐阜県",
+        "city": "郡上市",
+        "address": "岐阜県郡上市白鳥町長滝402-19",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/20043"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.9301230,
+          35.1889597
+        ]
+      },
+      "properties": {
+        "id": "20044",
+        "name": "道の駅杉原紙の里・多可",
+        "prefecture": "兵庫県",
+        "city": "多可町",
+        "address": "兵庫県多可郡多可町加美区鳥羽733-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/20044"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.0098438,
+          35.2412670
+        ]
+      },
+      "properties": {
+        "id": "21617",
+        "name": "道の駅あおがき",
+        "prefecture": "兵庫県",
+        "city": "丹波市",
+        "address": "兵庫県丹波市青垣町西芦田541",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/21617"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.2800036,
+          36.6558574
+        ]
+      },
+      "properties": {
+        "id": "21624",
+        "name": "道の駅みわ",
+        "prefecture": "茨城県",
+        "city": "常陸大宮市",
+        "address": "茨城県常陸大宮市鷲子272",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/21624"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.1645860,
+          37.8370740
+        ]
+      },
+      "properties": {
+        "id": "21777",
+        "name": "道の駅あがの",
+        "prefecture": "新潟県",
+        "city": "阿賀野市",
+        "address": "新潟県阿賀野市窪川原553番2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/21777"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.7036130,
+          34.4335380
+        ]
+      },
+      "properties": {
+        "id": "21778",
+        "name": "道の駅西条のん太の酒蔵",
+        "prefecture": "広島県",
+        "city": "東広島市",
+        "address": "7390041 広島県東広島市西条町寺家10020番地43",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/21778"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.9971089,
+          33.1067198
+        ]
+      },
+      "properties": {
+        "id": "21779",
+        "name": "道の駅うれしの まるく",
+        "prefecture": "佐賀県",
+        "city": "嬉野市",
+        "address": "佐賀県嬉野市嬉野町大字下宿甲4370番地2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/21779"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.7813410,
+          40.2264503
+        ]
+      },
+      "properties": {
+        "id": "21974",
+        "name": "道の駅いわて北三陸",
+        "prefecture": "岩手県",
+        "city": "久慈市",
+        "address": "岩手県久慈市夏井町鳥谷第7地割3-2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/21974"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.9853380,
+          36.0835560
+        ]
+      },
+      "properties": {
+        "id": "21975",
+        "name": "道の駅常総",
+        "prefecture": "茨城県",
+        "city": "常総市",
+        "address": "茨城県常総市むすびまち1番地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/21975"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.0530784,
+          36.4395754
+        ]
+      },
+      "properties": {
+        "id": "21976",
+        "name": "道の駅まえばし赤城",
+        "prefecture": "群馬県",
+        "city": "前橋市",
+        "address": "群馬県前橋市田口町36番地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/21976"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.1981481,
+          35.8950862
+        ]
+      },
+      "properties": {
+        "id": "21977",
+        "name": "道の駅越前たけふ",
+        "prefecture": "福井県",
+        "city": "越前市",
+        "address": "福井県越前市大屋町第38号5番地の１",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/21977"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2137590,
+          36.2057180
+        ]
+      },
+      "properties": {
+        "id": "22056",
+        "name": "道の駅和田宿ステーション",
+        "prefecture": "長野県",
+        "city": "小県郡",
+        "address": "長野県小県郡長和町和田2834番地5",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22056"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.2515550,
+          36.2887270
+        ]
+      },
+      "properties": {
+        "id": "22057",
+        "name": "道の駅蓮如の里あわら",
+        "prefecture": "福井県",
+        "city": "あわら市",
+        "address": "福井県あわら市吉崎1丁目801番地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22057"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.9354110,
+          35.6045460
+        ]
+      },
+      "properties": {
+        "id": "22058",
+        "name": "道の駅若狭美浜はまびより",
+        "prefecture": "福井県",
+        "city": "三方郡",
+        "address": "福井県三方郡美浜町松原第35号15番地の1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22058"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.1699930,
+          34.1282900
+        ]
+      },
+      "properties": {
+        "id": "22059",
+        "name": "道の駅海南サクアス",
+        "prefecture": "和歌山県",
+        "city": "海南市",
+        "address": "和歌山県海南市下津町小南51番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22059"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.3163990,
+          33.5032400
+        ]
+      },
+      "properties": {
+        "id": "22060",
+        "name": "道の駅まきのさんの道の駅・佐川",
+        "prefecture": "高知県",
+        "city": "高岡郡",
+        "address": "高知県高岡郡佐川町加茂2711番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22060"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.3748979,
+          31.6768862
+        ]
+      },
+      "properties": {
+        "id": "22061",
+        "name": "道の駅道の駅きたごう",
+        "prefecture": "宮崎県",
+        "city": "日南市",
+        "address": "宮崎県日南市北郷町郷之原乙1477番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22061"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.3120714,
+          38.1894528
+        ]
+      },
+      "properties": {
+        "id": "22266",
+        "name": "道の駅やまがた蔵王",
+        "prefecture": "山形県",
+        "city": "山形市",
+        "address": "山形県山形市表蔵王79番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22266"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.4311297,
+          38.7599139
+        ]
+      },
+      "properties": {
+        "id": "22267",
+        "name": "道の駅もがみ",
+        "prefecture": "山形県",
+        "city": "最上町",
+        "address": "山形県最上郡最上町大字志茂字柳ノ原1469番地50",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22267"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.9067542,
+          35.0007749
+        ]
+      },
+      "properties": {
+        "id": "22268",
+        "name": "道の駅グリーンファーム館山",
+        "prefecture": "千葉県",
+        "city": "館山市",
+        "address": "千葉県館山市稲274番地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22268"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7544065,
+          34.6694950
+        ]
+      },
+      "properties": {
+        "id": "22269",
+        "name": "道の駅クロスウェイなかまち",
+        "prefecture": "奈良県",
+        "city": "奈良市",
+        "address": "奈良県奈良市中町4694-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22269"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.5549927,
+          33.2564800
+        ]
+      },
+      "properties": {
+        "id": "22270",
+        "name": "道の駅たのうらら",
+        "prefecture": "大分県",
+        "city": "大分市",
+        "address": "大分県大分市大字神崎字梶原1228番-9",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22270"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.8577299,
+          40.4176783
+        ]
+      },
+      "properties": {
+        "id": "22370",
+        "name": "道の駅十和田湖",
+        "prefecture": "秋田県",
+        "city": "鹿角郡",
+        "address": "秋田県鹿角郡小坂町十和田湖字生出1番地2",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22370"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.4659290,
+          36.1286030
+        ]
+      },
+      "properties": {
+        "id": "22371",
+        "name": "道の駅八千穂高原",
+        "prefecture": "長野県",
+        "city": "南佐久郡",
+        "address": "長野県南佐久郡佐久穂町大字畑1190番1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22371"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.7962274,
+          32.5730705
+        ]
+      },
+      "properties": {
+        "id": "22372",
+        "name": "道の駅秘境の郷いずみ",
+        "prefecture": "熊本県",
+        "city": "八代市",
+        "address": "熊本県八代市泉町下岳3296-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22372"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.9542419,
+          27.8265287
+        ]
+      },
+      "properties": {
+        "id": "22373",
+        "name": "道の駅とくのしま",
+        "prefecture": "鹿児島県",
+        "city": "大島郡",
+        "address": "鹿児島県大島郡徳之島町花徳2206番地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22373"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4746169,
+          34.2965217
+        ]
+      },
+      "properties": {
+        "id": "22425",
+        "name": "道の駅かつらぎ西（下り線）",
+        "prefecture": "和歌山県",
+        "city": "かつらぎ町",
+        "address": "和歌山県伊都郡かつらぎ町大字笠田東1270-22",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22425"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.6802293,
+          43.3414214
+        ]
+      },
+      "properties": {
+        "id": "22522",
+        "name": "道の駅275つきがた",
+        "prefecture": "北海道",
+        "city": "月形町",
+        "address": "北海道樺戸郡月形町81番地10",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22522"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.1829907,
+          38.4242875
+        ]
+      },
+      "properties": {
+        "id": "22523",
+        "name": "道の駅東松島",
+        "prefecture": "宮城県",
+        "city": "東松島市",
+        "address": "宮城県東松島市小松字上二間堀112番地5",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22523"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5269573,
+          35.9929816
+        ]
+      },
+      "properties": {
+        "id": "22524",
+        "name": "道の駅べに花の郷おけがわ",
+        "prefecture": "埼玉県",
+        "city": "桶川市",
+        "address": "埼玉県桶川市川田谷4324番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22524"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.4503937,
+          35.4879653
+        ]
+      },
+      "properties": {
+        "id": "22525",
+        "name": "道の駅にしじま和紙の里かみすきパーク",
+        "prefecture": "山梨県",
+        "city": "身延町",
+        "address": "山梨県南巨摩郡身延町西嶋345番地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22525"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.0443153,
+          35.1378045
+        ]
+      },
+      "properties": {
+        "id": "22526",
+        "name": "道の駅マチテラス日進",
+        "prefecture": "愛知県",
+        "city": "日進市",
+        "address": "愛知県日進市本郷町前田33番地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22526"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.1225018,
+          34.8851477
+        ]
+      },
+      "properties": {
+        "id": "22527",
+        "name": "道の駅よかわ",
+        "prefecture": "兵庫県",
+        "city": "三木市",
+        "address": "兵庫県三木市吉川町吉安222",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22527"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.2953300,
+          33.5432904
+        ]
+      },
+      "properties": {
+        "id": "22528",
+        "name": "道の駅東洋町",
+        "prefecture": "高知県",
+        "city": "東洋町",
+        "address": "安芸郡東洋町白浜88−1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22528"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.4176926,
+          33.3342752
+        ]
+      },
+      "properties": {
+        "id": "22529",
+        "name": "道の駅かみみね",
+        "prefecture": "佐賀県",
+        "city": "上峰町",
+        "address": "佐賀県三養基郡上峰町大字坊所1550番地3",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22529"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.6384463,
+          43.2653305
+        ]
+      },
+      "properties": {
+        "id": "22681",
+        "name": "道の駅ふるびらたらこミュージアム",
+        "prefecture": "北海道",
+        "city": "古平町",
+        "address": "北海道古平郡古平町大字浜町40-4",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22681"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.3316947,
+          39.0183137
+        ]
+      },
+      "properties": {
+        "id": "22682",
+        "name": "道の駅だいとう",
+        "prefecture": "岩手県",
+        "city": "一関市",
+        "address": "岩手県一関市大東町渋民字西風47-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22682"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.1895098,
+          39.8437273
+        ]
+      },
+      "properties": {
+        "id": "22683",
+        "name": "道の駅もりおか渋民",
+        "prefecture": "岩手県",
+        "city": "盛岡市",
+        "address": "岩手県盛岡市渋民字渋民80番地42",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22683"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.9731475,
+          39.4370230
+        ]
+      },
+      "properties": {
+        "id": "22684",
+        "name": "道の駅ふなこし",
+        "prefecture": "岩手県",
+        "city": "山田町",
+        "address": "岩手県下閉伊郡山田町船越第6地割141番地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22684"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.3105427,
+          38.7816435
+        ]
+      },
+      "properties": {
+        "id": "22685",
+        "name": "道の駅新庄エコロジーガーデン原蚕の杜",
+        "prefecture": "山形県",
+        "city": "新庄市",
+        "address": "山形県新庄市十日町6000番地の1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22685"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.9056271,
+          36.9445056
+        ]
+      },
+      "properties": {
+        "id": "22686",
+        "name": "道の駅いわき・ら・ら・ミュウ",
+        "prefecture": "福島県",
+        "city": "いわき市",
+        "address": "福島県いわき市小名浜字辰巳町43番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22686"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.3785516,
+          35.3202671
+        ]
+      },
+      "properties": {
+        "id": "22687",
+        "name": "道の駅湘南ちがさき",
+        "prefecture": "神奈川県",
+        "city": "茅ヶ崎市",
+        "address": "神奈川県茅ヶ崎市柳島1546番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22687"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2127871,
+          34.7770225
+        ]
+      },
+      "properties": {
+        "id": "22688",
+        "name": "道の駅そらっと牧之原",
+        "prefecture": "静岡県",
+        "city": "牧之原市",
+        "address": "静岡県牧之原市坂部582-1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22688"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.0456113,
+          32.7852271
+        ]
+      },
+      "properties": {
+        "id": "22689",
+        "name": "道の駅251いいもりじゃがーロード",
+        "prefecture": "長崎県",
+        "city": "諫早市",
+        "address": "長崎県諫早市飯盛町上原1376番地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22689"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.9624088,
+          34.0480725
+        ]
+      },
+      "properties": {
+        "id": "22788",
+        "name": "道の駅きなりの郷 下北山",
+        "prefecture": "きなりの郷　下北山",
+        "city": "",
+        "address": "奈良県吉野郡下北山村上池原1026番地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22788"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.4301810,
+          32.9892547
+        ]
+      },
+      "properties": {
+        "id": "22789",
+        "name": "道の駅ウェルネスあらお",
+        "prefecture": "熊本県",
+        "city": "荒尾市",
+        "address": "熊本県荒尾市大島1437番地南新地地区12街区1画地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22789"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2043080,
+          34.9279112
+        ]
+      },
+      "properties": {
+        "id": "22976",
+        "name": "道の駅ゆとりえせとや",
+        "prefecture": "静岡県",
+        "city": "藤枝市",
+        "address": "静岡藤枝市本郷5445番地",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22976"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.4297082,
+          37.1664616
+        ]
+      },
+      "properties": {
+        "id": "22977",
+        "name": "道の駅石川",
+        "prefecture": "福島県",
+        "city": "石川町",
+        "address": "福島県石川郡石川町字大橋58番地1",
+        "road": "",
+        "url": "https://www.michi-no-eki.jp/stations/views/22977"
       }
     }
   ]
