@@ -468,7 +468,7 @@
 <div id="nearby-panel">
     <div id="nearby-panel-header">
         <span id="nearby-panel-title">表示フィルター</span>
-        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v86</span>
+        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v87</span>
         <button id="nearby-panel-close" onclick="closeNearby()">×</button>
     </div>
     <div id="filter-checkboxes">
@@ -626,7 +626,7 @@
 
 // --- スムージング用変数 ---
 let currentSmoothedHeading = null;
-const smoothingFactor = 0.05; // センサー入力の平滑化（小さいほど滑らか）
+const smoothingFactor = 0.03; // センサー入力の平滑化（小さいほど滑らか）
 
 // 角度の差分を-180〜180の範囲で計算するヘルパー（最短距離で回転させるため）
 function getShortestAngleDiff(current, target) {
@@ -688,32 +688,52 @@ function handleOrientation(event) {
 // --- rAFループで地図bearingをなめらかに追従（震え防止） ---
 // 閾値未満の変化は無視することで静止中の震えを抑える
 const BEARING_THRESHOLD = 1.2; // この角度(度)未満の変化は無視
-const BEARING_LERP      = 0.15; // 1フレームあたりの追従率（小さいほどゆっくり）
-let rafBearing = null;
+const BEARING_LERP      = 0.06; // 1フレームあたりの追従率（小さいほどゆっくり）
+const POSITION_LERP     = 0.08; // 位置補間率（小さいほどなめらか）
+let rafBearing  = null;
+let rafLng      = null;
+let rafLat      = null;
 
 function bearingRafLoop() {
-    if (trackingMode === 2 && !isZooming) {
-        const target = deviceHeading;
+    if (trackingMode > 0 && !isZooming && currentLocation) {
+        // ── 位置補間（なめらかな前進移動） ──
+        if (rafLng === null) { rafLng = currentLocation.lng; rafLat = currentLocation.lat; }
+        rafLng += (currentLocation.lng - rafLng) * POSITION_LERP;
+        rafLat += (currentLocation.lat - rafLat) * POSITION_LERP;
 
-        if (rafBearing === null) {
-            rafBearing = target;
-        }
-
-        const diff = getShortestAngleDiff(rafBearing, target);
-
-        // 閾値以上の差があるときだけ地図を動かす
-        if (Math.abs(diff) >= BEARING_THRESHOLD) {
-            rafBearing = (rafBearing + diff * BEARING_LERP + 360) % 360;
-            map.setBearing(rafBearing);
-
-            // マーカー扇も地図bearing基準で同期
+        // ── bearing補間（向き追従モードのみ） ──
+        if (trackingMode === 2) {
+            if (rafBearing === null) { rafBearing = deviceHeading; }
+            const diff = getShortestAngleDiff(rafBearing, deviceHeading);
+            if (Math.abs(diff) >= BEARING_THRESHOLD) {
+                rafBearing = (rafBearing + diff * BEARING_LERP + 360) % 360;
+            }
+            map.easeTo({
+                center: [rafLng, rafLat],
+                bearing: rafBearing,
+                zoom: trackingZoom,
+                pitch: 50,
+                duration: 0,
+                easing: (t) => t
+            });
+            // マーカー扇を同期
             if (currentMarker) {
                 const relativeHeading = getShortestAngleDiff(rafBearing, deviceHeading);
                 currentMarker.getElement().style.setProperty('--heading', `${relativeHeading}deg`);
             }
+        } else {
+            // trackingMode === 1: 位置のみ追従
+            map.easeTo({
+                center: [rafLng, rafLat],
+                zoom: trackingZoom,
+                duration: 0,
+                easing: (t) => t
+            });
         }
     } else {
-        rafBearing = null;
+        rafBearing  = null;
+        rafLng      = null;
+        rafLat      = null;
     }
 
     requestAnimationFrame(bearingRafLoop);
@@ -878,15 +898,9 @@ map.on('zoomend', () => {
                     trackingMode = 1;
                     updateGeolocateButton();
                     map.easeTo({ center: [lng, lat], zoom: trackingZoom });
-                } else if (trackingMode > 0 && !isZooming) {
-                     map.easeTo({
-                        center: [lng, lat],
-                        zoom: trackingZoom,
-                        pitch: trackingMode === 2 ? 50 : 0,
-                        duration: 1000, // 1秒かけてアニメーション
-                        easing: (t) => t // 線形的なイージング
-                    });
                 }
+                // 位置更新はrAFループ(bearingRafLoop)がなめらかに反映するため
+                // ここではeaseTo不要
             }, (err) => {
                 console.warn('[GPS] エラー:', err.code, err.message);
                 alert('現在地が取得できませんでした。');
