@@ -468,7 +468,7 @@
 <div id="nearby-panel">
     <div id="nearby-panel-header">
         <span id="nearby-panel-title">表示フィルター</span>
-        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v89</span>
+        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v90</span>
         <button id="nearby-panel-close" onclick="closeNearby()">×</button>
     </div>
     <div id="filter-checkboxes">
@@ -735,13 +735,13 @@ function bearingRafLoop() {
 map.on('dragstart', () => {
     if (trackingMode > 0) {
         trackingMode = 0;
-        // rAFループの補間値をリセットして追従を即座に停止
         rafBearing = null;
         rafLng     = null;
         rafLat     = null;
         map.stop();
         updateGeolocateButton();
-        map.easeTo({ bearing: 0, pitch: 0 });
+        map.setBearing(0);
+        map.setPitch(0);
     }
 });
 
