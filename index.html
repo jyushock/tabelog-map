@@ -468,7 +468,7 @@
 <div id="nearby-panel">
     <div id="nearby-panel-header">
         <span id="nearby-panel-title">表示フィルター</span>
-        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v90</span>
+        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v91</span>
         <button id="nearby-panel-close" onclick="closeNearby()">×</button>
     </div>
     <div id="filter-checkboxes">
@@ -686,59 +686,66 @@ function handleOrientation(event) {
 }
 
 // --- rAFループで地図bearingをなめらかに追従（震え防止） ---
-// 閾値未満の変化は無視することで静止中の震えを抑える
-const BEARING_THRESHOLD = 1.2; // この角度(度)未満の変化は無視
-const BEARING_LERP      = 0.06; // 1フレームあたりの追従率（小さいほどゆっくり）
-const POSITION_LERP     = 0.08; // 位置補間率（小さいほどなめらか）
+const BEARING_THRESHOLD = 1.2;
+const BEARING_LERP      = 0.06;
+const POSITION_LERP     = 0.08;
 let rafBearing  = null;
 let rafLng      = null;
 let rafLat      = null;
+let rafId       = null; // ループID（nullなら停止中）
+
+function startRafLoop() {
+    if (rafId !== null) return; // 既に起動中なら何もしない
+    rafId = requestAnimationFrame(bearingRafLoop);
+}
+
+function stopRafLoop() {
+    if (rafId !== null) {
+        cancelAnimationFrame(rafId);
+        rafId = null;
+    }
+    rafBearing = null;
+    rafLng     = null;
+    rafLat     = null;
+}
 
 function bearingRafLoop() {
     if (trackingMode > 0 && !isZooming && currentLocation) {
-        // ── 位置補間（なめらかな前進移動） ──
+        // ── 位置補間 ──
         if (rafLng === null) { rafLng = currentLocation.lng; rafLat = currentLocation.lat; }
         rafLng += (currentLocation.lng - rafLng) * POSITION_LERP;
         rafLat += (currentLocation.lat - rafLat) * POSITION_LERP;
 
-        // ── bearing補間（向き追従モードのみ） ──
         if (trackingMode === 2) {
+            // ── bearing補間 ──
             if (rafBearing === null) { rafBearing = deviceHeading; }
             const diff = getShortestAngleDiff(rafBearing, deviceHeading);
             if (Math.abs(diff) >= BEARING_THRESHOLD) {
                 rafBearing = (rafBearing + diff * BEARING_LERP + 360) % 360;
             }
-            // 同期メソッドで即座に反映（非同期キューに残らない）
             map.setCenter([rafLng, rafLat]);
             map.setBearing(rafBearing);
             map.setPitch(50);
 
-            // マーカー扇を同期
+            // ── マーカー扇アイコン更新 ──
             if (currentMarker) {
                 const relativeHeading = getShortestAngleDiff(rafBearing, deviceHeading);
                 currentMarker.getElement().style.setProperty('--heading', `${relativeHeading}deg`);
             }
         } else {
-            // trackingMode === 1: 位置のみ追従（同期メソッド）
+            // trackingMode === 1: 位置のみ
             map.setCenter([rafLng, rafLat]);
         }
-    } else {
-        rafBearing  = null;
-        rafLng      = null;
-        rafLat      = null;
     }
 
-    requestAnimationFrame(bearingRafLoop);
+    rafId = requestAnimationFrame(bearingRafLoop);
 }
 
 // --- 1. 地図ドラッグ（移動）開始時の処理を修正 ---
 map.on('dragstart', () => {
     if (trackingMode > 0) {
         trackingMode = 0;
-        rafBearing = null;
-        rafLng     = null;
-        rafLat     = null;
-        map.stop();
+        stopRafLoop();
         updateGeolocateButton();
         map.setBearing(0);
         map.setPitch(0);
@@ -842,10 +849,11 @@ map.on('zoomend', () => {
         document.getElementById('geolocate-btn').addEventListener('click', () => {
             trackingMode = (trackingMode + 1) % 3;
             if (trackingMode === 2) {
-                requestDeviceOrientation(); // 向き追従モードで権限要求
+                requestDeviceOrientation();
             }
 
             if (trackingMode > 0 && currentLocation) {
+                startRafLoop();
                 map.easeTo({
                     center: [currentLocation.lng, currentLocation.lat],
                     zoom: trackingZoom,
@@ -854,7 +862,8 @@ map.on('zoomend', () => {
                     duration: 500
                 });
             } else if (trackingMode === 0) {
-                map.easeTo({ bearing: 0, pitch: 0 }); // 追従オフで回転と傾きをリセット
+                stopRafLoop();
+                map.easeTo({ bearing: 0, pitch: 0 });
             }
             updateGeolocateButton();
         });
@@ -867,9 +876,6 @@ map.on('zoomend', () => {
             map.easeTo({ zoom: map.getZoom() - 0.5, duration: 300, essential: true });
         });
 
-
-        // bearingのrAFループ開始
-        requestAnimationFrame(bearingRafLoop);
 
         // watchPositionで常時位置監視（地図ロード後に開始）
         if (navigator.geolocation) {
@@ -890,9 +896,10 @@ map.on('zoomend', () => {
                     hadFirstFix = true;
                     trackingMode = 1;
                     updateGeolocateButton();
+                    startRafLoop();
                     map.easeTo({ center: [lng, lat], zoom: trackingZoom });
                 }
-                // 位置更新はrAFループ(bearingRafLoop)がなめらかに反映するため
+                // 位置更新はrAFループがなめらかに反映するため
                 // ここではeaseTo不要
             }, (err) => {
                 console.warn('[GPS] エラー:', err.code, err.message);
@@ -944,6 +951,7 @@ map.on('zoomend', () => {
                 map.on('click', `${conf.id}-bg`, (e) => {
                     if (trackingMode > 0) {
                         trackingMode = 0;
+                        stopRafLoop();
                         updateGeolocateButton();
                     }
                     if (!e.features || !e.features.length) return;
@@ -1072,6 +1080,7 @@ map.on('zoomend', () => {
     function onResultClick(item) {
         if (trackingMode > 0) {
             trackingMode = 0;
+            stopRafLoop();
             updateGeolocateButton();
             map.easeTo({ bearing: 0, pitch: 0 });
         }
