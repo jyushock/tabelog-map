@@ -844,8 +844,8 @@ map.on('zoomend', () => {
                     map.setLayoutProperty(layer.id, 'text-variable-anchor', ['literal', null]);
                     map.setLayoutProperty(layer.id, 'text-anchor', 'top');
                     map.setLayoutProperty(layer.id, 'text-offset', ['case', isMainStation, ['literal', [0, 0.9]], isBusStop, ['literal', [0, 0.6]], ['literal', [0, 0.4]]]);
-                    map.setLayoutProperty(layer.id, 'icon-size', ['case', isMainStation, 1.2, 0.8]);
-                    map.setLayoutProperty(layer.id, 'text-size', ['case', isMainStation, 15, 11]);
+                    map.setLayoutProperty(layer.id, 'icon-size', ['case', isMainStation, 1.0, 0.8]);
+                    map.setLayoutProperty(layer.id, 'text-size', ['case', isMainStation, 12, 11]);
                     map.setLayoutProperty(layer.id, 'visibility', 'visible');
                     map.setLayerZoomRange(layer.id, 1, 24); 
                     map.setPaintProperty(layer.id, 'text-color', ['case', isMainStation, '#0D47A1', isBusStop, '#2E7D32', '#444444']);
