@@ -470,7 +470,7 @@
 <div id="nearby-panel">
     <div id="nearby-panel-header">
         <span id="nearby-panel-title">表示フィルター</span>
-        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v110</span>
+        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v111</span>
         <button id="nearby-panel-close" onclick="closeNearby()">×</button>
     </div>
     <div id="filter-checkboxes">
@@ -1281,9 +1281,14 @@ map.on('zoomend', () => {
         const distSection = document.getElementById('nearby-dist-section');
         distSection.style.display = nearbyState.cats.includes('spot') ? 'block' : 'none';
 
-        // スポット選択時は距離セクションが見えるようスクロール
+        // スポット選択時は距離セクションが探すボタンに隠れないようパネルをスクロール
         if (nearbyState.cats.includes('spot')) {
-            setTimeout(() => distSection.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
+            setTimeout(() => {
+                const panel = document.getElementById('nearby-panel');
+                const btnHeight = document.getElementById('nearby-search-btn').offsetHeight + 20;
+                const distBottom = distSection.offsetTop + distSection.offsetHeight;
+                panel.scrollTop = distBottom - panel.offsetHeight + btnHeight;
+            }, 50);
         }
     }
     function selectNearbyDist(el) {
