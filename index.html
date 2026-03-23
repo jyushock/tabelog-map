@@ -470,7 +470,7 @@
 <div id="nearby-panel">
     <div id="nearby-panel-header">
         <span id="nearby-panel-title">表示フィルター</span>
-        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v113</span>
+        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v111</span>
         <button id="nearby-panel-close" onclick="closeNearby()">×</button>
     </div>
     <div id="filter-checkboxes">
@@ -1079,30 +1079,48 @@ map.on('zoomend', () => {
         }).slice(0, 24);
     }
     
+    let geocodeTimer = null, searchRequestId = 0;
+    // muni.js辞書: addressCode → "都道府県市区町村"
+    let muniDict = {};
+    fetch('https://maps.gsi.go.jp/js/muni.js')
+        .then(r => r.text())
+        .then(js => {
+            const re = /MUNI_ARRAY\["(\d+)"\]\s*=\s*'(\d+),([^,]+),\d+,([^']+)'/g;
+            let m;
+            while ((m = re.exec(js)) !== null) {
+                const pref = m[3].trim().replace(/[\s　]/g, '');
+                const city = m[4].trim().replace(/[\s　]/g, '');
+                muniDict[m[1]] = `${pref}${city}`;
+            }
+        })
+        .catch(() => {});
 
-    // Nominatim検索（Enter/検索ボタン押下時のみ呼ぶこと）
     async function searchGeocode(query) {
         try {
-            const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&format=json&addressdetails=1&countrycodes=jp&limit=24&accept-language=ja`;
-            const res = await fetch(url, {
-                headers: { 'Accept-Language': 'ja' }
-            });
+            const scoreResult = (title, q) => { if(title===q)return 100; if(title.startsWith(q))return 80; if(title.includes('駅')&&q.includes('駅'))return 60; if(title.startsWith(q.replace(/駅$/,'')))return 40; return 10; };
+            const res = await fetch(`https://msearch.gsi.go.jp/address-search/AddressSearch?q=${encodeURIComponent(query)}`);
             const data = await res.json();
             return data.map(f => {
-                const a = f.address || {};
-                // 住所を組み立て: 都道府県＋市区町村＋町＋丁目
-                const parts = [a.province, a.city || a.town || a.village, a.quarter, a.neighbourhood]
-                    .filter(Boolean);
-                const sub = parts.join('');
-                const label = f.name || f.display_name.split(',')[0].trim();
-                return {
-                    type: 'place',
-                    label,
-                    sub: label === sub ? '' : sub,
-                    coords: [parseFloat(f.lon), parseFloat(f.lat)],
-                    properties: {},
-                };
-            });
+                const title = f.properties.title;
+                const code  = f.properties.addressCode || '';
+
+                let label, sub;
+                if (code) {
+                    // addressCodeがある場合: labelはtitle、subは都道府県＋市区町村
+                    const prefCity = muniDict[code] || muniDict[String(parseInt(code, 10))] || '';
+                    label = title;
+                    sub   = prefCity;
+                } else {
+                    // addressCodeが空の場合: titleに都道府県が含まれている
+                    label = title;
+                    sub   = title;
+                }
+
+                // labelとsubが同じ場合はsubを空に
+                if (label === sub) sub = '';
+
+                return { type: 'place', label, sub, coords: f.geometry.coordinates, properties: {}, _score: scoreResult(title, query) };
+            }).sort((a, b) => b._score - a._score).slice(0, 24);
         } catch { return []; }
     }
 
@@ -1185,36 +1203,32 @@ map.on('zoomend', () => {
         input.dispatchEvent(new Event('input'));
     }
 
-    document.getElementById('search-input').addEventListener('input', (e) => {
+    document.getElementById('search-input').addEventListener('input', async (e) => {
         const q = e.target.value.trim();
         document.getElementById('search-clear').style.display = q ? 'block' : 'none';
-        if (!q) {
-            document.getElementById('search-results').style.display = 'none';
-            return;
-        }
-        // 自前スポットのみ即時表示
-        const local = searchLocal(q);
-        renderResults(local, []);
-    });
-
-    document.getElementById('search-input').addEventListener('keydown', async (e) => {
-        if (e.key !== 'Enter') return;
-        const q = e.target.value.trim();
+        document.getElementById('search-results').style.display = q ? 'block' : 'none';
         if (!q) return;
-        e.target.blur();
-        const local = searchLocal(q);
-        const places = await searchGeocode(q);
-        renderResults(local, places);
-    });
 
+        const local = searchLocal(q);
+        const reqId = ++searchRequestId;
+        clearTimeout(geocodeTimer);
+        geocodeTimer = setTimeout(async () => {
+            const places = await searchGeocode(q);
+            if (reqId === searchRequestId) renderResults(local, places);
+        }, 300);
+    });
     // 検索ボックスにフォーカスが戻ったとき、ワードが残っていれば結果を再表示
     document.getElementById('search-input').addEventListener('focus', async (e) => {
         const q = e.target.value.trim();
         if (!q) return;
         document.getElementById('search-clear').style.display = 'block';
         const local = searchLocal(q);
-        const places = await searchGeocode(q);
-        renderResults(local, places);
+        const reqId = ++searchRequestId;
+        clearTimeout(geocodeTimer);
+        geocodeTimer = setTimeout(async () => {
+            const places = await searchGeocode(q);
+            if (reqId === searchRequestId) renderResults(local, places);
+        }, 300);
     });
     document.getElementById('search-clear').addEventListener('click', clearSearch);
     document.getElementById('map').addEventListener('click', () => {
