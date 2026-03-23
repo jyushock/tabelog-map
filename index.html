@@ -469,7 +469,7 @@
 <div id="nearby-panel">
     <div id="nearby-panel-header">
         <span id="nearby-panel-title">表示フィルター</span>
-        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v105</span>
+        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v106</span>
         <button id="nearby-panel-close" onclick="closeNearby()">×</button>
     </div>
     <div id="filter-checkboxes">
@@ -1079,16 +1079,46 @@ map.on('zoomend', () => {
     }
     
     let geocodeTimer = null, searchRequestId = 0;
+    // muni.js辞書: addressCode → "都道府県市区町村"
+    let muniDict = {};
+    fetch('https://maps.gsi.go.jp/js/muni.js')
+        .then(r => r.text())
+        .then(js => {
+            const re = /MUNI_ARRAY\["(\d+)"\]\s*=\s*'(\d+),([^,]+),\d+,([^']+)'/g;
+            let m;
+            while ((m = re.exec(js)) !== null) {
+                const pref = m[3].trim().replace(/[\s　]/g, '');
+                const city = m[4].trim().replace(/[\s　]/g, '');
+                muniDict[m[1]] = `${pref}${city}`;
+            }
+        })
+        .catch(() => {});
+
     async function searchGeocode(query) {
         try {
-            const PREF_MAP={'01':'北海道','02':'青森県','03':'岩手県','04':'宮城県','05':'秋田県','06':'山形県','07':'福島県','08':'茨城県','09':'栃木県','10':'群馬県','11':'埼玉県','12':'千葉県','13':'東京都','14':'神奈川県','15':'新潟県','16':'富山県','17':'石川県','18':'福井県','19':'山梨県','20':'長野県','21':'岐阜県','22':'静岡県','23':'愛知県','24':'三重県','25':'滋賀県','26':'京都府','27':'大阪府','28':'兵庫県','29':'奈良県','30':'和歌山県','31':'鳥取県','32':'島根県','33':'岡山県','34':'広島県','35':'山口県','36':'徳島県','37':'香川県','38':'愛媛県','39':'高知県','40':'福岡県','41':'佐賀県','42':'長崎県','43':'熊本県','44':'大分県','45':'宮崎県','46':'鹿児島県','47':'沖縄県'};
-            const getPref = code => PREF_MAP[(String(code).padStart(5,'0')).slice(0,2)] || '';
             const scoreResult = (title, q) => { if(title===q)return 100; if(title.startsWith(q))return 80; if(title.includes('駅')&&q.includes('駅'))return 60; if(title.startsWith(q.replace(/駅$/,'')))return 40; return 10; };
             const res = await fetch(`https://msearch.gsi.go.jp/address-search/AddressSearch?q=${encodeURIComponent(query)}`);
             const data = await res.json();
             return data.map(f => {
-                const label = f.properties.title, pref = getPref(f.properties.addressCode);
-                return { type: 'place', label: (pref && !label.includes(pref)) ? `${label}（${pref}）` : label, sub: label, coords: f.geometry.coordinates, properties: {}, _score: scoreResult(label, query) };
+                const title = f.properties.title;
+                const code  = f.properties.addressCode || '';
+
+                let label, sub;
+                if (code) {
+                    // addressCodeがある場合: labelはtitle、subは都道府県＋市区町村
+                    const prefCity = muniDict[code] || muniDict[String(parseInt(code, 10))] || '';
+                    label = title;
+                    sub   = prefCity;
+                } else {
+                    // addressCodeが空の場合: titleに都道府県が含まれている
+                    label = title;
+                    sub   = title;
+                }
+
+                // labelとsubが同じ場合はsubを空に
+                if (label === sub) sub = '';
+
+                return { type: 'place', label, sub, coords: f.geometry.coordinates, properties: {}, _score: scoreResult(title, query) };
             }).sort((a, b) => b._score - a._score).slice(0, 6);
         } catch { return []; }
     }
