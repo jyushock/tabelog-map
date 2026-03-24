@@ -470,7 +470,7 @@
 <div id="nearby-panel">
     <div id="nearby-panel-header">
         <span id="nearby-panel-title">表示フィルター</span>
-        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v111</span>
+        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v112</span>
         <button id="nearby-panel-close" onclick="closeNearby()">×</button>
     </div>
     <div id="filter-checkboxes">
@@ -690,7 +690,7 @@ function handleOrientation(event) {
 // --- rAFループで地図bearingをなめらかに追従（震え防止） ---
 const BEARING_THRESHOLD = 1.2;
 const BEARING_LERP      = 0.04;
-const POSITION_LERP     = 0.02;
+const POSITION_LERP     = 0.05;
 let rafBearing  = null;
 let rafLng      = null;
 let rafLat      = null;
@@ -717,6 +717,11 @@ function bearingRafLoop() {
         if (rafLng === null) { rafLng = currentLocation.lng; rafLat = currentLocation.lat; }
         rafLng += (currentLocation.lng - rafLng) * POSITION_LERP;
         rafLat += (currentLocation.lat - rafLat) * POSITION_LERP;
+
+        // マーカーも補間済み座標で更新
+        if (currentMarker) {
+            currentMarker.setLngLat([rafLng, rafLat]);
+        }
 
         if (trackingMode === 2) {
             // ── bearing補間 ──
@@ -917,9 +922,9 @@ map.on('zoomend', () => {
                     const el = document.createElement('div');
                     el.className = 'current-location-dot';
                     currentMarker = new maplibregl.Marker({ element: el }).setLngLat([lng, lat]).addTo(map);
-                } else {
-                    currentMarker.setLngLat([lng, lat]);
                 }
+                // マーカー位置の更新はrAFループの補間済み座標で行うため
+                // ここではsetLngLatしない
 
                 if (!hadFirstFix) {
                     hadFirstFix = true;
