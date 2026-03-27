@@ -497,17 +497,17 @@
             <div class="nearby-cat-icon">🛒</div>
             <div class="nearby-cat-label">スーパー</div>
         </div>
-        <div class="nearby-cat-item" data-cat="busstop" onclick="selectNearbyCat(this)">
-            <div class="nearby-cat-icon">🚌</div>
-            <div class="nearby-cat-label">バス停</div>
-        </div>
-        <div class="nearby-cat-item" data-cat="station" onclick="selectNearbyCat(this)">
-            <div class="nearby-cat-icon">🚉</div>
-            <div class="nearby-cat-label">駅</div>
+        <div class="nearby-cat-item" data-cat="transit" onclick="selectNearbyCat(this)">
+            <div class="nearby-cat-icon">🚆</div>
+            <div class="nearby-cat-label">交通機関</div>
         </div>
         <div class="nearby-cat-item" data-cat="restaurant" onclick="selectNearbyCat(this)">
             <div class="nearby-cat-icon">🍽</div>
             <div class="nearby-cat-label">レストラン</div>
+        </div>
+        <div class="nearby-cat-item" data-cat="cafe" onclick="selectNearbyCat(this)">
+            <div class="nearby-cat-icon">☕</div>
+            <div class="nearby-cat-label">カフェ</div>
         </div>
         <div class="nearby-cat-item" data-cat="museum" onclick="selectNearbyCat(this)">
             <div class="nearby-cat-icon">🏛</div>
@@ -1307,7 +1307,7 @@ map.on('zoomend', () => {
         return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
     }
 
-    const gmapKeywords = { supermarket: 'スーパー', busstop: 'バス停', station: '駅', restaurant: 'レストラン OR カフェ', museum: 'ミュージアム', history: '歴史館 OR 資料館', memorial: '博物館 OR 記念館', ramen: 'ラーメン', udon: 'うどん', soba: 'そば', sightseeing: '観光スポット OR 像' };
+    const gmapKeywords = { supermarket: 'スーパー', transit: '駅 OR バス停', restaurant: 'レストラン', cafe: 'カフェ', museum: 'ミュージアム', history: '歴史館 OR 資料館', memorial: '博物館 OR 記念館', ramen: 'ラーメン', udon: 'うどん', soba: 'そば', sightseeing: '観光スポット OR 像' };
     let nearbyState = { cats: ['supermarket'], dist: 5 };
     const filterState = { shop: true, castle: true, michi: true, manhole: true };
     const labelState  = { shop: true, castle: true, michi: true };
