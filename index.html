@@ -611,7 +611,7 @@
     let currentMarker = null;
     let currentLocation = null;
     let trackingMode = 0; // 0:オフ, 1:追従, 2:追従+ヘディング
-    let trackingZoom = 17;
+
     let hadFirstFix = false;
     let isZooming = false;
     let deviceHeading = 0;
@@ -798,15 +798,9 @@ map.getCanvas().addEventListener('touchstart', () => {
     }
 }, { passive: true });
 
-// --- 2. ズーム終了時の処理を修正（追従用ズームレベルを更新） ---
+// --- 2. ズーム終了時の処理 ---
 map.on('zoomstart', () => { isZooming = true; });
-map.on('zoomend', () => {
-    isZooming = false;
-    // 追従モード中にズームが変更されたら、その値を次からの追従ズームとして保持する
-    if (trackingMode > 0) {
-        trackingZoom = map.getZoom();
-    }
-});
+map.on('zoomend', () => { isZooming = false; });
 
     // ボタンの見た目を更新
     function updateGeolocateButton() {
@@ -927,7 +921,7 @@ map.on('zoomend', () => {
                 startRafLoop();
                 map.easeTo({
                     center: [currentLocation.lng, currentLocation.lat],
-                    zoom: trackingZoom,
+                    zoom: map.getZoom(),
                     bearing: trackingMode === 2 ? deviceHeading : 0,
                     pitch: trackingMode === 2 ? 50 : 0,
                     duration: 500
