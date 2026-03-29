@@ -69,12 +69,6 @@
         @keyframes spin {
             to { transform: rotate(360deg); }
         }
-        #geolocate-btn-wrap {
-            position: fixed;
-            right: 10px;
-            bottom: 70px;
-            z-index: 200;
-        }
         #zoom-btn-wrap {
             position: fixed;
             right: 10px;
@@ -113,13 +107,6 @@
             font-size: 18px;
         }
         #north-reset-btn:hover { background-color: rgba(255,255,255,1); }
-        #nearby-btn-wrap {
-            position: fixed;
-            left: 10px;
-            bottom: 60px;
-            z-index: 200;
-        }
-        
         /* ボタンの共通スタイル */
         #toggle-layers-btn {
             width: 44px;
@@ -474,25 +461,18 @@
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>
     </button>
     <button id="north-reset-btn" title="真北にリセット">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 9 22 9 16.5 14 18.5 21 12 17 5.5 21 7.5 14 2 9 9 9"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="14" x2="12" y2="4"/><polyline points="8 8 12 4 16 8"/>
+            <text x="12" y="22" text-anchor="middle" font-size="8" font-weight="bold" fill="currentColor" stroke="none" font-family="sans-serif">N</text>
+        </svg>
     </button>
 </div>
 <div id="zoom-btn-wrap">
     <button id="zoom-in-btn" title="ズームイン">+</button>
     <button id="zoom-out-btn" title="ズームアウト">-</button>
 </div>
-<div id="geolocate-btn-wrap">
-    <button id="geolocate-btn" title="現在地">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/>
-            <line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/>
-        </svg>
-    </button>
-</div>
-<div id="nearby-btn-wrap">
-    <button id="nearby-btn" onclick="toggleNearby()" title="メニュー"><span class="hamburger-icon"></span></button>
-</div>
 <div id="bottom-bar">
+    <button id="nearby-btn" onclick="toggleNearby()" title="メニュー"><span class="hamburger-icon"></span></button>
     <div id="search-container">
         <div id="search-box">
             <span id="search-icon">🔍</span>
@@ -501,6 +481,12 @@
             <button id="search-clear">×</button>
         </div>
     </div>
+    <button id="geolocate-btn" title="現在地">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/>
+            <line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/>
+        </svg>
+    </button>
 </div>
 <div id="nearby-overlay" onclick="closeNearby()"></div>
 <div id="nearby-panel">
