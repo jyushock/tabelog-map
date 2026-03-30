@@ -770,8 +770,7 @@ map.on('dragstart', () => {
         stopRafLoop();
         updateGeolocateButton();
         if (!wasMode2) {
-            map.setBearing(0);
-            map.setPitch(0);
+            map.easeTo({ bearing: 0, pitch: 0, duration: 200 });
         }
     }
 });
@@ -783,8 +782,7 @@ map.getCanvas().addEventListener('touchstart', () => {
         stopRafLoop();
         updateGeolocateButton();
         if (!wasMode2) {
-            map.setBearing(0);
-            map.setPitch(0);
+            map.easeTo({ bearing: 0, pitch: 0, duration: 200 });
         }
     }
 }, { passive: true });
@@ -1205,7 +1203,7 @@ map.on('zoomend', () => { isZooming = false; });
             map.easeTo({ bearing: 0, pitch: 0 });
         }
         clearSearch();
-        map.jumpTo({ center: item.coords, zoom: map.getZoom() });
+        map.easeTo({ center: item.coords, zoom: Math.max(map.getZoom(), 15), duration: 350, essential: true });
         if (item.type !== 'place') {
             setTimeout(() => showPopupForItem(item), 300);
         }
