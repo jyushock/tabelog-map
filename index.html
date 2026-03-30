@@ -471,7 +471,7 @@
 <div id="nearby-panel">
     <div id="nearby-panel-header">
         <span id="nearby-panel-title">表示フィルター</span>
-        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v117</span>
+        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v118</span>
         <button id="nearby-panel-close" onclick="closeNearby()">×</button>
     </div>
     <div id="filter-checkboxes">
@@ -770,7 +770,7 @@ map.on('dragstart', () => {
         stopRafLoop();
         updateGeolocateButton();
         if (!wasMode2) {
-            map.easeTo({ bearing: 0, pitch: 0, duration: 200, essential: true });
+            map.easeTo({ bearing: 0, pitch: 0, duration: 350, essential: true });
         }
     }
 });
@@ -782,7 +782,7 @@ map.getCanvas().addEventListener('touchstart', () => {
         stopRafLoop();
         updateGeolocateButton();
         if (!wasMode2) {
-            map.easeTo({ bearing: 0, pitch: 0, duration: 200, essential: true });
+            map.easeTo({ bearing: 0, pitch: 0, duration: 350, essential: true });
         }
     }
 }, { passive: true });
@@ -907,18 +907,18 @@ map.on('zoomend', () => { isZooming = false; });
             }
 
             if (trackingMode > 0 && currentLocation) {
-                startRafLoop();
                 map.easeTo({
                     center: [currentLocation.lng, currentLocation.lat],
                     zoom: map.getZoom(),
                     bearing: trackingMode === 2 ? deviceHeading : 0,
                     pitch: trackingMode === 2 ? 50 : 0,
-                    duration: 500,
+                    duration: 700,
                     essential: true
                 });
+                map.once('moveend', startRafLoop);
             } else if (trackingMode === 0) {
                 stopRafLoop();
-                map.easeTo({ bearing: 0, pitch: 0, duration: 300, essential: true });
+                map.easeTo({ bearing: 0, pitch: 0, duration: 500, essential: true });
             }
             updateGeolocateButton();
         });
@@ -951,15 +951,15 @@ map.on('zoomend', () => { isZooming = false; });
 
                 // 追従モードONかつ初回位置取得時→アニメーションで現在地へ移動
                 if (isFirst && trackingMode > 0) {
-                    startRafLoop();
                     map.easeTo({
                         center: [lng, lat],
                         zoom: Math.max(map.getZoom(), 15),
                         bearing: trackingMode === 2 ? (deviceHeading || 0) : 0,
                         pitch: trackingMode === 2 ? 50 : 0,
-                        duration: 600,
+                        duration: 800,
                         essential: true
                     });
+                    map.once('moveend', startRafLoop);
                 }
                 // マーカー位置の更新はrAFループの補間済み座標で行うため
                 // ここではsetLngLatしない
@@ -1036,7 +1036,7 @@ map.on('zoomend', () => { isZooming = false; });
                 map.on('click', `${conf.id}-cluster`, (e) => {
                     const features = map.queryRenderedFeatures(e.point, { layers: [`${conf.id}-cluster`] });
                     if (!features.length) return;
-                    map.getSource(conf.id).getClusterExpansionZoom(features[0].properties.cluster_id, (err, zoom) => { if (!err) map.easeTo({ center: features[0].geometry.coordinates, zoom: zoom + 1, duration: 300, essential: true }); });
+                    map.getSource(conf.id).getClusterExpansionZoom(features[0].properties.cluster_id, (err, zoom) => { if (!err) map.easeTo({ center: features[0].geometry.coordinates, zoom: zoom + 1, duration: 450, essential: true }); });
                 });
 
                 map.on('click', `${conf.id}-bg`, (e) => {
@@ -1217,7 +1217,7 @@ map.on('zoomend', () => { isZooming = false; });
             updateGeolocateButton();
         }
         clearSearch();
-        map.easeTo({ center: item.coords, zoom: Math.max(map.getZoom(), 15), bearing: 0, pitch: 0, duration: 350, essential: true });
+        map.easeTo({ center: item.coords, zoom: Math.max(map.getZoom(), 15), bearing: 0, pitch: 0, duration: 550, essential: true });
         if (item.type !== 'place') {
             setTimeout(() => showPopupForItem(item), 300);
         }
