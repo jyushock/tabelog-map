@@ -692,17 +692,11 @@ function handleOrientation(event) {
     }
 
     deviceHeading = currentSmoothedHeading;
-
-    // マーカーの扇アイコン更新のみここで行う（地図回転はrAFループに任せる）
-    if (currentMarker) {
-        const mapBearing = map.getBearing() || 0;
-        const relativeHeading = getShortestAngleDiff(mapBearing, deviceHeading);
-        currentMarker.getElement().style.setProperty('--heading', `${relativeHeading}deg`);
-    }
+    // 扇アイコンの更新はrAFループに一本化（ここでは行わない）
 }
 
 // --- rAFループで地図bearingをなめらかに追従（震え防止） ---
-const BEARING_THRESHOLD = 1.2;
+const BEARING_THRESHOLD = 2.0;
 const BEARING_LERP      = 0.04;
 const POSITION_LERP     = 0.02;
 let rafBearing  = null;
@@ -731,8 +725,8 @@ function bearingRafLoop() {
         if (rafLng === null) { rafLng = currentLocation.lng; rafLat = currentLocation.lat; }
         const dLng = currentLocation.lng - rafLng;
         const dLat = currentLocation.lat - rafLat;
-        // 約0.5m以下の差は無視して打ち切る（浮動小数点誤差による震え防止）
-        const posThreshold = 0.000005;
+        // 約3m以下の差は無視して打ち切る（GPS誤差による震え防止）
+        const posThreshold = 0.00003;
         if (Math.abs(dLng) > posThreshold || Math.abs(dLat) > posThreshold) {
             rafLng += dLng * POSITION_LERP;
             rafLat += dLat * POSITION_LERP;
