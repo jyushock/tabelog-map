@@ -983,21 +983,23 @@ map.on('zoomend', () => { isZooming = false; });
             loadSDF('michi.png',   'michi-icon'),
             loadSDF('manhole.png', 'manhole-icon')
         ]).then(() => {
+            const famousGenres = new Set(['日本100名城', '続日本100名城']);
+            const castleDataFamous = { type: 'FeatureCollection', features: castleData.features.filter(f => famousGenres.has(f.properties.genre)) };
+            const castleDataOther  = { type: 'FeatureCollection', features: castleData.features.filter(f => !famousGenres.has(f.properties.genre)) };
+
             const configs = [
-                { id: 'michi',    data: michiGeoJSON,         color: '#34A853', icon: 'michi-icon',   type: 'michi',   clusterColor: '#34A853' },
-                { id: 'shops',    data: shopData,             color: '#FF9800', icon: 'tabe-icon',    type: 'shop',    clusterColor: '#FF9800' },
-                { id: 'manholes', data: mergedManholeGeoJSON, color: '#B87333', icon: 'manhole-icon', type: 'manhole', clusterColor: '#B87333' },
-                { id: 'castles',  data: castleData,           color: '#546E7A', icon: 'castle-icon',  type: 'castle',  clusterColor: '#546E7A' },
+                { id: 'michi',           data: michiGeoJSON,        color: '#34A853', icon: 'michi-icon',   type: 'michi',   clusterColor: '#34A853' },
+                { id: 'shops',           data: shopData,             color: '#FF9800', icon: 'tabe-icon',    type: 'shop',    clusterColor: '#FF9800' },
+                { id: 'manholes',        data: mergedManholeGeoJSON, color: '#B87333', icon: 'manhole-icon', type: 'manhole', clusterColor: '#B87333' },
+                { id: 'castles-famous',  data: castleDataFamous,     color: '#546E7A', icon: 'castle-icon',  type: 'castle',  clusterColor: '#546E7A', noCluster: true },
+                { id: 'castles',         data: castleDataOther,      color: '#546E7A', icon: 'castle-icon',  type: 'castle',  clusterColor: '#546E7A' },
             ];
 
             configs.forEach(conf => {
-                map.addSource(conf.id, {
-                    type: 'geojson',
-                    data: conf.data,
-                    cluster: true,
-                    clusterMaxZoom: 13,
-                    clusterRadius: 50
-                });
+                map.addSource(conf.id, conf.noCluster
+                    ? { type: 'geojson', data: conf.data }
+                    : { type: 'geojson', data: conf.data, cluster: true, clusterMaxZoom: 13, clusterRadius: 50 }
+                );
                 map.addLayer({ id: `${conf.id}-cluster`, type: 'circle', source: conf.id, filter: ['has', 'point_count'], paint: { 'circle-color': conf.clusterColor, 'circle-radius': 20, 'circle-stroke-width': 3, 'circle-stroke-color': '#FFFFFF' } });
                 map.addLayer({ id: `${conf.id}-cluster-count`, type: 'symbol', source: conf.id, filter: ['has', 'point_count'], layout: { 'text-field': '{point_count_abbreviated}', 'text-size': 12, 'text-font': ['Noto Sans Bold'] }, paint: { 'text-color': '#FFFFFF' } });
                 map.addLayer({ id: `${conf.id}-bg`, type: 'circle', source: conf.id, filter: ['!', ['has', 'point_count']], paint: { 'circle-color': conf.type === 'castle' ? ['match', ['get', 'genre'], '日本100名城', '#4285F4', '続日本100名城', '#EA4335', '#546E7A'] : conf.type === 'manhole' ? ['match', ['get', 'source'], 'pokefuta', '#FBBC04', '#B87333'] : conf.color, 'circle-radius': 14, 'circle-stroke-width': 3, 'circle-stroke-color': '#FFFFFF' } });
@@ -1317,17 +1319,25 @@ map.on('zoomend', () => { isZooming = false; });
     function onFilterChange(el) {
         const id = el.id.replace('check-', '');
         filterState[id] = el.checked;
-        const sourceId = { shop: 'shops', castle: 'castles', michi: 'michi', manhole: 'manholes' }[id];
         const val = el.checked ? 'visible' : 'none';
-        [`${sourceId}-cluster`, `${sourceId}-cluster-count`, `${sourceId}-bg`, `${sourceId}-icon`, `${sourceId}-label`].forEach(l => { if (map.getLayer(l)) map.setLayoutProperty(l, 'visibility', val); });
+        const sourceIds = id === 'castle'
+            ? ['castles-famous', 'castles']
+            : [{ shop: 'shops', michi: 'michi', manhole: 'manholes' }[id]];
+        sourceIds.forEach(sourceId => {
+            [`${sourceId}-cluster`, `${sourceId}-cluster-count`, `${sourceId}-bg`, `${sourceId}-icon`, `${sourceId}-label`].forEach(l => { if (map.getLayer(l)) map.setLayoutProperty(l, 'visibility', val); });
+        });
     }
 
     function onLabelChange(el) {
         const id = el.id.replace('check-label-', '');
         labelState[id] = el.checked;
-        const sourceId = { shop: 'shops', castle: 'castles', michi: 'michi' }[id];
         const val = el.checked ? 'visible' : 'none';
-        if (map.getLayer(`${sourceId}-label`)) map.setLayoutProperty(`${sourceId}-label`, 'visibility', val);
+        const sourceIds = id === 'castle'
+            ? ['castles-famous', 'castles']
+            : [{ shop: 'shops', michi: 'michi' }[id]];
+        sourceIds.forEach(sourceId => {
+            if (map.getLayer(`${sourceId}-label`)) map.setLayoutProperty(`${sourceId}-label`, 'visibility', val);
+        });
     }
 
     function toggleNearby() {
@@ -1447,7 +1457,7 @@ map.on('zoomend', () => { isZooming = false; });
 
     // レイヤー一時非表示ボタンの処理
     const toggleLayersBtn = document.getElementById('toggle-layers-btn');
-    const layerIdPrefixes = ['michi', 'shops', 'manholes', 'castles'];
+    const layerIdPrefixes = ['michi', 'shops', 'manholes', 'castles-famous', 'castles'];
     const targetLayerIds = layerIdPrefixes.flatMap(prefix => [
         `${prefix}-cluster`,
         `${prefix}-cluster-count`,
