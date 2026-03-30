@@ -28,6 +28,9 @@
             border-radius: 50%;
             box-shadow: 0 0 6px rgba(0,0,0,0.3);
             position: relative;
+            will-change: transform;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
         }
                 .current-location-dot::before {
                     content: '';
@@ -471,7 +474,7 @@
 <div id="nearby-panel">
     <div id="nearby-panel-header">
         <span id="nearby-panel-title">表示フィルター</span>
-        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v118</span>
+        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v119</span>
         <button id="nearby-panel-close" onclick="closeNearby()">×</button>
     </div>
     <div id="filter-checkboxes">
@@ -732,11 +735,6 @@ function bearingRafLoop() {
             rafLat += dLat * POSITION_LERP;
         }
 
-        // マーカーも補間済み座標で更新
-        if (currentMarker) {
-            currentMarker.setLngLat([rafLng, rafLat]);
-        }
-
         if (trackingMode === 2) {
             // ── bearing補間 ──
             if (rafBearing === null) { rafBearing = deviceHeading; }
@@ -744,18 +742,22 @@ function bearingRafLoop() {
             if (Math.abs(diff) >= BEARING_THRESHOLD) {
                 rafBearing = (rafBearing + diff * BEARING_LERP + 360) % 360;
             }
+            // カメラを先に更新（最新カメラでマーカーを投影するため順序が重要）
             map.setCenter([rafLng, rafLat]);
             map.setBearing(rafBearing);
             map.setPitch(50);
-
-            // ── マーカー扇アイコン更新 ──
+            // カメラ更新後にマーカーを更新（1フレームずれ防止）
             if (currentMarker) {
+                currentMarker.setLngLat([rafLng, rafLat]);
                 const relativeHeading = getShortestAngleDiff(rafBearing, deviceHeading);
                 currentMarker.getElement().style.setProperty('--heading', `${relativeHeading}deg`);
             }
         } else {
             // trackingMode === 1: 位置のみ
             map.setCenter([rafLng, rafLat]);
+            if (currentMarker) {
+                currentMarker.setLngLat([rafLng, rafLat]);
+            }
         }
     }
 
