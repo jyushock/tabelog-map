@@ -227,7 +227,7 @@
         .filter-chip {
             display: flex; align-items: center; justify-content: center; gap: 3px;
             font-size: 11px; color: #333; background: #f5f5f5;
-            border-radius: 20px; padding: 12px 4px;
+            border-radius: 20px; padding: 8px 4px;
             border: 0.5px solid #e0e0e0; cursor: pointer;
             white-space: nowrap;
         }
@@ -348,14 +348,14 @@
         .search-section-header { padding: 5px 10px; font-size: 11px; color: #999; background: #fafafa; border-bottom: 1px solid #f0f0f0; position: sticky; top: 0; }
 
         /* 周辺検索シート */
-        .nearby-section-label { font-size: 11px; color: #999; padding: 10px 16px 6px; }
+        .nearby-section-label { font-size: 11px; color: #999; padding: 6px 16px 4px; }
         .nearby-category-grid {
             display: grid; grid-template-columns: repeat(4, 1fr);
             gap: 8px; padding: 0 16px;
         }
         .nearby-cat-item {
             display: flex; flex-direction: column; align-items: center;
-            gap: 4px; padding: 8px 4px; border-radius: 10px;
+            gap: 2px; padding: 6px 4px; border-radius: 10px;
             background: #f8f8f8; cursor: pointer; border: 2px solid transparent;
         }
         .nearby-cat-item.selected { background: #e8f0fe; border-color: #4285F4; }
@@ -401,6 +401,18 @@
             color: #555;
         }
         #nearby-close-btn:hover { background: #f5f5f5; }
+        #nearby-geolocate-btn {
+            width: 52px; height: 52px;
+            background: white; border: none;
+            border-left: 1px solid #e0e0e0;
+            border-radius: 0;
+            cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+            color: #555;
+            touch-action: manipulation;
+        }
+        #nearby-geolocate-btn:hover { background: #f5f5f5; }
 
         /* ハーフモーダル */
         #nearby-panel {
@@ -412,11 +424,11 @@
             box-shadow: 0 -4px 16px rgba(0,0,0,0.15);
             z-index: 300;
             transition: bottom 0.3s ease;
-            max-height: calc(80vh - 52px);
+            max-height: 80vh;
             overflow-y: auto;
             font-family: sans-serif;
         }
-        #nearby-panel.open { bottom: 52px; }
+        #nearby-panel.open { bottom: 0; }
         #nearby-panel-header {
             display: flex;
             align-items: center;
@@ -586,6 +598,12 @@
     <div id="nearby-panel-footer">
         <button id="nearby-close-btn" onclick="closeNearby()"><span class="hamburger-icon"></span></button>
         <button id="nearby-search-btn" onclick="execNearbySearch()">探す</button>
+        <button id="nearby-geolocate-btn" onclick="document.getElementById('geolocate-btn').click()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/>
+                <line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/>
+            </svg>
+        </button>
     </div>
 </div>
 
