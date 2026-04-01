@@ -65,13 +65,13 @@
         }
         /* ── ナビモード（向き追従）: 白丸＋青矢印 ── */
         .current-location-dot.nav-mode {
-            width: 46px; height: 46px;
+            width: 32px; height: 32px;
             background: white;
             border: none;
             box-shadow: 0 3px 14px rgba(0,0,0,0.32);
         }
         .current-location-dot.nav-mode::before {
-            width: 30px; height: 30px;
+            width: 21px; height: 21px;
             background: #4285F4;
             clip-path: polygon(50% 0%, 80% 100%, 50% 76%, 20% 100%);
             border-left: none; border-right: none; border-top: none;
@@ -362,19 +362,6 @@
         .nearby-cat-icon { font-size: 20px; }
         .nearby-cat-label { font-size: 10px; color: #555; text-align: center; }
         .nearby-cat-item.selected .nearby-cat-label { color: #4285F4; font-weight: bold; }
-        .nearby-dist-section {
-            background: #f0f4ff; border-radius: 10px;
-            margin: 6px 16px 0; padding: 8px 10px;
-        }
-        .nearby-dist-section .nearby-section-label { padding: 0 0 6px; color: #4285F4; }
-        .nearby-dist-chips { display: flex; gap: 8px; }
-        .nearby-chip {
-            padding: 5px 14px; border-radius: 16px;
-            font-size: 12px; font-weight: bold;
-            background: #e0e8ff; color: #555;
-            cursor: pointer; border: 2px solid transparent;
-        }
-        .nearby-chip.selected { background: #e8f0fe; color: #4285F4; border-color: #4285F4; }
         #nearby-panel-footer {
             display: flex;
             align-items: stretch;
@@ -386,7 +373,7 @@
         }
         #nearby-search-btn {
             flex: 1;
-            background: #4285F4; color: white; border: none;
+            background: #34A853; color: white; border: none;
             border-radius: 0;
             font-size: 14px; font-weight: bold; cursor: pointer;
         }
@@ -596,15 +583,7 @@
             <div class="nearby-cat-label">観光スポット</div>
         </div>
     </div>
-    <div class="nearby-dist-section" id="nearby-dist-section" style="flex-shrink:0;">
-        <div class="nearby-section-label">距離</div>
-        <div class="nearby-dist-chips">
-            <div class="nearby-chip" data-dist="1" onclick="selectNearbyDist(this)">1km</div>
-            <div class="nearby-chip" data-dist="3" onclick="selectNearbyDist(this)">3km</div>
-            <div class="nearby-chip" data-dist="5" onclick="selectNearbyDist(this)">5km</div>
-            <div class="nearby-chip" data-dist="10" onclick="selectNearbyDist(this)">10km</div>
-        </div>
-    </div>
+
     </div><!-- /nearby-panel-scroll -->
     <div id="nearby-panel-footer">
         <button id="nearby-close-btn" onclick="closeNearby()"><span class="hamburger-icon"></span></button>
@@ -809,7 +788,7 @@ function bearingRafLoop() {
             // カメラを先に更新（最新カメラでマーカーを投影するため順序が重要）
             map.setCenter([rafLng, rafLat]);
             map.setBearing(rafBearing);
-            map.setPitch(50);
+            map.setPitch(70);
             // カメラ更新後にマーカーを更新（1フレームずれ防止）
             if (currentMarker) {
                 currentMarker.setLngLat([rafLng, rafLat]);
@@ -988,7 +967,7 @@ map.on('zoomend', () => { isZooming = false; });
                     center: [currentLocation.lng, currentLocation.lat],
                     zoom: map.getZoom(),
                     bearing: trackingMode === 2 ? deviceHeading : 0,
-                    pitch: trackingMode === 2 ? 50 : 0,
+                    pitch: trackingMode === 2 ? 70 : 0,
                     duration: 700,
                     essential: true
                 });
@@ -1032,7 +1011,7 @@ map.on('zoomend', () => { isZooming = false; });
                         center: [lng, lat],
                         zoom: Math.max(map.getZoom(), 15),
                         bearing: trackingMode === 2 ? (deviceHeading || 0) : 0,
-                        pitch: trackingMode === 2 ? 50 : 0,
+                        pitch: trackingMode === 2 ? 70 : 0,
                         duration: 800,
                         essential: true
                     });
@@ -1394,7 +1373,7 @@ map.on('zoomend', () => { isZooming = false; });
     }
 
     const gmapKeywords = { supermarket: 'スーパー', transit: '駅 OR バス停', restaurant: 'フード', coffee: 'コーヒー', conbini: 'コンビニ', takeout: 'テイクアウト', museum: 'ミュージアム', ramen: 'ラーメン', udon: 'うどん', soba: 'そば', sightseeing: '観光スポット OR 像' };
-    let nearbyState = { cats: ['supermarket'], dist: 5 };
+    let nearbyState = { cats: ['supermarket'] };
     const filterState = { shop: true, castle: true, michi: true, manhole: true };
     const labelState  = { shop: true, castle: true, michi: true };
 
@@ -1430,8 +1409,6 @@ map.on('zoomend', () => { isZooming = false; });
         Object.keys(filterState).forEach(id => { const el=document.getElementById(`check-${id}`); if(el) el.checked=filterState[id]; });
         Object.keys(labelState).forEach(id => { const el=document.getElementById(`check-label-${id}`); if(el) el.checked=labelState[id]; });
         document.querySelectorAll('.nearby-cat-item').forEach(el => el.classList.toggle('selected', nearbyState.cats.includes(el.dataset.cat)));
-        document.querySelectorAll('.nearby-chip').forEach(el => el.classList.toggle('selected', parseInt(el.dataset.dist) === nearbyState.dist));
-        document.getElementById('nearby-dist-section').style.display = nearbyState.cats.includes('spot') ? 'block' : 'none';
         document.getElementById('nearby-list').innerHTML = '';
         document.getElementById('nearby-panel').classList.add('open');
         document.getElementById('nearby-overlay').classList.add('open');
@@ -1446,25 +1423,6 @@ map.on('zoomend', () => { isZooming = false; });
 
         // DOMの状態に基づいてstateを更新
         nearbyState.cats = Array.from(document.querySelectorAll('.nearby-cat-item.selected')).map(e => e.dataset.cat);
-
-        // 距離セクションの表示を更新
-        const distSection = document.getElementById('nearby-dist-section');
-        distSection.style.display = nearbyState.cats.includes('spot') ? 'block' : 'none';
-
-        // スポット選択時は距離セクションが探すボタンに隠れないようパネルをスクロール
-        if (nearbyState.cats.includes('spot')) {
-            setTimeout(() => {
-                const panel = document.getElementById('nearby-panel');
-                const btnHeight = document.getElementById('nearby-search-btn').offsetHeight + 20;
-                const distBottom = distSection.offsetTop + distSection.offsetHeight;
-                panel.scrollTop = distBottom - panel.offsetHeight + btnHeight;
-            }, 50);
-        }
-    }
-    function selectNearbyDist(el) {
-        document.querySelectorAll('.nearby-chip').forEach(e => e.classList.remove('selected'));
-        el.classList.add('selected');
-        nearbyState.dist = parseInt(el.dataset.dist);
     }
     function execNearbySearch() {
         if (nearbyState.cats.length === 0) return alert('カテゴリが選択されていません');
@@ -1479,7 +1437,7 @@ map.on('zoomend', () => { isZooming = false; });
             return window.location.href = `https://www.google.com/maps/search/${encodeURIComponent(keyword)}/@${searchLat},${searchLng},${zoom}z`;
         }
 
-        const RADIUS = nearbyState.dist;
+        const RADIUS = 10;
         const typeToFilter = {
             shop: 'shop', castle: 'castle', michi: 'michi',
             manhole: 'manhole', pokefuta: 'manhole'
