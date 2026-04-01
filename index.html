@@ -981,12 +981,31 @@ map.on('zoomend', () => { isZooming = false; });
         });
 
         // ズームボタンのクリック処理
-        document.getElementById('zoom-in-btn').addEventListener('click', () => {
-            map.easeTo({ zoom: map.getZoom() + 0.5, duration: 300, essential: true });
-        });
-        document.getElementById('zoom-out-btn').addEventListener('click', () => {
-            map.easeTo({ zoom: map.getZoom() - 0.5, duration: 300, essential: true });
-        });
+        // ズームボタン長押し連続ズーム
+        function setupLongPressZoom(btnId, delta) {
+            const btn = document.getElementById(btnId);
+            let intervalId = null;
+            let timeoutId = null;
+            const doZoom = () => map.easeTo({ zoom: map.getZoom() + delta, duration: 120, essential: true });
+            const start = () => {
+                doZoom();
+                timeoutId = setTimeout(() => {
+                    intervalId = setInterval(doZoom, 120);
+                }, 400);
+            };
+            const stop = () => {
+                clearTimeout(timeoutId);
+                clearInterval(intervalId);
+                intervalId = null;
+                timeoutId = null;
+            };
+            btn.addEventListener('pointerdown', (e) => { e.preventDefault(); start(); });
+            btn.addEventListener('pointerup', stop);
+            btn.addEventListener('pointerleave', stop);
+            btn.addEventListener('pointercancel', stop);
+        }
+        setupLongPressZoom('zoom-in-btn', 0.5);
+        setupLongPressZoom('zoom-out-btn', -0.5);
         document.getElementById('north-reset-btn').addEventListener('click', () => {
             map.easeTo({ bearing: 0, pitch: 0, duration: 300, essential: true });
         });
