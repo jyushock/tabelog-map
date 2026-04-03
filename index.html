@@ -267,6 +267,28 @@
             background: white;
             box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
         }
+        #recenter-btn {
+            position: fixed;
+            bottom: 62px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 210;
+            background: white;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+            padding: 8px 16px;
+            font-size: 13px;
+            font-weight: bold;
+            color: #4285F4;
+            display: none;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+            white-space: nowrap;
+            touch-action: manipulation;
+        }
+        #recenter-btn.visible { display: flex; }
 
         /* 検索UI */
         #search-container {
@@ -498,6 +520,10 @@
     <button id="zoom-in-btn" title="ズームイン">+</button>
     <button id="zoom-out-btn" title="ズームアウト">-</button>
 </div>
+<button id="recenter-btn" onclick="recenterToLocation()">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg>
+    現在地に戻る
+</button>
 <div id="bottom-bar">
     <button id="nearby-btn" onclick="toggleNearby()" title="メニュー"><span class="hamburger-icon"></span></button>
     <div id="search-container">
@@ -659,6 +685,7 @@
     let currentMarker = null;
     let currentLocation = null;
     let trackingMode = 0; // 0:オフ, 1:追従, 2:追従+ヘディング
+    let preTrackingMode = 0; // ドラッグ前のモード保存用
 
     let hadFirstFix = false;
     let isZooming = false;
@@ -820,9 +847,11 @@ function bearingRafLoop() {
 map.on('dragstart', () => {
     if (trackingMode > 0) {
         const wasMode2 = trackingMode === 2;
+        preTrackingMode = trackingMode;
         trackingMode = 0;
         stopRafLoop();
         updateGeolocateButton();
+        showRecenterBtn();
         if (!wasMode2) {
             map.easeTo({ bearing: 0, pitch: 0, duration: 350, essential: true });
         }
@@ -832,9 +861,11 @@ map.on('dragstart', () => {
 map.getCanvas().addEventListener('touchstart', () => {
     if (trackingMode > 0) {
         const wasMode2 = trackingMode === 2;
+        preTrackingMode = trackingMode;
         trackingMode = 0;
         stopRafLoop();
         updateGeolocateButton();
+        showRecenterBtn();
         if (!wasMode2) {
             map.easeTo({ bearing: 0, pitch: 0, duration: 350, essential: true });
         }
@@ -846,6 +877,29 @@ map.on('zoomstart', () => { isZooming = true; });
 map.on('zoomend', () => { isZooming = false; });
 
     // ボタンの見た目を更新
+    function showRecenterBtn() {
+        document.getElementById('recenter-btn').classList.add('visible');
+    }
+    function hideRecenterBtn() {
+        document.getElementById('recenter-btn').classList.remove('visible');
+        preTrackingMode = 0;
+    }
+    function recenterToLocation() {
+        if (!currentLocation) return;
+        const mode = preTrackingMode || 1;
+        trackingMode = mode;
+        if (mode === 2) requestDeviceOrientation();
+        startRafLoop();
+        map.easeTo({
+            center: [currentLocation.lng, currentLocation.lat],
+            bearing: mode === 2 ? deviceHeading : 0,
+            pitch:   mode === 2 ? 50 : 0,
+            duration: 500
+        });
+        updateGeolocateButton();
+        hideRecenterBtn();
+    }
+
     function updateGeolocateButton() {
         const btn = document.getElementById('geolocate-btn');
         const btn2 = document.getElementById('nearby-geolocate-btn');
@@ -982,6 +1036,7 @@ map.on('zoomend', () => { isZooming = false; });
                 map.easeTo({ bearing: 0, pitch: 0, duration: 500, essential: true });
             }
             updateGeolocateButton();
+            hideRecenterBtn();
         });
 
         // ズームボタンのクリック処理
