@@ -1567,7 +1567,10 @@ map.on('zoomend', () => { isZooming = false; });
         document.getElementById('nearby-result-overlay').style.display = 'none';
     }
     function closeNearby() {
-        document.getElementById('nearby-panel').classList.remove('open');
+        const panel = document.getElementById('nearby-panel');
+        panel.style.transition = '';
+        panel.style.bottom = '';
+        panel.classList.remove('open');
         document.getElementById('nearby-overlay').classList.remove('open');
     }
 
@@ -1591,9 +1594,12 @@ map.on('zoomend', () => { isZooming = false; });
 
         panel.addEventListener('touchend', (e) => {
             const dy = e.changedTouches[0].clientY - startY;
-            panel.style.transition = '';
-            panel.style.bottom = '0';
-            if (dy > 80) closeNearby();
+            if (dy > 80) {
+                closeNearby();
+            } else {
+                panel.style.transition = '';
+                panel.style.bottom = '0';
+            }
         }, { passive: true });
     })();
 
