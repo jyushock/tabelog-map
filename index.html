@@ -454,10 +454,17 @@
         }
         #nearby-panel-header {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            padding: 10px 16px 6px;
+            padding: 8px 16px 6px;
             flex-shrink: 0;
-            gap: 4px;
+            gap: 6px;
+            cursor: pointer;
+        }
+        #nearby-drag-handle {
+            width: 36px; height: 4px;
+            background: var(--color-border-secondary, #ccc);
+            border-radius: 2px;
         }
         #nearby-panel-title { font-size: 11px; color: #999; flex-shrink: 0; }
         #filter-checkboxes {
@@ -544,10 +551,12 @@
 <div id="nearby-overlay" onclick="closeNearby()"></div>
 <div id="nearby-panel">
     <div id="nearby-panel-scroll">
-    <div id="nearby-panel-header">
-        <span id="nearby-panel-title">表示フィルター</span>
-        <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v121</span>
-
+    <div id="nearby-panel-header" onclick="closeNearby()">
+        <div id="nearby-drag-handle"></div>
+        <div style="display:flex;align-items:center;width:100%;">
+            <span id="nearby-panel-title">表示フィルター</span>
+            <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v121</span>
+        </div>
     </div>
     <div id="filter-checkboxes">
         <label class="filter-chip"><input type="checkbox" id="check-shop" checked onchange="onFilterChange(this)">食べログ</label>
