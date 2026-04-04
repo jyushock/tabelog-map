@@ -1594,7 +1594,7 @@ map.on('zoomend', () => { isZooming = false; });
 
         panel.addEventListener('touchend', (e) => {
             const dy = e.changedTouches[0].clientY - startY;
-            if (dy > 80) {
+            if (dy > 20) {
                 closeNearby();
             } else {
                 panel.style.transition = '';
