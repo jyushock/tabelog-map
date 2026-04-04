@@ -184,7 +184,7 @@
             width: 52px; height: 52px;
             background: white;
             border: none;
-            border-right: 1px solid #e0e0e0;
+            border-left: 2px solid #e0e0e0;
             border-radius: 0;
             box-shadow: none;
             cursor: pointer;
@@ -197,7 +197,7 @@
             width: 52px; height: 52px;
             background: white;
             border: none;
-            border-left: 1px solid #e0e0e0;
+            border-left: 2px solid #e0e0e0;
             border-radius: 0;
             box-shadow: none;
             cursor: pointer;
@@ -296,6 +296,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            border-right: 2px solid #e0e0e0;
         }
         #search-box {
             display: flex;
@@ -406,7 +407,7 @@
         #nearby-close-btn {
             width: 52px; height: 52px;
             background: white; border: none;
-            border-right: 1px solid #e0e0e0;
+            border-left: 2px solid #e0e0e0;
             border-radius: 0;
             cursor: pointer;
             display: flex; align-items: center; justify-content: center;
@@ -417,7 +418,7 @@
         #nearby-geolocate-btn {
             width: 52px; height: 52px;
             background: white; border: none;
-            border-left: 1px solid #e0e0e0;
+            border-right: 2px solid #e0e0e0;
             border-radius: 0;
             cursor: pointer;
             display: flex; align-items: center; justify-content: center;
@@ -532,7 +533,6 @@
     現在地に戻る
 </button>
 <div id="bottom-bar">
-    <button id="nearby-btn" onclick="toggleNearby()" title="メニュー"><span class="hamburger-icon"></span></button>
     <div id="search-container">
         <div id="search-box">
             <span id="search-icon">🔍</span>
@@ -547,6 +547,7 @@
             <line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/>
         </svg>
     </button>
+    <button id="nearby-btn" onclick="toggleNearby()" title="メニュー"><span class="hamburger-icon"></span></button>
 </div>
 <div id="nearby-overlay" onclick="closeNearby()"></div>
 <div id="nearby-panel">
@@ -626,7 +627,6 @@
 
     </div><!-- /nearby-panel-scroll -->
     <div id="nearby-panel-footer">
-        <button id="nearby-close-btn" onclick="closeNearby()"><span class="hamburger-icon"></span></button>
         <button id="nearby-search-btn" onclick="execNearbySearch()">探す</button>
         <button id="nearby-geolocate-btn" onclick="document.getElementById('geolocate-btn').click()">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -634,6 +634,7 @@
                 <line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/>
             </svg>
         </button>
+        <button id="nearby-close-btn" onclick="closeNearby()"><span class="hamburger-icon"></span></button>
     </div>
 </div>
 
