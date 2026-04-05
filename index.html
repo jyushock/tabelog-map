@@ -461,11 +461,23 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 8px 16px 6px;
+            padding: 8px 16px 4px;
             flex-shrink: 0;
-            gap: 6px;
+        }
+        #settings-btn {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            background: #f5f5f5;
+            border: 0.5px solid #e0e0e0;
+            border-radius: 20px;
+            padding: 5px 10px;
+            font-size: 11px;
+            color: #555;
             cursor: pointer;
         }
+        #settings-btn:hover { background: #ebebeb; }
+        #settings-btn.active { background: #e8f0fe; border-color: #4285F4; color: #1a73e8; }
         #nearby-drag-handle {
             width: 36px; height: 4px;
             background: var(--color-border-secondary, #ccc);
@@ -556,25 +568,30 @@
 <div id="nearby-overlay" onclick="closeNearby()"></div>
 <div id="nearby-panel">
     <div id="nearby-panel-scroll">
-    <div id="nearby-panel-header" onclick="closeNearby()">
+    <div id="nearby-panel-header">
         <div id="nearby-drag-handle"></div>
-        <div style="display:flex;align-items:center;width:100%;">
-            <span id="nearby-panel-title">表示フィルター</span>
-            <span style="margin-left:auto;font-size:10px;color:#bbb;flex-shrink:0;">v121</span>
+        <div style="display:flex;justify-content:flex-end;padding:4px 0 2px;">
+            <button id="settings-btn" onclick="toggleSettingsPanel()">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                表示設定
+            </button>
         </div>
     </div>
-    <div id="filter-checkboxes">
-        <label class="filter-chip"><input type="checkbox" id="check-shop" checked onchange="onFilterChange(this)">食べログ</label>
-        <label class="filter-chip"><input type="checkbox" id="check-castle" checked onchange="onFilterChange(this)">お城</label>
-        <label class="filter-chip"><input type="checkbox" id="check-michi" checked onchange="onFilterChange(this)">道の駅</label>
-        <label class="filter-chip"><input type="checkbox" id="check-manhole" checked onchange="onFilterChange(this)">マンホール</label>
-    </div>
-    <div style="border-top:1px solid #f0f0f0;"></div>
-    <div class="nearby-section-label">テキスト表示</div>
-    <div id="label-checkboxes" style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:0 16px 8px;">
-        <label class="filter-chip"><input type="checkbox" id="check-label-shop" checked onchange="onLabelChange(this)">食べログ</label>
-        <label class="filter-chip"><input type="checkbox" id="check-label-castle" checked onchange="onLabelChange(this)">お城</label>
-        <label class="filter-chip"><input type="checkbox" id="check-label-michi" checked onchange="onLabelChange(this)">道の駅</label>
+    <!-- 表示設定パネル（折りたたみ） -->
+    <div id="settings-panel" style="display:none;">
+        <div id="filter-checkboxes">
+            <label class="filter-chip"><input type="checkbox" id="check-shop" checked onchange="onFilterChange(this)">食べログ</label>
+            <label class="filter-chip"><input type="checkbox" id="check-castle" checked onchange="onFilterChange(this)">お城</label>
+            <label class="filter-chip"><input type="checkbox" id="check-michi" checked onchange="onFilterChange(this)">道の駅</label>
+            <label class="filter-chip"><input type="checkbox" id="check-manhole" checked onchange="onFilterChange(this)">マンホール</label>
+        </div>
+        <div style="border-top:1px solid #f0f0f0;"></div>
+        <div class="nearby-section-label">テキスト表示</div>
+        <div id="label-checkboxes" style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:0 16px 8px;">
+            <label class="filter-chip"><input type="checkbox" id="check-label-shop" checked onchange="onLabelChange(this)">食べログ</label>
+            <label class="filter-chip"><input type="checkbox" id="check-label-castle" checked onchange="onLabelChange(this)">お城</label>
+            <label class="filter-chip"><input type="checkbox" id="check-label-michi" checked onchange="onLabelChange(this)">道の駅</label>
+        </div>
     </div>
     <div style="border-top:1px solid #f0f0f0;"></div>
     <div class="nearby-section-label">周辺検索</div>
@@ -1507,9 +1524,18 @@ map.on('zoomend', () => { isZooming = false; });
         Object.keys(labelState).forEach(id => { const el=document.getElementById(`check-label-${id}`); if(el) el.checked=labelState[id]; });
         document.querySelectorAll('.nearby-cat-item').forEach(el => el.classList.toggle('selected', nearbyState.cats.includes(el.dataset.cat)));
         document.getElementById('nearby-list').innerHTML = '';
+        document.getElementById('settings-panel').style.display = 'none';
+        document.getElementById('settings-btn').classList.remove('active');
         document.getElementById('nearby-panel').classList.add('open');
         document.getElementById('nearby-overlay').classList.add('open');
         document.getElementById('bottom-bar').classList.add('panel-open');
+    }
+    function toggleSettingsPanel() {
+        const sp = document.getElementById('settings-panel');
+        const btn = document.getElementById('settings-btn');
+        const isOpen = sp.style.display !== 'none';
+        sp.style.display = isOpen ? 'none' : 'block';
+        btn.classList.toggle('active', !isOpen);
     }
     function selectNearbyCat(el) {
         // 常に単一選択: クリックされた項目のみ選択
