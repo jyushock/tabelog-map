@@ -736,18 +736,6 @@
     });
     map.addControl(new maplibregl.AttributionControl({ compact: true }), 'bottom-right');
 
-    // ダブルタップ/ダブルクリックズームをアニメーション付きに差し替え
-    map.doubleClickZoom.disable();
-    map.on('dblclick', (e) => {
-        e.preventDefault();
-        map.easeTo({
-            zoom: map.getZoom() + 1,
-            center: e.lngLat,
-            duration: 300,
-            essential: true
-        });
-    });
-
     // 現在地関連の変数
     let currentMarker = null;
     let currentLocation = null;
