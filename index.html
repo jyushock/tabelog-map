@@ -169,7 +169,7 @@
         #zoom-in-btn {
             border-bottom: 1px solid rgba(0, 0, 0, 0.15);
         }
-        #zoom-in-btn:hover, #zoom-out-btn:hover {
+        #zoom-in-btn:active, #zoom-out-btn:active {
             background-color: rgba(0, 0, 0, 0.08);
         }
         .hamburger-icon {
@@ -735,6 +735,18 @@
         attributionControl: false
     });
     map.addControl(new maplibregl.AttributionControl({ compact: true }), 'bottom-right');
+
+    // ダブルタップ/ダブルクリックズームをアニメーション付きに差し替え
+    map.doubleClickZoom.disable();
+    map.on('dblclick', (e) => {
+        e.preventDefault();
+        map.easeTo({
+            zoom: map.getZoom() + 1,
+            center: e.lngLat,
+            duration: 300,
+            essential: true
+        });
+    });
 
     // 現在地関連の変数
     let currentMarker = null;
