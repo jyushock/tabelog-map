@@ -1643,17 +1643,31 @@ map.on('zoomend', () => { isZooming = false; });
 
     (function() {
         const panel = document.getElementById('nearby-result-panel');
+        const list  = document.getElementById('nearby-list');
         let startY = 0;
+        let startScrollTop = 0;
+        let startedInList = false;
 
         panel.addEventListener('touchstart', (e) => {
             startY = e.touches[0].clientY;
+            startedInList = list.contains(e.target);
+            startScrollTop = list.scrollTop;
         }, { passive: true });
 
         panel.addEventListener('touchmove', (e) => {
-            e.stopPropagation();
-            e.preventDefault();
             const dy = e.touches[0].clientY - startY;
+            // リスト内タッチかつリストがスクロール可能な場合はスクロールに任せる
+            if (startedInList) {
+                const canScrollUp   = list.scrollTop > 0;
+                const canScrollDown = list.scrollTop < list.scrollHeight - list.clientHeight;
+                if ((dy < 0 && canScrollDown) || (dy > 0 && canScrollUp)) {
+                    return; // スクロール優先・パネル操作しない
+                }
+            }
+            // 下向きドラッグのみパネルを追従
             if (dy > 0) {
+                e.preventDefault();
+                e.stopPropagation();
                 panel.style.transition = 'none';
                 panel.style.bottom = `-${dy}px`;
             }
@@ -1661,7 +1675,7 @@ map.on('zoomend', () => { isZooming = false; });
 
         panel.addEventListener('touchend', (e) => {
             const dy = e.changedTouches[0].clientY - startY;
-            if (dy > 20) {
+            if (dy > 60) {
                 closeNearbyResult();
             } else {
                 panel.style.transition = '';
