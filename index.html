@@ -712,6 +712,43 @@
     });
     map.addControl(new maplibregl.AttributionControl({ compact: true }), 'bottom-right');
 
+    // ダブルタップズームをアニメーション付きに統一（iOS対応）
+    // デフォルトのdoubleClickZoomを無効化し、touchend自前検出＋dblclickの両方でeaseTo
+    map.doubleClickZoom.disable();
+    let lastTapTime = 0;
+    let lastTapLngLat = null;
+    map.getCanvas().addEventListener('touchend', (e) => {
+        if (e.touches.length !== 0) return;
+        if (e.changedTouches.length !== 1) return;
+        const now = Date.now();
+        const dt = now - lastTapTime;
+        if (dt < 300 && dt > 30 && lastTapLngLat) {
+            e.preventDefault();
+            map.easeTo({
+                zoom: map.getZoom() + 1,
+                center: lastTapLngLat,
+                duration: 300,
+                essential: true
+            });
+            lastTapTime = 0;
+            lastTapLngLat = null;
+        } else {
+            lastTapTime = now;
+            const touch = e.changedTouches[0];
+            lastTapLngLat = map.unproject([touch.clientX, touch.clientY]);
+        }
+    }, { passive: false });
+    // Android・PC向けにdblclickも対応
+    map.on('dblclick', (e) => {
+        e.preventDefault();
+        map.easeTo({
+            zoom: map.getZoom() + 1,
+            center: e.lngLat,
+            duration: 300,
+            essential: true
+        });
+    });
+
     // 現在地関連の変数
     let currentMarker = null;
     let currentLocation = null;
