@@ -253,6 +253,7 @@
         .btn-pokefuta { background: #FBBC04; color: #333; }
         .btn-michi-web { background: #34A853; color: #fff; }
         .btn-kojodan { background: #8B4513; color: #fff; }
+        .btn-access  { background: #00897B; color: #fff; }
         .popup-address { font-size: 11px; color: #555; display: block; margin-bottom: 4px; }
         .popup-road    { font-size: 11px; color: #888; display: block; margin-bottom: 6px; }
 
@@ -1277,7 +1278,8 @@ map.on('zoomend', () => { isZooming = false; });
                         let extraBtn = '';
                         if (conf.type === 'shop')   extraBtn = `<a href="${p.url}" target="_blank" class="btn btn-tabelog">食べログ</a>`;
                         if (conf.type === 'castle') extraBtn = `<a href="https://ja.wikipedia.org/wiki/${encodeURIComponent(p.name)}" target="_blank" class="btn btn-wiki">Wikipedia</a>${p.url ? `<a href="${p.url}" target="_blank" class="btn btn-kojodan">攻城団</a>` : ''}`;
-                        popupHtml = `<div class="popup-card"><span class="popup-title">${p.name}</span>${addressHtml}<a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>${extraBtn}<a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く(Google)</a><a href="${yahooNavUrl}" class="btn btn-nav-yahoo">ここへ行く(Yahoo)</a></div>`;
+                        const accessBtn = conf.type === 'castle' ? `<a href="https://www.google.com/search?q=${encodeURIComponent(p.name + ' アクセス')}" target="_blank" class="btn btn-access">アクセス</a>` : '';
+                        popupHtml = `<div class="popup-card"><span class="popup-title">${p.name}</span>${addressHtml}<a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>${extraBtn}<a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く(Google)</a><a href="${yahooNavUrl}" class="btn btn-nav-yahoo">ここへ行く(Yahoo)</a>${accessBtn}</div>`;
                     }
                     new maplibregl.Popup({ closeButton: false, anchor: getPopupAnchor(c) }).setLngLat(c).setHTML(popupHtml).addTo(map);
                 });
@@ -1455,7 +1457,8 @@ map.on('zoomend', () => { isZooming = false; });
             let extraBtn = '';
             if (item.type === 'shop')   extraBtn = `<a href="${p.url}" target="_blank" class="btn btn-tabelog">食べログ</a>`;
             if (item.type === 'castle') extraBtn = `<a href="https://ja.wikipedia.org/wiki/${encodeURIComponent(item.label)}" target="_blank" class="btn btn-wiki">Wikipedia</a>${p.url ? `<a href="${p.url}" target="_blank" class="btn btn-kojodan">攻城団</a>` : ''}`;
-            popupHtml = `<div class="popup-card"><span class="popup-title">${item.label}</span>${addressHtml}<a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>${extraBtn}<a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く(Google)</a><a href="${yahooNavUrl}" class="btn btn-nav-yahoo">ここへ行く(Yahoo)</a></div>`;
+            const accessBtn2 = item.type === 'castle' ? `<a href="https://www.google.com/search?q=${encodeURIComponent(item.label + ' アクセス')}" target="_blank" class="btn btn-access">アクセス</a>` : '';
+            popupHtml = `<div class="popup-card"><span class="popup-title">${item.label}</span>${addressHtml}<a href="${gmapUrl}" target="_blank" class="btn btn-gmap">GoogleMap</a>${extraBtn}<a href="${navUrl}" target="_blank" class="btn btn-nav">ここへ行く(Google)</a><a href="${yahooNavUrl}" class="btn btn-nav-yahoo">ここへ行く(Yahoo)</a>${accessBtn2}</div>`;
         }
         new maplibregl.Popup({ closeButton: false, anchor: getPopupAnchor(c) }).setLngLat(c).setHTML(popupHtml).addTo(map);
     }
