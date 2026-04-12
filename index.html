@@ -258,6 +258,23 @@
         .popup-road    { font-size: 11px; color: #888; display: block; margin-bottom: 6px; }
 
 
+        /* 地図中心十字ガイド */
+        #map-crosshair {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+            pointer-events: none;
+            z-index: 100;
+        }
+        #map-crosshair line {
+            stroke: rgba(0, 0, 0, 0.3);
+            stroke-width: 1.5;
+            stroke-linecap: round;
+        }
+
         /* 下部バー */
         #bottom-bar {
             position: fixed;
@@ -521,6 +538,12 @@
 <body>
 <div id="search-results"><div id="search-results-inner"></div></div>
 <div id="map"></div>
+<svg id="map-crosshair" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <line x1="10" y1="2" x2="10" y2="8"/>
+    <line x1="10" y1="12" x2="10" y2="18"/>
+    <line x1="2" y1="10" x2="8" y2="10"/>
+    <line x1="12" y1="10" x2="18" y2="10"/>
+</svg>
 <div id="toggle-layers-btn-wrap">
     <button id="toggle-layers-btn" title="スポット一時非表示">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>
@@ -952,6 +975,7 @@ map.on('zoomend', () => { isZooming = false; });
         if (!btn) return;
         const markerEl = currentMarker ? currentMarker.getElement() : null;
 
+        const crosshair = document.getElementById('map-crosshair');
         if (trackingMode === 0) {
             btn.classList.remove('geolocate-active');
             btn.innerHTML = iconLocate;
@@ -961,6 +985,7 @@ map.on('zoomend', () => { isZooming = false; });
                 markerEl.classList.remove('heading-active');
                 markerEl.classList.remove('nav-mode');
             }
+            if (crosshair) crosshair.style.display = '';
         } else if (trackingMode === 1) {
             btn.classList.add('geolocate-active');
             btn.innerHTML = iconLocate;
@@ -970,6 +995,7 @@ map.on('zoomend', () => { isZooming = false; });
                 markerEl.classList.add('heading-active');
                 markerEl.classList.remove('nav-mode');
             }
+            if (crosshair) crosshair.style.display = 'none';
         } else { // mode 2
             btn.classList.add('geolocate-active');
             btn.innerHTML = iconNav;
@@ -979,6 +1005,7 @@ map.on('zoomend', () => { isZooming = false; });
                 markerEl.classList.remove('heading-active');
                 markerEl.classList.add('nav-mode');
             }
+            if (crosshair) crosshair.style.display = 'none';
         }
     }
 
