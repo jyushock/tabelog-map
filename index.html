@@ -275,22 +275,7 @@
             stroke-linecap: round;
         }
         .maplibregl-popup { z-index: 10 !important; }
-        #debug-panel {
-            position: fixed;
-            top: 60px;
-            left: 8px;
-            z-index: 400;
-            background: rgba(0,0,0,0.75);
-            color: #fff;
-            font-size: 11px;
-            font-family: monospace;
-            padding: 8px 10px;
-            border-radius: 8px;
-            line-height: 1.8;
-            pointer-events: none;
-            display: none;
-            min-width: 200px;
-        }
+
 
         /* 下部バー */
         #bottom-bar {
@@ -561,13 +546,6 @@
     <line x1="2" y1="10" x2="8" y2="10"/>
     <line x1="12" y1="10" x2="18" y2="10"/>
 </svg>
-<div id="debug-panel">
-    <div>📡 rawHeading: <span id="dbg-raw">--</span>°</div>
-    <div>〰️ smoothed:   <span id="dbg-smoothed">--</span>°</div>
-    <div>🗺 rafBearing: <span id="dbg-raf">--</span>°</div>
-    <div>🔄 setBearing: <span id="dbg-count">0</span> 回/秒</div>
-    <div>📍 setCenter:  <span id="dbg-center">0</span> 回/秒</div>
-</div>
 <div id="toggle-layers-btn-wrap">
     <button id="toggle-layers-btn" title="スポット一時非表示">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>
@@ -891,42 +869,7 @@ function handleOrientation(event) {
     }
 
     deviceHeading = currentSmoothedHeading;
-    // デバッグパネル更新
-    dbgRaw = rawHeading;
-    dbgSmoothed = currentSmoothedHeading;
     // 扇アイコンの更新はrAFループに一本化（ここでは行わない）
-}
-
-// --- デバッグ変数 ---
-let dbgRaw = null;
-let dbgSmoothed = null;
-let dbgBearingCount = 0;
-let dbgCenterCount  = 0;
-let dbgLastSec = Date.now();
-let dbgBearingPerSec = 0;
-let dbgCenterPerSec  = 0;
-
-function updateDebugPanel() {
-    const panel = document.getElementById('debug-panel');
-    if (!panel) return;
-    const now = Date.now();
-    if (now - dbgLastSec >= 1000) {
-        dbgBearingPerSec = dbgBearingCount;
-        dbgCenterPerSec  = dbgCenterCount;
-        dbgBearingCount  = 0;
-        dbgCenterCount   = 0;
-        dbgLastSec = now;
-    }
-    if (trackingMode === 2) {
-        panel.style.display = 'block';
-        document.getElementById('dbg-raw').textContent      = dbgRaw !== null ? dbgRaw.toFixed(1) : '--';
-        document.getElementById('dbg-smoothed').textContent = dbgSmoothed !== null ? dbgSmoothed.toFixed(1) : '--';
-        document.getElementById('dbg-raf').textContent      = rafBearing !== null ? rafBearing.toFixed(1) : '--';
-        document.getElementById('dbg-count').textContent    = dbgBearingPerSec;
-        document.getElementById('dbg-center').textContent   = dbgCenterPerSec;
-    } else {
-        panel.style.display = 'none';
-    }
 }
 
 // --- rAFループで地図bearingをなめらかに追従（震え防止） ---
@@ -986,11 +929,11 @@ function bearingRafLoop() {
             const bearingChanged = prevSetBearing === null || Math.abs(getShortestAngleDiff(prevSetBearing, rafBearing)) >= 0.1;
             const posChanged = prevSetLng === null || Math.abs(rafLng - prevSetLng) > 0.000001 || Math.abs(rafLat - prevSetLat) > 0.000001;
             if (posChanged) {
-                map.setCenter([rafLng, rafLat]); dbgCenterCount++;
+                map.setCenter([rafLng, rafLat]);
                 prevSetLng = rafLng; prevSetLat = rafLat;
             }
             if (bearingChanged) {
-                map.setBearing(rafBearing); dbgBearingCount++;
+                map.setBearing(rafBearing);
                 prevSetBearing = rafBearing;
             }
             map.setPitch(70);
@@ -1002,7 +945,7 @@ function bearingRafLoop() {
             }
         } else {
             // trackingMode === 1: 位置追従＋扇エフェクト
-            map.setCenter([rafLng, rafLat]); dbgCenterCount++;
+            map.setCenter([rafLng, rafLat]);
             if (currentMarker) {
                 currentMarker.setLngLat([rafLng, rafLat]);
                 if (deviceHeading !== null) {
@@ -1013,7 +956,6 @@ function bearingRafLoop() {
         }
     }
 
-    updateDebugPanel();
     rafId = requestAnimationFrame(bearingRafLoop);
 }
 
