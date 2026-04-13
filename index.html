@@ -1817,6 +1817,15 @@ map.on('zoomend', () => { isZooming = false; });
     ['mouseup', 'mouseleave', 'touchend'].forEach(event => {
         toggleLayersBtn.addEventListener(event, restoreOwnLayers);
     });
+
+    // iOSのダブルタップ長押しルーペを無効化
+    document.addEventListener('contextmenu', (e) => e.preventDefault());
+    document.addEventListener('selectstart', (e) => e.preventDefault());
+    const mapCanvas = document.querySelector('#map canvas');
+    if (mapCanvas) {
+        mapCanvas.addEventListener('contextmenu', (e) => e.preventDefault());
+        mapCanvas.addEventListener('selectstart', (e) => e.preventDefault());
+    }
 </script>
 </body>
 </html>
