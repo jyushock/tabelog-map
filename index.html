@@ -970,7 +970,10 @@ function bearingRafLoop() {
             // ── bearing補間 ──
             if (rafBearing === null) { rafBearing = deviceHeading; }
             const diff = getShortestAngleDiff(rafBearing, deviceHeading);
-            if (Math.abs(diff) >= BEARING_THRESHOLD) {
+            if (Math.abs(diff) < 0.1) {
+                // 収束判定：0.1度以下なら完全に一致させて止める
+                rafBearing = deviceHeading;
+            } else if (Math.abs(diff) >= BEARING_THRESHOLD) {
                 rafBearing = (rafBearing + diff * BEARING_LERP + 360) % 360;
             }
             // カメラを先に更新（最新カメラでマーカーを投影するため順序が重要）
