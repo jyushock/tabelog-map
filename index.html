@@ -937,6 +937,9 @@ let rafBearing  = null;
 let rafLng      = null;
 let rafLat      = null;
 let rafId       = null; // ループID（nullなら停止中）
+let prevSetBearing = null;
+let prevSetLng     = null;
+let prevSetLat     = null;
 
 function startRafLoop() {
     if (rafId !== null) return;
@@ -951,6 +954,9 @@ function stopRafLoop() {
     rafBearing = null;
     rafLng     = null;
     rafLat     = null;
+    prevSetBearing = null;
+    prevSetLng     = null;
+    prevSetLat     = null;
 }
 
 function bearingRafLoop() {
@@ -976,9 +982,17 @@ function bearingRafLoop() {
             } else if (Math.abs(diff) >= BEARING_THRESHOLD) {
                 rafBearing = (rafBearing + diff * BEARING_LERP + 360) % 360;
             }
-            // カメラを先に更新（最新カメラでマーカーを投影するため順序が重要）
-            map.setCenter([rafLng, rafLat]); dbgCenterCount++;
-            map.setBearing(rafBearing); dbgBearingCount++;
+            // カメラを先に更新（値が変化した場合のみ呼ぶ）
+            const bearingChanged = prevSetBearing === null || Math.abs(getShortestAngleDiff(prevSetBearing, rafBearing)) >= 0.1;
+            const posChanged = prevSetLng === null || Math.abs(rafLng - prevSetLng) > 0.000001 || Math.abs(rafLat - prevSetLat) > 0.000001;
+            if (posChanged) {
+                map.setCenter([rafLng, rafLat]); dbgCenterCount++;
+                prevSetLng = rafLng; prevSetLat = rafLat;
+            }
+            if (bearingChanged) {
+                map.setBearing(rafBearing); dbgBearingCount++;
+                prevSetBearing = rafBearing;
+            }
             map.setPitch(70);
             // カメラ更新後にマーカーを更新（1フレームずれ防止）
             if (currentMarker) {
