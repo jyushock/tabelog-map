@@ -882,7 +882,12 @@ function handleOrientation(event) {
         currentSmoothedHeading = targetHeading;
     } else {
         const diff = getShortestAngleDiff(currentSmoothedHeading, targetHeading);
-        currentSmoothedHeading = (currentSmoothedHeading + diff * smoothingFactor + 360) % 360;
+        // 差分が0.1度以下なら完全に収束させて微小振動を止める
+        if (Math.abs(diff) < 0.1) {
+            currentSmoothedHeading = targetHeading;
+        } else {
+            currentSmoothedHeading = (currentSmoothedHeading + diff * smoothingFactor + 360) % 360;
+        }
     }
 
     deviceHeading = currentSmoothedHeading;
@@ -970,7 +975,11 @@ function bearingRafLoop() {
             }
             // カメラを先に更新（最新カメラでマーカーを投影するため順序が重要）
             map.setCenter([rafLng, rafLat]); dbgCenterCount++;
-            map.setBearing(rafBearing); dbgBearingCount++;
+            // bearing変化が閾値以上のときのみ setBearing を呼ぶ
+            const bearingDiff = getShortestAngleDiff(map.getBearing(), rafBearing);
+            if (Math.abs(bearingDiff) >= BEARING_THRESHOLD) {
+                map.setBearing(rafBearing); dbgBearingCount++;
+            }
             map.setPitch(70);
             // カメラ更新後にマーカーを更新（1フレームずれ防止）
             if (currentMarker) {
