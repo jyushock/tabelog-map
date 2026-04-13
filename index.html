@@ -1819,13 +1819,27 @@ map.on('zoomend', () => { isZooming = false; });
     });
 
     // iOSのダブルタップ長押しルーペを無効化
+    // contextmenu・selectstart防止
     document.addEventListener('contextmenu', (e) => e.preventDefault());
     document.addEventListener('selectstart', (e) => e.preventDefault());
-    const mapCanvas = document.querySelector('#map canvas');
-    if (mapCanvas) {
-        mapCanvas.addEventListener('contextmenu', (e) => e.preventDefault());
-        mapCanvas.addEventListener('selectstart', (e) => e.preventDefault());
-    }
+    // MapLibreのcanvasに対してtouchstartをpassive:falseで上書きし長押しを防ぐ
+    const mapCanvas = map.getCanvas();
+    let longPressTimer = null;
+    mapCanvas.addEventListener('touchstart', (e) => {
+        longPressTimer = setTimeout(() => {
+            e.preventDefault();
+        }, 300);
+    }, { passive: false });
+    mapCanvas.addEventListener('touchend', () => {
+        clearTimeout(longPressTimer);
+        longPressTimer = null;
+    }, { passive: true });
+    mapCanvas.addEventListener('touchmove', () => {
+        clearTimeout(longPressTimer);
+        longPressTimer = null;
+    }, { passive: true });
+    mapCanvas.addEventListener('contextmenu', (e) => e.preventDefault());
+    mapCanvas.addEventListener('selectstart', (e) => e.preventDefault());
 </script>
 </body>
 </html>
